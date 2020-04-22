@@ -14,7 +14,7 @@ namespace Itbeard.WebApi.Controllers
         {
             this.urlService = urlService;
         }
-        
+
         [HttpPost]
         public async Task<IActionResult> Post(string url)
         {

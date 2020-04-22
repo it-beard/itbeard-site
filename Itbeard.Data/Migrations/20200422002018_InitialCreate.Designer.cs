@@ -10,26 +10,29 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Itbeard.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20200314152308_Initial")]
-    partial class Initial
+    [Migration("20200422002018_InitialCreate")]
+    partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.1.14-servicing-32113")
+                .HasAnnotation("ProductVersion", "3.1.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Blazetta.Data.Entites.Url", b =>
+            modelBuilder.Entity("Itbeard.Data.Entites.Url", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd();
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ShortGuid")
+                        .HasColumnType("nvarchar(7)")
                         .HasMaxLength(7);
 
-                    b.Property<string>("TargetUrl");
+                    b.Property<string>("TargetUrl")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 

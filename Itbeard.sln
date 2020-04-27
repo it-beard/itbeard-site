@@ -3,19 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.161
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Data", "Itbeard.Data\Itbeard.Data.csproj", "{B0497D56-89D4-406C-BD27-F6FC9E9A81B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Data", "Itbeard.Data\Itbeard.Data.csproj", "{B0497D56-89D4-406C-BD27-F6FC9E9A81B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Services", "Itbeard.Services\Itbeard.Services.csproj", "{F00CB388-419D-47D1-911F-C74DDB7815B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Services", "Itbeard.Services\Itbeard.Services.csproj", "{F00CB388-419D-47D1-911F-C74DDB7815B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Di", "Itbeard.Di\Itbeard.Di.csproj", "{6829D532-FE8A-4853-9EA4-3285F2EEBA91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Di", "Itbeard.Di\Itbeard.Di.csproj", "{6829D532-FE8A-4853-9EA4-3285F2EEBA91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.WebApi", "Itbeard.WebApi\Itbeard.WebApi.csproj", "{4C464998-D68C-4C28-910D-B0614A5369DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.WebApi", "Itbeard.WebApi\Itbeard.WebApi.csproj", "{4C464998-D68C-4C28-910D-B0614A5369DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Mappings", "Itbeard.Mappings\Itbeard.Mappings.csproj", "{A6CF290D-1575-463A-B8A9-45FC6AF92177}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Mappings", "Itbeard.Mappings\Itbeard.Mappings.csproj", "{A6CF290D-1575-463A-B8A9-45FC6AF92177}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Models", "Itbeard.Models\Itbeard.Models.csproj", "{9AD32AE3-870F-4615-B436-DD7621B77765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Models", "Itbeard.Models\Itbeard.Models.csproj", "{9AD32AE3-870F-4615-B436-DD7621B77765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Site", "Itbeard.Site\Itbeard.Site.csproj", "{AFBD09C8-BF45-4BA3-BB04-ABD28F3E755C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Site", "Itbeard.Site\Itbeard.Site.csproj", "{AFBD09C8-BF45-4BA3-BB04-ABD28F3E755C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Shortener", "Itbeard.Shortener\Itbeard.Shortener.csproj", "{18B9A687-ADC9-46FA-A6E3-FE5CEDB3B8DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Core", "Itbeard.Core\Itbeard.Core.csproj", "{E20B4DF0-79E7-4340-AB90-6E0976C2EF76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +27,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19C9B335-86AD-4913-94B1-C33A8AE47FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19C9B335-86AD-4913-94B1-C33A8AE47FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19C9B335-86AD-4913-94B1-C33A8AE47FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{19C9B335-86AD-4913-94B1-C33A8AE47FF1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B0497D56-89D4-406C-BD27-F6FC9E9A81B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B0497D56-89D4-406C-BD27-F6FC9E9A81B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B0497D56-89D4-406C-BD27-F6FC9E9A81B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -55,6 +55,14 @@ Global
 		{AFBD09C8-BF45-4BA3-BB04-ABD28F3E755C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFBD09C8-BF45-4BA3-BB04-ABD28F3E755C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFBD09C8-BF45-4BA3-BB04-ABD28F3E755C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18B9A687-ADC9-46FA-A6E3-FE5CEDB3B8DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18B9A687-ADC9-46FA-A6E3-FE5CEDB3B8DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18B9A687-ADC9-46FA-A6E3-FE5CEDB3B8DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18B9A687-ADC9-46FA-A6E3-FE5CEDB3B8DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E20B4DF0-79E7-4340-AB90-6E0976C2EF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E20B4DF0-79E7-4340-AB90-6E0976C2EF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E20B4DF0-79E7-4340-AB90-6E0976C2EF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E20B4DF0-79E7-4340-AB90-6E0976C2EF76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

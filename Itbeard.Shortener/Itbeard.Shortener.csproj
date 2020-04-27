@@ -5,6 +5,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\Itbeard.Core\Itbeard.Core.csproj" />
       <ProjectReference Include="..\Itbeard.Di\Itbeard.Di.csproj" />
       <ProjectReference Include="..\Itbeard.Mappings\Itbeard.Mappings.csproj" />
       <ProjectReference Include="..\Itbeard.Services\Itbeard.Services.csproj" />
@@ -12,6 +13,15 @@
 
     <ItemGroup>
       <PackageReference Include="Autofac" Version="5.1.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="Pages\MainLayout.razor">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
+      <Content Update="Pages\Index.razor">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
     </ItemGroup>
 
 </Project>

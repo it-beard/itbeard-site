@@ -25,7 +25,8 @@ namespace Itbeard.Di
 
         private void ServicesRegister(ref ContainerBuilder builder, Assembly[] assemblies)
         {
-            var servicesAssembly = assemblies.FirstOrDefault(t => t.FullName.ToLower().Contains("itbeard.services"));
+            var servicesAssembly = assemblies.FirstOrDefault(t => t.FullName != null &&
+                                                                  t.FullName.ToLower().Contains("itbeard.services"));
             builder.RegisterAssemblyTypes(servicesAssembly)
                 .Where(t => t.Name.EndsWith("Service"))
                 .AsImplementedInterfaces();

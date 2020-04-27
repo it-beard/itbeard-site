@@ -1,0 +1,31 @@
+﻿@page "/{shortGuid}"
+
+@using Itbeard.Services.Interfaces
+@using Itbeard.Models.Url
+@inject IUrlService UrlService
+@inject NavigationManager NavigationManager
+
+@if (urlEntity?.TargetUrl != null)
+{
+    <text>Сейчас тебя перекинет сюда: @urlEntity</text>
+}
+else
+{
+    <text>Ссылка не найдена.</text>
+}
+
+@code {
+    [Parameter]
+    // ReSharper disable once MemberCanBePrivate.Global
+    public string ShortGuid { get; set; }
+    private UrlModel urlEntity { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        urlEntity = await UrlService.GetAsync(ShortGuid);
+        if (urlEntity?.TargetUrl != null)
+        {
+            NavigationManager.NavigateTo(urlEntity.TargetUrl);
+        }
+    }
+}

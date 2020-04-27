@@ -1,0 +1,10 @@
+﻿@page "/"
+@using Itbeard.Core
+@inject NavigationManager NavigationManager
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationManager.NavigateTo(Constants.SiteUrl);
+    }
+}

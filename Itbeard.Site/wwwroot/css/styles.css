@@ -263,12 +263,14 @@ app > section + section {
     font-size: 18px;
     color: white;
     transition-property: box-shadow, text-shadow, color;
+    border-radius: 10px;
+    transition: 0.5s;
 }
 
 #header > nav > a:hover {
     color: var(--color-highlight);
-    box-shadow: 0 0 10px 5px var(--color-highlight);
-    text-shadow: 0 0 10px var(--color-highlight);
+    box-shadow: 0 0 7px 5px var(--color-highlight);
+    text-shadow: 0 0 7px var(--color-highlight);
 }
 
 #header > nav > a:first-child {
@@ -294,7 +296,12 @@ app > section + section {
     padding: 20px;
     border: 2px solid var(--theme);
     box-shadow: 0 0 10px 0 var(--theme);
+    border-radius: 15px;
     background-color: #0009;
+}
+
+.presentation > .content {
+    width: 50%;
 }
 
 .presentation > .content.left {
@@ -304,6 +311,10 @@ app > section + section {
 .presentation > .content.right {
     margin-left: 55%;
 }
+
+.presentation > .content.center {
+     margin: 0 auto;
+ }
 
 .presentation > .content > h1 {
     margin-bottom: 20px;
@@ -327,7 +338,9 @@ app > section + section {
     text-decoration: none;
     color: white;
     transition-property: text-shadow, background-color, color;
+    border-radius: 0 0 15px 15px;
 }
+
 .presentation > .content > .btn-bottom:hover {
     text-shadow: 0 0 10px var(--theme);
     background-color: #111;
@@ -340,12 +353,17 @@ app > section + section {
 
 #interwiew {
     --theme: #f2fa41;
-    background: url("/images/interwiew.jpg") top / cover;
+    background: url("/images/interviews.jpg") top / cover;
 }
 
 #know {
-    --theme: #d1072d;
-    background: url("/images/know.jpg") top left / cover;
+    --theme: #0494d3;
+    background: url("/images/knowhow.jpg") top left / cover;
+}
+
+#streams {
+    --theme: #e91b1b;
+    background: url("/images/streams.jpg") top left / cover;
 }
 
 #other > h1 {
@@ -362,6 +380,7 @@ app > section + section {
 
 #other > .content > .article {
     display: block;
+    margin-bottom: 20px;
     width: 32%;
     padding: 10px;
     text-align: center;
@@ -396,42 +415,21 @@ app > section + section {
 #footer {
     flex: auto;
     display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background-color: var(--color-background-darkest);
     color: white;
-}
-
-#footer > .text {
-    display: flex;
+    justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
-    width: 50%;
 }
 
-#footer > .text > p,
-#footer > .text > a {
-    margin: 10px 0;
-}
-
-#footer > .text > p,
-#footer > .text > a:first-child {
-    margin-top: 0;
-}
-#footer > .text > p,
-#footer > .text > a:last-child {
-    margin-bottom: 0;
-}
-
-#footer > .social {
+#footer .social {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     flex-wrap: wrap;
-    width: calc(50% + 15px);
-    margin: -15px -15px -15px 0;
 }
 
-#footer > .social > a {
+#footer .social > a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -445,13 +443,13 @@ app > section + section {
     transition-property: border-color, box-shadow, color;
 }
 
-#footer > .social > a:before {
+#footer .social > a:before {
     content: var(--social-icon);
     display: inline-block;
     font: 25px "FA Brands";
 }
 
-#footer > .social > a:hover {
+#footer .social > a:hover {
     border-color: var(--social-color);
     box-shadow: 0 0 5px 5px var(--social-color);
     text-shadow: none;
@@ -461,11 +459,12 @@ app > section + section {
 #footer .fab {
     font-size: 25px;
 }
-/* --- Соц. сети */
 
-/* --- Футер */
-
-
+#footer .thanks {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
 
 /* Адаптив --- */
 

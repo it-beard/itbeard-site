@@ -89,6 +89,30 @@
       <Content Update="Pages\Partnership\Partnership.razor">
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       </Content>
+      <None Remove="App.scss" />
+      <Content Include="App.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Pages\Contacts\Contacts.scss" />
+      <Content Include="Pages\Contacts\Contacts.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Pages\Hackathons\2020-05-09\Styles.scss" />
+      <Content Include="Pages\Hackathons\2020-05-09\Styles.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Pages\Landing\Landing.scss" />
+      <Content Include="Pages\Landing\Landing.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Pages\Partnership\Partnership.scss" />
+      <Content Include="Pages\Partnership\Partnership.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="Pages\Sponsorship\Sponsorship.scss" />
+      <Content Include="Pages\Sponsorship\Sponsorship.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
     <ItemGroup>

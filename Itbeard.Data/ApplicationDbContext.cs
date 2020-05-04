@@ -20,7 +20,7 @@ namespace Itbeard.Data
                 .HasKey(b => new {b.Id});
             
             builder.Entity<Url>()
-                .Property(b => b.ShortGuid).HasMaxLength(7);
+                .Property(b => b.ShortGuid).HasMaxLength(20);
 
             builder.Entity<Url>()
                 .HasIndex(u => u.ShortGuid)

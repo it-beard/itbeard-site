@@ -13,7 +13,7 @@
         background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
     }
 
-    #interwiew {
+    #interview {
         --theme: #f2fa41;
         background: url("/images/interviews.jpg") top / cover;
     }
@@ -31,7 +31,30 @@
 }
 
 @media screen and (max-width: 767px) {
-    #about {
-        padding: 0 !important;
+    #landing {
+        #about {
+            padding: 0 !important;
+        }
+
+        .presentation:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #interview {
+            background-position: 15% 0;
+        }
+
+        #know {
+            background-position: 55% 0;
+        }
+
+        #streams {
+            background-position: 75% 0;
+        }
     }
 }

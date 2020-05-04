@@ -13,7 +13,7 @@ namespace Itbeard.Data.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     TargetUrl = table.Column<string>(nullable: true),
-                    ShortGuid = table.Column<string>(maxLength: 7, nullable: true)
+                    ShortGuid = table.Column<string>(maxLength: 20, nullable: true)
                 },
                 constraints: table =>
                 {

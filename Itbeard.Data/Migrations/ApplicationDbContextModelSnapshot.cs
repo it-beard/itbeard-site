@@ -25,7 +25,7 @@ namespace Itbeard.Data.Migrations
 
                     b.Property<string>("ShortGuid")
                         .HasColumnType("nvarchar(7)")
-                        .HasMaxLength(7);
+                        .HasMaxLength(20);
 
                     b.Property<string>("TargetUrl")
                         .HasColumnType("nvarchar(max)");

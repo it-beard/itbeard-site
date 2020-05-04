@@ -1,0 +1,37 @@
+#landing {
+    padding: 0;
+    
+    &>* {
+        padding: 0px var(--container-padding);
+    }
+    
+    .parting-words{
+        color: deepskyblue;
+    }
+
+    #about {
+        background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
+    }
+
+    #interwiew {
+        --theme: #f2fa41;
+        background: url("/images/interviews.jpg") top / cover;
+    }
+
+    #know {
+        --theme: #0494d3;
+        background: url("/images/knowhow.jpg") top / cover;
+    }
+
+    #streams {
+        --theme: #e91b1b;
+        background: url("/images/streams.jpg") top / cover;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #about {
+        padding: 0 !important;
+    }
+}

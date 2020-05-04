@@ -1,6 +1,8 @@
 ﻿@page "/"
 @namespace Itbeard.Site.Pages
+@addTagHelper *, WebOptimizer.Core
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
 @{
     Layout = null;
 }
@@ -10,14 +12,20 @@
 <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="yandex-verification" content="71e43bb8c7502f68" />
     <title>АйТиБорода - жизнь и работа в IT</title>
     <base href="~/"/>
     <script src="https://kit.fontawesome.com/d50732a50b.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="/css/site.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <environment include="Development">
+        <link href="css/site.css" rel="stylesheet" />
+    </environment>
+    <environment exclude="Development">
+        <link href="css/site.min.css" rel="stylesheet" />
+    </environment>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet" /> 
 
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon.png" />
 </head>
 <body>
 <app>

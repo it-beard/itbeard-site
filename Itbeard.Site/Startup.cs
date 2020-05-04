@@ -25,6 +25,12 @@ namespace Itbeard.Site
             services.AddControllers();
             services.AddAutoMapperCustom();
             services.AddDatabaseContext(Configuration);
+            services.AddWebOptimizer(pipeline =>
+            {
+                pipeline
+                    .AddScssBundle("/css/site.css", "App.scss")
+                    .UseContentRoot();
+            });
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -47,6 +53,7 @@ namespace Itbeard.Site
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            app.UseWebOptimizer();
 
             app.UseRouting();
 

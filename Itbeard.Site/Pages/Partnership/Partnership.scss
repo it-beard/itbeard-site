@@ -1,5 +1,143 @@
-#partnership {
-    .parting-words{
-        color: deepskyblue;
+#partnership {padding: 0;
+
+    &>* {
+        padding: 0px var(--container-padding);
+    }
+
+    section.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #first_slide {
+        .links {
+            a {
+                font-style: italic;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            &.youtube span {
+                color: #FF0000;
+            }
+
+            &.soundcloud span{
+                color: #ff8714;
+            }
+
+            &.discord span{
+                color: #6D8CF6;
+            }
+
+            &.telegram span{
+                color: #2A9DD6;
+            }
+
+            &.instagram span{
+                color: #C53189;
+            }
+        }
+    }
+
+    #second_slide {
+        background-color: #003475;
+        min-height: 100vh;
+
+        &>section {
+            min-height: 100vh;
+        }
+
+        .links {
+            margin-bottom: 30px;
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            &>div {
+                font-weight: bold;
+                margin-left: 30px;
+                margin-top: 10px;
+            }
+
+            span {
+                font-style: italic;
+            }
+        }
+    }
+
+    #third_slide {
+        min-height: 100vh;
+
+        &>section {
+            min-height: 100vh;
+        }
+
+        .links{
+            a {
+                font-style: italic;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            &.youtube span {
+                color: #FF0000;
+            }
+
+            &.twitter span{
+                color: #1DA1F2;
+            }
+
+            &.telegram span{
+                color: #2A9DD6;
+            }
+
+            &.yandex span{
+                color: #ff8714;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #contacts {
+        .presentation {
+            padding: 0 !important;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        #second_slide .links {
+            margin-left: 30px;
+        }
     }
 }

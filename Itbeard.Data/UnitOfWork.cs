@@ -8,6 +8,7 @@ namespace Itbeard.Data
     {
         private readonly ApplicationDbContext context;
         private IUrlRepository urlRepository;
+        private IStatisticRepository statisticRepository;
 
         public UnitOfWork(ApplicationDbContext context)
         {
@@ -15,6 +16,8 @@ namespace Itbeard.Data
         }
 
         public IUrlRepository Urls => urlRepository = urlRepository ?? new UrlRepository(context);
+        
+        public IStatisticRepository Statistics => statisticRepository = statisticRepository ?? new StatisticRepository(context);
 
         public void Save()
         {

@@ -1,10 +1,16 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
 using Autofac;
 using Itbeard.Di;
 using Itbeard.Shortener.AppStart;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 
 namespace Itbeard.Shortener
@@ -26,6 +32,9 @@ namespace Itbeard.Shortener
             services.AddControllers();
             services.AddAutoMapperCustom();
             services.AddDatabaseContext(Configuration);
+            
+            //todo: need to be moved to Autofac DI
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
@@ -54,7 +63,7 @@ namespace Itbeard.Shortener
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
+                endpoints.MapFallbackToPage("/Shared/_Host");
             });
         }
     }

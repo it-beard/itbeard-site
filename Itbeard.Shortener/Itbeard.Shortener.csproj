@@ -13,14 +13,19 @@
 
     <ItemGroup>
       <PackageReference Include="Autofac" Version="5.1.2" />
+      <PackageReference Include="DeviceDetector.NET.NetCore" Version="3.9.2.2" />
     </ItemGroup>
 
     <ItemGroup>
-      <Content Update="Pages\MainLayout.razor">
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      </Content>
       <Content Update="Pages\Index.razor">
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
+      <Content Update="Pages\Administrator\ReduceLink.razor">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      </Content>
+      <None Remove="GeoLite2-City.mmdb" />
+      <Content Include="GeoLite2-City.mmdb">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
     </ItemGroup>
 

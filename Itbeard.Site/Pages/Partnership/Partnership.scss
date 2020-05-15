@@ -1,4 +1,5 @@
-#partnership {padding: 0;
+#partnership {
+    padding: 0;
 
     &>* {
         padding: 0px var(--container-padding);
@@ -9,8 +10,28 @@
         flex-direction: column;
         justify-content: center;
     }
+    
+    b {
+        color: #00bfff;
+    }
 
-    #first_slide {
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .email {
+        color: #ff8714;
+        font-weight: bold;
+    }
+
+    #statistics {
+        --theme: #f2fa41;
+        background: url("/images/statistics.png") 25% / auto auto no-repeat;
+        
         .links {
             a {
                 font-style: italic;
@@ -54,28 +75,6 @@
         &>section {
             min-height: 100vh;
         }
-
-        .links {
-            margin-bottom: 30px;
-
-            a {
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            &>div {
-                font-weight: bold;
-                margin-left: 30px;
-                margin-top: 10px;
-            }
-
-            span {
-                font-style: italic;
-            }
-        }
     }
 
     #third_slide {
@@ -84,42 +83,15 @@
         &>section {
             min-height: 100vh;
         }
-
-        .links{
-            a {
-                font-style: italic;
-                text-decoration: none;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            span {
-                font-weight: bold;
-            }
-
-            &.youtube span {
-                color: #FF0000;
-            }
-
-            &.twitter span{
-                color: #1DA1F2;
-            }
-
-            &.telegram span{
-                color: #2A9DD6;
-            }
-
-            &.yandex span{
-                color: #ff8714;
-            }
+        
+        ul li {
+            margin-bottom: 10px;
         }
     }
 }
 
 @media screen and (max-width: 767px) {
-    #contacts {
+    #partnership {
         .presentation {
             padding: 0 !important;
 

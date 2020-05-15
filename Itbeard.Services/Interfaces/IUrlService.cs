@@ -1,5 +1,5 @@
 using System.Threading.Tasks;
-using Itbeard.Models.Url;
+using Itbeard.Models;
 
 namespace Itbeard.Services.Interfaces
 {

@@ -1,6 +1,6 @@
 using AutoMapper;
 using Itbeard.Data.Entites;
-using Itbeard.Models.Url;
+using Itbeard.Models;
 
 namespace Itbeard.Mappings
 {
@@ -8,7 +8,8 @@ namespace Itbeard.Mappings
     {
         public MappingProfile()
         {
-            CreateMap<Url, UrlModel>();
+            CreateMap<Url, UrlModel>().ReverseMap();
+            CreateMap<Statistic, StatisticModel>().ReverseMap();
         }
     }
 }

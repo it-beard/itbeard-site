@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace Itbeard.Data.Entites
 {
@@ -8,6 +9,9 @@ namespace Itbeard.Data.Entites
         
         public string TargetUrl { get; set; }
         
-        public string ShortGuid { get; set; }
+        public string ShortName { get; set; }
+        
+        
+        public virtual List<Statistic> Statistics { get; set; }
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Itbeard.Models.Url
+namespace Itbeard.Models
 {
     public class UrlModel : StatusCodeModel
     {

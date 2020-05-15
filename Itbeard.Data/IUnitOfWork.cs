@@ -6,6 +6,9 @@ namespace Itbeard.Data
      public interface IUnitOfWork : IDisposable
     {
         IUrlRepository Urls { get; }
+        
+        IStatisticRepository Statistics { get; }
+        
         void Save();
     }
 }

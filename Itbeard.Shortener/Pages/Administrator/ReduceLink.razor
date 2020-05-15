@@ -1,0 +1,125 @@
+﻿@page "/admin/reduce"
+@using Itbeard.Services.Interfaces
+@using Itbeard.Core
+@using Itbeard.Services.Exceptions
+@inject IUrlService UrlService
+
+<style>
+    #reducer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    #reducer h1 {
+         color: gray;
+         font-size: 27px;
+         margin: 20px 0 30px 0;
+         font-weight: bold;
+    }
+    
+    #reducer div {
+         margin-bottom: 20px;
+    }
+        
+    #reducer input,
+    #reducer button {
+         width: 100%;
+         border: 2px solid lightblue;
+         border-radius: 3px;
+         padding: 6px 10px;
+    }
+    
+    #reducer button {
+         background-color: lightgray;
+         border: 2px solid darkgrey;
+         color: gray;
+         font-weight: bold;
+         transition: 0.3s;
+    }
+
+    #reducer button:hover {
+        background-color: gray;
+        border-color: gray;
+        color: white;
+    }
+    
+    #reducer #result {
+         margin-top: 20px;
+    }
+    
+    #reducer #errors {
+         color: red;
+         font-weight: bold;
+         text-align: center;
+    }
+</style>
+
+<div id="reducer">
+    <h1>Создать ссылку</h1>
+    <div>
+        <input type="text" @bind="incommingKey" placeholder="Введите ключ">
+    </div>
+    <div>
+        <input type="text" @bind="link" placeholder="Введите ссылку для сокращения">
+    </div>
+    <div>
+        <button @onclick="OnCreateButtonClick">Создать</button>
+    </div>
+
+    @if (!string.IsNullOrEmpty(reducedUrl))
+    {
+        <div id="reduce">
+            <input type="text" @bind="reducedUrl" placeholder="Результат">
+        </div>
+    }
+    
+    @if (!string.IsNullOrEmpty(error))
+        {
+            <div id="errors">
+                @error
+            </div>
+        }
+</div>
+
+@code {
+    private string incommingKey;
+    private string link;
+    private string reducedUrl = string.Empty;
+    private string error = string.Empty;
+    
+#if DEBUG
+    private string key = "123";
+#else
+    private string key = Environment.GetEnvironmentVariable(EnviromentKeys.ITBEARD_REDUCE_URL_KEY);
+#endif
+    
+    private async Task OnCreateButtonClick()
+    {
+        if (string.IsNullOrEmpty(key))
+        {
+            error = "Ошибка инициализации ключа.";
+            return;
+        }
+        
+        if (incommingKey != key)
+        {
+            error = "Неверный ключ!";
+            return;
+        }
+        
+        error = string.Empty;
+        reducedUrl = string.Empty;
+        try
+        {
+            var urlModel = await UrlService.ReduceAsync(link);
+            if (urlModel != null)
+            {
+                reducedUrl = $"{Constants.ShortenerUrl}/{urlModel.ShortName}";
+            }
+        }
+        catch (TargetUrlEmptyException ex)
+        {
+            error = ex.Message;
+        }
+    }
+}

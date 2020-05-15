@@ -5,7 +5,8 @@ using AutoMapper;
 using Itbeard.Data;
 using Itbeard.Data.Entites;
 using Itbeard.Data.Repositories.Interfaces;
-using Itbeard.Models.Url;
+using Itbeard.Models;
+using Itbeard.Services.Exceptions;
 using Itbeard.Services.Interfaces;
 
 namespace Itbeard.Services.Services
@@ -22,6 +23,19 @@ namespace Itbeard.Services.Services
         
         public async Task<UrlModel> ReduceAsync(string targetUrl)
         {
+            if (string.IsNullOrEmpty(targetUrl))
+            {
+                throw new TargetUrlEmptyException("Ссылка не может быть пустой!");
+            }
+
+            targetUrl = targetUrl.Trim();
+
+            // Remove last slash symbol in url
+            if (targetUrl.EndsWith('/'))
+            {
+                targetUrl = targetUrl.Remove(targetUrl.Length - 1, 1);
+            }
+
             var oldUrl = await urlRepository.GetFirstWhereAsync( u => u.TargetUrl == targetUrl);
             var urlModel = mapper.Map<UrlModel>(oldUrl);
             if (oldUrl != null)
@@ -33,7 +47,7 @@ namespace Itbeard.Services.Services
             var url = new Url
             {
                 Id = Guid.NewGuid(),
-                ShortGuid = Guid.NewGuid().ToString().Substring(0, 7),
+                ShortName = Guid.NewGuid().ToString().Substring(0, 7),
                 TargetUrl = targetUrl
             };
 
@@ -44,9 +58,9 @@ namespace Itbeard.Services.Services
             return urlModel;
         }
 
-        public async Task<UrlModel> GetAsync(string shortGuid)
+        public async Task<UrlModel> GetAsync(string shortName)
         {
-            var url = await urlRepository.GetFirstWhereAsync( u => u.ShortGuid.StartsWith(shortGuid));
+            var url = await urlRepository.GetFirstWhereAsync( u => u.ShortName.StartsWith(shortName));
             return mapper.Map<UrlModel>(url);
         }
     }

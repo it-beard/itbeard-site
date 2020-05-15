@@ -8,6 +8,6 @@ namespace Itbeard.Models.Url
         
         public string TargetUrl { get; set; }
         
-        public string ShortGuid { get; set; }
+        public string ShortName { get; set; }
     }
 }

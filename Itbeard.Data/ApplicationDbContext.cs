@@ -1,3 +1,4 @@
+using Itbeard.Core;
 using Itbeard.Data.Entites;
 using Microsoft.EntityFrameworkCore;
 
@@ -23,7 +24,7 @@ namespace Itbeard.Data
                 .HasKey(b => new {b.Id});
             
             builder.Entity<Url>()
-                .Property(b => b.ShortName).HasMaxLength(20);
+                .Property(b => b.ShortName).HasMaxLength(Constants.MaxShortUrlNameLength);
 
             builder.Entity<Url>()
                 .HasIndex(u => u.ShortName)

@@ -21,7 +21,7 @@ namespace Itbeard.Services.Services
             this.mapper = mapper;
         }
         
-        public async Task<UrlModel> ReduceAsync(string targetUrl)
+        public async Task<UrlModel> ReduceAsync(string targetUrl, string shortName)
         {
             if (string.IsNullOrEmpty(targetUrl))
             {
@@ -36,23 +36,32 @@ namespace Itbeard.Services.Services
                 targetUrl = targetUrl.Remove(targetUrl.Length - 1, 1);
             }
 
-            var oldUrl = await urlRepository.GetFirstWhereAsync( u => u.TargetUrl == targetUrl);
-            var urlModel = mapper.Map<UrlModel>(oldUrl);
-            if (oldUrl != null)
+            //if URL wit the same TargetUrl exists - return this object without insert new row into DB
+            var sameTargetUrl = await urlRepository.GetFirstWhereAsync( u => u.TargetUrl == targetUrl);
+            if (sameTargetUrl != null)
             {
-                urlModel.StatusCode = HttpStatusCode.OK;
-                return urlModel;
+                var result = mapper.Map<UrlModel>(sameTargetUrl);
+                result.StatusCode = HttpStatusCode.OK;
+                return result;
             }
 
+            //if URL wit the same ShortName exists - return exception
+            var sameShortNameUrl = await urlRepository.GetFirstWhereAsync( u => u.ShortName == shortName);
+            if (sameShortNameUrl != null)
+            {
+                throw new TargetUrlEmptyException("Короткое имя существует. Выберите другое имя.");
+            }
+            
             var url = new Url
             {
                 Id = Guid.NewGuid(),
-                ShortName = Guid.NewGuid().ToString().Substring(0, 7),
+                ShortName = string.IsNullOrEmpty(shortName) ? 
+                    Guid.NewGuid().ToString().Substring(0, 7) : shortName,
                 TargetUrl = targetUrl
             };
 
-            var result = await urlRepository.InsertAsync(url);
-            urlModel = mapper.Map<UrlModel>(result);
+            await urlRepository.InsertAsync(url);
+            var urlModel = mapper.Map<UrlModel>(url);
             urlModel.StatusCode = HttpStatusCode.Created;
 
             return urlModel;

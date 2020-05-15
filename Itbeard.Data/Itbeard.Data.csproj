@@ -20,4 +20,8 @@
       <Compile Remove="Migrations\20200314152308_Initial.Designer.cs" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\Itbeard.Core\Itbeard.Core.csproj" />
+    </ItemGroup>
+
 </Project>

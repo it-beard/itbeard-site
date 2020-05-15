@@ -6,5 +6,6 @@ namespace Itbeard.Core
     {
         public const string SiteUrl = "https://itbeard.com";
         public const string ShortenerUrl = "https://s.itbeard.com";
+        public const int MaxShortUrlNameLength = 20;
     }
 }

@@ -5,7 +5,7 @@ namespace Itbeard.Services.Interfaces
 {
     public interface IUrlService
     {
-        Task<UrlModel> ReduceAsync(string targetUrl);
+        Task<UrlModel> ReduceAsync(string targetUrl, string shortName);
         Task<UrlModel> GetAsync(string shortGuid);
     }
 }

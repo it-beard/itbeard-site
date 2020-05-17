@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Services", "Itbeard
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Di", "Itbeard.Di\Itbeard.Di.csproj", "{6829D532-FE8A-4853-9EA4-3285F2EEBA91}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.WebApi", "Itbeard.WebApi\Itbeard.WebApi.csproj", "{4C464998-D68C-4C28-910D-B0614A5369DD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Mappings", "Itbeard.Mappings\Itbeard.Mappings.csproj", "{A6CF290D-1575-463A-B8A9-45FC6AF92177}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Itbeard.Models", "Itbeard.Models\Itbeard.Models.csproj", "{9AD32AE3-870F-4615-B436-DD7621B77765}"
@@ -39,10 +37,6 @@ Global
 		{6829D532-FE8A-4853-9EA4-3285F2EEBA91}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6829D532-FE8A-4853-9EA4-3285F2EEBA91}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6829D532-FE8A-4853-9EA4-3285F2EEBA91}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C464998-D68C-4C28-910D-B0614A5369DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C464998-D68C-4C28-910D-B0614A5369DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C464998-D68C-4C28-910D-B0614A5369DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C464998-D68C-4C28-910D-B0614A5369DD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A6CF290D-1575-463A-B8A9-45FC6AF92177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A6CF290D-1575-463A-B8A9-45FC6AF92177}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6CF290D-1575-463A-B8A9-45FC6AF92177}.Release|Any CPU.ActiveCfg = Release|Any CPU

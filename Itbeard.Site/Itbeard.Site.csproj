@@ -17,9 +17,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Content Update="Shared\SiteFooter.razor">
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      </Content>
       <Content Update="wwwroot\favicon.png">
         <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
         <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
@@ -112,10 +109,6 @@
       <None Remove="Pages\Sponsorship\Sponsorship.scss" />
       <Content Include="Pages\Sponsorship\Sponsorship.scss">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
-      <Content Update="Shared\_Host.cshtml">
-        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       </Content>
     </ItemGroup>
 

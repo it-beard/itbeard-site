@@ -44,7 +44,7 @@ namespace Itbeard.Site
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapBlazorHub();
-                endpoints.MapFallbackToPage("/_Host");
+                endpoints.MapFallbackToPage("/Shared/_Host");
             });
         }
     }

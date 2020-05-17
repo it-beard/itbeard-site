@@ -1,5 +1,121 @@
 #sponsorship {
-    .parting-words{
-        color: deepskyblue;
+    .presentation {
+        min-height: 100vh;
+    }
+    
+    ul li {
+        margin-bottom: 10px;
+    }
+    
+    .orange:hover {
+        color: orange;
+    }
+
+    padding: 0;
+
+    &>* {
+        padding: 0px var(--container-padding);
+    }
+
+    section.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    b {
+        color: #00bfff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .email {
+        color: #ff8714;
+        font-weight: bold;
+    }
+
+    #info {
+        --theme: #f2fa41;
+        background: url("/images/sponsorship.png") 25% / auto auto no-repeat;
+
+        .links {
+            a {
+                font-style: italic;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+            &.youtube span {
+                color: #FF0000;
+            }
+
+            &.soundcloud span{
+                color: #ff8714;
+            }
+
+            &.discord span{
+                color: #6D8CF6;
+            }
+
+            &.telegram span{
+                color: #2A9DD6;
+            }
+
+            &.instagram span{
+                color: #C53189;
+            }
+        }
+    }
+
+    #content {
+        background: url("/images/content.png") 73% / auto auto no-repeat;
+        background-color: #103b00;
+    }
+
+    #how_to {
+        background: url("/images/howto.png") 25% / auto auto no-repeat;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #sponsorship {
+        .presentation {
+            padding: 0 !important;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+                background-color: rgba(0,0,0,.7);
+                min-height: 100vh;
+            }
+
+            #content {
+                background-color: #003475;
+            }
+        }
+
+        #not_commerce .links {
+            margin-left: 30px;
+        }
     }
 }

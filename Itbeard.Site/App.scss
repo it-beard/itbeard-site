@@ -419,6 +419,43 @@ app > section + section {
   color: var(--color-highlight);
 }
 
+#footer .social > a.youtube:hover {
+  border-color: #f00;
+  box-shadow: 0 0 5px 3px #f00;
+  text-shadow: none;
+  color: #f00;
+}
+
+#footer .social > a.soundcloud:hover {
+  border-color: #ff8714;
+  box-shadow: 0 0 5px 3px #ff8714;
+  text-shadow: none;
+  color: #ff8714;
+}
+
+#footer .social > a.discord:hover {
+  border-color: #6D8CF6;
+  box-shadow: 0 0 5px 3px #6D8CF6;
+  text-shadow: none;
+  color: #6D8CF6;
+}
+
+#footer .social > a.telegram:hover {
+  border-color: #2A9DD6;
+  box-shadow: 0 0 5px 3px #2A9DD6;
+  text-shadow: none;
+  color: #2A9DD6;
+}
+
+#footer .social > a.instagram:hover {
+  border-color: #C53189;
+  box-shadow: 0 0 5px 3px #C53189;
+  text-shadow: none;
+  color: #C53189;
+}
+
+
+
 #footer .fab {
   font-size: 25px;
 }

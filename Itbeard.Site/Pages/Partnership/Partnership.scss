@@ -1,4 +1,8 @@
 #partnership {
+    .presentation {
+        min-height: 100vh;
+    }
+    
     padding: 0;
 
     &>* {
@@ -68,21 +72,13 @@
         }
     }
 
-    #second_slide {
+    #not_commerce {
+        background: url("/images/youtube.png") 73% / auto auto no-repeat;
         background-color: #003475;
-        min-height: 100vh;
-
-        &>section {
-            min-height: 100vh;
-        }
     }
 
-    #third_slide {
-        min-height: 100vh;
-
-        &>section {
-            min-height: 100vh;
-        }
+    #commerce {
+        background: url("/images/partnership.png") 25% / auto auto no-repeat;
         
         ul li {
             margin-bottom: 10px;
@@ -105,10 +101,12 @@
 
             .content {
                 width: 100%;
+                
+                min-height: 100vh;
             }
         }
 
-        #second_slide .links {
+        #not_commerce .links {
             margin-left: 30px;
         }
     }

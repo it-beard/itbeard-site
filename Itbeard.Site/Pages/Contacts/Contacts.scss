@@ -12,6 +12,8 @@
     }
     
     #first_slide {
+        background: url("/images/main-recources.png") 25% / auto auto no-repeat;
+        
         .links {
             a {
                 font-style: italic;
@@ -45,11 +47,16 @@
             &.instagram span{
                 color: #C53189;
             }
+
+            &.merch span{
+                color: yellow;
+            }
         }
     }
     
     #second_slide {
-        background-color: #003475;
+        background: url("/images/email-post.png") 73% / auto auto no-repeat;
+        background-color: #620067;
         min-height: 100vh;
         
         &>section {
@@ -80,6 +87,7 @@
     }
     
     #third_slide {
+        background: url("/images/other-recources.png") 25% / auto auto no-repeat;
         min-height: 100vh;
 
         &>section {
@@ -134,6 +142,8 @@
             
             .content {
                 width: 100%;
+                background-color: rgba(0,0,0,.7);
+                min-height: 100vh;
             }
         }
 

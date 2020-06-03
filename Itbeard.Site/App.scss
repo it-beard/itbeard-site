@@ -3,6 +3,7 @@
 @import 'Pages/Partnership/Partnership';
 @import 'Pages/Sponsorship/Sponsorship';
 @import 'Pages/Hackathons/2020-05-09/Styles';
+@import 'Pages/Hackathons/Hackathons';
 
 @media screen and (min-width: 1200px) {
   :root {
@@ -593,6 +594,11 @@ app > section + section {
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .presentation > .content > h1,
+  #other > h1 {
+    font-size: 25px;
   }
 
   #footer {

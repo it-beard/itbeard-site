@@ -1,4 +1,6 @@
-﻿<NavLink class="logo" href="">
+﻿@inject NavigationManager NavigationManager
+
+<NavLink class="logo" href="">
     <img src="/images/logo.jpg" alt="">
     АйТиБорода
 </NavLink>
@@ -8,9 +10,9 @@
 </button>
 
 <nav id="menu" class="@NavMenuCssClass">
-    <NavLink class="logo" href="/partnership" Match="NavLinkMatch.All">Сотрудничество</NavLink>
-    <NavLink class="logo" href="/sponsorship" Match="NavLinkMatch.All">Спонсорство</NavLink>
-    <NavLink class="logo" href="/contacts" Match="NavLinkMatch.All">Контакты</NavLink>
+    <a class="logo" href="/partnership" @onclick='() => NavigateToRoute("/partnership")'>Сотрудничество</a>
+    <a class="logo" href="/sponsorship" @onclick='() => NavigateToRoute("/sponsorship")'>Спонсорство</a>
+    <a class="logo" href="/contacts" @onclick='() => NavigateToRoute("/contacts")'>Контакты</a>
 </nav>
 
 @code {
@@ -22,5 +24,11 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+    
+    private void NavigateToRoute(string route)
+    {
+        collapseNavMenu = true;
+        NavigationManager.NavigateTo(route);
     }
 }

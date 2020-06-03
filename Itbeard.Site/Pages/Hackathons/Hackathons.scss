@@ -1,4 +1,4 @@
-#hackathons_pbh {
+#hackathons {
     padding: 0;
 
     &>* {
@@ -14,7 +14,6 @@
 
     .presentation {
         min-height: 100vh;
-        background: url("/images/fire.png") 25% / auto auto no-repeat;
         
         .content {
             div {

@@ -48,8 +48,8 @@
                 color: #C53189;
             }
 
-            &.merch span{
-                color: yellow;
+            &.twitter span{
+                color: #1DA1F2;
             }
         }
     }
@@ -112,16 +112,32 @@
                 color: #FF0000;
             }
 
-            &.twitter span{
-                color: #1DA1F2;
-            }
-
             &.telegram span{
                 color: #2A9DD6;
             }
 
             &.yandex span{
                 color: #ff8714;
+            }
+
+            &.merch span{
+                color: yellow;
+            }
+
+            &.apple span{
+                color: #FA6755;
+            }
+
+            &.vk span{
+                color: #5181B8;
+            }
+
+            &.facebook span{
+                color: #4867AA;
+            }
+
+            &.linkedin span{
+                color: #0A66C2;
             }
         }
     }

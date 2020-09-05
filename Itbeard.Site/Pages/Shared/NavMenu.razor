@@ -10,9 +10,10 @@
 </button>
 
 <nav id="menu" class="@NavMenuCssClass">
-    <a class="logo" href="/partnership" @onclick='() => NavigateToRoute("/partnership")'>Сотрудничество</a>
-    <a class="logo" href="/sponsorship" @onclick='() => NavigateToRoute("/sponsorship")'>Спонсорство</a>
-    <a class="logo" href="/contacts" @onclick='() => NavigateToRoute("/contacts")'>Контакты</a>
+    <NavLink class="nav-link" href="partnership" @onclick='() => CloseMenu()'>Сотрудничество</NavLink>
+    <NavLink class="nav-link" href="sponsorship" @onclick='() => CloseMenu()'>Спонсорство</NavLink>
+    <NavLink class="nav-link" href="hackathons" Match="NavLinkMatch.Prefix" @onclick='() => CloseMenu()'>Хакатоны</NavLink>
+    <NavLink class="nav-link" href="contacts" @onclick='() => CloseMenu()'>Контакты</NavLink>
 </nav>
 
 @code {
@@ -26,9 +27,8 @@
         collapseNavMenu = !collapseNavMenu;
     }
     
-    private void NavigateToRoute(string route)
+    private void CloseMenu()
     {
         collapseNavMenu = true;
-        NavigationManager.NavigateTo(route);
     }
 }

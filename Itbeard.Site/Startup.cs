@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Toolbelt.Blazor.Extensions.DependencyInjection;
 
 namespace Itbeard.Site
 {
@@ -20,6 +21,7 @@ namespace Itbeard.Site
                     .AddScssBundle("/css/site.css", "App.scss")
                     .UseContentRoot();
             });
+            services.AddHeadElementHelper();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

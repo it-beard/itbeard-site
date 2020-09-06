@@ -1,0 +1,34 @@
+﻿@inject NavigationManager NavigationManager
+
+<NavLink class="logo" href="">
+    <img src="/images/logo.jpg" alt="">
+    АйТиБорода
+</NavLink>
+
+<button id="menu-toggle" class="menu-toggle @NavMenuButtonCssClass" @onclick="ToggleNavMenu">
+    <span></span><span></span><span></span>
+</button>
+
+<nav id="menu" class="@NavMenuCssClass">
+    <NavLink class="nav-link" href="partnership" @onclick='() => CloseMenu()'>Сотрудничество</NavLink>
+    <NavLink class="nav-link" href="sponsorship" @onclick='() => CloseMenu()'>Спонсорство</NavLink>
+    <NavLink class="nav-link" href="hackathons" Match="NavLinkMatch.Prefix" @onclick='() => CloseMenu()'>Хакатоны</NavLink>
+    <NavLink class="nav-link" href="contacts" @onclick='() => CloseMenu()'>Контакты</NavLink>
+</nav>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string NavMenuButtonCssClass => collapseNavMenu ? null: "active";
+    private string NavMenuCssClass => collapseNavMenu ? null: "opened";
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+    
+    private void CloseMenu()
+    {
+        collapseNavMenu = true;
+    }
+}

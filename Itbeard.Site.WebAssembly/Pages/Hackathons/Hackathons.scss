@@ -1,0 +1,63 @@
+#hackathons {
+    padding: 0;
+
+    &>* {
+        padding: 0px var(--container-padding);
+    }
+
+    section.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .presentation {
+        min-height: 100vh;
+        
+        .content {
+            div {
+                margin-bottom: 40px;
+                
+                span {
+                    font-weight: bold;
+                    color: #00bfff;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: #00bfff;
+                    transition: 0.3s;
+                    font-weight: bold;
+                    color: #ff7300;
+                }
+    
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #hackathones_pbh {
+        .presentation {
+            padding: 0 !important;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+
+                min-height: 100vh;
+            }
+        }
+    }
+}

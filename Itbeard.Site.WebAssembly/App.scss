@@ -222,7 +222,6 @@ app > section + section {
 #header > nav {
   display: flex;
   justify-content: space-between;
-  width: 500px;
   margin-left: 50px;
 }
 
@@ -469,6 +468,39 @@ app > section + section {
 
 
 @media screen and (max-width: 991px) {
+  #header > .menu-toggle {
+    position: relative;
+    visibility: inherit;
+  }
+
+  #header > nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    z-index: 0;
+    background-color: var(--color-background-darkest);
+    transform: translateY(-100%);
+    transition: .5s transform;
+  }
+
+  #header > nav.opened {
+    visibility: inherit;
+    transform: none;
+  }
+
+  #header > nav > a {
+    flex: auto;
+    margin: 0;
+    text-align: center;
+  }
+
+  #header > nav > a:hover {
+    box-shadow: none;
+  }
+
 
   .presentation > .content {
     width: auto;
@@ -505,39 +537,6 @@ app > section + section {
 
 
 @media screen and (max-width: 767px) {
-  #header > .menu-toggle {
-    position: relative;
-    visibility: inherit;
-  }
-
-  #header > nav {
-    position: absolute;
-    top: 70px;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
-    z-index: 0;
-    background-color: var(--color-background-darkest);
-    transform: translateY(-100%);
-    transition: .5s transform;
-  }
-
-  #header > nav.opened {
-    visibility: inherit;
-    transform: none;
-  }
-
-  #header > nav > a {
-    flex: auto;
-    margin: 0;
-    text-align: center;
-  }
-
-  #header > nav > a:hover {
-    box-shadow: none;
-  }
-
   .presentation.no-bg {
     padding: 0;
   }

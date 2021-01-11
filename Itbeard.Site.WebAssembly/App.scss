@@ -455,6 +455,20 @@ app > section + section {
   color: #C53189;
 }
 
+#footer .social > a.twitter:hover {
+  border-color: #2A9DD6;
+  box-shadow: 0 0 5px 3px #2A9DD6;
+  text-shadow: none;
+  color: #2A9DD6;
+}
+
+#footer .social > a.github:hover {
+  border-color: white;
+  box-shadow: 0 0 5px 3px white;
+  text-shadow: none;
+  color: white;
+}
+
 
 
 #footer .fab {

@@ -54,18 +54,6 @@
       <Content Include="Pages\Contacts\Contacts.scss">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
-      <Content Update="Pages\Hackathons\2020-05-09\Page.razor">
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      </Content>
-      <Content Include="Pages\Hackathons\2020-05-09\Styles.scss">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
-      <Content Update="Pages\Hackathons\Hackathons.razor">
-        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      </Content>
-      <Content Include="Pages\Hackathons\Hackathons.scss">
-        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      </Content>
       <Content Include="Pages\Landing\Landing.scss">
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       </Content>
@@ -87,6 +75,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <Folder Include="wwwroot\assets" />
       <Folder Include="wwwroot\css" />
     </ItemGroup>
 

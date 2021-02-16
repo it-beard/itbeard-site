@@ -53,9 +53,10 @@
           url("/fonts/press-start.ttf") format("opentype");
 }
 
-html, body {
+* {
   padding: 0;
   margin: 0;
+  border: 0;
 }
 
 html {

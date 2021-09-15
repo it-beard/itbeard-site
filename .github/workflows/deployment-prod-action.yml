@@ -5,10 +5,10 @@ on:
     branches: [ main ]
 
 jobs:
-  build-and-deploy-pds-web:
-    name: Deploy Pds.Web
+  build-and-deploy-site:
+    name: Deploy Site
     runs-on: ubuntu-latest
-    environment: pds_prod
+    environment: prod
 
     steps:
     - uses: actions/checkout@v2
@@ -19,51 +19,19 @@ jobs:
       
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: Pds/Pds.Web
+      working-directory: Site/Itbeard.Site.WebAssembly
       
-    - name: Build Pds.Web
+    - name: Build Site
       run: dotnet build --no-restore --configuration Release
-      working-directory: Pds/Pds.Web
+      working-directory: Site/Itbeard.Site.WebAssembly
       
-    - name: Publish Pds.Web
-      run: dotnet publish -c Release -o pds_web
-      working-directory: Pds/Pds.Web
+    - name: Publish Site
+      run: dotnet publish -c Release -o builded_site
+      working-directory: Site/Itbeard.Site.WebAssembly
       
     - name: 'Deploy Pds.Web to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
-        app-name: ${{ env.PDS_WEB_AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.PROD_PDS_WEB_AZURE_PUBLISH_PROFILE }}
-        package: Pds/Pds.Web/pds_web/ 
-
-  build-and-deploy-pds-api:
-    name: Deploy Pds.Api
-    runs-on: ubuntu-latest
-    environment: pds_prod
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v1
-      with:
-        dotnet-version: 5.0.x
-      
-    - name: Restore dependencies
-      run: dotnet restore
-      working-directory: Pds/Pds.Api
-      
-    - name: Build Pds.Api
-      run: dotnet build --no-restore --configuration Release
-      working-directory: Pds/Pds.Api
-      
-    - name: Publish Pds.Api
-      run: dotnet publish -c Release -o pds_api
-      working-directory: Pds/Pds.Api
-      
-    - name: 'Deploy Pds.Api to Azure WebApp'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ env.PDS_API_AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.PROD_PDS_API_AZURE_PUBLISH_PROFILE }}
-        package: Pds/Pds.Api/pds_api/         
-
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.AZURE_PUBLISH_PROFILE }}
+        package: Pds/Pds.Web/builded_site/ 

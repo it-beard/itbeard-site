@@ -1,0 +1,83 @@
+<Project Sdk="Microsoft.NET.Sdk.BlazorWebAssembly">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <PublishIISAssets>true</PublishIISAssets>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="5.0.7" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="5.0.7" PrivateAssets="all" />
+        <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+        <PackageReference Include="Toolbelt.Blazor.HeadElement" Version="5.4.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Pages\Counter.razor" />
+      <_ContentIncludedByDefault Remove="Pages\FetchData.razor" />
+      <_ContentIncludedByDefault Remove="Pages\Index.razor" />
+      <_ContentIncludedByDefault Remove="Shared\MainLayout.razor" />
+      <_ContentIncludedByDefault Remove="Shared\NavMenu.razor" />
+      <_ContentIncludedByDefault Remove="Shared\SurveyPrompt.razor" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\app.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\FONT-LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.eot" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.otf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.ttf" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\font\fonts\open-iconic.woff" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\ICON-LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\open-iconic\README.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\favicon.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\index.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\sample-data\weather.json" />
+    </ItemGroup>
+
+    <Target Name="CompileStaticAssets" AfterTargets="AfterBuild">
+        <Exec Command="webcompiler App.scss -o wwwroot/css -z disable -p disable" StandardOutputImportance="high" />
+    </Target>
+
+    <ItemGroup>
+      <Content Update="Pages\Contacts\Contacts.razor">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="App.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Pages\Contacts\Contacts.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Pages\Landing\Landing.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Pages\Partnership\Partnership.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Include="Pages\Sponsorship\Sponsorship.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Update="Pages\Thanks.razor">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Update="Pages\Stickers\Stickers.razor">
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+      <Content Include="Pages\Stickers\Stickers.scss">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <Content Update="web.config">
+        <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\assets" />
+      <Folder Include="wwwroot\css" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,73 @@
+#partnership {
+    .presentation {
+        min-height: 100vh;
+    }
+    
+    padding: 0;
+
+    &>* {
+        padding: 0px var(--container-padding);
+    }
+
+    section.content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    b {
+        color: #00bfff;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    
+    .email {
+        color: #ff8714;
+        font-weight: bold;
+    }
+
+    #not_commerce {
+        background: url("/images/youtube.png") 73% / auto auto no-repeat;
+    }
+
+    #commerce {
+        background: url("/images/partnership.png") 25% / auto auto no-repeat;
+        background-color: #4c5eac;
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #partnership {
+        .presentation {
+            padding: 0 !important;
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+
+            .content {
+                width: 100%;
+                
+                min-height: 100vh;
+            }
+        }
+
+        #not_commerce .links {
+            margin-left: 30px;
+        }
+    }
+}

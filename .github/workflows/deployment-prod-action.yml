@@ -22,7 +22,7 @@ jobs:
       working-directory: Site/Itbeard.Site.WebAssembly
       
     - name: Build Site
-      run: dotnet build --no-restore --configuration Release
+      run: dotnet build --configuration Release
       working-directory: Site/Itbeard.Site.WebAssembly
       
     - name: Publish Site

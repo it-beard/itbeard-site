@@ -21,8 +21,11 @@ jobs:
       run: dotnet restore
       working-directory: Site/Itbeard.Site.WebAssembly
       
+    - name: Install WebCompiler
+      run: dotnet tool install Excubo.WebCompiler --global
+      
     - name: Build Site
-      run: dotnet build --configuration Release
+      run: dotnet build --no-restore --configuration Release
       working-directory: Site/Itbeard.Site.WebAssembly
       
     - name: Publish Site

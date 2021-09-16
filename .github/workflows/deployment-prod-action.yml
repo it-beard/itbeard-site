@@ -1,4 +1,4 @@
-name: Deploy apps to Production
+name: Deploy app to Production
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
       run: dotnet publish -c Release -o builded_site
       working-directory: Site/Itbeard.Site.WebAssembly
       
-    - name: 'Deploy Pds.Web to Azure WebApp'
+    - name: 'Deploy Site to Azure WebApp'
       uses: azure/webapps-deploy@v2
       with:
         app-name: ${{ env.AZURE_WEBAPP_NAME }}

@@ -6,35 +6,41 @@
         padding: 0px var(--container-padding);
     }
 
-#landing .parting-words{
+.parting-words{
         color: deepskyblue;
     }
 
-#landing #about {
+#about {
         background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
     }
 
-#landing #interview {
+#interview {
         --theme: #f2fa41;
         background: url("/images/interviews.jpg") top / cover;
     }
-
-#landing #know {
+#know {
         --theme: #0494d3;
         background: url("/images/knowhow.jpg") top / cover;
     }
 
-#landing #streams {
+#streams {
         --theme: #e91b1b;
         background: url("/images/streams.jpg") top / cover;
     }
 
+#other > h1{
+    margin-top: 25px;
+}
+.discord iframe {
+    max-width: 100%;
+}
+
 @media screen and (max-width: 767px) {
-    #landing #about {
+    #about {
             padding: 0 !important;
         }
 
-    #landing .presentation:before {
+    .presentation:before {
             content: "";
             position: absolute;
             top: 0;
@@ -43,19 +49,15 @@
             height: 100%;
         }
 
-    #landing #interview {
+    #interview {
             background-position: 15% 0;
         }
 
-    #landing #know {
+    #know {
             background-position: 55% 0;
         }
 
-    #landing #streams {
+    #streams {
             background-position: 75% 0;
-        }
-
-    #landing #other > h1{
-            margin-top: 25px;
         }
 }

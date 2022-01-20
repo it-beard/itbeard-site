@@ -33,16 +33,12 @@ a:hover {
     font-weight: bold;
 }
 
-#not_commerce {
+#commerce {
     background: url("/images/youtube.png") 73% / auto auto no-repeat;
 }
 
-#commerce {
-    background: #4c5eac url("/images/partnership.png") no-repeat 25% 25%;
-}
-
-#commerce ul li {
-    margin-bottom: 10px;
+#not_commerce {
+    background: #4c5eac url("/images/partnership.png") 23% / auto auto no-repeat;
 }
 
 @media screen and (max-width: 767px) {

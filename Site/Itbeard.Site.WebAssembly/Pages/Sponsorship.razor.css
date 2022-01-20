@@ -1,101 +1,98 @@
 #sponsorship {
-    .presentation {
+    padding: 0;
+}
+#sponsorship .presentation {
         min-height: 100vh;
     }
-    
-    ul li {
+
+#sponsorship ul li {
         margin-bottom: 10px;
     }
-    
-    .orange:hover {
+
+#sponsorship .orange:hover {
         color: orange;
     }
 
-    padding: 0;
-
-    &>* {
+#sponsorship>* {
         padding: 0px var(--container-padding);
     }
 
-    section.content {
+#sponsorship section.content {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
 
-    b {
+#sponsorship b {
         color: #00bfff;
     }
 
-    a {
+#sponsorship a {
         text-decoration: none;
     }
 
-    a:hover {
+#sponsorship a:hover {
         text-decoration: underline;
     }
 
-    .email {
+#sponsorship .email {
         color: #ff8714;
         font-weight: bold;
     }
 
-    #info {
+#sponsorship #info {
         --theme: #f2fa41;
         background: url("/images/sponsorship.png") 25% / auto auto no-repeat;
+}
 
-        .links {
-            a {
+#sponsorship #info .links a {
                 font-style: italic;
                 text-decoration: none;
             }
 
-            a:hover {
+#sponsorship #info a:hover {
                 text-decoration: underline;
             }
 
-            span {
+#sponsorship #info span {
                 font-weight: bold;
             }
 
-            &.youtube span {
+#sponsorship #info.youtube span {
                 color: #FF0000;
             }
 
-            &.soundcloud span{
+#sponsorship #info.soundcloud span{
                 color: #ff8714;
             }
 
-            &.discord span{
+#sponsorship #info.discord span{
                 color: #6D8CF6;
             }
 
-            &.telegram span{
+#sponsorship #info.telegram span{
                 color: #2A9DD6;
             }
 
-            &.instagram span{
+#sponsorship #info.instagram span{
                 color: #C53189;
             }
-        }
-    }
 
-    #content {
-        background: url("/images/content.png") 73% / auto auto no-repeat;
-        background-color: #103b00;
-    }
-
-    #how_to {
-        background: url("/images/howto.png") 25% / auto auto no-repeat;
-    }
+#sponsorship #content {
+    background: #103b00 url("/images/content.png") no-repeat 73% 73%;
 }
 
-@media screen and (max-width: 767px) {
-    #sponsorship {
-        .presentation {
-            padding: 0 !important;
+#sponsorship #how_to {
+        background: url("/images/howto.png") 25% / auto auto no-repeat;
+    }
 
-            &:before {
+@media screen and (max-width: 767px) {
+
+    #sponsorship .presentation {
+            padding: 0 !important;
+    }
+
+    #sponsorship:before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -103,19 +100,17 @@
                 height: 100%;
             }
 
-            .content {
+    #sponsorship .content {
                 width: 100%;
                 background-color: rgba(0,0,0,.7);
                 min-height: 100vh;
             }
 
-            #content {
+    #sponsorship #content {
                 background-color: #003475;
             }
-        }
 
         #not_commerce .links {
             margin-left: 30px;
         }
-    }
 }

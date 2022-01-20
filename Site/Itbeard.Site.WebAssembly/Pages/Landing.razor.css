@@ -1,42 +1,40 @@
 #landing {
     padding: 0;
-    
-    &>* {
+}
+
+#landing>* {
         padding: 0px var(--container-padding);
     }
-    
-    .parting-words{
+
+#landing .parting-words{
         color: deepskyblue;
     }
 
-    #about {
+#landing #about {
         background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
     }
 
-    #interview {
+#landing #interview {
         --theme: #f2fa41;
         background: url("/images/interviews.jpg") top / cover;
     }
 
-    #know {
+#landing #know {
         --theme: #0494d3;
         background: url("/images/knowhow.jpg") top / cover;
     }
 
-    #streams {
+#landing #streams {
         --theme: #e91b1b;
         background: url("/images/streams.jpg") top / cover;
     }
 
-}
-
 @media screen and (max-width: 767px) {
-    #landing {
-        #about {
+    #landing #about {
             padding: 0 !important;
         }
 
-        .presentation:before {
+    #landing .presentation:before {
             content: "";
             position: absolute;
             top: 0;
@@ -45,20 +43,19 @@
             height: 100%;
         }
 
-        #interview {
+    #landing #interview {
             background-position: 15% 0;
         }
 
-        #know {
+    #landing #know {
             background-position: 55% 0;
         }
 
-        #streams {
+    #landing #streams {
             background-position: 75% 0;
         }
 
-        #other > h1{
+    #landing #other > h1{
             margin-top: 25px;
         }
-    }
 }

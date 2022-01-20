@@ -1,0 +1,69 @@
+#partnership {
+    padding: 0;
+}
+.presentation {
+    min-height: 100vh;
+}
+
+
+* {
+    padding: 0px var(--container-padding);
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+b {
+    color: #00bfff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.email {
+    color: #ff8714;
+    font-weight: bold;
+}
+
+#not_commerce {
+    background: url("/images/youtube.png") 73% / auto auto no-repeat;
+}
+
+#commerce {
+    background: #4c5eac url("/images/partnership.png") no-repeat 25% 25%;
+}
+
+#commerce ul li {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .presentation {
+        padding: 0 !important;
+    }
+
+    .presentation:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    .presentation .content {
+        width: 100%;
+        min-height: 100vh;
+    }
+
+    #not_commerce .links {
+        margin-left: 30px;
+    }
+}

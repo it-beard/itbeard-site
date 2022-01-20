@@ -1,0 +1,171 @@
+#contacts {
+    padding: 0;
+}
+
+* {
+    padding: 0px var(--container-padding);
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+    
+#first_slide {
+    background: url("/images/main-recources.png") 25% / auto auto no-repeat;
+}
+
+#first_slide .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#first_slide .links a:hover {
+    text-decoration: underline;
+}
+
+#first_slide .links span {
+    font-weight: bold;
+}
+
+#first_slide .links.youtube span {
+    color: #FF0000;
+}
+
+#first_slide .links.mave span{
+    color: #5F80F5;
+}
+
+#first_slide .links.discord span{
+    color: #6D8CF6;
+}
+
+#first_slide .links.telegram span{
+    color: #2A9DD6;
+}
+
+#first_slide .links.instagram span{
+    color: #C53189;
+}
+
+#first_slide .links .twitter span{
+    color: #1DA1F2;
+}
+    
+#second_slide {
+    background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
+    min-height: 100vh;
+}
+
+#second_slide>section {
+    min-height: 100vh;
+}
+
+#second_slide .links {
+            margin-bottom: 30px;
+}
+
+#second_slide .links a {
+    text-decoration: none;
+}
+
+#second_slide .links a:hover {
+    text-decoration: underline;
+}
+
+#second_slide .links>div {
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#second_slide .links span {
+    font-style: italic;
+}
+    
+#third_slide {
+    background: url("/images/other-recources.png") 25% / auto auto no-repeat;
+    min-height: 100vh;
+}
+
+#third_slide>section {
+    min-height: 100vh;
+}
+
+#third_slide .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#third_slide .links a:hover {
+    text-decoration: underline;
+}
+
+#third_slide .links span {
+    font-weight: bold;
+}
+
+#third_slide .links.youtube span {
+    color: #FF0000;
+}
+
+#third_slide .links.telegram span{
+    color: #2A9DD6;
+}
+
+#third_slide .links.yandex span{
+    color: #ff8714;
+}
+
+#third_slide .links.merch span{
+    color: yellow;
+}
+
+#third_slide .links.comm-z-guests span{
+    color: #FA6755;
+}
+
+#third_slide .links.vk span{
+    color: #5181B8;
+}
+
+#third_slide .links.facebook span{
+    color: #4867AA;
+}
+
+#third_slide .links.linkedin span{
+    color: #0A66C2;
+}
+
+#third_slide .links.google span{
+    color: #4282EF;
+}
+
+#third_slide .links.com-z-staff span{
+    color: #1ED760;
+}
+
+@media screen and (max-width: 767px) {
+    #contacts .presentation {
+        padding: 0 !important;
+    }
+
+    #contacts .presentation:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+#contacts .presentation .content {
+        width: 100%;
+        background-color: rgba(0,0,0,.7);
+        min-height: 100vh;
+    }
+
+    #contacts #second_slide .links{
+        margin-left: 30px;
+    }
+}

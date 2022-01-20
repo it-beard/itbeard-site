@@ -1,7 +1,7 @@
-#stickers {
-  .info{
+ .info{
     padding-bottom: 30px;
   }
+  
   img {
     display: block;
     margin: 0px auto 30px auto; 
@@ -11,9 +11,9 @@
   
   ul {
     margin-left: 50px;
-    
-    li {
+  }
+
+
+ ul li {
       margin-bottom: 15px;
     }
-  }
-}

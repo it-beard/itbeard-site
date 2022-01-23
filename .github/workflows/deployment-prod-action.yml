@@ -19,15 +19,15 @@ jobs:
       
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: Site/Itbeard.Site.WebAssembly
+      working-directory: Site/Itbeard.Site.Server
       
     - name: Build Site
       run: dotnet build --no-restore --configuration Release
-      working-directory: Site/Itbeard.Site.WebAssembly
+      working-directory: Site/Itbeard.Site.Server
       
     - name: Publish Site
       run: dotnet publish -c Release -o builded_site
-      working-directory: Site/Itbeard.Site.WebAssembly
+      working-directory: Site/Itbeard.Site.Server
       
     - name: 'Deploy Site to Azure WebApp'
       uses: azure/webapps-deploy@v2

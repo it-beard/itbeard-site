@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29519.161
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Site.WebAssembly", "Itbeard.Site.WebAssembly\Itbeard.Site.WebAssembly.csproj", "{0F3AC451-7A14-401A-AD6C-79C12DFF9C25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Itbeard.Site.Server", "Itbeard.Site.Server\Itbeard.Site.Server.csproj", "{980C1AD5-460A-49D9-A4E7-36B1A3D8433B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{0F3AC451-7A14-401A-AD6C-79C12DFF9C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F3AC451-7A14-401A-AD6C-79C12DFF9C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F3AC451-7A14-401A-AD6C-79C12DFF9C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{980C1AD5-460A-49D9-A4E7-36B1A3D8433B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{980C1AD5-460A-49D9-A4E7-36B1A3D8433B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{980C1AD5-460A-49D9-A4E7-36B1A3D8433B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{980C1AD5-460A-49D9-A4E7-36B1A3D8433B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

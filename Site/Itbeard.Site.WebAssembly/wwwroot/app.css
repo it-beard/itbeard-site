@@ -34,7 +34,7 @@
   --color-background-darker: #2d2d2d;
   --color-background-dark: #292929;
   --color-background-darkest: #252525;
-  --color-logo: #085dec;
+  --color-logo: #F7CE00;
   --color-highlight: #0fa7fa;
   --color-selection: #57bdf5;
   --height-header: 70px;
@@ -159,7 +159,7 @@ app > section + section {
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--color-logo);
   font: 20px "Press Start";
-  color: white;
+  color: #0058B5;
   transition: .1s text-shadow;
 }
 

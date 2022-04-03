@@ -83,8 +83,12 @@
 }
 
 #sponsorship #how_to {
-        background: url("/images/howto.png") 25% / auto auto no-repeat;
-    }
+    background: url("/images/howto.png") 25% / auto auto no-repeat;
+}
+
+#sponsorship #crypto {
+    background: #4c5eac url("/images/crypto.png") no-repeat 80% 45%;
+}
 
 @media screen and (max-width: 767px) {
 

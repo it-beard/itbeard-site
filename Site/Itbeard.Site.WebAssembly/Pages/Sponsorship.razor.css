@@ -1,120 +1,132 @@
-#sponsorship {
-    padding: 0;
-}
-#sponsorship .presentation {
-        min-height: 100vh;
-    }
-
-#sponsorship ul li {
-        margin-bottom: 10px;
-    }
-
-#sponsorship .orange:hover {
-        color: orange;
-    }
-
-#sponsorship>* {
-        padding: 0px var(--container-padding);
-    }
-
-#sponsorship section.content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-#sponsorship b {
-        color: #00bfff;
-    }
-
-#sponsorship a {
-        text-decoration: none;
-    }
-
-#sponsorship a:hover {
-        text-decoration: underline;
-    }
-
-#sponsorship .email {
-        color: #ff8714;
-        font-weight: bold;
-    }
-
-#sponsorship #info {
-        --theme: #f2fa41;
-        background: url("/images/sponsorship.png") 25% / auto auto no-repeat;
+main {
+    padding: 0 !important;
 }
 
-#sponsorship #info .links a {
-                font-style: italic;
-                text-decoration: none;
-            }
-
-#sponsorship #info a:hover {
-                text-decoration: underline;
-            }
-
-#sponsorship #info span {
-                font-weight: bold;
-            }
-
-#sponsorship #info.youtube span {
-                color: #FF0000;
-            }
-
-#sponsorship #info.soundcloud span{
-                color: #ff8714;
-            }
-
-#sponsorship #info.discord span{
-                color: #6D8CF6;
-            }
-
-#sponsorship #info.telegram span{
-                color: #2A9DD6;
-            }
-
-#sponsorship #info.instagram span{
-                color: #C53189;
-            }
-
-#sponsorship #content {
-    background: #103b00 url("/images/content.png") no-repeat 73% 73%;
+.presentation {
+    min-height: 100vh;
 }
 
-#sponsorship #how_to {
-    background: url("/images/howto.png") 25% / auto auto no-repeat;
+ul li {
+    margin-bottom: 10px;
 }
 
-#sponsorship #crypto {
-    background: #4c5eac url("/images/crypto.png") no-repeat 80% 45%;
+.orange:hover {
+    color: orange;
+}
+
+main>* {
+    padding: 0px var(--container-padding);
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+b {
+    color: #00bfff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.email {
+    color: #ff8714;
+    font-weight: bold;
+}
+
+#info .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#info a:hover {
+    text-decoration: underline;
+}
+
+#info span {
+    font-weight: bold;
+}
+
+#info.youtube span {
+    color: #FF0000;
+}
+
+#info.soundcloud span{
+    color: #ff8714;
+}
+
+#info.discord span{
+    color: #6D8CF6;
+}
+
+#info.telegram span{
+    color: #2A9DD6;
+}
+
+#info.instagram span{
+    color: #C53189;
+}
+
+#crypto {
+    background: #00134d82 url("/images/crypto.png") no-repeat 80% 45%
+}
+
+#info {
+    background: url("/images/sponsorship.png") 25% / auto auto no-repeat;
+}
+
+#how_to {
+    background: #00134d82 url("/images/howto.png") no-repeat 70% 43%;
+}
+
+#apple {
+    background: url("/images/apple.png") no-repeat 65% 50%
 }
 
 @media screen and (max-width: 767px) {
 
-    #sponsorship .presentation {
-            padding: 0 !important;
+    .presentation {
+        padding: 0 !important;
     }
 
-    #sponsorship:before {
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-            }
+    main:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
 
-    #sponsorship .content {
-                width: 100%;
-                background-color: rgba(0,0,0,.7);
-                min-height: 100vh;
-            }
+    .presentation.no-bg > .content {
+        width: 100%;
+        background-color: rgba(0,0,0,0.7);
+        min-height: 100vh;
+    }
 
-    #sponsorship #content {
-                background-color: #003475;
-            }
+    #not_commerce .links {
+        margin-left: 30px;
+    }
 
-        #not_commerce .links {
-            margin-left: 30px;
-        }
+    #crypto {
+        background-size: 100%;
+    }
+
+    #info {
+        background-size: 100%;
+    }
+
+    #how_to {
+        background-size: 100%;
+    }
+
+    #apple {
+        background-position: 50%;
+    }
 }

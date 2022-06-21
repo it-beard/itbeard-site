@@ -74,6 +74,23 @@ a:hover {
     color: #C53189;
 }
 
+#video iframe {
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    max-height: 500px;
+    height: 60vw;
+}
+
+#video .content {
+    width: 100%;
+}
+
+#video {
+    background: none;
+}
+
 #crypto {
     background: #00134d82 url("/images/crypto.png") no-repeat 80% 45%
 }
@@ -115,7 +132,12 @@ a:hover {
     }
 
     #crypto {
+        background-color: #698eff82;
         background-size: 100%;
+    }
+    
+    #crypto ul {
+        overflow-x: scroll;
     }
 
     #info {
@@ -123,6 +145,7 @@ a:hover {
     }
 
     #how_to {
+        background-color: #698eff82;
         background-size: 100%;
     }
 

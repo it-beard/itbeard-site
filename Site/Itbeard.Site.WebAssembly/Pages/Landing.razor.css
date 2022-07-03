@@ -35,6 +35,11 @@
     max-width: 100%;
 }
 
+.discord img {
+    width: 220px;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
     #about {
             padding: 0 !important;

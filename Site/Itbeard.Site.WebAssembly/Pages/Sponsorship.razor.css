@@ -30,6 +30,7 @@ b {
 
 a {
     text-decoration: none;
+    color: var(--color-highlight);
 }
 
 a:hover {
@@ -91,6 +92,10 @@ a:hover {
     background: none;
 }
 
+#patreon {
+    background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
+}
+
 #crypto {
     background: #00134d82 url("/images/crypto.png") no-repeat 80% 45%
 }
@@ -129,6 +134,12 @@ a:hover {
 
     #not_commerce .links {
         margin-left: 30px;
+    }
+    
+    #patreon {
+        background-size: 90%;
+        background-position-x: 50%;
+        background-position-y: 100%;
     }
 
     #crypto {

@@ -21,8 +21,25 @@ if (result != null)
 }
 else
 {
-    culture = new CultureInfo("ru");
-    await js.InvokeVoidAsync("blazorCulture.set", "ru");
+    switch (CultureInfo.CurrentCulture.Name)
+    {
+        case string s when s.StartsWith("be"):
+            culture = new CultureInfo("be");
+            await js.InvokeVoidAsync("blazorCulture.set", "be");
+            break;
+        case string s when s.StartsWith("en"):
+            culture = new CultureInfo("en");
+            await js.InvokeVoidAsync("blazorCulture.set", "en");
+            break;
+        case string s when s.StartsWith("ru"):
+            culture = new CultureInfo("ru");
+            await js.InvokeVoidAsync("blazorCulture.set", "ru");
+            break;
+        default:
+            culture = new CultureInfo("ru");
+            await js.InvokeVoidAsync("blazorCulture.set", "ru");
+            break;
+    }
 }
 
 CultureInfo.DefaultThreadCurrentCulture = culture;

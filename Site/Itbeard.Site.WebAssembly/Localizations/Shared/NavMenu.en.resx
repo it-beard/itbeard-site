@@ -26,4 +26,7 @@
     <data name="DarkDestiny" xml:space="preserve">
         <value>Dark Destiny</value>
     </data>
+    <data name="LogoClass" xml:space="preserve">
+        <value>logo</value>
+    </data>
 </root>

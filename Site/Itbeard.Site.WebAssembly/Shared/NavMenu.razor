@@ -1,7 +1,7 @@
 ﻿@using NavLoc = Localizations.Shared.NavMenu;
 @inject IStringLocalizer<Localizations.Shared.NavMenu> Loc
 
-<NavLink class="logo" href="">
+<NavLink class="@Loc[NavLoc.LogoClass]" href="">
     <img src="/images/logo.jpg" alt="">
     @Loc[NavLoc.ITBeard]
 </NavLink>

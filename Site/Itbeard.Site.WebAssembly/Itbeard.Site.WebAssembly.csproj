@@ -32,6 +32,15 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>NavMenu.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Index.en.resx">
+        <DependentUpon>Index.be.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\NavMenu.be.resx">
+        <DependentUpon>NavMenu.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\NavMenu.en.resx">
+        <DependentUpon>NavMenu.resx</DependentUpon>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>

@@ -74,5 +74,11 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
                 return ResourceManager.GetString("DarkDestiny", resourceCulture);
             }
         }
+        
+        internal static string LogoClass {
+            get {
+                return ResourceManager.GetString("LogoClass", resourceCulture);
+            }
+        }
     }
 }

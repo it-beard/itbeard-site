@@ -17,4 +17,13 @@
     <data name="AboutShow" xml:space="preserve">
         <value>About show</value>
     </data>
+    <data name="AboutShow_Paragraph_1" xml:space="preserve">
+        <value>Hi! My name is Lex and I am a bearded programmer :)&lt;br/&gt; For a long time I have accumulated a lot of experience, stories and acquaintances, which I share in my show.</value>
+    </data>
+    <data name="AboutShow_Paragraph_2" xml:space="preserve">
+        <value>The show "ITBeard" is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and their way of development. &lt;br/&gt;Without any censorship, labels or extra pathos.</value>
+    </data>
+    <data name="AboutShow_Paragraph_3" xml:space="preserve">
+        <value>All of ITBeard's content, together with you, forms a community of like-minded people who can turn this world upside down and change themselves for the better. &lt;b class="parting-words"&gt;So, GET THERE!&lt;/b&gt;</value>
+    </data>
 </root>

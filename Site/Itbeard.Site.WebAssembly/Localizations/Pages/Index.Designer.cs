@@ -56,5 +56,23 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("AboutShow", resourceCulture);
             }
         }
+        
+        internal static string AboutShow_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow_Paragraph_3 {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_3", resourceCulture);
+            }
+        }
     }
 }

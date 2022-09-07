@@ -17,4 +17,13 @@
     <data name="AboutShow" xml:space="preserve">
         <value>Аб шоў</value>
     </data>
+    <data name="AboutShow_Paragraph_1" xml:space="preserve">
+        <value>Ку! Мяне клічуць Лекс і я барадаты праграміст :)&lt;br/&gt; За доўгі час працы ў мяне назапасілася шмат досведу, гісторый і знаёмстваў, якімі я дзялюся ў сваім шоў.</value>
+    </data>
+    <data name="AboutShow_Paragraph_2" xml:space="preserve">
+        <value>Шоу «АйЦіБарада» прысвечана жыццю айцішнікаў знутры і сваімі эпізодамі распавядае пра мовы праграмавання, папулярныя тэхналогіі, прафесыі, вядомых прадстаўнікоў сферы і іх шляхі развіцця. &lt;br/&gt; Без усялякай цэнзуры, цэтлікаў і лішняга пафасу.</value>
+    </data>
+    <data name="AboutShow_Paragraph_3" xml:space="preserve">
+        <value>Увесь кантэнт «АйЦіБароды» разам з вамі фармуе супольнасць аднадумцаў, здольных перавярнуць гэты свет і змяніць сябе ў лепшы бок. &lt;b class="parting-words"&gt;Так што, ПАГНАЛІ!&lt;/b&gt;</value>
+    </data>
 </root>

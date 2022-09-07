@@ -5,17 +5,46 @@
         <Nullable>disable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <PublishIISAssets>true</PublishIISAssets>
+        <BlazorWebAssemblyLoadAllGlobalizationData>true</BlazorWebAssemblyLoadAllGlobalizationData>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.1" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.1" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.8" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.8" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.Extensions.Localization" Version="6.0.8" />
         <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
-        <PackageReference Include="Toolbelt.Blazor.HeadElement" Version="6.0.2" />
+        <PackageReference Include="Toolbelt.Blazor.HeadElement" Version="7.2.0" />
     </ItemGroup>
     
     <ItemGroup>
       <Folder Include="wwwroot\assets" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <EmbeddedResource Update="Localizations\Pages\Index.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Index.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Index.be.resx">
+        <DependentUpon>Index.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\NavMenu.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>NavMenu.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Compile Update="Localizations\Pages\Index.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Index.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Shared\NavMenu.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>NavMenu.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>

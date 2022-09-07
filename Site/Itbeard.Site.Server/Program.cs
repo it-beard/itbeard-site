@@ -6,6 +6,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 //Add services
 builder.Services.AddRazorPages();
+builder.Services
+    .AddControllersWithViews()
+    .AddViewLocalization();
 builder.Services.AddSingleton(sp =>
 {
     // Get the address that the app is currently running at

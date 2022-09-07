@@ -1,0 +1,32 @@
+@using  System.Globalization
+@inject IJSRuntime JS
+@inject NavigationManager Nav
+
+<p>
+    <label>
+        Select your language:
+        <select @bind="Culture">
+            <option value="@(new CultureInfo("ru"))">Русский</option>
+            <option value="@(new CultureInfo("be"))">Беларуская</option>
+            <option value="@(new CultureInfo("en"))">English</option>
+        </select>
+    </label>
+</p>
+
+@code
+{
+    private CultureInfo Culture
+    {
+        get => CultureInfo.CurrentCulture;
+        set
+        {
+            if (CultureInfo.CurrentCulture != value)
+            {
+                var js = (IJSInProcessRuntime)JS;
+                js.InvokeVoid("blazorCulture.set", value.Name);
+
+                Nav.NavigateTo(Nav.Uri, forceLoad: true);
+            }
+        }
+    }
+}

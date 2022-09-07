@@ -472,6 +472,12 @@ app > section + section {
   margin-top: 20px;
 }
 
+#footer .lang {
+  font-size: 10px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 
 @media screen and (max-width: 991px) {
   #header > .menu-toggle {

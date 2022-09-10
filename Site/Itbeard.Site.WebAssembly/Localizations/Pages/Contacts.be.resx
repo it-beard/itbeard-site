@@ -1,0 +1,74 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Title" xml:space="preserve">
+        <value>Кантакты / АйЦіБарада</value>
+    </data>
+    <data name="KeyResources" xml:space="preserve">
+        <value>Асноўныя рэсурсы</value>
+    </data>
+    <data name="KeyResources_YouTube" xml:space="preserve">
+        <value>YouTube</value>
+    </data>
+    <data name="KeyResources_Discord" xml:space="preserve">
+        <value>Discord</value>
+    </data>
+    <data name="KeyResources_Instagram" xml:space="preserve">
+        <value>Instagram</value>
+    </data>
+    <data name="KeyResources_Patreon" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="KeyResources_Podcasts" xml:space="preserve">
+        <value>Падкасты</value>
+    </data>
+    <data name="KeyResources_Telegram" xml:space="preserve">
+        <value>Telegram</value>
+    </data>
+    <data name="KeyResources_Twitter" xml:space="preserve">
+        <value>Twitter</value>
+    </data>
+    <data name="Cont_Title" xml:space="preserve">
+        <value>Кантакты для сувязі</value>
+    </data>
+    <data name="Cont_Email" xml:space="preserve">
+        <value>Электрапошта</value>
+    </data>
+    <data name="Cont_Telegram" xml:space="preserve">
+        <value>Тэлеграм</value>
+    </data>
+    <data name="Cont_Mail" xml:space="preserve">
+        <value>Паштовы адрас для паштовак і нішцякоў 😊</value>
+    </data>
+    <data name="Cont_Mail_body" xml:space="preserve">
+        <value>Часова без яго... Digital nomad :)</value>
+    </data>
+    <data name="Other" xml:space="preserve">
+        <value>Іншыя рэсурсы</value>
+    </data>
+    <data name="Other_YouTubeWall" xml:space="preserve">
+        <value>Сцяна YouTube</value>
+    </data>
+    <data name="Other_GitHub" xml:space="preserve">
+        <value>GitHub</value>
+    </data>
+    <data name="Other_TelegramStickers" xml:space="preserve">
+        <value>Стыкеры Telegram</value>
+    </data>
+    <data name="Other_LinkedinGroup" xml:space="preserve">
+        <value>Суполка ў Linkedin</value>
+    </data>
+    <data name="Other_FacebookGroup" xml:space="preserve">
+        <value>Суполка ў Facebook</value>
+    </data>
+</root>

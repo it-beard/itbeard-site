@@ -45,6 +45,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>SiteFooter.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Contacts.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Contacts.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>
@@ -62,6 +66,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>SiteFooter.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Contacts.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Contacts.resx</DependentUpon>
       </Compile>
     </ItemGroup>
     

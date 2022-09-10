@@ -475,7 +475,12 @@ app > section + section {
   color: white;
 }
 
-
+#footer .social > a.patreon:hover {
+  border-color: #6D8CF6;
+  box-shadow: 0 0 5px 3px #e45f00;
+  text-shadow: none;
+  color: #6D8CF6;
+}
 
 #footer .fab {
   font-size: 25px;

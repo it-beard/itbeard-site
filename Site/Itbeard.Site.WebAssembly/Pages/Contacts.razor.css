@@ -49,8 +49,12 @@ section.content {
     color: #C53189;
 }
 
-#first_slide .links .twitter span{
-    color: #1DA1F2;
+#first_slide .links.twitter span{
+    color: #1A8CD8;
+}
+
+#first_slide .links.patreon span{
+    color: #FF424D;
 }
     
 #second_slide {

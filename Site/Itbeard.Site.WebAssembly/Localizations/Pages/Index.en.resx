@@ -26,4 +26,70 @@
     <data name="AboutShow_Paragraph_3" xml:space="preserve">
         <value>All of ITBeard's content, together with you, forms a community of like-minded people who can turn this world upside down and change themselves for the better. &lt;b class="parting-words"&gt;So, GET THERE!&lt;/b&gt;</value>
     </data>
+    <data name="Interview" xml:space="preserve">
+        <value>Interview</value>
+    </data>
+    <data name="Interview_Paragraph_1" xml:space="preserve">
+        <value>The main format of the show is interviews. In them, specialists from different IT fields and companies share their experiences. From designers and programmers to CEOs and CTOs, from small startups to market giants. The heroes of the interviews are people with rich life and professional experience, ready to share them with the audience.</value>
+    </data>
+    <data name="Interview_Paragraph_1_Button" xml:space="preserve">
+        <value>See all episodes!</value>
+    </data>
+    <data name="Profession" xml:space="preserve">
+        <value>Professions</value>
+    </data>
+    <data name="Profession_Paragraph_1" xml:space="preserve">
+        <value>If you don't know where to go in IT, I'll tell you everything! That's what the "Professions" rubric is for, where we and our guests go over the intricacies of their craft. Each guest in this column is a professional in his or her field, who will guide you along the right path!</value>
+    </data>
+    <data name="Profession_Paragraph_1_Button" xml:space="preserve">
+        <value>Get a profession!</value>
+    </data>
+    <data name="Programming" xml:space="preserve">
+        <value>Programming</value>
+    </data>
+    <data name="Programming_Paragraph_1" xml:space="preserve">
+        <value>One of the main tasks of the show is to cover all existing programming languages. And we're pretty good at it, most of the languages are already represented on the channel! Listen to the description of your favorite languages and expand your skills 😉</value>
+    </data>
+    <data name="Programming_Paragraph_1_Button" xml:space="preserve">
+        <value>Learn a new language!</value>
+    </data>
+    <data name="ExtraGoodies" xml:space="preserve">
+        <value>Extra goodies</value>
+    </data>
+    <data name="ExtraGoodies_Twitter_Content" xml:space="preserve">
+        <value>On Twitter, Lex speaks uncensored about current affairs, invites new guests for interviews, and generally leads a very toxic lifestyle (WARNING)</value>
+    </data>
+    <data name="ExtraGoodies_Telegram_Content" xml:space="preserve">
+        <value>Telegram channel for notifications about new releases and for useful recommendations</value>
+    </data>
+    <data name="ExtraGoodies_Instagram_Content" xml:space="preserve">
+        <value>On Instagram you will find spoilers of new episodes, backstage from the shooting, useful storizas and a little more of Lex's life</value>
+    </data>
+    <data name="ExtraGoodies_Discord_Content" xml:space="preserve">
+        <value>The Discord server "ITBeard's Sponsor" is a quiet place for Lex's sponsors and patrons to communicate. You can also contact Lex directly here, discuss releases and projects, and suggest a guest, participate in the recording of the "Beard News". &lt;br/&gt;&lt;br/&gt;We look forward to seeing you on Discord!</value>
+    </data>
+    <data name="ExtraGoodies_Discord_Title" xml:space="preserve">
+        <value>Chat in Discord</value>
+    </data>
+    <data name="ExtraGoodies_Patreon_Title" xml:space="preserve">
+        <value>Become a Patron</value>
+    </data>
+    <data name="ExtraGoodies_Sponsorship_Title" xml:space="preserve">
+        <value>YouTube Sponsorship</value>
+    </data>
+    <data name="ExtraGoodies_Patreon_Content" xml:space="preserve">
+        <value>Supporting on Patreon is one way to support Lex. Patrons of the channel get access to a variety of bonus releases in idiosyncratic format and to the "IT Beard Sponsor" Discord server. &lt;br/&gt;&lt;br/&gt; Click to learn more!</value>
+    </data>
+    <data name="ExtraGoodies_Sponsorship_Content" xml:space="preserve">
+        <value>YouTube sponsors are the core audience of the channel. Sponsors have access to ITBeard's Discord server, early ad-free viewing of episodes, as well as additional content: extra content for episodes, streamers, etc.&lt;br/&gt;&lt;br/&gt; Click to know about all the bonuses for sponsors!</value>
+    </data>
+    <data name="ExtraGoodies_Instagram_Title" xml:space="preserve">
+        <value>Instagram</value>
+    </data>
+    <data name="ExtraGoodies_Twitter_Title" xml:space="preserve">
+        <value>Twitter</value>
+    </data>
+    <data name="ExtraGoodies_Telegram_Title" xml:space="preserve">
+        <value>Telegram</value>
+    </data>
 </root>

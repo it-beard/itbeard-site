@@ -41,6 +41,10 @@
       <EmbeddedResource Update="Localizations\Shared\NavMenu.en.resx">
         <DependentUpon>NavMenu.resx</DependentUpon>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\SiteFooter.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SiteFooter.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>
@@ -54,6 +58,17 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>NavMenu.resx</DependentUpon>
       </Compile>
+      <Compile Update="Localizations\Shared\SiteFooter.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SiteFooter.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+    
+    <ItemGroup>
+      <Content Update="Shared\CultureSelector.razor">
+        <DependentUpon>SiteFooter.razor</DependentUpon>
+      </Content>
     </ItemGroup>
 
 </Project>

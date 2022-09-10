@@ -1,0 +1,20 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Thanks" xml:space="preserve">
+        <value>&lt;a href="/thanks"&gt;Thank you to everyone&lt;/a&gt; who has put a piece of themselves into this site 😊 </value>
+    </data>
+    <data name="SelectSiteLanguage" xml:space="preserve">
+        <value>Select the site language:</value>
+    </data>
+</root>

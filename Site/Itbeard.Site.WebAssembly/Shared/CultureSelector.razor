@@ -1,10 +1,12 @@
 @using  System.Globalization
 @inject IJSRuntime JS
 @inject NavigationManager Nav
+@using IndexLoc = Localizations.Shared.SiteFooter;
+@inject IStringLocalizer<IndexLoc> Loc
 
 <p>
     <label>
-        Select your language:
+        @((MarkupString)Loc[IndexLoc.SelectSiteLanguage].Value)
         <select @bind="Culture">
             <option value="@(new CultureInfo("ru"))">Русский</option>
             <option value="@(new CultureInfo("be"))">Беларуская</option>

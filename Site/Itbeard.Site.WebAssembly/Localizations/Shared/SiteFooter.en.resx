@@ -18,7 +18,7 @@
         <value>Select the site language:</value>
     </data>
     <data name="GithubCode" xml:space="preserve">
-        <value>The code of this site on &lt;a href="/https://github.com/it-beard/itbeard-site" target="_blank"&gt;GitHub&lt;/a&gt;
+        <value>The code of this site on &lt;a href="https://github.com/it-beard/itbeard-site" target="_blank"&gt;GitHub&lt;/a&gt;
 </value>
     </data>
 </root>

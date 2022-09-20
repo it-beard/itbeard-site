@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Благодарность тем, кто помогал делать сайт</value>
+    </data>
+    <data name="Paragraph" xml:space="preserve">
+        <value>Спасибо ребятам, которые помогали пилить этот сайт и вложили частичку себя 😊 &lt;br/&gt; Вы КРУТЫЕ!</value>
+    </data>
+    <data name="Name1" xml:space="preserve">
+        <value>Егор Комаровский</value>
+    </data>
+    <data name="Name2" xml:space="preserve">
+        <value>Женя Яроцкий</value>
+    </data>
+    <data name="Name3" xml:space="preserve">
+        <value>Вепа Оразов</value>
+    </data>
+    <data name="Name4" xml:space="preserve">
+        <value>Дима «FCZ»</value>
+    </data>
+    <data name="Name5" xml:space="preserve">
+        <value>Артур Мануйленко</value>
+    </data>
+    <data name="Name6" xml:space="preserve">
+        <value>Крис Муха</value>
+    </data>
+    <data name="Name7" xml:space="preserve">
+        <value>Варужан Саркисов</value>
+    </data>
+</root>

@@ -73,6 +73,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Partnership.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Thanks.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Thanks.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>
@@ -110,6 +114,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Partnership.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Thanks.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Thanks.resx</DependentUpon>
       </Compile>
     </ItemGroup>
     

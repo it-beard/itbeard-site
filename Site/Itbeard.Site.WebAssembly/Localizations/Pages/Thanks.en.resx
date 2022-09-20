@@ -1,0 +1,41 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Thanks to those who helped make the site</value>
+    </data>
+    <data name="Name2" xml:space="preserve">
+        <value>Zhenya Yarotskiy</value>
+    </data>
+    <data name="Name1" xml:space="preserve">
+        <value>Yegor Komarovskiy</value>
+    </data>
+    <data name="Name3" xml:space="preserve">
+        <value>Vepa Arazov</value>
+    </data>
+    <data name="Name4" xml:space="preserve">
+        <value>Dima «FCZ»</value>
+    </data>
+    <data name="Name5" xml:space="preserve">
+        <value>Artur Manuylenko</value>
+    </data>
+    <data name="Name6" xml:space="preserve">
+        <value>Kris Mukha</value>
+    </data>
+    <data name="Name7" xml:space="preserve">
+        <value>Varuzhan Sarkisov</value>
+    </data>
+    <data name="Paragraph" xml:space="preserve">
+        <value>Thanks to the guys who helped saw this site and put a piece of themselves 😊 &lt;br/&gt; You are AWESOME!</value>
+    </data>
+</root>

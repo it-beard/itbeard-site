@@ -1,0 +1,41 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="Commercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Пазнаёміцца з публічнай статыстыкай канала і відах камерцыйнага супрацоўніцтва можна ў медыя-кіце </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
+        <value>За дадатковай інфармацыяй аб фарматах супрацоўніцтва, падрабязнай статыстыкай і коштамі звяртайцеся на пошту </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
+        <value> ці ў тэлеграм </value>
+    </data>
+    <data name="Commercial_Title" xml:space="preserve">
+        <value>Камерцыйнае супрацоўніцтва</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Калі Вы - адмысловец якой-небудзь сферы IT з досведам ад пяці гадоў у індустрыі, ці ў Вас ёсць цікавая тэма для выпуску, якая яшчэ не была асветлена на канале, то пішыце мне на пошту</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part2" xml:space="preserve">
+        <value> ці ў тэлеграм </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
+        <value>, абмяркуем усе дэталі 😉</value>
+    </data>
+    <data name="NonCommercial_Title" xml:space="preserve">
+        <value>Некамерцыйнае супрацоўніцтва</value>
+    </data>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Супрацоўніцтва</value>
+    </data>
+</root>

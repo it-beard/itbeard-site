@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Сотрудничество</value>
+    </data>
+    <data name="Commercial_Title" xml:space="preserve">
+        <value>Коммерческое сотрудничество</value>
+    </data>
+    <data name="Commercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Познакомиться с публичной статистикой канала и видах коммерческого сотрудничества можно в медиа-ките </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
+        <value>За дополнительной информацией о форматах сотрудничества, подробной статистикой и стоимостями обращайтесь на почту </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
+        <value> или в телеграм </value>
+    </data>
+    <data name="NonCommercial_Title" xml:space="preserve">
+        <value>Некоммерческое сотрудничество</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Если Вы - специалист какой либо сферы IT с опытом от пяти лет в индустрии, или у Вас есть интересная тема для выпуска, которая еще не была освещена на канале, то пишите мне на почту </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part2" xml:space="preserve">
+        <value> или в телеграм </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
+        <value>, обсудим все детали 😉</value>
+    </data>
+</root>

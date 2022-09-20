@@ -69,6 +69,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>SharedLocalizations.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Partnership.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Partnership.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>
@@ -101,6 +105,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>SharedLocalizations.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Partnership.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Partnership.resx</DependentUpon>
       </Compile>
     </ItemGroup>
     

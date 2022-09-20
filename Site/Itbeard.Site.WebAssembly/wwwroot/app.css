@@ -6,7 +6,7 @@
 
 @media screen and (max-width: 1199px) {
   :root {
-    --container-size: 960px; 
+    --container-size: 960px;
   }
 }
 
@@ -492,10 +492,16 @@ app > section + section {
   margin-top: 20px;
 }
 
+#footer .github {
+   font-size: 10px;
+   text-align: center;
+   margin-top: 5px;
+ }
+
 #footer .lang {
   font-size: 10px;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 
 

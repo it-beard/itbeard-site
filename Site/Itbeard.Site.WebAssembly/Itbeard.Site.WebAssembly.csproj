@@ -49,6 +49,26 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Contacts.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\SiteFooter.be.resx">
+        <DependentUpon>SiteFooter.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Shared\SiteFooter.en.resx">
+        <DependentUpon>SiteFooter.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Contacts.be.resx">
+        <DependentUpon>Contacts.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Contacts.en.resx">
+        <DependentUpon>Contacts.resx</DependentUpon>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Sponsorship.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Sponsorship.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\SharedLocalizations.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>SharedLocalizations.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
     
     <ItemGroup>
@@ -71,6 +91,16 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Contacts.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Sponsorship.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Sponsorship.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\SharedLocalizations.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SharedLocalizations.resx</DependentUpon>
       </Compile>
     </ItemGroup>
     

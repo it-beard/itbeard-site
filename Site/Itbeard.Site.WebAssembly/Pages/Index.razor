@@ -2,7 +2,7 @@
 @using IndexLoc = Localizations.Pages.Index;
 @inject IStringLocalizer<IndexLoc> Loc
 
-<Title>@Loc[IndexLoc.Title]</Title>
+<Title>@Loc[IndexLoc.PageTitle]</Title>
 <main id="landing">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
@@ -15,6 +15,9 @@
             </p>
             <p>
                 @((MarkupString)Loc[IndexLoc.AboutShow_Paragraph_3].Value)
+                <b class="parting-words">
+                    @Loc[IndexLoc.AboutShow_Paragraph_3_End]
+                </b>
             </p>
         </section>
     </section>
@@ -65,7 +68,7 @@
                 </p>
                 <img src="/images/twitter.jpg">
             </a>
-            
+
             <a href="https://t.me/itbeard" target="_blank" class="article stickers">
                 <img src="/images/telegram.jpg">
                 <h1>@Loc[IndexLoc.ExtraGoodies_Telegram_Title]</h1>
@@ -97,7 +100,7 @@
                     @((MarkupString)Loc[IndexLoc.ExtraGoodies_Patreon_Content].Value)
                 </p>
             </a>
-            
+
             <a href="https://s.itbeard.com/sponsors-discord" target="_blank" class="article streams discord">
                 <h1>@Loc[IndexLoc.ExtraGoodies_Discord_Title]</h1>
                 <p>

@@ -88,10 +88,6 @@ a:hover {
     width: 100%;
 }
 
-#video {
-    background: none;
-}
-
 #patreon {
     background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
 }
@@ -110,6 +106,10 @@ a:hover {
 
 #apple {
     background: url("/images/apple.png") no-repeat 65% 50%
+}
+
+#video {
+    background: #00134d82 none;
 }
 
 @media screen and (max-width: 767px) {
@@ -135,7 +135,7 @@ a:hover {
     #not_commerce .links {
         margin-left: 30px;
     }
-    
+
     #patreon {
         background-size: 90%;
         background-position-x: 50%;
@@ -146,7 +146,7 @@ a:hover {
         background-color: #698eff82;
         background-size: 100%;
     }
-    
+
     #crypto ul {
         overflow-x: scroll;
     }

@@ -18,7 +18,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="Title" xml:space="preserve">
+    <data name="PageTitle" xml:space="preserve">
         <value>Контакты / АйТиБорода</value>
     </data>
     <data name="KeyResources" xml:space="preserve">
@@ -46,9 +46,6 @@
         <value>Подкасты</value>
     </data>
     <data name="Cont_Title" xml:space="preserve">
-        <value>Контакты для связи</value>
-    </data>
-    <data name="Contacts_Email" xml:space="preserve">
         <value>Контакты для связи</value>
     </data>
     <data name="Cont_Email" xml:space="preserve">

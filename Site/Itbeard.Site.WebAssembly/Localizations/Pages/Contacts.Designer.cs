@@ -45,9 +45,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Title {
+        internal static string PageTitle {
             get {
-                return ResourceManager.GetString("Title", resourceCulture);
+                return ResourceManager.GetString("PageTitle", resourceCulture);
             }
         }
         
@@ -102,12 +102,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string Cont_Title {
             get {
                 return ResourceManager.GetString("Cont_Title", resourceCulture);
-            }
-        }
-        
-        internal static string Contacts_Email {
-            get {
-                return ResourceManager.GetString("Contacts_Email", resourceCulture);
             }
         }
         

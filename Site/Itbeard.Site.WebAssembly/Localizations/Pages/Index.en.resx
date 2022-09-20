@@ -11,7 +11,7 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="Title" xml:space="preserve">
+    <data name="PageTitle" xml:space="preserve">
         <value>ITBeard - life and work in IT 🇺🇦 #stopwarinukraine</value>
     </data>
     <data name="AboutShow" xml:space="preserve">
@@ -24,7 +24,7 @@
         <value>The show "ITBeard" is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and their way of development. &lt;br/&gt;Without any censorship, labels or extra pathos.</value>
     </data>
     <data name="AboutShow_Paragraph_3" xml:space="preserve">
-        <value>All of ITBeard's content, together with you, forms a community of like-minded people who can turn this world upside down and change themselves for the better. &lt;b class="parting-words"&gt;So, GET THERE!&lt;/b&gt;</value>
+        <value>All of ITBeard's content, together with you, forms a community of like-minded people who can turn this world upside down and change themselves for the better.</value>
     </data>
     <data name="Interview" xml:space="preserve">
         <value>Interview</value>
@@ -75,13 +75,13 @@
         <value>Become a Patron</value>
     </data>
     <data name="ExtraGoodies_Sponsorship_Title" xml:space="preserve">
-        <value>YouTube Sponsorship</value>
+        <value>Sponsors bonuses</value>
     </data>
     <data name="ExtraGoodies_Patreon_Content" xml:space="preserve">
         <value>Supporting on Patreon is one way to support Lex. Patrons of the channel get access to a variety of bonus releases in idiosyncratic format and to the "IT Beard Sponsor" Discord server. &lt;br/&gt;&lt;br/&gt; Click to learn more!</value>
     </data>
     <data name="ExtraGoodies_Sponsorship_Content" xml:space="preserve">
-        <value>YouTube sponsors are the core audience of the channel. Sponsors have access to ITBeard's Discord server, early ad-free viewing of episodes, as well as additional content: extra content for episodes, streamers, etc.&lt;br/&gt;&lt;br/&gt; Click to know about all the bonuses for sponsors!</value>
+        <value>Sponsors are the core audience of the channel. Sponsors have access to ITBeard's Discord server, early ad-free viewing of episodes, as well as additional content: extra content for episodes, streamers, etc.&lt;br/&gt;&lt;br/&gt; Click to know about all the bonuses for sponsors!</value>
     </data>
     <data name="ExtraGoodies_Instagram_Title" xml:space="preserve">
         <value>Instagram</value>
@@ -91,5 +91,8 @@
     </data>
     <data name="ExtraGoodies_Telegram_Title" xml:space="preserve">
         <value>Telegram</value>
+    </data>
+    <data name="AboutShow_Paragraph_3_End" xml:space="preserve">
+        <value>So, GET THERE!</value>
     </data>
 </root>

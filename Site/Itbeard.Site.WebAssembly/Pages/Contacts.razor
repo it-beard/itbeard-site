@@ -1,58 +1,60 @@
 @page "/contacts"
-@using IndexLoc = Localizations.Pages.Contacts;
-@inject IStringLocalizer<IndexLoc> Loc
+@using ContactsRes = Localizations.Pages.Contacts;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<ContactsRes> ContactsLoc
+@inject IStringLocalizer<SharedRes> SharedLoc
 
-<Title>@Loc[IndexLoc.Title]</Title>
+<Title>@ContactsLoc[ContactsRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
 <main id="contacts">
     <section id="first_slide" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@Loc[IndexLoc.KeyResources]</h1>
+            <h1>@ContactsLoc[ContactsRes.KeyResources]</h1>
             <p class="links youtube">
-                <span>@Loc[IndexLoc.KeyResources_YouTube]</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_YouTube]</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
             </p>
             <p class="links mave">
-                <span>@Loc[IndexLoc.KeyResources_Podcasts]</span> / <a href="https://itbeard.mave.digital" target="_blank">itbeard.mave.digital</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Podcasts]</span> / <a href="https://itbeard.mave.digital" target="_blank">itbeard.mave.digital</a>
             </p>
             <p class="links patreon">
-                <span>@Loc[IndexLoc.KeyResources_Patreon]</span> / <a href="https://www.patreon.com/itbeard" target="_blank">patreon.com/itbeard</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Patreon]</span> / <a href="https://www.patreon.com/itbeard" target="_blank">patreon.com/itbeard</a>
             </p>
             <p class="links instagram">
-                <span>@Loc[IndexLoc.KeyResources_Instagram]</span> / <a href="https://instagram.com/itbeard" target="_blank">instagram.com/itbeard</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Instagram]</span> / <a href="https://instagram.com/itbeard" target="_blank">instagram.com/itbeard</a>
             </p>
             <p class="links telegram">
-                <span>@Loc[IndexLoc.KeyResources_Telegram]</span> / <a href="https://t.me/itbeard" target="_blank">t.me/itbeard</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Telegram]</span> / <a href="https://t.me/itbeard" target="_blank">t.me/itbeard</a>
             </p>
             <p class="links twitter">
-                <span>@Loc[IndexLoc.KeyResources_Twitter]</span> / <a href="https://twitter.com/iamitbeard" target="_blank">twitter.com/iamitbeard</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Twitter]</span> / <a href="https://twitter.com/iamitbeard" target="_blank">twitter.com/iamitbeard</a>
             </p>
             <p class="links discord">
-                <span>@Loc[IndexLoc.KeyResources_Discord]</span> / <a href="https://s.itbeard.com/sponsors-discord" target="_blank">s.itbeard.com/sponsors-discord</a>
+                <span>@ContactsLoc[ContactsRes.KeyResources_Discord]</span> / <a href="https://s.itbeard.com/sponsors-discord" target="_blank">s.itbeard.com/sponsors-discord</a>
             </p>
         </section>
     </section>
 
     <section id="second_slide" class="presentation presentation-first no-bg">
         <section class="content left">
-            <h1>@Loc[IndexLoc.Cont_Title]</h1>
+            <h1>@ContactsLoc[ContactsRes.Cont_Title]</h1>
             <div class="links">
-                <span>@Loc[IndexLoc.Cont_Email]</span> 
+                <span>@ContactsLoc[ContactsRes.Cont_Email]</span>
                 <div>
                     <a href="mailto:iamitbeard@gmail.com" target="_blank">iamitbeard@gmail.com</a>
                 </div>
             </div>
             <div class="links">
-                <span>@Loc[IndexLoc.Cont_Telegram]</span>
+                <span>@ContactsLoc[ContactsRes.Cont_Telegram]</span>
                 <div>
                     <a href="https://t.me/iamitboroda" target="_blank">@@iamitboroda</a>
                 </div>
             </div>
             <div class="links">
-                <span>@Loc[IndexLoc.Cont_Mail]</span>
+                <span>@ContactsLoc[ContactsRes.Cont_Mail]</span>
                 <div>
                     <div>
-                        @Loc[IndexLoc.Cont_Mail_body]
-                    </div> 
+                        @ContactsLoc[ContactsRes.Cont_Mail_body]
+                    </div>
                 </div>
             </div>
         </section>
@@ -60,21 +62,21 @@
 
     <section id="third_slide" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@Loc[IndexLoc.Other]</h1>
+            <h1>@ContactsLoc[ContactsRes.Other]</h1>
             <p class="links youtube">
-                <span>@Loc[IndexLoc.Other_YouTubeWall]</span> / <a href="https://youtube.com/itbeard/community" target="_blank">youtube.com/itbeard/community</a>
+                <span>@ContactsLoc[ContactsRes.Other_YouTubeWall]</span> / <a href="https://youtube.com/itbeard/community" target="_blank">youtube.com/itbeard/community</a>
             </p>
             <p class="links">
-                <span>@Loc[IndexLoc.Other_GitHub]</span> / <a href="https://github.com/it-beard" target="_blank">github.com/it-beard</a>
+                <span>@ContactsLoc[ContactsRes.Other_GitHub]</span> / <a href="https://github.com/it-beard" target="_blank">github.com/it-beard</a>
             </p>
             <p class="links telegram">
-                <span>@Loc[IndexLoc.Other_TelegramStickers]</span> / <a href="https://s.itbeard.com/tgstickers" target="_blank">s.itbeard.com/tgstickers</a>
+                <span>@ContactsLoc[ContactsRes.Other_TelegramStickers]</span> / <a href="https://s.itbeard.com/tgstickers" target="_blank">s.itbeard.com/tgstickers</a>
             </p>
             <p class="links linkedin">
-                <span>@Loc[IndexLoc.Other_LinkedinGroup]</span> / <a href="https://s.itbeard.com/linkedin" target="_blank">s.itbeard.com/linkedin</a>
+                <span>@ContactsLoc[ContactsRes.Other_LinkedinGroup]</span> / <a href="https://s.itbeard.com/linkedin" target="_blank">s.itbeard.com/linkedin</a>
             </p>
             <p class="links facebook">
-                <span>@Loc[IndexLoc.Other_FacebookGroup]</span> / <a href="https://www.facebook.com/itbeard" target="_blank">facebook.com/itbeard</a>
+                <span>@ContactsLoc[ContactsRes.Other_FacebookGroup]</span> / <a href="https://www.facebook.com/itbeard" target="_blank">facebook.com/itbeard</a>
             </p>
         </section>
     </section>

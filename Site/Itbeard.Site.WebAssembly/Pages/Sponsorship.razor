@@ -1,43 +1,42 @@
 ﻿@page "/sponsorship"
 @page "/help"
 @page "/support"
-<Title>Поддержать канал / АйТиБорода</Title>
+
+@using SponsorshipRes = Localizations.Pages.Sponsorship;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SponsorshipRes> SponsorshipLoc
+@inject IStringLocalizer<SharedRes> SharedLoc
+
+<Title>@SponsorshipLoc[SponsorshipRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
 <main>
-    <section id="video" class="presentation no-bg">
-        <section class="content">
-            <h1>Как поддержать АйТиБороду</h1>
-            <iframe src="https://www.youtube.com/embed/EooGR7WvbDE"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen>
-            </iframe>
-        </section>
-    </section>
-    
     <section id="patreon" class="presentation no-bg">
             <section class="content right">
-                <h1>Поддержка через Patreon</h1>
+                <h1>
+                    @SponsorshipLoc[SponsorshipRes.Patreon_Title]
+                </h1>
                 <p>
-                    Через
+                    @SponsorshipLoc[SponsorshipRes.Patreon_Paragraph_Part_1]
                     <a href="https://www.patreon.com/itbeard" target="_blank">
-                        Patreon
-                    </a> можно поддержать любой из проектов АйТиБороды, а также получить доступ к большому количеству 
-                    бонусных выпусков и к Discord-чату 
+                        @SponsorshipLoc[SponsorshipRes.Patreon_Paragraph_Part_2]
+                    </a>
+                    @SponsorshipLoc[SponsorshipRes.Patreon_Paragraph_Part_3]
+                    <br/><br/>
+                    @SponsorshipLoc[SponsorshipRes.Patreon_Paragraph_Part_4]
                     <a href="https://s.itbeard.com/sponsors-discord" target="_blank">
-                    "Спонсорка АйТиБороды"
+                        @SponsorshipLoc[SponsorshipRes.Patreon_Paragraph_Part_5]
                     </a> 😎
                 </p>
             </section>
         </section>
-    
+
     <section id="crypto" class="presentation no-bg">
         <section class="content left">
-            <h1>Помощь криптой</h1>
+            <h1>
+                @SponsorshipLoc[SponsorshipRes.Crypto_Title]
+            </h1>
             <p>
-                Для крипто-энтузиастов есть возможность поддержать проект "АйТиБорода" через криптовалюты.  
-                Ваша поддержка напрямую влияет на развитие шоу, потому зарание большое вам спасибо!
+                @((MarkupString)SponsorshipLoc[SponsorshipRes.Crypto_Paragraph].Value)
             </p>
             <ul>
                 <li>
@@ -73,44 +72,44 @@
             </ul>
         </section>
     </section>
-    
+
     <section id="info" class="presentation no-bg">
         <section class="content right">
-            <h1>Спонсорство YouTube</h1>
+            <h1>
+                @SponsorshipLoc[SponsorshipRes.YouTube_Title]
+            </h1>
             <p>
-                Спонсорство на YouTube - это ещё одна возможность поддержать шоу и получить доступ к спонсорским бонусам и
-                дополнительному контенту.
-            </p>
-            
-            <p>
-                В спонсорской подписке на YouTube вас ждет более 40 дополнительных выпусков общей длительностью 1500+ минут.
-                А ещё, вы сможете смотреть новые интервью на несколько дней раньше и полностью без рекламы, 
-                даже без интеграций 😊
+                @SponsorshipLoc[SponsorshipRes.YouTube_Paragraph_1]
             </p>
             <p>
-                Полный список спонсорских бонусов:
+                @SponsorshipLoc[SponsorshipRes.YouTube_Paragraph_2]
+            </p>
+            <p>
+                @SponsorshipLoc[SponsorshipRes.YouTube_Paragraph_3]
             </p>
             <ul>
                 <li>
-                    <a href="https://s.itbeard.com/discord" target="_blank">Спонсорский чат</a>
+                    <a href="https://s.itbeard.com/discord" target="_blank">
+                        @SponsorshipLoc[SponsorshipRes.YouTube_List_1]
+                    </a>
                 </li>
                 <li>
                     <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986bFr4dpzCVcMQ_r7lgwZCZ" target="_blank">
-                        40+ дополнительных выпусков
-                    </a> - интервью, программирование, новости, 
-                    не вошедший в интервью контент и многое другое
-                    
+                        @SponsorshipLoc[SponsorshipRes.YouTube_List_2_Link]
+                    </a>
+                    @SponsorshipLoc[SponsorshipRes.YouTube_List_2]
                 </li>
                 <li>
                     <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984VLrI0lES0axUSccXbgL7_" target="_blank">
-                        Ранний доступ
-                    </a> к выпускам без рекламы
+                        @SponsorshipLoc[SponsorshipRes.YouTube_List_3_Link]
+                    </a>
+                    @SponsorshipLoc[SponsorshipRes.YouTube_List_3]
                 </li>
                 <li>
-                    Авторские значки и эмодзи
+                    @SponsorshipLoc[SponsorshipRes.YouTube_List_4]
                 </li>
                 <li>
-                    Публичные благодарности!
+                    @SponsorshipLoc[SponsorshipRes.YouTube_List_5]
                 </li>
             </ul>
         </section>
@@ -118,54 +117,90 @@
 
     <section id="how_to" class="presentation no-bg">
         <section class="content left">
-            <h1>Как стать спонсором?</h1>
+            <h1>
+                @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Title]
+            </h1>
+
             <p>
-                Просто пройдите на главную страницу YouTube-шоу <a href="https://youtube.com/itbeard" target="_blank"><b>«АйТиБорода»</b></a> 
-                и найдите кнопку «Спонсировать». Либо пройдите по 
-                <a href="https://youtube.com/itbeard/join"  target="_blank" class="email">это ссылке</a>. 
+                @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_1_Part_1]
+                <a href="https://youtube.com/itbeard" target="_blank">
+
+                    <b>
+                        @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_1_Part_2]
+                    </b>
+                </a>
+                @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_1_Part_3]
+                <a href="https://youtube.com/itbeard/join" target="_blank" class="email">
+                    @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_1_Part_4]
+                </a>.
             </p>
-            
+
             <p>
-                Далее выберите желаемый уровень подписки с его бонусами и нажмите кнопку «Спонсировать» ещё раз. 
+                @((MarkupString)SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_2].Value)
             </p>
-            
+
             <p>
-                После этого Вам будет предложено ввести данные вашей карты и завершить процедуру становления спонсором канала 😊
+                @((MarkupString)SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_3].Value)
             </p>
-            
+
             <p>
-                Теперь вам осталось лишь связать свой discord-аккаунт с youtube-аккаунтом и зайти в приватный спонсорский 
-                чат - там мы и встретимся 😎
+                @((MarkupString)SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_4].Value)
             </p>
-            
+
             <p>
-                Если у Вас остались вопросы, то вот ещё несколько инструкций:
+                @((MarkupString)SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_5].Value)
             </p>
-            
+
             <ul>
                 <li>
-                    <a href="https://s.itbeard.com/sponsorship-how" target="_blank"><b>Как стать спонсором</b></a>
+                    <a href="https://s.itbeard.com/sponsorship-how" target="_blank">
+                        <b>
+                            @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_5_Link_1]
+                        </b>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://s.itbeard.com/sponsorship-how2" target="_blank"><b>Как стать спонсором, если нет кнопки «Спонсировать»</b></a>
+                    <a href="https://s.itbeard.com/sponsorship-how2" target="_blank">
+                        <b>
+                            @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_5_Link_2]
+                        </b>
+                    </a>
                 </li>
                 <li>
-                    <a href="https://s.itbeard.com/sponsorship-how3" target="_blank"><b>Как привязать Discord к YouTube-аккаунту</b></a>
+                    <a href="https://s.itbeard.com/sponsorship-how3" target="_blank">
+                        <b>
+                            @SponsorshipLoc[SponsorshipRes.SponsorYoutube_Paragraph_5_Link_3]
+                        </b>
+                    </a>
                 </li>
             </ul>
         </section>
     </section>
-    
+
     <section id="apple" class="presentation no-bg">
         <section class="content left">
-            <h1>Подписка в Apple Podcasts</h1>
+            <h1>
+                @SponsorshipLoc[SponsorshipRes.Apple_Title]
+            </h1>
             <p>
-                Для подписчиков в 
+                @SponsorshipLoc[SponsorshipRes.Apple_Paragraph_Part_1]
                 <a href="https://podcasts.apple.com/us/podcast/id1449804780" target="_blank">
-                    Apple Podcasts
-                </a> доступно более 25 эксклюзивных выпусков общей длительностью в 800+ минут
-                и регулярные интервью без рекламы 😎
+                    @SponsorshipLoc[SponsorshipRes.Apple_Paragraph_Part_2]
+                </a>
+                @SponsorshipLoc[SponsorshipRes.Apple_Paragraph_Part_3]
             </p>
+        </section>
+    </section>
+
+    <section id="video" class="presentation no-bg">
+        <section class="content">
+            <h1>@SponsorshipLoc[SponsorshipRes.Video_HowToSupport_Title]</h1>
+            <iframe src="https://www.youtube.com/embed/EooGR7WvbDE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
         </section>
     </section>
 </main>

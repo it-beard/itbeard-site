@@ -14,4 +14,112 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Падтрымаць праекты Лекса</value>
     </data>
+    <data name="Apple_Paragraph_Part_1" xml:space="preserve">
+        <value>Шоу «АйЦіБарада» можна падтрымаць праз </value>
+    </data>
+    <data name="Apple_Paragraph_Part_2" xml:space="preserve">
+        <value>Apple Podcasts</value>
+    </data>
+    <data name="Apple_Paragraph_Part_3" xml:space="preserve">
+        <value>. Для падпісчыкаў на гэтай платформе даступна больш за 25 эксклюзіўных выпускаў агульнай працягласцю ў 800+ хвілін, рэгулярныя інтэрв'ю без рэкламы і ўсе выпускі солакасту «Навіны Барады» 😎</value>
+    </data>
+    <data name="Apple_Title" xml:space="preserve">
+        <value>Падпіска ў Apple Podcasts</value>
+    </data>
+    <data name="Crypto_Paragraph" xml:space="preserve">
+        <value>Для крыпта-энтузіястаў ёсць магчымасць падтрымаць праекты Лекса праз крыптавалюты. Вашая падтрымка моцна ўплывае на развіццё шоу «АйЦіБарада» ды відэакаст «Цёмны Лёс», таму вялікі вам дзякуй!</value>
+    </data>
+    <data name="Crypto_Title" xml:space="preserve">
+        <value>Падтрымаць крыптавалютамі</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
+        <value>Праз </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
+        <value> можна падтрымаць любы з праектаў Лекса: шоу «АйЦіБарада» ды відэакаст «Цёмны Лёс». </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
+        <value>Акрамя таго, вы атрымаеце доступ да бонусных выпускаў шоу «АйЦіБарада», солакасту аб жыцці Лекса «Навіны Барады» ды да закрытага Discord-серверу </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
+        <value>«Спонсарка АйЦіБароды»</value>
+    </data>
+    <data name="Patreon_Title" xml:space="preserve">
+        <value>Падтрымаць праз Patreon</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_1_Part_1" xml:space="preserve">
+        <value>Проста прайдзіце на YouTube-канал </value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_1_Part_2" xml:space="preserve">
+        <value>«АйЦіБарада»</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_1_Part_3" xml:space="preserve">
+        <value> ды знайдзіце кнопку «Спансаваць», або прайдзіце па</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_1_Part_4" xml:space="preserve">
+        <value>гэтай спасылцы</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_2" xml:space="preserve">
+        <value>Далей абярыце жаданы ўзровень падпіскі з яго бонусамі і націсніце кнопку "Спансаваць" яшчэ раз.</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_3" xml:space="preserve">
+        <value>Пасля гэтага Вам будзе прапанавана ўвесці дадзеныя вашай карткі і завяршыць працэдуру станаўлення спонсарам канала 😊</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_4" xml:space="preserve">
+        <value>Цяпер Вам засталося толькі звязаць свой discord-акаўнт з youtube-акаўнтам і зайсці ў прыватны спонсарскі чат - там мы і сустрэнемся 😎</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_5" xml:space="preserve">
+        <value>Калі ў Вас засталіся пытанні, то вось яшчэ некалькі інструкцый:</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_5_Link_1" xml:space="preserve">
+        <value>Як стаць спонсарам</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_5_Link_2" xml:space="preserve">
+        <value>Як стаць спонсарам, калі няма кнопкі "Спансаваць"</value>
+    </data>
+    <data name="SponsorYoutube_Paragraph_5_Link_3" xml:space="preserve">
+        <value>Як прывязаць Discord да YouTube-акаўнта</value>
+    </data>
+    <data name="SponsorYoutube_Title" xml:space="preserve">
+        <value>Як стаць спонсарам на YouTube?</value>
+    </data>
+    <data name="Video_HowToSupport_Title" xml:space="preserve">
+        <value>Відэа аб тым, як падтрымаць шоу АйЦіБарада</value>
+    </data>
+    <data name="YouTube_List_1" xml:space="preserve">
+        <value>Спонсарскі чат</value>
+    </data>
+    <data name="YouTube_List_2" xml:space="preserve">
+        <value> - інтэрв'ю, праграмаванне, навіны, які не ўвайшоў у інтэрв'ю кантэнт і шмат іншага кантэнту</value>
+    </data>
+    <data name="YouTube_List_2_Link" xml:space="preserve">
+        <value>40+ дадатковых выпускаў</value>
+    </data>
+    <data name="YouTube_List_3" xml:space="preserve">
+        <value> да выпускаў без рэкламы</value>
+    </data>
+    <data name="YouTube_List_3_Link" xml:space="preserve">
+        <value>Ранні доступ</value>
+    </data>
+    <data name="YouTube_List_4" xml:space="preserve">
+        <value>Аўтарскія значкі і эмодзі</value>
+    </data>
+    <data name="YouTube_List_5" xml:space="preserve">
+        <value>Публічныя падзякі!</value>
+    </data>
+    <data name="YouTube_Paragraph_1" xml:space="preserve">
+        <value>Спонсарства на YouTube - гэта асобная магчымасць падтрымаць шоу «АйЦіБарада» ды атрымаць доступ да спонсарскіх бонусаў і дадатковага кантэнту.</value>
+    </data>
+    <data name="YouTube_Paragraph_2" xml:space="preserve">
+        <value>У спонсарскай падпісцы на YouTube вас чакае больш за 40 дадатковых выпускаў агульнай працягласцю 1500+ хвілін. А яшчэ, вы зможаце глядзець новыя інтэрв'ю на некалькі дзён раней і поўнасцю без рэкламы, нават без інтэграцый 😊</value>
+    </data>
+    <data name="YouTube_Paragraph_3" xml:space="preserve">
+        <value>Поўны спіс спонсарскіх бонусаў:</value>
+    </data>
+    <data name="YouTube_Title" xml:space="preserve">
+        <value>Спонсарства YouTube</value>
+    </data>
 </root>

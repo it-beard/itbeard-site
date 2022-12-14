@@ -6,3 +6,5 @@
 Open-source repo of site https://itbeard.com
 
 Based on .NET 6, Blazor WebAssembly.
+
+SSL Issuer Bot: https://github.com/shibayan/appservice-acmebot

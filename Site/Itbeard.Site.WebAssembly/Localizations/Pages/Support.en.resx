@@ -1,0 +1,47 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Support Lex projects</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="Apple_Title" xml:space="preserve">
+        <value>Subscribe to Apple Podcasts</value>
+    </data>
+    <data name="Crypto_Paragraph" xml:space="preserve">
+        <value>There is an opportunity for crypto-enthusiasts to support Lex's projects via cryptocurrencies. Your support directly affects the development of the «ITBeard» show and the «Dark Destiny» videocast, so thank you very much!</value>
+    </data>
+    <data name="Crypto_Title" xml:space="preserve">
+        <value>Support with cryptocurrencies</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
+        <value>Through </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
+        <value> you can support any of Lex's projects: the «ITBeard» show and the «Dark Destiny» videocast. </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
+        <value>In addition, you will get access to bonus episodes of the show «IT Beard», to the solocast about Lex's life «Beard News» and to the closed Discord-server </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
+        <value>«ITBeard's Sponsor». </value>
+    </data>
+    <data name="Patreon_Title" xml:space="preserve">
+        <value>Support via Patreon</value>
+    </data>
+    <data name="Video_HowToSupport_Title" xml:space="preserve">
+        <value>Video on how to support the ITBeard show</value>
+    </data>
+</root>

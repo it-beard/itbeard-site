@@ -11,7 +11,7 @@ section.content {
     flex-direction: column;
     justify-content: center;
 }
-    
+
 #first_slide {
     background: url("/images/main-recources.png") 25% / auto auto no-repeat;
 }
@@ -33,10 +33,6 @@ section.content {
     color: #FF0000;
 }
 
-#first_slide .links.mave span{
-    color: #5F80F5;
-}
-
 #first_slide .links.discord span{
     color: #6D8CF6;
 }
@@ -53,10 +49,18 @@ section.content {
     color: #1A8CD8;
 }
 
+#first_slide .links.linkedin span{
+    color: #0A66C2;
+}
+
 #first_slide .links.patreon span{
     color: #FF424D;
 }
-    
+
+#first_slide .links.mastodon span{
+    color: #5A49DE;
+}
+
 #second_slide {
     background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
     min-height: 100vh;
@@ -87,7 +91,7 @@ section.content {
 #second_slide .links span {
     font-style: italic;
 }
-    
+
 #third_slide {
     background: url("/images/other-recources.png") 25% / auto auto no-repeat;
     min-height: 100vh;
@@ -118,16 +122,8 @@ section.content {
     color: #2A9DD6;
 }
 
-#third_slide .links.yandex span{
-    color: #ff8714;
-}
-
 #third_slide .links.merch span{
     color: yellow;
-}
-
-#third_slide .links.comm-z-guests span{
-    color: #FA6755;
 }
 
 #third_slide .links.vk span{
@@ -146,8 +142,16 @@ section.content {
     color: #4282EF;
 }
 
-#third_slide .links.com-z-staff span{
-    color: #1ED760;
+#third_slide .links.mastodon span{
+    color: #5A49DE;
+}
+
+#third_slide .links.instagram span{
+    color: #C53189;
+}
+
+#third_slide .links.twitter span{
+    color: #1A8CD8;
 }
 
 @media screen and (max-width: 767px) {

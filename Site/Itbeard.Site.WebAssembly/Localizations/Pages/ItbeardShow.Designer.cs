@@ -81,9 +81,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Interview_Paragraph_1_Button {
+        internal static string Interview_Paragraph_2 {
             get {
-                return ResourceManager.GetString("Interview_Paragraph_1_Button", resourceCulture);
+                return ResourceManager.GetString("Interview_Paragraph_2", resourceCulture);
             }
         }
         
@@ -99,9 +99,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Profession_Paragraph_1_Button {
+        internal static string Profession_Paragraph_2 {
             get {
-                return ResourceManager.GetString("Profession_Paragraph_1_Button", resourceCulture);
+                return ResourceManager.GetString("Profession_Paragraph_2", resourceCulture);
             }
         }
         
@@ -117,15 +117,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Programming_Paragraph_1_Button {
+        internal static string Programming_Paragraph_2 {
             get {
-                return ResourceManager.GetString("Programming_Paragraph_1_Button", resourceCulture);
-            }
-        }
-        
-        internal static string AboutShow_Paragraph_3_End {
-            get {
-                return ResourceManager.GetString("AboutShow_Paragraph_3_End", resourceCulture);
+                return ResourceManager.GetString("Programming_Paragraph_2", resourceCulture);
             }
         }
         
@@ -174,6 +168,42 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string NonCommercial_Paragraph1_Part3 {
             get {
                 return ResourceManager.GetString("NonCommercial_Paragraph1_Part3", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_1 {
+            get {
+                return ResourceManager.GetString("YouTube_List_1", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_2 {
+            get {
+                return ResourceManager.GetString("YouTube_List_2", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_3 {
+            get {
+                return ResourceManager.GetString("YouTube_List_3", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_4 {
+            get {
+                return ResourceManager.GetString("YouTube_List_4", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_2_Link {
+            get {
+                return ResourceManager.GetString("YouTube_List_2_Link", resourceCulture);
+            }
+        }
+        
+        internal static string YouTube_List_3_Link {
+            get {
+                return ResourceManager.GetString("YouTube_List_3_Link", resourceCulture);
             }
         }
     }

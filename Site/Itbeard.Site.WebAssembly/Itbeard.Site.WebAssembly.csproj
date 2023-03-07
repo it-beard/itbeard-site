@@ -51,9 +51,9 @@
       <EmbeddedResource Update="Localizations\Pages\Contacts.en.resx">
         <DependentUpon>Contacts.resx</DependentUpon>
       </EmbeddedResource>
-      <EmbeddedResource Update="Localizations\Pages\Sponsorship.resx">
+      <EmbeddedResource Update="Localizations\Pages\Support.resx">
         <Generator>ResXFileCodeGenerator</Generator>
-        <LastGenOutput>Sponsorship.Designer.cs</LastGenOutput>
+        <LastGenOutput>Support.Designer.cs</LastGenOutput>
       </EmbeddedResource>
       <EmbeddedResource Update="Localizations\SharedLocalizations.resx">
         <Generator>ResXFileCodeGenerator</Generator>
@@ -89,7 +89,7 @@
         <AutoGen>True</AutoGen>
         <DependentUpon>Contacts.resx</DependentUpon>
       </Compile>
-      <Compile Update="Localizations\Pages\Sponsorship.Designer.cs">
+      <Compile Update="Localizations\Pages\Support.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Sponsorship.resx</DependentUpon>

@@ -259,6 +259,10 @@ app > section + section {
   margin-right: 0;
 }
 
+.presentation-slides {
+   min-height: 100vh;
+ }
+
 .presentation {
   --theme: var(--color-highlight);
   display: flex;
@@ -326,8 +330,9 @@ app > section + section {
   color: var(--theme);
 }
 
-#other > h1 {
+.slides h1 {
   margin-bottom: 25px;
+  margin-top: 25px;
   font-size: 30px;
   text-align: center;
   background-color: #252525;
@@ -336,13 +341,13 @@ app > section + section {
   padding: 7px;
 }
 
-#other > .content {
+.slides > .content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-#other > .content > .article {
+.slides > .content > .article {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
@@ -357,19 +362,19 @@ app > section + section {
   border-radius: 10px;
 }
 
-#other > .content > .article:hover {
+.slides > .content > .article:hover {
   box-shadow: 0 0 10px 5px rgba(256,256,2,0.7);
   text-shadow: none;
   transform: translateY(-10px);
 }
 
-#other > .content > .article > img {
+.slides > .content > .article > img {
   min-height: 256px;
   object-fit: contain;
   padding: 15px 0;
 }
 
-#other > .content > .article > h1 {
+.slides > .content > .article > h1 {
   font-size: 22px;
   background-color: rgba(256,256,2,0.1);
   color: #ffff02;
@@ -378,20 +383,20 @@ app > section + section {
   padding: 3px;
 }
 
-#other > .content > .article > p {
+.slides > .content > .article > p {
   font-size: 17px;
   margin: 15px 0;
 }
 
-#other > .content > .article li {
+.slides > .content > .article li {
   font-size: 17px;
 }
 
-#other > .content > .article a:hover {
+.slides > .content > .article a:hover {
   text-decoration: underline;
 }
 
-#other > .content > .article a {
+.slides > .content > .article a {
   text-decoration: none;
 }
 
@@ -570,23 +575,23 @@ app > section + section {
     margin-left: 50%;
   }
 
-  #other > .content {
+  .slides > .content {
     flex-direction: column;
   }
 
-  #other > .content > .article {
+  .slides > .content > .article {
     width: 100%;
   }
-  #other > .content > .article + .article {
+  .slides > .content > .article + .article {
     margin-top: 10px;
   }
 
-  #other > .content > .article:hover {
+  .slides > .content > .article:hover {
     box-shadow: none;
     transform: none;
   }
 
-  #other > .content > .article > img {
+  .slides > .content > .article > img {
     height: auto;
   }
 }
@@ -652,7 +657,7 @@ app > section + section {
   }
 
   .presentation > .content > h1,
-  #other > h1 {
+  .slides > h1 {
     font-size: 25px;
   }
 

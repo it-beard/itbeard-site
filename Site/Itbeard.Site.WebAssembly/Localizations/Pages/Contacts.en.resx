@@ -14,9 +14,6 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Contacts</value>
     </data>
-    <data name="KeyResources" xml:space="preserve">
-        <value>Key resources</value>
-    </data>
     <data name="KeyResources_YouTube" xml:space="preserve">
         <value>YouTube</value>
     </data>
@@ -31,9 +28,6 @@
     </data>
     <data name="KeyResources_Podcasts" xml:space="preserve">
         <value>Podcasts</value>
-    </data>
-    <data name="KeyResources_Telegram" xml:space="preserve">
-        <value>Telegram</value>
     </data>
     <data name="KeyResources_Twitter" xml:space="preserve">
         <value>Twitter</value>
@@ -52,9 +46,6 @@
     </data>
     <data name="Cont_Mail_body" xml:space="preserve">
         <value>Temporarily without it... Digital nomad :)</value>
-    </data>
-    <data name="Other" xml:space="preserve">
-        <value>Other resources</value>
     </data>
     <data name="Other_YouTubeWall" xml:space="preserve">
         <value>YouTube Wall</value>

@@ -1,0 +1,116 @@
+﻿@page "/sponsorship"
+@page "/help"
+@page "/support"
+
+@using SupportRes = Localizations.Pages.Support;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SupportRes> SupportLoc
+@inject IStringLocalizer<SharedRes> SharedLoc
+
+<Title>@SupportLoc[SupportRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+
+<main>
+    <section id="patreon" class="presentation no-bg">
+        <section class="content right">
+            <h1>
+                @SupportLoc[SupportRes.Patreon_Title]
+            </h1>
+            <p>
+                @SupportLoc[SupportRes.Patreon_Paragraph_Part_1]
+                <a href="https://www.patreon.com/itbeard" target="_blank">
+                    @SupportLoc[SupportRes.Patreon_Paragraph_Part_2]
+                </a>
+                @SupportLoc[SupportRes.Patreon_Paragraph_Part_3]
+                <br/><br/>
+                @SupportLoc[SupportRes.Patreon_Paragraph_Part_4]
+                <a href="https://s.itbeard.com/sponsors-discord" target="_blank">
+                    @SupportLoc[SupportRes.Patreon_Paragraph_Part_5]
+                </a> 😎
+            </p>
+        </section>
+    </section>
+
+    <section id="merch" class="presentation no-bg">
+        <section class="content left">
+            <h1>
+                Фирменный мерч
+            </h1>
+            <p>
+                В жизни и в видосах я появляюсь в необычных вещах с прикольными надписями.
+                Купить такие же можно в <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="colored-text">моём магазинчике</a>: толстовки, майки, шапки, кружки и стикеры!
+            </p>
+            <p>
+                Каждой покупки ты поддержишь меня примерно на <b>$5</b>, большое спасибо! 😊
+            </p>
+        </section>
+    </section>
+
+    <section id="card" class="presentation no-bg">
+        <section class="content right">
+            <h1>
+                Revolut & PayPal
+            </h1>
+            <p>
+                Через <a href="https://revolut.me/itbeard" target="_blank" class="colored-text">Revolut</a> и
+                <a href="https://www.paypal.com/paypalme/itbeard" target="_blank" class="colored-text">PayPal</a> ты можешь
+                поддержать меня прямым переводом с карты. Каждый такой перевод добавляет +100 к мотивации делать новый контент!
+
+            </p>
+        </section>
+    </section>
+
+    <section id="crypto" class="presentation no-bg">
+        <section class="content left">
+            <h1>
+                @SupportLoc[SupportRes.Crypto_Title]
+            </h1>
+            <p>
+                @((MarkupString)SupportLoc[SupportRes.Crypto_Paragraph].Value)
+            </p>
+            <ul>
+                <li>
+                    BTC: <b>bc1qvr9areesmfukpphe2es2q339p42yyr7pph73ty</b>
+                </li>
+                <li>
+                    ETH: <b>0xedd9B89632c3d0F774a1204fC8F2B9378dC17beB</b>
+                </li>
+                <li>
+                    USDT (ERC-20): <b>0xedd9B89632c3d0F774a1204fC8F2B9378dC17beB</b>
+                </li>
+                <li>
+                    USDT (TRC-20): <b>TUXAXsM2EEwj6Yu4ragkYDS3riwiSQMEuL</b>
+                </li>
+                <li>
+                    SOL: <b>2ZK7hJ8pQ5NXb2ezRtdKWXSAvHLZDMpPKJe5xw5Ak76Y</b>
+                </li>
+                <li>
+                    DOT: <b>13bYtwi73W4Z2rJoyWxdMiaVQrq1S3PkhzzsGrNzfdHcSFoQ</b>
+                </li>
+                <li>
+                    NEAR: <b>cfe98a5294eb92a6affba80b8265d00c2f09a6a169a8a9da7712ed6e6b951e71</b>
+                </li>
+                <li>
+                    XTZ: <b>tz1Ppo34Z8TfBSo6bhFZ6qSwTGU3L3FqXJJr</b>
+                </li>
+                <li>
+                    LTC: <b>ltc1qj8e0jrxc3wx7pfmjfyyjkg8hf2ajs9ecp5wwr2</b>
+                </li>
+                <li>
+                    DOGE: <b>DFFZkkTsiyEKbGbK2ANACiB35wQU5iJAPk</b>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="video" class="presentation no-bg">
+        <section class="content">
+            <h1>@SupportLoc[SupportRes.Video_HowToSupport_Title]</h1>
+            <iframe src="https://www.youtube.com/embed/EooGR7WvbDE"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </section>
+    </section>
+</main>

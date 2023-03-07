@@ -14,9 +14,6 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Кантакты</value>
     </data>
-    <data name="KeyResources" xml:space="preserve">
-        <value>Асноўныя рэсурсы</value>
-    </data>
     <data name="KeyResources_YouTube" xml:space="preserve">
         <value>YouTube</value>
     </data>
@@ -31,9 +28,6 @@
     </data>
     <data name="KeyResources_Podcasts" xml:space="preserve">
         <value>Падкасты</value>
-    </data>
-    <data name="KeyResources_Telegram" xml:space="preserve">
-        <value>Telegram</value>
     </data>
     <data name="KeyResources_Twitter" xml:space="preserve">
         <value>Twitter</value>
@@ -52,9 +46,6 @@
     </data>
     <data name="Cont_Mail_body" xml:space="preserve">
         <value>Часова не маю... Digital nomad :)</value>
-    </data>
-    <data name="Other" xml:space="preserve">
-        <value>Іншыя рэсурсы</value>
     </data>
     <data name="Other_YouTubeWall" xml:space="preserve">
         <value>Сцяна YouTube</value>

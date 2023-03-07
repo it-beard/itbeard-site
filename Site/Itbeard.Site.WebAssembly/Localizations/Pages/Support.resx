@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Поддержать проекты Лекса</value>
+    </data>
+    <data name="Video_HowToSupport_Title" xml:space="preserve">
+        <value>Видео о том, как поддержать шоу АйТиБорода</value>
+    </data>
+    <data name="Patreon_Title" xml:space="preserve">
+        <value>Поддержать через Patreon</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
+        <value>Через </value>
+    </data>
+    <data name="Crypto_Title" xml:space="preserve">
+        <value>Поддержать криптовалютами</value>
+    </data>
+    <data name="Crypto_Paragraph" xml:space="preserve">
+        <value>Для крипто-энтузиастов есть возможность поддержать проекты Лекса через криптовалюты. Ваша поддержка напрямую влияет на развитие шоу «АйТиБорода» и видеокаст «Цёмный Лёс», потому большое вам спасибо!</value>
+    </data>
+    <data name="Apple_Title" xml:space="preserve">
+        <value>Подписка в Apple Podcasts</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
+        <value> можно поддержать любой из проектов Лекса: шоу «АйТиБорода» и видеокаст «Цёмный Лёс». </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
+        <value>«Спонсорка АйТиБороды» </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
+        <value>Кроме того, вы получите доступ к бонусным выпускам шоу «АйТиБорода», к солокасту о жизни Лекса «Новости Бороды» и к закрытому Discord-серверу </value>
+    </data>
+</root>

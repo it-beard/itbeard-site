@@ -11,35 +11,30 @@
     }
 
 #about {
-        background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
-    }
-
-#interview {
-        --theme: #f2fa41;
-        background: url("/images/boris.jpg") top / cover;
-    }
-#know {
-        --theme: #0494d3;
-        background: url("/images/knowhow.jpg") top / cover;
-    }
-
-#streams {
-        --theme: #e91b1b;
-        background: url("/images/streams.jpg") top / cover;
-    }
-
-#other > h1{
-    margin-top: 25px;
+    background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
 }
 
-.discord iframe {
-    max-width: 100%;
+#description {
+    background-color: #25034f;
+    padding-top: 1px; /** hard fix **/
 }
 
-.discord img {
-    width: 220px;
-    margin: 0 auto;
+#where {
+    background: url("/images/youtube.png") 73% / auto auto no-repeat;
 }
+
+#where ul li {
+    font-size: 17px;
+}
+
+#sponsorship {
+    background: #25034f url("/images/sponsorship.png") 25% / auto auto no-repeat;
+}
+
+#sponsors_bonuses {
+     background-color: #25034f;
+     padding-top: 1px; /** hard fix **/
+ }
 
 #commerce {
     background: url("/images/youtube.png") 73% / auto auto no-repeat;
@@ -47,6 +42,15 @@
 
 #not_commerce {
     background: #4c5eac url("/images/partnership.png") 23% / auto auto no-repeat;
+}
+
+#other > h1{
+    margin-top: 25px;
+}
+
+.discord img {
+    width: 260px;
+    margin: 0 auto;
 }
 
 a {
@@ -58,9 +62,39 @@ a:hover {
 }
 
 .email {
-     color: #ff8714;
-     font-weight: bold;
- }
+    color: #ff8714;
+    font-weight: bold;
+}
+
+.colored-text  {
+    color: #ff8714;
+    font-weight: bold;
+}
+
+.youtube {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.telegram {
+    color: #2A9DD6;
+    font-weight: bold;
+}
+
+.linkedin {
+    color: #5F80F5;
+    font-weight: bold;
+}
+
+.tiktok{
+    color: #C53189;
+    font-weight: bold;
+}
+
+.site {
+    color: #FF424D;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 767px) {
     .presentation {
@@ -79,18 +113,6 @@ a:hover {
          width: 100%;
          min-height: 100vh;
      }
-
-    #interview {
-        background-position: 15% 0;
-    }
-
-    #know {
-        background-position: 55% 0;
-    }
-
-    #streams {
-        background-position: 75% 0;
-    }
 
     #not_commerce .links {
         margin-left: 30px;

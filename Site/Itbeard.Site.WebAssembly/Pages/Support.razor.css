@@ -42,37 +42,37 @@ a:hover {
     font-weight: bold;
 }
 
-#info .links a {
+#patreon {
+    background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
+}
+
+#merch {
+    background: url("/images/merch.jpg") no-repeat 70% 45%
+}
+
+#merch .links a {
     font-style: italic;
     text-decoration: none;
 }
 
-#info a:hover {
+#merch a:hover {
     text-decoration: underline;
 }
 
-#info span {
+#merch span {
     font-weight: bold;
 }
 
-#info.youtube span {
-    color: #FF0000;
+#card {
+    background: #00134d82 url("/images/cards.png") no-repeat 35% 40%;
 }
 
-#info.soundcloud span{
-    color: #ff8714;
+#crypto {
+    background: url("/images/crypto.png") no-repeat 80% 45%
 }
 
-#info.discord span{
-    color: #6D8CF6;
-}
-
-#info.telegram span{
-    color: #2A9DD6;
-}
-
-#info.instagram span{
-    color: #C53189;
+#video {
+    background: #00134d82 none;
 }
 
 #video iframe {
@@ -88,28 +88,9 @@ a:hover {
     width: 100%;
 }
 
-#patreon {
-    background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
-}
-
-#crypto {
-    background: #00134d82 url("/images/crypto.png") no-repeat 80% 45%
-}
-
-#info {
-    background: url("/images/sponsorship.png") 25% / auto auto no-repeat;
-}
-
-#how_to {
-    background: #00134d82 url("/images/howto.png") no-repeat 70% 43%;
-}
-
-#apple {
-    background: url("/images/apple.png") no-repeat 65% 50%
-}
-
-#video {
-    background: #00134d82 none;
+.colored-text  {
+    color: #ff8714;
+    font-weight: bold;
 }
 
 @media screen and (max-width: 767px) {
@@ -142,6 +123,10 @@ a:hover {
         background-position-y: 100%;
     }
 
+    #merch {
+        background-size: 100%;
+    }
+
     #crypto {
         background-color: #698eff82;
         background-size: 100%;
@@ -151,16 +136,7 @@ a:hover {
         overflow-x: scroll;
     }
 
-    #info {
+    #card {
         background-size: 100%;
-    }
-
-    #how_to {
-        background-color: #698eff82;
-        background-size: 100%;
-    }
-
-    #apple {
-        background-position: 50%;
     }
 }

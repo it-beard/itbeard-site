@@ -18,11 +18,11 @@
     <resheader name="writer">
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
-    <data name="ITBeard" xml:space="preserve">
-        <value>АйТиБорода</value>
+    <data name="Index" xml:space="preserve">
+        <value>Главная</value>
     </data>
-    <data name="Partnership" xml:space="preserve">
-        <value>Сотрудничество</value>
+    <data name="ItbeardShow" xml:space="preserve">
+        <value>АйТиБорода</value>
     </data>
     <data name="Support" xml:space="preserve">
         <value>Поддержать</value>
@@ -30,10 +30,13 @@
     <data name="Contacts" xml:space="preserve">
         <value>На связи</value>
     </data>
-    <data name="DarkDestiny" xml:space="preserve">
+    <data name="CiomnyLosShow" xml:space="preserve">
         <value>Цёмны Лёс</value>
     </data>
     <data name="LogoClass" xml:space="preserve">
         <value>logo</value>
+    </data>
+    <data name="VklWorld" xml:space="preserve">
+        <value>VKL</value>
     </data>
 </root>

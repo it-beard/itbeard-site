@@ -1,0 +1,80 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>АйЦіБарада - жыццё і праца ў IT 🇺🇦 #гыквайне</value>
+    </data>
+    <data name="AboutShow" xml:space="preserve">
+        <value>Аб шоу</value>
+    </data>
+    <data name="AboutShow_Paragraph_2" xml:space="preserve">
+        <value>Шоу «АйЦіБарада» прысвечана жыццю айцішнікаў знутры і сваімі эпізодамі распавядае пра мовы праграмавання, папулярныя тэхналогіі, прафесіі, вядомых прадстаўнікоў сферы і іх шляхі развіцця. &lt;br/&gt; Без усялякай цэнзуры, цэтлікаў і лішняга пафасу.</value>
+    </data>
+    <data name="AboutShow_Paragraph_3" xml:space="preserve">
+        <value>Увесь кантэнт «АйЦіБарады» разам з вамі фармуе супольнасць аднадумцаў, здольных перавярнуць гэты свет і змяніць сябе ў лепшы бок.</value>
+    </data>
+    <data name="AboutShow_Paragraph_3_End" xml:space="preserve">
+        <value>Так што, ПАГНАЛІ!</value>
+    </data>
+    <data name="Interview" xml:space="preserve">
+        <value>Інтэрв'ю</value>
+    </data>
+    <data name="Interview_Paragraph_1" xml:space="preserve">
+        <value>Асноўны фармат шоу - гэта інтэрв'ю. У іх адмыслоўцы розных it-кірункаў і кампаній дзеляцца сваім досведам. Ад дызайнераў і праграмістаў да CEO і CTO, ад маленькіх стартапаў да гігантаў рынка. Героі інтэрв'ю - гэта людзі з багатым жыццёвым і прафесійным досведам, гатовыя дзяліцца ім з аўдыторыяй.</value>
+    </data>
+    <data name="Interview_Paragraph_1_Button" xml:space="preserve">
+        <value>Глядзець усе інтэрв'ю!</value>
+    </data>
+    <data name="Profession" xml:space="preserve">
+        <value>Прафесіі</value>
+    </data>
+    <data name="Profession_Paragraph_1" xml:space="preserve">
+        <value>Калі вы не ведаеце, куды падацца ў IT, то я вам усё раскажу! Менавіта для гэтага існуе рубрыка "Прафесіі", у якой мы з гасцямі разбіраемся ў тонкасцях іх рамяства. Кожны госць гэтай рубрыкі - прафесіянал у сваёй справе, які накіруе вас па дакладным шляху!</value>
+    </data>
+    <data name="Profession_Paragraph_1_Button" xml:space="preserve">
+        <value>Атрымаць прафесію!</value>
+    </data>
+    <data name="Programming" xml:space="preserve">
+        <value>Праграмаванне</value>
+    </data>
+    <data name="Programming_Paragraph_1" xml:space="preserve">
+        <value>Адной з асноўных задач шоу з'яўляецца асвятленне ўсіх існых моў праграмавання. І ў нас нядрэнна атрымліваецца, асноўная маса МП ужо прадстаўлены на канале! Слухайце апісанне ўпадабаных МП і пашырайце свае навыкі 😉</value>
+    </data>
+    <data name="Programming_Paragraph_1_Button" xml:space="preserve">
+        <value>Асвоіць новую мову!</value>
+    </data>
+    <data name="Commercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Пазнаёміцца з публічнай статыстыкай каналу ды з відамі камерцыйнага супрацоўніцтва можна ў медыя-кіце </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
+        <value>За дадатковай інфармацыяй аб фарматах супрацоўніцтва, падрабязнай статыстыкай і коштамі звяртайцеся на пошту </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
+        <value> ці ў тэлеграм </value>
+    </data>
+    <data name="Commercial_Title" xml:space="preserve">
+        <value>Камерцыйнае супрацоўніцтва</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
+        <value>Калі Вы - адмысловец якой-небудзь сферы IT з досведам ад пяці гадоў у індустрыі, ці ў Вас ёсць цікавая тэма для выпуску, якая яшчэ не была асветлена на канале, то пішыце мне на пошту</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part2" xml:space="preserve">
+        <value> ці ў тэлеграм </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
+        <value>, абмяркуем усе дэталі 😉</value>
+    </data>
+    <data name="NonCommercial_Title" xml:space="preserve">
+        <value>Некамерцыйнае супрацоўніцтва</value>
+    </data>
+</root>

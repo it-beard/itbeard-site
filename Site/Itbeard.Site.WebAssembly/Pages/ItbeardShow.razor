@@ -1,0 +1,152 @@
+﻿@page "/show"
+@page "/partnership"
+@using ItbeardShowLoc = Localizations.Pages.ItbeardShow;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SharedRes> SharedLoc
+@inject IStringLocalizer<ItbeardShowLoc> Loc
+
+<Title>@Loc[ItbeardShowLoc.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<main id="landing">
+    <section id="about" class="presentation presentation-first no-bg">
+        <section class="content right">
+            <h1>@Loc[ItbeardShowLoc.AboutShow]</h1>
+            <p>
+                @((MarkupString)Loc[ItbeardShowLoc.AboutShow_Paragraph_2].Value)
+            </p>
+            <p>
+                @((MarkupString)Loc[ItbeardShowLoc.AboutShow_Paragraph_3].Value)
+                <b class="parting-words">
+                    @Loc[ItbeardShowLoc.AboutShow_Paragraph_3_End]
+                </b>
+            </p>
+        </section>
+    </section>
+
+    <section id="interview" class="presentation">
+        <section class="content center">
+            <h1>@Loc[ItbeardShowLoc.Interview]</h1>
+            <p>
+                @((MarkupString)Loc[ItbeardShowLoc.Interview_Paragraph_1].Value)
+            </p>
+            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986l19y0i0dMoPSQxb2wnsdE" target="_blank" class="btn-bottom">
+                @((MarkupString)Loc[ItbeardShowLoc.Interview_Paragraph_1_Button].Value)
+            </a>
+        </section>
+    </section>
+
+    <section id="know" class="presentation">
+        <section class="content left">
+            <h1>@Loc[ItbeardShowLoc.Profession]</h1>
+            <p>
+                @((MarkupString)Loc[ItbeardShowLoc.Profession_Paragraph_1].Value)
+            </p>
+            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu987VRKxIuCQLevB_vUA2dB2I" target="_blank" class="btn-bottom">
+                @((MarkupString)Loc[ItbeardShowLoc.Profession_Paragraph_1_Button].Value)
+            </a>
+        </section>
+    </section>
+
+    <section id="streams" class="presentation">
+        <section class="content right">
+            <h1>@Loc[ItbeardShowLoc.Programming]</h1>
+            <p>
+                @((MarkupString)Loc[ItbeardShowLoc.Programming_Paragraph_1].Value)
+            </p>
+            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984Jnm_YhDcD_Hs5WEB39HoR" target="_blank" class="btn-bottom">
+                @((MarkupString)Loc[ItbeardShowLoc.Programming_Paragraph_1_Button].Value)
+            </a>
+        </section>
+    </section>
+
+    <section id="commerce" class="presentation no-bg">
+            <section class="content left">
+                <h1>
+                    @Loc[ItbeardShowLoc.Commercial_Title]
+                </h1>
+                <p>
+                    @Loc[ItbeardShowLoc.Commercial_Paragraph1_Part1]
+                    (<a href="https://s.itbeard.com/mediakit" target="_blank" class="email">русский</a>,
+                    <a href="https://s.itbeard.com/mediakit-en" target="_blank" class="email">english</a>).
+                </p>
+                <p>
+                    @Loc[ItbeardShowLoc.Commercial_Paragraph2_Part1]
+                    <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
+                    @Loc[ItbeardShowLoc.Commercial_Paragraph2_Part2]
+                    <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>.
+                </p>
+            </section>
+        </section>
+
+    <section id="not_commerce" class="presentation no-bg">
+        <section class="content right">
+            <h1>
+                @Loc[ItbeardShowLoc.NonCommercial_Title]
+            </h1>
+            <p>
+                @Loc[ItbeardShowLoc.NonCommercial_Title]
+                <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
+                @Loc[ItbeardShowLoc.NonCommercial_Paragraph1_Part2]
+                <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>
+                @Loc[ItbeardShowLoc.NonCommercial_Paragraph1_Part3]
+            </p>
+        </section>
+    </section>
+
+        @*<section id="other">
+            <h1>@Loc[IndexLoc.ExtraGoodies]</h1>
+            <section class="content">
+                <a href="https://twitter.com/iamitbeard" target="_blank" class="article streams">
+                    <h1>Мерч</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Twitter_Content].Value)
+                    </p>
+                    <img src="/images/twitter.jpg">
+                </a>
+
+                <a href="https://t.me/itbeard" target="_blank" class="article stickers">
+                    <img src="/images/patreon.jpg">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Patreon_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Patreon_Content].Value)
+                    </p>
+                    <img src="/images/telegram.jpg">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Telegram_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Telegram_Content].Value)
+                    </p>
+                </a>
+
+                <a href="https://instagram.com/itbeard" target="_blank" class="article streams">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Instagram_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Instagram_Content].Value)
+                    </p>
+                    <img src="/images/instagram.jpg">
+                </a>
+
+                <a href="/sponsorship" class="article streams">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Sponsorship_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Sponsorship_Content].Value)
+                    </p>
+                    <img src="/images/sponsorship.jpg">
+                </a>
+
+                <a href="https://www.patreon.com/itbeard" target="_blank" class="article streams">
+                    <img src="/images/patreon.jpg">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Patreon_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Patreon_Content].Value)
+                    </p>
+                </a>
+
+                <a href="https://s.itbeard.com/sponsors-discord" target="_blank" class="article streams discord">
+                    <h1>@Loc[IndexLoc.ExtraGoodies_Discord_Title]</h1>
+                    <p>
+                        @((MarkupString)Loc[IndexLoc.ExtraGoodies_Discord_Content].Value)
+                    </p>
+                    <img src="/images/discord.jpg">
+                </a>
+            </section>
+        </section>*@
+</main>

@@ -1,24 +1,25 @@
 ﻿@using NavLoc = Localizations.Shared.NavMenu;
 @inject IStringLocalizer<Localizations.Shared.NavMenu> Loc
 
-<NavLink class="@Loc[NavLoc.LogoClass]" href="">
-    <img src="/images/logo.jpg" alt="">
-    @Loc[NavLoc.ITBeard]
-</NavLink>
-
 <button id="menu-toggle" class="menu-toggle @NavMenuButtonCssClass" @onclick="ToggleNavMenu">
     <span></span><span></span><span></span>
 </button>
 
 <nav id="menu" class="@NavMenuCssClass">
-    <NavLink class="nav-link" href="partnership" @onclick='() => CloseMenu()'>
-        @Loc[NavLoc.Partnership]
+    <NavLink class="nav-link" href="/" Match="NavLinkMatch.All" @onclick='() => CloseMenu()'>
+        @Loc[NavLoc.Index]
+    </NavLink>
+    <NavLink class="nav-link" href="show" @onclick='() => CloseMenu()'>
+        @Loc[NavLoc.ItbeardShow]
+    </NavLink>
+    <NavLink class="nav-link" href="https://ciomnylos.itbeard.com" target="_blank" @onclick='() => CloseMenu()'>
+        @Loc[NavLoc.CiomnyLosShow]
+    </NavLink>
+    <NavLink class="nav-link" href="https://vkl.world" target="_blank" @onclick='() => CloseMenu()'>
+        @Loc[NavLoc.VklWorld]
     </NavLink>
     <NavLink class="nav-link" href="support" @onclick='() => CloseMenu()'>
         @Loc[NavLoc.Support]
-    </NavLink>
-    <NavLink class="nav-link" href="https://ciomnylos.itbeard.com" target="_blank" @onclick='() => CloseMenu()'>
-        @Loc[NavLoc.DarkDestiny]
     </NavLink>
     <NavLink class="nav-link" href="contacts" @onclick='() => CloseMenu()'>
         @Loc[NavLoc.Contacts]

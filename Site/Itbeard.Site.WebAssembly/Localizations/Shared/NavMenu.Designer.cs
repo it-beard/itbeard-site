@@ -45,15 +45,15 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string ITBeard {
+        internal static string Index {
             get {
-                return ResourceManager.GetString("ITBeard", resourceCulture);
+                return ResourceManager.GetString("Index", resourceCulture);
             }
         }
         
-        internal static string Partnership {
+        internal static string ItbeardShow {
             get {
-                return ResourceManager.GetString("Partnership", resourceCulture);
+                return ResourceManager.GetString("ItbeardShow", resourceCulture);
             }
         }
         
@@ -69,15 +69,21 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string DarkDestiny {
+        internal static string CiomnyLosShow {
             get {
-                return ResourceManager.GetString("DarkDestiny", resourceCulture);
+                return ResourceManager.GetString("CiomnyLosShow", resourceCulture);
             }
         }
         
         internal static string LogoClass {
             get {
                 return ResourceManager.GetString("LogoClass", resourceCulture);
+            }
+        }
+        
+        internal static string VklWorld {
+            get {
+                return ResourceManager.GetString("VklWorld", resourceCulture);
             }
         }
     }

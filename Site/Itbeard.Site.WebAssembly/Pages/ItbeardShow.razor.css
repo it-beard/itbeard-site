@@ -1,0 +1,98 @@
+#landing {
+    padding: 0;
+}
+
+#landing>* {
+        padding: 0px var(--container-padding);
+    }
+
+.parting-words{
+        color: deepskyblue;
+    }
+
+#about {
+        background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
+    }
+
+#interview {
+        --theme: #f2fa41;
+        background: url("/images/boris.jpg") top / cover;
+    }
+#know {
+        --theme: #0494d3;
+        background: url("/images/knowhow.jpg") top / cover;
+    }
+
+#streams {
+        --theme: #e91b1b;
+        background: url("/images/streams.jpg") top / cover;
+    }
+
+#other > h1{
+    margin-top: 25px;
+}
+
+.discord iframe {
+    max-width: 100%;
+}
+
+.discord img {
+    width: 220px;
+    margin: 0 auto;
+}
+
+#commerce {
+    background: url("/images/youtube.png") 73% / auto auto no-repeat;
+}
+
+#not_commerce {
+    background: #4c5eac url("/images/partnership.png") 23% / auto auto no-repeat;
+}
+
+a {
+     text-decoration: none;
+ }
+
+a:hover {
+    text-decoration: underline;
+}
+
+.email {
+     color: #ff8714;
+     font-weight: bold;
+ }
+
+@media screen and (max-width: 767px) {
+    .presentation {
+        padding: 0 !important;
+    }
+
+    .presentation:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .presentation .content {
+         width: 100%;
+         min-height: 100vh;
+     }
+
+    #interview {
+        background-position: 15% 0;
+    }
+
+    #know {
+        background-position: 55% 0;
+    }
+
+    #streams {
+        background-position: 75% 0;
+    }
+
+    #not_commerce .links {
+        margin-left: 30px;
+    }
+}

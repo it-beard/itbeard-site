@@ -383,6 +383,18 @@ app > section + section {
   margin: 15px 0;
 }
 
+#other > .content > .article li {
+  font-size: 17px;
+}
+
+#other > .content > .article a:hover {
+  text-decoration: underline;
+}
+
+#other > .content > .article a {
+  text-decoration: none;
+}
+
 #footer {
   flex: auto;
   display: flex;
@@ -468,6 +480,13 @@ app > section + section {
   color: #2A9DD6;
 }
 
+#footer .social > a.mastodon:hover {
+   border-color: #5A49DE;
+   box-shadow: 0 0 5px 3px #5A49DE;
+   text-shadow: none;
+   color: #5A49DE;
+ }
+
 #footer .social > a.github:hover {
   border-color: white;
   box-shadow: 0 0 5px 3px white;
@@ -476,10 +495,10 @@ app > section + section {
 }
 
 #footer .social > a.patreon:hover {
-  border-color: #6D8CF6;
+  border-color: #e45f00;
   box-shadow: 0 0 5px 3px #e45f00;
   text-shadow: none;
-  color: #6D8CF6;
+  color: #e45f00;
 }
 
 #footer .fab {
@@ -569,7 +588,6 @@ app > section + section {
 
   #other > .content > .article > img {
     height: auto;
-    max-height: 256px;
   }
 }
 

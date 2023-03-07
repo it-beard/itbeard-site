@@ -14,21 +14,21 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
     [System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Partnership {
+    internal class ItbeardShow {
         
         private static System.Resources.ResourceManager resourceMan;
         
         private static System.Globalization.CultureInfo resourceCulture;
         
         [System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Partnership() {
+        internal ItbeardShow() {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Itbeard.Site.WebAssembly.Localizations.Pages.Partnership", typeof(Partnership).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Itbeard.Site.WebAssembly.Localizations.Pages.ItbeardShow", typeof(ItbeardShow).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -48,6 +48,84 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string PageTitle {
             get {
                 return ResourceManager.GetString("PageTitle", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow {
+            get {
+                return ResourceManager.GetString("AboutShow", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow_Paragraph_3 {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_3", resourceCulture);
+            }
+        }
+        
+        internal static string Interview {
+            get {
+                return ResourceManager.GetString("Interview", resourceCulture);
+            }
+        }
+        
+        internal static string Interview_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Interview_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interview_Paragraph_1_Button {
+            get {
+                return ResourceManager.GetString("Interview_Paragraph_1_Button", resourceCulture);
+            }
+        }
+        
+        internal static string Profession {
+            get {
+                return ResourceManager.GetString("Profession", resourceCulture);
+            }
+        }
+        
+        internal static string Profession_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Profession_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Profession_Paragraph_1_Button {
+            get {
+                return ResourceManager.GetString("Profession_Paragraph_1_Button", resourceCulture);
+            }
+        }
+        
+        internal static string Programming {
+            get {
+                return ResourceManager.GetString("Programming", resourceCulture);
+            }
+        }
+        
+        internal static string Programming_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Programming_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Programming_Paragraph_1_Button {
+            get {
+                return ResourceManager.GetString("Programming_Paragraph_1_Button", resourceCulture);
+            }
+        }
+        
+        internal static string AboutShow_Paragraph_3_End {
+            get {
+                return ResourceManager.GetString("AboutShow_Paragraph_3_End", resourceCulture);
             }
         }
         

@@ -1,0 +1,80 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>ITBeard - life and work in IT 🇺🇦 #stopwarinukraine</value>
+    </data>
+    <data name="AboutShow" xml:space="preserve">
+        <value>About show</value>
+    </data>
+    <data name="AboutShow_Paragraph_2" xml:space="preserve">
+        <value>The show "ITBeard" is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and their way of development. &lt;br/&gt;Without any censorship, labels or extra pathos.</value>
+    </data>
+    <data name="AboutShow_Paragraph_3" xml:space="preserve">
+        <value>All of ITBeard's content, together with you, forms a community of like-minded people who can turn this world upside down and change themselves for the better.</value>
+    </data>
+    <data name="Interview" xml:space="preserve">
+        <value>Interview</value>
+    </data>
+    <data name="Interview_Paragraph_1" xml:space="preserve">
+        <value>The main format of the show is interviews. In them, specialists from different IT fields and companies share their experiences. From designers and programmers to CEOs and CTOs, from small startups to market giants. The heroes of the interviews are people with rich life and professional experience, ready to share them with the audience.</value>
+    </data>
+    <data name="Interview_Paragraph_1_Button" xml:space="preserve">
+        <value>See all episodes!</value>
+    </data>
+    <data name="Profession" xml:space="preserve">
+        <value>Professions</value>
+    </data>
+    <data name="Profession_Paragraph_1" xml:space="preserve">
+        <value>If you don't know where to go in IT, I'll tell you everything! That's what the "Professions" rubric is for, where we and our guests go over the intricacies of their craft. Each guest in this column is a professional in his or her field, who will guide you along the right path!</value>
+    </data>
+    <data name="Profession_Paragraph_1_Button" xml:space="preserve">
+        <value>Get a profession!</value>
+    </data>
+    <data name="Programming" xml:space="preserve">
+        <value>Programming</value>
+    </data>
+    <data name="Programming_Paragraph_1" xml:space="preserve">
+        <value>One of the main tasks of the show is to cover all existing programming languages. And we're pretty good at it, most of the languages are already represented on the channel! Listen to the description of your favorite languages and expand your skills 😉</value>
+    </data>
+    <data name="Programming_Paragraph_1_Button" xml:space="preserve">
+        <value>Learn a new language!</value>
+    </data>
+    <data name="AboutShow_Paragraph_3_End" xml:space="preserve">
+        <value>So, GET THERE!</value>
+    </data>
+    <data name="NonCommercial_Title" xml:space="preserve">
+        <value>Nonprofit collaboration</value>
+    </data>
+    <data name="Commercial_Paragraph1_Part1" xml:space="preserve">
+        <value>You can find the channel's public statistics and types of commercial cooperation in the media kit </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
+        <value>For more information about cooperation formats, detailed statistics and costs, please contact </value>
+    </data>
+    <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
+        <value> or ping me on Telegram </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part2" xml:space="preserve">
+        <value> or ping me on Telegram </value>
+    </data>
+    <data name="Commercial_Title" xml:space="preserve">
+        <value>Commercial cooperation</value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
+        <value>If you are an IT specialist with five or more years of experience in the industry, or you have an interesting topic for release that has not yet been covered on the channel, send me an email </value>
+    </data>
+    <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
+        <value>, we'll discuss all the details 😉</value>
+    </data>
+</root>

@@ -1,112 +1,108 @@
 ﻿@page "/"
 @using IndexLoc = Localizations.Pages.Index;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SharedRes> SharedLoc
 @inject IStringLocalizer<IndexLoc> Loc
 
-<Title>@Loc[IndexLoc.PageTitle]</Title>
+<Title>@Loc[IndexLoc.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 <main id="landing">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@Loc[IndexLoc.AboutShow]</h1>
+            <h1>@Loc[IndexLoc.About]</h1>
             <p>
-                @((MarkupString)Loc[IndexLoc.AboutShow_Paragraph_1].Value)
+                @((MarkupString)Loc[IndexLoc.About_Paragraph_1].Value)
             </p>
             <p>
-                @((MarkupString)Loc[IndexLoc.AboutShow_Paragraph_2].Value)
+                @Loc[IndexLoc.About_Paragraph_2]
             </p>
             <p>
-                @((MarkupString)Loc[IndexLoc.AboutShow_Paragraph_3].Value)
-                <b class="parting-words">
-                    @Loc[IndexLoc.AboutShow_Paragraph_3_End]
-                </b>
+                @((MarkupString)Loc[IndexLoc.About_Paragraph_3].Value)
             </p>
-        </section>
-    </section>
-
-    <section id="interview" class="presentation">
-        <section class="content center">
-            <h1>@Loc[IndexLoc.Interview]</h1>
             <p>
-                @((MarkupString)Loc[IndexLoc.Interview_Paragraph_1].Value)
+                @Loc[IndexLoc.About_Paragraph_4]
             </p>
-            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986l19y0i0dMoPSQxb2wnsdE" target="_blank" class="btn-bottom">
-                @((MarkupString)Loc[IndexLoc.Interview_Paragraph_1_Button].Value)
-            </a>
-        </section>
-    </section>
-
-    <section id="know" class="presentation">
-        <section class="content left">
-            <h1>@Loc[IndexLoc.Profession]</h1>
-            <p>
-                @((MarkupString)Loc[IndexLoc.Profession_Paragraph_1].Value)
-            </p>
-            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu987VRKxIuCQLevB_vUA2dB2I" target="_blank" class="btn-bottom">
-                @((MarkupString)Loc[IndexLoc.Profession_Paragraph_1_Button].Value)
-            </a>
-        </section>
-    </section>
-
-    <section id="streams" class="presentation">
-        <section class="content right">
-            <h1>@Loc[IndexLoc.Programming]</h1>
-            <p>
-                @((MarkupString)Loc[IndexLoc.Programming_Paragraph_1].Value)
-            </p>
-            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984Jnm_YhDcD_Hs5WEB39HoR" target="_blank" class="btn-bottom">
-                @((MarkupString)Loc[IndexLoc.Programming_Paragraph_1_Button].Value)
-            </a>
         </section>
     </section>
 
     <section id="other">
-        <h1>@Loc[IndexLoc.ExtraGoodies]</h1>
+        <h1>Интересненькое</h1>
         <section class="content">
-            <a href="https://twitter.com/iamitbeard" target="_blank" class="article streams">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Twitter_Title]</h1>
+            <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="article">
+                <h1>Мерч</h1>
                 <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Twitter_Content].Value)
+                    В жизни и в видосах я появляюсь в необычных толстовках, майках и т.д.
+                    Купить такие же можно в моём магазинчике.
                 </p>
-                <img src="/images/twitter.jpg">
+                <p>
+                    Каждой покупки ты поддержишь меня на <b>$5</b>! 😊
+                </p>
+                <img src="/images/merch-2.jpg">
             </a>
 
-            <a href="https://t.me/itbeard" target="_blank" class="article stickers">
-                <img src="/images/telegram.jpg">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Telegram_Title]</h1>
-                <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Telegram_Content].Value)
-                </p>
-            </a>
-
-            <a href="https://instagram.com/itbeard" target="_blank" class="article streams">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Instagram_Title]</h1>
-                <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Instagram_Content].Value)
-                </p>
-                <img src="/images/instagram.jpg">
-            </a>
-
-            <a href="/sponsorship" class="article streams">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Sponsorship_Title]</h1>
-                <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Sponsorship_Content].Value)
-                </p>
-                <img src="/images/sponsorship.jpg">
-            </a>
-
-            <a href="https://www.patreon.com/itbeard" target="_blank" class="article streams">
+            <a href="https://www.patreon.com/itbeard" target="_blank" class="article">
                 <img src="/images/patreon.jpg">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Patreon_Title]</h1>
+                <h1>Поддержи меня</h1>
                 <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Patreon_Content].Value)
+                    Поддержка на Patreon - один из способов поддержать мои начинания.
+                    Будучи патроном ты получишь доступ к куче ништяков!
+                </p>
+
+                <p>
+                    Кстати, все способы поддержать меня ты надешь на странице <i>"Поддержать"</i>.
                 </p>
             </a>
 
-            <a href="https://s.itbeard.com/sponsors-discord" target="_blank" class="article streams discord">
-                <h1>@Loc[IndexLoc.ExtraGoodies_Discord_Title]</h1>
+            <a href="https://vkl.world/@@itbeard" target="_blank" class="article">
+                <h1>Mastodon</h1>
                 <p>
-                    @((MarkupString)Loc[IndexLoc.ExtraGoodies_Discord_Content].Value)
+                    Я большой поклонник Fediverse и ненавистник того, что стало с Твиттером при Маске.
+                    Потому, подписывайся на меня в Mastodon: <b class="colored-text">@@itbeard@@vkl.world</b>
                 </p>
-                <img src="/images/discord.jpg">
+                <p>
+                    Пишу я там по-беларуски, но отвечаю на любых языках.
+                </p>
+                <img src="/images/masto.jpg">
+            </a>
+
+            <a href="https://github.com/itbeard" target="_blank"  class="article">
+                <h1>GitHub</h1>
+                <p>
+                    Занимаясь разработкой с 2011 года, у меня появилось несколько небольших opensource  проектов.
+                </p>
+                <p>
+                    Посмотреть на них можно в моём GitHub. А может даже и закоммитать что-нибудь. 😉
+                </p>
+                <img src="/images/github-2.jpg">
+            </a>
+
+            <div href="" target="_blank" class="article">
+                <img src="/images/content-creator.jpg">
+                <h1>Где ты меня видел?</h1>
+                <p>
+                    В свободное от работы время я тружусь в основном над тремя публичными проектами:
+                    <ul>
+                        <li>
+                            Шоу <a href="/show" class="colored-text">«АйТиБорода»</a>
+                        </li>
+                        <li>
+                            Подкаст <a href="/ciomnylos" class="colored-text">«Цёмный Лёс»</a>
+                        </li>
+                        <li>
+                            Mastodon-сервер <a href="/vkl" class="colored-text">«VKL»</a>
+                        </li>
+                    </ul>
+                </p>
+            </div>
+
+            <a href="https://www.linkedin.com/in/akartynnik/" target="_blank" class="article">
+                <h1>LinkedIn</h1>
+                <p>
+                    В LinkedIn подробно описан мой профессиональный опыт и лежит старое CV.
+                </p>
+                <p>
+                    Тамже можно посмотреть, на каком корабле и над чем я сейчас работаю.
+                </p>
+                <img src="/images/linkedin.jpg">
             </a>
         </section>
     </section>

@@ -93,7 +93,7 @@ section.content {
 }
 
 #third_slide {
-    background: url("/images/other-recources.png") 25% / auto auto no-repeat;
+    background: url("/images/socials.png") no-repeat 35% 50%;
     min-height: 100vh;
 }
 

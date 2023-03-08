@@ -75,12 +75,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string LogoClass {
-            get {
-                return ResourceManager.GetString("LogoClass", resourceCulture);
-            }
-        }
-        
         internal static string VklWorld {
             get {
                 return ResourceManager.GetString("VklWorld", resourceCulture);

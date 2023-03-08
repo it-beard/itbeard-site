@@ -1,106 +1,117 @@
 ﻿@page "/"
-@using IndexLoc = Localizations.Pages.Index;
+@using IndexRes = Localizations.Pages.Index;
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
-@inject IStringLocalizer<IndexLoc> Loc
+@inject IStringLocalizer<IndexRes> Loc
 
-<Title>@Loc[IndexLoc.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<Title>@Loc[IndexRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 <main id="landing">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@Loc[IndexLoc.About]</h1>
+            <h1>
+                @Loc[IndexRes.About]
+            </h1>
             <p>
-                @((MarkupString)Loc[IndexLoc.About_Paragraph_1].Value)
+                @((MarkupString)Loc[IndexRes.About_Paragraph_1].Value)
             </p>
             <p>
-                @Loc[IndexLoc.About_Paragraph_2]
+                @Loc[IndexRes.About_Paragraph_2]
             </p>
             <p>
-                @((MarkupString)Loc[IndexLoc.About_Paragraph_3].Value)
+                @((MarkupString)Loc[IndexRes.About_Paragraph_3].Value)
             </p>
             <p>
-                @Loc[IndexLoc.About_Paragraph_4]
+                @Loc[IndexRes.About_Paragraph_4]
             </p>
         </section>
     </section>
 
     <section class="slides">
-        <h1>Интересненькое</h1>
+        <h1>@Loc[IndexRes.Interesting]</h1>
         <section class="content">
             <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="article">
-                <h1>Мерч</h1>
+                <h1>
+                    @Loc[IndexRes.Interesting_Merch]
+                </h1>
                 <p>
-                    В жизни и в видосах я появляюсь в необычных толстовках, майках и т.д.
-                    Купить такие же можно в моём магазинчике.
+                    @Loc[IndexRes.Interesting_Merch_Paragraph_1]
                 </p>
                 <p>
-                    Каждой покупки ты поддержишь меня на <b>$5</b>! 😊
+                    @((MarkupString)Loc[IndexRes.Interesting_Merch_Paragraph_2].Value)
                 </p>
                 <img class="merch" src="/images/merch.jpg">
             </a>
 
             <a href="https://www.patreon.com/itbeard" target="_blank" class="article">
                 <img src="/images/patreon.jpg">
-                <h1>Поддержи меня</h1>
+                <h1>
+                    @Loc[IndexRes.Interesting_Support]
+                </h1>
                 <p>
-                    Поддержка на Patreon - один из способов поддержать мои начинания.
-                    Будучи патроном ты получишь доступ к куче ништяков!
+                    @Loc[IndexRes.Interesting_Support_Paragraph_1]
                 </p>
 
                 <p>
-                    Кстати, все способы поддержать меня ты надешь на странице <i>"Поддержать"</i>.
+                    @((MarkupString)Loc[IndexRes.Interesting_Support_Paragraph_2].Value)
                 </p>
             </a>
 
             <a href="https://www.patreon.com/itbeard?filters[tag]=%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D1%8B" target="_blank" class="article">
-                <h1>Новости Бороды</h1>
+                <h1>
+                    @((MarkupString) Loc[IndexRes.Interesting_News].Value)
+                </h1>
                 <p>
-                    Для тех кто меня поддерживает ежемесячно я записываю солокаст <b class="colored-text">«Новости Бороды»</b>.
-                    В этом подкасте я рассказываю про IT-сплетни, про события из жизни, про новый и старый контент и про свои планы.
+                    @((MarkupString)Loc[IndexRes.Interesting_News_Paragraph_1].Value)
                 </p>
                 <p>
-                    Солокаст доступен спонсорам АйТиБороды и всем Патронам на Patreon.
+                    @((MarkupString)Loc[IndexRes.Interesting_News_Paragraph_2].Value)
                 </p>
                 <img src="/images/solocast.jpg">
             </a>
 
             <a href="https://github.com/itbeard" target="_blank"  class="article">
-                <h1>GitHub</h1>
+                <h1>
+                    @((MarkupString) Loc[IndexRes.Interesting_GitHub].Value)
+                </h1>
                 <p>
-                    Занимаясь разработкой с 2011 года, у меня появилось несколько небольших opensource  проектов.
+                    @((MarkupString)Loc[IndexRes.Interesting_GitHub_Paragraph_1].Value)
                 </p>
                 <p>
-                    Посмотреть на них можно в моём GitHub. А может даже и закоммитать что-нибудь. 😉
+                    @((MarkupString)Loc[IndexRes.Interesting_GitHub_Paragraph_2].Value)
                 </p>
                 <img src="/images/github.jpg">
             </a>
 
             <div href="" target="_blank" class="article">
                 <img src="/images/content-creator.jpg">
-                <h1>Где ты меня видел?</h1>
+                <h1>
+                    @((MarkupString) Loc[IndexRes.Interesting_Where].Value)
+                </h1>
                 <p>
-                    В свободное от работы время я тружусь в основном над тремя публичными проектами:
+                    @((MarkupString)Loc[IndexRes.Interesting_Where_Paragrahp_1].Value)
                     <ul>
                         <li>
-                            Шоу <a href="/show" class="colored-text">«АйТиБорода»</a>
+                            @Loc[IndexRes.Interesting_Where_Paragrahp_21] <a href="/show" class="colored-text">@Loc[IndexRes.Interesting_Where_Paragrahp_22]</a>
                         </li>
                         <li>
-                            Подкаст <a href="/ciomnylos" class="colored-text">«Цёмный Лёс»</a>
+                            @Loc[IndexRes.Interesting_Where_Paragrahp_31] <a href="/ciomnylos" class="colored-text">@Loc[IndexRes.Interesting_Where_Paragrahp_32]</a>
                         </li>
                         <li>
-                            Mastodon-сервер <a href="/vkl" class="colored-text">«VKL»</a>
+                            @Loc[IndexRes.Interesting_Where_Paragrahp_41] <a href="/vkl" class="colored-text">@Loc[IndexRes.Interesting_Where_Paragrahp_42]</a>
                         </li>
                     </ul>
                 </p>
             </div>
 
             <a href="https://www.linkedin.com/in/akartynnik/" target="_blank" class="article">
-                <h1>LinkedIn</h1>
+                <h1>
+                    @((MarkupString)Loc[IndexRes.Interesting_LinkedIn].Value)
+                </h1>
                 <p>
-                    В LinkedIn подробно описан мой профессиональный опыт и лежит старое CV.
+                   @((MarkupString)Loc[IndexRes.Interesting_LinkedIn_Paragrarh_1].Value)
                 </p>
                 <p>
-                    Тамже можно посмотреть, на каком корабле и над чем я сейчас работаю.
+                    @((MarkupString)Loc[IndexRes.Interesting_LinkedIn_Paragrarh_2].Value)
                 </p>
                 <img src="/images/linkedin.jpg">
             </a>

@@ -33,9 +33,6 @@
     <data name="CiomnyLosShow" xml:space="preserve">
         <value>Цёмны Лёс</value>
     </data>
-    <data name="LogoClass" xml:space="preserve">
-        <value>logo</value>
-    </data>
     <data name="VklWorld" xml:space="preserve">
         <value>ВКЛ</value>
     </data>

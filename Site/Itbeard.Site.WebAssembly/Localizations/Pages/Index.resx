@@ -36,4 +36,76 @@
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>На этом сайте ты узнаешь обо всех моих проектах чутка больше 😊</value>
     </data>
+    <data name="Interesting" xml:space="preserve">
+        <value>Интересненькое</value>
+    </data>
+    <data name="Interesting_Merch" xml:space="preserve">
+        <value>Мерч</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_1" xml:space="preserve">
+        <value>В жизни и в видосах я появляюсь в необычных толстовках, майках и т.д. Купить такие же можно в моём магазинчике.</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_2" xml:space="preserve">
+        <value>Каждой покупки ты поддержишь меня на &lt;b&gt;$5&lt;/b&gt;! 😊</value>
+    </data>
+    <data name="Interesting_Support" xml:space="preserve">
+        <value>Поддержи меня</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_1" xml:space="preserve">
+        <value>Поддержка на Patreon - один из способов поддержать мои начинания. Будучи патроном ты получишь доступ к куче ништяков!</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_2" xml:space="preserve">
+        <value>Кстати, все способы поддержать меня ты надешь на странице &lt;i&gt;"Поддержать"&lt;/i&gt;.</value>
+    </data>
+    <data name="Interesting_News" xml:space="preserve">
+        <value>Новости Бороды</value>
+    </data>
+    <data name="Interesting_News_Paragraph_2" xml:space="preserve">
+        <value>Солокаст доступен спонсорам АйТиБороды и всем Патронам на Patreon.</value>
+    </data>
+    <data name="Interesting_News_Paragraph_1" xml:space="preserve">
+        <value>Для тех кто меня поддерживает ежемесячно я записываю солокаст &lt;b class="colored-text"&gt;«Новости Бороды»&lt;/b&gt;. В этом подкасте я рассказываю про IT-сплетни, про события из жизни, про новый и старый контент и про свои планы.</value>
+    </data>
+    <data name="Interesting_GitHub" xml:space="preserve">
+        <value>GitHub</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_1" xml:space="preserve">
+        <value>Занимаясь разработкой с 2011 года, у меня появилось несколько небольших opensource  проектов.</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_2" xml:space="preserve">
+        <value>Посмотреть на них можно в моём GitHub. А может даже и закоммитать что-нибудь. 😉</value>
+    </data>
+    <data name="Interesting_Where" xml:space="preserve">
+        <value>Где ты меня видел?</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_1" xml:space="preserve">
+        <value>В свободное от работы время я тружусь в основном над тремя публичными проектами:</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_21" xml:space="preserve">
+        <value>Шоу</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_22" xml:space="preserve">
+        <value>«АйТиБорода»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_31" xml:space="preserve">
+        <value>Подкаст</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_32" xml:space="preserve">
+        <value>«Цёмный Лёс»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_41" xml:space="preserve">
+        <value>Mastodon-сервер</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_42" xml:space="preserve">
+        <value>«ВКЛ»</value>
+    </data>
+    <data name="Interesting_LinkedIn" xml:space="preserve">
+        <value>LinkedIn</value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_1" xml:space="preserve">
+        <value>В LinkedIn подробно описан мой профессиональный опыт и лежит старое CV. </value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_2" xml:space="preserve">
+        <value>Там же можно посмотреть, на каком корабле и над чем я сейчас работаю.</value>
+    </data>
 </root>

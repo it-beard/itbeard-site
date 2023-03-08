@@ -206,5 +206,167 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("YouTube_List_3_Link", resourceCulture);
             }
         }
+        
+        internal static string WhereToSee {
+            get {
+                return ResourceManager.GetString("WhereToSee", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_3 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_3", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_4 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_4", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_5 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_5", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_6 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_6", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_7 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_7", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_8 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_8", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_9 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_9", resourceCulture);
+            }
+        }
+        
+        internal static string Support {
+            get {
+                return ResourceManager.GetString("Support", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_11 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_11", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_12 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_12", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_13 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_13", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_14 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_14", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_15 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_15", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_16 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_16", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_17 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_17", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_21 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_21", resourceCulture);
+            }
+        }
+        
+        internal static string Suport_Paragraph_22 {
+            get {
+                return ResourceManager.GetString("Suport_Paragraph_22", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus {
+            get {
+                return ResourceManager.GetString("Bonus", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_Discord {
+            get {
+                return ResourceManager.GetString("Bonus_Discord", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_Discord_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Bonus_Discord_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_Discord_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Bonus_Discord_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_News {
+            get {
+                return ResourceManager.GetString("Bonus_News", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_News_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Bonus_News_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Bonus_News_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Bonus_News_Paragraph_2", resourceCulture);
+            }
+        }
     }
 }

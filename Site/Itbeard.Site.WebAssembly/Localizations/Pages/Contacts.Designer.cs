@@ -57,45 +57,15 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string KeyResources_YouTube {
-            get {
-                return ResourceManager.GetString("KeyResources_YouTube", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Discord {
-            get {
-                return ResourceManager.GetString("KeyResources_Discord", resourceCulture);
-            }
-        }
-        
         internal static string KeyResources_Patreon {
             get {
                 return ResourceManager.GetString("KeyResources_Patreon", resourceCulture);
             }
         }
         
-        internal static string KeyResources_Twitter {
-            get {
-                return ResourceManager.GetString("KeyResources_Twitter", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Instagram {
-            get {
-                return ResourceManager.GetString("KeyResources_Instagram", resourceCulture);
-            }
-        }
-        
         internal static string KeyResources_Telegram {
             get {
                 return ResourceManager.GetString("KeyResources_Telegram", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Podcasts {
-            get {
-                return ResourceManager.GetString("KeyResources_Podcasts", resourceCulture);
             }
         }
         
@@ -135,33 +105,57 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Other_YouTubeWall {
-            get {
-                return ResourceManager.GetString("Other_YouTubeWall", resourceCulture);
-            }
-        }
-        
         internal static string Other_GitHub {
             get {
                 return ResourceManager.GetString("Other_GitHub", resourceCulture);
             }
         }
         
-        internal static string Other_TelegramStickers {
+        internal static string KeyResources_Itbeard {
             get {
-                return ResourceManager.GetString("Other_TelegramStickers", resourceCulture);
+                return ResourceManager.GetString("KeyResources_Itbeard", resourceCulture);
             }
         }
         
-        internal static string Other_LinkedinGroup {
+        internal static string KeyResources_CiomnyLos {
             get {
-                return ResourceManager.GetString("Other_LinkedinGroup", resourceCulture);
+                return ResourceManager.GetString("KeyResources_CiomnyLos", resourceCulture);
             }
         }
         
-        internal static string Other_FacebookGroup {
+        internal static string KeyResources_Mastodon {
             get {
-                return ResourceManager.GetString("Other_FacebookGroup", resourceCulture);
+                return ResourceManager.GetString("KeyResources_Mastodon", resourceCulture);
+            }
+        }
+        
+        internal static string KeyResources_Linkedin {
+            get {
+                return ResourceManager.GetString("KeyResources_Linkedin", resourceCulture);
+            }
+        }
+        
+        internal static string Other_Mastodon {
+            get {
+                return ResourceManager.GetString("Other_Mastodon", resourceCulture);
+            }
+        }
+        
+        internal static string Other_Twitter {
+            get {
+                return ResourceManager.GetString("Other_Twitter", resourceCulture);
+            }
+        }
+        
+        internal static string Other_Instagram {
+            get {
+                return ResourceManager.GetString("Other_Instagram", resourceCulture);
+            }
+        }
+        
+        internal static string Other_LinkedIn {
+            get {
+                return ResourceManager.GetString("Other_LinkedIn", resourceCulture);
             }
         }
     }

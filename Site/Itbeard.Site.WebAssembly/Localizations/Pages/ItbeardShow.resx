@@ -64,7 +64,7 @@
         <value>Познакомиться с публичной статистикой канала и видах коммерческого сотрудничества можно в медиа-ките </value>
     </data>
     <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
-        <value>За дополнительной информацией о форматах сотрудничества, подробной статистикой и стоимостями обращайтесь на почту </value>
+        <value>За дополнительной информацией о форматах сотрудничества, подробной статистикой и стоимостями обращайся на почту </value>
     </data>
     <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
         <value> или в телеграм </value>
@@ -73,7 +73,7 @@
         <value>Некоммерческое сотрудничество</value>
     </data>
     <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
-        <value>Если Вы - специалист какой либо сферы IT с опытом от пяти лет в индустрии, или у Вас есть интересная тема для выпуска, которая еще не была освещена на канале, то пишите мне на почту </value>
+        <value>Если ты - специалист какой либо сферы IT с опытом от пяти лет в индустрии, или у тебя есть интересная тема для выпуска, которая еще не была освещена на канале, то пиши мне на почту </value>
     </data>
     <data name="NonCommercial_Paragraph1_Part2" xml:space="preserve">
         <value> или в телеграм </value>
@@ -98,5 +98,86 @@
     </data>
     <data name="YouTube_List_3_Link" xml:space="preserve">
         <value>Ранний доступ</value>
+    </data>
+    <data name="WhereToSee" xml:space="preserve">
+        <value>Хочу! Где смотреть?</value>
+    </data>
+    <data name="WhereToSee_Paragraph_1" xml:space="preserve">
+        <value>Шоу и новости вокруг него можно смотреть, слушать и читать на разных платформах, ссылочки ниже:</value>
+    </data>
+    <data name="WhereToSee_Paragraph_2" xml:space="preserve">
+        <value>Смотреть на</value>
+    </data>
+    <data name="WhereToSee_Paragraph_3" xml:space="preserve">
+        <value>Читать в</value>
+    </data>
+    <data name="WhereToSee_Paragraph_4" xml:space="preserve">
+        <value>Залипнуть в</value>
+    </data>
+    <data name="WhereToSee_Paragraph_5" xml:space="preserve">
+        <value>Подсмотреть в</value>
+    </data>
+    <data name="WhereToSee_Paragraph_6" xml:space="preserve">
+        <value>Слушать на</value>
+    </data>
+    <data name="WhereToSee_Paragraph_7" xml:space="preserve">
+        <value>Слушать на</value>
+    </data>
+    <data name="WhereToSee_Paragraph_8" xml:space="preserve">
+        <value>Слушать на</value>
+    </data>
+    <data name="WhereToSee_Paragraph_9" xml:space="preserve">
+        <value>RSS Feed и сайт подкаста</value>
+    </data>
+    <data name="Support" xml:space="preserve">
+        <value>Как поддержать шоу?</value>
+    </data>
+    <data name="Suport_Paragraph_11" xml:space="preserve">
+        <value>Легко! Самые простые способы - это оформить</value>
+    </data>
+    <data name="Suport_Paragraph_12" xml:space="preserve">
+        <value>спонсорство на YouTube</value>
+    </data>
+    <data name="Suport_Paragraph_13" xml:space="preserve">
+        <value>, стать </value>
+    </data>
+    <data name="Suport_Paragraph_14" xml:space="preserve">
+        <value>патроном на Patreon</value>
+    </data>
+    <data name="Suport_Paragraph_15" xml:space="preserve">
+        <value>либо оформить</value>
+    </data>
+    <data name="Suport_Paragraph_16" xml:space="preserve">
+        <value>подписку на Apple Podcasts</value>
+    </data>
+    <data name="Suport_Paragraph_17" xml:space="preserve">
+        <value>. Спонсоры, патроны и подписчики на Apple получают доступ к спонсорским бонусам и дополнительному контенту, что приятно 😊</value>
+    </data>
+    <data name="Suport_Paragraph_21" xml:space="preserve">
+        <value>А ещё, шоу можно поддержать через Суперспасибо, переводом на PayPal, Revolute, через криптовалютные переводы. Подробнее про эти способы можно почитать на странице </value>
+    </data>
+    <data name="Suport_Paragraph_22" xml:space="preserve">
+        <value>«Поддержка»</value>
+    </data>
+    <data name="Bonus" xml:space="preserve">
+        <value>Бонусы за поддержку</value>
+    </data>
+    <data name="Bonus_Discord" xml:space="preserve">
+        <value>Чат в Discord</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_1" xml:space="preserve">
+        <value>Discord-сервер «Спонсорка АйТиБороды» - это тихое место для общения спонсоров и патронов.</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_2" xml:space="preserve">
+        <value>Также тут можно напрямую связаться со мной, обсудить выпуски и проекты, предложить гостя, поучаствовать в записи «Новостей Бороды».</value>
+    </data>
+    <data name="Bonus_News" xml:space="preserve">
+        <value>Новости Бороды</value>
+    </data>
+    <data name="Bonus_News_Paragraph_1" xml:space="preserve">
+        <value>Для тех кто меня поддерживает ежемесячно я записываю солокаст &lt;b&gt;«Новости Бороды»&lt;/b&gt;. В этом подкасте я рассказываю про IT-сплетни, про события из жизни, про новый и старый контент и про свои планы.</value>
+    </data>
+    <data name="Bonus_News_Paragraph_2" xml:space="preserve">
+        <value>Солокаст доступен спонсорам АйТиБороды и всем Патронам на Patreon.</value>
     </data>
 </root>

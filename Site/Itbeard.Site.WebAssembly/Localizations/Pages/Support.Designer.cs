@@ -81,12 +81,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Apple_Title {
-            get {
-                return ResourceManager.GetString("Apple_Title", resourceCulture);
-            }
-        }
-        
         internal static string Patreon_Paragraph_Part_2 {
             get {
                 return ResourceManager.GetString("Patreon_Paragraph_Part_2", resourceCulture);
@@ -108,6 +102,72 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string Patreon_Paragraph_Part_4 {
             get {
                 return ResourceManager.GetString("Patreon_Paragraph_Part_4", resourceCulture);
+            }
+        }
+        
+        internal static string Merch {
+            get {
+                return ResourceManager.GetString("Merch", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_11 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_11", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_12 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_12", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_13 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_13", resourceCulture);
+            }
+        }
+        
+        internal static string Card {
+            get {
+                return ResourceManager.GetString("Card", resourceCulture);
+            }
+        }
+        
+        internal static string Card_Paragraph_11 {
+            get {
+                return ResourceManager.GetString("Card_Paragraph_11", resourceCulture);
+            }
+        }
+        
+        internal static string Card_Paragraph_12 {
+            get {
+                return ResourceManager.GetString("Card_Paragraph_12", resourceCulture);
+            }
+        }
+        
+        internal static string Card_Paragraph_13 {
+            get {
+                return ResourceManager.GetString("Card_Paragraph_13", resourceCulture);
+            }
+        }
+        
+        internal static string Card_Paragraph_14 {
+            get {
+                return ResourceManager.GetString("Card_Paragraph_14", resourceCulture);
+            }
+        }
+        
+        internal static string Card_Paragraph_15 {
+            get {
+                return ResourceManager.GetString("Card_Paragraph_15", resourceCulture);
             }
         }
     }

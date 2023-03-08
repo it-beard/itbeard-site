@@ -12,10 +12,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="PageTitle" xml:space="preserve">
-        <value>Падтрымаць праекты Лекса</value>
-    </data>
-    <data name="Apple_Title" xml:space="preserve">
-        <value>Падпіска ў Apple Podcasts</value>
+        <value>Падтрымаць мяне</value>
     </data>
     <data name="Crypto_Paragraph" xml:space="preserve">
         <value>Для крыпта-энтузіястаў ёсць магчымасць падтрымаць праекты Лекса праз крыптавалюты. Вашая падтрымка моцна ўплывае на развіццё шоу «АйЦіБарада» ды відэакасту «Цёмны Лёс», таму вялікі вам дзякуй!</value>
@@ -29,11 +26,8 @@
     <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
         <value>Patreon</value>
     </data>
-    <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
-        <value> можна падтрымаць любы з праектаў Лекса: шоу «АйЦіБарада» ды відэакаст «Цёмны Лёс». </value>
-    </data>
     <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
-        <value>Акрамя таго, вы атрымаеце доступ да бонусных выпускаў шоу «АйЦіБарада», солакасту аб жыцці Лекса «Навіны Барады» ды да закрытага Discord-серверу </value>
+        <value>Акрамя таго, ты атрымаеш доступ да бонусных выпускаў шоу «АйЦіБарада», солакасту аб маім жыцці «Навіны Барады» ды да закрытага Discord-серверу </value>
     </data>
     <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
         <value>«Спонсарка АйЦіБарады»</value>
@@ -42,6 +36,6 @@
         <value>Падтрымаць праз Patreon</value>
     </data>
     <data name="Video_HowToSupport_Title" xml:space="preserve">
-        <value>Відэа аб тым, як падтрымаць шоу АйЦіБарада</value>
+        <value>Відэа аб тым, як падтрымаць мяне</value>
     </data>
 </root>

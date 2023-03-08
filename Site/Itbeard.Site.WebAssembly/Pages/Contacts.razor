@@ -1,56 +1,58 @@
 @page "/contacts"
 @using ContactsRes = Localizations.Pages.Contacts;
 @using SharedRes = Localizations.SharedLocalizations;
-@inject IStringLocalizer<ContactsRes> ContactsLoc
+@inject IStringLocalizer<ContactsRes> Loc
 @inject IStringLocalizer<SharedRes> SharedLoc
 
-<Title>@ContactsLoc[ContactsRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<Title>@Loc[ContactsRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
 <main id="contacts">
     <section id="first_slide" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@ContactsLoc[ContactsRes.KeyResources]</h1>
+            <h1>
+                @Loc[ContactsRes.KeyResources]
+            </h1>
             <p class="links youtube">
-                <span>АйТиБорода</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
+                <span>@Loc[ContactsRes.KeyResources_Itbeard]</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
             </p>
             <p class="links youtube">
-                <span>Цёмны Лёс</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
+                <span>@Loc[ContactsRes.KeyResources_CiomnyLos]</span> / <a href="https://youtube.com/itbeard" target="_blank">youtube.com/itbeard</a>
             </p>
             <p class="links mastodon">
-                <span>Беларуский Mastodon</span> / <a href="https://vkl.world" target="_blank">vkl.world</a>
+                <span>@Loc[ContactsRes.KeyResources_Mastodon]</span> / <a href="https://vkl.world" target="_blank">vkl.world</a>
             </p>
             <p class="links telegram">
-                <span>@ContactsLoc[ContactsRes.KeyResources_Telegram]</span> / <a href="https://t.me/itbeard" target="_blank">t.me/itbeard</a>
+                <span>@Loc[ContactsRes.KeyResources_Telegram]</span> / <a href="https://t.me/itbeard" target="_blank">t.me/itbeard</a>
             </p>
             <p class="links linkedin">
-                <span>LinkedIn АйТиБороды</span> / <a href="https://s.itbeard.com/linkedin" target="_blank">s.itbeard.com/linkedin</a>
+                <span>@Loc[ContactsRes.KeyResources_Linkedin]</span> / <a href="https://s.itbeard.com/linkedin" target="_blank">s.itbeard.com/linkedin</a>
             </p>
             <p class="links patreon">
-                <span>@ContactsLoc[ContactsRes.KeyResources_Patreon]</span> / <a href="https://www.patreon.com/itbeard" target="_blank">patreon.com/itbeard</a>
+                <span>@Loc[ContactsRes.KeyResources_Patreon]</span> / <a href="https://www.patreon.com/itbeard" target="_blank">patreon.com/itbeard</a>
             </p>
         </section>
     </section>
 
     <section id="second_slide" class="presentation presentation-first no-bg">
         <section class="content left">
-            <h1>@ContactsLoc[ContactsRes.Cont_Title]</h1>
+            <h1>@Loc[ContactsRes.Cont_Title]</h1>
             <div class="links">
-                <span>@ContactsLoc[ContactsRes.Cont_Email]</span>
+                <span>@Loc[ContactsRes.Cont_Email]</span>
                 <div>
                     <a href="mailto:iamitbeard@gmail.com" target="_blank">iamitbeard@gmail.com</a>
                 </div>
             </div>
             <div class="links">
-                <span>@ContactsLoc[ContactsRes.Cont_Telegram]</span>
+                <span>@Loc[ContactsRes.Cont_Telegram]</span>
                 <div>
                     <a href="https://t.me/iamitboroda" target="_blank">@@iamitboroda</a>
                 </div>
             </div>
             <div class="links">
-                <span>@ContactsLoc[ContactsRes.Cont_Mail]</span>
+                <span>@Loc[ContactsRes.Cont_Mail]</span>
                 <div>
                     <div>
-                        @ContactsLoc[ContactsRes.Cont_Mail_body]
+                        @Loc[ContactsRes.Cont_Mail_body]
                     </div>
                 </div>
             </div>
@@ -59,21 +61,21 @@
 
     <section id="third_slide" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@ContactsLoc[ContactsRes.Other]</h1>
+            <h1>@Loc[ContactsRes.Other]</h1>
             <p class="links mastodon">
-                <span>Mastodon</span> / <a href="https://vkl.world/@@itbeard" target="_blank">@@itbeard@@vkl.world </a>
+                <span>@Loc[ContactsRes.Other_Mastodon]</span> / <a href="https://vkl.world/@@itbeard" target="_blank">@@itbeard@@vkl.world </a>
             </p>
             <p class="links twitter">
-                <span>Twitter</span> / <a href="https://twitter.com/iamitbeard" target="_blank">twitter.com/iamitbeard</a>
+                <span>@Loc[ContactsRes.Other_Twitter]</span> / <a href="https://twitter.com/iamitbeard" target="_blank">twitter.com/iamitbeard</a>
             </p>
             <p class="links instagram">
-                <span>Instagram</span> / <a href="https://www.instagram.com/itbeard" target="_blank">instagram.com/itbeard</a>
+                <span>@Loc[ContactsRes.Other_Instagram]</span> / <a href="https://www.instagram.com/itbeard" target="_blank">instagram.com/itbeard</a>
             </p>
             <p class="links">
-                <span>@ContactsLoc[ContactsRes.Other_GitHub]</span> / <a href="https://github.com/itbeard" target="_blank">github.com/itbeard</a>
+                <span>@Loc[ContactsRes.Other_GitHub]</span> / <a href="https://github.com/itbeard" target="_blank">github.com/itbeard</a>
             </p>
             <p class="links linkedin">
-                <span>LinkedIn</span> / <a href="https://www.linkedin.com/in/akartynnik" target="_blank">linkedin.com/in/akartynnik</a>
+                <span>@Loc[ContactsRes.Other_LinkedIn]</span> / <a href="https://www.linkedin.com/in/akartynnik" target="_blank">linkedin.com/in/akartynnik</a>
             </p>
         </section>
     </section>

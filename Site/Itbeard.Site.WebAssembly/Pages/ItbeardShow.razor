@@ -1,20 +1,20 @@
 ﻿@page "/show"
 @page "/partnership"
-@using ItbeardShowLoc = Localizations.Pages.ItbeardShow;
+@using ItbeardShowRes = Localizations.Pages.ItbeardShow;
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
-@inject IStringLocalizer<ItbeardShowLoc> Loc
+@inject IStringLocalizer<ItbeardShowRes> Loc
 
-<Title>@Loc[ItbeardShowLoc.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<Title>@Loc[ItbeardShowRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 <main id="landing">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
-            <h1>@Loc[ItbeardShowLoc.AboutShow]</h1>
+            <h1>@Loc[ItbeardShowRes.AboutShow]</h1>
             <p>
-                @Loc[ItbeardShowLoc.AboutShow_Paragraph_2]
+                @Loc[ItbeardShowRes.AboutShow_Paragraph_2]
             </p>
             <p>
-                @Loc[ItbeardShowLoc.AboutShow_Paragraph_3]
+                @Loc[ItbeardShowRes.AboutShow_Paragraph_3]
             </p>
         </section>
     </section>
@@ -24,34 +24,34 @@
         <section class="content">
 
             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984Jnm_YhDcD_Hs5WEB39HoR" target="_blank" class="article">
-                <h1>@Loc[ItbeardShowLoc.Programming]</h1>
+                <h1>@Loc[ItbeardShowRes.Programming]</h1>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Programming_Paragraph_1].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Programming_Paragraph_1].Value)
                 </p>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Programming_Paragraph_2].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Programming_Paragraph_2].Value)
                 </p>
                 <img src="/images/haskell.jpg">
             </a>
 
             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu987VRKxIuCQLevB_vUA2dB2I" target="_blank" class="article">
                 <img src="/images/lesia.jpg">
-                <h1>@Loc[ItbeardShowLoc.Profession]</h1>
+                <h1>@Loc[ItbeardShowRes.Profession]</h1>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Profession_Paragraph_1].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Profession_Paragraph_1].Value)
                 </p>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Profession_Paragraph_2].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Profession_Paragraph_2].Value)
                 </p>
             </a>
 
             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986l19y0i0dMoPSQxb2wnsdE" target="_blank" class="article">
-                <h1>@Loc[ItbeardShowLoc.Interview]</h1>
+                <h1>@Loc[ItbeardShowRes.Interview]</h1>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Interview_Paragraph_1].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Interview_Paragraph_1].Value)
                 </p>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowLoc.Interview_Paragraph_2].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Interview_Paragraph_2].Value)
                 </p>
                 <img src="/images/bobuk.jpg">
             </a>
@@ -61,49 +61,56 @@
     <section id="where" class="presentation no-bg">
             <section class="content left">
                 <h1>
-                    Хочу! Где смотреть?
+                    @((MarkupString)Loc[ItbeardShowRes.WhereToSee].Value)
                 </h1>
                 <p>
-                    Шоу и новости вокруг него можно смотреть, слушать и читать на разных платформах, ссылочки ниже:
+                    @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_1].Value)
                     <ul>
                         <li>
-                            Смотреть на <a href="https://www.youtube.com/@@itbeard" target="_blank" class="youtube">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_2].Value)
+                            <a href="https://www.youtube.com/@@itbeard" target="_blank" class="youtube">
                                 YouTube
                             </a>
                         </li>
                         <li>
-                            Читать в <a href="https://t.me/itbeard" target="_blank" class="telegram">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_3].Value)
+                            <a href="https://t.me/itbeard" target="_blank" class="telegram">
                                 Telegram
                             </a>
                         </li>
                         <li>
-                            Залипнуть в <a href="https://www.tiktok.com/@@itbeard" target="_blank" class="tiktok">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_4].Value)
+                            <a href="https://www.tiktok.com/@@itbeard" target="_blank" class="tiktok">
                                 TikTok
                             </a>
                         </li>
                         <li>
-                            Подсмотреть в <a href="https://s.itbeard.com/linkedin" target="_blank" class="linkedin">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_5].Value)
+                            <a href="https://s.itbeard.com/linkedin" target="_blank" class="linkedin">
                                 LinkedIn
                             </a>
                         </li>
                         <li>
-                            Слушать на <a href="https://spoti.fi/3Ktbf1Y" target="_blank" class="colored-text">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_6].Value)
+                            <a href="https://spoti.fi/3Ktbf1Y" target="_blank" class="colored-text">
                                 Spotify
                             </a>
                         </li>
                         <li>
-                            Слушать на <a href="https://bit.ly/itbeard-googlepodcasts" target="_blank" class="colored-text">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_7].Value)
+                            <a href="https://bit.ly/itbeard-googlepodcasts" target="_blank" class="colored-text">
                                 Google Podcasts
                             </a>
                         </li>
                         <li>
-                            Слушать на <a href="https://apple.co/41hwOIQ" target="_blank" class="colored-text">
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_8].Value)
+                            <a href="https://apple.co/41hwOIQ" target="_blank" class="colored-text">
                                 Apple Podcasts
                             </a>
                         </li>
                         <li>
                             <a href="https://podcast.itbeard.com" target="_blank" class="site">
-                                RSS Feed и сайт подкаста
+                                @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_9].Value)
                             </a>
                         </li>
                     </ul>
@@ -114,65 +121,79 @@
     <section id="sponsorship" class="presentation no-bg">
         <section class="content right">
             <h1>
-                Как поддержать шоу?
+                @((MarkupString)Loc[ItbeardShowRes.Support].Value)
             </h1>
             <p>
-                Легко! Самые простые способы - это оформить <a href="/support" target="_blank" class="colored-text">спонсорство на YouTube</a>,
-                стать <a href="https://www.patreon.com/itbeard" target="_blank" class="colored-text">патроном на Patreon</a> либо оформить
-                <a href="https://podcasts.apple.com/us/podcast/id1449804780" target="_blank" class="colored-text">подписку на Apple Podcasts</a>.
-                Спонсоры, патроны и подписчики на Apple получают доступ к спонсорским бонусам и дополнительному контенту, что приятно 😊
+                @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_11].Value)
+                <a href="/support" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_12].Value)
+                </a>@((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_13].Value)
+                <a href="https://www.patreon.com/itbeard" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_14].Value)
+                </a>
+                @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_15].Value)
+                <a href="https://podcasts.apple.com/us/podcast/id1449804780" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_16].Value)
+                </a>@((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_17].Value)
             </p>
             <p>
-                А ещё, шоу можно поддержать через Суперспасибо, переводом на PayPal, Revolute, через криптовалютные переводы.
-                Подробнее про эти способы можно почитать на странице <a href="/support" class="colored-text">«Поддержка»</a>
+                @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_21].Value)
+                <a href="/support" class="colored-text">
+                    @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_22].Value)
+                </a>
             </p>
         </section>
     </section>
 
     <section id="sponsors_bonuses" class="slides presentation-slides no-bg">
-        <h1>Бонусы за поддержку</h1>
+        <h1>
+            @((MarkupString)Loc[ItbeardShowRes.Bonus].Value)
+        </h1>
         <section class="content">
             <a href="https://s.itbeard.com/sponsors-discord" target="_blank" class="article discord">
-                <h1>Чат в Discord</h1>
+                <h1>
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_Discord].Value)
+                </h1>
                 <p>
-                    Discord-сервер «Спонсорка АйТиБороды» - это тихое место для общения спонсоров и патронов Лекса.
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_Discord_Paragraph_1].Value)
                 </p>
                 <p>
-                    Также тут можно напрямую связаться с Лексом, обсудить выпуски и проекты, предложить гостя, поучаствовать в записи «Новостей Бороды».
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_Discord_Paragraph_2].Value)
                 </p>
                 <img src="/images/discord.jpg">
             </a>
 
             <a href="https://www.patreon.com/itbeard?filters[tag]=%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D1%8B" target="_blank" class="article">
                 <img src="/images/solocast.jpg">
-                <h1>Новости Бороды</h1>
+                <h1>
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_News].Value)
+                </h1>
                 <p>
-                    Для тех кто меня поддерживает ежемесячно я записываю солокаст <b class="colored-text">«Новости Бороды»</b>.
-                    В этом подкасте я рассказываю про IT-сплетни, про события из жизни, про новый и старый контент и про свои планы.
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_News_Paragraph_1].Value)
                 </p>
                 <p>
-                    Солокаст доступен спонсорам АйТиБороды и всем Патронам на Patreon.
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_News_Paragraph_2].Value)
                 </p>
             </a>
 
             <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="article more">
-                <h1>@Loc[ItbeardShowLoc.YouTube_List_1]</h1>
+                <h1>@Loc[ItbeardShowRes.YouTube_List_1]</h1>
                 <p>
                     <ul>
                         <li>
                             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986bFr4dpzCVcMQ_r7lgwZCZ" target="_blank" class="colored-text">
-                                @Loc[ItbeardShowLoc.YouTube_List_2_Link]
+                                @Loc[ItbeardShowRes.YouTube_List_2_Link]
                             </a>
-                            @Loc[ItbeardShowLoc.YouTube_List_2]
+                            @Loc[ItbeardShowRes.YouTube_List_2]
                         </li>
                         <li>
                             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984VLrI0lES0axUSccXbgL7_" target="_blank" class="colored-text">
-                                @Loc[ItbeardShowLoc.YouTube_List_3_Link]
+                                @Loc[ItbeardShowRes.YouTube_List_3_Link]
                             </a>
-                            @Loc[ItbeardShowLoc.YouTube_List_3]
+                            @Loc[ItbeardShowRes.YouTube_List_3]
                         </li>
                         <li>
-                            @Loc[ItbeardShowLoc.YouTube_List_4]
+                            @Loc[ItbeardShowRes.YouTube_List_4]
                         </li>
                     </ul>
                 </p>
@@ -184,17 +205,17 @@
     <section id="commerce" class="presentation no-bg">
         <section class="content left">
             <h1>
-                @Loc[ItbeardShowLoc.Commercial_Title]
+                @Loc[ItbeardShowRes.Commercial_Title]
             </h1>
             <p>
-                @Loc[ItbeardShowLoc.Commercial_Paragraph1_Part1]
+                @Loc[ItbeardShowRes.Commercial_Paragraph1_Part1]
                 (<a href="https://s.itbeard.com/mediakit" target="_blank" class="email">русский</a>,
                 <a href="https://s.itbeard.com/mediakit-en" target="_blank" class="email">english</a>).
             </p>
             <p>
-                @Loc[ItbeardShowLoc.Commercial_Paragraph2_Part1]
+                @Loc[ItbeardShowRes.Commercial_Paragraph2_Part1]
                 <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
-                @Loc[ItbeardShowLoc.Commercial_Paragraph2_Part2]
+                @Loc[ItbeardShowRes.Commercial_Paragraph2_Part2]
                 <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>.
             </p>
         </section>
@@ -203,13 +224,13 @@
     <section id="not_commerce" class="presentation no-bg">
         <section class="content right">
             <h1>
-                @Loc[ItbeardShowLoc.NonCommercial_Title]
+                @Loc[ItbeardShowRes.NonCommercial_Title]
             </h1>
             <p>
-                @Loc[ItbeardShowLoc.NonCommercial_Title]
+                @Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part1]
                 <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
-                @Loc[ItbeardShowLoc.NonCommercial_Paragraph1_Part2]
-                <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>@Loc[ItbeardShowLoc.NonCommercial_Paragraph1_Part3]
+                @Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part2]
+                <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>@Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part3]
             </p>
         </section>
     </section>

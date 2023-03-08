@@ -45,12 +45,6 @@
       <EmbeddedResource Update="Localizations\Shared\SiteFooter.en.resx">
         <DependentUpon>SiteFooter.resx</DependentUpon>
       </EmbeddedResource>
-      <EmbeddedResource Update="Localizations\Pages\Contacts.be.resx">
-        <DependentUpon>Contacts.resx</DependentUpon>
-      </EmbeddedResource>
-      <EmbeddedResource Update="Localizations\Pages\Contacts.en.resx">
-        <DependentUpon>Contacts.resx</DependentUpon>
-      </EmbeddedResource>
       <EmbeddedResource Update="Localizations\Pages\Support.resx">
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Support.Designer.cs</LastGenOutput>
@@ -107,7 +101,7 @@
       <Compile Update="Localizations\Pages\Index.Designer.cs">
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
-        <DependentUpon>ItbeardShow.resx</DependentUpon>
+        <DependentUpon>Index.resx</DependentUpon>
       </Compile>
       <Compile Update="Localizations\Pages\ItbeardShow.Designer.cs">
         <DesignTime>True</DesignTime>

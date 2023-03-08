@@ -80,5 +80,149 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("About_Paragraph_4", resourceCulture);
             }
         }
+        
+        internal static string Interesting {
+            get {
+                return ResourceManager.GetString("Interesting", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Merch {
+            get {
+                return ResourceManager.GetString("Interesting_Merch", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Merch_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Interesting_Merch_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Merch_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Interesting_Merch_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Support {
+            get {
+                return ResourceManager.GetString("Interesting_Support", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Support_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Interesting_Support_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Support_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Interesting_Support_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_News {
+            get {
+                return ResourceManager.GetString("Interesting_News", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_News_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Interesting_News_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_News_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Interesting_News_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_GitHub {
+            get {
+                return ResourceManager.GetString("Interesting_GitHub", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_GitHub_Paragraph_1 {
+            get {
+                return ResourceManager.GetString("Interesting_GitHub_Paragraph_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_GitHub_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Interesting_GitHub_Paragraph_2", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where {
+            get {
+                return ResourceManager.GetString("Interesting_Where", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_1 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_21 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_21", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_22 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_22", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_31 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_31", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_32 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_32", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_41 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_41", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_Where_Paragrahp_42 {
+            get {
+                return ResourceManager.GetString("Interesting_Where_Paragrahp_42", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_LinkedIn {
+            get {
+                return ResourceManager.GetString("Interesting_LinkedIn", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_LinkedIn_Paragrarh_1 {
+            get {
+                return ResourceManager.GetString("Interesting_LinkedIn_Paragrarh_1", resourceCulture);
+            }
+        }
+        
+        internal static string Interesting_LinkedIn_Paragrarh_2 {
+            get {
+                return ResourceManager.GetString("Interesting_LinkedIn_Paragrarh_2", resourceCulture);
+            }
+        }
     }
 }

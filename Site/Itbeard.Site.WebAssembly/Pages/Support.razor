@@ -4,27 +4,27 @@
 
 @using SupportRes = Localizations.Pages.Support;
 @using SharedRes = Localizations.SharedLocalizations;
-@inject IStringLocalizer<SupportRes> SupportLoc
+@inject IStringLocalizer<SupportRes> Loc
 @inject IStringLocalizer<SharedRes> SharedLoc
 
-<Title>@SupportLoc[SupportRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<Title>@Loc[SupportRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
 <main>
     <section id="patreon" class="presentation no-bg">
         <section class="content right">
             <h1>
-                @SupportLoc[SupportRes.Patreon_Title]
+                @Loc[SupportRes.Patreon_Title]
             </h1>
             <p>
-                @SupportLoc[SupportRes.Patreon_Paragraph_Part_1]
+                @Loc[SupportRes.Patreon_Paragraph_Part_1]
                 <a href="https://www.patreon.com/itbeard" target="_blank">
-                    @SupportLoc[SupportRes.Patreon_Paragraph_Part_2]
+                    @Loc[SupportRes.Patreon_Paragraph_Part_2]
                 </a>
-                @SupportLoc[SupportRes.Patreon_Paragraph_Part_3]
+                @Loc[SupportRes.Patreon_Paragraph_Part_3]
                 <br/><br/>
-                @SupportLoc[SupportRes.Patreon_Paragraph_Part_4]
+                @Loc[SupportRes.Patreon_Paragraph_Part_4]
                 <a href="https://s.itbeard.com/sponsors-discord" target="_blank">
-                    @SupportLoc[SupportRes.Patreon_Paragraph_Part_5]
+                    @Loc[SupportRes.Patreon_Paragraph_Part_5]
                 </a> 😎
             </p>
         </section>
@@ -33,14 +33,16 @@
     <section id="merch" class="presentation no-bg">
         <section class="content left">
             <h1>
-                Фирменный мерч
+                @((MarkupString)Loc[SupportRes.Merch].Value)
             </h1>
             <p>
-                В жизни и в видосах я появляюсь в необычных вещах с прикольными надписями.
-                Купить такие же можно в <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="colored-text">моём магазинчике</a>: толстовки, майки, шапки, кружки и стикеры!
+                @((MarkupString)Loc[SupportRes.Merch_Paragraph_11].Value)
+                <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[SupportRes.Merch_Paragraph_12].Value)
+                </a>@((MarkupString)Loc[SupportRes.Merch_Paragraph_13].Value)
             </p>
             <p>
-                Каждой покупки ты поддержишь меня примерно на <b>$5</b>, большое спасибо! 😊
+                @((MarkupString)Loc[SupportRes.Merch_Paragraph_2].Value)
             </p>
         </section>
     </section>
@@ -48,13 +50,18 @@
     <section id="card" class="presentation no-bg">
         <section class="content right">
             <h1>
-                Revolut & PayPal
+                @((MarkupString)Loc[SupportRes.Card].Value)
             </h1>
             <p>
-                Через <a href="https://revolut.me/itbeard" target="_blank" class="colored-text">Revolut</a> и
-                <a href="https://www.paypal.com/paypalme/itbeard" target="_blank" class="colored-text">PayPal</a> ты можешь
-                поддержать меня прямым переводом с карты. Каждый такой перевод добавляет +100 к мотивации делать новый контент!
-
+                @((MarkupString)Loc[SupportRes.Card_Paragraph_11].Value)
+                <a href="https://revolut.me/itbeard" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[SupportRes.Card_Paragraph_12].Value)
+                </a>
+                @((MarkupString)Loc[SupportRes.Card_Paragraph_13].Value)
+                <a href="https://www.paypal.com/paypalme/itbeard" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[SupportRes.Card_Paragraph_14].Value)
+                </a>
+                @((MarkupString)Loc[SupportRes.Card_Paragraph_15].Value)
             </p>
         </section>
     </section>
@@ -62,10 +69,10 @@
     <section id="crypto" class="presentation no-bg">
         <section class="content left">
             <h1>
-                @SupportLoc[SupportRes.Crypto_Title]
+                @Loc[SupportRes.Crypto_Title]
             </h1>
             <p>
-                @((MarkupString)SupportLoc[SupportRes.Crypto_Paragraph].Value)
+                @((MarkupString)Loc[SupportRes.Crypto_Paragraph].Value)
             </p>
             <ul>
                 <li>
@@ -104,7 +111,7 @@
 
     <section id="video" class="presentation no-bg">
         <section class="content">
-            <h1>@SupportLoc[SupportRes.Video_HowToSupport_Title]</h1>
+            <h1>@Loc[SupportRes.Video_HowToSupport_Title]</h1>
             <iframe src="https://www.youtube.com/embed/EooGR7WvbDE"
                     title="YouTube video player"
                     frameborder="0"

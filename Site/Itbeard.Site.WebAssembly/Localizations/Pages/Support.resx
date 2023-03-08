@@ -19,10 +19,10 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="PageTitle" xml:space="preserve">
-        <value>Поддержать проекты Лекса</value>
+        <value>Поддержать меня</value>
     </data>
     <data name="Video_HowToSupport_Title" xml:space="preserve">
-        <value>Видео о том, как поддержать шоу АйТиБорода</value>
+        <value>Видео о том, как меня поддержать</value>
     </data>
     <data name="Patreon_Title" xml:space="preserve">
         <value>Поддержать через Patreon</value>
@@ -36,19 +36,49 @@
     <data name="Crypto_Paragraph" xml:space="preserve">
         <value>Для крипто-энтузиастов есть возможность поддержать проекты Лекса через криптовалюты. Ваша поддержка напрямую влияет на развитие шоу «АйТиБорода» и видеокаст «Цёмный Лёс», потому большое вам спасибо!</value>
     </data>
-    <data name="Apple_Title" xml:space="preserve">
-        <value>Подписка в Apple Podcasts</value>
-    </data>
     <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
         <value>Patreon</value>
     </data>
     <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
-        <value> можно поддержать любой из проектов Лекса: шоу «АйТиБорода» и видеокаст «Цёмный Лёс». </value>
+        <value> можно поддержать любой из моих проектов: шоу «АйТиБорода»,подкаст «Цёмный Лёс», mastodon-сервер «ВКЛ» и др. </value>
     </data>
     <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
         <value>«Спонсорка АйТиБороды» </value>
     </data>
     <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
-        <value>Кроме того, вы получите доступ к бонусным выпускам шоу «АйТиБорода», к солокасту о жизни Лекса «Новости Бороды» и к закрытому Discord-серверу </value>
+        <value>Кроме того, ты получишь доступ к бонусным выпускам шоу «АйТиБорода», к солокасту о моей жизни «Новости Бороды» и к закрытому Discord-серверу </value>
+    </data>
+    <data name="Merch" xml:space="preserve">
+        <value>Фирменный мерч</value>
+    </data>
+    <data name="Merch_Paragraph_11" xml:space="preserve">
+        <value>В жизни и в видосах я появляюсь в необычных вещах с прикольными надписями. Купить такие же можно в </value>
+    </data>
+    <data name="Merch_Paragraph_2" xml:space="preserve">
+        <value>Каждой покупки ты поддержишь меня примерно на &lt;b&gt;$5&lt;/b&gt;, большое спасибо! 😊</value>
+    </data>
+    <data name="Merch_Paragraph_12" xml:space="preserve">
+        <value>моём магазинчике</value>
+    </data>
+    <data name="Merch_Paragraph_13" xml:space="preserve">
+        <value>: толстовки, майки, шапки, кружки и стикеры!</value>
+    </data>
+    <data name="Card" xml:space="preserve">
+        <value>Revolut &amp; PayPal</value>
+    </data>
+    <data name="Card_Paragraph_11" xml:space="preserve">
+        <value>Через</value>
+    </data>
+    <data name="Card_Paragraph_12" xml:space="preserve">
+        <value>Revolut</value>
+    </data>
+    <data name="Card_Paragraph_13" xml:space="preserve">
+        <value>и</value>
+    </data>
+    <data name="Card_Paragraph_14" xml:space="preserve">
+        <value>PayPal</value>
+    </data>
+    <data name="Card_Paragraph_15" xml:space="preserve">
+        <value>ты можешь поддержать меня прямым переводом с карты. Каждый такой перевод добавляет +100 к мотивации делать новый контент!</value>
     </data>
 </root>

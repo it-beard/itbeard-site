@@ -14,23 +14,8 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Кантакты</value>
     </data>
-    <data name="KeyResources_YouTube" xml:space="preserve">
-        <value>YouTube</value>
-    </data>
-    <data name="KeyResources_Discord" xml:space="preserve">
-        <value>Discord</value>
-    </data>
-    <data name="KeyResources_Instagram" xml:space="preserve">
-        <value>Instagram</value>
-    </data>
     <data name="KeyResources_Patreon" xml:space="preserve">
         <value>Patreon</value>
-    </data>
-    <data name="KeyResources_Podcasts" xml:space="preserve">
-        <value>Падкасты</value>
-    </data>
-    <data name="KeyResources_Twitter" xml:space="preserve">
-        <value>Twitter</value>
     </data>
     <data name="Cont_Title" xml:space="preserve">
         <value>Кантакты для сувязі</value>
@@ -47,19 +32,19 @@
     <data name="Cont_Mail_body" xml:space="preserve">
         <value>Часова не маю... Digital nomad :)</value>
     </data>
-    <data name="Other_YouTubeWall" xml:space="preserve">
-        <value>Сцяна YouTube</value>
-    </data>
     <data name="Other_GitHub" xml:space="preserve">
         <value>GitHub</value>
     </data>
-    <data name="Other_TelegramStickers" xml:space="preserve">
-        <value>Стыкеры Telegram</value>
+    <data name="Other_LinkedIn" xml:space="preserve">
+        <value>LinkedIn</value>
     </data>
-    <data name="Other_LinkedinGroup" xml:space="preserve">
-        <value>Суполка ў Linkedin</value>
+    <data name="Other_Instagram" xml:space="preserve">
+        <value>Instagram</value>
     </data>
-    <data name="Other_FacebookGroup" xml:space="preserve">
-        <value>Суполка ў Facebook</value>
+    <data name="Other_Twitter" xml:space="preserve">
+        <value>Twitter</value>
+    </data>
+    <data name="Other_Mastodon" xml:space="preserve">
+        <value>Mastodon</value>
     </data>
 </root>

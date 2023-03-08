@@ -73,4 +73,10 @@
     <data name="YouTube_List_4" xml:space="preserve">
         <value>Exclusive badges and emoji</value>
     </data>
+    <data name="Interview" xml:space="preserve">
+        <value>IT Rock Stars</value>
+    </data>
+    <data name="Bonus_News" xml:space="preserve">
+        <value>Beard News</value>
+    </data>
 </root>

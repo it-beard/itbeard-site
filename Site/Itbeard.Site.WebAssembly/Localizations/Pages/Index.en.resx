@@ -29,4 +29,34 @@
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>On this web site you gonna to learn a little bit more about all my projects 😊</value>
     </data>
+    <data name="Interesting_GitHub" xml:space="preserve">
+        <value>GitHub</value>
+    </data>
+    <data name="Interesting_Merch" xml:space="preserve">
+        <value>Merch</value>
+    </data>
+    <data name="Interesting_News" xml:space="preserve">
+        <value>Beard News</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_22" xml:space="preserve">
+        <value>«ITBeard»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_31" xml:space="preserve">
+        <value>Podcast</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_32" xml:space="preserve">
+        <value>«Ciomny Los»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_42" xml:space="preserve">
+        <value>«VKL»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_41" xml:space="preserve">
+        <value>Mastodon server</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_21" xml:space="preserve">
+        <value>Show</value>
+    </data>
+    <data name="Interesting_LinkedIn" xml:space="preserve">
+        <value>LinkedIn</value>
+    </data>
 </root>

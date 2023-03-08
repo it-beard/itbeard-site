@@ -47,4 +47,25 @@
     <data name="Other_Mastodon" xml:space="preserve">
         <value>Mastodon</value>
     </data>
+    <data name="KeyResources" xml:space="preserve">
+        <value>Маі праекты</value>
+    </data>
+    <data name="KeyResources_CiomnyLos" xml:space="preserve">
+        <value>Цёмны Лёс</value>
+    </data>
+    <data name="KeyResources_Itbeard" xml:space="preserve">
+        <value>АйЦіБарада</value>
+    </data>
+    <data name="KeyResources_Mastodon" xml:space="preserve">
+        <value>Беларускі Mastodon</value>
+    </data>
+    <data name="KeyResources_Linkedin" xml:space="preserve">
+        <value>LinkedIn АйЦіБарады</value>
+    </data>
+    <data name="KeyResources_Telegram" xml:space="preserve">
+        <value>Telegram АйЦіБарады</value>
+    </data>
+    <data name="Other" xml:space="preserve">
+        <value>Я ў соцсетках</value>
+    </data>
 </root>

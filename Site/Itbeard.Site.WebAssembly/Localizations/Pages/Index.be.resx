@@ -29,4 +29,76 @@
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>На гэтым сайце ты даведаешся пра ўсе мае праекты крыху больш 😊</value>
     </data>
+    <data name="Interesting" xml:space="preserve">
+        <value>Цікавосткі</value>
+    </data>
+    <data name="Interesting_GitHub" xml:space="preserve">
+        <value>GitHub</value>
+    </data>
+    <data name="Interesting_Merch" xml:space="preserve">
+        <value>Мерч</value>
+    </data>
+    <data name="Interesting_News" xml:space="preserve">
+        <value>Навіны Барады</value>
+    </data>
+    <data name="Interesting_Support" xml:space="preserve">
+        <value>Падтрымай мяне</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_21" xml:space="preserve">
+        <value>Шоу</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_22" xml:space="preserve">
+        <value>«АйЦіБорода»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_31" xml:space="preserve">
+        <value>Падкаст</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_32" xml:space="preserve">
+        <value>«Цёмны Лёс»</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_41" xml:space="preserve">
+        <value>Mastodon-сэрвер</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_42" xml:space="preserve">
+        <value>«ВКЛ»</value>
+    </data>
+    <data name="Interesting_Where" xml:space="preserve">
+        <value>Дзе ты мяне бачыў?</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_2" xml:space="preserve">
+        <value>Дарэчы, усе спосабы падтрымаць мяне ты знойдзеш на старонцы &lt;i&gt;"Падтрымаць"&lt;/i&gt;.</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_1" xml:space="preserve">
+        <value>У вольны ад працы час я займаюся наступнымі праектамі:</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_1" xml:space="preserve">
+        <value>Падтрымка на Patreon - адзін са спосабаў падтрымаць мае распачынанні. Быўшы патронам ты атрымаеш доступ да шматлікіх нішцякоў!</value>
+    </data>
+    <data name="Interesting_News_Paragraph_2" xml:space="preserve">
+        <value>Солакаст даступны спонсарам АйЦіБароды і ўсім патронам на Patreon.</value>
+    </data>
+    <data name="Interesting_News_Paragraph_1" xml:space="preserve">
+        <value>Для тых хто мяне падтрымлівае штомесяц я запісваю солакаст &lt;b&gt;«Навіны Барады»&lt;/b&gt;. У гэтым падкасце я распавядаю пра IT-плёткі, пра падзеі з свайго жыцця, пра новы і стары кантэнт і пра бліжэйшыя планы.</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_2" xml:space="preserve">
+        <value>Кожнай пакупкай ты падтрымаеш мяне на &lt;b&gt;$5&lt;/b&gt;! 😊</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_1" xml:space="preserve">
+        <value>У жыцці і ў відэа я з'яўляюся ў незвычайных байках, майках і г.д. Купіць такія ж можна ў маёй краме.</value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_2" xml:space="preserve">
+        <value>Там жа можна паглядзець, на якім караблі і над чым я зараз працую.</value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_1" xml:space="preserve">
+        <value>У LinkedIn падрабязна апісаны мой прафесійны досвед і ляжыць старое CV.</value>
+    </data>
+    <data name="Interesting_LinkedIn" xml:space="preserve">
+        <value>LinkedIn</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_2" xml:space="preserve">
+        <value>Паглядзець на іх можна ў маім GitHub. А можа нават і закамітаць што-небудзь 😉</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_1" xml:space="preserve">
+        <value>Займаючыся распрацоўкай ПЗ з 2011 года, у мяне з'явілася некалькі невялікіх opensource праектаў.</value>
+    </data>
 </root>

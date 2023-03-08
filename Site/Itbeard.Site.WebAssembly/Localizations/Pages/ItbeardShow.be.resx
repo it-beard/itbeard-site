@@ -56,7 +56,7 @@
     <data name="NonCommercial_Title" xml:space="preserve">
         <value>Некамерцыйнае супрацоўніцтва</value>
     </data>    <data name="YouTube_List_1" xml:space="preserve">
-        <value>Ды яшчэ</value>
+        <value>А яшчэ</value>
     </data>
     <data name="YouTube_List_2" xml:space="preserve">
         <value> - інтэрв'ю, праграмаванне, навіны, кантэнт які не ўвайшоў у інтэрв'ю ды шмат чаго іншага</value>
@@ -72,5 +72,104 @@
     </data>
     <data name="YouTube_List_4" xml:space="preserve">
         <value>Аўтарскія значкі ды эмодзі</value>
+    </data>
+    <data name="Interview" xml:space="preserve">
+        <value>IT Rock Stars</value>
+    </data>
+    <data name="Bonus" xml:space="preserve">
+        <value>Бонусы за падтрымку</value>
+    </data>
+    <data name="Bonus_Discord" xml:space="preserve">
+        <value>Чат у Discord</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_1" xml:space="preserve">
+        <value>Discord-сэрвер «Спонсарка АйЦіБарады» - гэта ціхае месца для размоў між спонсарамі і патронамі.</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_2" xml:space="preserve">
+        <value>Таксама тут можна наўпрост звязацца са мной, абмеркаваць выпускі і праекты, прапанаваць госця ці паўдзельнічаць у запісе "Навін Барады".</value>
+    </data>
+    <data name="Bonus_News" xml:space="preserve">
+        <value>Навіны Барады</value>
+    </data>
+    <data name="Bonus_News_Paragraph_1" xml:space="preserve">
+        <value>Для тых хто мяне падтрымлівае штомесяц я запісваю солакаст &lt;b&gt;«Навіны Барады»&lt;/b&gt;. У гэтым падкасце я распавядаю пра IT-плёткі, пра падзеі з свайго жыцця, пра новы і стары кантэнт і пра бліжэйшыя планы.</value>
+    </data>
+    <data name="Bonus_News_Paragraph_2" xml:space="preserve">
+        <value>Солакаст даступны спонсарам АйЦіБароды і ўсім патронам на Patreon.</value>
+    </data>
+    <data name="Interview_Paragraph_1" xml:space="preserve">
+        <value>Асноўны фармат шоу - гэта інтэрв'ю з актыўнымі людзьмі са свету IT. Гэта сапраўдныя Rock Stars, якія рухаюць нашу индустрыю наперад!</value>
+    </data>
+    <data name="Interview_Paragraph_2" xml:space="preserve">
+        <value>У шоу вы пабачыце распрацоўшчыкаў, тэсціроўшчыкаў, дызайнераў, менеджэраў і нават навукоўцаў! Прыемнага прагляду 😊</value>
+    </data>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Шоу «АйЦіБарада» - жыццё ды праца ў IT</value>
+    </data>
+    <data name="Profession_Paragraph_1" xml:space="preserve">
+        <value>Разам з гасцямі мы разбіраемся ў тонкасцях іх прафесый, даведваемся пра неабходны досвед для ўваходу ў яе.</value>
+    </data>
+    <data name="Profession_Paragraph_2" xml:space="preserve">
+        <value>Кожны госць рубрыкі «Прафесіі» - прафесіянал у сваёй справе, які пакажа табе правільны кірунак!</value>
+    </data>
+    <data name="Suport_Paragraph_11" xml:space="preserve">
+        <value>Лёгка! Самыя простыя спосабы - гэта аформіць</value>
+    </data>
+    <data name="Suport_Paragraph_12" xml:space="preserve">
+        <value>спонсарства ў YouTube</value>
+    </data>
+    <data name="Suport_Paragraph_13" xml:space="preserve">
+        <value>, стаць </value>
+    </data>
+    <data name="Suport_Paragraph_14" xml:space="preserve">
+        <value>патронам на Patreon</value>
+    </data>
+    <data name="Suport_Paragraph_15" xml:space="preserve">
+        <value>ці аформіць</value>
+    </data>
+    <data name="Suport_Paragraph_17" xml:space="preserve">
+        <value>. Спонсары, патроны і падпісчыкі на Apple атрымліваюць доступ да спонсарскіх бонусаў і дадатковага кантэнту, што прыемна 😊</value>
+    </data>
+    <data name="Suport_Paragraph_16" xml:space="preserve">
+        <value>падпіску ў Apple Podcasts</value>
+    </data>
+    <data name="Suport_Paragraph_21" xml:space="preserve">
+        <value>А яшчэ, шоу можна падтрымаць праз Супердзякуй, пералікам грошай праз PayPal, Revolute, ці праз крыптагрошы. Падрабязней пра гэтыя спосабы можна пачытаць на старонцы</value>
+    </data>
+    <data name="Suport_Paragraph_22" xml:space="preserve">
+        <value>«Падтрымаць»</value>
+    </data>
+    <data name="WhereToSee" xml:space="preserve">
+        <value>Хачу! Дзе глядзець?</value>
+    </data>
+    <data name="Support" xml:space="preserve">
+        <value>Як падтрымаць шоу?</value>
+    </data>
+    <data name="WhereToSee_Paragraph_1" xml:space="preserve">
+        <value>Шоу і навіны вакол яго можна глядзець, слухаць і чытаць на розных платформах, спасылачкі ніжэй:</value>
+    </data>
+    <data name="WhereToSee_Paragraph_2" xml:space="preserve">
+        <value>Глядзець у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_3" xml:space="preserve">
+        <value>Чытаць в</value>
+    </data>
+    <data name="WhereToSee_Paragraph_4" xml:space="preserve">
+        <value>Заліпнуть у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_5" xml:space="preserve">
+        <value>Падглядзець у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_6" xml:space="preserve">
+        <value>Слухаць у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_7" xml:space="preserve">
+        <value>Слухаць у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_8" xml:space="preserve">
+        <value>Слухаць у</value>
+    </data>
+    <data name="WhereToSee_Paragraph_9" xml:space="preserve">
+        <value>RSS Feed ды сайт падкасту</value>
     </data>
 </root>

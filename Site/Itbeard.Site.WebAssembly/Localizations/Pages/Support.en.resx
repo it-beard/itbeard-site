@@ -38,4 +38,19 @@
     <data name="Video_HowToSupport_Title" xml:space="preserve">
         <value>Video on how to support me</value>
     </data>
+    <data name="Card_Paragraph_14" xml:space="preserve">
+        <value>PayPal</value>
+    </data>
+    <data name="Card_Paragraph_12" xml:space="preserve">
+        <value>Revolut</value>
+    </data>
+    <data name="Card_Paragraph_13" xml:space="preserve">
+        <value>and</value>
+    </data>
+    <data name="Card_Paragraph_11" xml:space="preserve">
+        <value>With</value>
+    </data>
+    <data name="Card" xml:space="preserve">
+        <value>Revolut &amp; PayPal</value>
+    </data>
 </root>

@@ -59,4 +59,46 @@
     <data name="Interesting_LinkedIn" xml:space="preserve">
         <value>LinkedIn</value>
     </data>
+    <data name="Interesting" xml:space="preserve">
+        <value>It will be interesting</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_1" xml:space="preserve">
+        <value>Being a software developer since 2011, I have had several small opensource projects.</value>
+    </data>
+    <data name="Interesting_GitHub_Paragraph_2" xml:space="preserve">
+        <value>You can look through them on my GitHub. And maybe even commit something 😉</value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_1" xml:space="preserve">
+        <value>On LinkedIn you can find information about my professional experience and an old resume. </value>
+    </data>
+    <data name="Interesting_LinkedIn_Paragrarh_2" xml:space="preserve">
+        <value>There you can also see what ship and what I'm working on now.</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_1" xml:space="preserve">
+        <value>In life and in videos I appear in unusual sweatshirts, T-shirts, etc. You can buy the same in my store.</value>
+    </data>
+    <data name="Interesting_Merch_Paragraph_2" xml:space="preserve">
+        <value>Every purchase you make will support me by &lt;b&gt;$5&lt;/b&gt;! 😊</value>
+    </data>
+    <data name="Interesting_News_Paragraph_1" xml:space="preserve">
+        <value>For those who support me, every month I record a podcast called &lt;b&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
+    </data>
+    <data name="Interesting_News_Paragraph_2" xml:space="preserve">
+        <value>Solocast is available to ITBeard sponsors and all patrons on Patreon.</value>
+    </data>
+    <data name="Interesting_Support" xml:space="preserve">
+        <value>Support me</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_1" xml:space="preserve">
+        <value>Supporting on Patreon is one way to support my endeavors. As a Patreon member, you'll get access to lots of goodies!</value>
+    </data>
+    <data name="Interesting_Support_Paragraph_2" xml:space="preserve">
+        <value>By the way, all the ways you can support me are described on the &lt;i&gt;«Support»&lt;/i&gt; page.</value>
+    </data>
+    <data name="Interesting_Where" xml:space="preserve">
+        <value>Where did you see me?</value>
+    </data>
+    <data name="Interesting_Where_Paragrahp_1" xml:space="preserve">
+        <value>In my spare time, I work mainly on the following projects:</value>
+    </data>
 </root>

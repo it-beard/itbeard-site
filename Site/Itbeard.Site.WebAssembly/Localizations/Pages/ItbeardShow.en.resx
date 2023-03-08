@@ -79,4 +79,97 @@
     <data name="Bonus_News" xml:space="preserve">
         <value>Beard News</value>
     </data>
+    <data name="Bonus" xml:space="preserve">
+        <value>Bonuses for support</value>
+    </data>
+    <data name="Bonus_Discord" xml:space="preserve">
+        <value>Discord chat</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_1" xml:space="preserve">
+        <value>Discord server "Sponsors ITBeard" is a quiet place for conversatons of sponsors and patrons.</value>
+    </data>
+    <data name="Bonus_Discord_Paragraph_2" xml:space="preserve">
+        <value>You can also contact me directly there, discuss episodes and projects, suggest a guest, and participate in the «Beard News».</value>
+    </data>
+    <data name="Bonus_News_Paragraph_1" xml:space="preserve">
+        <value>For those who support me, every month I record a podcast called &lt;b&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
+    </data>
+    <data name="Bonus_News_Paragraph_2" xml:space="preserve">
+        <value>Solocast is available to ITBeard sponsors and all patrons on Patreon.</value>
+    </data>
+    <data name="Interview_Paragraph_1" xml:space="preserve">
+        <value>The main format of the show is interviews with active people from the IT world. They are the real Rock Stars who move our industry forward! </value>
+    </data>
+    <data name="PageTitle" xml:space="preserve">
+        <value>The "ITBarade" show - life and work in IT</value>
+    </data>
+    <data name="Interview_Paragraph_2" xml:space="preserve">
+        <value>In the show you will meet developers, testers, designers, managers and even scientists! Enjoy watching 😊</value>
+    </data>
+    <data name="Profession_Paragraph_1" xml:space="preserve">
+        <value>Together with our guests we understand the intricacies of their professions and learn about the necessary skills to enter them.</value>
+    </data>
+    <data name="Profession_Paragraph_2" xml:space="preserve">
+        <value>Each guest from «Professions» videos is a professional in his or her field who will guide you along the right path!</value>
+    </data>
+    <data name="Suport_Paragraph_11" xml:space="preserve">
+        <value>Easy! The easiest ways are to become a</value>
+    </data>
+    <data name="Suport_Paragraph_12" xml:space="preserve">
+        <value>sponsor on YouTube</value>
+    </data>
+    <data name="Suport_Paragraph_13" xml:space="preserve">
+        <value>or </value>
+    </data>
+    <data name="Suport_Paragraph_14" xml:space="preserve">
+        <value>subscribe on Patreon</value>
+    </data>
+    <data name="Suport_Paragraph_15" xml:space="preserve">
+        <value>or </value>
+    </data>
+    <data name="Suport_Paragraph_16" xml:space="preserve">
+        <value>subscribe on Apple Podcasts</value>
+    </data>
+    <data name="Suport_Paragraph_17" xml:space="preserve">
+        <value>. Sponsors, patrons and Apple subscribers get access to sponsorship bonuses and extra content, which is nice 😊</value>
+    </data>
+    <data name="Suport_Paragraph_21" xml:space="preserve">
+        <value>You can also support the show through SuperThanks, PayPal, Revolute, and cryptocurrency transfers. You can read more about these ways on the page </value>
+    </data>
+    <data name="Suport_Paragraph_22" xml:space="preserve">
+        <value>«Support»</value>
+    </data>
+    <data name="Support" xml:space="preserve">
+        <value>How to support the show?</value>
+    </data>
+    <data name="WhereToSee" xml:space="preserve">
+        <value>I want it! Where can I see it?</value>
+    </data>
+    <data name="WhereToSee_Paragraph_1" xml:space="preserve">
+        <value>The show and the news around it can be watched, listened to and read on various platforms, links below:</value>
+    </data>
+    <data name="WhereToSee_Paragraph_2" xml:space="preserve">
+        <value>Watch on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_3" xml:space="preserve">
+        <value>Read on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_4" xml:space="preserve">
+        <value>Stuck in</value>
+    </data>
+    <data name="WhereToSee_Paragraph_5" xml:space="preserve">
+        <value>Watch on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_6" xml:space="preserve">
+        <value>Listen on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_7" xml:space="preserve">
+        <value>Listen on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_8" xml:space="preserve">
+        <value>Listen on</value>
+    </data>
+    <data name="WhereToSee_Paragraph_9" xml:space="preserve">
+        <value>RSS Feed and podcast site</value>
+    </data>
 </root>

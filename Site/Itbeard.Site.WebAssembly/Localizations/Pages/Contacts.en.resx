@@ -47,4 +47,25 @@
     <data name="Other_Mastodon" xml:space="preserve">
         <value>Mastodon</value>
     </data>
+    <data name="KeyResources" xml:space="preserve">
+        <value>My projects</value>
+    </data>
+    <data name="KeyResources_CiomnyLos" xml:space="preserve">
+        <value>Ciomny Los</value>
+    </data>
+    <data name="KeyResources_Itbeard" xml:space="preserve">
+        <value>ITBeard</value>
+    </data>
+    <data name="KeyResources_Linkedin" xml:space="preserve">
+        <value>ITBeard on LinkedIn</value>
+    </data>
+    <data name="KeyResources_Mastodon" xml:space="preserve">
+        <value>Belarusian Mastodon</value>
+    </data>
+    <data name="KeyResources_Telegram" xml:space="preserve">
+        <value>ITBeard on Telegram</value>
+    </data>
+    <data name="Other" xml:space="preserve">
+        <value>My social networks</value>
+    </data>
 </root>

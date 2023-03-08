@@ -53,4 +53,25 @@
     <data name="Card" xml:space="preserve">
         <value>Revolut &amp; PayPal</value>
     </data>
+    <data name="Merch" xml:space="preserve">
+        <value>Branded merch</value>
+    </data>
+    <data name="Merch_Paragraph_11" xml:space="preserve">
+        <value>In life and in videos I appear in unusual things with funny inscriptions. You can buy the same in </value>
+    </data>
+    <data name="Merch_Paragraph_12" xml:space="preserve">
+        <value>my shop</value>
+    </data>
+    <data name="Merch_Paragraph_13" xml:space="preserve">
+        <value>: hoodies, T-shirts, hats, mugs and stickers!</value>
+    </data>
+    <data name="Merch_Paragraph_2" xml:space="preserve">
+        <value>With each purchase you will support me by about &lt;b&gt;$5&lt;/b&gt;, thank you very much! 😊</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
+        <value>you can support any of my projects: the show "ITBeard", podcast "Ciomny Los", mastodon-server "VKL", etc. </value>
+    </data>
+    <data name="Card_Paragraph_15" xml:space="preserve">
+        <value>you can support me with a bank card transfer. Each such transfer adds +100 to my motivation to make new content!</value>
+    </data>
 </root>

@@ -172,4 +172,7 @@
     <data name="WhereToSee_Paragraph_9" xml:space="preserve">
         <value>RSS Feed and podcast site</value>
     </data>
+    <data name="WhatAboutItbeard" xml:space="preserve">
+        <value>What is ITBeard about?</value>
+    </data>
 </root>

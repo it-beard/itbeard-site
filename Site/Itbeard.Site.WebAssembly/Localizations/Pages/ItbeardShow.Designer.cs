@@ -368,5 +368,11 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("Bonus_News_Paragraph_2", resourceCulture);
             }
         }
+        
+        internal static string WhatAboutItbeard {
+            get {
+                return ResourceManager.GetString("WhatAboutItbeard", resourceCulture);
+            }
+        }
     }
 }

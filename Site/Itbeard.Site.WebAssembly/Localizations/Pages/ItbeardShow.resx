@@ -180,4 +180,7 @@
     <data name="Bonus_News_Paragraph_2" xml:space="preserve">
         <value>Солокаст доступен спонсорам АйТиБороды и всем патронам на Patreon.</value>
     </data>
+    <data name="WhatAboutItbeard" xml:space="preserve">
+        <value>Про что АйТиБорода?</value>
+    </data>
 </root>

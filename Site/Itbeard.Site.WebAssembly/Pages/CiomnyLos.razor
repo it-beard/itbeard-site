@@ -1,0 +1,112 @@
+﻿@page "/ciomnylos"
+@using ItbeardShowRes = Localizations.Pages.ItbeardShow;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SharedRes> SharedLoc
+@inject IStringLocalizer<ItbeardShowRes> Loc
+
+<Title>Цёмны Лёс - чым займаюцца беларусы</Title>
+<main id="landing">
+    <section id="about" class="presentation presentation-first no-bg">
+        <section class="content right">
+            <h1>Пра падкаст</h1>
+            <p>
+                Утульныя размовы з беларусамі аб іх занятках ды беларускасці.
+            </p>
+            <p>
+                Навукойцы, проаграммисты, музыканты, медыки, журналисты и г.д.
+            </p>
+        </section>
+    </section>
+
+    <section id="where" class="presentation no-bg">
+        <section class="content left">
+            <h1>
+                Где глядзець і слухаць?
+            </h1>
+            <p>
+                @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_1].Value)
+                <ul>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_2].Value)
+                        <a href="https://www.youtube.com/@@itbeard" target="_blank" class="youtube">
+                            YouTube
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_6].Value)
+                        <a href="https://spoti.fi/3Ktbf1Y" target="_blank" class="colored-text">
+                            Spotify
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_7].Value)
+                        <a href="https://bit.ly/itbeard-googlepodcasts" target="_blank" class="colored-text">
+                            Google Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_8].Value)
+                        <a href="https://apple.co/41hwOIQ" target="_blank" class="colored-text">
+                            Apple Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://podcast.itbeard.com" target="_blank" class="site">
+                            Спампаваць .MP3 ды RSS Feed
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_3].Value)
+                        <a href="https://t.me/itbeard" target="_blank" class="telegram">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_4].Value)
+                        <a href="https://www.tiktok.com/@@itbeard" target="_blank" class="tiktok">
+                            TikTok
+                        </a>
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </section>
+
+    <section id="sponsors_bonuses" class="slides presentation-slides no-bg">
+        <h1>
+            Падтрымайце праект!
+        </h1>
+        <section class="content">
+            <a href="https://s.itbeard.com/sponsors-discord" target="_blank" class="article discord">
+                <h1>
+                    Patreon ды Мерч
+                </h1>
+                <p>
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_Discord_Paragraph_1].Value)
+                </p>
+                <p>
+                    @((MarkupString)Loc[ItbeardShowRes.Bonus_Discord_Paragraph_2].Value)
+                </p>
+                <img src="/images/patreon.jpg">
+            </a>
+
+            <a href="https://www.patreon.com/itbeard?filters[tag]=%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D1%8B" target="_blank" class="article">
+                <img src="/images/cards.png">
+                <h1>
+                    Revolute ды PayPal
+                </h1>
+                <p>
+                    we fwe werfdvcsdsswe wewew dds sd wer e
+                </p>
+            </a>
+
+            <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="article more">
+                <h1>Крыптагрошы</h1>
+                <p>
+                    dfdf df gdfgd f gdfg dfg dre4ree re erger gerg
+                </p>
+                <img src="/images/crypto.png">
+            </a>
+        </section>
+    </section>
+</main>

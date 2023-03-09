@@ -15,7 +15,7 @@ builder.Services.AddSingleton(sp =>
     var server = sp.GetRequiredService<IServer>();
     var addressFeature = server.Features.Get<IServerAddressesFeature>();
     var baseAddress = addressFeature.Addresses.First();
-    
+
     return new HttpClient { BaseAddress = new Uri(baseAddress) };
 });
 builder.Services.AddHeadElementHelper();
@@ -38,13 +38,10 @@ app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 app.UseRouting();
-  
+
 // Change the fallback from the index.html file
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapRazorPages();
-    endpoints.MapControllers();
-    endpoints.MapFallbackToPage("/_Host");
-});
+app.MapRazorPages();
+app.MapControllers();
+app.MapFallbackToPage("/_Host");
 
 app.Run();

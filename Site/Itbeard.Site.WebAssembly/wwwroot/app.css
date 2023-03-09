@@ -260,6 +260,16 @@ app > section + section {
   text-shadow: 0 0 3px var(--color-highlight);
 }
 
+#header > nav > a.belarus.active {
+  color: #fa0f0f;
+}
+
+#header > nav > a.belarus:hover {
+  color: #d70f0f;
+  box-shadow: 0 11px 10px -10px #fa0f0f;
+  text-shadow: 0 0 3px #fa0f0f;
+}
+
 #header > nav > a:first-child {
   margin-left: 0;
 }

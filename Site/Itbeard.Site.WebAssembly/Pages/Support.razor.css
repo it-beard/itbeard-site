@@ -60,16 +60,6 @@ a:hover {
     text-decoration: underline;
 }
 
-.colored-text  {
-    color: #ff8714;
-    font-weight: bold;
-}
-
-.blue-text{
-    color: var(--color-highlight);
-    font-weight: bold;
-}
-
 @media screen and (max-width: 767px) {
     #not_commerce .links {
         margin-left: 30px;

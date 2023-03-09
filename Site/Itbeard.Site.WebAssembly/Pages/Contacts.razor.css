@@ -50,9 +50,10 @@
 #contacts {
     background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
     min-height: 100vh;
+    font-size: 17px;
 }
 
-#contacts>section {
+#contacts > section {
     min-height: 100vh;
 }
 

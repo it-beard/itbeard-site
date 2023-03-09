@@ -12,19 +12,19 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="PageTitle" xml:space="preserve">
-        <value>Lex "ITBeard" Kartynnik's website</value>
+        <value>Lex «ITBeard» Kartynnik's website</value>
     </data>
     <data name="About" xml:space="preserve">
         <value>Hey!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>My name is  &lt;b&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in IT since 2011.</value>
+        <value>My name is  &lt;b class="blue-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in IT since 2011.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
         <value>I worked as a software engineer for the first 10 years (backend, C#, .NET, Azure), and since 2021 I've been developing IT communities. Some people call it working with developers.</value>
     </data>
     <data name="About_Paragraph_3" xml:space="preserve">
-        <value>In parallel with my main job, I do a lot of IT, near-scientific and other technical content on YouTube under the pseudonym  &lt;b&gt;Lex ITBeard &lt;/b&gt;.</value>
+        <value>In parallel with my main job, I do a lot of IT, near-scientific and other technical content on YouTube under the pseudonym  &lt;b class="colored-text"&gt;Lex ITBeard &lt;/b&gt;.</value>
     </data>
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>On this web site you gonna to learn a little bit more about all my projects 😊</value>
@@ -75,13 +75,13 @@
         <value>There you can also see what ship and what I'm working on now.</value>
     </data>
     <data name="Interesting_Merch_Paragraph_1" xml:space="preserve">
-        <value>In life and in videos I appear in unusual sweatshirts, T-shirts, etc. You can buy the same in my store.</value>
+        <value>In life and in videos I appear in unusual sweatshirts, T-shirts, etc. You can buy the same in &lt;b class="colored-text"&gt;my store&lt;/b&gt;.</value>
     </data>
     <data name="Interesting_Merch_Paragraph_2" xml:space="preserve">
         <value>Every purchase you make will support me by &lt;b&gt;$5&lt;/b&gt;! 😊</value>
     </data>
     <data name="Interesting_News_Paragraph_1" xml:space="preserve">
-        <value>For those who support me, every month I record a podcast called &lt;b&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
+        <value>For those who support me, every month I record a podcast called &lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
     </data>
     <data name="Interesting_News_Paragraph_2" xml:space="preserve">
         <value>Solocast is available to ITBeard sponsors and all patrons on Patreon.</value>
@@ -93,7 +93,7 @@
         <value>Supporting on Patreon is one way to support my endeavors. As a Patreon member, you'll get access to lots of goodies!</value>
     </data>
     <data name="Interesting_Support_Paragraph_2" xml:space="preserve">
-        <value>By the way, all the ways you can support me are described on the &lt;i&gt;«Support»&lt;/i&gt; page.</value>
+        <value>By the way, all the ways you can support me are described on the &lt;b class="colored-text"&gt;«Support»&lt;/b&gt; page.</value>
     </data>
     <data name="Interesting_Where" xml:space="preserve">
         <value>Where did you see me?</value>

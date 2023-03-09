@@ -48,7 +48,7 @@
         <value>The podcast is released biweekly on YouTube and all podcast platforms. You can request to be a guest on the podcast</value>
     </data>
     <data name="About_Paragrarh_1" xml:space="preserve">
-        <value>&lt;b&gt;«Ciomny Los»&lt;/b&gt; is a talk podcast in Belarusian, in which Belarusians talk about their occupations and reflect on Belarusianness. Each episode is a new profession or occupation: from scientists and programmers to musicians, comedians and even Tolkien fans!</value>
+        <value>&lt;b class="colored-text"&gt;«Ciomny Los»&lt;/b&gt; is a talk podcast in Belarusian, in which Belarusians talk about their occupations and reflect on Belarusianness. Each episode is a new profession or occupation: from scientists and programmers to musicians, comedians and even Tolkien fans!</value>
     </data>
     <data name="WhereToSee_Paragraph_Site" xml:space="preserve">
         <value>Download .MP3 or RSS Feed</value>

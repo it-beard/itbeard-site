@@ -11,7 +11,7 @@
     }
 
 #about {
-    background: url("/images/about.jpg") left / auto 100% no-repeat var(--color-background-dark);
+    background: #000 url("/images/ciomnylos-bg.jpg") center top / auto auto no-repeat;
 }
 
 #description {
@@ -20,32 +20,29 @@
 }
 
 #where {
-    background: url("/images/youtube.png") 73% / auto auto no-repeat;
+    background: #fff url("/images/youtube.png") 73% / auto auto no-repeat;
+    color: black;
+}
+
+#where h1{
+    color: #B32F2C;
 }
 
 #where ul li {
     font-size: 17px;
 }
 
-#sponsorship {
-    background: #25034f url("/images/sponsorship.png") 25% / auto auto no-repeat;
-}
-
 #sponsors_bonuses {
-     background-color: #25034f;
+     background-color: #fff;
      padding-top: 1px; /** hard fix **/
- }
-
-#commerce {
-    background: url("/images/youtube.png") 73% / auto auto no-repeat;
 }
 
-#not_commerce {
-    background: #4c5eac url("/images/partnership.png") 23% / auto auto no-repeat;
+#sponsors_bonuses.slides h1 {
+    background-color: #2e2323;
 }
 
-#other > h1{
-    margin-top: 25px;
+#sponsors_bonuses.slides > .content > .article {
+    background-color: #2e2323;
 }
 
 a {
@@ -92,6 +89,18 @@ a:hover {
 }
 
 @media screen and (max-width: 767px) {
+    #about {
+        background: #000 url("/images/ciomnylos-bg.jpg") center top / 210% auto no-repeat !important;
+    }
+
+    #where {
+        background: #fff url("/images/youtube.png") center bottom / auto auto no-repeat !important;
+    }
+
+    #where .content {
+         background-color: rgba(255, 255, 255, 0.8) !important;
+    }
+
     .presentation {
         padding: 0 !important;
     }

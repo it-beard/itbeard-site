@@ -1,9 +1,143 @@
-#contacts {
-    padding: 0;
+#resources {
+    background: url("/images/main-recources.png") 25% / auto auto no-repeat;
 }
 
-* {
-    padding: 0px var(--container-padding);
+#resources .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#resources .links a:hover {
+    text-decoration: underline;
+}
+
+#resources .links span {
+    font-weight: bold;
+}
+
+#resources .links.youtube span {
+    color: #FF0000;
+}
+
+#resources .links.discord span{
+    color: #6D8CF6;
+}
+
+#resources .links.telegram span{
+    color: #2A9DD6;
+}
+
+#resources .links.instagram span{
+    color: #C53189;
+}
+
+#resources .links.twitter span{
+    color: #1A8CD8;
+}
+
+#resources .links.linkedin span{
+    color: #0A66C2;
+}
+
+#resources .links.patreon span{
+    color: #FF424D;
+}
+
+#resources .links.mastodon span{
+    color: #5A49DE;
+}
+
+#contacts {
+    background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
+    min-height: 100vh;
+}
+
+#contacts>section {
+    min-height: 100vh;
+}
+
+#contacts .links {
+            margin-bottom: 30px;
+}
+
+#contacts .links a {
+    text-decoration: none;
+}
+
+#contacts .links a:hover {
+    text-decoration: underline;
+}
+
+#contacts .links>div {
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#contacts .links span {
+    font-style: italic;
+}
+
+#socials {
+    background: url("/images/socials.png") no-repeat 35% 50%;
+    min-height: 100vh;
+}
+
+#socials>section {
+    min-height: 100vh;
+}
+
+#socials .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#socials .links a:hover {
+    text-decoration: underline;
+}
+
+#socials .links span {
+    font-weight: bold;
+}
+
+#socials .links.youtube span {
+    color: #FF0000;
+}
+
+#socials .links.telegram span{
+    color: #2A9DD6;
+}
+
+#socials .links.merch span{
+    color: yellow;
+}
+
+#socials .links.vk span{
+    color: #5181B8;
+}
+
+#socials .links.facebook span{
+    color: #4867AA;
+}
+
+#socials .links.linkedin span{
+    color: #0A66C2;
+}
+
+#socials .links.google span{
+    color: #4282EF;
+}
+
+#socials .links.mastodon span{
+    color: #5A49DE;
+}
+
+#socials .links.instagram span{
+    color: #C53189;
+}
+
+#socials .links.twitter span{
+    color: #1A8CD8;
 }
 
 section.content {
@@ -12,168 +146,8 @@ section.content {
     justify-content: center;
 }
 
-#first_slide {
-    background: url("/images/main-recources.png") 25% / auto auto no-repeat;
-}
-
-#first_slide .links a {
-    font-style: italic;
-    text-decoration: none;
-}
-
-#first_slide .links a:hover {
-    text-decoration: underline;
-}
-
-#first_slide .links span {
-    font-weight: bold;
-}
-
-#first_slide .links.youtube span {
-    color: #FF0000;
-}
-
-#first_slide .links.discord span{
-    color: #6D8CF6;
-}
-
-#first_slide .links.telegram span{
-    color: #2A9DD6;
-}
-
-#first_slide .links.instagram span{
-    color: #C53189;
-}
-
-#first_slide .links.twitter span{
-    color: #1A8CD8;
-}
-
-#first_slide .links.linkedin span{
-    color: #0A66C2;
-}
-
-#first_slide .links.patreon span{
-    color: #FF424D;
-}
-
-#first_slide .links.mastodon span{
-    color: #5A49DE;
-}
-
-#second_slide {
-    background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
-    min-height: 100vh;
-}
-
-#second_slide>section {
-    min-height: 100vh;
-}
-
-#second_slide .links {
-            margin-bottom: 30px;
-}
-
-#second_slide .links a {
-    text-decoration: none;
-}
-
-#second_slide .links a:hover {
-    text-decoration: underline;
-}
-
-#second_slide .links>div {
-    font-weight: bold;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-
-#second_slide .links span {
-    font-style: italic;
-}
-
-#third_slide {
-    background: url("/images/socials.png") no-repeat 35% 50%;
-    min-height: 100vh;
-}
-
-#third_slide>section {
-    min-height: 100vh;
-}
-
-#third_slide .links a {
-    font-style: italic;
-    text-decoration: none;
-}
-
-#third_slide .links a:hover {
-    text-decoration: underline;
-}
-
-#third_slide .links span {
-    font-weight: bold;
-}
-
-#third_slide .links.youtube span {
-    color: #FF0000;
-}
-
-#third_slide .links.telegram span{
-    color: #2A9DD6;
-}
-
-#third_slide .links.merch span{
-    color: yellow;
-}
-
-#third_slide .links.vk span{
-    color: #5181B8;
-}
-
-#third_slide .links.facebook span{
-    color: #4867AA;
-}
-
-#third_slide .links.linkedin span{
-    color: #0A66C2;
-}
-
-#third_slide .links.google span{
-    color: #4282EF;
-}
-
-#third_slide .links.mastodon span{
-    color: #5A49DE;
-}
-
-#third_slide .links.instagram span{
-    color: #C53189;
-}
-
-#third_slide .links.twitter span{
-    color: #1A8CD8;
-}
-
 @media screen and (max-width: 767px) {
-    #contacts .presentation {
-        padding: 0 !important;
-    }
-
-    #contacts .presentation:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-#contacts .presentation .content {
-        width: 100%;
-        background-color: rgba(0,0,0,.7);
-        min-height: 100vh;
-    }
-
-    #contacts #second_slide .links{
+    #contacts .links{
         margin-left: 30px;
     }
 }

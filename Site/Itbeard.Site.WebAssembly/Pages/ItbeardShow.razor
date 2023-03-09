@@ -6,7 +6,7 @@
 @inject IStringLocalizer<ItbeardShowRes> Loc
 
 <Title>@Loc[ItbeardShowRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
-<main id="landing">
+<main class="wide-container">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
             <h1>@Loc[ItbeardShowRes.AboutShow]</h1>
@@ -20,9 +20,10 @@
     </section>
 
     <section id="description" class="slides presentation-slides no-bg">
-        <h1>@Loc[ItbeardShowRes.WhatAboutItbeard]</h1>
+        <h1>
+            @Loc[ItbeardShowRes.WhatAboutItbeard]
+        </h1>
         <section class="content">
-
             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984Jnm_YhDcD_Hs5WEB39HoR" target="_blank" class="article">
                 <h1>@Loc[ItbeardShowRes.Programming]</h1>
                 <p>
@@ -58,7 +59,7 @@
         </section>
     </section>
 
-    <section id="where" class="presentation no-bg">
+    <section id="links" class="presentation no-bg">
             <section class="content left">
                 <h1>
                     @((MarkupString)Loc[ItbeardShowRes.WhereToSee].Value)
@@ -91,12 +92,6 @@
                             </a>
                         </li>
                         <li>
-                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_6].Value)
-                            <a href="https://spoti.fi/3Ktbf1Y" target="_blank" class="colored-text">
-                                Spotify
-                            </a>
-                        </li>
-                        <li>
                             @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_7].Value)
                             <a href="https://bit.ly/itbeard-googlepodcasts" target="_blank" class="colored-text">
                                 Google Podcasts
@@ -106,6 +101,12 @@
                             @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_8].Value)
                             <a href="https://apple.co/41hwOIQ" target="_blank" class="colored-text">
                                 Apple Podcasts
+                            </a>
+                        </li>
+                        <li>
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_6].Value)
+                            <a href="https://spoti.fi/3Ktbf1Y" target="_blank" class="colored-text">
+                                Spotify
                             </a>
                         </li>
                         <li>

@@ -124,6 +124,14 @@ app > section + section {
   margin-top: 1px;
 }
 
+.wide-container {
+  padding: 0 !important;
+}
+
+.wide-container > * {
+  padding: 0px var(--container-padding);
+}
+
 #header {
   display: flex;
   justify-content: space-between;
@@ -598,6 +606,10 @@ app > section + section {
 
 
 @media screen and (max-width: 767px) {
+  #header > nav {
+    flex-direction: column;
+  }
+
   .presentation.no-bg {
     padding: 0;
   }
@@ -606,9 +618,12 @@ app > section + section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    min-height: calc(100vh - var(--height-header));
     padding: 30px var(--container-padding);
     background-color: rgba(0, 0, 0, 0.47);
+  }
+
+  .presentation.presentation-first > .content {
+    min-height: calc(100vh - var(--height-header));
   }
 
   .presentation:not(.no-bg) > .content {
@@ -633,6 +648,23 @@ app > section + section {
 
   .presentation > .content > p {
     padding: 0 40px;
+  }
+
+  .presentation {
+    padding: 0 !important;
+  }
+
+  .presentation:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .presentation .content {
+    width: 100%;
+    min-height: 100vh;
   }
 }
 

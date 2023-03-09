@@ -1,47 +1,3 @@
-main {
-    padding: 0 !important;
-}
-
-.presentation {
-    min-height: 100vh;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-.orange:hover {
-    color: orange;
-}
-
-main>* {
-    padding: 0px var(--container-padding);
-}
-
-section.content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-b {
-    color: #00bfff;
-}
-
-a {
-    text-decoration: none;
-    color: var(--color-highlight);
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.email {
-    color: #ff8714;
-    font-weight: bold;
-}
-
 #patreon {
     background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
 }
@@ -71,6 +27,14 @@ a:hover {
     background: url("/images/crypto.png") no-repeat 80% 45%
 }
 
+#crypto b {
+    color: #00bfff;
+}
+
+#crypto ul li {
+    margin-bottom: 10px
+}
+
 #video {
     background: #00134d82 none;
 }
@@ -88,31 +52,25 @@ a:hover {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 .colored-text  {
     color: #ff8714;
     font-weight: bold;
 }
 
+.blue-text{
+    color: var(--color-highlight);
+    font-weight: bold;
+}
+
 @media screen and (max-width: 767px) {
-
-    .presentation {
-        padding: 0 !important;
-    }
-
-    main:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-    }
-
-    .presentation.no-bg > .content {
-        width: 100%;
-        background-color: rgba(0,0,0,0.7);
-        min-height: 100vh;
-    }
-
     #not_commerce .links {
         margin-left: 30px;
     }
@@ -124,12 +82,27 @@ a:hover {
     }
 
     #merch {
-        background-size: 100%;
+        background: url("/images/merch.jpg") no-repeat center center;
+    }
+
+    #merch .content {
+        background-color: rgba(2, 2, 2, 0.8) !important
+    }
+
+    #card {
+        background: url("/images/cards.png") no-repeat center center;
+    }
+
+    #card .content {
+        background-color: rgba(19, 11, 36, 0.8) !important
     }
 
     #crypto {
-        background-color: #698eff82;
-        background-size: 100%;
+        background: #698eff82 url("/images/crypto.png") no-repeat center center;
+    }
+
+    #crypto .content {
+        background-color: rgba(0,0,0,0.7); !important
     }
 
     #crypto ul {

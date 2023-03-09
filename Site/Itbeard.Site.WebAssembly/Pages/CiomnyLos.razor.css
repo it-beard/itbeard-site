@@ -1,48 +1,49 @@
-#landing {
-    padding: 0;
-}
-
-#landing>* {
-        padding: 0px var(--container-padding);
-    }
-
-.parting-words{
-        color: deepskyblue;
-    }
-
 #about {
     background: #000 url("/images/ciomnylos-bg.jpg") center top / auto auto no-repeat;
 }
 
-#description {
-    background-color: #25034f;
-    padding-top: 1px; /** hard fix **/
-}
-
-#where {
+#links {
     background: #fff url("/images/youtube.png") 73% / auto auto no-repeat;
     color: black;
 }
 
-#where h1{
+#links h1{
     color: #B32F2C;
 }
 
-#where ul li {
+#links ul li {
     font-size: 17px;
 }
 
-#sponsors_bonuses {
-     background-color: #fff;
-     padding-top: 1px; /** hard fix **/
+#support {
+    background-color: #fff;
+    padding-top: 1px; /** hard fix **/
 }
 
-#sponsors_bonuses.slides h1 {
+#support.slides h1 {
+    background-color: #48432d;
+}
+
+#support.slides > .content > .article,
+#support.slides > h1 {
     background-color: #2e2323;
 }
 
-#sponsors_bonuses.slides > .content > .article {
-    background-color: #2e2323;
+#merch {
+    background: url("/images/merch.jpg") no-repeat 70% 45%
+}
+
+#merch .links a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+#merch a:hover {
+    text-decoration: underline;
+}
+
+#merch span {
+    font-weight: bold;
 }
 
 a {
@@ -53,11 +54,7 @@ a:hover {
     text-decoration: underline;
 }
 
-.email {
-    color: #ff8714;
-    font-weight: bold;
-}
-
+#support b,
 .colored-text  {
     color: #ff8714;
     font-weight: bold;
@@ -70,11 +67,6 @@ a:hover {
 
 .telegram {
     color: #2A9DD6;
-    font-weight: bold;
-}
-
-.linkedin {
-    color: #5F80F5;
     font-weight: bold;
 }
 
@@ -93,32 +85,19 @@ a:hover {
         background: #000 url("/images/ciomnylos-bg.jpg") center top / 210% auto no-repeat !important;
     }
 
-    #where {
+    #links {
         background: #fff url("/images/youtube.png") center bottom / auto auto no-repeat !important;
     }
 
-    #where .content {
+    #links .content {
          background-color: rgba(255, 255, 255, 0.8) !important;
     }
 
-    .presentation {
-        padding: 0 !important;
+    #merch {
+        background: url("/images/merch.jpg") no-repeat center center;
     }
 
-    .presentation:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    .presentation .content {
-         width: 100%;
-         min-height: 100vh;
-     }
-
-    #not_commerce .links {
-        margin-left: 30px;
+    #merch .content {
+        background-color: rgba(0, 0, 0, 0.8) !important;
     }
 }

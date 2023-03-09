@@ -65,6 +65,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>ItbeardShow.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\CiomnyLosShow.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>CiomnyLosShow.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -107,6 +111,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>ItbeardShow.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\CiomnyLosShow.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>CiomnyLosShow.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

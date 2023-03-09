@@ -1,0 +1,141 @@
+﻿@page "/ciomnylos"
+@using CiomnyLosShowRes = Localizations.Pages.CiomnyLosShow;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SharedRes> SharedLoc
+@inject IStringLocalizer<CiomnyLosShowRes> Loc
+
+<Title>@Loc[CiomnyLosShowRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<main class="wide-container">
+    <section id="about" class="presentation presentation-first no-bg">
+        <section class="content right">
+            <h1>@Loc[CiomnyLosShowRes.About]</h1>
+            <p>
+                @((MarkupString)Loc[CiomnyLosShowRes.About_Paragrarh_1].Value)
+            </p>
+            <p>
+                @((MarkupString)Loc[CiomnyLosShowRes.About_Paragrarh_21].Value)
+                <a class="colored-text" href="https://forms.gle/2s9o2i4t6x4upS1GA" target="_blank">
+                    @Loc[CiomnyLosShowRes.About_Paragrarh_22]
+                </a> 😊
+            </p>
+        </section>
+    </section>
+
+    <section id="links" class="presentation no-bg">
+        <section class="content left">
+            <h1>
+                @Loc[CiomnyLosShowRes.WhereToSee]
+            </h1>
+            <p>
+                @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_1].Value)
+                <ul>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_2].Value)
+                        <a href="https://www.youtube.com/@@ciomnylos" target="_blank" class="youtube">
+                            YouTube
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_7].Value)
+                        <a href="https://bit.ly/ciomnylos-google" target="_blank" class="colored-text">
+                            Google Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_8].Value)
+                        <a href="https://apple.co/3ZqIeYJ" target="_blank" class="colored-text">
+                            Apple Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_6].Value)
+                        <a href="https://spoti.fi/3mc5Thl" target="_blank" class="colored-text">
+                            Spotify
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ciomnylos.itbeard.com" target="_blank" class="site">
+                            @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_Site].Value)
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_3].Value)
+                        <a href="https://t.me/ciomnylos" target="_blank" class="telegram">
+                            Telegram
+                        </a>
+                    </li>
+                    <li>
+                        @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_4].Value)
+                        <a href="https://www.tiktok.com/@@ciomnylos" target="_blank" class="tiktok">
+                            TikTok
+                        </a>
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </section>
+
+    <section id="support" class="slides presentation-slides no-bg">
+        <h1>
+            @((MarkupString)Loc[CiomnyLosShowRes.Support].Value)
+        </h1>
+        <section class="content">
+            <a href="https://www.patreon.com" target="_blank" class="article discord">
+                <h1>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Patreon].Value)
+                </h1>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Patreon_1].Value)
+                </p>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Patreon_2].Value)
+                </p>
+                <img src="/images/patreon.jpg">
+            </a>
+
+            <a href="/support#card" class="article">
+                <img src="/images/cards.png">
+                <h1>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Card].Value)
+                </h1>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Card_1].Value)
+                </p>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Card_2].Value)
+                </p>
+            </a>
+
+            <a href="/support#crypto" class="article more">
+                <h1>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Crypto].Value)
+                </h1>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Crypto_1].Value)
+                </p>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Support_Crypto_2].Value)
+                </p>
+                <img src="/images/crypto.png">
+            </a>
+        </section>
+    </section>
+
+    <section id="merch" class="presentation no-bg">
+            <section class="content left">
+                <h1>
+                    @Loc[CiomnyLosShowRes.Merch]
+                </h1>
+                <p>
+                    @Loc[CiomnyLosShowRes.Merch_Paragraph_11]
+                    <a href="https://streamlabs.com/itbeard/merch" target="_blank" class="colored-text">
+                        @Loc[CiomnyLosShowRes.Merch_Paragraph_12]
+                    </a>
+                    @Loc[CiomnyLosShowRes.Merch_Paragraph_13]
+                </p>
+                <p>
+                    @((MarkupString)Loc[CiomnyLosShowRes.Merch_Paragraph_2].Value)
+                </p>
+            </section>
+        </section>
+</main>

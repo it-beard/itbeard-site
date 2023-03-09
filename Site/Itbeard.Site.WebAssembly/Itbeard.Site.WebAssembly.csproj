@@ -110,10 +110,4 @@
       </Compile>
     </ItemGroup>
 
-    <ItemGroup>
-      <Content Update="Shared\CultureSelector.razor">
-        <DependentUpon>SiteFooter.razor</DependentUpon>
-      </Content>
-    </ItemGroup>
-
 </Project>

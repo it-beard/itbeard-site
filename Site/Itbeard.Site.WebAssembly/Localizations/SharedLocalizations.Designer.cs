@@ -50,5 +50,11 @@ namespace Itbeard.Site.WebAssembly.Localizations {
                 return ResourceManager.GetString("PageTitleAddition", resourceCulture);
             }
         }
+        
+        internal static string PageNotFound {
+            get {
+                return ResourceManager.GetString("PageNotFound", resourceCulture);
+            }
+        }
     }
 }

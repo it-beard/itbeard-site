@@ -14,4 +14,7 @@
     <data name="PageTitleAddition" xml:space="preserve">
         <value>/ 🇺🇦 #гыквайне</value>
     </data>
+    <data name="PageNotFound" xml:space="preserve">
+        <value>Прабач, але старонка не знойдзена, сябар...</value>
+    </data>
 </root>

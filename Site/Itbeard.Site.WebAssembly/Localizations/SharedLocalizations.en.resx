@@ -14,4 +14,7 @@
     <data name="PageTitleAddition" xml:space="preserve">
         <value>/ 🇺🇦 #stopwarinukraine</value>
     </data>
+    <data name="PageNotFound" xml:space="preserve">
+        <value>Sorry, but the page was not found, friend...</value>
+    </data>
 </root>

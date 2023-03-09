@@ -1,0 +1,5 @@
+.not-found {
+    background: #333139 url("/images/404.gif") center / auto auto no-repeat;
+    text-align: center;
+    font-size: 17px;
+}

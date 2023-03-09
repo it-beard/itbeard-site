@@ -1,10 +1,17 @@
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<SharedRes> Loc
+
 <Router AppAssembly="@typeof(App).Assembly" PreferExactMatches="@true">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
     </Found>
     <NotFound>
         <LayoutView Layout="@typeof(MainLayout)">
-            <p>Сорян, но страничка не найдена, друг...</p>
+            <section class="not-found presentation-first">
+                <div>
+                    @Loc[SharedRes.PageNotFound]
+                </div>
+            </section>
         </LayoutView>
     </NotFound>
 </Router>

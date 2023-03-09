@@ -1,5 +1,5 @@
-﻿@using IndexLoc = Localizations.Shared.SiteFooter;
-@inject IStringLocalizer<IndexLoc> Loc
+﻿@using IndexRes = Localizations.Shared.SiteFooter;
+@inject IStringLocalizer<IndexRes> Loc
 
 <nav class="social">
     <a href="https://youtube.com/itbeard" target="_blank" class="youtube" title="YouTube АйТиБороды">
@@ -29,11 +29,11 @@
 </nav>
 
 <div class="thanks">
-    @((MarkupString)Loc[IndexLoc.Thanks].Value)
+    @((MarkupString)Loc[IndexRes.Thanks].Value)
 </div>
 <div class="lang">
     <CultureSelector />
 </div>
 <div class="github">
-    @((MarkupString)Loc[IndexLoc.GithubCode].Value)
+    @((MarkupString)Loc[IndexRes.GithubCode].Value)
 </div>

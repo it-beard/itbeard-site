@@ -69,6 +69,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>CiomnyLosShow.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Vkl.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Vkl.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -116,6 +120,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>CiomnyLosShow.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Vkl.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Vkl.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

@@ -24,7 +24,7 @@
         <value>It is the first exclusively &lt;b class="colored-text"&gt;Belarusian-language community&lt;/b&gt; on the Mastadon network. Mastadon is the distributed equivalent of Twitter, but &lt;b class="colored-text"&gt;without the dictatorship&lt;/b&gt; of Ilon Musk.</value>
     </data>
     <data name="Patreon_Title" xml:space="preserve">
-        <value>Support VKL.world</value>
+        <value>Support VKL&lt;b class="red-text"&gt;.&lt;/b&gt;world</value>
     </data>
     <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
         <value>The maintenance of &lt;b class="colored-text"&gt;VKL.world&lt;/b&gt; costs several hundred dollars a month, and is almost entirely covered by &lt;b class="colored-text"&gt;donations&lt;/b&gt; from our users. &lt;br&gt;&lt;br&gt; If you want and can support &lt;b class="colored-text"&gt;VKL.world&lt;/b&gt;, then become a patron of the server on</value>

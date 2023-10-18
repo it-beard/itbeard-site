@@ -42,6 +42,7 @@ nav#menu {
 }
 
 nav#menu > ::deep a,
+nav#menu > a >::deep a,
 .no-link-menu-item .submenu li > ::deep a {
     padding: 10px;
     margin: 0 20px;
@@ -52,8 +53,15 @@ nav#menu > ::deep a,
     transition: 0.5s;
 }
 
+
+nav#menu > a >::deep a {
+    margin: 0;
+    padding: 0;
+}
+
 nav#menu > ::deep a.active,
-.no-link-menu-item .submenu li > ::deep a.active{
+.no-link-menu-item .submenu li > ::deep a.active,
+nav#menu > a >::deep a.active {
     color: var(--color-highlight);
 }
 
@@ -80,7 +88,7 @@ nav#menu > ::deep a:last-child {
 /* Style for submenu container */
 .no-link-menu-item .submenu {
     position: absolute !important;
-    min-width: 270px;
+    min-width: 340px;
     z-index: 1;
     left: 0; /* Position the submenu below the menu item */
     top: 100%;

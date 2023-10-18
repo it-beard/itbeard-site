@@ -15,7 +15,7 @@
         <value>Галоўная</value>
     </data>
     <data name="ItbeardShow" xml:space="preserve">
-        <value>АйЦіБарада</value>
+        <value>Шоу "АйЦіБарада"</value>
     </data>
     <data name="Support" xml:space="preserve">
         <value>Падтрымаць</value>
@@ -24,9 +24,12 @@
         <value>На сувязі</value>
     </data>
     <data name="CiomnyLosShow" xml:space="preserve">
-        <value>Цёмны Лёс</value>
+        <value>Падкаст "Цёмны Лёс"</value>
     </data>
     <data name="VklWorld" xml:space="preserve">
-        <value>ВКЛ</value>
+        <value>ВКЛ.world</value>
+    </data>
+    <data name="Projects" xml:space="preserve">
+        <value>Мае праекты</value>
     </data>
 </root>

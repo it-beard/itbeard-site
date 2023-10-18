@@ -9,15 +9,26 @@
     <NavLink class="nav-link" href="/" Match="NavLinkMatch.All" @onclick='() => CloseMenu()'>
         @Loc[NavLoc.Index]
     </NavLink>
-    <NavLink class="nav-link" href="show" @onclick='() => CloseMenu()'>
-        @Loc[NavLoc.ItbeardShow]
-    </NavLink>
-    <NavLink class="nav-link belarus" href="ciomnylos" @onclick='() => CloseMenu()'>
-        @Loc[NavLoc.CiomnyLosShow]
-    </NavLink>
-    <NavLink class="nav-link belarus" href="vkl" @onclick='() => CloseMenu()'>
-        @Loc[NavLoc.VklWorld]
-    </NavLink>
+    <a class="nav-link no-link-menu-item">
+        @Loc[NavLoc.Projects]
+            <ul class="submenu" style="display: none;">
+                <li>
+                    <NavLink class="nav-link belarus" href="itbeard" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.ItbeardShow]
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link belarus" href="/ciomnylos" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.CiomnyLosShow]
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link belarus" href="vkl" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.VklWorld]
+                    </NavLink>
+                </li>
+            </ul>
+    </a>
     <NavLink class="nav-link" href="support" @onclick='() => CloseMenu()'>
         @Loc[NavLoc.Support]
     </NavLink>

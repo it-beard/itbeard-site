@@ -12,10 +12,10 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="Index" xml:space="preserve">
-        <value>Index</value>
+        <value>Home</value>
     </data>
     <data name="ItbeardShow" xml:space="preserve">
-        <value>ITBeard</value>
+        <value>"АйТиБорода" Show</value>
     </data>
     <data name="Support" xml:space="preserve">
         <value>Support</value>
@@ -24,9 +24,12 @@
         <value>Contacts</value>
     </data>
     <data name="CiomnyLosShow" xml:space="preserve">
-        <value>Ciomny Los</value>
+        <value>"Цёмны Лёс" Podcast</value>
     </data>
     <data name="VklWorld" xml:space="preserve">
-        <value>VKL</value>
+        <value>VKL.world</value>
+    </data>
+    <data name="Projects" xml:space="preserve">
+        <value>My Projects</value>
     </data>
 </root>

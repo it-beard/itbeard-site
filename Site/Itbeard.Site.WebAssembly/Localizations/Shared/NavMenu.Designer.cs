@@ -80,5 +80,11 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
                 return ResourceManager.GetString("VklWorld", resourceCulture);
             }
         }
+        
+        internal static string Projects {
+            get {
+                return ResourceManager.GetString("Projects", resourceCulture);
+            }
+        }
     }
 }

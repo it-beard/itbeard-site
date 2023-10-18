@@ -1,0 +1,184 @@
+#menu-toggle.menu-toggle {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    visibility: hidden;
+    transition: .3s color;
+}
+
+#menu-toggle.menu-toggle > span {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    transition-duration: .3s;
+    transition-property: opacity, background-color, transform;
+}
+
+#menu-toggle.menu-toggle:hover > span {
+    background-color: var(--color-highlight);
+}
+
+#menu-toggle.menu-toggle.active > span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+#menu-toggle.menu-toggle.active > span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.menu-toggle.active > span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+
+nav#menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+
+nav#menu > ::deep a,
+.no-link-menu-item .submenu li > ::deep a {
+    padding: 10px;
+    margin: 0 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition-property: box-shadow, text-shadow, color;
+    transition: 0.5s;
+}
+
+nav#menu > ::deep a.active,
+.no-link-menu-item .submenu li > ::deep a.active{
+    color: var(--color-highlight);
+}
+
+nav#menu > ::deep a:hover,
+.no-link-menu-item .submenu li > ::deep a.hover {
+    color: var(--color-highlight);
+    box-shadow: 0 11px 10px -10px var(--color-highlight);
+    text-shadow: 0 0 3px var(--color-highlight);
+}
+
+nav#menu > ::deep a:first-child {
+    margin-left: 0;
+}
+
+nav#menu > ::deep a:last-child {
+    margin-right: 0;
+}
+
+/* Style for menu items */
+.no-link-menu-item {
+    display: block;
+}
+
+/* Style for submenu container */
+.no-link-menu-item .submenu {
+    position: absolute !important;
+    min-width: 270px;
+    z-index: 1;
+    left: 0; /* Position the submenu below the menu item */
+    top: 100%;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+    background-color: var(--color-background-darkest);
+    border-radius: 0 0 20px 20px;
+}
+
+/* Style for submenu items */
+.no-link-menu-item .submenu ::deep a {
+    display: block;
+}
+
+/* Show the submenu container when the user hovers over the menu item */
+.no-link-menu-item:hover .submenu,
+.no-link-menu-item:hover .active {
+    display: block !important;
+}
+
+.no-link-menu-item:hover .submenu li > ::deep a {
+    color: white;
+    text-shadow: none;
+}
+
+.no-link-menu-item .submenu li > ::deep a.belarus.active {
+    color: #fa0f0f;
+}
+
+.no-link-menu-item .submenu li > ::deep a.belarus:hover {
+    color: #d70f0f;
+    text-shadow: 0 0 3px #fa0f0f;
+}
+
+
+
+@media screen and (max-width: 991px) {
+    nav {
+        flex-direction: column;
+    }
+
+    #menu-toggle.menu-toggle {
+        position: relative;
+        visibility: inherit;
+    }
+
+    nav#menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+        z-index: 0;
+        background-color: var(--color-background-darkest);
+        transform: translateY(-100%);
+        transition: .5s transform;
+    }
+
+    nav#menu.opened {
+        visibility: inherit;
+        transform: none;
+    }
+
+    nav#menu > ::deep a {
+        flex: auto;
+        margin: 0;
+        text-align: left;
+    }
+
+    nav#menu > ::deep a:hover {
+        box-shadow: none;
+    }
+
+    .no-link-menu-item .submenu {
+        position: relative !important;
+        display: block !important;
+        list-style-type: disc;
+        margin-left: 20px;
+        padding: 0;
+    }
+
+    .no-link-menu-item .submenu li:first-child {
+        margin-top: 10px;
+    }
+
+    .no-link-menu-item .submenu li:last-child {
+        margin-bottom: -10px;
+    }
+
+    .no-link-menu-item .submenu li > ::deep a {
+        margin: 0px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 575px) {
+}

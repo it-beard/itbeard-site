@@ -51,12 +51,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Video_HowToSupport_Title {
-            get {
-                return ResourceManager.GetString("Video_HowToSupport_Title", resourceCulture);
-            }
-        }
-        
         internal static string Patreon_Title {
             get {
                 return ResourceManager.GetString("Patreon_Title", resourceCulture);
@@ -168,6 +162,24 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string Card_Paragraph_15 {
             get {
                 return ResourceManager.GetString("Card_Paragraph_15", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_4_1 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_4_1", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_4_2 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_4_2", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_5_1 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_5_1", resourceCulture);
             }
         }
     }

@@ -20,23 +20,17 @@
     <data name="Crypto_Title" xml:space="preserve">
         <value>Падтрымаць крыптавалютамі</value>
     </data>
-    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
-        <value>Праз </value>
-    </data>
     <data name="Patreon_Paragraph_Part_2" xml:space="preserve">
         <value>Patreon</value>
     </data>
     <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
-        <value>Акрамя таго, ты атрымаеш доступ да бонусных выпускаў шоу «АйЦіБарада», солакасту аб маім жыцці «Навіны Барады» ды да закрытага Discord-серверу </value>
+        <value>Акрамя таго, стаўшы патронам ты атрымаеш доступ да патронскага кантэнту, да падкасту</value>
     </data>
     <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
-        <value>«Спонсарка АйЦіБарады»</value>
+        <value>Discord-серверу</value>
     </data>
     <data name="Patreon_Title" xml:space="preserve">
         <value>Падтрымаць праз Patreon</value>
-    </data>
-    <data name="Video_HowToSupport_Title" xml:space="preserve">
-        <value>Відэа аб тым, як падтрымаць мяне</value>
     </data>
     <data name="Merch" xml:space="preserve">
         <value>Фірмовы мерч</value>
@@ -45,7 +39,7 @@
         <value>маёй краме</value>
     </data>
     <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
-        <value>можна падтрымаць любы з маіх праектаў: шоу “АйЦіБарада”, падкаст “Цёмны Лёс”, mastodon-сервер “ВКЛ” і інш.</value>
+        <value>. Вялікі дзякуй, твая дапамога робіць вялікі ўнёсак у тое, чым я займаюся!</value>
     </data>
     <data name="Merch_Paragraph_2" xml:space="preserve">
         <value>Кожнай пакупкай ты падтрымаеш мяне прыкладна на &lt;b&gt;$5&lt;/b&gt;, вялікі дзякуй! 😊</value>
@@ -69,9 +63,21 @@
         <value>Праз</value>
     </data>
     <data name="Card" xml:space="preserve">
-        <value>PayPal</value>
+        <value>Revolut и PayPal</value>
     </data>
     <data name="Card_Paragraph_15" xml:space="preserve">
         <value>ты можаш падтрымаць мяне пералікам на банкаўскі рахунак з карткі. Кожны такі пералік дадае +100 да маёй матывацыі ствараць новы кантэнт!</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
+        <value>Мяне і мае праекты можна падтрымаць праз </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_1" xml:space="preserve">
+        <value>«Навіны Барады»</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_2" xml:space="preserve">
+        <value>, і да патронскага</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5_1" xml:space="preserve">
+        <value>.</value>
     </data>
 </root>

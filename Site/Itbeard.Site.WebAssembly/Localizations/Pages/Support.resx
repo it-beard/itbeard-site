@@ -21,14 +21,11 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Поддержать меня</value>
     </data>
-    <data name="Video_HowToSupport_Title" xml:space="preserve">
-        <value>Видео о том, как меня поддержать</value>
-    </data>
     <data name="Patreon_Title" xml:space="preserve">
         <value>Поддержать через Patreon</value>
     </data>
     <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
-        <value>Через </value>
+        <value>Меня и мои проекты можно поддержать через </value>
     </data>
     <data name="Crypto_Title" xml:space="preserve">
         <value>Поддержать криптовалютами</value>
@@ -40,13 +37,13 @@
         <value>Patreon</value>
     </data>
     <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
-        <value> можно поддержать любой из моих проектов: шоу «АйТиБорода»,подкаст «Цёмный Лёс», mastodon-сервер «ВКЛ» и др. </value>
+        <value>. Большущее спасибо, твоя помощь внесёт огромный вклад в то, чем я занимаюсь!</value>
     </data>
     <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
-        <value>«Спонсорка АйТиБороды» </value>
+        <value>Discord-серверу</value>
     </data>
     <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
-        <value>Кроме того, ты получишь доступ к бонусным выпускам шоу «АйТиБорода», к солокасту о моей жизни «Новости Бороды» и к закрытому Discord-серверу </value>
+        <value>Кроме того, став патроном ты получишь доступ к потронскому контенту, к подкасту</value>
     </data>
     <data name="Merch" xml:space="preserve">
         <value>Фирменный мерч</value>
@@ -64,7 +61,7 @@
         <value>: толстовки, майки, шапки, кружки и стикеры!</value>
     </data>
     <data name="Card" xml:space="preserve">
-        <value>PayPal</value>
+        <value>Revolut и PayPal</value>
     </data>
     <data name="Card_Paragraph_11" xml:space="preserve">
         <value>Через</value>
@@ -80,5 +77,14 @@
     </data>
     <data name="Card_Paragraph_15" xml:space="preserve">
         <value>ты можешь поддержать меня переводом с банковской карты. Каждый такой перевод добавляет +100 к моей мотивации делать новый контент!</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_1" xml:space="preserve">
+        <value>«Новости Бороды»</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_2" xml:space="preserve">
+        <value>, и к патронскому</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5_1" xml:space="preserve">
+        <value>.</value>
     </data>
 </root>

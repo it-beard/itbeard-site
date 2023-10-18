@@ -35,23 +35,6 @@
     margin-bottom: 10px
 }
 
-#video {
-    background: #00134d82 none;
-}
-
-#video iframe {
-    margin: 0 auto;
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    max-height: 500px;
-    height: 60vw;
-}
-
-#video .content {
-    width: 100%;
-}
-
 a {
     text-decoration: none;
 }

@@ -24,19 +24,16 @@
         <value>Support with cryptocurrencies</value>
     </data>
     <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
-        <value>Through </value>
+        <value>You can support me and my projects through </value>
     </data>
     <data name="Patreon_Paragraph_Part_4" xml:space="preserve">
-        <value>In addition, you will get access to bonus episodes of the show «IT Beard», to the solocast about my life «Beard News» and to the private Discord server </value>
+        <value>In addition, by becoming a patron you will get access to patron content, the podcast</value>
     </data>
     <data name="Patreon_Paragraph_Part_5" xml:space="preserve">
-        <value>«ITBeard's Sponsor». </value>
+        <value>Discord server</value>
     </data>
     <data name="Patreon_Title" xml:space="preserve">
         <value>Support via Patreon</value>
-    </data>
-    <data name="Video_HowToSupport_Title" xml:space="preserve">
-        <value>Video on how to support me</value>
     </data>
     <data name="Card_Paragraph_14" xml:space="preserve">
         <value>PayPal</value>
@@ -51,7 +48,7 @@
         <value>With</value>
     </data>
     <data name="Card" xml:space="preserve">
-        <value>PayPal</value>
+        <value>Revolut и PayPal</value>
     </data>
     <data name="Merch" xml:space="preserve">
         <value>Branded merch</value>
@@ -69,9 +66,18 @@
         <value>With each purchase you will support me by about &lt;b&gt;$5&lt;/b&gt;, thank you very much! 😊</value>
     </data>
     <data name="Patreon_Paragraph_Part_3" xml:space="preserve">
-        <value>you can support any of my projects: the show "ITBeard", podcast "Ciomny Los", mastodon-server "VKL", etc. </value>
+        <value>. Thank you very much, your help will make a huge contribution to what I do!</value>
     </data>
     <data name="Card_Paragraph_15" xml:space="preserve">
         <value>you can support me with a bank card transfer. Each such transfer adds +100 to my motivation to make new content!</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_5_1" xml:space="preserve">
+        <value>.</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_1" xml:space="preserve">
+        <value>«Beard News»</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_4_2" xml:space="preserve">
+        <value>, and to the patron's</value>
     </data>
 </root>

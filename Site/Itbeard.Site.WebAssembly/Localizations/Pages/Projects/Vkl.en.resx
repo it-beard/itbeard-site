@@ -21,6 +21,6 @@
         <value>Join the Belarusians:</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>It is the first &lt;b&gt;exclusively Belarusian-language community&lt;/b&gt; on the Mastadon network. Mastadon is the distributed equivalent of Twitter, but &lt;b&gt;without the dictatorship&lt;/b&gt; of Ilon Musk.</value>
+        <value>It is the first exclusively &lt;b class="colored-text"&gt;Belarusian-language community&lt;/b&gt; on the Mastadon network. Mastadon is the distributed equivalent of Twitter, but &lt;b class="colored-text"&gt;without the dictatorship&lt;/b&gt; of Ilon Musk.</value>
     </data>
 </root>

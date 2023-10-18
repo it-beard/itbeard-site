@@ -1,5 +1,5 @@
 ﻿@page "/vkl"
-@using VklRes = Localizations.Pages.Vkl;
+@using VklRes = Localizations.Pages.Projects.Vkl;
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
 @inject IStringLocalizer<VklRes> Loc
@@ -16,7 +16,7 @@
                 </p>
                 <p>
                     @((MarkupString)Loc[VklRes.About_Paragraph_2].Value)
-                    <a href="https://vkl.world" class="colored-text" target="_blank">https://vkl.world</a>
+                    <a href="https://vkl.world" class="blue-text" target="_blank">vkl.world</a>
                 </p>
             </section>
         </section>

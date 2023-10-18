@@ -25,7 +25,7 @@
         <value>ВКЛ&lt;span style="color: red"&gt;.&lt;/span&gt;world</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>Это первое &lt;b&gt;исключительно беларускоязычное сообщество&lt;/b&gt; в сети Мастадон. В свою очередь Мастадон — это распределённый аналог Твиттера, но &lt;b&gt;без диктатуры&lt;/b&gt; Илона Маска.</value>
+        <value>Это первое исключительно &lt;b class="colored-text"&gt;беларускоязычное сообщество&lt;/b&gt; в сети Мастадон. В свою очередь Мастадон — это распределённый аналог Твиттера, но &lt;b class="colored-text"&gt;без диктатуры&lt;/b&gt; Илона Маска.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
         <value>Присоединяйся к беларусам:</value>

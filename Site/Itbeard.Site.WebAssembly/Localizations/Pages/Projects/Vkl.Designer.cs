@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Itbeard.Site.WebAssembly.Localizations.Pages {
+namespace Itbeard.Site.WebAssembly.Localizations.Pages.Projects {
     using System;
     
     
@@ -28,7 +28,7 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.Equals(null, resourceMan)) {
-                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Itbeard.Site.WebAssembly.Localizations.Pages.Vkl", typeof(Vkl).Assembly);
+                    System.Resources.ResourceManager temp = new System.Resources.ResourceManager("Itbeard.Site.WebAssembly.Localizations.Pages.Projects.Vkl", typeof(Vkl).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

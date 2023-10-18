@@ -68,5 +68,29 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages.Projects {
                 return ResourceManager.GetString("About_Paragraph_2", resourceCulture);
             }
         }
+        
+        internal static string Patreon_Title {
+            get {
+                return ResourceManager.GetString("Patreon_Title", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_1 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_1", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_1_2 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_1_2", resourceCulture);
+            }
+        }
+        
+        internal static string Patreon_Paragraph_Part_1_3 {
+            get {
+                return ResourceManager.GetString("Patreon_Paragraph_Part_1_3", resourceCulture);
+            }
+        }
     }
 }

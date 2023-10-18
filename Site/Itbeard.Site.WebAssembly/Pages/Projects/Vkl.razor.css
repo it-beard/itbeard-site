@@ -15,9 +15,13 @@
     font-weight: bold;
 }
 
+#patreon {
+    background: #863A2C url("/images/patreon.png") 25% / 30% auto no-repeat;
+}
+
 a {
      text-decoration: none;
- }
+}
 
 a:hover {
     text-decoration: underline;

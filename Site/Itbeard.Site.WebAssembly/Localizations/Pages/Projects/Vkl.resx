@@ -30,4 +30,16 @@
     <data name="About_Paragraph_2" xml:space="preserve">
         <value>Присоединяйся к беларусам:</value>
     </data>
+    <data name="Patreon_Title" xml:space="preserve">
+        <value>Поддержи ВКЛ.world</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1" xml:space="preserve">
+        <value>Содержание &lt;b class="colored-text"&gt;ВКЛ.world&lt;/b&gt; стоит несколько сотен долларов в месяц, и практически полностью покрывается  &lt;b class="colored-text"&gt;пожертвованиями&lt;/b&gt;  наших пользователей.  &lt;br&gt;&lt;br&gt; Если ты хочешь и можешь поддержать &lt;b class="colored-text"&gt;ВКЛ.world&lt;/b&gt;, то становись патроном сервера на </value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1_2" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="Patreon_Paragraph_Part_1_3" xml:space="preserve">
+        <value>, будем очень благодарны! &lt;br&gt;&lt;br&gt; Там же ты найдешь подробные &lt;b class="colored-text"&gt;ВКЛ.world&lt;/b&gt; ежемесячные открытые отчёты&lt;/b&gt; об основных технических обновлениях сервера и о денежных затратах. Твоя поддержка позволит нашему серверу и сообществу функционировать и оставаться &lt;b class="colored-text"&gt;независимыми&lt;/b&gt;.</value>
+    </data>
 </root>

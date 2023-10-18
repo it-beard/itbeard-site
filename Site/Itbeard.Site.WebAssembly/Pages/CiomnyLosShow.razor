@@ -4,6 +4,7 @@
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
 @inject IStringLocalizer<CiomnyLosShowRes> Loc
+@inject NavigationManager NavManager
 
 <Title>@Loc[CiomnyLosShowRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 <main class="wide-container">
@@ -15,7 +16,7 @@
             </p>
             <p>
                 @((MarkupString)Loc[CiomnyLosShowRes.About_Paragrarh_21].Value)
-                <a class="colored-text" href="https://forms.gle/2s9o2i4t6x4upS1GA" target="_blank">
+                <a class="blue-text" href="https://forms.gle/2s9o2i4t6x4upS1GA" target="_blank">
                     @Loc[CiomnyLosShowRes.About_Paragrarh_22]
                 </a> 😊
             </p>
@@ -67,8 +68,8 @@
                     </li>
                     <li>
                         @((MarkupString)Loc[CiomnyLosShowRes.WhereToSee_Paragraph_4].Value)
-                        <a href="https://www.tiktok.com/@@ciomnylos" target="_blank" class="tiktok">
-                            TikTok
+                        <a href="https://x.com/ciomnylos" target="_blank" class="twitter">
+                            Twitter
                         </a>
                     </li>
                 </ul>
@@ -94,7 +95,9 @@
                 <img src="/images/patreon.jpg">
             </a>
 
-            <a href="/support#card" class="article">
+            <NavLink @onclick="@(() => NavManager.NavigateTo(NavManager.BaseUri + "/support#card", forceLoad: true))"
+                     href="javascript:void(0)"
+                     class="article">
                 <img src="/images/cards.png">
                 <h1>
                     @((MarkupString)Loc[CiomnyLosShowRes.Support_Card].Value)
@@ -105,9 +108,11 @@
                 <p>
                     @((MarkupString)Loc[CiomnyLosShowRes.Support_Card_2].Value)
                 </p>
-            </a>
+            </NavLink>
 
-            <a href="/support#crypto" class="article more">
+            <NavLink @onclick="@(() => NavManager.NavigateTo(NavManager.BaseUri + "/support#crypto", forceLoad: true))"
+                     href="javascript:void(0)"
+                     class="article more">
                 <h1>
                     @((MarkupString)Loc[CiomnyLosShowRes.Support_Crypto].Value)
                 </h1>
@@ -118,7 +123,7 @@
                     @((MarkupString)Loc[CiomnyLosShowRes.Support_Crypto_2].Value)
                 </p>
                 <img src="/images/crypto.png">
-            </a>
+            </NavLink>
         </section>
     </section>
 

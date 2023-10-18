@@ -15,7 +15,7 @@
         <value>About show</value>
     </data>
     <data name="AboutShow_Paragraph_2" xml:space="preserve">
-        <value>The show "ITBeard" is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and their way of development.</value>
+        <value>The &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") show is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science.</value>
     </data>
     <data name="AboutShow_Paragraph_3" xml:space="preserve">
         <value>Without any censorship, labels or extra pathos.</value>
@@ -23,14 +23,14 @@
     <data name="Profession" xml:space="preserve">
         <value>Professions</value>
     </data>
-    <data name="Programming" xml:space="preserve">
-        <value>Programming</value>
+    <data name="Technologies" xml:space="preserve">
+        <value>Technologies</value>
     </data>
-    <data name="Programming_Paragraph_1" xml:space="preserve">
-        <value>One of the main tasks of the show is to cover all existing &lt;b class="colored-text"&gt;programming languages&lt;/b&gt;. And it's pretty good at it, most of the languages are already represented on the channel! </value>
+    <data name="Technologies_Paragraph_1" xml:space="preserve">
+        <value>One of the main goals of the show is to popularize &lt;b class="colored-text"&gt;technologies&lt;/b&gt;, &lt;b class="colored-text"&gt;programming languages&lt;/b&gt; and even &lt;b class="colored-text" &gt;science&lt;/b&gt;!</value>
     </data>
-    <data name="Programming_Paragraph_2" xml:space="preserve">
-        <value>Listen to the description of your favorite languages and expand your skills 😉</value>
+    <data name="Technologies_Paragraph_2" xml:space="preserve">
+        <value>Each new episode reveals technical topics and expands your knowledge 😉</value>
     </data>
     <data name="NonCommercial_Title" xml:space="preserve">
         <value>Nonprofit collaboration</value>
@@ -39,7 +39,7 @@
         <value>You can find the channel's public statistics and types of commercial cooperation in the media kit </value>
     </data>
     <data name="Commercial_Paragraph2_Part1" xml:space="preserve">
-        <value>For more information about cooperation formats, detailed statistics and costs, please contact </value>
+        <value>For more information about cooperation formats, detailed statistics and adv costs, please contact </value>
     </data>
     <data name="Commercial_Paragraph2_Part2" xml:space="preserve">
         <value> or ping me on Telegram </value>
@@ -51,7 +51,7 @@
         <value>Commercial cooperation</value>
     </data>
     <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
-        <value>If you are an IT specialist with five or more years of experience in the industry, or you have an interesting topic for release that has not yet been covered on the channel, send me an email </value>
+        <value>If you are an IT specialist with five or more years of experience in the industry, or experienced scientist, or you have an interesting topic for release that has not yet been covered on the channel, send me an email </value>
     </data>
     <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
         <value>, we'll discuss all the details 😉</value>
@@ -59,22 +59,16 @@
         <value>And more</value>
     </data>
     <data name="YouTube_List_2" xml:space="preserve">
-        <value>  - interviews, programming, news, non-interview content, and more</value>
-    </data>
-    <data name="YouTube_List_2_Link" xml:space="preserve">
-        <value>40+ additional episodes</value>
+        <value>&lt;b class="colored-text"&gt;40+ additional episodes&lt;/b&gt; - interviews, programming, news, non-interview content, and more.</value>
     </data>
     <data name="YouTube_List_3" xml:space="preserve">
-        <value>  to episodes without advert</value>
-    </data>
-    <data name="YouTube_List_3_Link" xml:space="preserve">
-        <value>Early access</value>
+        <value>&lt;b class="colored-text"&gt;Early access&lt;/b&gt; to episodes without advert.</value>
     </data>
     <data name="YouTube_List_4" xml:space="preserve">
-        <value>Exclusive badges and emoji</value>
+        <value>Exclusive &lt;b class="colored-text"&gt;badges&lt;/b&gt; and &lt;b class="colored-text"&gt;emoji&lt;/b&gt; for sponsors on YouTube.</value>
     </data>
     <data name="Interview" xml:space="preserve">
-        <value>IT Rock Stars</value>
+        <value>Rock Stars</value>
     </data>
     <data name="Bonus_News" xml:space="preserve">
         <value>Beard News</value>
@@ -89,19 +83,19 @@
         <value>Discord server  &lt;b class="colored-text"&gt;«Sponsors ITBeard»&lt;/b&gt; is a quiet place for conversatons of sponsors and patrons.</value>
     </data>
     <data name="Bonus_Discord_Paragraph_2" xml:space="preserve">
-        <value>You can also contact me directly there, discuss episodes and projects, suggest a guest, and participate in the «Beard News».</value>
+        <value>You can also contact me directly there, discuss episodes and projects, suggest a guest, and participate in the online recording of &lt;b class="colored-text"&gt;«Beard News» podcast&lt;/b&gt;.</value>
     </data>
     <data name="Bonus_News_Paragraph_1" xml:space="preserve">
-        <value>For those who support me, every month I record a podcast called &lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
+        <value>&lt;b class="colored-text"&gt;"Beard News"&lt;/b&gt; is a monthly podcast in which I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
     </data>
     <data name="Bonus_News_Paragraph_2" xml:space="preserve">
-        <value>Solocast is available to ITBeard sponsors and all patrons on Patreon.</value>
+        <value>The podcast is available to my sponsors on YouTube and patrons on Patreon.</value>
     </data>
     <data name="Interview_Paragraph_1" xml:space="preserve">
-        <value>The main format of the show is interviews with active people from the IT world. They are the real &lt;b class="colored-text"&gt;Rock Stars&lt;/b&gt; who move our industry forward! </value>
+        <value>The main format of the show is interviews with active people from the IT &amp; Science. They are the real &lt;b class="colored-text"&gt;Rock Stars&lt;/b&gt; who move industry forward! </value>
     </data>
     <data name="PageTitle" xml:space="preserve">
-        <value>The "ITBarade" show - life and work in IT</value>
+        <value>The "АйТиБорода" show - life and work in IT</value>
     </data>
     <data name="Interview_Paragraph_2" xml:space="preserve">
         <value>In the show you will meet developers, testers, designers, managers and even scientists! Enjoy watching 😊</value>
@@ -124,14 +118,8 @@
     <data name="Suport_Paragraph_14" xml:space="preserve">
         <value>subscribe on Patreon</value>
     </data>
-    <data name="Suport_Paragraph_15" xml:space="preserve">
-        <value>or </value>
-    </data>
-    <data name="Suport_Paragraph_16" xml:space="preserve">
-        <value>subscribe on Apple Podcasts</value>
-    </data>
     <data name="Suport_Paragraph_17" xml:space="preserve">
-        <value>. Sponsors, patrons and Apple subscribers get access to sponsorship bonuses and extra content, which is nice 😊</value>
+        <value>. Sponsors and patrons get access to sponsorship bonuses, exclusive podcast and extra content, which is cool 😊</value>
     </data>
     <data name="Suport_Paragraph_21" xml:space="preserve">
         <value>You can also support the show through SuperThanks, PayPal, Revolute, and cryptocurrency transfers. You can read more about these ways on the page </value>
@@ -170,9 +158,12 @@
         <value>Listen on</value>
     </data>
     <data name="WhereToSee_Paragraph_9" xml:space="preserve">
-        <value>RSS Feed and podcast site</value>
+        <value>Download .mp3 or get RSS Feed</value>
     </data>
     <data name="WhatAboutItbeard" xml:space="preserve">
         <value>What is ITBeard about?</value>
+    </data>
+    <data name="WhereToSee_Paragraph_3_1" xml:space="preserve">
+        <value>Read on</value>
     </data>
 </root>

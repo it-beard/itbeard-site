@@ -18,7 +18,7 @@
         <value>Hey!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>My name is  &lt;b class="blue-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in IT since 2011.</value>
+        <value>My name is  &lt;b class="colored-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in IT since 2011.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
         <value>I worked as a software engineer for the first 10 years (backend, C#, .NET, Azure), and since 2021 I've been developing IT communities. Some people call it working with developers.</value>

@@ -105,21 +105,21 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Programming {
+        internal static string Technologies {
             get {
-                return ResourceManager.GetString("Programming", resourceCulture);
+                return ResourceManager.GetString("Technologies", resourceCulture);
             }
         }
         
-        internal static string Programming_Paragraph_1 {
+        internal static string Technologies_Paragraph_1 {
             get {
-                return ResourceManager.GetString("Programming_Paragraph_1", resourceCulture);
+                return ResourceManager.GetString("Technologies_Paragraph_1", resourceCulture);
             }
         }
         
-        internal static string Programming_Paragraph_2 {
+        internal static string Technologies_Paragraph_2 {
             get {
-                return ResourceManager.GetString("Programming_Paragraph_2", resourceCulture);
+                return ResourceManager.GetString("Technologies_Paragraph_2", resourceCulture);
             }
         }
         
@@ -192,18 +192,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string YouTube_List_4 {
             get {
                 return ResourceManager.GetString("YouTube_List_4", resourceCulture);
-            }
-        }
-        
-        internal static string YouTube_List_2_Link {
-            get {
-                return ResourceManager.GetString("YouTube_List_2_Link", resourceCulture);
-            }
-        }
-        
-        internal static string YouTube_List_3_Link {
-            get {
-                return ResourceManager.GetString("YouTube_List_3_Link", resourceCulture);
             }
         }
         
@@ -297,18 +285,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Suport_Paragraph_15 {
-            get {
-                return ResourceManager.GetString("Suport_Paragraph_15", resourceCulture);
-            }
-        }
-        
-        internal static string Suport_Paragraph_16 {
-            get {
-                return ResourceManager.GetString("Suport_Paragraph_16", resourceCulture);
-            }
-        }
-        
         internal static string Suport_Paragraph_17 {
             get {
                 return ResourceManager.GetString("Suport_Paragraph_17", resourceCulture);
@@ -372,6 +348,12 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string WhatAboutItbeard {
             get {
                 return ResourceManager.GetString("WhatAboutItbeard", resourceCulture);
+            }
+        }
+        
+        internal static string WhereToSee_Paragraph_3_1 {
+            get {
+                return ResourceManager.GetString("WhereToSee_Paragraph_3_1", resourceCulture);
             }
         }
     }

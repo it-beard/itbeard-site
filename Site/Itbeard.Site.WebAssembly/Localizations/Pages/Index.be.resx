@@ -18,7 +18,7 @@
         <value>Ку!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>Мяне клічуць  &lt;b class="blue-text"&gt;Лёха Картыннік &lt;/b&gt;, родам я з Беларусі, зараз жыву ў Польшчы і працую ў сферы IT з 2011 года.</value>
+        <value>Мяне клічуць  &lt;b class="colored-text"&gt;Лёха Картыннік &lt;/b&gt;, родам я з Беларусі, зараз жыву ў Польшчы і працую ў сферы IT з 2011 года.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
         <value>Першыя 10 гадоў я займаўся backend-распрацоўкай на мове C# і платформе .NET, а з 2021 года перайшоў у стварэнне IT-супольнасцей і навядзенне варушнякоў. Хтосьці называе гэты напрамак Developer Relations.</value>

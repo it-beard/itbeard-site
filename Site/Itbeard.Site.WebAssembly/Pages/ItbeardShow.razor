@@ -26,12 +26,12 @@
         </h1>
         <section class="content">
             <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984Jnm_YhDcD_Hs5WEB39HoR" target="_blank" class="article">
-                <h1>@Loc[ItbeardShowRes.Programming]</h1>
+                <h1>@Loc[ItbeardShowRes.Technologies]</h1>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowRes.Programming_Paragraph_1].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Technologies_Paragraph_1].Value)
                 </p>
                 <p>
-                    @((MarkupString)Loc[ItbeardShowRes.Programming_Paragraph_2].Value)
+                    @((MarkupString)Loc[ItbeardShowRes.Technologies_Paragraph_2].Value)
                 </p>
                 <img src="/images/haskell.jpg">
             </a>
@@ -81,6 +81,12 @@
                             </a>
                         </li>
                         <li>
+                            @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_3_1].Value)
+                            <a href="https://www.whatsapp.com/channel/0029VaAd7wk3QxRrnV3byo34" target="_blank" class="whatsapp">
+                                WhatsApp
+                            </a>
+                        </li>
+                        <li>
                             @((MarkupString)Loc[ItbeardShowRes.WhereToSee_Paragraph_4].Value)
                             <a href="https://www.tiktok.com/@@itbeard" target="_blank" class="tiktok">
                                 TikTok
@@ -127,20 +133,16 @@
             </h1>
             <p>
                 @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_11].Value)
-                <a href="/support" target="_blank" class="colored-text">
+                <a href="/support" target="_blank" class="blue-text">
                     @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_12].Value)
                 </a>@((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_13].Value)
-                <a href="https://www.patreon.com/itbeard" target="_blank" class="colored-text">
+                <a href="https://www.patreon.com/itbeard" target="_blank" class="blue-text">
                     @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_14].Value)
-                </a>
-                @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_15].Value)
-                <a href="https://podcasts.apple.com/us/podcast/id1449804780" target="_blank" class="colored-text">
-                    @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_16].Value)
                 </a>@((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_17].Value)
             </p>
             <p>
                 @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_21].Value)
-                <a href="/support" class="colored-text">
+                <a href="/support" class="blue-text">
                     @((MarkupString)Loc[ItbeardShowRes.Suport_Paragraph_22].Value)
                 </a>
             </p>
@@ -165,7 +167,7 @@
                 <img src="/images/discord.jpg">
             </a>
 
-            <a href="https://www.patreon.com/itbeard?filters[tag]=%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%20%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D1%8B" target="_blank" class="article">
+            <a href="/beard-news" class="article">
                 <img src="/images/solocast.jpg">
                 <h1>
                     @((MarkupString)Loc[ItbeardShowRes.Bonus_News].Value)
@@ -183,19 +185,13 @@
                 <p>
                     <ul>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu986bFr4dpzCVcMQ_r7lgwZCZ" target="_blank" class="colored-text">
-                                @Loc[ItbeardShowRes.YouTube_List_2_Link]
-                            </a>
-                            @Loc[ItbeardShowRes.YouTube_List_2]
+                            @((MarkupString)@Loc[ItbeardShowRes.YouTube_List_2].Value)
                         </li>
                         <li>
-                            <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu984VLrI0lES0axUSccXbgL7_" target="_blank" class="colored-text">
-                                @Loc[ItbeardShowRes.YouTube_List_3_Link]
-                            </a>
-                            @Loc[ItbeardShowRes.YouTube_List_3]
+                            @((MarkupString)@Loc[ItbeardShowRes.YouTube_List_3].Value)
                         </li>
                         <li>
-                            @Loc[ItbeardShowRes.YouTube_List_4]
+                            @((MarkupString)@Loc[ItbeardShowRes.YouTube_List_4].Value)
                         </li>
                     </ul>
                 </p>
@@ -211,14 +207,14 @@
             </h1>
             <p>
                 @Loc[ItbeardShowRes.Commercial_Paragraph1_Part1]
-                (<a href="https://s.itbeard.com/mediakit" target="_blank" class="email">русский</a>,
-                <a href="https://s.itbeard.com/mediakit-en" target="_blank" class="email">english</a>).
+                (<a href="https://s.itbeard.com/mediakit" target="_blank" class="blue-text">русский</a>,
+                <a href="https://s.itbeard.com/mediakit-en" target="_blank" class="blue-text">english</a>).
             </p>
             <p>
                 @Loc[ItbeardShowRes.Commercial_Paragraph2_Part1]
-                <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
+                <a href="mailto:iamitbeard@gmail.com" target="_blank" class="blue-text">iamitbeard@gmail.com</a>
                 @Loc[ItbeardShowRes.Commercial_Paragraph2_Part2]
-                <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>.
+                <a href="https://t.me/iamitbeard" target="_blank" class="blue-text">@@iamitbeard</a>.
             </p>
         </section>
     </section>
@@ -230,9 +226,9 @@
             </h1>
             <p>
                 @Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part1]
-                <a href="mailto:iamitbeard@gmail.com" target="_blank" class="email">iamitbeard@gmail.com</a>
+                <a href="mailto:iamitbeard@gmail.com" target="_blank" class="blue-text">iamitbeard@gmail.com</a>
                 @Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part2]
-                <a href="https://t.me/iamitboroda" target="_blank" class="email">@@iamitboroda</a>@Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part3]
+                <a href="https://t.me/iamitboroda" target="_blank" class="blue-text">@@iamitboroda</a>@Loc[ItbeardShowRes.NonCommercial_Paragraph1_Part3]
             </p>
         </section>
     </section>

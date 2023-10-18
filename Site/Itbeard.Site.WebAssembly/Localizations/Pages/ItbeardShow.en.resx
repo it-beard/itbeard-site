@@ -166,4 +166,19 @@
     <data name="WhereToSee_Paragraph_3_1" xml:space="preserve">
         <value>Read on</value>
     </data>
+    <data name="Merch" xml:space="preserve">
+        <value>Branded Merch</value>
+    </data>
+    <data name="Merch_Paragraph_12" xml:space="preserve">
+        <value>my shop</value>
+    </data>
+    <data name="Merch_Paragraph_13" xml:space="preserve">
+        <value>: hoodies, T-shirts, hats, mugs and stickers!</value>
+    </data>
+    <data name="Merch_Paragraph_2" xml:space="preserve">
+        <value>With each purchase you will support me by about &lt;b&gt;$5&lt;/b&gt;, thank you very much! 😊</value>
+    </data>
+    <data name="Merch_Paragraph_11" xml:space="preserve">
+        <value>I also make cool merch that often appears in podcast episodes. You can buy it at </value>
+    </data>
 </root>

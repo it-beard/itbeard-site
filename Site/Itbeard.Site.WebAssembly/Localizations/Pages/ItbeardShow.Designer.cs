@@ -356,5 +356,35 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("WhereToSee_Paragraph_3_1", resourceCulture);
             }
         }
+        
+        internal static string Merch {
+            get {
+                return ResourceManager.GetString("Merch", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_11 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_11", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_12 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_12", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_13 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_13", resourceCulture);
+            }
+        }
+        
+        internal static string Merch_Paragraph_2 {
+            get {
+                return ResourceManager.GetString("Merch_Paragraph_2", resourceCulture);
+            }
+        }
     }
 }

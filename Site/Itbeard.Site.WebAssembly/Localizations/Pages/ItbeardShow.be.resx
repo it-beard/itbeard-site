@@ -166,4 +166,19 @@
     <data name="WhereToSee_Paragraph_3_1" xml:space="preserve">
         <value>Чытаць в</value>
     </data>
+    <data name="Merch" xml:space="preserve">
+        <value>Фірмовы мерч</value>
+    </data>
+    <data name="Merch_Paragraph_12" xml:space="preserve">
+        <value>маёй краме</value>
+    </data>
+    <data name="Merch_Paragraph_2" xml:space="preserve">
+        <value>Кожнай пакупкай ты падтрымаеш мяне прыблізна на &lt;b&gt;$5&lt;/b&gt;, вялікі дзякуй! 😊</value>
+    </data>
+    <data name="Merch_Paragraph_13" xml:space="preserve">
+        <value>: байкі, майкі, шапкі, кубкі і налепкі!</value>
+    </data>
+    <data name="Merch_Paragraph_11" xml:space="preserve">
+        <value>А яшчэ я раблю круты мерч, у якім часта з'яўляюся ў выпусках падкаста. Набыць яго ты можаш у</value>
+    </data>
 </root>

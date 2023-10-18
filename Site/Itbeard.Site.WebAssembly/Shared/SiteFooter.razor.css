@@ -1,0 +1,95 @@
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+    transition-duration: .3s;
+    transition-property: border-color, box-shadow, color;
+}
+
+.social > i {
+    transition-duration: .3s;
+    transition-property: border-color, box-shadow, color;
+}
+
+.social > a:hover {
+    border-color: var(--color-highlight);
+    box-shadow: 0 0 5px 3px var(--color-highlight);
+    text-shadow: none;
+    color: var(--color-highlight);
+}
+
+.social > a.discord:hover {
+    border-color: #6D8CF6;
+    box-shadow: 0 0 5px 3px #6D8CF6;
+    text-shadow: none;
+    color: #6D8CF6;
+}
+
+.social > a.telegram:hover {
+    border-color: #2A9DD6;
+    box-shadow: 0 0 5px 3px #2A9DD6;
+    text-shadow: none;
+    color: #2A9DD6;
+}
+
+.social > a.twitter:hover {
+    border-color: #2A9DD6;
+    box-shadow: 0 0 5px 3px #2A9DD6;
+    text-shadow: none;
+    color: #2A9DD6;
+}
+
+.social > a.mastodon:hover {
+    border-color: #5A49DE;
+    box-shadow: 0 0 5px 3px #5A49DE;
+    text-shadow: none;
+    color: #5A49DE;
+}
+
+.social > a.email:hover {
+    border-color: #a60000;
+    box-shadow: 0 0 5px 3px #a60000;
+    text-shadow: none;
+    color: #a60000;
+}
+
+.fab {
+    font-size: 25px;
+}
+
+.thanks {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.github {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.lang {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.contacts {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}

@@ -158,43 +158,15 @@ app > section + section {
   z-index: 1;
 }
 
-
-#header > .logo {
+#footer {
+  flex: auto;
   display: flex;
-  align-items: center;
-  height: 100%;
-  text-decoration: none;
-  text-shadow: 2px 2px 0 #085dec;
-  font: 20px "Press Start";
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: var(--color-background-darkest);
   color: white;
-  transition: .1s text-shadow;
-}
-
-#header > .logo-by {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  text-decoration: none;
-  text-shadow: 2px 2px 0 #e60707;
-  font: 20px "Press Start";
-  color: white;
-  transition: .1s text-shadow;
-}
-
-#header > .logo:hover {
-  text-shadow: 0px 2px 0 #085dec;
-}
-
-#header > .logo-by:hover {
-  text-shadow: 0px 2px 0 #e60707;
-}
-
-#header > .logo > img,
-#header > .logo-by > img {
-  display: inline-block;
-  height: 100%;
-  border-radius: 100%;
-  margin-right: 10px;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .presentation-slides {
@@ -337,135 +309,6 @@ app > section + section {
 .slides > .content > .article a {
   text-decoration: none;
 }
-
-#footer {
-  flex: auto;
-  display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--color-background-darkest);
-  color: white;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#footer .social {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-#footer .social > a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border: 2px solid white;
-  margin: 15px;
-  text-decoration: none;
-  color: white;
-  transition-duration: .3s;
-  transition-property: border-color, box-shadow, color;
-}
-
-#footer .social > i {
-  transition-duration: .3s;
-  transition-property: border-color, box-shadow, color;
-}
-
-#footer .social > a:hover {
-  border-color: var(--color-highlight);
-  box-shadow: 0 0 5px 3px var(--color-highlight);
-  text-shadow: none;
-  color: var(--color-highlight);
-}
-
-#footer .social > a.youtube:hover {
-  border-color: #f00;
-  box-shadow: 0 0 5px 3px #f00;
-  text-shadow: none;
-  color: #f00;
-}
-
-#footer .social > a.soundcloud:hover {
-  border-color: #ff8714;
-  box-shadow: 0 0 5px 3px #ff8714;
-  text-shadow: none;
-  color: #ff8714;
-}
-
-#footer .social > a.discord:hover {
-  border-color: #6D8CF6;
-  box-shadow: 0 0 5px 3px #6D8CF6;
-  text-shadow: none;
-  color: #6D8CF6;
-}
-
-#footer .social > a.telegram:hover {
-  border-color: #2A9DD6;
-  box-shadow: 0 0 5px 3px #2A9DD6;
-  text-shadow: none;
-  color: #2A9DD6;
-}
-
-#footer .social > a.instagram:hover {
-  border-color: #C53189;
-  box-shadow: 0 0 5px 3px #C53189;
-  text-shadow: none;
-  color: #C53189;
-}
-
-#footer .social > a.twitter:hover {
-  border-color: #2A9DD6;
-  box-shadow: 0 0 5px 3px #2A9DD6;
-  text-shadow: none;
-  color: #2A9DD6;
-}
-
-#footer .social > a.mastodon:hover {
-   border-color: #5A49DE;
-   box-shadow: 0 0 5px 3px #5A49DE;
-   text-shadow: none;
-   color: #5A49DE;
- }
-
-#footer .social > a.github:hover {
-  border-color: white;
-  box-shadow: 0 0 5px 3px white;
-  text-shadow: none;
-  color: white;
-}
-
-#footer .social > a.patreon:hover {
-  border-color: #e45f00;
-  box-shadow: 0 0 5px 3px #e45f00;
-  text-shadow: none;
-  color: #e45f00;
-}
-
-#footer .fab {
-  font-size: 25px;
-}
-
-#footer .thanks {
-  font-size: 10px;
-  text-align: center;
-  margin-top: 20px;
-}
-
-#footer .github {
-   font-size: 10px;
-   text-align: center;
-   margin-top: 5px;
- }
-
-#footer .lang {
-  font-size: 10px;
-  text-align: center;
-  margin-top: 5px;
-}
-
 
 @media screen and (max-width: 991px) {
   .presentation > .content {

@@ -62,5 +62,11 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
                 return ResourceManager.GetString("GithubCode", resourceCulture);
             }
         }
+        
+        internal static string Contasts {
+            get {
+                return ResourceManager.GetString("Contasts", resourceCulture);
+            }
+        }
     }
 }

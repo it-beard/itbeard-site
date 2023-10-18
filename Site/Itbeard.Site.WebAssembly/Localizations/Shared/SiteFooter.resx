@@ -28,4 +28,7 @@
         <value>Код этого сайта на &lt;a href="https://github.com/it-beard/itbeard-site" target="_blank"&gt;GitHub&lt;/a&gt;
 </value>
     </data>
+    <data name="Contasts" xml:space="preserve">
+        <value>Мои контакты</value>
+    </data>
 </root>

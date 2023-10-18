@@ -38,7 +38,7 @@
 nav#menu {
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
+    margin: 0 auto;
 }
 
 nav#menu > ::deep a,

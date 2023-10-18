@@ -51,51 +51,15 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string KeyResources {
+        internal static string Ccontacts {
             get {
-                return ResourceManager.GetString("KeyResources", resourceCulture);
+                return ResourceManager.GetString("Ccontacts", resourceCulture);
             }
         }
         
-        internal static string KeyResources_Patreon {
+        internal static string Ccontacts_Telegram {
             get {
-                return ResourceManager.GetString("KeyResources_Patreon", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Telegram {
-            get {
-                return ResourceManager.GetString("KeyResources_Telegram", resourceCulture);
-            }
-        }
-        
-        internal static string Cont_Title {
-            get {
-                return ResourceManager.GetString("Cont_Title", resourceCulture);
-            }
-        }
-        
-        internal static string Cont_Email {
-            get {
-                return ResourceManager.GetString("Cont_Email", resourceCulture);
-            }
-        }
-        
-        internal static string Cont_Telegram {
-            get {
-                return ResourceManager.GetString("Cont_Telegram", resourceCulture);
-            }
-        }
-        
-        internal static string Cont_Mail {
-            get {
-                return ResourceManager.GetString("Cont_Mail", resourceCulture);
-            }
-        }
-        
-        internal static string Cont_Mail_body {
-            get {
-                return ResourceManager.GetString("Cont_Mail_body", resourceCulture);
+                return ResourceManager.GetString("Ccontacts_Telegram", resourceCulture);
             }
         }
         
@@ -111,51 +75,63 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string KeyResources_Itbeard {
+        internal static string Ccontacts_Mastodon {
             get {
-                return ResourceManager.GetString("KeyResources_Itbeard", resourceCulture);
+                return ResourceManager.GetString("Ccontacts_Mastodon", resourceCulture);
             }
         }
         
-        internal static string KeyResources_CiomnyLos {
+        internal static string Other_BlogFediverse {
             get {
-                return ResourceManager.GetString("KeyResources_CiomnyLos", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Mastodon {
-            get {
-                return ResourceManager.GetString("KeyResources_Mastodon", resourceCulture);
-            }
-        }
-        
-        internal static string KeyResources_Linkedin {
-            get {
-                return ResourceManager.GetString("KeyResources_Linkedin", resourceCulture);
-            }
-        }
-        
-        internal static string Other_Mastodon {
-            get {
-                return ResourceManager.GetString("Other_Mastodon", resourceCulture);
-            }
-        }
-        
-        internal static string Other_Twitter {
-            get {
-                return ResourceManager.GetString("Other_Twitter", resourceCulture);
-            }
-        }
-        
-        internal static string Other_Instagram {
-            get {
-                return ResourceManager.GetString("Other_Instagram", resourceCulture);
+                return ResourceManager.GetString("Other_BlogFediverse", resourceCulture);
             }
         }
         
         internal static string Other_LinkedIn {
             get {
                 return ResourceManager.GetString("Other_LinkedIn", resourceCulture);
+            }
+        }
+        
+        internal static string Ccontacts_Twitter {
+            get {
+                return ResourceManager.GetString("Ccontacts_Twitter", resourceCulture);
+            }
+        }
+        
+        internal static string Ccontacts_Email {
+            get {
+                return ResourceManager.GetString("Ccontacts_Email", resourceCulture);
+            }
+        }
+        
+        internal static string Ccontacts_Discord {
+            get {
+                return ResourceManager.GetString("Ccontacts_Discord", resourceCulture);
+            }
+        }
+        
+        internal static string Other_Patreon {
+            get {
+                return ResourceManager.GetString("Other_Patreon", resourceCulture);
+            }
+        }
+        
+        internal static string Other_Merch {
+            get {
+                return ResourceManager.GetString("Other_Merch", resourceCulture);
+            }
+        }
+        
+        internal static string Other_BlogTelegram {
+            get {
+                return ResourceManager.GetString("Other_BlogTelegram", resourceCulture);
+            }
+        }
+        
+        internal static string Other_BlogWhatsapp {
+            get {
+                return ResourceManager.GetString("Other_BlogWhatsapp", resourceCulture);
             }
         }
     }

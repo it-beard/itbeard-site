@@ -1,86 +1,43 @@
-#resources {
-    background: url("/images/main-recources.png") 25% / auto auto no-repeat;
-}
-
-#resources .links a {
-    font-style: italic;
-    text-decoration: none;
-}
-
-#resources .links a:hover {
-    text-decoration: underline;
-}
-
-#resources .links span {
-    font-weight: bold;
-}
-
-#resources .links.youtube span {
-    color: #FF0000;
-}
-
-#resources .links.discord span{
-    color: #6D8CF6;
-}
-
-#resources .links.telegram span{
-    color: #2A9DD6;
-}
-
-#resources .links.instagram span{
-    color: #C53189;
-}
-
-#resources .links.twitter span{
-    color: #1A8CD8;
-}
-
-#resources .links.linkedin span{
-    color: #0A66C2;
-}
-
-#resources .links.patreon span{
-    color: #FF424D;
-}
-
-#resources .links.mastodon span{
-    color: #5A49DE;
-}
-
 #contacts {
-    background: #620067 url("/images/email-post.png") no-repeat 73% 73%;
-    min-height: 100vh;
-    font-size: 17px;
-}
-
-#contacts > section {
-    min-height: 100vh;
-}
-
-#contacts .links {
-            margin-bottom: 30px;
+    background: url("/images/email-post.png") 25% / auto auto no-repeat;
 }
 
 #contacts .links a {
+    font-style: italic;
     text-decoration: none;
+    color: white;
 }
 
 #contacts .links a:hover {
     text-decoration: underline;
 }
 
-#contacts .links>div {
+#contacts .links span {
     font-weight: bold;
-    margin-left: 30px;
-    margin-top: 10px;
 }
 
-#contacts .links span {
-    font-style: italic;
+#contacts .links.email span{
+    color: orange;
+}
+
+#contacts .links.telegram span{
+    color: #2A9DD6;
+}
+
+#contacts .links.mastodon span{
+    color: #5A49DE;
+}
+
+#contacts .links.discord span{
+    color: #6D8CF6;
+}
+
+#contacts .links.twitter span{
+    color: #1A8CD8;
 }
 
 #socials {
-    background: url("/images/socials.png") no-repeat 35% 50%;
+    background: url("/images/links.png") no-repeat 70% 45% #141D3B;
     min-height: 100vh;
 }
 
@@ -91,6 +48,7 @@
 #socials .links a {
     font-style: italic;
     text-decoration: none;
+    color: white;
 }
 
 #socials .links a:hover {
@@ -101,44 +59,28 @@
     font-weight: bold;
 }
 
-#socials .links.youtube span {
-    color: #FF0000;
+#socials .links.blog-telegram span{
+    color: #2A9DD6;
 }
 
-#socials .links.telegram span{
-    color: #2A9DD6;
+#socials .links.blog-whatsapp span{
+    color: #46D97D;
+}
+
+#socials .links.blog-fediverse span{
+    color: #d70f0f;
 }
 
 #socials .links.merch span{
     color: yellow;
 }
 
-#socials .links.vk span{
-    color: #5181B8;
-}
-
-#socials .links.facebook span{
-    color: #4867AA;
-}
-
 #socials .links.linkedin span{
     color: #0A66C2;
 }
 
-#socials .links.google span{
-    color: #4282EF;
-}
-
-#socials .links.mastodon span{
-    color: #5A49DE;
-}
-
-#socials .links.instagram span{
-    color: #C53189;
-}
-
-#socials .links.twitter span{
-    color: #1A8CD8;
+#socials .links.patreon span{
+    color: orange;
 }
 
 section.content {

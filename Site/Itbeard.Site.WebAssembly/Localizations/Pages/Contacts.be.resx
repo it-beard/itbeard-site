@@ -14,58 +14,46 @@
     <data name="PageTitle" xml:space="preserve">
         <value>Кантакты</value>
     </data>
-    <data name="KeyResources_Patreon" xml:space="preserve">
-        <value>Patreon</value>
-    </data>
-    <data name="Cont_Title" xml:space="preserve">
-        <value>Кантакты для сувязі</value>
-    </data>
-    <data name="Cont_Email" xml:space="preserve">
-        <value>Электрапошта</value>
-    </data>
-    <data name="Cont_Telegram" xml:space="preserve">
-        <value>Тэлеграм</value>
-    </data>
-    <data name="Cont_Mail" xml:space="preserve">
-        <value>Паштовы адрас для паштовак і нішцякоў 😊</value>
-    </data>
-    <data name="Cont_Mail_body" xml:space="preserve">
-        <value>Часова не маю... Digital nomad :)</value>
-    </data>
     <data name="Other_GitHub" xml:space="preserve">
         <value>GitHub</value>
     </data>
     <data name="Other_LinkedIn" xml:space="preserve">
         <value>LinkedIn</value>
     </data>
-    <data name="Other_Instagram" xml:space="preserve">
-        <value>Instagram</value>
+    <data name="Other_BlogFediverse" xml:space="preserve">
+        <value>Блог (Fediverse)</value>
     </data>
-    <data name="Other_Twitter" xml:space="preserve">
-        <value>Twitter</value>
+    <data name="Ccontacts" xml:space="preserve">
+        <value>Пішыце мне сюды</value>
     </data>
-    <data name="Other_Mastodon" xml:space="preserve">
+    <data name="Ccontacts_Mastodon" xml:space="preserve">
         <value>Mastodon</value>
     </data>
-    <data name="KeyResources" xml:space="preserve">
-        <value>Мае праекты</value>
-    </data>
-    <data name="KeyResources_CiomnyLos" xml:space="preserve">
-        <value>Цёмны Лёс</value>
-    </data>
-    <data name="KeyResources_Itbeard" xml:space="preserve">
-        <value>АйЦіБарада</value>
-    </data>
-    <data name="KeyResources_Mastodon" xml:space="preserve">
-        <value>Беларускі Mastodon</value>
-    </data>
-    <data name="KeyResources_Linkedin" xml:space="preserve">
-        <value>LinkedIn АйЦіБарады</value>
-    </data>
-    <data name="KeyResources_Telegram" xml:space="preserve">
-        <value>Telegram АйЦіБарады</value>
+    <data name="Ccontacts_Telegram" xml:space="preserve">
+        <value>Telegram</value>
     </data>
     <data name="Other" xml:space="preserve">
-        <value>Я ў соцсетках</value>
+        <value>Я ў інтэрнэце</value>
+    </data>
+    <data name="Ccontacts_Discord" xml:space="preserve">
+        <value>Discord</value>
+    </data>
+    <data name="Ccontacts_Email" xml:space="preserve">
+        <value>Электрапошта</value>
+    </data>
+    <data name="Ccontacts_Twitter" xml:space="preserve">
+        <value>Twitter</value>
+    </data>
+    <data name="Other_Merch" xml:space="preserve">
+        <value>Мерч</value>
+    </data>
+    <data name="Other_Patreon" xml:space="preserve">
+        <value>Patreon</value>
+    </data>
+    <data name="Other_BlogTelegram" xml:space="preserve">
+        <value>Блог (Telegram)</value>
+    </data>
+    <data name="Other_BlogWhatsapp" xml:space="preserve">
+        <value>Блог (WhatsApp)</value>
     </data>
 </root>

@@ -29,76 +29,43 @@
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>On this web site you gonna to learn a little bit more about all my projects 😊</value>
     </data>
-    <data name="Interesting_GitHub" xml:space="preserve">
-        <value>GitHub</value>
+    <data name="Projects_Aia" xml:space="preserve">
+        <value>AIA Podcasts</value>
     </data>
-    <data name="Interesting_Merch" xml:space="preserve">
-        <value>Merch</value>
+    <data name="Projects_Itbeard" xml:space="preserve">
+        <value>АйТиБорода</value>
     </data>
-    <data name="Interesting_News" xml:space="preserve">
+    <data name="Projects_BeardNews" xml:space="preserve">
         <value>Beard News</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_22" xml:space="preserve">
-        <value>«ITBeard»</value>
+    <data name="Projects_BelarusAi" xml:space="preserve">
+        <value>Belarus AI</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_31" xml:space="preserve">
-        <value>Podcast</value>
+    <data name="Projects" xml:space="preserve">
+        <value>My Projects</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_32" xml:space="preserve">
-        <value>«Ciomny Los»</value>
+    <data name="Projects_BelarusAi_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«Belarus AI»&lt;/b&gt; is a Belarusian-language community of professionals and amateurs of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, DS, ML, DL, GPT, NLP, OCR, CV, etc.</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_42" xml:space="preserve">
-        <value>«VKL»</value>
+    <data name="Projects_Itbeard_Description" xml:space="preserve">
+        <value>The show &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") tells about the life of IT specialists from inside and in its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science. &lt;br&gt;&lt;br&gt; Without any censorship, labels or extra pathos.</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_41" xml:space="preserve">
-        <value>Mastodon server</value>
+    <data name="Projects_BeardNews_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt; is a solocast where I talk about IT gossip, events in my life, new and old content, and upcoming plans.&lt;br&gt;&lt;br&gt;The podcast is released once a month and is available to my patrons and sponsors.</value>
     </data>
-    <data name="Interesting_Where_Paragrahp_21" xml:space="preserve">
-        <value>Show</value>
+    <data name="Projects_CiomnyLos" xml:space="preserve">
+        <value>Цёмны Лёс</value>
     </data>
-    <data name="Interesting_LinkedIn" xml:space="preserve">
-        <value>LinkedIn</value>
+    <data name="Projects_Vkl" xml:space="preserve">
+        <value>VKL.world</value>
     </data>
-    <data name="Interesting" xml:space="preserve">
-        <value>It will be interesting</value>
+    <data name="Projects_Vkl_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«VKL.world»&lt;/b&gt; is the first exclusively Belarusian-language community on the Mastadon network. &lt;br&gt;&lt;br&gt; Mastadon is the distributed equivalent of Twitter, but without the dictatorship of Ilon Musk.</value>
     </data>
-    <data name="Interesting_GitHub_Paragraph_1" xml:space="preserve">
-        <value>Being a software developer since 2011, I have had several small opensource projects.</value>
+    <data name="Projects_CiomnyLos_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; ("ciomny los") is a talk podcast in Belarusian, in which Belarusians talk about their occupations and reflect on Belarusianness.  &lt;br&gt;&lt;br&gt;  Each episode is a new profession or occupation: from scientists and programmers to musicians, comedians and even Tolkien fans!</value>
     </data>
-    <data name="Interesting_GitHub_Paragraph_2" xml:space="preserve">
-        <value>You can look through them on my GitHub. And maybe even commit something 😉</value>
-    </data>
-    <data name="Interesting_LinkedIn_Paragrarh_1" xml:space="preserve">
-        <value>On LinkedIn you can find information about my professional experience and an old resume. </value>
-    </data>
-    <data name="Interesting_LinkedIn_Paragrarh_2" xml:space="preserve">
-        <value>There you can also see what ship and what I'm working on now.</value>
-    </data>
-    <data name="Interesting_Merch_Paragraph_1" xml:space="preserve">
-        <value>In life and in videos I appear in unusual sweatshirts, T-shirts, etc. You can buy the same in &lt;b class="colored-text"&gt;my store&lt;/b&gt;.</value>
-    </data>
-    <data name="Interesting_Merch_Paragraph_2" xml:space="preserve">
-        <value>Every purchase you make will support me by &lt;b&gt;$5&lt;/b&gt;! 😊</value>
-    </data>
-    <data name="Interesting_News_Paragraph_1" xml:space="preserve">
-        <value>For those who support me, every month I record a podcast called &lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt;. In this podcast I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
-    </data>
-    <data name="Interesting_News_Paragraph_2" xml:space="preserve">
-        <value>Solocast is available to ITBeard sponsors and all patrons on Patreon.</value>
-    </data>
-    <data name="Interesting_Support" xml:space="preserve">
-        <value>Support me</value>
-    </data>
-    <data name="Interesting_Support_Paragraph_1" xml:space="preserve">
-        <value>Supporting on Patreon is one way to support my endeavors. As a Patreon member, you'll get access to lots of goodies!</value>
-    </data>
-    <data name="Interesting_Support_Paragraph_2" xml:space="preserve">
-        <value>By the way, all the ways you can support me are described on the &lt;b class="colored-text"&gt;«Support»&lt;/b&gt; page.</value>
-    </data>
-    <data name="Interesting_Where" xml:space="preserve">
-        <value>Where did you see me?</value>
-    </data>
-    <data name="Interesting_Where_Paragrahp_1" xml:space="preserve">
-        <value>In my spare time, I work mainly on the following projects:</value>
+    <data name="Projects_Aia_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«AIA»&lt;/b&gt; is a podcast where we discuss with Vitya Shelenchenko the latest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released with the support of Anywhere Club every two weeks.</value>
     </data>
 </root>

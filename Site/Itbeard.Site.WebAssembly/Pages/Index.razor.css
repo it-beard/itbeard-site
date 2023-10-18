@@ -2,10 +2,22 @@
     background: #72797f url("/images/index.jpg") left / auto 100% no-repeat;
 }
 
-.merch {
-     width: 280px;
-     margin: 0 auto;
- }
+.itbeard-logo,
+.ciomnylos-logo,
+.aia-logo,
+.belarusai-logo{
+    width: 220px;
+    margin: 0 auto;
+    border-radius: 20%;
+    min-height: auto !important;
+}
+
+.vkl-logo,
+.solocast-logo{
+    width: 250px;
+    margin: 0 auto;
+    min-height: auto !important;
+}
 
 @media screen and (max-width: 767px) {
     #about {

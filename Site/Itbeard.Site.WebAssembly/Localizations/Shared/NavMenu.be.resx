@@ -14,7 +14,7 @@
     <data name="Index" xml:space="preserve">
         <value>Галоўная</value>
     </data>
-    <data name="ItbeardShow" xml:space="preserve">
+    <data name="Menu_ItbeardShow" xml:space="preserve">
         <value>Шоу "АйЦіБарада"</value>
     </data>
     <data name="Support" xml:space="preserve">
@@ -23,13 +23,22 @@
     <data name="Contacts" xml:space="preserve">
         <value>На сувязі</value>
     </data>
-    <data name="CiomnyLosShow" xml:space="preserve">
+    <data name="Menu_CiomnyLosShow" xml:space="preserve">
         <value>Падкаст "Цёмны Лёс"</value>
     </data>
-    <data name="VklWorld" xml:space="preserve">
+    <data name="Menu_VklWorld" xml:space="preserve">
         <value>ВКЛ.world</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>Мае праекты</value>
+    </data>
+    <data name="Menu_Aia" xml:space="preserve">
+        <value>Падкаст "AIA"</value>
+    </data>
+    <data name="Menu_BeardNews" xml:space="preserve">
+        <value>Солакаст "Навіны Барады"</value>
+    </data>
+    <data name="Menu_BelarusAi" xml:space="preserve">
+        <value>Суполка "Беларускі ШІ"</value>
     </data>
 </root>

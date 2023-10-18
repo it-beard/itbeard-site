@@ -3,7 +3,7 @@
 <root>
     <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
         <xsd:element name="root" msdata:IsDataSet="true">
-            
+
         </xsd:element>
     </xsd:schema>
     <resheader name="resmimetype">
@@ -21,7 +21,7 @@
     <data name="Index" xml:space="preserve">
         <value>Главная</value>
     </data>
-    <data name="ItbeardShow" xml:space="preserve">
+    <data name="Menu_ItbeardShow" xml:space="preserve">
         <value>Шоу "АйТиБорода"</value>
     </data>
     <data name="Support" xml:space="preserve">
@@ -30,13 +30,22 @@
     <data name="Contacts" xml:space="preserve">
         <value>На связи</value>
     </data>
-    <data name="CiomnyLosShow" xml:space="preserve">
-        <value>Поадкаст "Цёмны Лёс"</value>
+    <data name="Menu_CiomnyLosShow" xml:space="preserve">
+        <value>Подкаст "Цёмны Лёс"</value>
     </data>
-    <data name="VklWorld" xml:space="preserve">
+    <data name="Menu_VklWorld" xml:space="preserve">
         <value>ВКЛ.world</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>Мои проекты</value>
+    </data>
+    <data name="Menu_Aia" xml:space="preserve">
+        <value>Подкаст "AIA"</value>
+    </data>
+    <data name="Menu_BeardNews" xml:space="preserve">
+        <value>Солокаст "Новости Бороды"</value>
+    </data>
+    <data name="Menu_BelarusAi" xml:space="preserve">
+        <value>Сообщество "Беларускі ШІ"</value>
     </data>
 </root>

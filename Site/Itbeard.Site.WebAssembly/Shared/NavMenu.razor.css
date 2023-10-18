@@ -160,7 +160,7 @@ nav#menu > ::deep a:last-child {
         position: relative !important;
         display: block !important;
         list-style-type: disc;
-        margin: 0 auto;
+        margin-left: 30px;
         padding: 0;
     }
 

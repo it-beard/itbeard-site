@@ -51,9 +51,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string ItbeardShow {
+        internal static string Menu_ItbeardShow {
             get {
-                return ResourceManager.GetString("ItbeardShow", resourceCulture);
+                return ResourceManager.GetString("Menu_ItbeardShow", resourceCulture);
             }
         }
         
@@ -69,21 +69,39 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string CiomnyLosShow {
+        internal static string Menu_CiomnyLosShow {
             get {
-                return ResourceManager.GetString("CiomnyLosShow", resourceCulture);
+                return ResourceManager.GetString("Menu_CiomnyLosShow", resourceCulture);
             }
         }
         
-        internal static string VklWorld {
+        internal static string Menu_VklWorld {
             get {
-                return ResourceManager.GetString("VklWorld", resourceCulture);
+                return ResourceManager.GetString("Menu_VklWorld", resourceCulture);
             }
         }
         
         internal static string Projects {
             get {
                 return ResourceManager.GetString("Projects", resourceCulture);
+            }
+        }
+        
+        internal static string Menu_Aia {
+            get {
+                return ResourceManager.GetString("Menu_Aia", resourceCulture);
+            }
+        }
+        
+        internal static string Menu_BeardNews {
+            get {
+                return ResourceManager.GetString("Menu_BeardNews", resourceCulture);
+            }
+        }
+        
+        internal static string Menu_BelarusAi {
+            get {
+                return ResourceManager.GetString("Menu_BelarusAi", resourceCulture);
             }
         }
     }

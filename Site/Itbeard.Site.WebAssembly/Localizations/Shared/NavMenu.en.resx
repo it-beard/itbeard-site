@@ -14,7 +14,7 @@
     <data name="Index" xml:space="preserve">
         <value>Home</value>
     </data>
-    <data name="ItbeardShow" xml:space="preserve">
+    <data name="Menu_ItbeardShow" xml:space="preserve">
         <value>"АйТиБорода" Show</value>
     </data>
     <data name="Support" xml:space="preserve">
@@ -23,13 +23,22 @@
     <data name="Contacts" xml:space="preserve">
         <value>Contacts</value>
     </data>
-    <data name="CiomnyLosShow" xml:space="preserve">
+    <data name="Menu_CiomnyLosShow" xml:space="preserve">
         <value>"Цёмны Лёс" Podcast</value>
     </data>
-    <data name="VklWorld" xml:space="preserve">
+    <data name="Menu_VklWorld" xml:space="preserve">
         <value>VKL.world</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>My Projects</value>
+    </data>
+    <data name="Menu_Aia" xml:space="preserve">
+        <value>"AIA" Podcast</value>
+    </data>
+    <data name="Menu_BeardNews" xml:space="preserve">
+        <value>"Beard News" Solocast</value>
+    </data>
+    <data name="Menu_BelarusAi" xml:space="preserve">
+        <value>"Belarus AI" Community</value>
     </data>
 </root>

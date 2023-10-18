@@ -13,19 +13,34 @@
         @Loc[NavLoc.Projects]
             <ul class="submenu" style="display: none;">
                 <li>
-                    <NavLink class="nav-link belarus" href="itbeard" @onclick='() => CloseMenu()'>
-                        @Loc[NavLoc.ItbeardShow]
+                    <NavLink class="nav-link belarus" href="/itbeard" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.Menu_ItbeardShow]
                     </NavLink>
                 </li>
                 <li>
                     <NavLink class="nav-link belarus" href="/ciomnylos" @onclick='() => CloseMenu()'>
-                        @Loc[NavLoc.CiomnyLosShow]
+                        @Loc[NavLoc.Menu_CiomnyLosShow]
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink class="nav-link belarus" href="vkl" @onclick='() => CloseMenu()'>
-                        @Loc[NavLoc.VklWorld]
+                    <a class="nav-link belarus" href="https://www.patreon.com/collection/30373" target="_blank" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.Menu_BeardNews]
+                    </a>
+                </li>
+                <li>
+                    <NavLink class="nav-link belarus" href="/aia" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.Menu_Aia]
                     </NavLink>
+                </li>
+                <li>
+                    <NavLink class="nav-link belarus" href="/vkl" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.Menu_VklWorld]
+                    </NavLink>
+                </li>
+                <li>
+                    <a class="nav-link belarus" href="https://t.me/belarusai" target="_blank" @onclick='() => CloseMenu()'>
+                        @Loc[NavLoc.Menu_BelarusAi]
+                    </a>
                 </li>
             </ul>
     </a>

@@ -50,5 +50,41 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages.Projects {
                 return ResourceManager.GetString("PageTitle", resourceCulture);
             }
         }
+        
+        internal static string About_Web {
+            get {
+                return ResourceManager.GetString("About_Web", resourceCulture);
+            }
+        }
+        
+        internal static string About_Title {
+            get {
+                return ResourceManager.GetString("About_Title", resourceCulture);
+            }
+        }
+        
+        internal static string About_Paragraph_1_1 {
+            get {
+                return ResourceManager.GetString("About_Paragraph_1_1", resourceCulture);
+            }
+        }
+        
+        internal static string About_Paragraph_1_2 {
+            get {
+                return ResourceManager.GetString("About_Paragraph_1_2", resourceCulture);
+            }
+        }
+        
+        internal static string About_Paragraph_Links_Rss {
+            get {
+                return ResourceManager.GetString("About_Paragraph_Links_Rss", resourceCulture);
+            }
+        }
+        
+        internal static string About_Paragraph_Links_Telegram {
+            get {
+                return ResourceManager.GetString("About_Paragraph_Links_Telegram", resourceCulture);
+            }
+        }
     }
 }

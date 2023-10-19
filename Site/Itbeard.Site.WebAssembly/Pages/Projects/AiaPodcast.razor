@@ -11,17 +11,16 @@
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content right">
             <h1>
-                AIA Podcast
+                @Loc[AiaPodcastRes.About_Title]
             </h1>
             <p>
-                <b class="colored-text">Artificial Intelligence Anywhere</b> - это подкаст, в котором Алексей Картынник (я)
-                и Витя Шеленченко (он) обсуждаем самые свежие новости
-                из мира нейросетей и <b class="colored-text">искусственного интеллекта</b>. <br/><br/>
-                Подкаст выходит раз в две недели при поддержке
-                <a class="blue-text" href="https://aw.club" target="_blank">Anywhere Club</a>.
+                @((MarkupString)Loc[AiaPodcastRes.About_Paragraph_1_1].Value)
+                <a class="blue-text" href="https://aw.club" target="_blank">Anywhere Club</a>@Loc[AiaPodcastRes.About_Paragraph_1_2]
             </p>
             <p>
-                Мы в интернете:
+                <b class="colored-text">
+                    @Loc[AiaPodcastRes.About_Web]
+                </b>
             </p>
             <ul>
                 <li class="links youtube">
@@ -41,11 +40,15 @@
                     <a href="https://bit.ly/aia-spotify" target="_blank">bit.ly/aia-spotify</a>
                 </li>
                 <li class="links site">
-                    <span>RSS-фид</span> /
+                    <span>
+                        @Loc[AiaPodcastRes.About_Paragraph_Links_Rss]
+                    </span> /
                     <a href="https://bit.ly/aia-podcast" target="_blank">bit.ly/aia-podcast</a>
                 </li>
                 <li class="links telegram">
-                    <span>Telegram-чат</span> /
+                    <span>
+                        @Loc[AiaPodcastRes.About_Paragraph_Links_Telegram]
+                    </span> /
                     <a href="https://t.me/aiapodcast" target="_blank">t.me/aiapodcast</a>
                 </li>
             </ul>

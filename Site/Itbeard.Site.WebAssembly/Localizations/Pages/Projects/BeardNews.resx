@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Новости Бороды</value>
+    </data>
+    <data name="About_Title" xml:space="preserve">
+        <value>Новости Бороды</value>
+    </data>
+    <data name="About_Web" xml:space="preserve">
+        <value>Где смотреть и слушать</value>
+    </data>
+    <data name="About_How" xml:space="preserve">
+        <value>Как смотреть и слушать</value>
+    </data>
+    <data name="About_Paragraph_1" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;Новости Бороды&lt;/b&gt; - это мой личный подкаст, который записывается онлайн в начале каждого месяца.</value>
+    </data>
+    <data name="About_Paragraph_2" xml:space="preserve">
+        <value>В нём я рассказываю про IT-новости и сплетни, которые меня зацепили, про события из личной жизни, про оборудование и ништяки, которые я покупаю, про кино, сериалы и игры, про вышедший контент и ближайшие планы.</value>
+    </data>
+    <data name="About_Paragraph_3_2" xml:space="preserve">
+        <value>. Там выходят как видео так и аудио-выпуски подкаста, т.е. его можно будет слушать в твоём любимом плеере!</value>
+    </data>
+    <data name="About_Paragraph_3_1" xml:space="preserve">
+        <value>Первый способ - оформить подписку на</value>
+    </data>
+    <data name="About_Paragraph_4_1" xml:space="preserve">
+        <value>Второй способ - стать спонсором на</value>
+    </data>
+    <data name="About_Paragraph_4_2" xml:space="preserve">
+        <value>.</value>
+    </data>
+    <data name="About_Paragraph_5" xml:space="preserve">
+        <value>А ещё, став патроном либо спонсором ты получишь доступ и к другим бонусам: доступ в закрытый Discord-сервер, на котором проходит онлайн-запись подкаста, к дополнительным выпускам «АйТиБороды» и др.</value>
+    </data>
+    <data name="About_Links_PatreonAudio" xml:space="preserve">
+        <value>Patreon (аудио)</value>
+    </data>
+    <data name="About_Links_PatreonVideo" xml:space="preserve">
+        <value>Patreon (видео)</value>
+    </data>
+    <data name="About_Links_Discord" xml:space="preserve">
+        <value>Discord-сервер</value>
+    </data>
+    <data name="About_Links_YouTube_Link" xml:space="preserve">
+        <value>(тыкай сюда)</value>
+    </data>
+</root>

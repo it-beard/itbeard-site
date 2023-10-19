@@ -1,7 +1,76 @@
 @page "/beard-news"
 @page "/projects/beard-news"
-<h3>BeardNews</h3>
+@using BeardNewsRes = Localizations.Pages.Projects.BeardNews;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<BeardNewsRes> Loc
+@inject IStringLocalizer<SharedRes> SharedLoc
 
-@code {
+<Title>@Loc[BeardNewsRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
-}
+<main class="wide-container">
+    <section id="about" class="presentation presentation-first no-bg">
+        <section class="content right">
+            <h1>
+                @Loc[BeardNewsRes.About_Title]
+            </h1>
+
+            <p>
+                @((MarkupString)Loc[BeardNewsRes.About_Paragraph_1].Value)
+            </p>
+
+            <p>
+                @((MarkupString)Loc[BeardNewsRes.About_Paragraph_2].Value)
+            </p>
+
+            <p>
+                <b class="colored-text">
+                    @Loc[BeardNewsRes.About_How]
+                </b>
+            </p>
+            <p>
+                @((MarkupString)Loc[BeardNewsRes.About_Paragraph_3_1].Value)
+                <a href="https://www.patreon.com/itbeard" target="_blank"
+                   class="blue-text">Patreon</a>@((MarkupString)Loc[BeardNewsRes.About_Paragraph_3_2].Value)
+            </p>
+
+            <p>
+                @((MarkupString)Loc[BeardNewsRes.About_Paragraph_4_1].Value)
+                <a href="https://www.youtube.com/channel/UCeObZv89Stb2xLtjLJ0De3Q/join"
+                   class="blue-text" target="_blank">YouTube</a>@((MarkupString)Loc[BeardNewsRes.About_Paragraph_4_2].Value)
+            </p>
+
+            <p>
+                @((MarkupString)Loc[BeardNewsRes.About_Paragraph_5].Value)
+            </p>
+
+            <p>
+                <b class="colored-text">
+                    @Loc[BeardNewsRes.About_Web]
+                </b>
+            </p>
+            <ul>
+                <li class="links youtube">
+                    <span>YouTube</span> /
+                    <a href="https://www.youtube.com/playlist?list=PLdmSK1Qzu985Grgj4hsN0eIu-79Umx7nr"
+                       target="_blank">@Loc[BeardNewsRes.About_Links_YouTube_Link]</a>
+                </li>
+                <li class="links patreon">
+                    <span>@Loc[BeardNewsRes.About_Links_PatreonVideo]</span> /
+                    <a href="https://patreon.com/collection/30440" target="_blank">
+                        patreon.com/collection/30440
+                    </a>
+                </li>
+                <li class="links patreon">
+                    <span>@Loc[BeardNewsRes.About_Links_PatreonAudio]</span> /
+                    <a href="https://patreon.com/collection/30373" target="_blank">
+                        patreon.com/collection/30373
+                    </a>
+                </li>
+                <li class="links discord">
+                    <span>@Loc[BeardNewsRes.About_Links_Discord]</span> /
+                    <a href="https://s.itbeard.com/sponsors-discord" target="_blank">s.itbeard.com/sponsors-discord</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>

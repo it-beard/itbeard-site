@@ -14,4 +14,22 @@
     <data name="PageTitle" xml:space="preserve">
         <value>AIA Podcast</value>
     </data>
+    <data name="About_Title" xml:space="preserve">
+        <value>AIA Podcast</value>
+    </data>
+    <data name="About_Paragraph_1_2" xml:space="preserve">
+        <value>.</value>
+    </data>
+    <data name="About_Paragraph_Links_Telegram" xml:space="preserve">
+        <value>Telegram-чат</value>
+    </data>
+    <data name="About_Paragraph_Links_Rss" xml:space="preserve">
+        <value>RSS-фід</value>
+    </data>
+    <data name="About_Web" xml:space="preserve">
+        <value>Мы ў інтэрнэце</value>
+    </data>
+    <data name="About_Paragraph_1_1" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;Artificial Intelligence Anywhere&lt;/b&gt; - гэта падкаст, у якім Аляксей Картыннік (я) і Віця Шеленченко (ён) абмяркоўваем самыя свежыя навіны са свету нейрасетак і &lt;b class="colored-text"&gt;штучнага інтэлекту&lt;/b&gt;. &lt;br/&gt;&lt;br/&gt; Падкаст выходзіць раз на два тыдні (па пятніцах) пры падтрымцы</value>
+    </data>
 </root>

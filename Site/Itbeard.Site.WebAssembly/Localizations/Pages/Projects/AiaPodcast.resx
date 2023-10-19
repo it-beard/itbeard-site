@@ -21,4 +21,22 @@
     <data name="PageTitle" xml:space="preserve">
         <value>AIA Podcast</value>
     </data>
+    <data name="About_Web" xml:space="preserve">
+        <value>Мы в интернете</value>
+    </data>
+    <data name="About_Title" xml:space="preserve">
+        <value>AIA Podcast</value>
+    </data>
+    <data name="About_Paragraph_1_1" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;Artificial Intelligence Anywhere&lt;/b&gt; - это подкаст, в котором Алексей Картынник (я) и Витя Шеленченко (он) обсуждаем самые свежие новости из мира нейросетей и &lt;b class="colored-text"&gt;искусственного интеллекта&lt;/b&gt;. &lt;br/&gt;&lt;br/&gt;Подкаст выходит раз в две недел (по пятницам) и при поддержке</value>
+    </data>
+    <data name="About_Paragraph_1_2" xml:space="preserve">
+        <value>.</value>
+    </data>
+    <data name="About_Paragraph_Links_Rss" xml:space="preserve">
+        <value>RSS-фид</value>
+    </data>
+    <data name="About_Paragraph_Links_Telegram" xml:space="preserve">
+        <value>Telegram-чат</value>
+    </data>
 </root>

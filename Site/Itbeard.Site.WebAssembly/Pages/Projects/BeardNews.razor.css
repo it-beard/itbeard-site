@@ -1,0 +1,53 @@
+#about {
+    background: url("/images/beard-news-logo.jpg") 25% / auto auto no-repeat;
+}
+
+#about .links a {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+#about .links a:hover {
+    text-decoration: underline;
+}
+
+#about .links span {
+    font-weight: bold;
+}
+
+#about .links.youtube span{
+    color: red;
+}
+
+#about .links.discord span{
+    color: #6D8CF6;
+}
+
+#about .links.patreon span{
+    color: #FF424D;
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    #about .links{
+        margin-left: 30px;
+    }
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    font-size: 17px;
+    margin-top: -15px;
+}
+
+ul li {
+    margin: 20px 0;
+}

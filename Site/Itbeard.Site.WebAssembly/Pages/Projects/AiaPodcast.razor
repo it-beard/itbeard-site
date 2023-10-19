@@ -1,0 +1,54 @@
+@page "/aia"
+@page "/projects/aia"
+@using AiaPodcastRes = Localizations.Pages.Projects.AiaPodcast;
+@using SharedRes = Localizations.SharedLocalizations;
+@inject IStringLocalizer<AiaPodcastRes> Loc
+@inject IStringLocalizer<SharedRes> SharedLoc
+
+<Title>@Loc[AiaPodcastRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
+
+<main class="wide-container">
+    <section id="about" class="presentation presentation-first no-bg">
+        <section class="content right">
+            <h1>
+                AIA Podcast
+            </h1>
+            <p>
+                <b class="colored-text">Artificial Intelligence Anywhere</b> - это подкаст, в котором Алексей Картынник (я)
+                и Витя Шеленченко (он) обсуждаем самые свежие новости
+                из мира нейросетей и <b class="colored-text">искусственного интеллекта</b>. <br/><br/>
+                Подкаст выходит раз в две недели при поддержке
+                <a class="blue-text" href="https://aw.club" target="_blank">Anywhere Club</a>.
+            </p>
+            <p>
+                Мы в интернете:
+            </p>
+            <ul>
+                <li class="links youtube">
+                    <span>YouTube</span> /
+                    <a href="https://bit.ly/aia-podcast" target="_blank">bit.ly/aia-podcast</a>
+                </li>
+                <li class="links orange">
+                    <span>Google Podcasts</span> /
+                    <a href="https://bit.ly/aia-google" target="_blank">bit.ly/aia-google</a>
+                </li>
+                <li class="links orange">
+                    <span>Apple Podcasts</span> /
+                    <a href="https://bit.ly/aia-apple" target="_blank">bit.ly/aia-apple</a>
+                </li>
+                <li class="links orange">
+                    <span>Spotify</span> /
+                    <a href="https://bit.ly/aia-spotify" target="_blank">bit.ly/aia-spotify</a>
+                </li>
+                <li class="links site">
+                    <span>RSS-фид</span> /
+                    <a href="https://bit.ly/aia-podcast" target="_blank">bit.ly/aia-podcast</a>
+                </li>
+                <li class="links telegram">
+                    <span>Telegram-чат</span> /
+                    <a href="https://t.me/aiapodcast" target="_blank">t.me/aiapodcast</a>
+                </li>
+            </ul>
+        </section>
+    </section>
+</main>

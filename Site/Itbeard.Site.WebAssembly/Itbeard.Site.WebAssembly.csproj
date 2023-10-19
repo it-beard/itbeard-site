@@ -73,6 +73,10 @@
         <Generator>ResXFileCodeGenerator</Generator>
         <LastGenOutput>Vkl.Designer.cs</LastGenOutput>
       </EmbeddedResource>
+      <EmbeddedResource Update="Localizations\Pages\Projects\AiaPodcast.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>AiaPodcast.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
     </ItemGroup>
 
     <ItemGroup>
@@ -125,6 +129,11 @@
         <DesignTime>True</DesignTime>
         <AutoGen>True</AutoGen>
         <DependentUpon>Vkl.resx</DependentUpon>
+      </Compile>
+      <Compile Update="Localizations\Pages\Projects\AiaPodcast.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>AiaPodcast.resx</DependentUpon>
       </Compile>
     </ItemGroup>
 

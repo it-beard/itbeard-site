@@ -15,13 +15,13 @@
         <value>Contacts</value>
     </data>
     <data name="Other_GitHub" xml:space="preserve">
-        <value>GitHub</value>
+        <value>My GitHub</value>
     </data>
     <data name="Other_LinkedIn" xml:space="preserve">
-        <value>LinkedIn</value>
+        <value>My LinkedIn</value>
     </data>
-    <data name="Other_BlogFediverse" xml:space="preserve">
-        <value>Blog (Fediverse)</value>
+    <data name="Other_YouTube" xml:space="preserve">
+        <value>YouTube (personal)</value>
     </data>
     <data name="Ccontacts" xml:space="preserve">
         <value>Reach me out</value>
@@ -51,9 +51,12 @@
         <value>Patreon</value>
     </data>
     <data name="Other_BlogTelegram" xml:space="preserve">
-        <value>Blog (Telegram)</value>
+        <value>Blog on Telegram</value>
     </data>
     <data name="Other_BlogWhatsapp" xml:space="preserve">
-        <value>Blog (WhatsApp)</value>
+        <value>Blog on WhatsApp</value>
+    </data>
+    <data name="Other_BlueSky" xml:space="preserve">
+        <value>I'm at BlueSky</value>
     </data>
 </root>

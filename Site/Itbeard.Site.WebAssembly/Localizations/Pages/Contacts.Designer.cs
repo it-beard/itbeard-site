@@ -81,9 +81,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Other_BlogFediverse {
+        internal static string Other_YouTube {
             get {
-                return ResourceManager.GetString("Other_BlogFediverse", resourceCulture);
+                return ResourceManager.GetString("Other_YouTube", resourceCulture);
             }
         }
         
@@ -132,6 +132,12 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
         internal static string Other_BlogWhatsapp {
             get {
                 return ResourceManager.GetString("Other_BlogWhatsapp", resourceCulture);
+            }
+        }
+        
+        internal static string Other_BlueSky {
+            get {
+                return ResourceManager.GetString("Other_BlueSky", resourceCulture);
             }
         }
     }

@@ -18,13 +18,13 @@
         <value>Hey!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>My name is  &lt;b class="colored-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in IT since 2011.</value>
+        <value>My name is  &lt;b class="colored-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in Tech since 2011.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
-        <value>I worked as a software engineer for the first 10 years (backend, C#, .NET, Azure), and since 2021 I've been developing IT communities. Some people call it working with developers.</value>
+        <value>I worked as a Software Engineer for the 10 years (backend, C#, .NET, Azure), and since 2021, I've been developing global tech community at &lt;b class="colored-text"&gt;aw.club&lt;/b&gt;. Some people call it «Developer Relations».</value>
     </data>
     <data name="About_Paragraph_3" xml:space="preserve">
-        <value>In parallel with my main job, I do a lot of IT, near-scientific and other technical content on YouTube under the pseudonym  &lt;b class="colored-text"&gt;Lex ITBeard &lt;/b&gt;.</value>
+        <value>In parallel with my main job, I do a lot of tech, near-scientific and other technical content on YouTube under the pseudonym  &lt;b class="colored-text"&gt;Lex ITBeard &lt;/b&gt;.</value>
     </data>
     <data name="About_Paragraph_4" xml:space="preserve">
         <value>On this web site you gonna to learn a little bit more about all my projects 😊</value>
@@ -48,7 +48,7 @@
         <value>&lt;b class="colored-text"&gt;«Belarus AI»&lt;/b&gt; is a Belarusian-language community of professionals and amateurs of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, DS, ML, DL, GPT, NLP, OCR, CV, etc.</value>
     </data>
     <data name="Projects_Itbeard_Description" xml:space="preserve">
-        <value>The show &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") tells about the life of IT specialists from inside and in its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science. &lt;br&gt;&lt;br&gt; Without any censorship, labels or extra pathos.</value>
+        <value>The show &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") tells about the life of tech specialists from inside and in its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science. &lt;br&gt;&lt;br&gt; Without any censorship, labels or extra pathos.</value>
     </data>
     <data name="Projects_BeardNews_Description" xml:space="preserve">
         <value>&lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt; is a solocast where I talk about IT gossip, events in my life, new and old content, and upcoming plans.&lt;br&gt;&lt;br&gt;The podcast is released once a month and is available to my patrons and sponsors.</value>
@@ -66,6 +66,6 @@
         <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; ("ciomny los") is a talk podcast in Belarusian, in which Belarusians talk about their occupations and reflect on Belarusianness.  &lt;br&gt;&lt;br&gt;  Each episode is a new profession or occupation: from scientists and programmers to musicians, comedians and even Tolkien fans!</value>
     </data>
     <data name="Projects_Aia_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«AIA»&lt;/b&gt; is a podcast where we discuss with Vitya Shelenchenko the latest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released with the support of Anywhere Club every two weeks.</value>
+        <value>&lt;b class="colored-text"&gt;«AIA»&lt;/b&gt; is a podcast where we discuss with Vitya Shelenchenko the latest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released with the support of &lt;b class="colored-text"&gt;Anywhere Club&lt;/b&gt; every two weeks.</value>
     </data>
 </root>

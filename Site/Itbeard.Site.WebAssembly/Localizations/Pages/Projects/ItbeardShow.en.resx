@@ -15,7 +15,7 @@
         <value>About show</value>
     </data>
     <data name="AboutShow_Paragraph_2" xml:space="preserve">
-        <value>The &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") show is about the life of IT people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science.</value>
+        <value>The &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") show is about the life of tech people from the inside and with its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science.</value>
     </data>
     <data name="AboutShow_Paragraph_3" xml:space="preserve">
         <value>Without any censorship, labels or extra pathos.</value>
@@ -51,7 +51,7 @@
         <value>Commercial cooperation</value>
     </data>
     <data name="NonCommercial_Paragraph1_Part1" xml:space="preserve">
-        <value>If you are an IT specialist with five or more years of experience in the industry, or experienced scientist, or you have an interesting topic for release that has not yet been covered on the channel, send me an email </value>
+        <value>If you are an tech specialist with five or more years of experience in the industry, or experienced scientist, or you have an interesting topic for release that has not yet been covered on the channel, send me an email </value>
     </data>
     <data name="NonCommercial_Paragraph1_Part3" xml:space="preserve">
         <value>, we'll discuss all the details 😉</value>
@@ -86,16 +86,16 @@
         <value>You can also contact me directly there, discuss episodes and projects, suggest a guest, and participate in the online recording of &lt;b class="colored-text"&gt;«Beard News» podcast&lt;/b&gt;.</value>
     </data>
     <data name="Bonus_News_Paragraph_1" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;"Beard News"&lt;/b&gt; is a monthly podcast in which I talk about IT gossip, events in my life, new and old content, and upcoming plans.</value>
+        <value>&lt;b class="colored-text"&gt;"Beard News"&lt;/b&gt; is a monthly podcast in which I talk about tech gossip, events in my life, new and old content, and upcoming plans.</value>
     </data>
     <data name="Bonus_News_Paragraph_2" xml:space="preserve">
         <value>The podcast is available to my sponsors on YouTube and patrons on Patreon.</value>
     </data>
     <data name="Interview_Paragraph_1" xml:space="preserve">
-        <value>The main format of the show is interviews with active people from the IT &amp; Science. They are the real &lt;b class="colored-text"&gt;Rock Stars&lt;/b&gt; who move industry forward! </value>
+        <value>The main format of the show is interviews with active people from the Tech &amp; Science. They are the real &lt;b class="colored-text"&gt;Rock Stars&lt;/b&gt; who move industry forward! </value>
     </data>
     <data name="PageTitle" xml:space="preserve">
-        <value>The "АйТиБорода" show - life and work in IT</value>
+        <value>The "АйТиБорода" show - life and work in Tech</value>
     </data>
     <data name="Interview_Paragraph_2" xml:space="preserve">
         <value>In the show you will meet developers, testers, designers, managers and even scientists! Enjoy watching 😊</value>

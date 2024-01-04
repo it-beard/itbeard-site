@@ -67,8 +67,12 @@
     color: #46D97D;
 }
 
-#socials .links.blog-fediverse span{
+#socials .links.blog-youtube span{
     color: #d70f0f;
+}
+
+#socials .links.blog-blyesky span{
+    color: #0085FF;
 }
 
 #socials .links.merch span{

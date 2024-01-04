@@ -31,16 +31,16 @@
         <value>Я в интернете</value>
     </data>
     <data name="Other_GitHub" xml:space="preserve">
-        <value>GitHub</value>
+        <value>Мой GitHub</value>
     </data>
     <data name="Ccontacts_Mastodon" xml:space="preserve">
         <value>Mastodon</value>
     </data>
-    <data name="Other_BlogFediverse" xml:space="preserve">
-        <value>Блог (Fediverse)</value>
+    <data name="Other_YouTube" xml:space="preserve">
+        <value>YouTube (персональный)</value>
     </data>
     <data name="Other_LinkedIn" xml:space="preserve">
-        <value>LinkedIn</value>
+        <value>Мой LinkedIn</value>
     </data>
     <data name="Ccontacts_Twitter" xml:space="preserve">
         <value>Twitter</value>
@@ -58,9 +58,12 @@
         <value>Мерч</value>
     </data>
     <data name="Other_BlogTelegram" xml:space="preserve">
-        <value>Блог (Telegram)</value>
+        <value>Блог в Telegram</value>
     </data>
     <data name="Other_BlogWhatsapp" xml:space="preserve">
-        <value>Блог (WhatsApp)</value>
+        <value>Блог в WhatsApp</value>
+    </data>
+    <data name="Other_BlueSky" xml:space="preserve">
+        <value>Я в BlueSky</value>
     </data>
 </root>

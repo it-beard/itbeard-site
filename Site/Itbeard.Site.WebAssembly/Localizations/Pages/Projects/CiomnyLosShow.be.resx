@@ -21,10 +21,10 @@
         <value>тут</value>
     </data>
     <data name="About_Paragrarh_1" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; — гэта гутарковы падкаст па-беларуску, у якім беларусы распавядаюць пра свае заняткі ды разважаюць наконт беларускасці. Кожны эпізод — новая прафесія ці занятак: ад навукоўцаў і праграмістаў да музыкаў, комікаў і аматараў Толкіна!</value>
+        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; — гэта навукова-гікаўскі падкаст на беларускай мове: ад навукоўцаў і да аматараў Толкіна і Warhammer!</value>
     </data>
     <data name="About_Paragrarh_21" xml:space="preserve">
-        <value>Падкаст выходзіць раз на два тыдні ў YouTube і на ўсіх падкаст-пляцоўках. Заяўку на ўдзел у падкасце можна пакінуць</value>
+        <value>Падкаст выходзіць некалькі разоў на месяц ў YouTube і на ўсіх падкаст-пляцоўках. Заяўку на ўдзел у падкасце можна пакінуць</value>
     </data>
     <data name="WhereToSee" xml:space="preserve">
         <value>Дзе глядзець і слухаць?</value>
@@ -51,7 +51,7 @@
         <value>Спампаваць .MP3 ці RSS Feed</value>
     </data>
     <data name="WhereToSee_Paragraph_1" xml:space="preserve">
-        <value>Падкаст &lt;b&gt;«Цёмны Лёс»&lt;/b&gt; ёсць амаль на ўсіх падкаст-пляцоўках і на YouTube. Акрамя таго, у падкаста ёсць свой Telegram і TikTok. Усе спасылкі пералічаныя ніжэй:</value>
+        <value>Падкаст &lt;b&gt;«Цёмны Лёс»&lt;/b&gt; ёсць амаль на ўсіх падкаст-пляцоўках і на YouTube. Акрамя таго, у падкаста ёсць свой Telegram і Twitter. Усе спасылкі пералічаныя ніжэй:</value>
     </data>
     <data name="Merch" xml:space="preserve">
         <value>Фірмовы мерч</value>

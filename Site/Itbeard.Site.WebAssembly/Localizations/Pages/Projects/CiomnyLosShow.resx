@@ -25,10 +25,10 @@
         <value>Про подкаст</value>
     </data>
     <data name="About_Paragrarh_1" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; — это разговорный подкаст на беларуском языке, в котором беларусы рассказывают о своих занятиях и размышляют о беларускости. Каждая серия — это новая профессия или занятие: от ученых и программистов до музыкантов, комиков и любителей Толкина!</value>
+        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; — это научно-гиковский подкаст на беларуском языке: от ученых и до любителей Толкина и Warhammer!</value>
     </data>
     <data name="About_Paragrarh_21" xml:space="preserve">
-        <value>Подкаст выходит раз в две недели на YouTube и всех платформах для подкастов. Ты можешь оставить заявку на участие в подкасте</value>
+        <value>Подкаст выходит несколько раз в месяц на YouTube и всех платформах для подкастов. Ты можешь оставить заявку на участие в подкасте</value>
     </data>
     <data name="About_Paragrarh_22" xml:space="preserve">
         <value>тут</value>
@@ -37,7 +37,7 @@
         <value>Где слушать и смотреть?</value>
     </data>
     <data name="WhereToSee_Paragraph_1" xml:space="preserve">
-        <value>Подкаст &lt;b&gt;«Цёмны Лёс»&lt;/b&gt; доступен практически на всех подкаст-платформах и на YouTube. Кроме того, у подкаста есть собственные Telegram и TikTok. Все ссылки перечислены ниже:</value>
+        <value>Подкаст &lt;b&gt;«Цёмны Лёс»&lt;/b&gt; доступен практически на всех подкаст-платформах и на YouTube. Кроме того, у подкаста есть собственные Telegram и Twitter. Все ссылки перечислены ниже:</value>
     </data>
     <data name="WhereToSee_Paragraph_2" xml:space="preserve">
         <value>Смотреть в</value>

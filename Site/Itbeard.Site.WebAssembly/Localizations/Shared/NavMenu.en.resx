@@ -27,7 +27,7 @@
         <value>"Цёмны Лёс" Podcast</value>
     </data>
     <data name="Menu_VklWorld" xml:space="preserve">
-        <value>"VKL.world" Community</value>
+        <value>Mastodon server "VKL"</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>My Projects</value>

@@ -1,0 +1,46 @@
+﻿@page "/projects/"
+@using SharedRes = Localizations.SharedLocalizations;
+@using NavLoc = Localizations.Shared.NavMenu;
+@inject IStringLocalizer<SharedRes> SharedLoc
+@inject IStringLocalizer<Localizations.Shared.NavMenu> Loc
+
+<Title> @Loc[NavLoc.Projects] / @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<main class="wide-container">
+    <section id="about" class="presentation presentation-first no-bg">
+        <h2>
+            @Loc[NavLoc.Projects]
+        </h2>
+        <ul class="submenu">
+            <li>
+                <NavLink class="nav-link belarus" href="/projects/itbeard">
+                    @Loc[NavLoc.Menu_ItbeardShow]
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link belarus" href="/projects//ciomnylos">
+                    @Loc[NavLoc.Menu_CiomnyLosShow]
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link belarus" href="/projects/aia">
+                    @Loc[NavLoc.Menu_Aia]
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link belarus" href="/projects/beard-news">
+                    @Loc[NavLoc.Menu_BeardNews]
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link belarus" href="/projects/vkl">
+                    @Loc[NavLoc.Menu_VklWorld]
+                </NavLink>
+            </li>
+            <li>
+                <a class="nav-link belarus" href="https://t.me/belarusai" target="_blank">
+                    @Loc[NavLoc.Menu_BelarusAi]
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>

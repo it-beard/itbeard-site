@@ -158,5 +158,17 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
                 return ResourceManager.GetString("Projects_BelarusAi_Description", resourceCulture);
             }
         }
+        
+        internal static string Projects_EvoCode {
+            get {
+                return ResourceManager.GetString("Projects_EvoCode", resourceCulture);
+            }
+        }
+        
+        internal static string Projects_EvoCode_Description {
+            get {
+                return ResourceManager.GetString("Projects_EvoCode_Description", resourceCulture);
+            }
+        }
     }
 }

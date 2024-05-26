@@ -4,7 +4,7 @@
 @inject IStringLocalizer<SharedRes> SharedLoc
 @inject IStringLocalizer<Localizations.Shared.NavMenu> Loc
 
-<Title> @Loc[NavLoc.Projects] / @SharedLoc[SharedRes.PageTitleAddition]</Title>
+<Title> @Loc[NavLoc.Projects] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 <main class="wide-container">
     <section id="about" class="presentation presentation-first no-bg">
         <h2>
@@ -17,13 +17,18 @@
                 </NavLink>
             </li>
             <li>
-                <NavLink class="nav-link belarus" href="/projects//ciomnylos">
-                    @Loc[NavLoc.Menu_CiomnyLosShow]
+                <NavLink class="nav-link belarus" href="/evocode">
+                    @Loc[NavLoc.Menu_VklWorld]
                 </NavLink>
             </li>
             <li>
                 <NavLink class="nav-link belarus" href="/projects/aia">
                     @Loc[NavLoc.Menu_Aia]
+                </NavLink>
+            </li>
+            <li>
+                <NavLink class="nav-link belarus" href="/projects/ciomnylos">
+                    @Loc[NavLoc.Menu_CiomnyLosShow]
                 </NavLink>
             </li>
             <li>

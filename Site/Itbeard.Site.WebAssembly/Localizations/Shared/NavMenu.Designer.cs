@@ -104,5 +104,11 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
                 return ResourceManager.GetString("Menu_BelarusAi", resourceCulture);
             }
         }
+        
+        internal static string Menu_EvoCode {
+            get {
+                return ResourceManager.GetString("Menu_EvoCode", resourceCulture);
+            }
+        }
     }
 }

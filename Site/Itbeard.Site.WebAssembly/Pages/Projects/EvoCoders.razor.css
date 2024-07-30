@@ -1,0 +1,169 @@
+#about {
+    background: url("/images/evocode.jpg") 75% calc(50% - 0px) / auto auto no-repeat;
+}
+
+#benefits {
+    background: url("/images/evo-content.png") 20% calc(50% - 0px) / auto auto no-repeat, #00134d82;
+}
+
+#howitworks {
+    background: url("/images/club-chats.jpg") 75% calc(50% - 0px) / 340px auto no-repeat;
+}
+
+#hottoget {
+    background: url("/images/evo-pay.png") 25% calc(50% - 0px) / auto auto no-repeat, #00134d82;
+}
+
+h1 {
+    margin-top: 30px
+}
+
+.logo-club,
+.benefits-club,
+.howitworks-club {
+    display: none;
+}
+
+#hottoget .links a {
+    font-style: italic;
+    text-decoration: none;
+    color: white;
+}
+
+#hottoget .links a:hover {
+    text-decoration: underline;
+}
+
+#hottoget .links span {
+    font-weight: bold;
+}
+
+#about .links.youtube span{
+    color: red;
+}
+
+#about .links.telegram span{
+    color: #2A9DD6;
+}
+
+#about .links.site span{
+    color: #FF424D;
+}
+
+.links.orange span{
+    color: #ff8714;
+}
+
+.links.yellow span{
+    color: yellow;
+}
+
+#about ul {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#about .club-chats{
+    margin-left: 20px;
+}
+
+#about .club-chats img{
+    width: 300px;
+}
+
+section.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+#about ul,
+#benefits ul {
+    font-size: 17px;
+    margin-top: -15px;
+}
+
+#about ul li,
+#benefits ul li {
+    margin: 20px 0;
+}
+
+#hottoget ul {
+    font-size: 19px;
+}
+
+#hottoget ul li {
+    margin: 20px 0;
+}
+
+#howitworks ul {
+    font-size: 17px;
+    margin-top: 0;
+}
+
+#howitworks ul li {
+    margin-bottom: 10px;
+}
+
+#hottoget .h2-class {
+    font-size: 20px;
+}
+
+@media screen and (min-width: 2200px) {
+    #about.presentation > .content.right{
+        margin-left: 35%;
+    }
+    #about.presentation > .content {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1662px) {
+    #about.presentation > .content.right{
+        margin-left: 45%;
+    }
+    #about.presentation > .content {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #about .links,
+    #benefits .links,
+    #howitworks .links,
+    #hottoget .links {
+        margin-left: 30px;
+    }
+
+    .logo-club {
+        display: block;
+        background: url("/images/evocode.png") 50% / 200px 200px no-repeat;
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    .benefits-club {
+        display: block;
+        background: url("/images/evo-content.png") 50% / 300px auto no-repeat;
+        margin: 0 auto;
+        height: 200px;
+    }
+
+    .howitworks-club {
+        display: block;
+        background: url("/images/club-chats.jpg") 50% / 300px auto no-repeat;
+        margin: 0 auto;
+        height: 470px;
+    }
+
+    #about,
+    #benefits,
+    #howitworks,
+    #hottoget {
+        background-image: none;
+    }
+}

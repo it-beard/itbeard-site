@@ -1,0 +1,173 @@
+ <root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Code Evolution 🧬</value>
+    </data>
+    <data name="Title" xml:space="preserve">
+        <value>Code Evolution 🧬</value>
+    </data>
+    <data name="ClubName" xml:space="preserve">
+        <value>Code Evolution</value>
+    </data>
+    <data name="ClubDescription" xml:space="preserve">
+        <value>is a private club for developers who want to enhance their knowledge in AI and related topics, as well as increase productivity through the use of AI tools.</value>
+    </data>
+    <data name="ClubTheses" xml:space="preserve">
+        <value>The club is built around several theses:</value>
+    </data>
+    <data name="Thesis1" xml:space="preserve">
+        <value>AI &lt;b&gt;will not replace developers&lt;/b&gt;</value>
+    </data>
+    <data name="Thesis2" xml:space="preserve">
+        <value>Developers using AI &lt;b&gt;will replace&lt;/b&gt; developers ignoring AI</value>
+    </data>
+    <data name="Thesis3" xml:space="preserve">
+        <value>&lt;b&gt;AI improves productivity&lt;/b&gt;</value>
+    </data>
+    <data name="Thesis4" xml:space="preserve">
+        <value>Understanding AI-based technologies is becoming a &lt;b&gt;necessary minimum&lt;/b&gt; in development</value>
+    </data>
+    <data name="ClubGoalLabel" xml:space="preserve">
+        <value>Club goal</value>
+    </data>
+    <data name="ClubGoal" xml:space="preserve">
+        <value>— to increase the productivity and demand for club members through the study of AI tools and their application in work.</value>
+    </data>
+    <data name="ClubMissionLabel" xml:space="preserve">
+        <value>Club mission</value>
+    </data>
+    <data name="ClubMission" xml:space="preserve">
+        <value>— creating a community of developers who are well-versed in the rapidly developing world of neural networks and AI.</value>
+    </data>
+    <data name="BenefitsTitle" xml:space="preserve">
+        <value>What does the club offer?</value>
+    </data>
+    <data name="BenefitsDescription" xml:space="preserve">
+        <value>By joining &lt;b class="colored-text"&gt;Code Evolution&lt;/b&gt;, you'll be able to &lt;b&gt;gain knowledge&lt;/b&gt; about using AI tools in programming, learn &lt;b&gt;current news&lt;/b&gt; from the AI and development sphere, get access to &lt;b&gt;exclusive content&lt;/b&gt; and a &lt;b&gt;community&lt;/b&gt; of like-minded individuals, all in one place without getting distracted.</value>
+    </data>
+    <data name="BenefitsListLabel" xml:space="preserve">
+        <value>More specifically, you'll get:</value>
+    </data>
+    <data name="Benefit1" xml:space="preserve">
+        <value>Access to a community of &lt;b class="colored-text"&gt;150+ engineers&lt;/b&gt; passionate about AI. New contacts and opportunities for development and collaboration.</value>
+    </data>
+    <data name="Benefit2" xml:space="preserve">
+        <value>Exclusive &lt;span&gt;club content&lt;/span&gt;, which includes &lt;b class="colored-text"&gt;lectures, &lt;a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Workshop on working with LangChain, LangSmith and LangGraph"&gt;workshops&lt;/a&gt;, &lt;a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Interview with Valery Selitsky - about AI and graphics"&gt;interviews&lt;/a&gt;, reports, reviews and &lt;a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Part One - From GPT-4 to AGI / Club Call"&gt;calls&lt;/a&gt;&lt;/b&gt; &lt;i&gt;(total of 60+ hours of video material)&lt;/i&gt;.</value>
+    </data>
+    <data name="Benefit3" xml:space="preserve">
+        <value>Links to &lt;b class="colored-text"&gt;130+ tools&lt;/b&gt; for programming with AI and &lt;b class="colored-text"&gt;40+ news resources&lt;/b&gt; + recommendations for their use.</value>
+    </data>
+    <data name="Benefit4" xml:space="preserve">
+        <value>&lt;a href="https://youtu.be/hKNIggJ2evE" class="blue-text" target="_blank"&gt;&lt;span&gt;Weekly news digests&lt;/span&gt;&lt;/a&gt; with the most current news from the world of AI and development &lt;i&gt;(audio and text formats)&lt;/i&gt;.</value>
+    </data>
+    <data name="Benefit5" xml:space="preserve">
+        <value>The opportunity to &lt;b class="colored-text" b-txk5lfrnx8=""&gt;get answers&lt;/b&gt; to your questions from &lt;b class="colored-text"&gt;experts&lt;/b&gt;, as well as &lt;a href="https://github.com/it-beard/evocoders/discussions" class="blue-text" target="_blank"&gt;share your knowledge&lt;/a&gt; and experience with like-minded individuals.</value>
+    </data>
+    <data name="HowItWorksTitle" xml:space="preserve">
+        <value>How the club works</value>
+    </data>
+    <data name="HowItWorksDescription1" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;Code Evolution&lt;/b&gt; is a private group on &lt;b&gt;Telegram&lt;/b&gt;, which consists of &lt;b&gt;thematic chats&lt;/b&gt;.</value>
+    </data>
+    <data name="HowItWorksDescription2" xml:space="preserve">
+        <value>All club content and activities are concentrated in these chats, and sometimes even go beyond the online group&lt;i&gt;: public content, offline meetups, etc.&lt;/i&gt;</value>
+    </data>
+    <data name="HowItWorksDescription3" xml:space="preserve">
+        <value>By subscribing to &lt;b class="colored-text"&gt;Code Evolution&lt;/b&gt;, you get access to the group and all the content contained in it, as well as direct communication with club members.</value>
+    </data>
+    <data name="OpenResourcesLabel" xml:space="preserve">
+        <value>In addition, we have several &lt;b class="colored-text"&gt;open resources&lt;/b&gt; that you can check out right now:</value>
+    </data>
+    <data name="YouTubeChannel" xml:space="preserve">
+        <value>YouTube channel</value>
+    </data>
+    <data name="YouTubeChannelDescription" xml:space="preserve">
+        <value>content examples, shorts.</value>
+    </data>
+    <data name="GitHubRepositoryLabel" xml:space="preserve">
+        <value>Open</value>
+    </data>
+    <data name="GitHubRepository" xml:space="preserve">
+        <value>GitHub repository</value>
+    </data>
+    <data name="GitHubRepositoryDescription" xml:space="preserve">
+        <value>with use cases from the club.</value>
+    </data>
+    <data name="HowToGetInTitle" xml:space="preserve">
+        <value>How to join the club?</value>
+    </data>
+    <data name="SubscriptionLabel" xml:space="preserve">
+        <value>Through subscription</value>
+    </data>
+    <data name="SubscriptionDescription" xml:space="preserve">
+        <value>You can get access to the club through &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;monthly&lt;/a&gt; and &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;annual&lt;/a&gt; subscriptions.</value>
+    </data>
+    <data name="BuyMonthlySubscription" xml:space="preserve">
+        <value>Buy monthly subscription</value>
+    </data>
+    <data name="BuyAnnualSubscription" xml:space="preserve">
+        <value>Buy annual subscription</value>
+    </data>
+    <data name="PaymentOptions" xml:space="preserve">
+        <value>You can pay for club membership using any &lt;b&gt;bank card&lt;/b&gt;, or with &lt;b&gt;crypto&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
+    </data>
+    <data name="PaymentService" xml:space="preserve">
+        <value>The &lt;a href="https://tribute.tg/" target="_blank"&gt;&lt;b&gt;Tribute&lt;/b&gt;&lt;/a&gt; service and their official &lt;i&gt;Telegram bot&lt;/i&gt; are used for payment processing.</value>
+    </data>
+    <data name="CommunityActivitiesLabel" xml:space="preserve">
+        <value>Through community activities</value>
+    </data>
+    <data name="CommunityActivitiesDescription" xml:space="preserve">
+        <value>Moreover, if you actively promote AI tools, neural networks, ML, DS, LLM to a wide audience, are a community builder on these topics, an AI startup founder, or an owner of a popular GitHub repository, then welcome to the club without a subscription! Write to me on Telegram &lt;a href="http://t.me/iamitbeard" class="blue-text" target="_blank"&gt;@iamitbeard&lt;/a&gt;</value>
+    </data>
+    <data name="ContentExamplesTitle" xml:space="preserve">
+        <value>Examples of club content</value>
+    </data>
+    <data name="WorkshopTitle" xml:space="preserve">
+        <value>Workshop on working with LangChain, LangSmith and LangGraph</value>
+    </data>
+    <data name="InterviewTitle" xml:space="preserve">
+        <value>Interview with Valery Selitsky - about AI and graphics</value>
+    </data>
+    <data name="SituationalAwarenessTitle" xml:space="preserve">
+        <value>SITUATIONAL AWARENESS / Part One - From GPT-4 to AGI / Club Call</value>
+    </data>
+    <data name="DigestExampleTitle" xml:space="preserve">
+        <value>Example of club AI digest</value>
+    </data>
+    <data name="ForCompaniesTitle" xml:space="preserve">
+        <value>For companies</value>
+    </data>
+    <data name="ForCompaniesDescription" xml:space="preserve">
+        <value>offers a unique opportunity for companies that want to enhance their developers' competencies in working with AI.</value>
+    </data>
+    <data name="ForCompaniesBenefitsLabel" xml:space="preserve">
+        <value>By purchasing a club subscription, your developers receive:</value>
+    </data>
+    <data name="ForCompaniesBenefit1" xml:space="preserve">
+        <value>Access to &lt;b&gt;current knowledge and tools&lt;/b&gt; that increase development productivity.</value>
+    </data>
+    <data name="ForCompaniesBenefit2" xml:space="preserve">
+        <value>The ability to stay informed about the &lt;b&gt;latest trends&lt;/b&gt; in AI and development.</value>
+    </data>
+    <data name="ForCompaniesBenefit3" xml:space="preserve">
+        <value>&lt;b&gt;Competitive advantage&lt;/b&gt; in the IT services market, which will allow you to attract new clients.</value>
+    </data>
+    <data name="ForCompaniesBenefit4" xml:space="preserve">
+        <value>&lt;b&gt;Increased loyalty&lt;/b&gt; to your company, which will help retain qualified employees and attract new ones.</value>
+    </data>
+    <data name="ForCompaniesContactLabel" xml:space="preserve">
+        <value>If you want to learn more about corporate subscriptions or discuss individual terms, please contact me:</value>
+    </data>
+</root>

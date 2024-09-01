@@ -2,48 +2,49 @@
 @page "/evocoder"
 @page "/evocode"
 @page "/projects/evocoders"
+@using EvoCodersRes = Localizations.Pages.Projects.EvoCoders;
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
+@inject IStringLocalizer<EvoCodersRes> Loc
 
-<Title>Эволюция Кода 🧬</Title>
+<Title>@Loc[EvoCodersRes.PageTitle]</Title>
 
 <main class="wide-container">
     <section id="about" class="presentation presentation-first no-bg">
         <section class="content left">
             <h1>
-                Эволюция Кода 🧬
+                @Loc[EvoCodersRes.Title]
             </h1>
 
             <p>
-                <b class="colored-text">Эволюция Кода</b> — это закрытый клуб для разработчиков и разработчиц,
-                которые хотят повысить свои знания в AI и смежных темах, а также повысить продуктивность в работе через использования AI-инструментов.
+                <b class="colored-text">@Loc[EvoCodersRes.ClubName]</b> @((MarkupString)Loc[EvoCodersRes.ClubDescription].Value)
             </p>
 
             <p class="logo-club"></p>
 
             <p>
-                Клуб строится вокруг нескольких тезисов:
+                @Loc[EvoCodersRes.ClubTheses]
             </p>
             <ul>
                 <li class="links">
-                    AI <b>не заменит разработчиков</b>
+                    @((MarkupString)Loc[EvoCodersRes.Thesis1].Value)
                 </li>
                 <li class="links">
-                    Разработчики, использующие AI, <b>заменят</b> разработчиков, игнорирующих AI
+                    @((MarkupString)Loc[EvoCodersRes.Thesis2].Value)
                 </li>
                 <li class="links">
-                    <b>AI улучшает продуктивность</b>
+                    @((MarkupString)Loc[EvoCodersRes.Thesis3].Value)
                 </li>
                 <li class="links">
-                    Понимание устройства AI-based технологий становится <b>необходимым минимумом</b> в разработке
+                    @((MarkupString)Loc[EvoCodersRes.Thesis4].Value)
                 </li>
             </ul>
 
             <p>
-                <b class="colored-text">Цель клуба</b> — увеличение продуктивности и востребованности участников клуба через изучение AI-инструментов и применение их в работе.
+                <b class="colored-text">@Loc[EvoCodersRes.ClubGoalLabel]</b> @Loc[EvoCodersRes.ClubGoal]
             </p>
             <p>
-                <b class="colored-text">Миссия клуба</b> — cоздание сообщества разработчиков и разработчиц, отлично ориентирующихся в бурно развивающемся мире нейросетей и AI.
+                <b class="colored-text">@Loc[EvoCodersRes.ClubMissionLabel]</b> @Loc[EvoCodersRes.ClubMission]
             </p>
         </section>
     </section>
@@ -51,34 +52,33 @@
     <section id="benefits" class="presentation no-bg">
         <section class="content right">
             <h1>
-                Что даёт клуб?
+                @Loc[EvoCodersRes.BenefitsTitle]
             </h1>
 
             <p>
-                Вступив в <b class="colored-text">Эволюцию Кода</b>, ты сможешь в одном месте, не распыляясь, <b>получать знания</b> об использовании AI-инструментария в программировании, узнавать <b>актуальные новости</b> из сферы ИИ и разработки, получишь доступ к <b>эксклюзивному контенту</b> и <b>сообществу</b> единомышленников. 
+                @((MarkupString)Loc[EvoCodersRes.BenefitsDescription].Value)
             </p>
 
             <p class="benefits-club"></p>
 
             <p>
-                Если говорить более предметно, то ты получишь:
+                @Loc[EvoCodersRes.BenefitsListLabel]
             </p>
             <ul>
                 <li class="links">
-                    Доуступ к сообществу из <b class="colored-text">150+ инженеров</b>, неравнодушных к ИИ. Новые контакты и возможности для развития и сотрудничества.
+                    @((MarkupString)Loc[EvoCodersRes.Benefit1].Value)
                 </li>
                 <li class="links">
-                    Эксклюзивный <span>клубный контент</span>, 
-                    который включает в себя <b class="colored-text">лекции, <a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Воркшоп по работе с LangChain, LangSmith и LangGraph">воркшопы</a>, <a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Интервью с Валерием Селицким - про ИИ и графику">интервью</a>, доклады, обзоры и <a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Часть первая - From GPT-4 to AGI / Клубный созвон">созвоны</a></b> <i>(всего 60+ часов видео-материала)</i>.
+                    @((MarkupString)Loc[EvoCodersRes.Benefit2].Value)
                 </li>
                 <li class="links">
-                    Ссылки на <b class="colored-text">130+ инструментов</b> для программирования с ИИ и <b class="colored-text">40+ новосных ресурсов</b> + рекомендации по их использованию.
+                    @((MarkupString)Loc[EvoCodersRes.Benefit3].Value)
                 </li>
                 <li class="links">
-                    <a href="https://youtu.be/hKNIggJ2evE" class="blue-text" target="_blank"><span>Еженедельные новостные дайджесты</span></a> с самыми актуальными новостями из мира ИИ и разработки <i>(аудио и текстовый форматы)</i>.
+                    @((MarkupString)Loc[EvoCodersRes.Benefit4].Value)
                 </li>
                 <li class="links">
-                    Возможность <b class="colored-text">получать ответы</b> на свои вопросы от <b class="colored-text">экспертов</b>, а также <a href="https://github.com/it-beard/evocoders/discussions" class="blue-text" target="_blank">делиться своими знаниями</a> и опытом с единомышленниками.
+                    @((MarkupString)Loc[EvoCodersRes.Benefit5].Value)
                 </li>
             </ul>
         </section>
@@ -87,74 +87,71 @@
     <section id="howitworks" class="presentation no-bg">
         <section class="content left">
             <h1>
-                Устройство клуба
+                @Loc[EvoCodersRes.HowItWorksTitle]
             </h1>
             <p>
-                <b class="colored-text">Эволюция Кода</b> представляет из себя закрытую группу в <b>Telegram</b>, которая состоит из <b>тематических чатов</b>. 
+                @((MarkupString)Loc[EvoCodersRes.HowItWorksDescription1].Value)
             </p> 
             <p>
-                Весь контент и активности клуба сосредоточены в этих чатах, а иногда даже выходят за рамки онлайн-группы<i>: общедоступный контент, офлайн-сходки и др.</i> 
+                @((MarkupString)Loc[EvoCodersRes.HowItWorksDescription2].Value)
             </p> 
             <p>    
-                Подписываясь на <b class="colored-text">Эволюцию Кода</b> ты получаешь доступ к группе и всему контенту, содержащемуся в ней, а так же к прямому общению с участниками клуба.
+                @((MarkupString)Loc[EvoCodersRes.HowItWorksDescription3].Value)
             </p>
 
             <p class="howitworks-club"></p>
-
             <p>
-                Кроме того, у нас есть несколько <b class="colored-text">открытых ресурсов</b>, которые ты можешь посмотреть прямо сейчас:
-                <ul>
-                    <li class="links">
-                        <a href="https://www.youtube.com/@@evocoders" class="blue-text" target="_blank" title="youtube-канал"><span>YouTube-канал</span></a>: примеры контента, шортсы.
-                    </li>
-                    <li class="links">
-                        Открытый <a href="https://github.com/it-beard/evocoders/discussions" class="blue-text" target="_blank" title="GitHub-репозиторий"><span>GitHub-репозиторий</span></a> с юзкейсами из клуба.
-                    </li>
-                </ul>
+                @((MarkupString)Loc[EvoCodersRes.OpenResourcesLabel].Value)
             </p>
+            <ul>
+                <li class="links">
+                    <a href="https://www.youtube.com/@@evocoders" class="blue-text" target="_blank" title="youtube-канал"><span>@Loc[EvoCodersRes.YouTubeChannel]</span></a>: @Loc[EvoCodersRes.YouTubeChannelDescription]
+                </li>
+                <li class="links">
+                    @Loc[EvoCodersRes.GitHubRepositoryLabel] <a href="https://github.com/it-beard/evocoders/discussions" class="blue-text" target="_blank" title="GitHub-репозиторий"><span>@Loc[EvoCodersRes.GitHubRepository]</span></a> @Loc[EvoCodersRes.GitHubRepositoryDescription]
+                </li>
+            </ul>
         </section>
     </section>
 
     <section id="hottoget" class="presentation no-bg">
         <section class="content right">
             <h1 style="margin-top: 30px">
-                Как вступить в клуб?
+                @Loc[EvoCodersRes.HowToGetInTitle]
             </h1>
             <p class="colored-text h2-class">
-                Через подписку
+                @Loc[EvoCodersRes.SubscriptionLabel]
             </p>
             <p>
-                Получить доступ к клубу можно через  <a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text">ежемесячную</a> и <a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text">ежегодную</a> подписки.
+                @((MarkupString)Loc[EvoCodersRes.SubscriptionDescription].Value)
             </p>
             <ul class="subscription">
                 <li class="links yellow">
                     <a href="https://s.itbeard.com/evocoders-monthly" target="_blank">
-                        <span>Купить ежемесячную подписку</span>
+                        <span>@Loc[EvoCodersRes.BuyMonthlySubscription]</span>
                     </a>
                 </li>
                 <li class="links yellow">
                     <a href="https://s.itbeard.com/evocoders-annually" target="_blank">
-                        <span>Купить ежегодную подписку</span>
+                        <span>@Loc[EvoCodersRes.BuyAnnualSubscription]</span>
                     </a>
                 </li>
             </ul>
 
             <p>
-                Оплатить членство в клубе можно через любую <b>банковскую карту</b>, либо <b>криптой</b> <i>(USDT)</i>. 
-                </p>
+                @((MarkupString)Loc[EvoCodersRes.PaymentOptions].Value)
+            </p>
 
             <p>
-                Для организации оплаты используется сервис 
-                <a href="https://tribute.tg/" target="_blank"><b>Tribute</b></a> и их оициальный <i>Telegram-бот</i>.
+                @((MarkupString)Loc[EvoCodersRes.PaymentService].Value)
             </p>
 
             <p class="colored-text h2-class" style="margin-top: 30px">
-                Через комьюнити-активности
+                @Loc[EvoCodersRes.CommunityActivitiesLabel]
             </p>
 
             <p style="margin-bottom: 30px">
-                Кроме того, если ты активно продвигаешь ИИ-инструментарий, нейронки, ML, DS, LLM на широкую аудиторию, являешься комьюнити-билдером по этим темам,
-                фаундером AI-стартапа или овнером популярного github-репозитория, то welcome в клуб минуя подписку! Напиши мне в Telegram <a href="http://t.me/iamitbeard" class="blue-text" target="_blank">@@iamitbeard</a>
+                @((MarkupString)Loc[EvoCodersRes.CommunityActivitiesDescription].Value)
             </p>
         </section>
     </section>
@@ -162,12 +159,12 @@
     <section id="examples" class="presentation no-bg">
         <section class="content center">
             <h1 style="text-align: center;">
-                Примеры клубного контента
+                @Loc[EvoCodersRes.ContentExamplesTitle]
             </h1>
             <p>
                 <iframe height="315" width="100%"
                         src="https://www.youtube.com/embed/NPSAyl8F1N8"
-                        title="Воркшоп по работе с LangChain, LangSmith и LangGraph "
+                        title="@Loc[EvoCodersRes.WorkshopTitle]"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -175,7 +172,7 @@
             <p>
                 <iframe height="315" width="100%"
                         src="https://www.youtube.com/embed/AVxLDqsU8aw"
-                        title="Интервью с Валерием Селицким - про ИИ и графику"
+                        title="@Loc[EvoCodersRes.InterviewTitle]"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -183,7 +180,7 @@
             <p>
                 <iframe height="315" width="100%"
                         src="https://www.youtube.com/embed/-uJtZ_CE9H8"
-                        title="SITUATIONAL AWARENESS / Часть первая - From GPT-4 to AGI / Клубный созвон"
+                        title="@Loc[EvoCodersRes.SituationalAwarenessTitle]"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -192,7 +189,7 @@
             <p>
                 <iframe height="315" width="100%"
                         src="https://www.youtube.com/embed/hKNIggJ2evE"
-                        title="Пример клубного ИИ-дайджеста"
+                        title="@Loc[EvoCodersRes.DigestExampleTitle]"
                         frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -203,35 +200,35 @@
     <section id="for-companies" class="presentation no-bg">
         <section class="content right">
             <h1>
-                Для компаний
+                @Loc[EvoCodersRes.ForCompaniesTitle]
             </h1>
 
             <p>
-                <b class="colored-text">Эволюция Кода</b> предлагает уникальную возможность для компаний, которые хотят повысить компетенции своих разработчиков в работе с ИИ.
+                <b class="colored-text">@Loc[EvoCodersRes.ClubName]</b> @((MarkupString)Loc[EvoCodersRes.ForCompaniesDescription].Value)
             </p>
 
             <p class="company-benefits"></p>
 
             <p>
-                Приобретая подписку на клуб, ваши разработчики получают:
+                @Loc[EvoCodersRes.ForCompaniesBenefitsLabel]
             </p>
             <ul>
                 <li class="links">
-                    Доступ к <b>актуальным знаниям и инструментам</b>, повышающим продуктивность разработки.
+                    @((MarkupString)Loc[EvoCodersRes.ForCompaniesBenefit1].Value)
                 </li>
                 <li class="links">
-                    Возможность быть в курсе <b>последних трендов</b> в сфере ИИ и разработки.
+                    @((MarkupString)Loc[EvoCodersRes.ForCompaniesBenefit2].Value)
                 </li>
                 <li class="links">
-                    <b>Конкурентное преимущество</b> на рынке IT-услуг, что позволит вам привлечь внимание новых клиентов.
+                    @((MarkupString)Loc[EvoCodersRes.ForCompaniesBenefit3].Value)
                 </li>
                 <li class="links">
-                    <b>Повышение лояльности</b> к вашей компании, что поможет сохранить квалифицированных сотрудников и привлечь новых.
+                    @((MarkupString)Loc[EvoCodersRes.ForCompaniesBenefit4].Value)
                 </li>
             </ul>
 
             <p>
-                Если вы хотите узнать больше о корпоративных подписках или обсудить индивидуальные условия, пожалуйста, свяжитесь со мной:
+                @Loc[EvoCodersRes.ForCompaniesContactLabel]
             </p>
             <ul>
                 <li class="links">

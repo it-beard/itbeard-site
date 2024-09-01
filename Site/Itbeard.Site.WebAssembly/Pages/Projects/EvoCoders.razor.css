@@ -175,3 +175,7 @@ a {
         background-image: none;
     }
 }
+
+a.blue-text {
+    text-decoration: none;
+}

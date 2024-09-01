@@ -33,7 +33,7 @@
         <value>My Projects</value>
     </data>
     <data name="Menu_Aia" xml:space="preserve">
-        <value> AIA Podcast</value>
+        <value>AIA Podcast</value>
     </data>
     <data name="Menu_BeardNews" xml:space="preserve">
         <value>Beard News</value>
@@ -42,6 +42,6 @@
         <value>Belarus AI</value>
     </data>
     <data name="Menu_EvoCode" xml:space="preserve">
-        <value>Evolution of Code 🧬</value>
+        <value>Code Evolution 🧬</value>
     </data>
 </root>

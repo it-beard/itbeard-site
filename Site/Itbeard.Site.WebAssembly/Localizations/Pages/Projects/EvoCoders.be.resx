@@ -1,0 +1,173 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <data name="PageTitle" xml:space="preserve">
+        <value>Эвалюцыя Кода 🧬</value>
+    </data>
+    <data name="Title" xml:space="preserve">
+        <value>Эвалюцыя Кода 🧬</value>
+    </data>
+    <data name="ClubName" xml:space="preserve">
+        <value>Эвалюцыя Кода</value>
+    </data>
+    <data name="ClubDescription" xml:space="preserve">
+        <value>— гэта закрыты клуб для распрацоўшчыкаў і распрацоўшчыц, якія хочуць павысіць свае веды ў AI і сумежных тэмах, а таксама павысіць прадуктыўнасць у працы праз выкарыстанне AI-інструментаў.</value>
+    </data>
+    <data name="ClubTheses" xml:space="preserve">
+        <value>Клуб будуецца вакол некалькіх тэзісаў:</value>
+    </data>
+    <data name="Thesis1" xml:space="preserve">
+        <value>AI &lt;b&gt;не заменіць распрацоўшчыкаў&lt;/b&gt;</value>
+    </data>
+    <data name="Thesis2" xml:space="preserve">
+        <value>Распрацоўшчыкі, якія выкарыстоўваюць AI, &lt;b&gt;заменяць&lt;/b&gt; распрацоўшчыкаў, якія ігнаруюць AI</value>
+    </data>
+    <data name="Thesis3" xml:space="preserve">
+        <value>&lt;b&gt;AI паляпшае прадуктыўнасць&lt;/b&gt;</value>
+    </data>
+    <data name="Thesis4" xml:space="preserve">
+        <value>Разуменне ўладкавання AI-based тэхналогій становіцца &lt;b&gt;неабходным мінімумам&lt;/b&gt; у распрацоўцы</value>
+    </data>
+    <data name="ClubGoalLabel" xml:space="preserve">
+        <value>Мэта клуба</value>
+    </data>
+    <data name="ClubGoal" xml:space="preserve">
+        <value>— павелічэнне прадуктыўнасці і запатрабаванасці ўдзельнікаў клуба праз вывучэнне AI-інструментаў і прымяненне іх у працы.</value>
+    </data>
+    <data name="ClubMissionLabel" xml:space="preserve">
+        <value>Місія клуба</value>
+    </data>
+    <data name="ClubMission" xml:space="preserve">
+        <value>— стварэнне супольнасці распрацоўшчыкаў і распрацоўшчыц, якія выдатна арыентуюцца ў свеце нейрасетак і AI, які хутка развіваецца.</value>
+    </data>
+    <data name="BenefitsTitle" xml:space="preserve">
+        <value>Што дае клуб?</value>
+    </data>
+    <data name="BenefitsDescription" xml:space="preserve">
+        <value>Уступіўшы ў &lt;b class="colored-text"&gt;Эвалюцыю Кода&lt;/b&gt;, ты зможаш у адным месцы, не распыляючыся, &lt;b&gt;атрымліваць веды&lt;/b&gt; аб выкарыстанні AI-інструментарыя ў праграмаванні, даведвацца &lt;b&gt;актуальныя навіны&lt;/b&gt; са сферы ШІ і распрацоўкі, атрымаеш доступ да &lt;b&gt;эксклюзіўнага кантэнту&lt;/b&gt; і &lt;b&gt;супольнасці&lt;/b&gt; аднадумцаў.</value>
+    </data>
+    <data name="BenefitsListLabel" xml:space="preserve">
+        <value>Калі казаць больш прадметна, то ты атрымаеш:</value>
+    </data>
+    <data name="Benefit1" xml:space="preserve">
+        <value>Доступ да супольнасці з &lt;b class="colored-text"&gt;150+ інжынераў&lt;/b&gt;, неабыякавых да ШІ. Новыя кантакты і магчымасці для развіцця і супрацоўніцтва.</value>
+    </data>
+    <data name="Benefit2" xml:space="preserve">
+        <value>Эксклюзіўны &lt;span&gt;клубны кантэнт&lt;/span&gt;, які ўключае ў сябе &lt;b class="colored-text"&gt;лекцыі, &lt;a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Воркшоп па працы з LangChain, LangSmith і LangGraph"&gt;воркшопы&lt;/a&gt;, &lt;a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Інтэрв'ю з Валерыем Сяліцкім - пра ШІ і графіку"&gt;інтэрв'ю&lt;/a&gt;, даклады, агляды і &lt;a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Частка першая - From GPT-4 to AGI / Клубны званок"&gt;званкі&lt;/a&gt;&lt;/b&gt; &lt;i&gt;(усяго 60+ гадзін відэа-матэрыялу)&lt;/i&gt;.</value>
+    </data>
+    <data name="Benefit3" xml:space="preserve">
+        <value>Спасылкі на &lt;b class="colored-text"&gt;130+ інструментаў&lt;/b&gt; для праграмавання з ШІ і &lt;b class="colored-text"&gt;40+ навінавых рэсурсаў&lt;/b&gt; + рэкамендацыі па іх выкарыстанні.</value>
+    </data>
+    <data name="Benefit4" xml:space="preserve">
+        <value>&lt;a href="https://youtu.be/hKNIggJ2evE" class="blue-text" target="_blank"&gt;&lt;span&gt;Штотыднёвыя навінавыя дайджэсты&lt;/span&gt;&lt;/a&gt; з самымі актуальнымі навінамі са свету ШІ і распрацоўкі &lt;i&gt;(аўдыя і тэкставы фарматы)&lt;/i&gt;.</value>
+    </data>
+    <data name="Benefit5" xml:space="preserve">
+        <value>Магчымасць &lt;b class="colored-text" b-txk5lfrnx8=""&gt;атрымліваць адказы&lt;/b&gt; на свае пытанні ад &lt;b class="colored-text"&gt;экспертаў&lt;/b&gt;, а таксама &lt;a href="https://github.com/it-beard/evocoders/discussions" class="blue-text" target="_blank"&gt;дзяліцца сваімі ведамі&lt;/a&gt; і досведам з аднадумцамі.</value>
+    </data>
+    <data name="HowItWorksTitle" xml:space="preserve">
+        <value>Уладкаванне клуба</value>
+    </data>
+    <data name="HowItWorksDescription1" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;Эвалюцыя Кода&lt;/b&gt; уяўляе з сябе закрытую групу ў &lt;b&gt;Telegram&lt;/b&gt;, якая складаецца з &lt;b&gt;тэматычных чатаў&lt;/b&gt;.</value>
+    </data>
+    <data name="HowItWorksDescription2" xml:space="preserve">
+        <value>Увесь кантэнт і актыўнасці клуба засяроджаны ў гэтых чатах, а часам нават выходзяць за межы анлайн-групы&lt;i&gt;: агульнадаступны кантэнт, афлайн-сустрэчы і інш.&lt;/i&gt;</value>
+    </data>
+    <data name="HowItWorksDescription3" xml:space="preserve">
+        <value>Падпісваючыся на &lt;b class="colored-text"&gt;Эвалюцыю Кода&lt;/b&gt; ты атрымліваеш доступ да групы і ўсяго кантэнту, які змяшчаецца ў ёй, а таксама да прамых зносін з удзельнікамі клуба.</value>
+    </data>
+    <data name="OpenResourcesLabel" xml:space="preserve">
+        <value>Акрамя таго, у нас ёсць некалькі &lt;b class="colored-text"&gt;адкрытых рэсурсаў&lt;/b&gt;, якія ты можаш паглядзець прама зараз:</value>
+    </data>
+    <data name="YouTubeChannel" xml:space="preserve">
+        <value>YouTube-канал</value>
+    </data>
+    <data name="YouTubeChannelDescription" xml:space="preserve">
+        <value>прыклады кантэнту, шортсы.</value>
+    </data>
+    <data name="GitHubRepositoryLabel" xml:space="preserve">
+        <value>Адкрыты</value>
+    </data>
+    <data name="GitHubRepository" xml:space="preserve">
+        <value>GitHub-рэпазіторый</value>
+    </data>
+    <data name="GitHubRepositoryDescription" xml:space="preserve">
+        <value>з юзкейсамі з клуба.</value>
+    </data>
+    <data name="HowToGetInTitle" xml:space="preserve">
+        <value>Як уступіць у клуб?</value>
+    </data>
+    <data name="SubscriptionLabel" xml:space="preserve">
+        <value>Праз падпіску</value>
+    </data>
+    <data name="SubscriptionDescription" xml:space="preserve">
+        <value>Атрымаць доступ да клуба можна праз &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;штомесячную&lt;/a&gt; і &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;штогадовую&lt;/a&gt; падпіскі.</value>
+    </data>
+    <data name="BuyMonthlySubscription" xml:space="preserve">
+        <value>Купіць штомесячную падпіску</value>
+    </data>
+    <data name="BuyAnnualSubscription" xml:space="preserve">
+        <value>Купіць штогадовую падпіску</value>
+    </data>
+    <data name="PaymentOptions" xml:space="preserve">
+        <value>Аплаціць членства ў клубе можна праз любую &lt;b&gt;банкаўскую карту&lt;/b&gt;, альбо &lt;b&gt;крыптай&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
+    </data>
+    <data name="PaymentService" xml:space="preserve">
+        <value>Для арганізацыі аплаты выкарыстоўваецца сэрвіс &lt;a href="https://tribute.tg/" target="_blank"&gt;&lt;b&gt;Tribute&lt;/b&gt;&lt;/a&gt; і іх афіцыйны &lt;i&gt;Telegram-бот&lt;/i&gt;.</value>
+    </data>
+    <data name="CommunityActivitiesLabel" xml:space="preserve">
+        <value>Праз камьюніці-актыўнасці</value>
+    </data>
+    <data name="CommunityActivitiesDescription" xml:space="preserve">
+        <value>Акрамя таго, калі ты актыўна прасоўваеш ШІ-інструментарый, нейронкі, ML, DS, LLM на шырокую аўдыторыю, з'яўляешся камьюніці-білдэрам па гэтых тэмах, фаўндэрам AI-стартапа або ўладальнікам папулярнага github-рэпазіторыя, то welcome у клуб мінуючы падпіску! Напішы мне ў Telegram &lt;a href="http://t.me/iamitbeard" class="blue-text" target="_blank"&gt;@iamitbeard&lt;/a&gt;</value>
+    </data>
+    <data name="ContentExamplesTitle" xml:space="preserve">
+        <value>Прыклады клубнага кантэнту</value>
+    </data>
+    <data name="WorkshopTitle" xml:space="preserve">
+        <value>Воркшоп па працы з LangChain, LangSmith і LangGraph</value>
+    </data>
+    <data name="InterviewTitle" xml:space="preserve">
+        <value>Інтэрв'ю з Валерыем Сяліцкім - пра ШІ і графіку</value>
+    </data>
+    <data name="SituationalAwarenessTitle" xml:space="preserve">
+        <value>SITUATIONAL AWARENESS / Частка першая - From GPT-4 to AGI / Клубны званок</value>
+    </data>
+    <data name="DigestExampleTitle" xml:space="preserve">
+        <value>Прыклад клубнага ШІ-дайджэста</value>
+    </data>
+    <data name="ForCompaniesTitle" xml:space="preserve">
+        <value>Для кампаній</value>
+    </data>
+    <data name="ForCompaniesDescription" xml:space="preserve">
+        <value>прапануе ўнікальную магчымасць для кампаній, якія хочуць павысіць кампетэнцыі сваіх распрацоўшчыкаў у працы з ШІ.</value>
+    </data>
+    <data name="ForCompaniesBenefitsLabel" xml:space="preserve">
+        <value>Набываючы падпіску на клуб, вашы распрацоўшчыкі атрымліваюць:</value>
+    </data>
+    <data name="ForCompaniesBenefit1" xml:space="preserve">
+        <value>Доступ да &lt;b&gt;актуальных ведаў і інструментаў&lt;/b&gt;, якія павышаюць прадуктыўнасць распрацоўкі.</value>
+    </data>
+    <data name="ForCompaniesBenefit2" xml:space="preserve">
+        <value>Магчымасць быць у курсе &lt;b&gt;апошніх трэндаў&lt;/b&gt; у сферы ШІ і распрацоўкі.</value>
+    </data>
+    <data name="ForCompaniesBenefit3" xml:space="preserve">
+        <value>&lt;b&gt;Канкурэнтную перавагу&lt;/b&gt; на рынку IT-паслуг, што дазволіць вам прыцягнуць увагу новых кліентаў.</value>
+    </data>
+    <data name="ForCompaniesBenefit4" xml:space="preserve">
+        <value>&lt;b&gt;Павышэнне лаяльнасці&lt;/b&gt; да вашай кампаніі, што дапаможа захаваць кваліфікаваных супрацоўнікаў і прыцягнуць новых.</value>
+    </data>
+    <data name="ForCompaniesContactLabel" xml:space="preserve">
+        <value>Калі вы хочаце даведацца больш пра карпаратыўныя падпіскі або абмеркаваць індывідуальныя ўмовы, калі ласка, звяжыцеся са мной:</value>
+    </data>
+</root>

@@ -113,12 +113,12 @@
     <data name="SubscriptionDescription" xml:space="preserve">
         <value>You can get access to the club through &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;monthly&lt;/a&gt; and &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;annual&lt;/a&gt; subscriptions.</value>
     </data>
-    <data name="BuyMonthlySubscription" xml:space="preserve">
-        <value>Buy monthly subscription</value>
-    </data>
-    <data name="BuyAnnualSubscription" xml:space="preserve">
-        <value>Buy annual subscription</value>
-    </data>
+     <data name="BuyMonthlySubscription" xml:space="preserve">
+         <value>Buy monthly subscription (8 EUR)</value>
+     </data>
+     <data name="BuyAnnualSubscription" xml:space="preserve">
+         <value>Buy annual subscription (80 EUR)</value>
+     </data>
     <data name="PaymentOptions" xml:space="preserve">
         <value>You can pay for club membership using any &lt;b&gt;bank card&lt;/b&gt;, or with &lt;b&gt;crypto&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
     </data>
@@ -169,5 +169,8 @@
     </data>
     <data name="ForCompaniesContactLabel" xml:space="preserve">
         <value>If you want to learn more about corporate subscriptions or discuss individual terms, please contact me:</value>
+    </data>
+    <data name="SubscriptionAgreement" xml:space="preserve">
+        <value>By purchasing a subscription, you agree to our club's &lt;a href="/evo-rules" class="blue-text"&gt;rules&lt;/a&gt;.</value>
     </data>
 </root>

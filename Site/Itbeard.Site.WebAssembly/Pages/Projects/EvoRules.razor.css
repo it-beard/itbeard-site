@@ -1,0 +1,114 @@
+h1 {
+    margin-top: 30px;
+    text-align: center;
+}
+.rules-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.rule-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.rule-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rule-item h2 {
+    color: #00a8ff;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.rule-item p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+}
+
+.rule-item p:last-child {
+    margin-bottom: 0;
+}
+
+.rule-item a {
+    color: #00a8ff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.rule-item a:hover {
+    color: #0084ff;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .rules-container {
+        padding: 0.5rem;
+    }
+
+    .rule-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .rule-item h2 {
+        font-size: 1.2rem;
+    }
+}
+
+.join-button-container {
+    text-align: center;
+    margin: 0 0 4rem 0;
+}
+
+.join-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, #00a8ff, #0084ff);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 168, 255, 0.2);
+}
+
+.join-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 168, 255, 0.3);
+    background: linear-gradient(45deg, #0084ff, #00a8ff);
+}
+
+.join-button span {
+    margin-right: 10px;
+}
+
+.join-button i {
+    font-size: 0.9em;
+    transition: transform 0.3s ease;
+}
+
+.join-button:hover i {
+    transform: translateX(4px);
+}
+
+@media (max-width: 768px) {
+    .join-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .join-button-container {
+        margin: 0 0 2rem 0;
+    }
+}

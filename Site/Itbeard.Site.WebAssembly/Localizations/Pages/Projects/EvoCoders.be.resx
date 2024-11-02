@@ -114,10 +114,10 @@
         <value>Атрымаць доступ да клуба можна праз &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;штомесячную&lt;/a&gt; і &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;штогадовую&lt;/a&gt; падпіскі.</value>
     </data>
     <data name="BuyMonthlySubscription" xml:space="preserve">
-        <value>Купіць штомесячную падпіску</value>
+        <value>Купіць штомесячную падпіску (8 EUR)</value>
     </data>
     <data name="BuyAnnualSubscription" xml:space="preserve">
-        <value>Купіць штогадовую падпіску</value>
+        <value>Купіць штогадовую падпіску (80 EUR)</value>
     </data>
     <data name="PaymentOptions" xml:space="preserve">
         <value>Аплаціць членства ў клубе можна праз любую &lt;b&gt;банкаўскую карту&lt;/b&gt;, альбо &lt;b&gt;крыптай&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
@@ -169,5 +169,8 @@
     </data>
     <data name="ForCompaniesContactLabel" xml:space="preserve">
         <value>Калі вы хочаце даведацца больш пра карпаратыўныя падпіскі або абмеркаваць індывідуальныя ўмовы, калі ласка, звяжыцеся са мной:</value>
+    </data>
+    <data name="SubscriptionAgreement" xml:space="preserve">
+        <value>Набываючы падпіску ты згаджаешся з &lt;a href="/evo-rules" class="blue-text"&gt;правіламі&lt;/a&gt; нашага клуба.</value>
     </data>
 </root>

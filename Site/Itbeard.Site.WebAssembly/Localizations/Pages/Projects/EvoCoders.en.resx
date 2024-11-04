@@ -173,4 +173,13 @@
     <data name="SubscriptionAgreement" xml:space="preserve">
         <value>By purchasing a subscription, you agree to our club's &lt;a href="/evo-rules" class="blue-text"&gt;rules&lt;/a&gt;.</value>
     </data>
+    <data name="GiftSubscriptionLabel" xml:space="preserve">
+        <value>Gift subscription</value>
+    </data>
+    <data name="GiftSubscriptionDescription" xml:space="preserve">
+        <value>You can also gift an annual subscription to your friend or colleague:</value>
+    </data>
+    <data name="BuyGiftSubscription" xml:space="preserve">
+        <value>Gift annual subscription (80 EUR)</value>
+    </data>
 </root>

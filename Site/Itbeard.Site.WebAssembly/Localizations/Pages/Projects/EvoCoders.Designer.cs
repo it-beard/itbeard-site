@@ -368,5 +368,23 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages.Projects {
                 return ResourceManager.GetString("SubscriptionAgreement", resourceCulture);
             }
         }
+
+        internal static string GiftSubscriptionLabel {
+            get {
+                return ResourceManager.GetString("GiftSubscriptionLabel", resourceCulture);
+            }
+        }
+
+        internal static string GiftSubscriptionDescription {
+            get {
+                return ResourceManager.GetString("GiftSubscriptionDescription", resourceCulture);
+            }
+        }
+
+        internal static string BuyGiftSubscription {
+            get {
+                return ResourceManager.GetString("BuyGiftSubscription", resourceCulture);
+            }
+        }
     }
 }

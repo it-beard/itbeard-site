@@ -125,6 +125,15 @@
     <data name="PaymentService" xml:space="preserve">
         <value>Для арганізацыі аплаты выкарыстоўваецца сэрвіс &lt;a href="https://tribute.tg/" target="_blank"&gt;&lt;b&gt;Tribute&lt;/b&gt;&lt;/a&gt; і іх афіцыйны &lt;i&gt;Telegram-бот&lt;/i&gt;.</value>
     </data>
+    <data name="GiftSubscriptionLabel" xml:space="preserve">
+        <value>Падарыць падпіску</value>
+    </data>
+    <data name="GiftSubscriptionDescription" xml:space="preserve">
+        <value>Ты таксама можаш падараваць гадавую падпіску свайму сябру/сяброўцы ці калезе/калежанцы:</value>
+    </data>
+    <data name="BuyGiftSubscription" xml:space="preserve">
+        <value>Падарыць гадавую падпіску (80 EUR)</value>
+    </data>
     <data name="CommunityActivitiesLabel" xml:space="preserve">
         <value>Праз камьюніці-актыўнасці</value>
     </data>

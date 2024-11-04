@@ -179,4 +179,13 @@
     <data name="SubscriptionAgreement" xml:space="preserve">
         <value>Приобретая подписку ты соглашаешься с &lt;a href="/evo-rules" class="blue-text"&gt;правилами&lt;/a&gt; нашего клуба.</value>
     </data>
+    <data name="GiftSubscriptionLabel" xml:space="preserve">
+        <value>Подарить подписку</value>
+    </data>
+    <data name="GiftSubscriptionDescription" xml:space="preserve">
+        <value>Ты также можешь подарить годовую подписку своему другу/подруге или коллеге:</value>
+    </data>
+    <data name="BuyGiftSubscription" xml:space="preserve">
+        <value>Подарить годовую подписку (80 EUR)</value>
+    </data>
 </root>

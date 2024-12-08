@@ -1,4 +1,4 @@
-Открытый репозиторий сайта-визитки АйТиБороды: https://itbeard.com
+TEST Открытый репозиторий сайта-визитки АйТиБороды: https://itbeard.com
 
 Построен на .NET 8, Blazor WebAssembly с применением Server Side Rendering (SSR) on first loading.
 

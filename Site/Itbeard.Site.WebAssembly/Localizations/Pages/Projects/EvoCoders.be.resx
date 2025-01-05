@@ -114,7 +114,7 @@
         <value>Атрымаць доступ да клуба можна праз &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;штомесячную&lt;/a&gt; і &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;штогадовую&lt;/a&gt; падпіскі.</value>
     </data>
     <data name="BuyMonthlySubscription" xml:space="preserve">
-        <value>Купіць штомесячную падпіску (8 EUR)</value>
+        <value>Набыць падпіску</value>
     </data>
     <data name="BuyAnnualSubscription" xml:space="preserve">
         <value>Купіць штогадовую падпіску (80 EUR)</value>
@@ -132,7 +132,7 @@
         <value>Ты таксама можаш падараваць гадавую падпіску свайму сябру/сяброўцы ці калезе/калежанцы:</value>
     </data>
     <data name="BuyGiftSubscription" xml:space="preserve">
-        <value>Падарыць гадавую падпіску (80 EUR)</value>
+        <value>Падарыць гадавую падпіску</value>
     </data>
     <data name="CommunityActivitiesLabel" xml:space="preserve">
         <value>Праз камьюніці-актыўнасці</value>

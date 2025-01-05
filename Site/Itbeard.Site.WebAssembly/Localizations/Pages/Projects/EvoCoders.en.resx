@@ -114,7 +114,7 @@
         <value>You can get access to the club through &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;monthly&lt;/a&gt; and &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;annual&lt;/a&gt; subscriptions.</value>
     </data>
      <data name="BuyMonthlySubscription" xml:space="preserve">
-         <value>Buy monthly subscription (8 EUR)</value>
+         <value>Buy subscription</value>
      </data>
      <data name="BuyAnnualSubscription" xml:space="preserve">
          <value>Buy annual subscription (80 EUR)</value>
@@ -180,6 +180,6 @@
         <value>You can also gift an annual subscription to your friend or colleague:</value>
     </data>
     <data name="BuyGiftSubscription" xml:space="preserve">
-        <value>Gift annual subscription (80 EUR)</value>
+        <value>Gift annual subscription</value>
     </data>
 </root>

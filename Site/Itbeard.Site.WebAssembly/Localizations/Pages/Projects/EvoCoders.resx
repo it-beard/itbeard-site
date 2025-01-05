@@ -117,7 +117,7 @@
         <value>Через подписку</value>
     </data>
     <data name="SubscriptionDescription" xml:space="preserve">
-        <value>Получить доступ к клубу можно через &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;ежемесячную&lt;/a&gt; и &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;ежегодную&lt;/a&gt; подписки.</value>
+        <value>Получить доступ к клубу можно через &lt;b class="blue-text"&gt;ежемесячную&lt;/b&gt; и &lt;b class="blue-text"&gt;ежегодную&lt;/b&gt; подписки.</value>
     </data>
     <data name="BuyMonthlySubscription" xml:space="preserve">
         <value>Купить подписку</value>

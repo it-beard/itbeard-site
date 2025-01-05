@@ -111,7 +111,7 @@
         <value>Through subscription</value>
     </data>
     <data name="SubscriptionDescription" xml:space="preserve">
-        <value>You can get access to the club through &lt;a href="https://s.itbeard.com/evocoders-monthly" target="_blank" class="blue-text"&gt;monthly&lt;/a&gt; and &lt;a href="https://s.itbeard.com/evocoders-annually" target="_blank" class="blue-text"&gt;annual&lt;/a&gt; subscriptions.</value>
+        <value>You can get access to the club through &lt;b class="blue-text"&gt;monthly&lt;/b&gt; and &lt;b class="blue-text"&gt;annual&lt;/b&gt; subscriptions.</value>
     </data>
      <data name="BuyMonthlySubscription" xml:space="preserve">
          <value>Buy subscription</value>

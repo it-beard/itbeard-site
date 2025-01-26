@@ -59,15 +59,15 @@
     <data name="BenefitsListLabel" xml:space="preserve">
         <value>More specifically, you'll get:</value>
     </data>
-    <data name="Benefit1" xml:space="preserve">
-        <value>Access to a community of &lt;b class="colored-text"&gt;150+ engineers&lt;/b&gt; passionate about AI. New contacts and opportunities for development and collaboration.</value>
-    </data>
+     <data name="Benefit1" xml:space="preserve">
+         <value>Access to a community of &lt;b class="colored-text"&gt;400+ engineers&lt;/b&gt; passionate about AI. New contacts and opportunities for development and collaboration.</value>
+     </data>
     <data name="Benefit2" xml:space="preserve">
         <value>Exclusive &lt;span&gt;club content&lt;/span&gt;, which includes &lt;b class="colored-text"&gt;lectures, &lt;a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Workshop on working with LangChain, LangSmith and LangGraph"&gt;workshops&lt;/a&gt;, &lt;a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Interview with Valery Selitsky - about AI and graphics"&gt;interviews&lt;/a&gt;, reports, reviews and &lt;a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Part One - From GPT-4 to AGI / Club Call"&gt;calls&lt;/a&gt;&lt;/b&gt; &lt;i&gt;(total of 60+ hours of video material)&lt;/i&gt;.</value>
     </data>
-    <data name="Benefit3" xml:space="preserve">
-        <value>Links to &lt;b class="colored-text"&gt;130+ tools&lt;/b&gt; for programming with AI and &lt;b class="colored-text"&gt;40+ news resources&lt;/b&gt; + recommendations for their use.</value>
-    </data>
+     <data name="Benefit3" xml:space="preserve">
+         <value>Links to &lt;b class="colored-text"&gt;300+ tools&lt;/b&gt; for programming with AI and &lt;b class="colored-text"&gt;60+ news resources and directories&lt;/b&gt; + recommendations for their use.</value>
+     </data>
     <data name="Benefit4" xml:space="preserve">
         <value>&lt;a href="https://youtu.be/hKNIggJ2evE" class="blue-text" target="_blank"&gt;&lt;span&gt;Weekly news digests&lt;/span&gt;&lt;/a&gt; with the most current news from the world of AI and development &lt;i&gt;(audio and text formats)&lt;/i&gt;.</value>
     </data>
@@ -116,10 +116,7 @@
      <data name="BuyMonthlySubscription" xml:space="preserve">
          <value>Buy subscription</value>
      </data>
-     <data name="BuyAnnualSubscription" xml:space="preserve">
-         <value>Buy annual subscription (80 EUR)</value>
-     </data>
-    <data name="PaymentOptions" xml:space="preserve">
+     <data name="PaymentOptions" xml:space="preserve">
         <value>You can pay for club membership using any &lt;b&gt;bank card&lt;/b&gt;, or with &lt;b&gt;crypto&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
     </data>
     <data name="PaymentService" xml:space="preserve">
@@ -181,5 +178,17 @@
     </data>
     <data name="BuyGiftSubscription" xml:space="preserve">
         <value>Gift annual subscription</value>
+    </data>
+    <data name="TelegramChannel" xml:space="preserve">
+        <value>Telegram channel</value>
+    </data>
+    <data name="TelegramChannelTitle" xml:space="preserve">
+        <value>telegram channel</value>
+    </data>
+    <data name="TelegramChannelDescription" xml:space="preserve">
+        <value>with club content teasers and event announcements.</value>
+    </data>
+    <data name="HowItWorksContentInfo" xml:space="preserve">
+        <value>You can get a lot of information about club content in our</value>
     </data>
 </root>

@@ -386,5 +386,29 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages.Projects {
                 return ResourceManager.GetString("BuyGiftSubscription", resourceCulture);
             }
         }
+
+        public static string TelegramChannel {
+            get {
+                return ResourceManager.GetString("TelegramChannel", resourceCulture);
+            }
+        }
+
+        public static string TelegramChannelTitle {
+            get {
+                return ResourceManager.GetString("TelegramChannelTitle", resourceCulture);
+            }
+        }
+
+        public static string TelegramChannelDescription {
+            get {
+                return ResourceManager.GetString("TelegramChannelDescription", resourceCulture);
+            }
+        }
+
+        internal static string HowItWorksContentInfo {
+            get {
+                return ResourceManager.GetString("HowItWorksContentInfo", resourceCulture);
+            }
+        }
     }
 }

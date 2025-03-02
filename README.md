@@ -13,7 +13,7 @@ dotnet run --project ./Site/Itbeard.Site.Server/Itbeard.Site.Server.csproj
 
 Run this project in watch mode:
 ```
-dotnet watch --project ./Site/Itbeard.Site.Server/Itbeard.Site.Server.csproj run
+dotnet watchhh --project ./Site/Itbeard.Site.Server/Itbeard.Site.Server.csproj run
 ```
 
 ## Run using Docker

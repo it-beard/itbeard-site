@@ -66,13 +66,13 @@
         <value>Если говорить более предметно, то ты получишь:</value>
     </data>
     <data name="Benefit1" xml:space="preserve">
-        <value>Доуступ к сообществу из &lt;b class="colored-text"&gt;400+ инженеров&lt;/b&gt;, неравнодушных к ИИ. Новые контакты и возможности для развития и сотрудничества.</value>
+        <value>Доуступ к сообществу из &lt;b class="colored-text"&gt;700+ инженеров&lt;/b&gt;, неравнодушных к ИИ. Новые контакты и возможности для развития и сотрудничества.</value>
     </data>
     <data name="Benefit2" xml:space="preserve">
-        <value>Эксклюзивный &lt;span&gt;клубный контент&lt;/span&gt;, который включает в себя &lt;b class="colored-text"&gt;лекции, &lt;a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Воркшоп по работе с LangChain, LangSmith и LangGraph"&gt;воркшопы&lt;/a&gt;, &lt;a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Интервью с Валерием Селицким - про ИИ и графику"&gt;интервью&lt;/a&gt;, доклады, обзоры и &lt;a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Часть первая - From GPT-4 to AGI / Клубный созвон"&gt;созвоны&lt;/a&gt;&lt;/b&gt; &lt;i&gt;(всего 60+ часов видео-материала)&lt;/i&gt;.</value>
+        <value>Эксклюзивный &lt;span&gt;клубный контент&lt;/span&gt;, который включает в себя &lt;b class="colored-text"&gt;лекции, &lt;a href="https://www.youtube.com/embed/NPSAyl8F1N8" class="blue-text" target="_blank" title="Воркшоп по работе с LangChain, LangSmith и LangGraph"&gt;воркшопы&lt;/a&gt;, &lt;a href="https://www.youtube.com/embed/AVxLDqsU8aw" class="blue-text" target="_blank" title="Интервью с Валерием Селицким - про ИИ и графику"&gt;интервью&lt;/a&gt;, доклады, обзоры и &lt;a href="https://www.youtube.com/embed/-uJtZ_CE9H8" class="blue-text" target="_blank" title="SITUATIONAL AWARENESS / Часть первая - From GPT-4 to AGI / Клубный созвон"&gt;созвоны&lt;/a&gt;&lt;/b&gt; &lt;i&gt;(всего 200+ часов материала)&lt;/i&gt;.</value>
     </data>
     <data name="Benefit3" xml:space="preserve">
-        <value>Ссылки на &lt;b class="colored-text"&gt;300+ инструментов&lt;/b&gt; для программирования с ИИ и &lt;b class="colored-text"&gt;60+ новосных ресурсов и каталогов&lt;/b&gt; + рекомендации по их использованию.</value>
+        <value>Ссылки на &lt;b class="colored-text"&gt;400+ инструментов&lt;/b&gt; для программирования с ИИ и &lt;b class="colored-text"&gt;70+ новосных ресурсов и каталогов&lt;/b&gt; + рекомендации по их использованию.</value>
     </data>
     <data name="Benefit4" xml:space="preserve">
         <value>&lt;a href="https://youtu.be/hKNIggJ2evE" class="blue-text" target="_blank"&gt;&lt;span&gt;Еженедельные новостные дайджесты&lt;/span&gt;&lt;/a&gt; с самыми актуальными новостями из мира ИИ и разработки &lt;i&gt;(аудио и текстовый форматы)&lt;/i&gt;.</value>

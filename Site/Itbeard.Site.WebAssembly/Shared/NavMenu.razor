@@ -1,7 +1,7 @@
 ﻿@using NavLoc = Localizations.Shared.NavMenu;
 @inject IStringLocalizer<Localizations.Shared.NavMenu> Loc
 
-<button id="menu-toggle" class="menu-toggle @NavMenuButtonCssClass" onclick="@ToggleNavMenu();">
+<button id="menu-toggle" class="menu-toggle @NavMenuButtonCssClass" @onclick="ToggleNavMenu">
     <span></span><span></span><span></span>
 </button>
 
@@ -65,9 +65,10 @@
     private string NavMenuButtonCssClass => collapseNavMenu ? null: "active";
     private string NavMenuCssClass => collapseNavMenu ? null: "opened";
 
-    private async Task ToggleNavMenu()
+    private Task ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+        return Task.CompletedTask;
     }
 
     private void CloseMenu()

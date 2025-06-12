@@ -129,7 +129,7 @@
         <value>Оплатить членство в клубе можно через любую &lt;b&gt;банковскую карту&lt;/b&gt;, либо &lt;b&gt;криптой&lt;/b&gt; &lt;i&gt;(USDT)&lt;/i&gt;.</value>
     </data>
     <data name="PaymentService" xml:space="preserve">
-        <value>Для организации оплаты используется сервис &lt;a href="https://tribute.tg/" target="_blank"&gt;&lt;b&gt;Tribute&lt;/b&gt;&lt;/a&gt; и их оициальный &lt;i&gt;Telegram-бот&lt;/i&gt;.</value>
+        <value>Для организации оплаты используется сервис &lt;a href="https://tribute.tg/" target="_blank"&gt;&lt;b&gt;Tribute&lt;/b&gt;&lt;/a&gt; и их официальный &lt;i&gt;Telegram-бот&lt;/i&gt;.</value>
     </data>
     <data name="CommunityActivitiesLabel" xml:space="preserve">
         <value>Через комьюнити-активности</value>

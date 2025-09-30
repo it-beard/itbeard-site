@@ -30,7 +30,7 @@ jobs:
         run: dotnet workload install wasm-tools
 
       - name: Restore workloads
-        run: dotnet workload restore
+        run: dotnet workload restore --project Site/Itbeard.Site.WebAssembly/Itbeard.Site.WebAssembly.csproj
 
       - name: Restore NuGet packages
         run: dotnet restore Site/Itbeard.sln

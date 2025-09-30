@@ -26,12 +26,6 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore Site/Itbeard.sln
-
-      - name: Build
-        run: dotnet build Site/Itbeard.sln --configuration Release --no-restore
-
       - name: Publish
         run: dotnet publish Site/Itbeard.Site.WebAssembly/Itbeard.Site.WebAssembly.csproj -c Release -o publish --nologo
 
@@ -60,4 +54,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-

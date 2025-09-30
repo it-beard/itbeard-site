@@ -41,14 +41,11 @@ jobs:
       - name: Publish (no-build)
         run: dotnet publish Site/Itbeard.Site.WebAssembly/Itbeard.Site.WebAssembly.csproj -c Release -o publish --nologo --no-build
 
-      - name: Change base-href in index.html (if present)
-        run: |
-          if [ -f publish/wwwroot/index.html ]; then
-            sed -i 's#<base href="/" />#<base href="/${{ github.event.repository.name }}/" />#g' publish/wwwroot/index.html
-          fi
-
       - name: Add .nojekyll file
         run: touch publish/wwwroot/.nojekyll
+
+      - name: Add CNAME for custom domain
+        run: echo "itbeard.com" > publish/wwwroot/CNAME
 
       - name: Copy index.html to 404.html (if present)
         run: |

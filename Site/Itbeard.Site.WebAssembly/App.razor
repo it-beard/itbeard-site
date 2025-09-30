@@ -21,7 +21,7 @@
         text-decoration: none;
     }
 </style>
-<Router AppAssembly="@typeof(App).Assembly" PreferExactMatches="@true">
+<Router AppAssembly="@typeof(App).Assembly">
     <Found Context="routeData">
         <RouteView RouteData="@routeData" DefaultLayout="@typeof(MainLayout)"/>
     </Found>

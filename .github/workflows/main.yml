@@ -26,6 +26,9 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Install WebAssembly Tools workload
+        run: dotnet workload install wasm-tools
+
       - name: Publish
         run: dotnet publish Site/Itbeard.Site.WebAssembly/Itbeard.Site.WebAssembly.csproj -c Release -o publish --nologo
 

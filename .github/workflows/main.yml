@@ -1,0 +1,63 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore Site/Itbeard.sln
+
+      - name: Build
+        run: dotnet build Site/Itbeard.sln --configuration Release --no-restore
+
+      - name: Publish
+        run: dotnet publish Site/Itbeard.Site.WebAssembly/Itbeard.Site.WebAssembly.csproj -c Release -o publish --nologo
+
+      - name: Change base-href in index.html
+        run: |
+          sed -i 's/<base href="\/" \/>/<base href="\/${{ github.event.repository.name }}\/" \/>/g' publish/wwwroot/index.html
+
+      - name: Add .nojekyll file
+        run: touch publish/wwwroot/.nojekyll
+
+      - name: Copy index.html to 404.html
+        run: cp publish/wwwroot/index.html publish/wwwroot/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: 'publish/wwwroot'
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+

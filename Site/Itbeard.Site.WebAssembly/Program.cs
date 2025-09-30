@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
-builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<Itbeard.Site.WebAssembly.App>("#app");
 builder.Services.AddTransient(_ => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
 builder.Services.AddHeadElementHelper();
 builder.Services.AddLocalization();

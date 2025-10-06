@@ -6,8 +6,16 @@
 @using SharedRes = Localizations.SharedLocalizations;
 @inject IStringLocalizer<SharedRes> SharedLoc
 @inject IStringLocalizer<EvoCodersRes> Loc
+@inject NavigationManager NavigationManager
 
 <Title>@Loc[EvoCodersRes.PageTitle]</Title>
+
+@code {
+    protected override void OnInitialized()
+    {
+        NavigationManager.NavigateTo("https://evacoders.ai", true);
+    }
+}
 
 <main class="wide-container">
     <section id="about" class="presentation presentation-first no-bg">

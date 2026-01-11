@@ -30,7 +30,7 @@
         <value>On this site you'll learn about my main projects—maybe you'll like something 😊</value>
     </data>
     <data name="Projects_Aia" xml:space="preserve">
-        <value>Na Vaibe</value>
+        <value>on Vibe</value>
     </data>
     <data name="Projects_Itbeard" xml:space="preserve">
         <value>ITBeard</value>
@@ -45,10 +45,10 @@
         <value>My Projects</value>
     </data>
     <data name="Projects_BelarusAi_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Belarusian AI»&lt;/b&gt; is a Belarusian-language community of professionals and fans of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, DS, ML, DL, GPT, NLP, OCR, CV, etc.</value>
+        <value>&lt;b class="colored-text"&gt;«Belarusian AI»&lt;/b&gt; is a Belarusian-language community of professionals and fans of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, LLM, creating AI content, building with AI, and much more.</value>
     </data>
     <data name="Projects_Itbeard_Description" xml:space="preserve">
-        <value>The show &lt;b class="colored-text"&gt;«ITBeard»&lt;/b&gt; is devoted to the life of IT folks from the inside and in its episodes tells about programming languages, popular technologies, professions, well-known figures, and even science. &lt;br&gt;&lt;br&gt;No censorship, labels, or extra pathos.</value>
+        <value>&lt;b class="colored-text"&gt;«ITBeard»&lt;/b&gt; is a Russian-language YouTube channel dedicated to IT, technology, and science. &lt;br&gt;&lt;br&gt; I share knowledge in IT and AI, and make science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people.</value>
     </data>
     <data name="Projects_KalasyAI_Description" xml:space="preserve">
         <value>&lt;b class="colored-text"&gt;«КПСШІ»&lt;/b&gt; is a Belarusian-language podcast where, together with Emiliya Haurus and Eugene Efimov, we discuss AI news in the world and in Belarus. &lt;br&gt;&lt;br&gt;The podcast is released every two weeks on all podcast platforms.</value>
@@ -66,12 +66,12 @@
         <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; is a Belarusian-language channel and podcast where I share my experience working with AI and talk with interesting Belarusians about what they do: from stand-up, computer games, and music to Warhammer, neural networks, and science.</value>
     </data>
     <data name="Projects_Aia_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Na Vaibe»&lt;/b&gt; is a podcast where, together with Vitya Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released every two weeks and exists thanks to listener support.</value>
+        <value>&lt;b class="colored-text"&gt;«on Vibe»&lt;/b&gt; is a Russian-language podcast where, together with Vitya Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released every two weeks and exists thanks to listener support.</value>
     </data>
     <data name="Projects_EvoCode" xml:space="preserve">
-        <value>Code Evolution 🧬</value>
+        <value>Evocoders 🧬</value>
     </data>
     <data name="Projects_EvoCode_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Code Evolution»&lt;/b&gt; is a private Telegram club for developers who boost their skills through learning AI tools and practices. &lt;br&gt;&lt;br&gt;A single place to dive into building alongside AI.</value>
+        <value>&lt;b class="colored-text"&gt;«Evocoders 🧬»&lt;/b&gt; is a private Russian-language club for developers who boost their skills through learning AI tools and practices. &lt;br&gt;&lt;br&gt;A single place to dive into building alongside AI.</value>
     </data>
 </root>

@@ -15,7 +15,7 @@
         <value>Home</value>
     </data>
     <data name="Menu_ItbeardShow" xml:space="preserve">
-        <value>АйТиБорода</value>
+        <value>YouTube "ITBeard"</value>
     </data>
     <data name="Support" xml:space="preserve">
         <value>Support</value>
@@ -24,24 +24,24 @@
         <value>Contacts</value>
     </data>
     <data name="Menu_CiomnyLosShow" xml:space="preserve">
-        <value>Цёмны Лёс</value>
+        <value>YouTube "Цёмны Лёс"</value>
     </data>
     <data name="Menu_VklWorld" xml:space="preserve">
-        <value>Mastodon server "VKL"</value>
+        <value>Community "VKL.world"</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>My Projects</value>
     </data>
     <data name="Menu_Aia" xml:space="preserve">
-        <value>AIA Podcast</value>
+        <value>Podcast "on Vibe"</value>
     </data>
-    <data name="Menu_BeardNews" xml:space="preserve">
-        <value>Beard News</value>
+    <data name="Menu_KalasyAI" xml:space="preserve">
+        <value>Podcast "КПСШІ"</value>
     </data>
     <data name="Menu_BelarusAi" xml:space="preserve">
-        <value>Belarus AI</value>
+        <value>Community "Belarus AI"</value>
     </data>
     <data name="Menu_EvoCode" xml:space="preserve">
-        <value>Code Evolution 🧬</value>
+        <value>Club "Evocoders 🧬"</value>
     </data>
 </root>

@@ -22,7 +22,7 @@
         <value>Главная</value>
     </data>
     <data name="Menu_ItbeardShow" xml:space="preserve">
-        <value>АйТиБорода</value>
+        <value>Канал "АйТиБорода"</value>
     </data>
     <data name="Support" xml:space="preserve">
         <value>Поддержать</value>
@@ -31,24 +31,24 @@
         <value>На связи</value>
     </data>
     <data name="Menu_CiomnyLosShow" xml:space="preserve">
-        <value>Цёмны Лёс</value>
+        <value>Канал "Цёмны Лёс"</value>
     </data>
     <data name="Menu_VklWorld" xml:space="preserve">
-        <value>Сообщество "ВКЛ.world"</value>
+        <value>Сообщество "VKL.world"</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>Мои проекты</value>
     </data>
     <data name="Menu_Aia" xml:space="preserve">
-        <value> AIA Podcast</value>
+        <value>Подкаст "на Вайбе"</value>
     </data>
-    <data name="Menu_BeardNews" xml:space="preserve">
-        <value>Новости Бороды</value>
+    <data name="Menu_KalasyAI" xml:space="preserve">
+        <value>Подкаст "КПСШІ"</value>
     </data>
     <data name="Menu_BelarusAi" xml:space="preserve">
-        <value>Беларускі ШІ</value>
+        <value>Сообщество "Беларускі ШІ"</value>
     </data>
     <data name="Menu_EvoCode" xml:space="preserve">
-        <value>Эволюция Кода 🧬</value>
+        <value>Клуб "Эволюция Кода 🧬"</value>
     </data>
 </root>

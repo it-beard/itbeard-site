@@ -93,9 +93,9 @@ namespace Itbeard.Site.WebAssembly.Localizations.Shared {
             }
         }
         
-        internal static string Menu_BeardNews {
+        internal static string Menu_KalasyAI {
             get {
-                return ResourceManager.GetString("Menu_BeardNews", resourceCulture);
+                return ResourceManager.GetString("Menu_KalasyAI", resourceCulture);
             }
         }
         

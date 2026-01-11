@@ -6,15 +6,15 @@
 .ciomnylos-logo,
 .evocode-logo,
 .aia-logo,
-.belarusai-logo{
+.belarusai-logo,
+.kalasyai-logo{
     width: 220px;
     margin: 0 auto;
     border-radius: 20%;
     min-height: auto !important;
 }
 
-.vkl-logo,
-.solocast-logo{
+.vkl-logo{
     width: 250px;
     margin: 0 auto;
     min-height: auto !important;

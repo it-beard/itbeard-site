@@ -111,15 +111,15 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Projects_BeardNews {
+        internal static string Projects_KalasyAI {
             get {
-                return ResourceManager.GetString("Projects_BeardNews", resourceCulture);
+                return ResourceManager.GetString("Projects_KalasyAI", resourceCulture);
             }
         }
         
-        internal static string Projects_BeardNews_Description {
+        internal static string Projects_KalasyAI_Description {
             get {
-                return ResourceManager.GetString("Projects_BeardNews_Description", resourceCulture);
+                return ResourceManager.GetString("Projects_KalasyAI_Description", resourceCulture);
             }
         }
         

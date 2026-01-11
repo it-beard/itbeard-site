@@ -18,40 +18,40 @@
         <value>Hey!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>My name is &lt;b class="colored-text"&gt;Lex Kartynnik&lt;/b&gt;. I'm from Belarus, live in Poland, and have been working in IT since 2011.</value>
+        <value>My name is &lt;b class="colored-text"&gt;Lex Kartynnik&lt;/b&gt;, I'm from Belarus, live in Poland, and since 2011 I've been working in IT.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
-        <value>For ten years I focused on backend development on the .NET platform, and since 2023, within the &lt;a href="https://evocoders.ai" class="blue-text"&gt;“Code Evolution”&lt;/a&gt; club, I teach developers to code side-by-side with AI. You could say it's my main gig now. You can see my entire career path on &lt;a href="https://www.linkedin.com/in/akartynnik/" class="blue-text"&gt;LinkedIn&lt;/a&gt;.</value>
+        <value>For ten years I was deep into backend development on the .NET platform, and since 2023, within the &lt;a href="https://evocoders.ai" class="blue-text"&gt;“Code Evolution”&lt;/a&gt; club I teach developers to code in tandem with AI. You could say it's my main focus now. You can see my entire career path on &lt;a href="https://www.linkedin.com/in/akartynnik/" class="blue-text"&gt;LinkedIn&lt;/a&gt;.</value>
     </data>
     <data name="About_Paragraph_3" xml:space="preserve">
-        <value>I also create plenty of &lt;b class="colored-text"&gt;tech&lt;/b&gt;, &lt;b class="colored-text"&gt;science-adjacent&lt;/b&gt;, and other &lt;b class="colored-text"&gt;technical&lt;/b&gt; content on YouTube and as podcasts in Russian and Belarusian, build tech communities, and help grow the &lt;b class="colored-text"&gt;Belarusian-language&lt;/b&gt; info space.</value>
+        <value>I also create lots of &lt;b class="colored-text"&gt;tech&lt;/b&gt;, &lt;b class="colored-text"&gt;science-adjacent&lt;/b&gt;, and other &lt;b class="colored-text"&gt;technical&lt;/b&gt; content on YouTube and as podcasts in Russian and Belarusian, build tech communities, and help grow the &lt;b class="colored-text"&gt;Belarusian-language&lt;/b&gt; info space.</value>
     </data>
     <data name="About_Paragraph_4" xml:space="preserve">
-        <value>Here you'll find my main projects—maybe you'll like something 😊</value>
+        <value>On this site you'll learn about my main projects—maybe you'll like something 😊</value>
     </data>
     <data name="Projects_Aia" xml:space="preserve">
-        <value>AIA Podcasts</value>
+        <value>Na Vaibe</value>
     </data>
     <data name="Projects_Itbeard" xml:space="preserve">
-        <value>АйТиБорода</value>
+        <value>ITBeard</value>
     </data>
-    <data name="Projects_BeardNews" xml:space="preserve">
-        <value>Beard News</value>
+    <data name="Projects_KalasyAI" xml:space="preserve">
+        <value>КПСШІ</value>
     </data>
     <data name="Projects_BelarusAi" xml:space="preserve">
-        <value>Belarus AI</value>
+        <value>Belarusian AI</value>
     </data>
     <data name="Projects" xml:space="preserve">
         <value>My Projects</value>
     </data>
     <data name="Projects_BelarusAi_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Belarus AI»&lt;/b&gt; is a Belarusian-language community of professionals and amateurs of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, DS, ML, DL, GPT, NLP, OCR, CV, etc.</value>
+        <value>&lt;b class="colored-text"&gt;«Belarusian AI»&lt;/b&gt; is a Belarusian-language community of professionals and fans of artificial intelligence 😊 &lt;br&gt;&lt;br&gt; Conversations about AI, DS, ML, DL, GPT, NLP, OCR, CV, etc.</value>
     </data>
     <data name="Projects_Itbeard_Description" xml:space="preserve">
-        <value>The show &lt;b class="colored-text"&gt;«АйТиБорода»&lt;/b&gt; ("ITBeard") tells about the life of tech specialists from inside and in its episodes tells about programming languages, popular technologies, professions, famous representatives of the sphere and even science. &lt;br&gt;&lt;br&gt; Without any censorship, labels or extra pathos.</value>
+        <value>The show &lt;b class="colored-text"&gt;«ITBeard»&lt;/b&gt; is devoted to the life of IT folks from the inside and in its episodes tells about programming languages, popular technologies, professions, well-known figures, and even science. &lt;br&gt;&lt;br&gt;No censorship, labels, or extra pathos.</value>
     </data>
-    <data name="Projects_BeardNews_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Beard News»&lt;/b&gt; is a solocast where I talk about IT gossip, events in my life, new and old content, and upcoming plans.&lt;br&gt;&lt;br&gt;The podcast is released once a month and is available to my patrons and sponsors.</value>
+    <data name="Projects_KalasyAI_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«КПСШІ»&lt;/b&gt; is a Belarusian-language podcast where, together with Emiliya Haurus and Eugene Efimov, we discuss AI news in the world and in Belarus. &lt;br&gt;&lt;br&gt;The podcast is released every two weeks on all podcast platforms.</value>
     </data>
     <data name="Projects_CiomnyLos" xml:space="preserve">
         <value>Цёмны Лёс</value>
@@ -60,18 +60,18 @@
         <value>VKL.world</value>
     </data>
     <data name="Projects_Vkl_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«VKL.world»&lt;/b&gt; is the first exclusively Belarusian-language community on the Mastadon network. &lt;br&gt;&lt;br&gt; Mastadon is the distributed equivalent of Twitter, but without the dictatorship of Ilon Musk.</value>
+        <value>&lt;b class="colored-text"&gt;«VKL.world»&lt;/b&gt; is a Belarusian-language community on the Mastodon network. &lt;br&gt;&lt;br&gt;Mastodon is a distributed equivalent of Twitter, without ads, AI algorithms, or the dictatorship of Elon Musk.</value>
     </data>
     <data name="Projects_CiomnyLos_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; ("ciomny los") is a science-geek podcast in the Belarusian language. &lt;br&gt;&lt;br&gt;  From scientists to Tolkien and Warhammer lovers!</value>
+        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; is a Belarusian-language channel and podcast where I share my experience working with AI and talk with interesting Belarusians about what they do: from stand-up, computer games, and music to Warhammer, neural networks, and science.</value>
     </data>
     <data name="Projects_Aia_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«AIA»&lt;/b&gt; is a podcast where we discuss with Vitya Shelenchenko the latest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released with the support of &lt;b class="colored-text"&gt;Anywhere Club&lt;/b&gt; every two weeks.</value>
+        <value>&lt;b class="colored-text"&gt;«Na Vaibe»&lt;/b&gt; is a podcast where, together with Vitya Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence. &lt;br&gt;&lt;br&gt;The podcast is released every two weeks and exists thanks to listener support.</value>
     </data>
     <data name="Projects_EvoCode" xml:space="preserve">
         <value>Code Evolution 🧬</value>
     </data>
     <data name="Projects_EvoCode_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Code Evolution»&lt;/b&gt; is a private Telegram club for developers who enhance their skills through learning AI tools and practices. &lt;br&gt;&lt;br&gt; A unified space for diving into development paired with AI.</value>
+        <value>&lt;b class="colored-text"&gt;«Code Evolution»&lt;/b&gt; is a private Telegram club for developers who boost their skills through learning AI tools and practices. &lt;br&gt;&lt;br&gt;A single place to dive into building alongside AI.</value>
     </data>
 </root>

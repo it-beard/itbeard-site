@@ -49,25 +49,25 @@
         <value>Цёмны Лёс</value>
     </data>
     <data name="Projects_CiomnyLos_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; —  это научно-гиковский подкаст на беларуском языке: от ученых и до любителей Толкина и Warhammer!</value>
+        <value>&lt;b class="colored-text"&gt;«Цёмны Лёс»&lt;/b&gt; — это беларускоязычный канал и одноимённый подкаст, где я делюсь опытом работы с ИИ, а также разговариваю с интересными беларусами об их занятиях: от стендапа, компьютерных игр и музыки до вархамера, нейросетей и науки.</value>
     </data>
-    <data name="Projects_BeardNews" xml:space="preserve">
-        <value>Новости Бороды</value>
+    <data name="Projects_KalasyAI" xml:space="preserve">
+        <value>КПСШІ</value>
     </data>
-    <data name="Projects_BeardNews_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«Новости Бороды»&lt;/b&gt; — это солокаст, в котором я рассказываю про IT-сплетни, про события из своей жизни, про новый и старый контент и про ближайшие планы. &lt;br&gt;&lt;br&gt;Подкаст выходит раз в месяц и доступен моим патронам и спонсорам.</value>
+    <data name="Projects_KalasyAI_Description" xml:space="preserve">
+        <value>&lt;b class="colored-text"&gt;«Каласы пад сярпом ШІ»&lt;/b&gt; — это беларускоязычный подкаст, в котором мы вместе с Эмилией Гаврус и Евгением Ефимовым обсуждаем новости ИИ в мире и Беларуси. &lt;br&gt;&lt;br&gt;Подкаст выходит раз в две недели на всех подкасто-платформах.</value>
     </data>
     <data name="Projects_Aia" xml:space="preserve">
-        <value>AIA Podcasts</value>
+        <value>На Вайбе</value>
     </data>
     <data name="Projects_Aia_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«AIA»&lt;/b&gt; — это подкаст, в котором мы вместе с Витей Шеленченко обсуждаем самые свежие новости из мира нейросетей и искусственного интеллекта. &lt;br&gt;&lt;br&gt; Подкаст выходит при поддержке Anywhere Club раз в две недели.</value>
+        <value>&lt;b class="colored-text"&gt;«На Вайбе»&lt;/b&gt; — это подкаст, в котором мы вместе с Витей Шеленченко обсуждаем самые свежие новости из мира нейросетей и искусственного интеллекта. &lt;br&gt;&lt;br&gt; Подкаст выходит раз в две недели и существует благодаря поддержке слушателей.</value>
     </data>
     <data name="Projects_Vkl" xml:space="preserve">
-        <value>ВКЛ.world</value>
+        <value>VKL.world</value>
     </data>
     <data name="Projects_Vkl_Description" xml:space="preserve">
-        <value>&lt;b class="colored-text"&gt;«ВКЛ.world»&lt;/b&gt; — это первое исключительно беларускоязычное сообщество в сети Мастадон. &lt;br&gt;&lt;br&gt; В свою очередь Мастадон — это распределённый аналог Твиттера, но без диктатуры Илона Маска.</value>
+        <value>&lt;b class="colored-text"&gt;«VKL.world»&lt;/b&gt; — это беларускоязычное сообщество в сети Мастадон. &lt;br&gt;&lt;br&gt; Мастадон — это распределённый аналог Твиттера, без рекламы, ИИ-алгоритмов и диктатуру Илона Маска.</value>
     </data>
     <data name="Projects_BelarusAi" xml:space="preserve">
         <value>Беларускі ШІ</value>

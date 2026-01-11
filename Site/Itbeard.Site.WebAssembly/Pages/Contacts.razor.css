@@ -87,6 +87,14 @@
     color: #FF424D;
 }
 
+#socials .links.twitter span{
+    color: #1A8CD8;
+}
+
+#socials .links.mastodon span{
+    color: #5A49DE;
+}
+
 section.content {
     display: flex;
     flex-direction: column;

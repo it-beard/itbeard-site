@@ -31,7 +31,7 @@
         <value>Я в интернете</value>
     </data>
     <data name="Other_GitHub" xml:space="preserve">
-        <value>Мой GitHub</value>
+        <value>GitHub</value>
     </data>
     <data name="Ccontacts_Mastodon" xml:space="preserve">
         <value>Mastodon</value>
@@ -40,7 +40,7 @@
         <value>YouTube (персональный)</value>
     </data>
     <data name="Other_LinkedIn" xml:space="preserve">
-        <value>Мой LinkedIn</value>
+        <value>LinkedIn</value>
     </data>
     <data name="Ccontacts_Twitter" xml:space="preserve">
         <value>Twitter</value>

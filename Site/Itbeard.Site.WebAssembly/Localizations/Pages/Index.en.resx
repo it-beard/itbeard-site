@@ -18,16 +18,16 @@
         <value>Hey!</value>
     </data>
     <data name="About_Paragraph_1" xml:space="preserve">
-        <value>My name is  &lt;b class="colored-text"&gt;Lex Kartynnik &lt;/b&gt;, I am from Belarus, now I live in Poland and have been working in Tech since 2011.</value>
+        <value>My name is &lt;b class="colored-text"&gt;Lex Kartynnik&lt;/b&gt;. I'm from Belarus, live in Poland, and have been working in IT since 2011.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
-        <value>I worked as a Software Engineer for the 10 years (backend, C#, .NET, Azure), and since 2021, I've been developing global tech community at &lt;b class="colored-text"&gt;aw.club&lt;/b&gt;. Some people call it «Developer Relations».</value>
+        <value>For ten years I focused on backend development on the .NET platform, and since 2023, within the &lt;a href="https://evocoders.ai" class="blue-text"&gt;“Code Evolution”&lt;/a&gt; club, I teach developers to code side-by-side with AI. You could say it's my main gig now. You can see my entire career path on &lt;a href="https://www.linkedin.com/in/akartynnik/" class="blue-text"&gt;LinkedIn&lt;/a&gt;.</value>
     </data>
     <data name="About_Paragraph_3" xml:space="preserve">
-        <value>In parallel with my main job, I do a lot of tech, near-scientific and other technical content on YouTube under the pseudonym  &lt;b class="colored-text"&gt;Lex ITBeard &lt;/b&gt;.</value>
+        <value>I also create plenty of &lt;b class="colored-text"&gt;tech&lt;/b&gt;, &lt;b class="colored-text"&gt;science-adjacent&lt;/b&gt;, and other &lt;b class="colored-text"&gt;technical&lt;/b&gt; content on YouTube and as podcasts in Russian and Belarusian, build tech communities, and help grow the &lt;b class="colored-text"&gt;Belarusian-language&lt;/b&gt; info space.</value>
     </data>
     <data name="About_Paragraph_4" xml:space="preserve">
-        <value>On this web site you gonna to learn a little bit more about all my projects 😊</value>
+        <value>Here you'll find my main projects—maybe you'll like something 😊</value>
     </data>
     <data name="Projects_Aia" xml:space="preserve">
         <value>AIA Podcasts</value>

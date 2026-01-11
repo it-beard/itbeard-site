@@ -4,6 +4,14 @@ Built with .NET 8, Blazor WebAssembly with Server Side Rendering (SSR) on first 
 
 SSL Issuer Bot: https://github.com/shibayan/appservice-acmebot
 
+## Prerequisites
+
+If you haven't already trusted a local HTTPS dev certificate (macOS/Windows):
+```
+dotnet dev-certs https --trust
+```
+Approve the prompt if asked, then run the app.
+
 ## Run locally using .NET
 
 Run this project locally:

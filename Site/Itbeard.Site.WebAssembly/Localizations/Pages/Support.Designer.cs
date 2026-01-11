@@ -147,18 +147,6 @@ namespace Itbeard.Site.WebAssembly.Localizations.Pages {
             }
         }
         
-        internal static string Card_Paragraph_13 {
-            get {
-                return ResourceManager.GetString("Card_Paragraph_13", resourceCulture);
-            }
-        }
-        
-        internal static string Card_Paragraph_14 {
-            get {
-                return ResourceManager.GetString("Card_Paragraph_14", resourceCulture);
-            }
-        }
-        
         internal static string Card_Paragraph_15 {
             get {
                 return ResourceManager.GetString("Card_Paragraph_15", resourceCulture);

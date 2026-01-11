@@ -10,24 +10,17 @@
 <Title>@Loc[SupportRes.PageTitle] @SharedLoc[SharedRes.PageTitleAddition]</Title>
 
 <main class="wide-container">
-    <section id="patreon" class="presentation no-bg">
+
+    <section id="card" class="presentation no-bg">
         <section class="content right">
             <h1>
-                @Loc[SupportRes.Patreon_Title]
+                @((MarkupString)Loc[SupportRes.Card].Value)
             </h1>
             <p>
-                @Loc[SupportRes.Patreon_Paragraph_Part_1]
-                <a href="https://www.patreon.com/itbeard" target="_blank" class="blue-text">
-                    @Loc[SupportRes.Patreon_Paragraph_Part_2]
-                </a>@Loc[SupportRes.Patreon_Paragraph_Part_3]
-                <br/><br/>
-                @Loc[SupportRes.Patreon_Paragraph_Part_4]
-                <a href="/beard-news" class="blue-text">
-                    @Loc[SupportRes.Patreon_Paragraph_Part_4_1]
-                </a>@Loc[SupportRes.Patreon_Paragraph_Part_4_2]
-                <a href="https://itbeard.com/s/sponsors-discord" target="_blank" class="blue-text">
-                    @Loc[SupportRes.Patreon_Paragraph_Part_5]
-                </a>@Loc[SupportRes.Patreon_Paragraph_Part_5_1]
+                @((MarkupString)Loc[SupportRes.Card_Paragraph_11].Value)
+                <a href="https://t.me/tribute/app?startapp=dn4b" target="_blank" class="colored-text">
+                    @((MarkupString)Loc[SupportRes.Card_Paragraph_12].Value)
+                </a>@((MarkupString)Loc[SupportRes.Card_Paragraph_15].Value)
             </p>
         </section>
     </section>
@@ -81,21 +74,24 @@
         </section>
     </section>
 
-    <section id="card" class="presentation no-bg">
+    <section id="patreon" class="presentation no-bg">
         <section class="content right">
             <h1>
-                @((MarkupString)Loc[SupportRes.Card].Value)
+                @Loc[SupportRes.Patreon_Title]
             </h1>
             <p>
-                @((MarkupString)Loc[SupportRes.Card_Paragraph_11].Value)
-                <a href="https://revolut.me/itbeard" target="_blank" class="colored-text">
-                    @((MarkupString)Loc[SupportRes.Card_Paragraph_12].Value)
-                </a>
-                @((MarkupString)Loc[SupportRes.Card_Paragraph_13].Value)
-                <a href="https://www.paypal.com/paypalme/itbeard" target="_blank" class="colored-text">
-                    @((MarkupString)Loc[SupportRes.Card_Paragraph_14].Value)
-                </a>
-                @((MarkupString)Loc[SupportRes.Card_Paragraph_15].Value)
+                @Loc[SupportRes.Patreon_Paragraph_Part_1]
+                <a href="https://www.patreon.com/itbeard" target="_blank" class="blue-text">
+                    @Loc[SupportRes.Patreon_Paragraph_Part_2]
+                </a>@Loc[SupportRes.Patreon_Paragraph_Part_3]
+                <br/><br/>
+                @Loc[SupportRes.Patreon_Paragraph_Part_4]
+                <a href="/beard-news" class="blue-text">
+                    @Loc[SupportRes.Patreon_Paragraph_Part_4_1]
+                </a>@Loc[SupportRes.Patreon_Paragraph_Part_4_2]
+                <a href="https://itbeard.com/s/sponsors-discord" target="_blank" class="blue-text">
+                    @Loc[SupportRes.Patreon_Paragraph_Part_5]
+                </a>@((MarkupString)Loc[SupportRes.Patreon_Paragraph_Part_5_1].Value)
             </p>
         </section>
     </section>

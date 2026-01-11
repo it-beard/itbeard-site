@@ -18,7 +18,7 @@
         <value>Patreon</value>
     </data>
     <data name="Crypto_Paragraph" xml:space="preserve">
-        <value>There is an opportunity for crypto-enthusiasts to support Lex's projects via cryptocurrencies. Your support directly affects the development of the «ITBeard» show and the «Dark Destiny» videocast, so thank you very much!</value>
+        <value>There is an opportunity for crypto-enthusiasts to support me directly via cryptocurrencies, thank you very much!</value>
     </data>
     <data name="Crypto_Title" xml:space="preserve">
         <value>Support with cryptocurrencies</value>
@@ -35,20 +35,14 @@
     <data name="Patreon_Title" xml:space="preserve">
         <value>Support via Patreon</value>
     </data>
-    <data name="Card_Paragraph_14" xml:space="preserve">
-        <value>PayPal</value>
-    </data>
     <data name="Card_Paragraph_12" xml:space="preserve">
-        <value>Revolut</value>
-    </data>
-    <data name="Card_Paragraph_13" xml:space="preserve">
-        <value>and</value>
+        <value>the official Tribute Telegram bot</value>
     </data>
     <data name="Card_Paragraph_11" xml:space="preserve">
-        <value>With</value>
+        <value>You can support me with a donation from any card &lt;i&gt;(and even crypto)&lt;/i&gt; via</value>
     </data>
     <data name="Card" xml:space="preserve">
-        <value>Revolut и PayPal</value>
+        <value>By card</value>
     </data>
     <data name="Merch" xml:space="preserve">
         <value>Branded merch</value>
@@ -69,10 +63,10 @@
         <value>. Thank you very much, your help will make a huge contribution to what I do!</value>
     </data>
     <data name="Card_Paragraph_15" xml:space="preserve">
-        <value>you can support me with a bank card transfer. Each such transfer adds +100 to my motivation to make new content!</value>
+        <value>. Each such donation adds +100 to my motivation to keep working, thank you!</value>
     </data>
     <data name="Patreon_Paragraph_Part_5_1" xml:space="preserve">
-        <value>.</value>
+        <value> &lt;i&gt;(although lately the patron content comes out rarely, and I'm probably even less active on Discord...)&lt;/i&gt;.</value>
     </data>
     <data name="Patreon_Paragraph_Part_4_1" xml:space="preserve">
         <value>«Beard News»</value>

@@ -12,7 +12,7 @@
         <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
     </resheader>
     <data name="PageTitle" xml:space="preserve">
-        <value>Lex ITBeard website</value>
+        <value>Lex Kartynnik website</value>
     </data>
     <data name="About" xml:space="preserve">
         <value>Hey!</value>
@@ -21,7 +21,7 @@
         <value>My name is &lt;b class="colored-text"&gt;Lex Kartynnik&lt;/b&gt;, I'm from Belarus, live in Poland, and since 2011 I've been working in IT.</value>
     </data>
     <data name="About_Paragraph_2" xml:space="preserve">
-        <value>For ten years I was deep into backend development on the .NET platform, and since 2023, within the &lt;a href="https://evocoders.ai" class="blue-text"&gt;“Code Evolution”&lt;/a&gt; club I teach developers to code in tandem with AI. You could say it's my main focus now. You can see my entire career path on &lt;a href="https://www.linkedin.com/in/akartynnik/" class="blue-text"&gt;LinkedIn&lt;/a&gt;.</value>
+        <value>For ten years I was deep into backend development on the .NET platform, and since 2023, within the &lt;a href="https://evocoders.ai" class="blue-text"&gt;“Code Evolution”&lt;/a&gt; club I teach developers to code in tandem with AI. You can see my entire career path on &lt;a href="https://www.linkedin.com/in/akartynnik/" class="blue-text"&gt;LinkedIn&lt;/a&gt;.</value>
     </data>
     <data name="About_Paragraph_3" xml:space="preserve">
         <value>I also create lots of &lt;b class="colored-text"&gt;tech&lt;/b&gt;, &lt;b class="colored-text"&gt;science-adjacent&lt;/b&gt;, and other &lt;b class="colored-text"&gt;technical&lt;/b&gt; content on YouTube and as podcasts in Russian and Belarusian, build tech communities, and help grow the &lt;b class="colored-text"&gt;Belarusian-language&lt;/b&gt; info space.</value>

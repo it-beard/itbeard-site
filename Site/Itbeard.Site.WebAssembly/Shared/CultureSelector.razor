@@ -8,8 +8,8 @@
     <label>
         @((MarkupString)Loc[IndexLoc.SelectSiteLanguage].Value)
         <select @bind="Culture">
-            <option value="@(new CultureInfo("ru"))">Русский</option>
             <option value="@(new CultureInfo("be"))">Беларуская</option>
+            <option value="@(new CultureInfo("ru"))">Русский</option>
             <option value="@(new CultureInfo("en"))">English</option>
         </select>
     </label>

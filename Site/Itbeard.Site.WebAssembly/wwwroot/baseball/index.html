@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Baseball explained visually | English · नेपाली · Беларуская</title>
+  <meta name="description" content="A trilingual animated beginner explanation of baseball in English, Nepali, and Belarusian." />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07111f;
+      --panel: rgba(15, 23, 42, 0.86);
+      --panel-2: rgba(2, 6, 23, 0.42);
+      --line: rgba(255, 255, 255, 0.14);
+      --text: #f8fafc;
+      --muted: #b6c2d2;
+      --field: #14532d;
+      --field-2: #166534;
+      --dirt: #b7791f;
+      --accent: #fbbf24;
+      --blue: #38bdf8;
+      --red: #fb7185;
+      --green: #86efac;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.38);
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(56, 189, 248, .20), transparent 28%),
+        radial-gradient(circle at 85% 6%, rgba(251, 191, 36, .20), transparent 26%),
+        linear-gradient(135deg, #020617 0%, var(--bg) 52%, #111827 100%);
+      color: var(--text);
+      padding: 22px;
+    }
+
+    .shell {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 20px;
+      align-items: end;
+      margin: 18px 0 20px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      color: #fde68a;
+      background: rgba(251, 191, 36, .13);
+      border: 1px solid rgba(251, 191, 36, .3);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(34px, 6vw, 72px);
+      line-height: .92;
+      letter-spacing: -0.07em;
+    }
+
+    .lead {
+      margin: 14px 0 0;
+      max-width: 790px;
+      color: var(--muted);
+      font-size: clamp(16px, 2vw, 19px);
+      line-height: 1.55;
+    }
+
+    .hero-note {
+      color: #dbeafe;
+      background: rgba(56, 189, 248, .10);
+      border: 1px solid rgba(56, 189, 248, .24);
+      padding: 14px 16px;
+      border-radius: 18px;
+      width: min(320px, 100%);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.16fr) minmax(320px, .84fr);
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .field-panel { padding: 16px; }
+
+    .field {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / .82;
+      min-height: 420px;
+      border-radius: 24px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 60%, var(--field-2) 0 18%, var(--field) 56%, #052e16 100%);
+      border: 1px solid rgba(255, 255, 255, .10);
+    }
+
+    svg { width: 100%; height: 100%; display: block; }
+
+    .diamond-dirt {
+      fill: rgba(183, 121, 31, .92);
+      stroke: rgba(255, 255, 255, .75);
+      stroke-width: 2.5;
+    }
+
+    .mound { fill: rgba(154, 107, 34, .95); }
+    .base { fill: #ffffff; stroke: rgba(2, 6, 23, .35); stroke-width: 2; }
+    .foul { stroke: rgba(255, 255, 255, .55); stroke-width: 2; stroke-dasharray: 8 8; }
+
+    .field-label {
+      font-size: 14px;
+      fill: white;
+      font-weight: 900;
+      text-anchor: middle;
+      paint-order: stroke;
+      stroke: rgba(2, 6, 23, .82);
+      stroke-width: 5px;
+      stroke-linejoin: round;
+    }
+
+    .tiny-label {
+      font-size: 11px;
+      fill: rgba(255,255,255,.78);
+      font-weight: 700;
+      text-anchor: middle;
+    }
+
+    .person, .ball, .bat, .throw-line {
+      position: absolute;
+      z-index: 4;
+    }
+
+    .person {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      font-size: 15px;
+      font-weight: 950;
+      color: #06111f;
+      border: 3px solid rgba(255, 255, 255, .9);
+      box-shadow: 0 12px 26px rgba(0, 0, 0, .34);
+      transform: translate(-50%, -50%);
+      transition: left .75s cubic-bezier(.2,.8,.2,1), top .75s cubic-bezier(.2,.8,.2,1), scale .24s ease, opacity .24s ease;
+    }
+
+    .batter { background: #fb923c; }
+    .runner { background: var(--accent); }
+    .fielder { background: var(--blue); }
+    .inactive { opacity: .18; scale: .86; }
+    .pulse { animation: pulse .8s ease-in-out infinite alternate; }
+
+    .ball {
+      width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #fff;
+      border: 2px solid #ef4444;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, .32);
+      transform: translate(-50%, -50%);
+      transition: left .7s cubic-bezier(.2,.8,.2,1), top .7s cubic-bezier(.2,.8,.2,1), opacity .25s ease, scale .25s ease;
+    }
+
+    .bat {
+      width: 60px;
+      height: 9px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #fef3c7, #f59e0b);
+      transform-origin: 88% 50%;
+      transform: translate(-50%, -50%) rotate(-28deg);
+      transition: transform .25s ease, opacity .25s ease;
+      z-index: 3;
+    }
+
+    .bat.swing { transform: translate(-50%, -50%) rotate(-124deg); }
+
+    .throw-line {
+      height: 3px;
+      width: 0;
+      transform-origin: left center;
+      background: repeating-linear-gradient(90deg, rgba(255,255,255,.9) 0 8px, transparent 8px 15px);
+      opacity: 0;
+      transition: opacity .25s ease, width .55s ease;
+    }
+
+    .throw-line.show { opacity: .95; }
+
+    .caption-stack {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      display: grid;
+      gap: 8px;
+      z-index: 8;
+    }
+
+    .caption {
+      background: rgba(2, 6, 23, .74);
+      border: 1px solid rgba(255,255,255,.14);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 11px 13px;
+      color: #f8fafc;
+      font-size: 14px;
+      line-height: 1.32;
+    }
+
+    .caption strong { color: #fde68a; }
+
+    .scoreboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .score {
+      background: var(--panel-2);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .score b {
+      display: block;
+      font-size: 31px;
+      line-height: 1;
+      letter-spacing: -.04em;
+    }
+
+    .score span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .10em;
+      font-weight: 900;
+    }
+
+    .side-panel {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    button {
+      appearance: none;
+      border: 0;
+      border-radius: 15px;
+      padding: 12px 14px;
+      font: inherit;
+      color: #07111f;
+      background: #f8fafc;
+      font-weight: 950;
+      cursor: pointer;
+      transition: transform .16s ease, filter .16s ease;
+    }
+
+    button:hover { transform: translateY(-1px); filter: brightness(1.04); }
+    button:active { transform: translateY(1px); }
+    .primary { background: var(--accent); }
+    .ghost { background: transparent; color: var(--text); border: 1px solid rgba(255,255,255,.18); }
+
+    .step-card {
+      background: var(--panel-2);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 22px;
+      padding: 17px;
+    }
+
+    .step-kicker {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      padding: 7px 10px;
+      border-radius: 999px;
+      color: #bbf7d0;
+      background: rgba(134, 239, 172, .11);
+      border: 1px solid rgba(134, 239, 172, .28);
+      font-weight: 900;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 27px;
+      letter-spacing: -.04em;
+    }
+
+    .step-text {
+      color: #dbe3ee;
+      line-height: 1.55;
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .languages {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .lang-card {
+      background: rgba(2, 6, 23, .44);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 22px;
+      padding: 17px;
+    }
+
+    .lang-card h3 {
+      margin: 0 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 18px;
+    }
+
+    .tag {
+      color: #93c5fd;
+      background: rgba(59, 130, 246, .13);
+      border: 1px solid rgba(147, 197, 253, .22);
+      border-radius: 999px;
+      padding: 5px 8px;
+      font-size: 11px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    ol {
+      margin: 0;
+      padding-left: 20px;
+      color: #d7e0ec;
+      line-height: 1.55;
+    }
+
+    li + li { margin-top: 8px; }
+
+    .dictionary {
+      margin-top: 16px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 10px;
+    }
+
+    .term {
+      padding: 12px;
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      background: rgba(15, 23, 42, .64);
+      min-height: 100%;
+    }
+
+    .term b {
+      display: block;
+      color: #fde68a;
+      margin-bottom: 7px;
+    }
+
+    .term span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.38;
+    }
+
+    footer {
+      margin: 18px 0 8px;
+      color: rgba(226, 232, 240, .72);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @keyframes pulse {
+      from { scale: 1; }
+      to { scale: 1.14; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+    }
+
+    @media (max-width: 980px) {
+      header, .layout { grid-template-columns: 1fr; }
+      .hero-note { width: 100%; }
+      .languages { grid-template-columns: 1fr; }
+      .dictionary { grid-template-columns: repeat(2, 1fr); }
+      .field { min-height: 390px; }
+    }
+
+    @media (max-width: 560px) {
+      body { padding: 12px; }
+      h1 { font-size: 40px; }
+      .field-panel, .side-panel { padding: 12px; }
+      .field { aspect-ratio: .78 / 1; min-height: 540px; }
+      .scoreboard { grid-template-columns: repeat(2, 1fr); }
+      .dictionary { grid-template-columns: 1fr; }
+      .caption { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <div class="eyebrow">⚾ Baseball for total beginners</div>
+        <h1>Hit. Run. Don’t get out.</h1>
+        <p class="lead">A tiny animated baseball lesson in three languages at once: English, Nepali, and Belarusian. No sports background required.</p>
+      </div>
+      <div class="hero-note">Press <strong>Play</strong> or <strong>Next step</strong>. Watch the yellow runner, the white ball, and the scoreboard.</div>
+    </header>
+
+    <section class="layout" aria-label="Animated baseball lesson">
+      <div class="panel field-panel">
+        <div class="field" id="field">
+          <svg viewBox="0 0 700 600" role="img" aria-label="Baseball diamond with home plate, first base, second base, and third base">
+            <line class="foul" x1="350" y1="500" x2="90" y2="130" />
+            <line class="foul" x1="350" y1="500" x2="610" y2="130" />
+            <polygon class="diamond-dirt" points="350,500 520,330 350,160 180,330" />
+            <circle class="mound" cx="350" cy="360" r="54" />
+            <circle class="base" cx="350" cy="360" r="14" />
+            <rect class="base" x="338" y="488" width="24" height="24" transform="rotate(45 350 500)" />
+            <rect class="base" x="508" y="318" width="24" height="24" transform="rotate(45 520 330)" />
+            <rect class="base" x="338" y="148" width="24" height="24" transform="rotate(45 350 160)" />
+            <rect class="base" x="168" y="318" width="24" height="24" transform="rotate(45 180 330)" />
+            <text class="field-label" x="350" y="545">Home</text>
+            <text class="field-label" x="560" y="335">1st</text>
+            <text class="field-label" x="350" y="125">2nd</text>
+            <text class="field-label" x="140" y="335">3rd</text>
+            <text class="tiny-label" x="350" y="392">Pitcher</text>
+          </svg>
+
+          <div class="throw-line" id="throwLine" aria-hidden="true"></div>
+          <div class="bat" id="bat" aria-hidden="true"></div>
+          <div class="ball" id="ball" aria-hidden="true"></div>
+          <div class="person batter" id="batter" title="Batter">B</div>
+          <div class="person runner" id="runner" title="Runner">R</div>
+          <div class="person fielder" id="fielder" title="Fielder">F</div>
+
+          <div class="caption-stack" aria-live="polite">
+            <div class="caption" id="capEn"><strong>English:</strong> The batter starts at home plate and waits for the pitch.</div>
+            <div class="caption" id="capNe"><strong>नेपाली:</strong> ब्याटर होम प्लेटमा उभिन्छ र पिचको प्रतीक्षा गर्छ।</div>
+            <div class="caption" id="capBe"><strong>Беларуская:</strong> Адбівальнік стаіць каля дома і чакае падачы.</div>
+          </div>
+        </div>
+
+        <div class="scoreboard" aria-label="Scoreboard">
+          <div class="score"><b id="runs">0</b><span>Runs</span></div>
+          <div class="score"><b id="outs">0</b><span>Outs</span></div>
+          <div class="score"><b id="inning">1</b><span>Inning</span></div>
+          <div class="score"><b id="side">Top</b><span>Half</span></div>
+        </div>
+      </div>
+
+      <aside class="panel side-panel">
+        <div class="controls" aria-label="Animation controls">
+          <button class="primary" id="playBtn" type="button">▶ Play</button>
+          <button id="nextBtn" type="button">Next step</button>
+          <button class="ghost" id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div class="step-card">
+          <div class="step-kicker" id="stepKicker">Step 1 of 9</div>
+          <h2 id="stepTitle">Pitch</h2>
+          <p class="step-text" id="stepText">One player throws the ball. The batter tries to hit it.</p>
+        </div>
+
+        <div class="step-card">
+          <div class="step-kicker">The whole game in one sentence</div>
+          <p class="step-text"><strong>Baseball is a race:</strong> the offense tries to run around the four bases and score; the defense tries to stop them by making three outs.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="languages" aria-label="Three-language explanation">
+      <article class="lang-card">
+        <h3>English <span class="tag">EN</span></h3>
+        <ol>
+          <li>One team bats and tries to hit the ball.</li>
+          <li>After a hit, the runner goes around the bases: first, second, third, then home.</li>
+          <li>The fielding team tries to make three outs; after nine innings, the team with more runs wins.</li>
+        </ol>
+      </article>
+
+      <article class="lang-card" lang="ne">
+        <h3>नेपाली <span class="tag">NE</span></h3>
+        <ol>
+          <li>एउटा टोलीले ब्याटिङ गर्छ र बल हान्ने प्रयास गर्छ।</li>
+          <li>बल हानेपछि धावक पहिलो, दोस्रो, तेस्रो हुँदै होम प्लेटसम्म दौडन्छ।</li>
+          <li>फिल्डिङ टोलीले तीन आउट बनाउन खोज्छ; नौ इनिङपछि धेरै रन बनाउने टोली जित्छ।</li>
+        </ol>
+      </article>
+
+      <article class="lang-card" lang="be">
+        <h3>Беларуская <span class="tag">BE</span></h3>
+        <ol>
+          <li>Адна каманда адбівае мяч і спрабуе яго добра ўдарыць.</li>
+          <li>Пасля ўдару гулец бяжыць па базах: першая, другая, трэцяя і дом.</li>
+          <li>Каманда ў полі спрабуе зрабіць тры аўты; пасля дзевяці інінгаў перамагае каманда з большай колькасцю ранаў.</li>
+        </ol>
+      </article>
+    </section>
+
+    <section class="dictionary" aria-label="Mini dictionary">
+      <div class="term"><b>Batter</b><span>EN: hitter<br>NE: ब्याटर<br>BE: адбівальнік</span></div>
+      <div class="term"><b>Runner</b><span>EN: player running bases<br>NE: धावक<br>BE: бягун</span></div>
+      <div class="term"><b>Fielder</b><span>EN: defense player<br>NE: फिल्डर<br>BE: гулец у полі</span></div>
+      <div class="term"><b>Out</b><span>EN: defense stops a batter/runner<br>NE: आउट<br>BE: аўт</span></div>
+      <div class="term"><b>Run</b><span>EN: baseball point<br>NE: रन<br>BE: ран / ачко</span></div>
+    </section>
+
+    <footer>Made as a simple self-contained HTML/CSS/JavaScript explainer.</footer>
+  </div>
+
+  <script>
+    const pos = {
+      home: [50, 84], first: [74.3, 55], second: [50, 27], third: [25.7, 55],
+      pitcher: [50, 60], outfield: [55, 17], leftfield: [28, 21], rightfield: [74, 23], dugout: [11, 88]
+    };
+
+    const steps = [
+      {
+        title: 'Pitch', score: [0,0,1,'Top'], runner: 'home', ball: 'pitcher', fielder: 'outfield', batter: 'home', bat: false, pulse: 'batter', throw: null,
+        en: 'The batter starts at home plate and waits for the pitch.',
+        ne: 'ब्याटर होम प्लेटमा उभिन्छ र पिचको प्रतीक्षा गर्छ।',
+        be: 'Адбівальнік стаіць каля дома і чакае падачы.',
+        text: 'One player throws the ball. The batter tries to hit it.'
+      },
+      {
+        title: 'Swing', score: [0,0,1,'Top'], runner: 'home', ball: 'home', fielder: 'outfield', batter: 'home', bat: true, pulse: 'ball', throw: null,
+        en: 'If the batter hits the pitch, the ball goes into the field.',
+        ne: 'यदि ब्याटरले बल हान्यो भने बल मैदानतिर जान्छ।',
+        be: 'Калі адбівальнік трапляе па мячы, мяч ляціць у поле.',
+        text: 'A hit gives the batter a chance to run.'
+      },
+      {
+        title: 'Run to first', score: [0,0,1,'Top'], runner: 'first', ball: 'rightfield', fielder: 'rightfield', batter: 'dugout', bat: false, pulse: 'runner', throw: null,
+        en: 'The batter becomes a runner and sprints to first base.',
+        ne: 'ब्याटर अब धावक हुन्छ र पहिलो बेसतर्फ दौडन्छ।',
+        be: 'Адбівальнік становіцца бягуном і бяжыць на першую базу.',
+        text: 'The runner is safe if they reach the base before the ball gets there.'
+      },
+      {
+        title: 'Defense throws', score: [0,0,1,'Top'], runner: 'first', ball: 'first', fielder: 'rightfield', batter: 'dugout', bat: false, pulse: 'fielder', throw: ['rightfield','first'],
+        en: 'The defense throws the ball to a base to try to get the runner out.',
+        ne: 'डिफेन्सले धावकलाई आउट गर्न बल बेसतर्फ फ्याँक्छ।',
+        be: 'Абарона кідае мяч на базу, каб зрабіць бягуна аўтам.',
+        text: 'Defense is mostly about getting the ball somewhere before the runner arrives.'
+      },
+      {
+        title: 'Safe', score: [0,0,1,'Top'], runner: 'first', ball: 'first', fielder: 'first', batter: 'dugout', bat: false, pulse: 'runner', throw: null,
+        en: 'Here the runner reached first base in time, so they are safe.',
+        ne: 'यहाँ धावक समयमै पहिलो बेसमा पुग्यो, त्यसैले ऊ सेफ छ।',
+        be: 'Тут бягун паспеў на першую базу, таму ён у бяспецы.',
+        text: 'Safe means: stay on the base and keep playing.'
+      },
+      {
+        title: 'Score a run', score: [1,0,1,'Top'], runner: 'home', ball: 'leftfield', fielder: 'leftfield', batter: 'dugout', bat: false, pulse: 'runner', throw: null,
+        en: 'When a runner goes all the way around and returns home, the team scores one run.',
+        ne: 'धावक सबै बेस घुमेर होममा फर्कियो भने टोलीले एक रन पाउँछ।',
+        be: 'Калі бягун абыходзіць усе базы і вяртаецца дадому, каманда атрымлівае адзін ран.',
+        text: 'A run is baseball’s point.'
+      },
+      {
+        title: 'Out', score: [1,1,1,'Top'], runner: 'dugout', ball: 'outfield', fielder: 'outfield', batter: 'home', bat: false, pulse: 'fielder', throw: null,
+        en: 'An out happens when the defense catches the ball or beats the runner to a base.',
+        ne: 'डिफेन्सले बल समात्यो वा धावकभन्दा पहिले बेसमा पुर्‍यायो भने आउट हुन्छ।',
+        be: 'Аўт бывае, калі абарона ловіць мяч або паспявае на базу раней за бягуна.',
+        text: 'Outs are how the defense ends the other team’s turn.'
+      },
+      {
+        title: 'Three outs', score: [1,3,1,'Top'], runner: 'dugout', ball: 'pitcher', fielder: 'outfield', batter: 'home', bat: false, pulse: 'score', throw: null,
+        en: 'After three outs, the teams switch roles: batters go to the field, fielders go bat.',
+        ne: 'तीन आउटपछि टोलीहरूले भूमिका बदल्छन्: ब्याटिङ गर्ने टोली फिल्डिङमा जान्छ।',
+        be: 'Пасля трох аўтаў каманды мяняюцца ролямі: напад ідзе ў поле.',
+        text: 'Three outs end a half-inning.'
+      },
+      {
+        title: 'Next inning', score: [1,0,2,'Top'], runner: 'home', ball: 'pitcher', fielder: 'outfield', batter: 'home', bat: false, pulse: 'batter', throw: null,
+        en: 'After nine innings, the team with more runs wins.',
+        ne: 'नौ इनिङपछि धेरै रन भएको टोली विजेता हुन्छ।',
+        be: 'Пасля дзевяці інінгаў перамагае каманда з большай колькасцю ранаў.',
+        text: 'An inning is a round. A normal game has nine innings.'
+      }
+    ];
+
+    const el = id => document.getElementById(id);
+    const runner = el('runner');
+    const batter = el('batter');
+    const fielder = el('fielder');
+    const ball = el('ball');
+    const bat = el('bat');
+    const throwLine = el('throwLine');
+    const playBtn = el('playBtn');
+    let i = 0;
+    let timer = null;
+    let playing = false;
+
+    function place(node, name) {
+      const [x, y] = pos[name];
+      node.style.left = x + '%';
+      node.style.top = y + '%';
+    }
+
+    function setThrow(from, to) {
+      throwLine.classList.remove('show');
+      if (!from || !to) return;
+      const [x1, y1] = pos[from];
+      const [x2, y2] = pos[to];
+      const dx = x2 - x1;
+      const dy = y2 - y1;
+      const width = Math.sqrt(dx * dx + dy * dy);
+      const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+      throwLine.style.left = x1 + '%';
+      throwLine.style.top = y1 + '%';
+      throwLine.style.width = width + '%';
+      throwLine.style.transform = 'rotate(' + angle + 'deg)';
+      requestAnimationFrame(() => throwLine.classList.add('show'));
+    }
+
+    function render() {
+      const s = steps[i];
+      place(runner, s.runner);
+      place(batter, s.batter);
+      place(fielder, s.fielder);
+      place(ball, s.ball);
+      place(bat, 'home');
+
+      bat.classList.toggle('swing', s.bat);
+      runner.classList.toggle('inactive', s.runner === 'dugout');
+      batter.classList.toggle('inactive', s.batter === 'dugout');
+      ball.style.scale = s.ball === 'outfield' || s.ball === 'leftfield' || s.ball === 'rightfield' ? '0.9' : '1';
+
+      [runner, batter, fielder, ball].forEach(n => n.classList.remove('pulse'));
+      if (s.pulse === 'runner') runner.classList.add('pulse');
+      if (s.pulse === 'batter') batter.classList.add('pulse');
+      if (s.pulse === 'fielder') fielder.classList.add('pulse');
+      if (s.pulse === 'ball') ball.classList.add('pulse');
+
+      if (s.throw) setThrow(s.throw[0], s.throw[1]); else setThrow(null, null);
+
+      el('runs').textContent = s.score[0];
+      el('outs').textContent = s.score[1];
+      el('inning').textContent = s.score[2];
+      el('side').textContent = s.score[3];
+      el('stepKicker').textContent = 'Step ' + (i + 1) + ' of ' + steps.length;
+      el('stepTitle').textContent = s.title;
+      el('stepText').textContent = s.text;
+      el('capEn').innerHTML = '<strong>English:</strong> ' + s.en;
+      el('capNe').innerHTML = '<strong>नेपाली:</strong> ' + s.ne;
+      el('capBe').innerHTML = '<strong>Беларуская:</strong> ' + s.be;
+    }
+
+    function next() {
+      i = (i + 1) % steps.length;
+      render();
+    }
+
+    function stop() {
+      playing = false;
+      playBtn.textContent = '▶ Play';
+      clearInterval(timer);
+      timer = null;
+    }
+
+    function play() {
+      if (playing) { stop(); return; }
+      playing = true;
+      playBtn.textContent = '⏸ Pause';
+      timer = setInterval(next, 2300);
+    }
+
+    el('nextBtn').addEventListener('click', () => { stop(); next(); });
+    el('resetBtn').addEventListener('click', () => { stop(); i = 0; render(); });
+    playBtn.addEventListener('click', play);
+
+    render();
+  </script>
+</body>
+</html>

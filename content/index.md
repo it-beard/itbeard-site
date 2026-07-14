@@ -3,13 +3,13 @@ title:
   be: Сайт Лёхі Картынніка
   en: Lex Kartynnik website
 hero:
-  greeting: { be: Ку! 👋, en: Hey! 👋 }
   name: { be: Лёха Картыннік, en: Lex Kartynnik }
   tagline:
-    be: Распрацоўнік, аўтар падкастаў і відэа, будаўнік тэхнічных суполак. У IT з 2011 года.
-    en: Developer, podcast and video creator, builder of tech communities. In IT since 2011.
-  ctaSupport: { be: Падтрымаць мяне, en: Support me }
-  ctaExperience: { be: Мой досьвед, en: My experience }
+    be: Распрацоўшчык, адукатар, аўтар падкастаў і відэа, стваральнік суполак, ШІ-амбасадор і проста клёвы хлопец.
+    en: Developer, educator, author of podcasts and videos, community builder, AI ambassador, and just a cool guy.
+  fact:
+    be: У IT з 2011 года. Барада — сапраўдная 🧔
+    en: In IT since 2011. The beard is real 🧔
 ---
 
 <!-- be -->
@@ -24,7 +24,7 @@ hero:
 
 На гэтым сайце вы даведаецеся пра мае асноўныя праекты, можа нешта дый спадабаецца 😊
 
-# Мае праекты {#projects}
+# Мае бягучыя праекты {#projects}
 
 ## КПСШІ {#kalasyai}
 
@@ -66,6 +66,12 @@ Mastodon — размеркаваны аналаг Twitter, без рэклам�
 
 Размовы пра AI, LLM, стварэнне ШІ-кантэнту, распрацоўку з ШІ і іншае.
 
+## Setivir {#setivir}
+
+**«Setivir»** — гэта «Музыка Тутэйшых»: беларускамоўныя песні, якія я ствараю ў пары з ШІ — ад калядак да «Уладара Пярсьцёнкаў».
+
+Да кожнага трэка — гісторыя стварэння і заўвагі да тэксту.
+
 <!-- en -->
 
 # About me {#about}
@@ -78,7 +84,7 @@ I also create lots of **tech**, **science-adjacent**, and other **technical** co
 
 On this site you'll learn about my main projects—maybe you'll like something 😊
 
-# My Projects {#projects}
+# My Current Projects {#projects}
 
 ## КПСШІ {#kalasyai}
 
@@ -119,3 +125,9 @@ The podcast is released every two weeks and exists thanks to listener support.
 **«Belarusian AI»** is a Belarusian-language community of professionals and fans of artificial intelligence 😊
 
 Conversations about AI, LLM, creating AI content, building with AI, and much more.
+
+## Setivir {#setivir}
+
+**«Setivir»** — “Songs of the Tutejšyja”: Belarusian-language songs I create in tandem with AI — from Christmas carols to The Lord of the Rings.
+
+Each track comes with its backstory and notes on the lyrics.

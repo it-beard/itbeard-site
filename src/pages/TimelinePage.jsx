@@ -4,9 +4,9 @@ import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import { TIMELINE_ICONS } from '../data/site'
 
-export default function Experience() {
+export default function TimelinePage({ name }) {
   const { lang } = useLang()
-  const page = getPage('experience', lang)
+  const page = getPage(name, lang)
   useTitle(page.title)
 
   return (

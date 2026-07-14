@@ -213,64 +213,6 @@ img {
   color: var(--blue);
 }
 
-/* Projects dropdown */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-btn .chevron {
-  display: inline-block;
-  font-size: 12px;
-  transition: transform 0.2s;
-}
-
-.dropdown.open .dropdown-btn .chevron {
-  transform: rotate(180deg);
-}
-
-.submenu {
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  min-width: 280px;
-  margin: 0;
-  padding: 8px;
-  list-style: none;
-  background: var(--bg-deep);
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
-  display: none;
-}
-
-.dropdown.open .submenu {
-  display: block;
-}
-
-.submenu a {
-  display: block;
-  padding: 9px 12px;
-  border-radius: 8px;
-  color: var(--text);
-  font-size: 15px;
-}
-
-.submenu a:hover {
-  background: rgba(15, 167, 250, 0.1);
-  color: var(--blue);
-  text-shadow: none;
-}
-
-.submenu a.active {
-  color: var(--blue);
-}
-
-.submenu .divider {
-  height: 1px;
-  margin: 6px 4px;
-  background: var(--line);
-}
-
 /* Language toggle */
 .lang-toggle {
   display: flex;
@@ -338,8 +280,10 @@ img {
 }
 
 .hero-greeting {
-  font-size: 20px;
+  font-size: 17px;
+  font-style: italic;
   color: var(--muted);
+  max-width: 560px;
 }
 
 .hero h1 {
@@ -354,44 +298,18 @@ img {
   max-width: 560px;
 }
 
+.hero-fact {
+  margin-top: 10px;
+  font-size: 15px;
+  color: var(--muted);
+  opacity: 0.8;
+}
+
 .hero-actions {
   display: flex;
   gap: 14px;
   margin-top: 26px;
   flex-wrap: wrap;
-}
-
-.btn {
-  display: inline-block;
-  padding: 11px 22px;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 700;
-  transition: transform 0.2s, box-shadow 0.2s, background 0.2s, color 0.2s;
-}
-
-.btn:hover {
-  transform: translateY(-2px);
-  text-shadow: none;
-}
-
-.btn-primary {
-  background: var(--blue);
-  color: #06131c;
-}
-
-.btn-primary:hover {
-  box-shadow: 0 6px 20px rgba(15, 167, 250, 0.4);
-}
-
-.btn-ghost {
-  border: 2px solid var(--line);
-  color: var(--text);
-}
-
-.btn-ghost:hover {
-  border-color: var(--orange);
-  color: var(--orange);
 }
 
 .hero-photo img {
@@ -459,6 +377,19 @@ a.card:hover {
 
 .card-body strong {
   color: var(--orange);
+}
+
+/* Commercial card */
+.card-commercial {
+  position: relative;
+  background: var(--bg-deep);
+  padding-bottom: 44px;
+}
+
+.badge.badge-corner {
+  top: auto;
+  bottom: 14px;
+  background: var(--bg-raised);
 }
 
 /* Archived cards */
@@ -756,6 +687,25 @@ a.card:hover {
   gap: 10px;
 }
 
+.footer-support {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 16px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  color: var(--text);
+  font-size: 15px;
+  transition: border-color 0.25s, color 0.25s, box-shadow 0.25s;
+}
+
+.footer-support:hover {
+  border-color: var(--orange);
+  color: var(--orange);
+  box-shadow: 0 0 10px rgba(255, 157, 46, 0.4);
+  text-shadow: none;
+}
+
 .social a {
   display: flex;
   align-items: center;
@@ -783,6 +733,27 @@ a.card:hover {
   text-shadow: none;
 }
 
+.social a.whatsapp:hover {
+  border-color: #25d366;
+  color: #25d366;
+  box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+  text-shadow: none;
+}
+
+.social a.linkedin:hover {
+  border-color: #4c9ce8;
+  color: #4c9ce8;
+  box-shadow: 0 0 10px rgba(76, 156, 232, 0.5);
+  text-shadow: none;
+}
+
+.social a.github:hover {
+  border-color: #e8e8e8;
+  color: #e8e8e8;
+  box-shadow: 0 0 10px rgba(232, 232, 232, 0.4);
+  text-shadow: none;
+}
+
 .footer-small {
   text-align: right;
   font-size: 12px;
@@ -795,8 +766,16 @@ a.card:hover {
 
 /* ===== Responsive ===== */
 @media screen and (max-width: 860px) {
+  /* language toggle sits before the burger on mobile */
   .menu-toggle {
     display: flex;
+    order: 3;
+    margin-left: 0;
+  }
+
+  .lang-toggle {
+    order: 2;
+    margin-left: auto;
   }
 
   #menu {
@@ -816,19 +795,6 @@ a.card:hover {
 
   #menu.opened {
     display: flex;
-  }
-
-  .dropdown .submenu {
-    position: static;
-    display: block;
-    min-width: 0;
-    margin: 2px 0 4px 14px;
-    box-shadow: none;
-  }
-
-  .dropdown-btn {
-    width: 100%;
-    text-align: left;
   }
 
   .hero {
@@ -857,6 +823,16 @@ a.card:hover {
 
   .footer-inner {
     flex-direction: column;
+  }
+
+  .footer-contacts {
+    flex-direction: column;
+    gap: 14px;
+    text-align: center;
+  }
+
+  .footer-support {
+    white-space: nowrap;
   }
 
   .footer-small {

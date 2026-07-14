@@ -2,17 +2,16 @@
 // All human-readable text lives in content/*.md.
 
 export const PROJECTS = [
+  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png', commercial: true },
   { id: 'kalasyai', url: 'https://youtube.com/@kalasyai', image: '/images/kalasyai.jpg' },
   { id: 'vkl', url: 'https://vkl.world', image: '/images/vkl-logo.jpg' },
   { id: 'ciomnylos', url: 'https://youtube.com/@ciomnylos', image: '/images/ciomnylos-logo.jpg' },
   { id: 'itbeard', url: 'https://youtube.com/@itbeard', image: '/images/itbeard-300.jpg' },
-  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png' },
   { id: 'aia', url: 'https://podcast.onvibe.io', image: '/images/onvibe.jpg' },
   { id: 'belarusai', url: 'https://telegram.me/belarusai', image: '/images/belarusai-logo.jpg' },
+  { id: 'setivir', url: 'https://setivir.art', image: '/images/setivir.jpg' },
 ]
 
-// Order of items in the "Projects" nav dropdown.
-export const MENU_PROJECTS = ['evocode', 'itbeard', 'ciomnylos', 'aia', 'kalasyai', 'vkl', 'belarusai']
 
 export const ARCHIVE_PROJECTS = [
   { id: 'beard-news', image: '/images/beard-news-logo.jpg', closed: '2026' },
@@ -57,4 +56,7 @@ export const TIMELINE_ICONS = {
   project: '🚀',
   achievement: '🏆',
   education: '🎓',
+  award: '🏅',
+  talk: '🎤',
+  participation: '🤝',
 }

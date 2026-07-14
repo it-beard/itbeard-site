@@ -236,6 +236,158 @@ img {
   color: #06131c;
 }
 
+/* Theme toggle (the light theme prank) */
+.theme-toggle {
+  padding: 3px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-deep);
+  font-size: 15px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.25s;
+}
+
+.theme-toggle:hover {
+  border-color: var(--yellow);
+  transform: rotate(25deg);
+}
+
+body.theme-boom {
+  overflow: hidden;
+}
+
+/* white flash at the moment of "switching" */
+body.theme-boom::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+  background: #fff;
+  pointer-events: none;
+  animation: boom-flash 0.5s ease-out forwards;
+}
+
+/* the original hides — its clones do the stunt work */
+body.theme-boom #app {
+  opacity: 0;
+}
+
+body.theme-restore #app {
+  animation: boom-settle 0.6s cubic-bezier(0.22, 0.9, 0.3, 1.4);
+}
+
+/* full-page clone sliced to a strip: shakes, then blasts away */
+.boom-shard {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+  transform: translateZ(0);
+  animation: boom-shake 0.5s linear, shard-fly 1.5s cubic-bezier(0.45, 0, 0.9, 0.35) forwards;
+}
+
+/* full-page clone drifting behind the warning — multiverse echo */
+.boom-ghost {
+  position: fixed;
+  inset: 0;
+  z-index: 1300;
+  overflow: hidden;
+  pointer-events: none;
+  opacity: 0;
+  filter: hue-rotate(var(--hue, 120deg)) blur(1px);
+  animation: ghost-drift 2.8s ease-in-out infinite alternate, boom-tremble 0.3s linear infinite;
+}
+
+.theme-warning {
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  padding: 24px;
+  text-align: center;
+  background: radial-gradient(ellipse at center, rgba(10, 12, 16, 0.66) 0%, rgba(4, 5, 7, 0.88) 100%);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  opacity: 0;
+  animation: warn-in 0.35s cubic-bezier(0.2, 1.2, 0.4, 1) 0.9s forwards, warn-out 0.4s ease-in 4.2s forwards;
+}
+
+.theme-warning-emoji {
+  font-size: 72px;
+  filter: drop-shadow(0 0 24px rgba(255, 120, 40, 0.8));
+  animation: warn-pulse 0.8s ease-in-out infinite alternate;
+}
+
+.theme-warning p {
+  max-width: 560px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--yellow);
+  text-shadow: 0 0 18px rgba(255, 200, 60, 0.45), 0 2px 0 rgba(0, 0, 0, 0.6);
+}
+
+@keyframes boom-flash {
+  0% { opacity: 0; }
+  15% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+/* the first violent jolt */
+@keyframes boom-shake {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  20% { transform: translate(-18px, 8px) rotate(-1.6deg); }
+  40% { transform: translate(16px, -10px) rotate(1.8deg); }
+  60% { transform: translate(-14px, -8px) rotate(-2deg); }
+  80% { transform: translate(18px, 10px) rotate(1.6deg); }
+}
+
+/* the ongoing background rattle */
+@keyframes boom-tremble {
+  0%, 100% { transform: translate(0, 0) rotate(0); }
+  25% { transform: translate(-6px, 4px) rotate(-0.5deg); }
+  50% { transform: translate(5px, -5px) rotate(0.6deg); }
+  75% { transform: translate(-4px, -3px) rotate(-0.4deg); }
+}
+
+/* everything drops back into place with a small bounce */
+@keyframes boom-settle {
+  0% { opacity: 0.3; transform: translate(0, -16px) rotate(-0.6deg); }
+  60% { opacity: 1; transform: translate(0, 4px) rotate(0.2deg); }
+  100% { transform: none; }
+}
+
+@keyframes shard-fly {
+  0% { transform: translate(0, 0) rotate(0); opacity: 1; }
+  100% { transform: translate(var(--tx), var(--ty)) rotate(var(--rot)); opacity: 0.5; }
+}
+
+@keyframes ghost-drift {
+  from { opacity: 0.14; transform: scale(0.94) rotate(-2.2deg); }
+  to { opacity: 0.3; transform: scale(1.07) rotate(2.6deg); }
+}
+
+@keyframes warn-in {
+  from { opacity: 0; transform: scale(2.4) rotate(-6deg); }
+  to { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes warn-out {
+  from { opacity: 1; transform: scale(1); }
+  to { opacity: 0; transform: scale(0.7) rotate(4deg); }
+}
+
+@keyframes warn-pulse {
+  from { transform: scale(1) rotate(-6deg); }
+  to { transform: scale(1.35) rotate(8deg); }
+}
+
 /* Burger */
 .menu-toggle {
   display: none;
@@ -766,16 +918,20 @@ a.card:hover {
 
 /* ===== Responsive ===== */
 @media screen and (max-width: 860px) {
-  /* language toggle sits before the burger on mobile */
+  /* theme + language toggles sit before the burger on mobile */
   .menu-toggle {
     display: flex;
     order: 3;
     margin-left: 0;
   }
 
-  .lang-toggle {
+  .theme-toggle {
     order: 2;
     margin-left: auto;
+  }
+
+  .lang-toggle {
+    order: 2;
   }
 
   #menu {

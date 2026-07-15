@@ -9,6 +9,8 @@
 - `cfg.overrides`: `NavMenu` and `Layout` are `cardMode: single` (the fixed-position header escapes grid cells — `[GRID_OVERFLOW]`).
 - Known render warns: `[FONT_REMOTE] "Montserrat Alternates"` — expected on every run (remote font-host @import).
 - Site content quirk, not a sync bug: `content/honor.md`'s English block contains literal `TODO:` placeholder entries — TimelinePage's Honor cell renders them as-is.
+- 2026-07-15 red-palette re-sync (commit 0d04592): tokens renamed `--blue/--orange/--yellow/--red` → `--accent` #A50E1E / `--accent-bright` #E2434E / `--accent-hover` #F06A73; `.timeline-dot` → `.timeline-mark`/`.timeline-gem`; `conventions.md` updated to match. `Ornament` (national-pattern divider, `small?: boolean`) added: lib-entry export + `componentSrcMap` + authored preview + `dtsPropsFor` entry.
+- Plain-JSX components with destructured default-param props extract as `[key: string]: unknown` — any new component (or new prop) needs a `cfg.dtsPropsFor` entry (see TimelinePage, Ornament).
 
 ## Re-sync risks
 
@@ -17,3 +19,5 @@
 - Remote fonts/FA need network during the render check; offline runs screenshot fallback fonts (would look like a font regression).
 - The prank ThemeToggle (NavMenu) is interaction-only; its shatter animation is untested by static capture — expected.
 - Content edits in `content/*.md` change rendered previews via the inlined markdown — the driver's source keys track `src/` and previews, so a content-only edit may need a manual rebuild (`buildCmd` re-inlines the markdown into dist-ds) even when no component source moved.
+- `.design-sync/lib-entry.jsx` re-exports named constants from `src/data/site.js` — when that file's exports change (e.g. `TIMELINE_ICONS` removed, `REDIRECTS` added in 0d04592), `cfg.buildCmd` fails with a Rollup "not exported" error until lib-entry is updated to match.
+- `conventions.md` names live tokens/classes — any palette or CSS refactor requires re-validating it against the fresh build (this run caught 4 dead tokens and 1 dead class).

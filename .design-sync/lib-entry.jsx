@@ -9,6 +9,7 @@ export { default as Md } from '../src/lib/Md'
 export { default as Layout } from '../src/components/Layout'
 export { default as NavMenu } from '../src/components/NavMenu'
 export { default as Footer } from '../src/components/Footer'
+export { default as Ornament } from '../src/components/Ornament'
 
 export { default as Home } from '../src/pages/Home'
 export { default as TimelinePage } from '../src/pages/TimelinePage'
@@ -17,7 +18,7 @@ export { default as Contacts } from '../src/pages/Contacts'
 export { default as Support } from '../src/pages/Support'
 export { default as NotFound } from '../src/pages/NotFound'
 
-export { PROJECTS, ARCHIVE_PROJECTS, CONTACT_LINKS, CRYPTO_WALLETS, TIMELINE_ICONS } from '../src/data/site'
+export { PROJECTS, ARCHIVE_PROJECTS, CONTACT_LINKS, CRYPTO_WALLETS, REDIRECTS } from '../src/data/site'
 
 // Router pieces so previews (and the design agent) can wrap/link without
 // pulling react-router-dom themselves.

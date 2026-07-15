@@ -14,6 +14,7 @@
     "Layout": "src/components/Layout.jsx",
     "NavMenu": "src/components/NavMenu.jsx",
     "Footer": "src/components/Footer.jsx",
+    "Ornament": "src/components/Ornament.jsx",
     "Home": "src/pages/Home.jsx",
     "TimelinePage": "src/pages/TimelinePage.jsx",
     "Archive": "src/pages/Archive.jsx",
@@ -35,6 +36,7 @@
     "Layout": { "cardMode": "single", "primaryStory": "Default" }
   },
   "dtsPropsFor": {
-    "TimelinePage": "name: 'experience' | 'honor';"
+    "TimelinePage": "name: 'experience' | 'honor';",
+    "Ornament": "/** Shortened h2 variant: short line + two gems (default is the full line · gems · line divider). */\nsmall?: boolean;"
   }
 }

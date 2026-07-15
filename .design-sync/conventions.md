@@ -32,16 +32,16 @@ No utility framework, no CSS-in-JS. Style with the stylesheet's own classes and 
 | Layout | `container`, `section`, `page-head`, `hero`, `hero-text`, `hero-photo`, `hero-tagline`, `hero-fact`, `hero-actions` |
 | Cards | `cards`, `card`, `card-head`, `card-body`, `card-commercial`, `card-archived`, `badge` |
 | Contacts | `contact-cards`, `contact-card`, `contact-label`, `contact-value`, `social` |
-| Timeline | `timeline`, `timeline-item`, `timeline-dot`, `timeline-card`, `timeline-period`, `timeline-org` |
+| Timeline | `timeline`, `timeline-item`, `timeline-mark`, `timeline-gem`, `timeline-card`, `timeline-period`, `timeline-org` |
 | Support | `support-list`, `support-card`, `crypto-list`, `copy-btn` |
 | Misc | `prose` (markdown body text), `nav-link`, `lang-toggle`, `not-found` |
 
-Tokens (all on `:root`): `--bg` #242424, `--bg-raised`, `--bg-deep`, `--line`, `--text`, `--muted`, `--blue` (primary accent), `--orange`, `--yellow`, `--red`, `--radius` (16px), `--header-h` (64px), `--font`.
+Tokens (all on `:root`): `--bg` #242424, `--bg-raised`, `--bg-deep`, `--line`, `--text`, `--muted`, `--accent` #A50E1E (brand red), `--accent-bright` #E2434E, `--accent-hover` #F06A73, `--radius` (16px), `--header-h` (64px), `--font`.
 
-- Backgrounds are always dark (`--bg` on body); text `--text`; secondary `--muted`. Accents: blue = links/actions, orange = highlights, yellow = badges.
+- Backgrounds are always dark (`--bg` on body); text `--text`; secondary `--muted`. The single accent family is the red brand: `--accent` for fills/buttons/lines, `--accent-bright` for emphasized text and borders, `--accent-hover` for hover states.
 - Typeface is **Montserrat Alternates** everywhere (`--font`, loaded via remote `@import` in `styles.css`). Icons are Font Awesome 6 classes, e.g. `<i className="fab fa-telegram-plane" />`.
 - `contact-card` accepts an inline `--brand` custom property for its accent color.
 
 ## Where the truth lives
 
-Read `styles.css` → `_ds_bundle.css` (tokens + every rule above) before styling; each component's `.prompt.md` shows its intended use. `TimelinePage` takes `name: 'experience' | 'honor'`; other components take no props — their content is the site's own bilingual markdown. Site photos/logos are referenced as `/images/*` (app-served): in new designs supply your own image URLs rather than relying on those paths. NavMenu's sun icon is a deliberate prank "theme toggle" (shatters the page, then restores) — the site has no light theme.
+Read `styles.css` → `_ds_bundle.css` (tokens + every rule above) before styling; each component's `.prompt.md` shows its intended use. `TimelinePage` takes `name: 'experience' | 'honor'`; `Ornament` (the red national-pattern divider placed under h1/h2) takes `small?: boolean`; other components take no props — their content is the site's own bilingual markdown. Site photos/logos are referenced as `/images/*` (app-served): in new designs supply your own image URLs rather than relying on those paths. NavMenu's sun icon is a deliberate prank "theme toggle" (shatters the page, then restores) — the site has no light theme.

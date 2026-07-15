@@ -700,15 +700,6 @@ a.card:hover {
   font-weight: 700;
 }
 
-.range-chip::before {
-  content: '';
-  flex-shrink: 0;
-  width: 6px;
-  height: 6px;
-  background: var(--accent-bright);
-  transform: rotate(45deg);
-}
-
 .card-archived .card-body {
   flex: 1;
   margin-bottom: 16px;

@@ -11,7 +11,6 @@ export default function Footer() {
     <footer id="footer">
       <div className="container footer-inner">
         <div className="footer-contacts">
-          <span>{footer.contacts}</span>
           <nav className="social">
             <a href="https://telegram.me/iamitbeard" target="_blank" rel="noopener" className="telegram" title="Telegram">
               <i className="fab fa-brands fa-telegram-plane"></i>

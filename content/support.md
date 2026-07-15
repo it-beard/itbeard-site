@@ -27,7 +27,7 @@ labels:
 
 У жыцці і ў відэа я з'яўляюся ў незвычайных рэчах з ачмурэннымі надпісамі. Набыць такія ж можна ў [маёй краме](https://streamlabs.com/itbeard/merch): байкі, майкі, шапкі, кубкі і стыкеры!
 
-Кожнай пакупкай вы падтрымаеце мяне прыкладна на **$5**, дзякуй! 😊
+Кожнай пакупкай вы падтрымаеце мяне прыкладна на **$5**, дзякуй!
 
 <!-- en -->
 
@@ -49,4 +49,4 @@ In addition, by becoming a patron you will get access to patron content, the [«
 
 In life and in videos I appear in unusual things with funny inscriptions. You can buy the same in [my shop](https://streamlabs.com/itbeard/merch): hoodies, T-shirts, hats, mugs and stickers!
 
-With each purchase you will support me by about **$5**, thank you very much! 😊
+With each purchase you will support me by about **$5**, thank you very much!

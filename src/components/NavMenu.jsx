@@ -58,7 +58,7 @@ function ThemeToggle() {
   return (
     <>
       <button className="theme-toggle" title={theme.toggle} aria-label={theme.toggle} onClick={explode}>
-        ☀️
+        <i className="fa fa-sun" aria-hidden="true"></i>
       </button>
       {boom &&
         createPortal(

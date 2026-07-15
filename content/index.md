@@ -3,13 +3,19 @@ title:
   be: Сайт Лёхі Картынніка
   en: Lex Kartynnik website
 hero:
+  greeting:
+    be: Вітаю на маім сайце!
+    en: Welcome to my website!
   name: { be: Лёха Картыннік, en: Lex Kartynnik }
   tagline:
     be: Распрацоўшчык, адукатар, аўтар падкастаў і відэа, стваральнік суполак, ШІ-амбасадор і проста клёвы хлопец.
     en: Developer, educator, author of podcasts and videos, community builder, AI ambassador, and just a cool guy.
   fact:
-    be: У IT з 2011 года. Барада — сапраўдная 🧔
-    en: In IT since 2011. The beard is real 🧔
+    be: У IT з 2011 года. Барада — сапраўдная.
+    en: In IT since 2011. The beard is real.
+  toProjects:
+    be: Да праектаў
+    en: To my projects
 ---
 
 <!-- be -->
@@ -22,7 +28,7 @@ hero:
 
 Таксама я раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў выглядзе падкастаў па-расейску і па-беларуску, ствараю **тэхнічныя суполкі** і дапамагаю развіваць **беларускамоўнае** інфаполе.
 
-На гэтым сайце вы даведаецеся пра мае асноўныя праекты, можа нешта дый спадабаецца 😊
+На гэтым сайце вы даведаецеся пра мае асноўныя праекты, мо нешта дый спадабаецца.
 
 # Мае бягучыя праекты {#projects}
 
@@ -48,7 +54,7 @@ Mastodon — размеркаваны аналаг Twitter, без рэклам�
 
 На ім я дзелюся ведамі ў вобласці IT і ШІ, раблю калянавуковыя і тэхнічныя інтэрв'ю пра мовы праграмавання, тэхналогіі, прафесіі і вядомых людзей.
 
-## Эвалюцыя Кода 🧬 {#evocode}
+## Эвалюцыя Кода {#evocode}
 
 **«Эвалюцыя Кода»** — гэта закрыты расейскамоўны клуб для распрацоўшчыкаў і распрацоўшчыц, якія узмацняюць навыкі праграмавання праз вывучэнне ШІ-інструмэнтаў і практык.
 
@@ -62,7 +68,7 @@ Mastodon — размеркаваны аналаг Twitter, без рэклам�
 
 ## Беларускі ШІ {#belarusai}
 
-**«Беларускі ШІ»** — гэта беларускамоўная супольнасць прафесіяналаў і аматараў штучнага інтэлекту 😊
+**«Беларускі ШІ»** — гэта беларускамоўная супольнасць прафесіяналаў і аматараў штучнага інтэлекту.
 
 Размовы пра AI, LLM, стварэнне ШІ-кантэнту, распрацоўку з ШІ і іншае.
 
@@ -82,7 +88,7 @@ For ten years I was deep into backend development on the .NET platform, and sinc
 
 I also create lots of **tech**, **science-adjacent**, and other **technical** content on YouTube and as podcasts in Russian and Belarusian, build **tech communities**, and help grow the **Belarusian-language** info space.
 
-On this site you'll learn about my main projects—maybe you'll like something 😊
+On this site you'll learn about my main projects—maybe you'll like something.
 
 # My Current Projects {#projects}
 
@@ -108,7 +114,7 @@ Mastodon is a distributed equivalent of Twitter, without ads, AI algorithms, or 
 
 I share knowledge in IT and AI, and make science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people.
 
-## Evocoders 🧬 {#evocode}
+## Evocoders {#evocode}
 
 **«Evocoders»** is a private Russian-language club for developers who boost their skills through learning AI tools and practices.
 
@@ -122,7 +128,7 @@ The podcast is released every two weeks and exists thanks to listener support.
 
 ## Belarusian AI {#belarusai}
 
-**«Belarusian AI»** is a Belarusian-language community of professionals and fans of artificial intelligence 😊
+**«Belarusian AI»** is a Belarusian-language community of professionals and fans of artificial intelligence.
 
 Conversations about AI, LLM, creating AI content, building with AI, and much more.
 

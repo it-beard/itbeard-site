@@ -1,14 +1,14 @@
 ---
 title:
-  be: Архіў праектаў
-  en: Projects archive
+  be: Пагост праектаў
+  en: Pahost of projects
 ---
 
 <!-- be -->
 
-# Архіў праектаў {#intro}
+# Пагост праектаў {#intro}
 
-Праекты, якія адыгралі сваю ролю і завяршыліся. Дзякуй усім, хто быў побач 🖤
+Праекты, якія адыгралі сваю ролю і завяршыліся. Дзякуй усім, хто быў побач.
 
 ## Навіны Барады {#beard-news}
 
@@ -18,9 +18,9 @@ title:
 
 <!-- en -->
 
-# Projects archive {#intro}
+# Pahost of projects {#intro}
 
-Projects that played their part and came to an end. Thanks to everyone who was around 🖤
+Projects that played their part and came to an end. Thanks to everyone who was around.
 
 ## Beard News {#beard-news}
 

@@ -7,14 +7,11 @@ heading:
   en: Board of honor
 intro:
   be: >
-    Узнагароды, выступы і ўдзел у файных ініцыятывах.
-    Збіраю ўсё ў адным месцы — каб мама магла ганарыцца 😊
+    Падзеі, якія, лічу, паўплывалі на мяне. Храналагічна, проста з датай.
   en: >
-    Awards, talks and participation in cool initiatives.
-    All in one place — so mom can be proud 😊
+    Events that I believe shaped me. Chronological, just with a date.
 timeline:
   - period: { be: "TODO: год", en: "TODO: year" }
-    type: award
     title:
       be: "TODO: назва ўзнагароды"
       en: "TODO: award title"
@@ -25,7 +22,6 @@ timeline:
       en: >
         *(TODO: what it was for and why it was cool)*
   - period: { be: "TODO: год", en: "TODO: year" }
-    type: talk
     title:
       be: "TODO: выступ ці даклад"
       en: "TODO: talk or presentation"
@@ -36,7 +32,6 @@ timeline:
       en: >
         *(TODO: what it was about, link to the recording)*
   - period: { be: "TODO: год", en: "TODO: year" }
-    type: participation
     title:
       be: "TODO: удзел у ініцыятыве"
       en: "TODO: participation in an initiative"

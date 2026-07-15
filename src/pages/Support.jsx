@@ -3,6 +3,7 @@ import { useLang } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
+import Ornament from '../components/Ornament'
 import { CRYPTO_WALLETS } from '../data/site'
 
 function CopyButton({ value, labels }) {
@@ -41,6 +42,7 @@ export default function Support() {
     <main>
       <section className="container section page-head">
         <h1>{page.title}</h1>
+        <Ornament />
       </section>
 
       <section className="container section support-list">

@@ -1,6 +1,7 @@
 import { useLang } from '../lib/LangContext'
 import { getPage } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
+import Ornament from '../components/Ornament'
 import { CONTACT_LINKS } from '../data/site'
 
 function ContactGroup({ group }) {
@@ -33,6 +34,7 @@ export default function Contacts() {
     <main>
       <section className="container section page-head">
         <h1>{page.title}</h1>
+        <Ornament />
       </section>
       <ContactGroup group={page.groups.contacts} />
       <ContactGroup group={page.groups.socials} />

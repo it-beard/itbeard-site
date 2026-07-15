@@ -13,19 +13,20 @@ export const PROJECTS = [
 ]
 
 
+// started is a TODO-guess from the design mocks — verify the real launch year
 export const ARCHIVE_PROJECTS = [
-  { id: 'beard-news', image: '/images/beard-news-logo.jpg', closed: '2026' },
+  { id: 'beard-news', image: '/images/beard-news-logo.jpg', started: 2021, closed: 2026 },
 ]
 
 export const CONTACT_LINKS = {
-  email: { href: 'mailto:iamitbeard@gmail.com', text: 'iamitbeard@gmail.com', icon: 'fa fa-at', color: '#ff9d2e' },
+  email: { href: 'mailto:iamitbeard@gmail.com', text: 'iamitbeard@gmail.com', icon: 'fa fa-at', color: '#E2434E' },
   telegram: { href: 'https://telegram.me/iamitbeard', text: 'telegram.me/iamitbeard', icon: 'fab fa-telegram-plane', color: '#2A9DD6' },
   mastodon: { href: 'https://vkl.world/@itbeard', text: 'vkl.world/@itbeard', icon: 'fab fa-mastodon', color: '#8c7dff' },
   twitter: { href: 'https://x.com/iamitbeard', text: 'x.com/iamitbeard', icon: 'fab fa-twitter', color: '#1A8CD8' },
   github: { href: 'https://github.com/itbeard', text: 'github.com/itbeard', icon: 'fab fa-github', color: '#e8e8e8' },
   linkedin: { href: 'https://www.linkedin.com/in/akartynnik', text: 'linkedin.com/in/akartynnik', icon: 'fab fa-linkedin-in', color: '#4c9ce8' },
   'blog-telegram': { href: 'https://telegram.me/itbeard', text: 'telegram.me/itbeard', icon: 'fab fa-telegram-plane', color: '#2A9DD6' },
-  merch: { href: 'https://streamlabs.com/itbeard/merch', text: 'streamlabs.com/itbeard/merch', icon: 'fa fa-tshirt', color: '#ffe14d' },
+  merch: { href: 'https://streamlabs.com/itbeard/merch', text: 'streamlabs.com/itbeard/merch', icon: 'fa fa-tshirt', color: '#E2434E' },
 }
 
 export const CRYPTO_WALLETS = [
@@ -49,14 +50,4 @@ export const REDIRECTS = {
   'evo-calendar':
     'https://calendar.google.com/calendar/embed?src=144869480c3c1c44b3063bfe8f4a20168383e25a13c351c0b2d35ef2b4eee971%40group.calendar.google.com&ctz=Europe%2FWarsaw',
   'sponsors-discord': 'https://discord.gg/78qkQJjH2b',
-}
-
-export const TIMELINE_ICONS = {
-  work: '💼',
-  project: '🚀',
-  achievement: '🏆',
-  education: '🎓',
-  award: '🏅',
-  talk: '🎤',
-  participation: '🤝',
 }

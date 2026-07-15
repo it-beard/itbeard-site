@@ -24,11 +24,12 @@ export default function Footer() {
             </a>
           </nav>
           <Link to="/support" className="footer-support">
-            ❤️ {footer.support}
+            {footer.support}
           </Link>
         </div>
         <div className="footer-small">
           <Md tag="p" html={mdInline(footer.github)} />
+          <p>{footer.madeIn}</p>
         </div>
       </div>
       <a rel="me" style={{ display: 'none' }} href="https://mementomori.social/@Itbeard">Mastodon</a>

@@ -11,7 +11,7 @@ backHome:
 nav:
   index: { be: Галоўная, en: Home }
   experience: { be: Шлях, en: Experience }
-  honor: { be: Гонар, en: Honors }
+  honor: { be: Факты, en: Facts }
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }
 labels:

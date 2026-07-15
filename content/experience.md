@@ -15,60 +15,195 @@ intro:
 overview:
   title: { be: Гады ў адным паглядзе, en: Years at a glance }
   now: { be: цяпер, en: now }
+foundedLabel: { be: уласны праект, en: my own project }
 timeline:
-  - period: { be: 2023 — цяпер, en: 2023 — now }
-    start: 2023
+  - period: { be: 2024 — цяпер, en: 2024 — now }
+    start: 2024
     label: { be: Эвалюцыя Кода, en: Evocoders }
     title:
-      be: Заснавальнік і ментар клуба «Эвалюцыя Кода»
-      en: Founder and mentor of the «Evocoders» club
+      be: Заснавальнік клуба «Эвалюцыя Кода», кансультант па ўкараненні ШІ
+      en: Founder of the «Evocoders» club, AI adoption consultant
     org: evocoders.ai
+    founded: true
+    logo: /images/evocode.png
     link: https://evocoders.ai
     description:
       be: >
-        Навучаю распрацоўнікаў і распрацоўшчыц працаваць у пары з ШІ:
-        інструменты, практыкі, код-рэўю і жывая супольнасць аднадумцаў.
+        Дапамагаю распрацоўнікам зрабіць ШІ часткай штодзённай працы:
+        пабудаваў прыватную супольнасць з 800+ удзельнікаў, стварыў больш за
+        200 гадзін адукацыйнага кантэнту, вяду штотыднёвы дайджэст ШІ-навін
+        і падтрымліваю бібліятэку з 500+ інструментаў ШІ-праграмавання.
       en: >
-        I teach developers to work in tandem with AI: tools, practices,
-        code reviews and a lively community of like-minded people.
-  - period: { be: 2024 — цяпер, en: 2024 — now }
+        I help developers make AI a core part of their daily work: built a
+        private community of 800+ members, created 200+ hours of educational
+        content, run a weekly AI news digest and maintain a library of 500+
+        AI programming tools.
+  - period: { be: 2024 — 2025, en: 2024 — 2025 }
     start: 2024
-    label: { be: Праекты пра ШІ, en: AI projects }
+    end: 2025
+    label: { be: Paysera, en: Paysera }
     title:
-      be: Беларускамоўныя праекты пра ШІ
-      en: Belarusian-language AI projects
+      be: ШІ-амбасадар
+      en: AI Ambassador
+    org: Paysera
+    link: https://www.paysera.com
+    logo: /images/paysera-logo.png
     description:
       be: >
-        Падкасты «КПСШІ» і «Цёмны Лёс», суполкі «VKL.world» і «Беларускі ШІ» —
-        развіваю беларускамоўнае тэхнічнае інфаполе.
+        Вёў ШІ-трансфармацыю кампаніі — ад стратэгіі да практыкі: укараненне
+        ШІ-інструментаў у распрацоўку прадуктаў, варштаты і хакатоны для
+        каманд, адзіны партал ведаў па ШІ-ініцыятывах і ўдзел у стварэнні
+        ўнутраных ШІ-сістэм.
       en: >
-        The «КПСШІ» and «Цёмны Лёс» podcasts, the «VKL.world» and «Belarusian AI»
-        communities — growing the Belarusian-language tech info space.
-  - period: { be: 2011 — 2023, en: 2011 — 2023 }
-    start: 2011
-    end: 2023
-    label: { be: .NET-распрацоўка, en: .NET development }
+        Drove the company's AI transformation — from strategy to practice:
+        bringing AI tools into product development, running workshops and
+        hackathons, building a central AI knowledge portal and helping create
+        internal AI systems.
+  - period: { be: 2021 — 2025, en: 2021 — 2025 }
+    start: 2021
+    end: 2025
+    label: { be: EPAM, en: EPAM }
     title:
-      be: Backend-распрацоўнік (.NET)
-      en: Backend developer (.NET)
-    org: "TODO — дадай кампаніі і пасады з LinkedIn"
+      be: Кансультант па ШІ-медыякантэнце, кіраўнік DevRel-каманд
+      en: AI media content consultant, DevRel team lead
+    org: EPAM Systems
+    link: https://www.epam.com
+    logo: /images/epam-logo.png
     description:
       be: >
-        Дзесяць гадоў камерцыйнай backend-распрацоўкі на платформе .NET:
-        ад джуна да сеньёра. *(TODO: распішы этапы асобнымі пунктамі)*
+        Чатыры з паловай гады ў DevRel-праектах EPAM: кансультант і лід
+        супольнасці Anywhere Club (2021—2022), кіраўнік аддзела мультымедыя
+        і супольнасці з камандай у 7 чалавек (2022—2024), затым кансультант
+        па ШІ-медыякантэнце — YouTube-відэа і падкасты пра ШІ для соцень
+        тысяч распрацоўнікаў у падтрымку ініцыятыў EngX і Anywhere Club
+        (2024—2025).
       en: >
-        Ten years of commercial backend development on the .NET platform:
-        from junior to senior. *(TODO: split into separate entries)*
-  - period: { be: "TODO: год", en: "TODO: year" }
+        Four and a half years in EPAM's DevRel projects: Anywhere Club
+        community consultant and lead (2021—2022), multimedia & community
+        division lead with a team of 7 (2022—2024), then AI media content
+        consultant — YouTube videos and podcasts about AI for hundreds of
+        thousands of developers, supporting the EngX and Anywhere Club
+        initiatives (2024—2025).
+  - period: { be: 2020 — 2021, en: 2020 — 2021 }
+    start: 2020
+    end: 2021
+    label: { be: AppXite, en: AppXite }
     title:
-      be: Запусціў YouTube-канал «АйЦіБарада»
-      en: Launched the «ITBeard» YouTube channel
+      be: Сеньёр-распрацоўнік (.NET)
+      en: Senior Software Engineer (.NET)
+    org: AppXite
+    link: https://appxite.com
+    logo: /images/appxite-logo.png
+    description:
+      be: >
+        Бэкенд-распрацоўка на C#: мікрасэрвісная платформа.
+      en: >
+        .NET C# backend development: a microservices platform.
+  - period: { be: 2019 — 2020, en: 2019 — 2020 }
+    start: 2019
+    end: 2020
+    label: { be: billwerk, en: billwerk }
+    title:
+      be: Сеньёр-распрацоўнік (.NET)
+      en: Senior Software Engineer (.NET)
+    org: billwerk GmbH
+    link: https://www.billwerk.plus
+    logo: /images/billwerk-logo.png
+    description:
+      be: >
+        Бэкенд-распрацоўка на .NET/C# для нямецкай платформы рэкурэнтных
+        плацяжоў.
+      en: >
+        .NET C# backend development for a German recurring-billing platform.
+  - period: { be: 2018 — 2019, en: 2018 — 2019 }
+    start: 2018
+    end: 2019
+    label: { be: SoftTeco, en: SoftTeco }
+    title:
+      be: Сеньёр-распрацоўнік, затым тымлід
+      en: Senior Software Engineer, then Team Lead
+    org: SoftTeco
+    link: https://softteco.com
+    logo: /images/softteco-logo.png
+    description:
+      be: >
+        Пачынаў з фул-стэк распрацоўкі на .NET/C# (бэкенд, фронтэнд, дэсктоп),
+        потым кіраваў камандай бэкенд-распрацоўкі з 5 чалавек на буйным
+        мабільным дадатку.
+      en: >
+        Started with .NET C# full-stack development (backend, frontend,
+        desktop), then led a backend team of 5 building a large mobile
+        application.
+  - period: { be: 2018 — цяпер, en: 2018 — now }
+    start: 2018
+    label: { be: АйЦіБарада, en: ITBeard }
+    title:
+      be: Заснавальнік YouTube-канала «АйЦіБарада»
+      en: Founder of the «ITBeard» YouTube channel
+    founded: true
+    logo: /images/itbeard-300.jpg
     link: https://youtube.com/@itbeard
     description:
       be: >
-        Канал пра IT, тэхналогіі і навуку. *(TODO: дадай год і start, каб канал
-        трапіў у агляд гадоў; дадай лічбы — падпісанты, прагляды, інтэрв'ю)*
+        Канал пра IT, тэхналогіі і людзей у іх: інтэрв'ю, падкасты і
+        дакументальныя выпускі. Больш за 330 тысяч падпісантаў.
       en: >
-        A channel about IT, technology and science. *(TODO: add the year and start
-        so it shows in the overview; add numbers — subscribers, views, interviews)*
+        A channel about IT, technology and the people behind it: interviews,
+        podcasts and documentaries. Over 330k subscribers.
+  - period: { be: 2016 — 2018, en: 2016 — 2018 }
+    start: 2016
+    end: 2018
+    label: { be: Itransition, en: Itransition }
+    title:
+      be: Інжынер-праграміст
+      en: Software Engineer
+    org: Itransition Group
+    link: https://www.itransition.com
+    logo: /images/itransition-logo.png
+    description:
+      be: >
+        Фул-стэк распрацоўка на .NET/C#. Мінск.
+      en: >
+        .NET C# full-stack development. Minsk.
+  - period: { be: 2014 — 2016, en: 2014 — 2016 }
+    start: 2014
+    end: 2016
+    label: { be: Gruzovoi Oboz, en: Gruzovoi Oboz }
+    title:
+      be: Інжынер-праграміст
+      en: Software Engineer
+    org: Gruzovoi Oboz
+    description:
+      be: >
+        Распрацоўка праграмнага забесьпячэньня ў мінскай прадуктовай кампаніі.
+      en: >
+        Software development at a Minsk product company.
+  - period: { be: 2013 — 2014, en: 2013 — 2014 }
+    start: 2013
+    end: 2014
+    label: { be: PowerMeMobile, en: PowerMeMobile }
+    title:
+      be: Малодшы інжынер-праграміст
+      en: Junior Software Engineer
+    org: PowerMeMobile
+    description:
+      be: >
+        Фул-стэк распрацоўка на .NET/C#. Мінск.
+      en: >
+        .NET C# full-stack development. Minsk.
+  - period: { be: 2012 — 2013, en: 2012 — 2013 }
+    start: 2012
+    end: 2013
+    label: { be: Oxagile, en: Oxagile }
+    title:
+      be: Стажор-распрацоўнік
+      en: Trainee
+    org: Oxagile
+    link: https://www.oxagile.com
+    logo: /images/oxagile-logo.png
+    description:
+      be: >
+        Першыя крокі ў камерцыйнай распрацоўцы: .NET/C#. Мінск.
+      en: >
+        First steps in commercial development: .NET C#. Minsk.
 ---

@@ -10,7 +10,7 @@ backHome:
   en: Back home
 nav:
   index: { be: Галоўная, en: Home }
-  experience: { be: Досьвед, en: Experience }
+  experience: { be: Шлях, en: Experience }
   honor: { be: Гонар, en: Honors }
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }

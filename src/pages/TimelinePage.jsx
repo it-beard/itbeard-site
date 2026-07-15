@@ -68,8 +68,12 @@ export default function TimelinePage({ name }) {
   const page = getPage(name, lang)
   useTitle(page.title)
 
-  // parallel jobs are expected: newest start first, undated entries last
-  const entries = [...page.timeline].sort((a, b) => (b.start ?? -1) - (a.start ?? -1))
+  // ongoing jobs first, then newest start first; undated entries last
+  const entries = [...page.timeline].sort((a, b) => {
+    const ongoing = (e) => (e.start && !e.end ? 1 : 0)
+    if (ongoing(a) !== ongoing(b)) return ongoing(b) - ongoing(a)
+    return (b.start ?? -1) - (a.start ?? -1)
+  })
 
   return (
     <main>
@@ -87,22 +91,38 @@ export default function TimelinePage({ name }) {
               <div className="timeline-mark" aria-hidden="true">
                 <span className="timeline-gem"></span>
               </div>
-              <div className="timeline-card">
-                <span className="timeline-period">{item.period}</span>
-                <h3>
-                  {item.link ? (
-                    <a href={item.link} target="_blank" rel="noopener">
-                      {item.title}
-                    </a>
-                  ) : (
-                    item.title
-                  )}
-                </h3>
-                {item.org && <p className="timeline-org">{item.org}</p>}
+              <div className={`timeline-card${item.founded ? ' founded' : ''}`}>
+                <div className="timeline-head">
+                  {item.logo && <img src={item.logo} alt="" loading="lazy" />}
+                  <div className="timeline-title">
+                    <span className="timeline-period">{item.period}</span>
+                    <h3>
+                      {item.link && !item.org ? (
+                        <a href={item.link} target="_blank" rel="noopener">
+                          {item.title}
+                        </a>
+                      ) : (
+                        item.title
+                      )}
+                    </h3>
+                    {item.org && (
+                      <p className="timeline-org">
+                        {item.link ? (
+                          <a href={item.link} target="_blank" rel="noopener">
+                            {item.org}
+                          </a>
+                        ) : (
+                          item.org
+                        )}
+                      </p>
+                    )}
+                  </div>
+                </div>
                 <div
                   className="prose"
                   dangerouslySetInnerHTML={{ __html: mdInline(item.description) }}
                 />
+                {item.founded && <span className="badge badge-corner">{page.foundedLabel}</span>}
               </div>
             </li>
           ))}

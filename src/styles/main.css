@@ -847,13 +847,13 @@ a.card:hover {
   position: relative;
 }
 
-/* continuous center axis */
+/* continuous left axis, cards all on the right */
 .timeline::before {
   content: '';
   position: absolute;
   top: 10px;
   bottom: 30px;
-  left: 50%;
+  left: 38px;
   margin-left: -1px;
   width: 2px;
   background: linear-gradient(
@@ -868,13 +868,13 @@ a.card:hover {
 .timeline-item {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 76px 1fr;
+  grid-template-columns: 76px 1fr;
   padding-bottom: 38px;
 }
 
 .timeline-mark {
   position: relative;
-  grid-column: 2;
+  grid-column: 1;
   grid-row: 1;
   display: flex;
   justify-content: center;
@@ -891,6 +891,23 @@ a.card:hover {
   border-radius: 2px;
   background: var(--accent);
   box-shadow: 0 0 0 5px var(--bg);
+}
+
+/* ongoing entries: dashed rail segment + hollow diamond */
+.timeline-item.ongoing::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 38px;
+  margin-left: -1px;
+  width: 2px;
+  background: repeating-linear-gradient(180deg, var(--accent) 0 6px, var(--bg) 6px 13px);
+}
+
+.timeline-item.ongoing .timeline-gem {
+  background: var(--bg);
+  border: 2px solid var(--accent-bright);
 }
 
 /* ongoing entries get a pulsing halo behind the diamond */
@@ -921,19 +938,18 @@ a.card:hover {
 
 .timeline-card {
   position: relative;
-  grid-column: 3;
+  grid-column: 2;
   grid-row: 1;
   padding: 20px 24px;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: var(--bg-raised);
-  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
 }
 
-.timeline-card:hover {
-  border-color: var(--accent-bright);
-  transform: translateY(-3px);
-  box-shadow: 0 14px 34px rgba(165, 14, 30, 0.16);
+/* Founded-from-scratch cards: deeper background + corner label */
+.timeline-card.founded {
+  background: var(--bg-deep);
+  padding-bottom: 44px;
 }
 
 /* connector from card edge to the axis */
@@ -947,15 +963,27 @@ a.card:hover {
   background: linear-gradient(90deg, rgba(165, 14, 30, 0.55), var(--line));
 }
 
-/* cards alternate sides on desktop */
-.timeline-item:nth-child(odd) .timeline-card {
-  grid-column: 1;
+/* Card head: company logo + period/title/org (logo styled like «Пагост») */
+.timeline-head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.timeline-item:nth-child(odd) .timeline-card::before {
-  left: auto;
-  right: -39px;
-  background: linear-gradient(90deg, var(--line), rgba(165, 14, 30, 0.55));
+.timeline-head img {
+  width: 56px;
+  height: 56px;
+  border-radius: 22%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.timeline-title {
+  min-width: 0;
+}
+
+.timeline-head + .prose {
+  margin-top: 10px;
 }
 
 /* Period/date chip */
@@ -990,6 +1018,15 @@ a.card:hover {
   font-size: 14px;
   font-weight: 600;
   margin-bottom: 6px;
+}
+
+.timeline-org a {
+  color: inherit;
+}
+
+.timeline-org a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 .timeline-card .prose {
@@ -1371,10 +1408,14 @@ a.card:hover {
     text-align: center;
   }
 
-  /* timeline collapses to a single left rail */
+  /* timeline rail tightens up */
   .timeline::before {
-    left: 42px;
-    margin-left: 0;
+    left: 23px;
+    margin-left: -1px;
+  }
+
+  .timeline-item.ongoing::before {
+    left: 23px;
   }
 
   .timeline-item {
@@ -1382,20 +1423,13 @@ a.card:hover {
     padding-bottom: 26px;
   }
 
-  .timeline-mark {
-    grid-column: 1;
-  }
-
-  .timeline-item .timeline-card,
-  .timeline-item:nth-child(odd) .timeline-card {
-    grid-column: 2;
-  }
-
-  .timeline-card::before,
-  .timeline-item:nth-child(odd) .timeline-card::before {
+  .timeline-card::before {
     left: -24px;
-    right: auto;
     width: 23px;
-    background: linear-gradient(90deg, rgba(165, 14, 30, 0.55), var(--line));
+  }
+
+  .timeline-head img {
+    width: 48px;
+    height: 48px;
   }
 }

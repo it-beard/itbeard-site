@@ -17,8 +17,9 @@ overview:
   now: { be: цяпер, en: now }
 foundedLabel: { be: уласны праект, en: my own project }
 timeline:
-  - period: { be: 2024 — цяпер, en: 2024 — now }
+  - period: { be: 2024.05 — цяпер, en: 2024.05 — now }
     start: 2024
+    startMonth: 5
     label: { be: Эвалюцыя Кода, en: Evocoders }
     title:
       be: Заснавальнік клуба «Эвалюцыя Кода», кансультант па ўкараненні ШІ
@@ -38,9 +39,11 @@ timeline:
         private community of 800+ members, created 200+ hours of educational
         content, run a weekly AI news digest and maintain a library of 500+
         AI programming tools.
-  - period: { be: 2024 — 2025, en: 2024 — 2025 }
+  - period: { be: 2024.11 — 2025.08, en: 2024.11 — 2025.08 }
     start: 2024
+    startMonth: 11
     end: 2025
+    endMonth: 8
     label: { be: Paysera, en: Paysera }
     title:
       be: ШІ-амбасадар
@@ -59,9 +62,11 @@ timeline:
         bringing AI tools into product development, running workshops and
         hackathons, building a central AI knowledge portal and helping create
         internal AI systems.
-  - period: { be: 2021 — 2025, en: 2021 — 2025 }
+  - period: { be: 2021.05 — 2025.11, en: 2021.05 — 2025.11 }
     start: 2021
+    startMonth: 5
     end: 2025
+    endMonth: 11
     label: { be: EPAM, en: EPAM }
     title:
       be: Кансультант па ШІ-медыякантэнце, кіраўнік DevRel-каманд
@@ -84,9 +89,11 @@ timeline:
         consultant — YouTube videos and podcasts about AI for hundreds of
         thousands of developers, supporting the EngX and Anywhere Club
         initiatives (2024—2025).
-  - period: { be: 2020 — 2021, en: 2020 — 2021 }
+  - period: { be: 2020.06 — 2021.03, en: 2020.06 — 2021.03 }
     start: 2020
+    startMonth: 6
     end: 2021
+    endMonth: 3
     label: { be: AppXite, en: AppXite }
     title:
       be: Сеньёр-распрацоўнік (.NET)
@@ -99,9 +106,11 @@ timeline:
         Бэкенд-распрацоўка на C#: мікрасэрвісная платформа.
       en: >
         .NET C# backend development: a microservices platform.
-  - period: { be: 2019 — 2020, en: 2019 — 2020 }
+  - period: { be: 2019.09 — 2020.05, en: 2019.09 — 2020.05 }
     start: 2019
+    startMonth: 9
     end: 2020
+    endMonth: 5
     label: { be: billwerk, en: billwerk }
     title:
       be: Сеньёр-распрацоўнік (.NET)
@@ -115,9 +124,11 @@ timeline:
         плацяжоў.
       en: >
         .NET C# backend development for a German recurring-billing platform.
-  - period: { be: 2018 — 2019, en: 2018 — 2019 }
+  - period: { be: 2018.03 — 2019.09, en: 2018.03 — 2019.09 }
     start: 2018
+    startMonth: 3
     end: 2019
+    endMonth: 9
     label: { be: SoftTeco, en: SoftTeco }
     title:
       be: Сеньёр-распрацоўнік, затым тымлід
@@ -134,8 +145,9 @@ timeline:
         Started with .NET C# full-stack development (backend, frontend,
         desktop), then led a backend team of 5 building a large mobile
         application.
-  - period: { be: 2018 — цяпер, en: 2018 — now }
+  - period: { be: 2018.04 — цяпер, en: 2018.04 — now }
     start: 2018
+    startMonth: 4
     label: { be: АйЦіБарада, en: ITBeard }
     title:
       be: Заснавальнік YouTube-канала «АйЦіБарада»
@@ -150,9 +162,11 @@ timeline:
       en: >
         A channel about IT, technology and the people behind it: interviews,
         podcasts and documentaries. Over 330k subscribers.
-  - period: { be: 2016 — 2018, en: 2016 — 2018 }
+  - period: { be: 2016.03 — 2018.02, en: 2016.03 — 2018.02 }
     start: 2016
+    startMonth: 3
     end: 2018
+    endMonth: 2
     label: { be: Itransition, en: Itransition }
     title:
       be: Інжынер-праграміст
@@ -165,9 +179,11 @@ timeline:
         Фул-стэк распрацоўка на .NET/C#. Мінск.
       en: >
         .NET C# full-stack development. Minsk.
-  - period: { be: 2014 — 2016, en: 2014 — 2016 }
+  - period: { be: 2014.09 — 2016.02, en: 2014.09 — 2016.02 }
     start: 2014
+    startMonth: 9
     end: 2016
+    endMonth: 2
     label: { be: Gruzovoi Oboz, en: Gruzovoi Oboz }
     title:
       be: Інжынер-праграміст
@@ -178,9 +194,11 @@ timeline:
         Распрацоўка праграмнага забесьпячэньня ў мінскай прадуктовай кампаніі.
       en: >
         Software development at a Minsk product company.
-  - period: { be: 2013 — 2014, en: 2013 — 2014 }
+  - period: { be: 2013.04 — 2014.09, en: 2013.04 — 2014.09 }
     start: 2013
+    startMonth: 4
     end: 2014
+    endMonth: 9
     label: { be: PowerMeMobile, en: PowerMeMobile }
     title:
       be: Малодшы інжынер-праграміст
@@ -191,9 +209,11 @@ timeline:
         Фул-стэк распрацоўка на .NET/C#. Мінск.
       en: >
         .NET C# full-stack development. Minsk.
-  - period: { be: 2012 — 2013, en: 2012 — 2013 }
+  - period: { be: 2012.11 — 2013.03, en: 2012.11 — 2013.03 }
     start: 2012
+    startMonth: 11
     end: 2013
+    endMonth: 3
     label: { be: Oxagile, en: Oxagile }
     title:
       be: Стажор-распрацоўнік

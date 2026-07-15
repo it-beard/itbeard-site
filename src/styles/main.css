@@ -1408,6 +1408,30 @@ a.card:hover {
     text-align: center;
   }
 
+  /* overview gantt scrolls horizontally instead of squeezing */
+  .overview {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .overview-grid {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .overview-labels {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    width: 104px;
+    background: var(--bg-deep);
+    box-shadow: 6px 0 8px -4px rgba(0, 0, 0, 0.45);
+  }
+
+  .overview-chart {
+    min-width: 440px;
+  }
+
   /* timeline rail tightens up */
   .timeline::before {
     left: 23px;

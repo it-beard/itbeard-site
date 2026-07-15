@@ -4,7 +4,14 @@ import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 
-const NOW = new Date().getFullYear()
+const TODAY = new Date()
+const NOW = TODAY.getFullYear()
+// fractional "now" so ongoing bars reach the actual current month
+const NOW_F = NOW + TODAY.getMonth() / 12
+
+// month-precise fractional years (startMonth/endMonth are optional 1–12)
+const startOf = (e) => e.start + ((e.startMonth ?? 1) - 1) / 12
+const endOf = (e) => (e.end ? e.end + (e.endMonth ?? 12) / 12 : NOW_F)
 
 // Horizontal gantt of jobs («Гады ў адным паглядзе»), experience only.
 // Rows come from timeline entries that declare a numeric `start`.
@@ -12,9 +19,9 @@ function OverviewPanel({ overview, entries }) {
   const jobs = entries.filter((e) => e.start)
   if (jobs.length === 0) return null
 
-  const minYear = Math.min(...jobs.map((j) => j.start))
-  const span = Math.max(1, NOW - minYear)
-  const pos = (year) => ((year - minYear) / span) * 100
+  const minYear = Math.floor(Math.min(...jobs.map(startOf)))
+  const span = Math.max(1, NOW_F - minYear)
+  const pos = (t) => ((t - minYear) / span) * 100
 
   const ticks = []
   for (let year = minYear; year < NOW - 2; year += 5) {
@@ -39,8 +46,8 @@ function OverviewPanel({ overview, entries }) {
             <span key={i} className="overview-tick-line" style={{ left: `${t.left}%` }} aria-hidden="true"></span>
           ))}
           {jobs.map((j, i) => {
-            const left = pos(j.start)
-            const width = Math.max(3, pos(j.end ?? NOW) - left)
+            const left = pos(startOf(j))
+            const width = Math.max(3, pos(endOf(j)) - left)
             return (
               <div key={i} className="overview-row">
                 <div
@@ -72,7 +79,8 @@ export default function TimelinePage({ name }) {
   const entries = [...page.timeline].sort((a, b) => {
     const ongoing = (e) => (e.start && !e.end ? 1 : 0)
     if (ongoing(a) !== ongoing(b)) return ongoing(b) - ongoing(a)
-    return (b.start ?? -1) - (a.start ?? -1)
+    const key = (e) => (e.start ? startOf(e) : -1)
+    return key(b) - key(a)
   })
 
   return (

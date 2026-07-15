@@ -11,3 +11,11 @@ dist/
 
 # Logs
 *.log
+
+# design-sync (machine state; .design-sync/ config/notes/previews ARE committed)
+.ds-sync/
+ds-bundle/
+dist-ds/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules

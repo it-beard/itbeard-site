@@ -1,7 +1,7 @@
 ---
 title:
-  be: Досьвед і дасягненні
-  en: Experience & achievements
+  be: Кар'ера
+  en: Career
 heading:
   be: Мой шлях
   en: My journey
@@ -16,6 +16,12 @@ overview:
   title: { be: Гады ў адным паглядзе, en: Years at a glance }
   now: { be: цяпер, en: now }
 foundedLabel: { be: уласны праект, en: my own project }
+foundedHint:
+  be: Праект, які я заснаваў з нуля і вяду самастойна
+  en: A project I founded from scratch and run myself
+periodHint:
+  be: Перыяд працы ў фармаце «год.месяц»
+  en: Employment period in “year.month” format
 timeline:
   - period: { be: 2024.05 — цяпер, en: 2024.05 — now }
     start: 2024

@@ -2,20 +2,25 @@
 // All human-readable text lives in content/*.md.
 
 export const PROJECTS = [
-  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png', commercial: true },
-  { id: 'kalasyai', url: 'https://youtube.com/@kalasyai', image: '/images/kalasyai.jpg' },
-  { id: 'vkl', url: 'https://vkl.world', image: '/images/vkl-logo.jpg' },
-  { id: 'ciomnylos', url: 'https://youtube.com/@ciomnylos', image: '/images/ciomnylos-logo.jpg' },
-  { id: 'itbeard', url: 'https://youtube.com/@itbeard', image: '/images/itbeard-300.jpg' },
-  { id: 'aia', url: 'https://podcast.onvibe.io', image: '/images/onvibe.jpg' },
-  { id: 'belarusai', url: 'https://telegram.me/belarusai', image: '/images/belarusai-logo.jpg' },
-  { id: 'setivir', url: 'https://setivir.art', image: '/images/setivir.jpg' },
+  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png', commercial: true, started: 2024 },
+  { id: 'itbeard', url: 'https://youtube.com/@itbeard', image: '/images/itbeard-300.jpg', commercial: true, started: 2018 },
+  { id: 'ciomnylos', url: 'https://youtube.com/@ciomnylos', image: '/images/ciomnylos-logo.jpg', started: 2022 },
+  { id: 'aia', url: 'https://podcast.onvibe.io', image: '/images/onvibe.jpg', started: 2025 },
+  { id: 'kalasyai', url: 'https://youtube.com/@kalasyai', image: '/images/kalasyai.jpg', started: 2025 },
+  { id: 'setivir', url: 'https://setivir.art', image: '/images/setivir.jpg', started: 2026 },
+  { id: 'vkl', url: 'https://vkl.world', image: '/images/vkl-logo.jpg', started: 2022 },
+  { id: 'belarusai', url: 'https://telegram.me/belarusai', image: '/images/belarusai-logo.jpg', started: 2024 },
 ]
 
 
-// started is a TODO-guess from the design mocks — verify the real launch year
+// dormant projects (no `closed`) are listed first, then closed ones by close year
 export const ARCHIVE_PROJECTS = [
+  { id: 'bloggers-cms', image: '/images/bloggers-cms-logo.svg', started: 2021, dormant: true, url: 'https://github.com/it-beard/bloggers-cms' },
+  { id: 'lex-kartynnik', image: '/images/lex-kartynnik-logo.jpg', started: 2023, dormant: true, url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q' },
   { id: 'beard-news', image: '/images/beard-news-logo.jpg', started: 2021, closed: 2026 },
+  { id: 'letapis', image: '/images/letapis-logo.svg', started: 2023, closed: 2025, url: 'https://github.com/it-beard/writefreely-vkl' },
+  { id: 'imbalanced-dialogues', image: '/images/imbadial-logo.jpg', started: 2024, closed: 2024, url: 'https://www.youtube.com/@imbadial' },
+  { id: 'pushka', image: '/images/pushka-logo.svg', started: 2015, closed: 2018 },
 ]
 
 export const CONTACT_LINKS = {

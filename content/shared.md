@@ -9,17 +9,33 @@ backHome:
   be: На галоўную
   en: Back home
 nav:
+  brand: { be: Лёхін сайт, en: Lex's site }
   index: { be: Галоўная, en: Home }
-  experience: { be: Шлях, en: Experience }
-  honor: { be: Факты, en: Facts }
+  experience: { be: Кар'ера, en: Career }
+  honor: { be: Пра мяне, en: About }
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }
 labels:
   closedIn: { be: зачынены ў, en: closed in }
+  closedInHint:
+    be: Год, калі праект быў канчаткова зачынены
+    en: The year the project was finally closed
+  since: { be: з, en: since }
+  sinceHint:
+    be: Год, калі праект пачаўся
+    en: The year the project started
   commercial: { be: камерцыйны, en: commercial }
+  commercialHint:
+    be: Камерцыйны праект — удзел у ім платны
+    en: A commercial project — participation is paid
   yearOne: { be: год, en: year }
   yearFew: { be: гады, en: years }
   yearMany: { be: гадоў, en: years }
+  lessThanYear: { be: менш за год, en: under a year }
+  durationHint:
+    be: Колькі часу праект існуе ці праіснаваў
+    en: How long the project has existed
+
 theme:
   toggle: { be: Уключыць сьветлую тэму, en: Switch to light theme }
   joke:
@@ -31,8 +47,5 @@ footer:
   github:
     be: "Код гэтага сайта на [GitHub](https://github.com/it-beard/itbeard-site)"
     en: "The code of this site on [GitHub](https://github.com/it-beard/itbeard-site)"
-  madeIn:
-    be: Зроблена ў бел-чырвона-белых колерах
-    en: Made in white-red-white colors
   language: { be: Мова сайта, en: Site language }
 ---

@@ -5,7 +5,7 @@ const LangContext = createContext(null)
 function normalize(value) {
   if (!value) return null
   const v = String(value).toLowerCase()
-  if (/^(be|by|ru|uk)/.test(v)) return 'be'
+  if (/^(be|by)/.test(v)) return 'be'
   if (/^en/.test(v)) return 'en'
   return null
 }
@@ -20,7 +20,7 @@ function detect() {
     normalize(localStorage.getItem('siteLang')) ||
     normalize(localStorage.getItem('BlazorCulture')) || // legacy key from the Blazor site
     normalize(navigator.language) ||
-    'be'
+    'en'
   )
 }
 

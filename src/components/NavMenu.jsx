@@ -102,7 +102,7 @@ export default function NavMenu() {
       <div className="header-inner container">
         <Link to="/" className="brand" onClick={closeAll}>
           <img src="/images/itbeard-300.jpg" alt="" />
-          <span>itbeard</span>
+          <span>{nav.brand}</span>
         </Link>
 
         <button
@@ -120,11 +120,11 @@ export default function NavMenu() {
             {nav.index}
           </NavLink>
 
-          <NavLink to="/experience" className="nav-link" onClick={closeAll}>
-            {nav.experience}
-          </NavLink>
           <NavLink to="/honor" className="nav-link" onClick={closeAll}>
             {nav.honor}
+          </NavLink>
+          <NavLink to="/experience" className="nav-link" onClick={closeAll}>
+            {nav.experience}
           </NavLink>
           <NavLink to="/archive" className="nav-link" onClick={closeAll}>
             {nav.archive}

@@ -12,14 +12,7 @@ export default function Home() {
   const shared = getPage('shared', lang)
   useTitle(page.title)
 
-  const about = getSection(page, 'about')
   const projects = getSection(page, 'projects')
-
-  const scrollToProjects = () => {
-    const el = document.getElementById('projects')
-    if (!el) return
-    window.scrollTo({ top: el.getBoundingClientRect().top + window.scrollY - 78, behavior: 'smooth' })
-  }
 
   return (
     <main>
@@ -47,9 +40,9 @@ export default function Home() {
             </a>
           </nav>
           <div className="hero-actions">
-            <button className="btn btn-primary" onClick={scrollToProjects}>
+            <Link to="/honor" className="btn btn-primary">
               {page.hero.toProjects}
-            </button>
+            </Link>
             <Link to="/support" className="btn btn-secondary">
               {shared.footer.support}
             </Link>
@@ -60,15 +53,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="container section">
-        <h2>{about.title}</h2>
-        <Ornament small />
-        <Md className="prose" html={about.html} />
-      </section>
-
       <section id="projects" className="container section">
         <h2>{projects.title}</h2>
-        <Ornament small />
+        <Ornament />
         <div className="cards">
           {PROJECTS.map((p) => {
             const card = projects.subs.find((s) => s.id === p.id)
@@ -86,7 +73,16 @@ export default function Home() {
                   <h3 dangerouslySetInnerHTML={{ __html: mdInline(card.title) }} />
                 </div>
                 <div className="card-body prose" dangerouslySetInnerHTML={{ __html: card.html }} />
-                {p.commercial && <span className="badge badge-corner">{shared.labels.commercial}</span>}
+                <div className="card-foot">
+                  <span className="since-chip" title={shared.labels.sinceHint}>
+                    {shared.labels.since} {p.started}
+                  </span>
+                  {p.commercial && (
+                    <span className="badge badge-static badge-commercial" title={shared.labels.commercialHint}>
+                      {shared.labels.commercial}
+                    </span>
+                  )}
+                </div>
               </a>
             )
           })}

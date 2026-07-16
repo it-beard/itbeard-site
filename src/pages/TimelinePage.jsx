@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useLang } from '../lib/LangContext'
 import { getPage, md, mdInline } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
@@ -16,8 +17,23 @@ const endOf = (e) => (e.end ? e.end + (e.endMonth ?? 12) / 12 : NOW_F)
 // Horizontal gantt of jobs («Гады ў адным паглядзе»), experience only.
 // Rows come from timeline entries that declare a numeric `start`.
 function OverviewPanel({ overview, entries }) {
-  const jobs = entries.filter((e) => e.start)
+  const [hot, setHot] = useState(null)
+  // idx keeps the entry's position in the sorted list, to jump to its card
+  const jobs = entries.map((e, idx) => ({ ...e, idx })).filter((e) => e.start)
   if (jobs.length === 0) return null
+
+  const jumpTo = (j) => {
+    const item = document.getElementById(`tl-${j.idx}`)
+    if (!item) return
+    item.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    const card = item.querySelector('.timeline-card')
+    if (card) {
+      card.classList.remove('flash')
+      void card.offsetWidth // restart the animation on repeated clicks
+      card.classList.add('flash')
+      setTimeout(() => card.classList.remove('flash'), 1700)
+    }
+  }
 
   const minYear = Math.floor(Math.min(...jobs.map(startOf)))
   const span = Math.max(1, NOW_F - minYear)
@@ -35,7 +51,13 @@ function OverviewPanel({ overview, entries }) {
       <div className="overview-grid">
         <div className="overview-labels">
           {jobs.map((j, i) => (
-            <div key={i} className="overview-label">
+            <div
+              key={i}
+              className={`overview-label${hot === i ? ' hot' : ''}`}
+              onMouseEnter={() => setHot(i)}
+              onMouseLeave={() => setHot(null)}
+              onClick={() => jumpTo(j)}
+            >
               {j.label ?? j.title}
             </div>
           ))}
@@ -48,12 +70,24 @@ function OverviewPanel({ overview, entries }) {
           {jobs.map((j, i) => {
             const left = pos(startOf(j))
             const width = Math.max(3, pos(endOf(j)) - left)
+            const tipLeft = Math.min(88, Math.max(12, left + width / 2))
             return (
-              <div key={i} className="overview-row">
+              <div
+                key={i}
+                className={`overview-row${hot === i ? ' hot' : ''}`}
+                onMouseEnter={() => setHot(i)}
+                onMouseLeave={() => setHot(null)}
+                onClick={() => jumpTo(j)}
+              >
                 <div
                   className={`overview-bar${j.end ? '' : ' ongoing'}`}
                   style={{ left: `${left}%`, width: `${width}%` }}
                 ></div>
+                {hot === i && (
+                  <div className="overview-tip" style={{ left: `${tipLeft}%` }}>
+                    {j.label ?? j.title} · {j.period}
+                  </div>
+                )}
               </div>
             )
           })}
@@ -89,13 +123,12 @@ export default function TimelinePage({ name }) {
         <h1>{page.heading}</h1>
         <Ornament />
         <Md className="prose intro" html={md(page.intro)} />
-        {page.overview && <OverviewPanel overview={page.overview} entries={entries} />}
       </section>
 
       <section className="container section">
-        <ol className="timeline">
+        <ol className={`timeline${page.overview ? ' has-tail' : ''}`}>
           {entries.map((item, i) => (
-            <li key={i} className={`timeline-item${item.start && !item.end ? ' ongoing' : ''}`}>
+            <li key={i} id={`tl-${i}`} className={`timeline-item${item.start && !item.end ? ' ongoing' : ''}`}>
               <div className="timeline-mark" aria-hidden="true">
                 <span className="timeline-gem"></span>
               </div>
@@ -103,7 +136,9 @@ export default function TimelinePage({ name }) {
                 <div className="timeline-head">
                   {item.logo && <img src={item.logo} alt="" loading="lazy" />}
                   <div className="timeline-title">
-                    <span className="timeline-period">{item.period}</span>
+                    <span className="timeline-period" title={page.periodHint}>
+                      {item.period}
+                    </span>
                     <h3>
                       {item.link && !item.org ? (
                         <a href={item.link} target="_blank" rel="noopener">
@@ -130,11 +165,20 @@ export default function TimelinePage({ name }) {
                   className="prose"
                   dangerouslySetInnerHTML={{ __html: mdInline(item.description) }}
                 />
-                {item.founded && <span className="badge badge-corner">{page.foundedLabel}</span>}
+                {item.founded && (
+                  <span className="badge badge-corner" title={page.foundedHint}>
+                    {page.foundedLabel}
+                  </span>
+                )}
               </div>
             </li>
           ))}
         </ol>
+        {page.overview && (
+          <div className="timeline-tail">
+            <OverviewPanel overview={page.overview} entries={entries} />
+          </div>
+        )}
       </section>
     </main>
   )

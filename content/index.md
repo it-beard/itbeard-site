@@ -4,33 +4,23 @@ title:
   en: Lex Kartynnik website
 hero:
   greeting:
-    be: Вітаю на маім сайце!
-    en: Welcome to my website!
+    be: Ку! Гэта мой сайт і я
+    en: Koo! This is my website and me
   name: { be: Лёха Картыннік, en: Lex Kartynnik }
   tagline:
     be: Распрацоўшчык, адукатар, аўтар падкастаў і відэа, стваральнік суполак, ШІ-амбасадор і проста клёвы хлопец.
     en: Developer, educator, author of podcasts and videos, community builder, AI ambassador, and just a cool guy.
   fact:
-    be: У IT з 2011 года. Барада — сапраўдная.
-    en: In IT since 2011. The beard is real.
+    be: У IT з 2011 года. Барада — сапраўдная 🧔
+    en: In IT since 2011. The beard is real 🧔
   toProjects:
-    be: Да праектаў
-    en: To my projects
+    be: Пра мяне
+    en: About me
 ---
 
 <!-- be -->
 
-# Пра мяне {#about}
-
-Мяне клічуць **Лёхам Картыннікам**, і я з Беларусі. Апошнія гады жыву ў Польшчы, працую ў IT з 2011.
-
-Дзесяць гадоў я шчыльна займаўся backend-распрацоўкай на платформе .NET, а з 2023 года навучаю распрацоўнікаў працаваць з ШІ у межах клуба [«Эвалюцыя Кода»](https://evocoders.ai). Увесь мой кар'ерны шлях можна паглядзець у [LinkedIn](https://www.linkedin.com/in/akartynnik/).
-
-Таксама я раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў выглядзе падкастаў па-расейску і па-беларуску, ствараю **тэхнічныя суполкі** і дапамагаю развіваць **беларускамоўнае** інфаполе.
-
-На гэтым сайце вы даведаецеся пра мае асноўныя праекты, мо нешта дый спадабаецца.
-
-# Мае бягучыя праекты {#projects}
+# Мае актыўныя праекты {#projects}
 
 ## КПСШІ {#kalasyai}
 
@@ -62,7 +52,7 @@ Mastodon — размеркаваны аналаг Twitter, без рэклам�
 
 ## На Вайбе {#aia}
 
-**«на Вайбе»** — гэта расейскамоўны падкаст, у якім мы разам з Віцем Шаленчанкам абмяркоўваем самыя свежыя навіны са свету нейрасетак і штучнага інтэлекту.
+**«на Вайбе»** — гэта расейскамоўны падкаст, у якім мы разам з Вікай Шаленчанка абмяркоўваем самыя свежыя навіны са свету нейрасетак і штучнага інтэлекту.
 
 Падкаст выходзіць раз на два тыдні і існуе дзякуючы падтрымцы слухачоў.
 
@@ -80,17 +70,7 @@ Mastodon — размеркаваны аналаг Twitter, без рэклам�
 
 <!-- en -->
 
-# About me {#about}
-
-My name is **Lex Kartynnik**, I'm from Belarus, live in Poland, and since 2011 I've been working in IT.
-
-For ten years I was deep into backend development on the .NET platform, and since 2023, within the [«Code Evolution»](https://evocoders.ai) club I teach developers to code in tandem with AI. You can see my entire career path on [LinkedIn](https://www.linkedin.com/in/akartynnik/).
-
-I also create lots of **tech**, **science-adjacent**, and other **technical** content on YouTube and as podcasts in Russian and Belarusian, build **tech communities**, and help grow the **Belarusian-language** info space.
-
-On this site you'll learn about my main projects—maybe you'll like something.
-
-# My Current Projects {#projects}
+# My Active Projects {#projects}
 
 ## КПСШІ {#kalasyai}
 
@@ -122,7 +102,7 @@ A single place to dive into building alongside AI.
 
 ## on Vibe {#aia}
 
-**«on Vibe»** is a Russian-language podcast where, together with Vitya Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence.
+**«on Vibe»** is a Russian-language podcast where, together with Vika Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence.
 
 The podcast is released every two weeks and exists thanks to listener support.
 

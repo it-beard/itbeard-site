@@ -108,6 +108,11 @@ img {
   padding-bottom: 24px;
 }
 
+/* a section right after the page head sits closer to the intro text */
+.page-head + .section {
+  padding-top: 8px;
+}
+
 .section > h2 {
   font-size: 28px;
   margin-bottom: 20px;
@@ -128,7 +133,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
-  margin: 14px 0 18px;
+  margin: 16px 0;
 }
 
 .ornament .orn-line {
@@ -611,11 +616,13 @@ body.theme-restore #app {
   transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
 }
 
-a.card:hover {
-  transform: translateY(-5px);
-  border-color: var(--accent-bright);
-  box-shadow: 0 10px 30px rgba(165, 14, 30, 0.18);
-  text-shadow: none;
+@media (hover: hover) {
+  a.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent-bright);
+    box-shadow: 0 10px 30px rgba(165, 14, 30, 0.18);
+    text-shadow: none;
+  }
 }
 
 .card-head {
@@ -652,7 +659,27 @@ a.card:hover {
 .card-commercial {
   position: relative;
   background: var(--bg-deep);
-  padding-bottom: 44px;
+}
+
+.card .card-body {
+  flex: 1;
+}
+
+.card:not(.card-archived) .card-foot {
+  margin-top: 16px;
+}
+
+/* dark-yellow start-year chip in the card foot */
+.since-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(201, 168, 60, 0.4);
+  background: rgba(201, 168, 60, 0.07);
+  color: #c9a83c;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 .badge.badge-corner {
@@ -661,7 +688,23 @@ a.card:hover {
   background: var(--bg-raised);
 }
 
+/* badge placed in normal flow (card foot) instead of a corner */
+.badge.badge-static {
+  position: static;
+  background: var(--bg-raised);
+}
+
+/* the «commercial» badge is blue, not accent-red */
+.badge.badge-commercial {
+  color: #4c9ce8;
+  border-color: rgba(76, 156, 232, 0.45);
+}
+
 /* Archived cards («Пагост») */
+.card-archived {
+  -webkit-tap-highlight-color: transparent;
+}
+
 .card-archived .card-head img {
   width: 60px;
   height: 60px;
@@ -670,22 +713,26 @@ a.card:hover {
   transition: filter 0.35s, opacity 0.35s;
 }
 
-.card-archived:hover {
-  transform: translateY(-4px);
-  border-color: var(--accent-bright);
-  box-shadow: 0 14px 34px rgba(165, 14, 30, 0.16);
-}
+/* only linked cards react to hover, and only on devices with a real cursor */
+@media (hover: hover) {
+  a.card-archived:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-bright);
+    box-shadow: 0 14px 34px rgba(165, 14, 30, 0.16);
+  }
 
-/* logo regains full color on hover */
-.card-archived:hover .card-head img {
-  filter: none;
-  opacity: 1;
+  /* logo regains full color on hover */
+  a.card-archived:hover .card-head img {
+    filter: none;
+    opacity: 1;
+  }
 }
 
 .card-title {
   min-width: 0;
 }
 
+/* quiet start-date chip — the status accent lives in the card foot */
 .range-chip {
   display: inline-flex;
   align-items: center;
@@ -693,11 +740,11 @@ a.card:hover {
   margin-top: 6px;
   padding: 2px 11px;
   border-radius: 999px;
-  border: 1px solid rgba(226, 67, 78, 0.45);
-  background: rgba(165, 14, 30, 0.1);
-  color: var(--accent-bright);
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--muted);
   font-size: 12.5px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .card-archived .card-body {
@@ -707,6 +754,54 @@ a.card:hover {
 
 .card-archived .card-body p {
   font-size: 15px;
+}
+
+/* Dormant («вяла бягучыя») cards: warm background + yellow status marks */
+.card-dormant {
+  background: #2b2820;
+}
+
+@media (hover: hover) {
+  a.card-dormant:hover {
+    border-color: #e2c04e;
+    box-shadow: 0 14px 34px rgba(226, 192, 78, 0.12);
+  }
+}
+
+.card-dormant .card-head img {
+  filter: grayscale(0.35);
+  opacity: 1;
+}
+
+/* Legend under the page intro */
+.archive-legend {
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.archive-legend li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legend-gem {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 1px;
+  background: var(--muted);
+  transform: rotate(45deg);
+}
+
+.legend-gem-dormant {
+  background: #e2c04e;
 }
 
 .card-foot {
@@ -719,7 +814,19 @@ a.card:hover {
   color: var(--muted);
 }
 
+.card-foot .card-closed {
+  font-weight: 700;
+}
+
+/* duration as a dim yellow chip */
 .card-foot .card-duration {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(226, 192, 78, 0.22);
+  background: rgba(226, 192, 78, 0.05);
+  color: rgba(226, 192, 78, 0.65);
   font-weight: 700;
 }
 
@@ -772,6 +879,12 @@ a.card:hover {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.overview-label.hot {
+  color: var(--text);
 }
 
 .overview-chart {
@@ -783,6 +896,7 @@ a.card:hover {
 .overview-row {
   position: relative;
   height: 30px;
+  cursor: pointer;
 }
 
 .overview-bar {
@@ -792,6 +906,30 @@ a.card:hover {
   border-radius: 4px;
   background: linear-gradient(90deg, var(--accent), var(--accent-bright));
   box-shadow: 0 0 10px rgba(226, 67, 78, 0.3);
+  transition: filter 0.2s, box-shadow 0.2s;
+}
+
+.overview-row.hot .overview-bar {
+  filter: brightness(1.25);
+  box-shadow: 0 0 16px rgba(226, 67, 78, 0.55);
+}
+
+/* floating tooltip above the hovered bar */
+.overview-tip {
+  position: absolute;
+  bottom: 25px;
+  transform: translateX(-50%);
+  padding: 4px 11px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+  z-index: 3;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 /* ongoing bars end with a white diamond at the right edge */
@@ -838,22 +976,48 @@ a.card:hover {
   position: relative;
 }
 
-/* continuous left axis, cards all on the right */
+/* continuous left axis, cards all on the right;
+   it emerges from the first diamond and gently dissolves near the end */
 .timeline::before {
   content: '';
   position: absolute;
-  top: 10px;
-  bottom: 30px;
+  top: 41px;
+  bottom: 0;
   left: 38px;
   margin-left: -1px;
   width: 2px;
-  background: linear-gradient(
-    180deg,
-    rgba(165, 14, 30, 0),
-    var(--accent) 48px,
-    var(--accent) calc(100% - 64px),
-    rgba(165, 14, 30, 0)
-  );
+  background: linear-gradient(180deg, var(--accent), var(--accent) calc(100% - 160px), rgba(165, 14, 30, 0));
+}
+
+/* when the overview tail follows, the axis stays solid and hands over to the dashed tail */
+.timeline.has-tail::before {
+  background: var(--accent);
+}
+
+/* tail after the last entry: the axis carries on as a fading dashed line
+   and the overview panel lines up with the cards column */
+.timeline-tail {
+  position: relative;
+  display: grid;
+  grid-template-columns: 76px 1fr;
+}
+
+.timeline-tail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 38px;
+  margin-left: -1px;
+  width: 2px;
+  background: repeating-linear-gradient(180deg, var(--accent) 0 6px, transparent 6px 13px);
+  -webkit-mask-image: linear-gradient(180deg, #000, #000 55%, transparent 96%);
+  mask-image: linear-gradient(180deg, #000, #000 55%, transparent 96%);
+}
+
+.timeline-tail .overview {
+  grid-column: 2;
+  margin-top: 0;
 }
 
 .timeline-item {
@@ -935,6 +1099,23 @@ a.card:hover {
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: var(--bg-raised);
+}
+
+/* short glow after jumping to a card from the overview */
+.timeline-card.flash {
+  animation: cardFlash 1.6s ease;
+}
+
+@keyframes cardFlash {
+  0%,
+  55% {
+    border-color: var(--accent-bright);
+    box-shadow: 0 0 0 5px rgba(226, 67, 78, 0.18);
+  }
+  100% {
+    border-color: var(--line);
+    box-shadow: none;
+  }
 }
 
 /* Founded-from-scratch cards: deeper background + corner label */
@@ -1430,6 +1611,14 @@ a.card:hover {
   }
 
   .timeline-item.ongoing::before {
+    left: 23px;
+  }
+
+  .timeline-tail {
+    grid-template-columns: 46px 1fr;
+  }
+
+  .timeline-tail::before {
     left: 23px;
   }
 

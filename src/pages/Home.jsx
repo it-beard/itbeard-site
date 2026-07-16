@@ -49,7 +49,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-photo">
-          <img src="/images/itbeard-funny.jpg" alt={page.hero.name} />
+          <div className="photo-coin">
+            <img className="coin-front" src="/images/lex-linkedin.jpg" alt={page.hero.name} />
+            <img className="coin-back" src="/images/itbeard-funny.jpg" alt="" />
+          </div>
         </div>
       </section>
 

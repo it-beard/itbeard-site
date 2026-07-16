@@ -574,6 +574,7 @@ body.theme-restore #app {
 
 /* the round "паспарту" wrapper around the photo */
 .hero-photo {
+  position: relative;
   flex-shrink: 0;
   width: clamp(170px, 24vw, 230px);
   height: clamp(170px, 24vw, 230px);
@@ -585,17 +586,126 @@ body.theme-restore #app {
   transition: border-color 0.35s, box-shadow 0.35s;
 }
 
-.hero-photo:hover {
-  border-color: rgba(226, 67, 78, 0.65);
-  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45), 0 0 24px rgba(165, 14, 30, 0.18);
+/* static-electricity discharges running around the photo on hover */
+.hero-photo::before,
+.hero-photo::after {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+}
+
+/* long arcs */
+.hero-photo::before {
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 30deg,
+    rgba(150, 205, 255, 0.95) 42deg,
+    rgba(220, 240, 255, 0.9) 47deg,
+    transparent 60deg 150deg,
+    rgba(150, 205, 255, 0.8) 163deg,
+    transparent 175deg 255deg,
+    rgba(220, 240, 255, 0.9) 265deg,
+    rgba(150, 205, 255, 0.75) 272deg,
+    transparent 285deg 360deg
+  );
+  filter: drop-shadow(0 0 6px rgba(140, 200, 255, 0.85));
+}
+
+/* short counter-rotating sparks */
+.hero-photo::after {
+  background: conic-gradient(
+    from 90deg,
+    transparent 0deg 70deg,
+    rgba(235, 245, 255, 0.95) 76deg,
+    transparent 82deg 200deg,
+    rgba(170, 215, 255, 0.9) 205deg,
+    transparent 211deg 320deg,
+    rgba(235, 245, 255, 0.8) 324deg,
+    transparent 329deg 360deg
+  );
+  filter: drop-shadow(0 0 4px rgba(180, 220, 255, 0.9));
+}
+
+@keyframes sparkSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes sparkSpinRev {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes sparkFlicker {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0.45;
+  }
+  60% {
+    opacity: 0.85;
+  }
+}
+
+@media (hover: hover) {
+  .hero-photo:hover {
+    border-color: rgba(150, 205, 255, 0.45);
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45), 0 0 26px rgba(130, 195, 255, 0.22);
+  }
+
+  .hero-photo:hover::before {
+    opacity: 1;
+    animation: sparkSpin 1.3s linear infinite, sparkFlicker 0.32s steps(3) infinite;
+  }
+
+  .hero-photo:hover::after {
+    opacity: 1;
+    animation: sparkSpinRev 0.8s linear infinite, sparkFlicker 0.21s steps(2) infinite;
+  }
+}
+
+/* the photo is a two-sided coin: LinkedIn portrait by default,
+   flips to the funny one on hover */
+.photo-coin {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  perspective: 700px;
 }
 
 .hero-photo img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
+  backface-visibility: hidden;
+  transition: transform 0.7s cubic-bezier(0.4, 0.1, 0.2, 1);
+}
+
+.hero-photo .coin-back {
+  transform: rotateY(180deg);
+}
+
+@media (hover: hover) {
+  .hero-photo:hover .coin-front {
+    transform: rotateY(-180deg);
+  }
+
+  .hero-photo:hover .coin-back {
+    transform: rotateY(0deg);
+  }
 }
 
 /* ===== Project cards ===== */

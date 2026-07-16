@@ -63,7 +63,7 @@ function ThemeToggle() {
       {boom &&
         createPortal(
           <div className="theme-warning" role="alert">
-            <span className="theme-warning-emoji" aria-hidden="true">💥</span>
+            <span className="theme-warning-emoji" aria-hidden="true">⚠️</span>
             <p>{theme.joke}</p>
           </div>,
           document.body

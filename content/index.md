@@ -10,9 +10,6 @@ hero:
   tagline:
     be: Распрацоўшчык, адукатар, аўтар падкастаў і відэа, стваральнік суполак, ШІ-амбасадор і проста клёвы хлопец.
     en: Developer, educator, author of podcasts and videos, community builder, AI ambassador, and just a cool guy.
-  fact:
-    be: У IT з 2011 года. Барада — сапраўдная 🧔
-    en: In IT since 2011. The beard is real 🧔
   toProjects:
     be: Пра мяне
     en: About me

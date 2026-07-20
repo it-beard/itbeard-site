@@ -22,22 +22,28 @@ labels:
     en: The year the project was finally closed
   since: { be: з, en: since }
   sinceHint:
-    be: Год, калі праект пачаўся
-    en: The year the project started
+    be: Дата, калі праект пачаўся
+    en: The date the project started
+  startedOn:
+    be: Праект пачаўся
+    en: The project started on
+  startedInYear:
+    be: { pre: Праект пачаўся ў, post: годзе }
+    en: { pre: The project started in, post: "" }
   commercial: { be: камерцыйны, en: commercial }
   commercialHint:
-    be: Камерцыйны праект — удзел у ім платны
-    en: A commercial project — participation is paid
+    be: Гэты праект мяне корміць
+    en: This project pays my bills
   langHint:
-    be: Мова, на якой вядзецца праект
-    en: The language the project is conducted in
+    be: Мова праекту
+    en: Project language
   langCodes:
     be: { be: бел, en: be }
-    ru: { be: рус, en: ru }
+    ru: { be: рас, en: ru }
     en: { be: анг, en: en }
   langNames:
     be: { be: Беларуская, en: Belarusian }
-    ru: { be: Руская, en: Russian }
+    ru: { be: Расейская, en: Russian }
     en: { be: Ангельская, en: English }
   yearOne: { be: год, en: year }
   yearFew: { be: гады, en: years }
@@ -54,7 +60,7 @@ theme:
     en: True tech lovers have no idea what a light theme is!
 footer:
   contacts: { be: Мае кантакты, en: My contacts }
-  support: { be: Падтрымаць мяне, en: Support me }
+  support: { be: Падтрымаць, en: Support }
   github:
     be: "Код гэтага сайта на [GitHub](https://github.com/it-beard/itbeard-site)"
     en: "The code of this site on [GitHub](https://github.com/it-beard/itbeard-site)"

@@ -16,6 +16,40 @@ marked.use({
 export const md = (src) => (src ? marked.parse(src) : '')
 export const mdInline = (src) => (src ? marked.parseInline(src) : '')
 
+// Month names in the genitive case for «15 сакавіка 2024» / «March 15, 2024».
+const MONTHS = {
+  be: ['студзеня', 'лютага', 'сакавіка', 'красавіка', 'мая', 'чэрвеня', 'ліпеня', 'жніўня', 'верасня', 'кастрычніка', 'лістапада', 'снежня'],
+  en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+}
+
+// Extract the four-digit year from a start value (ISO date or bare year).
+export function startYear(value) {
+  const m = /^(\d{4})/.exec(String(value ?? ''))
+  return m ? m[1] : ''
+}
+
+// Render a project start date. A full ISO date ('2024-03-15') becomes a
+// localized day-month-year string; a bare year (2024) is returned as-is.
+export function formatDate(value, lang) {
+  if (value == null) return ''
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(String(value))
+  if (!m) return String(value)
+  const [, y, mo, d] = m
+  const month = (MONTHS[lang] ?? MONTHS.be)[Number(mo) - 1]
+  const day = Number(d)
+  return lang === 'en' ? `${month} ${day}, ${y}` : `${day} ${month} ${y}`
+}
+
+// Build the start-date tooltip. A full date reads «Праект пачаўся 16 лютага 2023»;
+// a bare year reads «Праект пачаўся ў 2025 годзе».
+export function startTooltip(value, lang, labels) {
+  if (/^\d{4}-\d{2}-\d{2}$/.test(String(value))) {
+    return `${labels.startedOn} ${formatDate(value, lang)}`
+  }
+  const { pre, post } = labels.startedInYear
+  return [pre, startYear(value), post].filter(Boolean).join(' ')
+}
+
 // A frontmatter node like { be: "...", en: "..." } is a translated value:
 // resolve it to the current language (falling back to Belarusian).
 function isLocalized(node) {

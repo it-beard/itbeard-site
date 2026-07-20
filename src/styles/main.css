@@ -546,13 +546,6 @@ body.theme-restore #app {
   max-width: 560px;
 }
 
-.hero-fact {
-  margin-top: 10px;
-  font-size: 15px;
-  color: var(--muted);
-  opacity: 0.8;
-}
-
 .hero-social {
   margin-top: 26px;
   flex-wrap: wrap;
@@ -761,7 +754,6 @@ body.theme-restore #app {
 /* Commercial card */
 .card-commercial {
   position: relative;
-  background: var(--bg-deep);
 }
 
 .card .card-body {
@@ -810,7 +802,7 @@ body.theme-restore #app {
   gap: 8px;
 }
 
-/* language marker badge — quiet, uppercase code (be / ru / en) */
+/* language marker badge — quiet uppercase code (БЕЛ / РАС / АНГ) */
 .badge.badge-lang {
   color: var(--muted);
   border-color: var(--line);
@@ -1593,6 +1585,13 @@ body.theme-restore #app {
   border-color: #25d366;
   color: #25d366;
   box-shadow: 0 0 10px rgba(37, 211, 102, 0.5);
+  text-shadow: none;
+}
+
+.social a.mastodon:hover {
+  border-color: #8c7dff;
+  color: #8c7dff;
+  box-shadow: 0 0 10px rgba(140, 125, 255, 0.5);
   text-shadow: none;
 }
 

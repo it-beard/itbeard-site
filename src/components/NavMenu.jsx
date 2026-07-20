@@ -120,8 +120,8 @@ export default function NavMenu() {
             {nav.index}
           </NavLink>
 
-          <NavLink to="/honor" className="nav-link" onClick={closeAll}>
-            {nav.honor}
+          <NavLink to="/about" className="nav-link" onClick={closeAll}>
+            {nav.about}
           </NavLink>
           <NavLink to="/experience" className="nav-link" onClick={closeAll}>
             {nav.experience}

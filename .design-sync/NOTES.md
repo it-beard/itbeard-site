@@ -8,7 +8,7 @@
 - Provider chain: `MemoryRouter` → `LangProvider` (`cfg.provider`). Router context is required by `Link`/`NavLink`; lang context by `useLang`. Language auto-detects from the viewer's browser (`en` in headless chromium; `be` for be/ru/uk locales) — card text language follows the viewer by design.
 - `cfg.overrides`: `NavMenu` and `Layout` are `cardMode: single` (the fixed-position header escapes grid cells — `[GRID_OVERFLOW]`).
 - Known render warns: `[FONT_REMOTE] "Montserrat Alternates"` — expected on every run (remote font-host @import).
-- Site content quirk, not a sync bug: `content/honor.md`'s English block contains literal `TODO:` placeholder entries — TimelinePage's Honor cell renders them as-is.
+- Site content quirk, not a sync bug: `content/about.md`'s English block contains literal `TODO:` placeholder entries — TimelinePage's About cell renders them as-is.
 - 2026-07-15 red-palette re-sync (commit 0d04592): tokens renamed `--blue/--orange/--yellow/--red` → `--accent` #A50E1E / `--accent-bright` #E2434E / `--accent-hover` #F06A73; `.timeline-dot` → `.timeline-mark`/`.timeline-gem`; `conventions.md` updated to match. `Ornament` (national-pattern divider, `small?: boolean`) added: lib-entry export + `componentSrcMap` + authored preview + `dtsPropsFor` entry.
 - Plain-JSX components with destructured default-param props extract as `[key: string]: unknown` — any new component (or new prop) needs a `cfg.dtsPropsFor` entry (see TimelinePage, Ornament).
 

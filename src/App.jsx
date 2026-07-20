@@ -17,7 +17,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/experience" element={<TimelinePage name="experience" />} />
-            <Route path="/honor" element={<TimelinePage name="honor" />} />
+            <Route path="/about" element={<TimelinePage name="about" />} />
             <Route path="/archive" element={<Archive />} />
             <Route path="/support" element={<Support />} />
             <Route path="/sponsorship" element={<Support />} />

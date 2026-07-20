@@ -12,7 +12,7 @@ nav:
   brand: { be: Лёхін сайт, en: Lex's site }
   index: { be: Галоўная, en: Home }
   experience: { be: Кар'ера, en: Career }
-  honor: { be: Пра мяне, en: About }
+  about: { be: Пра мяне, en: About }
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }
 labels:

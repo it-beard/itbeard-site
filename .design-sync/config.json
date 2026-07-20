@@ -36,7 +36,7 @@
     "Layout": { "cardMode": "single", "primaryStory": "Default" }
   },
   "dtsPropsFor": {
-    "TimelinePage": "name: 'experience' | 'honor';",
+    "TimelinePage": "name: 'experience' | 'about';",
     "Ornament": "/** Shortened h2 variant: short line + two gems (default is the full line · gems · line divider). */\nsmall?: boolean;"
   }
 }

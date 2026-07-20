@@ -42,7 +42,7 @@ export default function Home() {
             </a>
           </nav>
           <div className="hero-actions">
-            <Link to="/honor" className="btn btn-primary">
+            <Link to="/about" className="btn btn-primary">
               {page.hero.toProjects}
             </Link>
             <Link to="/support" className="btn btn-secondary">

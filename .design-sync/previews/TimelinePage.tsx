@@ -17,14 +17,14 @@ const Dark = ({ children }: { children?: any }) => {
 }
 
 // Timeline page rendering content/<name>.md: 'experience' = work history,
-// 'honor' = awards. The `name` prop is the only variant axis.
+// 'about' = awards. The `name` prop is the only variant axis.
 export const Experience = () => (
   <Dark>
     <TimelinePage name="experience" />
   </Dark>
 )
-export const Honor = () => (
+export const About = () => (
   <Dark>
-    <TimelinePage name="honor" />
+    <TimelinePage name="about" />
   </Dark>
 )

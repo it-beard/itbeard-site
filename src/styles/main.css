@@ -145,14 +145,12 @@ img {
 .ornament .orn-gem {
   width: 9px;
   height: 9px;
-  background: var(--accent);
+  background: var(--text);
   transform: rotate(45deg);
 }
 
-.ornament .orn-gem-light {
-  width: 6px;
-  height: 6px;
-  background: var(--text);
+.ornament .orn-gem-accent {
+  background: var(--accent);
 }
 
 .ornament-sm {
@@ -173,11 +171,6 @@ h2 + .ornament-sm {
 .ornament-sm .orn-gem {
   width: 8px;
   height: 8px;
-}
-
-.ornament-sm .orn-gem-light {
-  width: 5px;
-  height: 5px;
 }
 
 /* ===== Buttons ===== */
@@ -808,6 +801,21 @@ body.theme-restore #app {
 .badge.badge-commercial {
   color: #4c9ce8;
   border-color: rgba(76, 156, 232, 0.45);
+}
+
+/* right-aligned cluster of foot badges (commercial + language) */
+.card-foot-badges {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* language marker badge — quiet, uppercase code (be / ru / en) */
+.badge.badge-lang {
+  color: var(--muted);
+  border-color: var(--line);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
 }
 
 /* Archived cards («Пагост») */

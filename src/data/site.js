@@ -2,14 +2,14 @@
 // All human-readable text lives in content/*.md.
 
 export const PROJECTS = [
-  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png', commercial: true, started: 2024 },
-  { id: 'itbeard', url: 'https://youtube.com/@itbeard', image: '/images/itbeard-300.jpg', commercial: true, started: 2018 },
-  { id: 'ciomnylos', url: 'https://youtube.com/@ciomnylos', image: '/images/ciomnylos-logo.jpg', started: 2022 },
-  { id: 'aia', url: 'https://podcast.onvibe.io', image: '/images/onvibe.jpg', started: 2025 },
-  { id: 'kalasyai', url: 'https://youtube.com/@kalasyai', image: '/images/kalasyai.jpg', started: 2025 },
-  { id: 'setivir', url: 'https://setivir.art', image: '/images/setivir.jpg', started: 2026 },
-  { id: 'vkl', url: 'https://vkl.world', image: '/images/vkl-logo.jpg', started: 2022 },
-  { id: 'belarusai', url: 'https://telegram.me/belarusai', image: '/images/belarusai-logo.jpg', started: 2024 },
+  { id: 'evocode', url: 'https://evocoders.ai', image: '/images/evocode.png', commercial: true, started: 2024, lang: 'en' },
+  { id: 'itbeard', url: 'https://youtube.com/@itbeard', image: '/images/itbeard-300.jpg', commercial: true, started: 2018, lang: 'ru' },
+  { id: 'ciomnylos', url: 'https://youtube.com/@ciomnylos', image: '/images/ciomnylos-logo.jpg', started: 2022, lang: 'be' },
+  { id: 'aia', url: 'https://podcast.onvibe.io', image: '/images/onvibe.jpg', started: 2025, lang: 'ru' },
+  { id: 'kalasyai', url: 'https://youtube.com/@kalasyai', image: '/images/kalasyai.jpg', started: 2025, lang: 'be' },
+  { id: 'setivir', url: 'https://setivir.art', image: '/images/setivir.jpg', started: 2026, lang: 'be' },
+  { id: 'vkl', url: 'https://vkl.world', image: '/images/vkl-logo.jpg', started: 2022, lang: 'be' },
+  { id: 'belarusai', url: 'https://telegram.me/belarusai', image: '/images/belarusai-logo.jpg', started: 2024, lang: 'be' },
 ]
 
 

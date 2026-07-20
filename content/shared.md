@@ -28,6 +28,17 @@ labels:
   commercialHint:
     be: Камерцыйны праект — удзел у ім платны
     en: A commercial project — participation is paid
+  langHint:
+    be: Мова, на якой вядзецца праект
+    en: The language the project is conducted in
+  langCodes:
+    be: { be: бел, en: be }
+    ru: { be: рус, en: ru }
+    en: { be: анг, en: en }
+  langNames:
+    be: { be: Беларуская, en: Belarusian }
+    ru: { be: Руская, en: Russian }
+    en: { be: Ангельская, en: English }
   yearOne: { be: год, en: year }
   yearFew: { be: гады, en: years }
   yearMany: { be: гадоў, en: years }

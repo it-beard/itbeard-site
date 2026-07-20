@@ -5,13 +5,13 @@ export default function Ornament({ small = false }) {
     <div className="ornament ornament-sm" aria-hidden="true">
       <span className="orn-line"></span>
       <span className="orn-gem"></span>
-      <span className="orn-gem orn-gem-light"></span>
+      <span className="orn-gem orn-gem-accent"></span>
     </div>
   ) : (
     <div className="ornament" aria-hidden="true">
       <span className="orn-line"></span>
       <span className="orn-gem"></span>
-      <span className="orn-gem orn-gem-light"></span>
+      <span className="orn-gem orn-gem-accent"></span>
       <span className="orn-gem"></span>
       <span className="orn-line"></span>
     </div>

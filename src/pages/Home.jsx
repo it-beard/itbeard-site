@@ -80,11 +80,21 @@ export default function Home() {
                   <span className="since-chip" title={shared.labels.sinceHint}>
                     {shared.labels.since} {p.started}
                   </span>
-                  {p.commercial && (
-                    <span className="badge badge-static badge-commercial" title={shared.labels.commercialHint}>
-                      {shared.labels.commercial}
-                    </span>
-                  )}
+                  <div className="card-foot-badges">
+                    {p.commercial && (
+                      <span className="badge badge-static badge-commercial" title={shared.labels.commercialHint}>
+                        {shared.labels.commercial}
+                      </span>
+                    )}
+                    {p.lang && (
+                      <span
+                        className="badge badge-static badge-lang"
+                        title={`${shared.labels.langHint}: ${shared.labels.langNames[p.lang]}`}
+                      >
+                        {shared.labels.langCodes[p.lang]}
+                      </span>
+                    )}
+                  </div>
                 </div>
               </a>
             )

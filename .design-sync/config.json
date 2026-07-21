@@ -1,0 +1,42 @@
+{
+  "pkg": "itbeard-site",
+  "globalName": "ItbeardSite",
+  "projectId": "26f1947c-dc09-4cf3-a13a-a9b3b6984ede",
+  "shape": "package",
+  "readmeHeader": ".design-sync/conventions.md",
+  "buildCmd": "npx vite build --config .design-sync/vite.lib.config.js && cat .design-sync/styles-entry.css src/styles/main.css > dist-ds/ds-styles.css",
+  "cssEntry": "dist-ds/ds-styles.css",
+  "provider": {
+    "component": "MemoryRouter",
+    "inner": { "component": "LangProvider" }
+  },
+  "componentSrcMap": {
+    "Layout": "src/components/Layout.jsx",
+    "NavMenu": "src/components/NavMenu.jsx",
+    "Footer": "src/components/Footer.jsx",
+    "Ornament": "src/components/Ornament.jsx",
+    "Home": "src/pages/Home.jsx",
+    "TimelinePage": "src/pages/TimelinePage.jsx",
+    "Archive": "src/pages/Archive.jsx",
+    "Contacts": "src/pages/Contacts.jsx",
+    "Support": "src/pages/Support.jsx",
+    "NotFound": "src/pages/NotFound.jsx",
+    "Md": null,
+    "LangProvider": null,
+    "MemoryRouter": null,
+    "BrowserRouter": null,
+    "Link": null,
+    "NavLink": null,
+    "Routes": null,
+    "Route": null,
+    "Outlet": null
+  },
+  "overrides": {
+    "NavMenu": { "cardMode": "single", "primaryStory": "Default" },
+    "Layout": { "cardMode": "single", "primaryStory": "Default" }
+  },
+  "dtsPropsFor": {
+    "TimelinePage": "name: 'experience' | 'about';",
+    "Ornament": "/** Shortened h2 variant: short line + two gems (default is the full line · gems · line divider). */\nsmall?: boolean;"
+  }
+}

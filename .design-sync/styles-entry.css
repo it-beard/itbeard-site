@@ -1,0 +1,6 @@
+/* Design-sync remote CSS: the site loads Montserrat Alternates via a <link>
+   and Font Awesome via a kit <script> in index.html — neither is reachable
+   from main.css. buildCmd concatenates this file with src/styles/main.css
+   into dist-ds/ds-styles.css (cfg.cssEntry). Remote @imports must be first. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');

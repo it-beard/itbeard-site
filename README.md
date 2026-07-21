@@ -1,40 +1,40 @@
+# itbeard.com
+
 Open-source repository of ITBeard's personal website: https://itbeard.com
 
-Built with .NET 8, Blazor WebAssembly with Server Side Rendering (SSR) on first loading.
+Built with **React + Vite**. All page texts live in Markdown files with both languages (Belarusian and English) side by side.
 
-SSL Issuer Bot: https://github.com/shibayan/appservice-acmebot
+## Structure
 
-## Prerequisites
-
-If you haven't already trusted a local HTTPS dev certificate (macOS/Windows):
 ```
-dotnet dev-certs https --trust
-```
-Approve the prompt if asked, then run the app.
-
-## Run locally using .NET
-
-Run this project locally:
-```
-dotnet run --project ./Site/Itbeard.Site.Server/Itbeard.Site.Server.csproj
+content/          # page texts, one .md file per page, both languages in each file
+src/
+  components/     # header/nav, footer, layout
+  pages/          # route components
+  data/site.js    # language-independent data: URLs, images, crypto wallets, redirects
+  lib/            # markdown content loader, language context
+public/           # static assets (images, fonts, PDFs)
 ```
 
-Run this project in watch mode:
+## Editing texts / translations
+
+Open a file in `content/`:
+
+- Frontmatter values are localized in place: `title: { be: Кантакты, en: Contacts }`
+- Page body is split by `<!-- be -->` and `<!-- en -->` markers; each language block
+  uses regular Markdown with `# Section {#id}` and `## Card {#id}` headings.
+
+## Run locally
+
 ```
-dotnet watch --project ./Site/Itbeard.Site.Server/Itbeard.Site.Server.csproj run
+npm install
+npm run dev
 ```
 
-## Run using Docker
+## Build
 
-Build the Docker image:
 ```
-docker build -t itbeard-site .
-```
-
-Run the container:
-```
-docker run -p 8080:80 itbeard-site
+npm run build    # output in dist/
 ```
 
-The site will be available at http://localhost:8080
-
+Deployed to GitHub Pages automatically on push to `main` (see `.github/workflows/deploy.yml`).

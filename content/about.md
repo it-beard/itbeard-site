@@ -7,51 +7,30 @@ heading:
   en: About me
 intro:
   be: >
-    Мяне клічуць **Лёхам Картыннікам**, і я з Беларусі. Апошнія гады жыву
-    ў Польшчы, працую ў IT з 2011.
+    Мяне клічуць **Аляксеем Картыньнікам**, я родам зь Беларусі, а з 2022 году жыву ў Польшчы, у Вроцлаве. Я прафесійны праграміст, ШІ-адукатар, стваральнік тэхналагічнага кантэнту і сьвядомы беларус.
 
+    З 2012 году я шчыльна займаўся backend-распрацоўкай, а з 2023-га навучаю распрацоўшчыкаў **працаваць з ШІ**. Раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў падкастах, ствараю **суполкі** і дапамагаю разьвіваць **беларускамоўнае** інфаполе.
 
-    Дзесяць гадоў я шчыльна займаўся backend-распрацоўкай на платформе
-    .NET, а з 2023 года навучаю распрацоўнікаў працаваць з ШІ у межах
-    клуба [«Эвалюцыя Кода»](https://evocoders.ai). Раблю шмат
-    **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube
-    і ў выглядзе падкастаў па-расейску і па-беларуску, ствараю **тэхнічныя
-    суполкі** і дапамагаю развіваць **беларускамоўнае** інфаполе.
-
-
-    А ніжэй — падзеі, якія, лічу, паўплывалі на мяне найбольш.
-    Ад нараджэння да нашых часоў.
+    Ніжэй — некаторыя падзеі і факты, якія, лічу, апісваюць мяне найлепш.
   en: >
-    My name is **Lex Kartynnik**, I'm from Belarus, live in Poland, and
-    since 2011 I've been working in IT.
+    My name is **Aliaksei Kartynnik**, I'm originally from Belarus, and since 2022 I've been living in Wrocław, Poland. I'm a professional software engineer, an AI educator, a tech content creator, and a nationally conscious Belarusian.
 
+    Starting in 2012, I worked intensively in backend development, and since 2023 I've been teaching developers how to **work with AI**. I create a lot of **IT**, **science-adjacent**, and **technical** content on YouTube and in podcast form, build **communities**, and help grow the **Belarusian-language** information space.
 
-    For ten years I was deep into backend development on the .NET
-    platform, and since 2023, within the [«Code Evolution»](https://evocoders.ai)
-    club I teach developers to code in tandem with AI. I create lots of
-    **tech**, **science-adjacent** and other **technical** content on
-    YouTube and as podcasts in Russian and Belarusian, build **tech
-    communities**, and help grow the **Belarusian-language** info space.
-
-
-    And below are the events that I believe shaped me the most.
-    From birth to the present day.
+    Below are a few events and facts that I believe describe me best.
 periodHint:
   be: Дата ці перыяд падзеі
   en: The date or period of the event
 timeline:
-  - period: { be: "1992", en: "1992" }
+  - period: { be: "4 лютага 1992 года", en: "1992" }
     title:
-      be: Нарадзіўся ў Петрыкаве
-      en: Born in Pietrykaŭ
+      be: Я нарадзіўся тут
+      en: Born
     description:
       be: >
-        Маленькі горад на Прыпяці, Гомельскае Палессе. Адтуль — палеская
-        ўпартасць і звычка даводзіць пачатае да канца.
+        У Петрыкаве. Маленькі горад на Прыпяці, Гомельскае Палесьсе. Але доўга я там не пражыў, бо бацькі амаль адразу пераехалі ў Ракаў, што пад Мінскам. Аднак Палесься ўва мне шмат — багата часу я праводзіў у бабуль зь дзядулямі ў Петрыкаве і ў Курыцічах непадалёк. Адтуль я маю палескую ўпартасьць і звычку даводзіць пачатае да канца.
       en: >
-        A small town on the Prypiać river in the Belarusian Palessie region.
-        That's where the Palessian stubbornness and the habit of finishing
-        what I start come from.
+        In Pietrykaŭ. A small town on the Prypiać River, in the Homiel part of Palessie (Polesia). I didn't live there long, though: almost right away my parents moved to Rakaŭ, near Minsk. Still, there's plenty of Palessie in me — I spent a lot of time with my grandparents in Pietrykaŭ and in Kurycičy nearby. That's where I get my Palessian stubbornness and my habit of finishing what I start.
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:
       be: Скончыў Ліцэй БДУ
@@ -79,19 +58,6 @@ timeline:
         Studied atomic and molecular physics. Physics taught me the main
         thing — breaking complex systems down into simple parts. My whole
         later career in IT is built on that skill.
-  - period: { be: "2015", en: "2015" }
-    title:
-      be: Стартап PUSHka
-      en: The PUSHka startup
-    description:
-      be: >
-        Разам з камандай рабіў адукацыйны стартап PUSHka — разумнага
-        памочніка для анлайн-навучання. Мы перамаглі ў конкурсе МТС
-        «Telecom Idea 2015» і трапілі ў акселератар GenerationS.
-      en: >
-        Built the PUSHka educational startup with a team — a smart assistant
-        for online learning. We won the MTS «Telecom Idea 2015» competition
-        and were accepted into the GenerationS accelerator.
   - period: { be: "2018", en: "2018" }
     title:
       be: Запусціў «АйЦіБараду»

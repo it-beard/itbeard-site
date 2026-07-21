@@ -1,7 +1,7 @@
 ---
 titleSuffix:
-  be: "/ 🇺🇦 #гыквайне"
-  en: "/ 🇺🇦 #stopwarinukraine"
+  be: "/ Жыве Беларусь!"
+  en: "/ Long Live Belarus!"
 notFound:
   be: Прабач, але старонка не знойдзена, сябар...
   en: Sorry, but the page was not found, friend...

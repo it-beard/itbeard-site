@@ -104,10 +104,91 @@ function OverviewPanel({ overview, entries }) {
   )
 }
 
+// The timeline list itself; idPrefix keeps card ids unique across page sections
+function Timeline({ entries, page, hasTail = false, idPrefix = 'tl' }) {
+  return (
+    <ol className={`timeline${hasTail ? ' has-tail' : ''}`}>
+      {entries.map((item, i) => (
+        <li key={i} id={`${idPrefix}-${i}`} className={`timeline-item${item.start && !item.end ? ' ongoing' : ''}`}>
+          <div className="timeline-mark" aria-hidden="true">
+            <span className="timeline-gem"></span>
+          </div>
+          <div className={`timeline-card${item.founded ? ' founded' : ''}`}>
+            <div className="timeline-head">
+              {item.logo && <img src={item.logo} alt="" loading="lazy" />}
+              <div className="timeline-title">
+                <span className="timeline-period" title={page.periodHint}>
+                  {item.period}
+                </span>
+                <h3>
+                  {item.link && !item.org ? (
+                    <a href={item.link} target="_blank" rel="noopener">
+                      {item.title}
+                    </a>
+                  ) : (
+                    item.title
+                  )}
+                </h3>
+                {item.org && (
+                  <p className="timeline-org">
+                    {item.link ? (
+                      <a href={item.link} target="_blank" rel="noopener">
+                        {item.org}
+                      </a>
+                    ) : (
+                      item.org
+                    )}
+                  </p>
+                )}
+              </div>
+            </div>
+            <Md className="prose" html={mdText(item.description)} />
+            {item.founded && (
+              <span className="badge badge-corner" title={page.foundedHint}>
+                {page.foundedLabel}
+              </span>
+            )}
+          </div>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+// «Інтэрв'ю»: the standout conversation embedded + link cards to the playlists
+function InterviewsSection({ interviews }) {
+  return (
+    <>
+      <Md className="prose intro" html={mdText(interviews.intro)} />
+      <div className="video-embed">
+        <iframe
+          src={`https://www.youtube-nocookie.com/embed/${interviews.featured.id}`}
+          title={interviews.featured.title}
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerPolicy="strict-origin-when-cross-origin"
+          allowFullScreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      {interviews.featured.note && <p className="video-note">{interviews.featured.note}</p>}
+      <Md className="prose intro" html={mdText(interviews.more)} />
+      <div className="playlist-cards">
+        {interviews.playlists.map((p, i) => (
+          <a key={i} className="playlist-card" href={p.url} target="_blank" rel="noopener">
+            <h3>{p.name} ↗</h3>
+            <p>{p.desc}</p>
+          </a>
+        ))}
+      </div>
+    </>
+  )
+}
+
 export default function TimelinePage({ name }) {
   const { lang } = useLang()
   const page = getPage(name, lang)
   useTitle(page.title)
+  const headings = page.headings ?? {}
 
   // ongoing jobs first, then newest start first; undated entries last
   const entries = [...page.timeline].sort((a, b) => {
@@ -126,57 +207,35 @@ export default function TimelinePage({ name }) {
       </section>
 
       <section className="container section">
-        <ol className={`timeline${page.overview ? ' has-tail' : ''}`}>
-          {entries.map((item, i) => (
-            <li key={i} id={`tl-${i}`} className={`timeline-item${item.start && !item.end ? ' ongoing' : ''}`}>
-              <div className="timeline-mark" aria-hidden="true">
-                <span className="timeline-gem"></span>
-              </div>
-              <div className={`timeline-card${item.founded ? ' founded' : ''}`}>
-                <div className="timeline-head">
-                  {item.logo && <img src={item.logo} alt="" loading="lazy" />}
-                  <div className="timeline-title">
-                    <span className="timeline-period" title={page.periodHint}>
-                      {item.period}
-                    </span>
-                    <h3>
-                      {item.link && !item.org ? (
-                        <a href={item.link} target="_blank" rel="noopener">
-                          {item.title}
-                        </a>
-                      ) : (
-                        item.title
-                      )}
-                    </h3>
-                    {item.org && (
-                      <p className="timeline-org">
-                        {item.link ? (
-                          <a href={item.link} target="_blank" rel="noopener">
-                            {item.org}
-                          </a>
-                        ) : (
-                          item.org
-                        )}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <Md className="prose" html={mdText(item.description)} />
-                {item.founded && (
-                  <span className="badge badge-corner" title={page.foundedHint}>
-                    {page.foundedLabel}
-                  </span>
-                )}
-              </div>
-            </li>
-          ))}
-        </ol>
+        {headings.bio && (
+          <>
+            <h2>{headings.bio}</h2>
+            <Ornament />
+          </>
+        )}
+        <Timeline entries={entries} page={page} hasTail={Boolean(page.overview)} />
         {page.overview && (
           <div className="timeline-tail">
             <OverviewPanel overview={page.overview} entries={entries} />
           </div>
         )}
       </section>
+
+      {page.achievements && (
+        <section className="container section">
+          <h2>{headings.achievements}</h2>
+          <Ornament />
+          <Timeline entries={page.achievements} page={page} idPrefix="ach" />
+        </section>
+      )}
+
+      {page.interviews && (
+        <section className="container section">
+          <h2>{headings.interviews}</h2>
+          <Ornament />
+          <InterviewsSection interviews={page.interviews} />
+        </section>
+      )}
     </main>
   )
 }

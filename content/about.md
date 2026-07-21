@@ -41,7 +41,17 @@ timeline:
        Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным дзіцячым калектыве «Вянок». Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
       en: |
         For almost ten years I was a member of *Vianok* ("Wreath"), a children's folk ensemble in Rakaŭ bearing the honorary "exemplary" title. We sang folk songs, danced, celebrated traditional holidays, and went on expeditions and performances all across Belarus and beyond (Völkersdorf, forever in my heart!). You couldn't invent a better childhood pursuit for nurturing and preserving one's Belarusian identity. Part of that experience now lives on in my project Setivir 😊
-        
+   
+  - period: { be: 2007, en: 2007 }
+    title:
+      be: Першы сайт
+      en: First website
+    description:
+      be: |
+        Дзесьці ў 2007 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі мая асабістая старонка і сайт Ракава, пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ пяць гадоў.
+      en: |
+        Sometime around 2007, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were my personal homepage and a website about Rakaŭ, built on WordPress. You could call that my start in IT — though real programming was still five years away.
+
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:
       be: Ліцэй БДУ
@@ -125,8 +135,8 @@ timeline:
         Someday, when it's safe to do so, I'll tell this chapter of my life in full detail and color. For now, I simply want to thank everyone who helped me stay free in those days.
   - period: { be: "2022.02", en: "2022.02" }
     title:
-      be: Пераезд у Польшчу
-      en: Moved to Poland
+      be: Уцёкі ў Польшчу
+      en: Escape to Poland
     description:
       be: |
         Паўнамаштабнае ўварваньне Расеі ва Ўкраіну я сустрэў у Кіеве — ва ўсіх "фарбах". Менавіта тое, што я там пасьпеў пабачыць, упэўніла мяне: ня можа быць ніякай іншай пазіцыі, акрамя адной — гэта цалкам вар'яцкая вайна, якой быць не павінна. Як і людзей, якія яе распачалі. Пасьля некалькіх дзён за барыкадамі я зьехаў у Польшчу, дзе жыву дагэтуль і ўсяляк падтрымліваю сваіх сяброў, што змагаюцца за Волю.
@@ -155,7 +165,22 @@ timeline:
 
         Here I want to say my biggest thank-you to everyone who has shaped — and keeps shaping — my becoming a Belarusian. You are my foundation, my base, my Vietryk.
 
-  - period: { be: "2026", en: "2026" }
+  - period: { be: 2022 — цяпер, en: 2022 — now }
+    title:
+      be: ШІ-асьвета
+      en: AI Education
+    description:
+      be: |
+        Прыблізна ў канцы 2022 году, акурат са зьяўленьнем першай публічнай вэрсіі ChatGPT, я пачаў унікаць у тэму штучнага інтэлекту — і ўжо на пачатку 2023-га рабіў кантэнт вакол ШІ і праграмаваньня. Паступова гэта перарасло ў паўнавартасную працу: я запусьціў некалькі навінавых падкастаў, навучаю праграмістаў працаваць у пары з ШІ, чытаю лекцыі па праграмаваньні з ШІ і па стварэньні кантэнту і музыкі зь яго дапамогай, выступаю перад беларускімі супольнасьцямі, кансультую кампаніі наконт укараненьня ШІ, займаюся AI DevRel. Можна сказаць, што я перакваліфікаваўся з праграміста ў ШІ-асьветніка.
+      en: |
+        Around the end of 2022, right when the first public version of ChatGPT appeared, I began diving into the topic of artificial intelligence — and by early 2023 I was already making content about AI and programming. Gradually this grew into full-fledged work: I launched several news podcasts, teach programmers to work in tandem with AI, give lectures on AI-assisted programming and on creating content and music with AI, speak at Belarusian community events, consult companies on adopting AI, and do AI DevRel. You could say I've retrained from a programmer into an AI educator.
+
+headings:
+  bio: { be: Біяграфія, en: Biography }
+  achievements: { be: Дасягненьні, en: Achievements }
+  interviews: { be: Інтэрв'ю, en: Interviews }
+achievements:
+  - period: { be: "20 чэрвеня — 12 ліпеня 2026", en: "Jun 20 — Jul 12, 2026" }
     title:
       be: Удзельнік IVLP
       en: IVLP participant
@@ -163,14 +188,64 @@ timeline:
     link: https://exchanges.state.gov/non-us/program/international-visitor-leadership-program-ivlp
     description:
       be: |
-        Удзельнічаў у International Visitor Leadership Program — флагманскай
-        праграме прафесійных абменаў Дзярждэпартамента ЗША, удзельнікаў
-        якой намінуюць амбасады ЗША. Сярод яе выпускнікоў — больш за 500
-        кіраўнікоў дзяржаў і ўрадаў.
+       Удзельнічаў у International Visitor Leadership Program — флагманскай праграме прафесійных абменаў Дзярждэпартамэнту ЗША, удзельнікаў якой намінуюць амбасады ЗША. Кірунак — AI Innovation & Security. Сярод выпускнікоў праграмы — больш за 500 кіраўнікоў дзяржаваў і ўрадаў.
       en: |
-        Took part in the International Visitor Leadership Program — the U.S.
-        Department of State's premier professional exchange program, whose
-        participants are nominated by U.S. embassies. Its alumni include
-        over 500 heads of state and government.
-
+        I took part in the International Visitor Leadership Program — the U.S. Department of State's flagship professional exchange program, whose participants are nominated by U.S. embassies. My track was AI Innovation & Security. Program alumni include more than 500 current and former heads of state and government.
+  - period: { be: "канец 2023 — 12 верасьня 2024", en: "end of 2023 — Sep 12, 2024" }
+    title:
+      be: Зрабіў фільм пра Kotlin
+      en: Made documentary about Kotlin
+    org: { be: «Beyond the Success of Kotlin», en: "\"Beyond the Success of Kotlin\"" }
+    link: https://www.youtube.com/watch?v=E8CtE7qTb-Q
+    description:
+      be: |
+        У межах працы ў EPAM разам з камандай мы стварылі дакумэнтальны фільм «Beyond the Success of Kotlin» пра гісторыю мовы праграмаваньня Kotlin — з інтэрв'ю са стваральнікамі мовы і інжынерамі JetBrains. Я выступіў у ролі выканаўчага прадусара. Здымкі пачаліся ў канцы 2023 году, а прэм'ера адбылася 12 верасьня 2024-га.
+      en: |
+        As part of my work at EPAM, together with the team I created the documentary "Beyond the Success of Kotlin" — the story of the Kotlin programming language, featuring interviews with the language's creators and JetBrains engineers. I served as executive producer. Filming began in late 2023, and the premiere took place on September 12, 2024.
+  - period: { be: "2019", en: "2019" }
+    title:
+      be: Пераможца YouTube NextUp
+      en: YouTube NextUp winner
+    link: https://theheroes.media/ru/news-list/bloger-iz-belarusi-okazalsya-pobeditelem-nextup-youtube-2019/
+    description:
+      be: |
+        Канал «АйЦіБарада» стаў адным з 12 пераможцаў міжнароднага конкурсу YouTube NextUp 2019 — нас абралі з 675 заявак ад перспектыўных блогераў. Перамога дала тыдзень навучаньня ў творчым лагеры YouTube і грант на здымачнае абсталяваньне.
+      en: |
+        The ITBeard channel («АйТиБорода») became one of the 12 winners of the international YouTube NextUp 2019 contest — we were selected from 675 applications by up-and-coming creators. The win came with a week of training at a YouTube creator camp and a grant for filming equipment.
+  - period: { be: "2006", en: "2006" }
+    title:
+      be: Перамога на фэстывалі «Берагіня»
+      en: Victory at the "Berahinia" festival
+    link: https://setivir.art
+    description:
+      be: |
+        Заняў першае месца сярод юных салістаў на І Рэспубліканскім турніры салістаў фэстывалю фальклорнага мастацтва «Берагіня». А наш ансамбль «Вянок» тым часам узяў гран-пры фэстывалю!
+      en: |
+        I took first place among the young soloists at the First Republican Soloists' Tournament of the *Bierahinia* Folk Art Festival — *Bierahinia* being a female guardian spirit from Slavic folklore. Meanwhile, our ensemble Vianok took home the festival's Grand Prix!
+interviews:
+  intro:
+    be: |
+      За гады кантэнт-мэйкерства я ня толькі сам браў інтэрв'ю, але й нярэдка бываў госьцем. Найбольш адметная для мяне размова — зь Мікітам Мелказёравым у шоў «жизнь-малина».
+    en: |
+      Over my years of content-making I've not only hosted interviews but often been a guest myself. The conversation that means the most to me is the one with Mikita Melkaziorau on the "zhizn-malina" show.
+  featured:
+    id: EAwGyW00WhI
+    title:
+      be: АйЦіБарада — адмовіўся ад кучы грошай дзеля праўды
+      en: ITBeard — gave up a pile of money for the truth
+    note:
+      be: Мікіты, на жаль, ужо няма з намі. Сьветлая табе памяць 🕯️
+      en: Mikita, sadly, is no longer with us. May his memory be bright 🕯️
+  more:
+    be: |
+      Астатнія размовы сабраныя ў двух плэйлістах:
+    en: |
+      The rest of the conversations are collected in two playlists:
+  playlists:
+    - name: { be: «Лёха напаказ», en: "«Лёха напаказ»" }
+      url: https://www.youtube.com/playlist?list=PLHWQjmVEynqc
+      desc: { be: Беларускамоўныя інтэрв'ю са мной, en: Belarusian-language interviews with me }
+    - name: { be: «Борода Напоказ», en: "«Борода Напоказ»" }
+      url: https://www.youtube.com/playlist?list=PLdmSK1Qzu987pRs2H1H1nNvJWoDa9CMzD
+      desc: { be: Расейскамоўныя інтэрв'ю са мной, en: Russian-language interviews with me }
 ---

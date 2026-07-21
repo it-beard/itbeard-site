@@ -1316,6 +1316,78 @@ body.theme-restore #app {
   font-size: 15.5px;
 }
 
+/* ===== About: interviews section ===== */
+.video-embed {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  max-width: 760px;
+  margin-top: 20px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--bg-deep);
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* memorial line under the featured video */
+.video-note {
+  max-width: 760px;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.video-note + .prose {
+  margin-top: 24px;
+}
+
+.playlist-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  max-width: 760px;
+  margin-top: 16px;
+}
+
+.playlist-card {
+  display: block;
+  padding: 20px 22px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.playlist-card:hover {
+  border-color: rgba(226, 67, 78, 0.45);
+  transform: translateY(-2px);
+}
+
+.playlist-card h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.playlist-card:hover h3 {
+  color: var(--accent-hover);
+}
+
+.playlist-card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
 /* ===== Support ===== */
 .support-list {
   display: flex;

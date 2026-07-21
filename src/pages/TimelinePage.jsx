@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLang } from '../lib/LangContext'
-import { getPage, md, mdInline } from '../lib/content'
+import { getPage, mdText } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
@@ -122,7 +122,7 @@ export default function TimelinePage({ name }) {
       <section className="container section page-head">
         <h1>{page.heading}</h1>
         <Ornament />
-        <Md className="prose intro" html={md(page.intro)} />
+        <Md className="prose intro" html={mdText(page.intro)} />
       </section>
 
       <section className="container section">
@@ -161,10 +161,7 @@ export default function TimelinePage({ name }) {
                     )}
                   </div>
                 </div>
-                <div
-                  className="prose"
-                  dangerouslySetInnerHTML={{ __html: mdInline(item.description) }}
-                />
+                <Md className="prose" html={mdText(item.description)} />
                 {item.founded && (
                   <span className="badge badge-corner" title={page.foundedHint}>
                     {page.foundedLabel}

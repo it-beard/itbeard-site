@@ -16,6 +16,11 @@ marked.use({
 export const md = (src) => (src ? marked.parse(src) : '')
 export const mdInline = (src) => (src ? marked.parseInline(src) : '')
 
+// Text from YAML folded scalars (`key: >`): the folding already joins wrapped
+// lines with spaces, so every newline left in the value was a blank line in the
+// source — i.e. a paragraph break. Restore it before handing the text to marked.
+export const mdText = (src) => (src ? marked.parse(String(src).replace(/\n(?!\n)/g, '\n\n')) : '')
+
 // Month names in the genitive case for «15 сакавіка 2024» / «March 15, 2024».
 const MONTHS = {
   be: ['студзеня', 'лютага', 'сакавіка', 'красавіка', 'мая', 'чэрвеня', 'ліпеня', 'жніўня', 'верасня', 'кастрычніка', 'лістапада', 'снежня'],

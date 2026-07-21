@@ -109,7 +109,7 @@ timeline:
     logo: /images/appxite-logo.png
     description:
       be: >
-        Бэкенд-распрацоўка на C#: мікрасэрвісная платформа.
+        Бэкенд-распрацоўка на .NET/C#: мікрасэрвісная платформа.
       en: >
         .NET C# backend development: a microservices platform.
   - period: { be: 2019.09 — 2020.05, en: 2019.09 — 2020.05 }
@@ -182,9 +182,9 @@ timeline:
     logo: /images/itransition-logo.png
     description:
       be: >
-        Фул-стэк распрацоўка на .NET/C#. Мінск.
+        Фул-стэк распрацоўка на .NET/C#.
       en: >
-        .NET C# full-stack development. Minsk.
+        .NET C# full-stack development.
   - period: { be: 2014.09 — 2016.02, en: 2014.09 — 2016.02 }
     start: 2014
     startMonth: 9
@@ -197,9 +197,9 @@ timeline:
     org: Gruzovoi Oboz
     description:
       be: >
-        Распрацоўка праграмнага забесьпячэньня ў мінскай прадуктовай кампаніі.
+        Распрацоўка рухавіка для буйной лагістычнай кампаніі: .NET/C#, з нуля, без каманды.
       en: >
-        Software development at a Minsk product company.
+        Built an engine for a major logistics company — .NET/C#, from scratch, solo.
   - period: { be: 2013.04 — 2014.09, en: 2013.04 — 2014.09 }
     start: 2013
     startMonth: 4
@@ -212,9 +212,9 @@ timeline:
     org: PowerMeMobile
     description:
       be: >
-        Фул-стэк распрацоўка на .NET/C#. Мінск.
+        Фул-стэк распрацоўка сістэмы рассылкі СМС-паведамленьняў на .NET/C# для буйных аператараў у ААЭ.
       en: >
-        .NET C# full-stack development. Minsk.
+        Full-stack development of an SMS delivery system in .NET/C# for major mobile operators in the UAE.
   - period: { be: 2012.11 — 2013.03, en: 2012.11 — 2013.03 }
     start: 2012
     startMonth: 11
@@ -229,7 +229,19 @@ timeline:
     logo: /images/oxagile-logo.png
     description:
       be: >
-        Першыя крокі ў камерцыйнай распрацоўцы: .NET/C#. Мінск.
+        Першыя крокі ў камерцыйнай распрацоўцы: .NET/C#.
       en: >
-        First steps in commercial development: .NET C#. Minsk.
+        First steps in commercial development: .NET/C#.
+  - period: { be: 2007 — 2012, en: 2007 — 2012 }
+    start: 2007
+    end: 2012
+    label: { be: Вебмайстар, en: Webmaster }
+    title:
+      be: Вебмайстар
+      en: Webmaster
+    description:
+      be: >
+        Распрацоўваў сайты на HTML, CSS, Joomla, WordPress, PhpBB і іншых рухавіках — больш за 60 праектаў. Актыўна фрылансіў, працаваў з JS і PHP, але на аматарскім узроўні.
+      en: >
+        Built websites with HTML, CSS, Joomla, WordPress, phpBB, and other engines — more than 60 projects. Freelanced actively, worked with JS and PHP, though at a hobbyist level.
 ---

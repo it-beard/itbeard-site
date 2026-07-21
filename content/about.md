@@ -199,24 +199,54 @@ achievements:
     link: https://www.youtube.com/watch?v=E8CtE7qTb-Q
     description:
       be: |
-        У межах працы ў EPAM разам з камандай мы стварылі дакумэнтальны фільм «Beyond the Success of Kotlin» пра гісторыю мовы праграмаваньня Kotlin — з інтэрв'ю са стваральнікамі мовы і інжынерамі JetBrains. Я выступіў у ролі выканаўчага прадусара. Здымкі пачаліся ў канцы 2023 году, а прэм'ера адбылася 12 верасьня 2024-га.
+        У межах працы ў EPAM разам з камандай мы стварылі дакументальны фільм «Beyond the Success of Kotlin» пра гісторыю мовы праграмаваньня Kotlin — з інтэрв'ю са стваральнікамі мовы і інжынерамі JetBrains. Я выступіў у ролі выканаўчага прадусара. Здымкі пачаліся ў канцы 2023 году, а прэм'ера адбылася 12 верасьня 2024-га.
       en: |
         As part of my work at EPAM, together with the team I created the documentary "Beyond the Success of Kotlin" — the story of the Kotlin programming language, featuring interviews with the language's creators and JetBrains engineers. I served as executive producer. Filming began in late 2023, and the premiere took place on September 12, 2024.
+  - period: { be: "2020", en: "2020" }
+    title:
+      be: Прызёр конкурсу «Золотое приложение»
+      en: '"Golden App" contest runner-up'
+    org: { be: "намінацыя «Найлепшы падкаст у мабільным дадатку»", en: '"Best Podcast in a Mobile App" nomination' }
+    link: https://raec.ru/live/branch/12212/
+    description:
+      be: |
+        Шоў «АйЦіБарада» заняло другое месца ва ўсерасейскім адкрытым інтэрнэт-конкурсе «Золотой сайт и Золотое приложение» ў намінацыі «Найлепшы падкаст у мабільным дадатку». Узнагароды пераможцам уручалі ў Маскве 12 лютага 2021 году.
+      en: |
+        The ITBeard show took second place in the all-Russian open internet contest "Golden Site & Golden App" in the "Best Podcast in a Mobile App" nomination. The awards were presented to the winners in Moscow on February 12, 2021.
+  - period: { be: "2019", en: "2019" }
+    title:
+      be: Срэбная кнопка YouTube
+      en: YouTube Silver Play Button
+    description:
+      be: |
+        Неўзабаве пасьля перамогі ў NextUp канал «АйЦіБарада» перасягнуў адзнаку ў 100 000 падпісантаў і атрымаў Срэбную кнопку YouTube — узнагароду відэаплятформы для аўтараў.
+      en: |
+        Soon after the NextUp win, the ITBeard channel passed the 100,000-subscriber mark and received the YouTube Silver Play Button — the platform's creator award.
   - period: { be: "2019", en: "2019" }
     title:
       be: Пераможца YouTube NextUp
       en: YouTube NextUp winner
-    link: https://theheroes.media/ru/news-list/bloger-iz-belarusi-okazalsya-pobeditelem-nextup-youtube-2019/
+    link: https://russia.googleblog.com/2019/09/youtube-nextup-2019-youtube.html
     description:
       be: |
         Канал «АйЦіБарада» стаў адным з 12 пераможцаў міжнароднага конкурсу YouTube NextUp 2019 — нас абралі з 675 заявак ад перспектыўных блогераў. Перамога дала тыдзень навучаньня ў творчым лагеры YouTube і грант на здымачнае абсталяваньне.
       en: |
         The ITBeard channel («АйТиБорода») became one of the 12 winners of the international YouTube NextUp 2019 contest — we were selected from 675 applications by up-and-coming creators. The win came with a week of training at a YouTube creator camp and a grant for filming equipment.
+  - period: { be: "2015", en: "2015" }
+    title:
+      be: Супэрфінал GenerationS са стартапам PUSHka
+      en: GenerationS super-final with the PUSHka startup
+    org: { be: "акселератар МТС «Телеком Идея»", en: "MTS \"Telecom Idea\" accelerator" }
+    link: https://www.cnews.ru/articles/2015-10-16_telekom_ideya_mts_vybrala_5_finalistov_korporativnogo_akseleratora
+    description:
+      be: |
+        Апрыканцы 2015 году я далучыўся да адукацыйнага стартапу PUSHka — мы рабілі сэрвіс-памочнік, які дапамагаў абіраць анлайн-курсы на розных пляцоўках, аўтаматычна будаваць расклад навучаньня і не кідаць іх на паўдарозе. Праект стаў адным зь пяці пераможцаў карпаратыўнага акселератара МТС «Телеком Идея 2015» (трэк Telecom федэральнага акселератара GenerationS) і выйшаў у ягоны супэрфінал. Дадаткова каманда ўзяла прыз за актыўнасьць у сацсетках — паездку на канферэнцыю 4YFN у Барсэлону, — а сам праект атрымаў грант Фонду Бортніка. Праз тры гады стартап зачыніўся — але дагэтуль гэта адно з найпрыгажэйшых тэхнічных рашэньняў у маёй практыцы.
+      en: |
+        At the end of 2015, I joined the educational startup PUSHka — we were building an assistant service that helped people pick online courses across different platforms, automatically build a study schedule, and not drop them halfway through. The project became one of the five winners of the MTS "Telecom Idea 2015" corporate accelerator (the Telecom track of GenerationS, Russia's federal startup accelerator) and reached its superfinal. On top of that, the team won a social media activity prize — a trip to the 4YFN conference in Barcelona — and the project itself received a grant from Russia's Bortnik innovation fund. Three years later the startup shut down, but to this day it remains one of the most beautiful pieces of engineering of my career.
   - period: { be: "2006", en: "2006" }
     title:
       be: Перамога на фэстывалі «Берагіня»
       en: Victory at the "Berahinia" festival
-    link: https://setivir.art
     description:
       be: |
         Заняў першае месца сярод юных салістаў на І Рэспубліканскім турніры салістаў фэстывалю фальклорнага мастацтва «Берагіня». А наш ансамбль «Вянок» тым часам узяў гран-пры фэстывалю!

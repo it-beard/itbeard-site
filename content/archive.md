@@ -25,6 +25,10 @@ legend:
 
 Праекты, якія адыгралі сваю ролю і завяршыліся. Дзякуй усім, хто быў побач.
 
+## Уладар Пярсьцёнкаў {#uladar}
+
+**«Уладар Пярсьцёнкаў па-беларуску»** — YouTube-канал, дзе я паціху агучваю «Ўладара Пярсьцёнкаў» паводле перакладу Дзьмітрыя Магілеўцава й Крысьціны Курчанковай.
+
 ## Bloggers CMS {#bloggers-cms}
 
 **Bloggers CMS** — уласная сістэма кіравання кантэнтам для блогераў: госці, выпускі, спонсары і ўся кухня канала ў адным месцы.
@@ -64,6 +68,10 @@ legend:
 # Pahost of projects {#intro}
 
 Projects that played their part and came to an end. Thanks to everyone who was around.
+
+## The Lord of the Rings {#uladar}
+
+**«Уладар Пярсьцёнкаў па-беларуску»** — a YouTube channel where I'm slowly voicing “The Lord of the Rings” in Belarusian, based on the translation by Dzmitry Mahileucau and Krystsina Kurchankova.
 
 ## Bloggers CMS {#bloggers-cms}
 

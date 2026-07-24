@@ -66,6 +66,13 @@ export const PROJECTS = [
 // dormant projects (no `closed`) are listed first, then closed ones by close year
 export const ARCHIVE_PROJECTS = [
   {
+    id: 'uladar',
+    image: '/images/uladar-logo.jpg',
+    started: 2025,
+    dormant: true,
+    url: 'https://www.youtube.com/@uladarbel',
+  },
+  {
     id: 'bloggers-cms',
     image: '/images/bloggers-cms-logo.svg',
     started: 2021,
@@ -82,8 +89,8 @@ export const ARCHIVE_PROJECTS = [
   {
     id: 'beard-news',
     image: '/images/beard-news-logo.jpg',
-    started: 2021,
-    closed: 2026,
+    started: 2022,
+    closed: 2024,
   },
   {
     id: 'letapis',

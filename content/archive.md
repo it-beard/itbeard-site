@@ -63,6 +63,12 @@ legend:
 
 Перамога ў конкурсе МТС «Telecom Idea 2015», акселератар GenerationS — але праз два з паловай гады каманда разышлася.
 
+## Bel-Forum.com {#bel-forum}
+
+**Bel-Forum.com** — беларускі форум і каталаг рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лякальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, чат і бібліятэка фэнтэзі.
+
+Помнік беларускага інтэрнэту канца 2000-х. На верасень 2010 году меў 738 тэмаў, 3 881 паведамленьне і 4 906 карыстальнікаў.
+
 <!-- en -->
 
 # Pahost of projects {#intro}
@@ -106,3 +112,9 @@ My own blog lived there too.
 **PUSHka** — an educational startup, a smart assistant for online learning.
 
 We won the MTS «Telecom Idea 2015» competition and joined the GenerationS accelerator — but after two and a half years the team went separate ways.
+
+## Bel-Forum.com {#bel-forum}
+
+**Bel-Forum.com** — a Belarusian forum and directory of ByFly guest-network resources, running on phpBB 3: guest-mode news, lists of local sites, game servers, file archives and access-setup guides.
+
+A relic of the late-2000s Belarusian internet. As of September 2010 — 738 topics, 3,881 posts and 4,906 users; only a copy of the front page has survived.

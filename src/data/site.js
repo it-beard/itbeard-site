@@ -112,6 +112,12 @@ export const ARCHIVE_PROJECTS = [
     started: 2015,
     closed: 2018,
   },
+  {
+    id: 'bel-forum',
+    image: '/images/bel-forum-logo.svg',
+    started: 2008,
+    closed: 2010,
+  },
 ]
 
 export const CONTACT_LINKS = {

@@ -63,6 +63,16 @@ timeline:
       en: |
         Thanks to my parents' efforts, I leapt in among the very last admitted to one of the best places in Belarus — the BSU Lyceum (the lyceum of the Belarusian State University). At least, it was the best until the state decided to spit in the face of everyone who had built that place and renamed it after Dzerzhinsky — the founder of the Soviet secret police. But the lyceum spirit stays with us forever, as do the people who came out of it. Vivat Lyceum!
         
+  - period: { be: 2008 — 2010, en: 2008 — 2010 }
+    title:
+      be: ЧДК і каманда «ГрынПыс»
+      en: Quiz games with the "HrynPys" team
+    description:
+      be: |
+        У ліцэйскія гады я гуляў у ЧДК («Што? Дзе? Калі?») у складзе ліцэйскай каманды «ГрынПыс». Зорак зь неба мы не хапалі, але досьвед быў шыкоўны і даў мне шмат каштоўных кантактаў. А яшчэ ў 2009 годзе я пабываў у лагеры БЛІК у Жабінцы.
+      en: |
+        In my lyceum years I played "What? Where? When?" — a popular post-Soviet team quiz game — as part of the lyceum team "HrynPys" (a wordplay on Greenpeace). We were no superstars, but the experience was brilliant and gave me plenty of valuable connections. In 2009 I also spent time at the BLIK camp in Žabinka.
+
   - period: { be: 2009 — 2014, en: 2009 — 2014 }
     title:
       be: Фізічны факультэт БДУ
@@ -191,6 +201,15 @@ achievements:
        Удзельнічаў у International Visitor Leadership Program — флагманскай праграме прафесійных абменаў Дзярждэпартамэнту ЗША, удзельнікаў якой намінуюць амбасады ЗША. Кірунак — AI Innovation & Security. Сярод выпускнікоў праграмы — больш за 500 кіраўнікоў дзяржаваў і ўрадаў.
       en: |
         I took part in the International Visitor Leadership Program — the U.S. Department of State's flagship professional exchange program, whose participants are nominated by U.S. embassies. My track was AI Innovation & Security. Program alumni include more than 500 current and former heads of state and government.
+  - period: { be: "2025 — цяпер", en: "2025 — now" }
+    title:
+      be: Традыцыйнае лучніцтва
+      en: Traditional archery
+    description:
+      be: |
+        З 2025 году займаюся традыцыйным лучніцтвам і працягваю дагэтуль — гэта маё вялікае хобі. Маю тры лукі, у тым ліку хэндмэйд кіпчацкі лук. Часам даю майстар-клясы, але страляю выключна для сябе — не палюю, бо люблю жывёл.
+      en: |
+        Since 2025 I've been practicing traditional archery, and I keep at it to this day — it's my big hobby. I own three bows, including a handmade Kipchak bow. From time to time I give workshops, but I shoot purely for myself — I don't hunt, because I love animals.
   - period: { be: "канец 2023 — 12 верасьня 2024", en: "end of 2023 — Sep 12, 2024" }
     title:
       be: Зрабіў фільм пра Kotlin

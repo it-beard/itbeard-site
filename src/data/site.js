@@ -113,6 +113,12 @@ export const ARCHIVE_PROJECTS = [
     closed: 2019,
   },
   {
+    id: 'genesis',
+    image: '/images/genesis_it_academy_logo.webp',
+    started: 2018,
+    closed: 2019,
+  },
+  {
     id: 'pushka',
     image: '/images/pushka-logo.png',
     started: 2015,

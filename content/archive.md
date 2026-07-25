@@ -65,6 +65,12 @@ legend:
 
 На піку меў каля 2 000 падпісчыкаў і ўваходзіў у топ-10 беларускіх Telegram-каналаў. Рэдакцыйная праца была спыненая ў 2018 годзе, але асобныя допісы зьяўляліся да ліпеня 2019-га — усяго 981 публікацыя.
 
+## IT-Акадэмія GENESIS {#genesis}
+
+**Genesis IT-Academy** — невялікая менская школа праграмаваньня, якую мы заснавалі з Максімам Гордзіным. Галоўным кірункам была школа для падлеткаў па HTML і CSS — выпусьцілі некалькі бясплатных груп [выпускнікоў](lightbox:/images/genesis_it_academy_graduates_1.webp "Выпускнікі IT-Акадэміі GENESIS з сэртыфікатамі"). Пазьней дадаліся платныя курсы для дарослых: HTML і CSS ды тэставаньне ПЗ, якое выкладаў Стас Спадарык.
+
+Ад школы засталіся [YouTube-канал](https://www.youtube.com/@genesis-academy) і [GitHub](https://github.com/GenesisAcademy) з навучальнымі праектамі. Прапрацавалі каля года: адміністрацыйная руціна забірала амаль увесь час, і школу давялося закрыць.
+
 ## PUSHka {#pushka}
 
 **PUSHka** — адукацыйны стартап, разумны памочнік для анлайн-навучання.
@@ -128,6 +134,12 @@ My own blog lived there too.
 **«IT-Страна»** ("IT-Country") — a Telegram channel aggregating Belarusian IT news "in one line": 4–6 posts a day about startups, the Hi-Tech Park, Decree No. 8, major companies and developer careers — with links to the original sources.
 
 At its peak it had around 2,000 subscribers and ranked among the top-10 Belarusian Telegram channels. Editorial work stopped in 2018, though occasional posts kept appearing until July 2019 — 981 posts in total.
+
+## GENESIS IT-Academy {#genesis}
+
+**Genesis IT-Academy** — a small Minsk programming school I founded together with Maksim Hordzin. Its main focus was an HTML & CSS school for teenagers — we ran several free groups of [graduates](lightbox:/images/genesis_it_academy_graduates_1.webp "GENESIS IT-Academy graduates with their certificates"). Later came paid courses for adults: HTML & CSS and software testing, taught by Stas Spadaryk.
+
+The school's [YouTube channel](https://www.youtube.com/@genesis-academy) and [GitHub](https://github.com/GenesisAcademy) with study projects still survive. It lasted about a year: administrative routine ate up nearly all the time, and the school had to close.
 
 ## PUSHka {#pushka}
 

@@ -71,6 +71,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2025,
     dormant: true,
     url: 'https://www.youtube.com/@uladarbel',
+    lang: 'be',
   },
   {
     id: 'lex-kartynnik',
@@ -78,6 +79,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2023,
     dormant: true,
     url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q',
+    lang: 'en',
   },
   {
     id: 'bloggers-cms',
@@ -92,6 +94,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2023,
     closed: 2025,
     url: 'https://www.youtube.com/channel/UCxjs3aUQ9OnufZQZaCH-E4w',
+    lang: 'ru',
   },
   {
     id: 'letapis',
@@ -99,6 +102,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2023,
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',
+    lang: 'be',
   },
   {
     id: 'nerodina',
@@ -106,12 +110,14 @@ export const ARCHIVE_PROJECTS = [
     started: 2023,
     closed: 2025,
     url: 'https://www.youtube.com/playlist?list=PLdmSK1Qzu987ZTif0PGiZEdTSCH5PlBF_',
+    lang: 'ru',
   },
   {
     id: 'beard-news',
     image: '/images/beard-news-logo.jpg',
     started: 2022,
     closed: 2024,
+    lang: 'ru',
   },
   {
     id: 'imbalanced-dialogues',
@@ -119,6 +125,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2024,
     closed: 2024,
     url: 'https://www.youtube.com/@imbadial',
+    lang: 'en',
   },
   {
     id: 'itbeard-shorts',
@@ -126,20 +133,24 @@ export const ARCHIVE_PROJECTS = [
     started: 2022,
     closed: 2023,
     url: 'https://www.youtube.com/playlist?list=PLhf2AM9rZ9b_DbNadCzxi7zfga9pB_3NK',
+    lang: 'ru',
   },
   {
     id: 'it-strana',
     image: '/images/it-strana-logo.jpg',
     started: 2017,
     closed: 2019,
+    lang: 'ru',
   },
   {
     id: 'genesis',
     image: '/images/genesis_it_academy_logo.webp',
     started: 2018,
     closed: 2019,
+    lang: 'ru',
   },
   {
+    // international project — no language label
     id: 'pushka',
     image: '/images/pushka-logo.png',
     started: 2015,
@@ -150,12 +161,14 @@ export const ARCHIVE_PROJECTS = [
     image: '/images/physlib_logo.png',
     started: 2010,
     closed: 2016,
+    lang: 'ru',
   },
   {
     id: 'bel-forum',
     image: '/images/bel-forum.jpg',
     started: 2008,
     closed: 2010,
+    lang: 'ru',
   },
 ]
 

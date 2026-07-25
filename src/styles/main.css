@@ -918,6 +918,12 @@ body.theme-restore #app {
   font-weight: 600;
 }
 
+/* language badge sits right after the start-year chip */
+.card-title .badge-lang {
+  margin-top: 6px;
+  margin-left: 6px;
+}
+
 .card-archived .card-body {
   flex: 1;
   margin-bottom: 16px;

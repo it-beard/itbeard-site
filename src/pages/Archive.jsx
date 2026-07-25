@@ -57,6 +57,14 @@ export default function Archive() {
                     <span className="range-chip" title={shared.labels.sinceHint}>
                       {shared.labels.since} {p.started}
                     </span>
+                    {p.lang && (
+                      <span
+                        className="badge badge-static badge-lang"
+                        title={`${shared.labels.langHint}: ${shared.labels.langNames[p.lang]}`}
+                      >
+                        {shared.labels.langCodes[p.lang]}
+                      </span>
+                    )}
                   </div>
                 </div>
                 <Md className="card-body prose" html={card.html} />

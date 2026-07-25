@@ -180,6 +180,22 @@ function InterviewsSection({ interviews }) {
           </a>
         ))}
       </div>
+      {interviews.press && (
+        <>
+          <Md className="prose intro press-intro" html={mdText(interviews.press.intro)} />
+          <div className="press-list">
+            {interviews.press.items.map((p, i) => (
+              <a key={i} className="press-item" href={p.url} target="_blank" rel="noopener">
+                <span className="press-meta">
+                  <span className="press-date">{p.date}</span>
+                  <span className="press-outlet">{p.outlet}</span>
+                </span>
+                <span className="press-title">{p.title} ↗</span>
+              </a>
+            ))}
+          </div>
+        </>
+      )}
     </>
   )
 }

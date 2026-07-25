@@ -315,8 +315,45 @@ interviews:
   playlists:
     - name: { be: «Лёха напаказ», en: "«Лёха напаказ»" }
       url: https://www.youtube.com/playlist?list=PLHWQjmVEynqc
-      desc: { be: Беларускамоўныя інтэрв'ю са мной, en: Belarusian-language interviews with me }
+      desc: { be: Беларускамоўныя інтэрв'ю са мною, en: Belarusian-language interviews with me }
     - name: { be: «Борода Напоказ», en: "«Борода Напоказ»" }
       url: https://www.youtube.com/playlist?list=PLdmSK1Qzu987pRs2H1H1nNvJWoDa9CMzD
-      desc: { be: Расейскамоўныя інтэрв'ю са мной, en: Russian-language interviews with me }
+      desc: { be: Расейскамоўныя інтэрв'ю са мною, en: Russian-language interviews with me }
+  press:
+    intro:
+      be: |
+        А яшчэ час ад часу я даю тэкставыя інтэрв'ю беларускім медыя — вось некаторыя зь іх:
+      en: |
+        From time to time I also give text interviews to Belarusian media — here are some of them:
+    items:
+      - date: "22.07.2026"
+        outlet: DZPK
+        url: https://dzpk.io/pa-rukakh-buduts-bits-nie-claude-a-tsiabie-gutarym-s-aitsibaradoi-iak-ai-mianiaie-nashaie-zhytstsio-i-pratsu-chastka-1/
+        title:
+          be: "«Па руках будуць біць не Claude, а цябе». Гутарым з «АйЦіБарадой», як AI мяняе нашае жыццё і працу"
+          en: "\"It won't be Claude who gets slapped on the wrist — it'll be you.\" A talk with ITBeard about how AI is changing our life and work"
+      - date: "17.06.2026"
+        outlet: { be: Белсат, en: Belsat }
+        url: https://belsat.eu/93731690/prafesija-pragramistau-mozha-zniknuc
+        title:
+          be: "Блогер АйЦіБарада: «Прафесія праграміста можа знікнуць праз чатыры гады»"
+          en: "Blogger ITBeard: \"The programmer profession may disappear within four years\""
+      - date: "17.04.2026"
+        outlet: MOST Media
+        url: https://mostmedia.io/2026/04/17/shi-i-belaruskaja/
+        title:
+          be: "«Мадэлі жартуюць на ўзроўні падлетка». Эксперт патлумачыў, як штучны інтэлект разумее беларускую мову"
+          en: "\"The models joke at a teenager's level.\" An expert explains how artificial intelligence understands the Belarusian language"
+      - date: "03.11.2025"
+        outlet: { be: Польскае радыё, en: Polskie Radio }
+        url: https://www.polskieradio.pl/396/7819/artykul/3602634%2C%D0%B0%D0%BB%D1%8F%D0%BA%D1%81%D0%B5%D0%B9-%D0%BA%D0%B0%D1%80%D1%82%D1%8B%D0%BD%D0%BD%D1%96%D0%BA-%D1%8D%D1%80%D0%B0-%D1%88%D1%96-%D1%9E%D0%B6%D0%BE-%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D0%BB%D0%B0-%D0%BB%D1%8E%D0%B4%D0%B7%D1%96-%D0%BF%D0%B0%D0%B2%D1%96%D0%BD%D0%BD%D1%8B-%D0%BD%D0%B0%D0%B2%D1%83%D1%87%D1%8B%D1%86%D1%86%D0%B0%C2%A0%D1%96%D0%BC-%D0%BA%D0%B0%D1%80%D1%8B%D1%81%D1%82%D0%B0%D1%86%D1%86%D0%B0
+        title:
+          be: "Аляксей Картыннік: эра ШІ ўжо настала, людзі павінны навучыцца ім карыстацца"
+          en: "Aliaksei Kartynnik: the AI era has already arrived — people must learn to use it"
+      - date: "28.11.2022"
+        outlet: dev.by
+        url: https://devby.io/news/mastodonby
+        title:
+          be: "Сацсетка, куды сыходзяць з твітара. АйЦіБарада — пра Mastodon і яе беларускі сервер"
+          en: "The social network people leave Twitter for. ITBeard on Mastodon and its Belarusian server"
 ---

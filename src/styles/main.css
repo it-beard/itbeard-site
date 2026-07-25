@@ -1524,6 +1524,60 @@ body.theme-restore #app {
   margin: 0;
 }
 
+/* text interviews in the press */
+.press-intro {
+  margin-top: 28px;
+}
+
+.press-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 760px;
+  margin-top: 16px;
+}
+
+.press-item {
+  display: block;
+  padding: 16px 20px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  text-decoration: none;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.press-item:hover {
+  border-color: rgba(226, 67, 78, 0.45);
+  transform: translateY(-2px);
+}
+
+.press-meta {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.press-outlet {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.press-title {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.press-item:hover .press-title {
+  color: var(--accent-hover);
+}
+
 /* ===== Support ===== */
 .support-list {
   display: flex;

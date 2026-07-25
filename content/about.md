@@ -263,6 +263,16 @@ achievements:
         Канал «АйЦіБарада» стаў адным з 12 пераможцаў міжнароднага конкурсу YouTube NextUp 2019 — нас абралі з 675 заявак ад перспектыўных блогераў. Перамога дала тыдзень навучаньня ў творчым лагеры YouTube і грант на здымачнае абсталяваньне.
       en: |
         The ITBeard channel («АйТиБорода») became one of the 12 winners of the international YouTube NextUp 2019 contest — we were selected from 675 applications by up-and-coming creators. The win came with a week of training at a YouTube creator camp and a grant for filming equipment.
+  - period: { be: "верасень 2015 — люты 2016", en: "Sep 2015 — Feb 2016" }
+    title:
+      be: Скончыў курсы ПВТ
+      en: Completed the HTP courses
+    org: { be: інавацыйнае прадпрымальніцтва, en: innovative entrepreneurship }
+    description:
+      be: |
+        У ліку першых студэнтаў курса скончыў адукацыйную праграму па інавацыйным прадпрымальніцтве пры Адміністрацыі Парку высокіх тэхналогій. Навучаньне цягнулася з 14 верасьня 2015 году па 12 лютага 2016-га і завяршылася [пасьпяховым засваеньнем праграмы](lightbox:/images/sert-pvt.JPG "Даведка аб навучаньні на курсах ПВТ").
+      en: |
+        I was among the first students to complete the educational program in innovative entrepreneurship run by the Administration of the Hi-Tech Park (Belarus). The studies lasted from September 14, 2015 to February 12, 2016 and ended with the [successful completion of the program](lightbox:/images/sert-pvt.JPG "The certificate of studies at the HTP courses").
   - period: { be: "2015", en: "2015" }
     title:
       be: Супэрфінал GenerationS са стартапам PUSHka

@@ -25,10 +25,22 @@ export default function Archive() {
 
   const intro = getSection(page, 'intro')
 
+  const total = ARCHIVE_PROJECTS.length
+  const dormantCount = ARCHIVE_PROJECTS.filter((p) => p.dormant).length
+  const counterHint = page.counterHint
+    .replace('{total}', total)
+    .replace('{closed}', total - dormantCount)
+    .replace('{dormant}', dormantCount)
+
   return (
     <main>
       <section className="container section page-head">
-        <h1>{intro.title}</h1>
+        <h1>
+          {intro.title}{' '}
+          <sup className="pahost-count" title={counterHint}>
+            ({total})
+          </sup>
+        </h1>
         <Ornament />
         <Md className="prose intro" html={intro.html} />
         <ul className="archive-legend">
@@ -72,9 +84,11 @@ export default function Archive() {
                   <span className="card-closed" title={p.dormant ? page.dormantHint : shared.labels.closedInHint}>
                     {p.dormant ? page.dormantLabel : `${shared.labels.closedIn} ${p.closed}`}
                   </span>
-                  <span className="card-duration" title={shared.labels.durationHint}>
-                    {formatDuration((p.closed ?? NOW) - p.started, shared.labels)}
-                  </span>
+                  {!p.hideDuration && (
+                    <span className="card-duration" title={shared.labels.durationHint}>
+                      {formatDuration((p.closed ?? NOW) - p.started, shared.labels)}
+                    </span>
+                  )}
                 </div>
               </CardTag>
             )

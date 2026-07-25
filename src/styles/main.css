@@ -976,6 +976,15 @@ body.theme-restore #app {
   background: #e2c04e;
 }
 
+/* project counter next to the pahost heading */
+.pahost-count {
+  font-size: 0.42em;
+  font-weight: 700;
+  color: #7ee787;
+  vertical-align: super;
+  cursor: help;
+}
+
 .card-foot {
   display: flex;
   justify-content: space-between;

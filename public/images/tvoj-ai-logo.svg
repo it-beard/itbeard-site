@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Твой AI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2340"/>
+      <stop offset="1" stop-color="#0f1322"/>
+    </linearGradient>
+    <radialGradient id="heartglow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#8c7dff" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#8c7dff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#bg)"/>
+
+  <!-- stars -->
+  <g fill="#e8e8e8">
+    <circle cx="52" cy="88" r="1.8" opacity="0.6"/>
+    <circle cx="130" cy="150" r="1.4" opacity="0.45"/>
+    <circle cx="452" cy="120" r="1.8" opacity="0.6"/>
+    <circle cx="410" cy="60" r="1.4" opacity="0.5"/>
+    <circle cx="70" cy="420" r="1.6" opacity="0.5"/>
+    <circle cx="450" cy="430" r="1.6" opacity="0.5"/>
+    <circle cx="256" cy="470" r="1.4" opacity="0.4"/>
+    <circle cx="30" cy="260" r="1.5" opacity="0.5"/>
+    <circle cx="484" cy="280" r="1.5" opacity="0.5"/>
+  </g>
+  <g fill="#e2c04e">
+    <circle cx="96" cy="330" r="2" opacity="0.7"/>
+    <circle cx="430" cy="350" r="2" opacity="0.7"/>
+    <circle cx="180" cy="70" r="1.8" opacity="0.7"/>
+  </g>
+
+  <!-- glow behind the heart -->
+  <circle cx="256" cy="290" r="180" fill="url(#heartglow)"/>
+
+  <!-- neural heart: connections -->
+  <g stroke="#8c7dff" stroke-width="2" opacity="0.55">
+    <line x1="196" y1="196" x2="152" y2="238"/>
+    <line x1="152" y1="238" x2="166" y2="300"/>
+    <line x1="166" y1="300" x2="256" y2="392"/>
+    <line x1="256" y1="392" x2="346" y2="300"/>
+    <line x1="346" y1="300" x2="360" y2="238"/>
+    <line x1="360" y1="238" x2="316" y2="196"/>
+    <line x1="316" y1="196" x2="256" y2="240"/>
+    <line x1="196" y1="196" x2="256" y2="240"/>
+  </g>
+  <g stroke="#6ee7c7" stroke-width="1.6" opacity="0.5">
+    <line x1="256" y1="240" x2="256" y2="296"/>
+    <line x1="152" y1="238" x2="256" y2="296"/>
+    <line x1="360" y1="238" x2="256" y2="296"/>
+    <line x1="166" y1="300" x2="256" y2="296"/>
+    <line x1="346" y1="300" x2="256" y2="296"/>
+    <line x1="256" y1="296" x2="256" y2="392"/>
+    <line x1="196" y1="196" x2="256" y2="296"/>
+    <line x1="316" y1="196" x2="256" y2="296"/>
+  </g>
+
+  <!-- neural heart: nodes -->
+  <g fill="#8c7dff">
+    <circle cx="196" cy="196" r="9"/>
+    <circle cx="152" cy="238" r="7"/>
+    <circle cx="166" cy="300" r="7"/>
+    <circle cx="256" cy="392" r="9"/>
+    <circle cx="346" cy="300" r="7"/>
+    <circle cx="360" cy="238" r="7"/>
+    <circle cx="316" cy="196" r="9"/>
+    <circle cx="256" cy="240" r="7"/>
+  </g>
+  <circle cx="256" cy="296" r="13" fill="#e2c04e"/>
+  <circle cx="256" cy="296" r="21" fill="none" stroke="#e2c04e" stroke-width="2" opacity="0.4"/>
+
+  <!-- title -->
+  <text x="256" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" letter-spacing="3" fill="#e8e8e8">ТВОЙ <tspan fill="#6ee7c7">AI</tspan></text>
+
+  <!-- Школа кампетэнцый wordmark (competence.school) -->
+  <g transform="translate(186, 434) scale(1.23)" opacity="0.92">
+    <path d="M36.5628 20.8343V0H44.9858V28H0V0H8.47755V20.8343H18.4428V0H26.5454V20.8343H36.5652H36.5628Z" fill="#e8e8e8"/>
+    <path d="M74.9779 14.2194L51.4766 19.7863V12.7302L74.9779 7.16338V14.2194Z" fill="#e8e8e8"/>
+    <path d="M98.7081 13.3931L114 28H102.894L89.8699 14.1657V28H81.3924V0H89.8699V12.7862L102.571 0H113.464L98.7081 13.3931Z" fill="#e8e8e8"/>
+  </g>
+</svg>

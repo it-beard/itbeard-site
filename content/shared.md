@@ -16,10 +16,10 @@ nav:
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }
 labels:
-  closedIn: { be: закрыты ў, en: closed in }
+  closedIn: { be: скончаны ў, en: finished in }
   closedInHint:
-    be: Год, калі праект быў канчаткова закрыты
-    en: The year the project was finally closed
+    be: Год, калі праект канчаткова скончыўся
+    en: The year the project finally ended
   since: { be: з, en: since }
   sinceHint:
     be: Дата, калі праект пачаўся
@@ -41,10 +41,12 @@ labels:
     be: { be: бел, en: be }
     ru: { be: рас, en: ru }
     en: { be: анг, en: en }
+    de: { be: ням, en: de }
   langNames:
     be: { be: Беларуская, en: Belarusian }
     ru: { be: Расейская, en: Russian }
     en: { be: Ангельская, en: English }
+    de: { be: Нямецкая, en: German }
   yearOne: { be: год, en: year }
   yearFew: { be: гады, en: years }
   yearMany: { be: гадоў, en: years }

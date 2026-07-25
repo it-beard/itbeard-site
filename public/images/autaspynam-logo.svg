@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Аўтаспынам па ШІ">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c2340"/>
+      <stop offset="0.62" stop-color="#141a30"/>
+      <stop offset="1" stop-color="#0f1322"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e2c04e" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#e2c04e" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="planet" cx="0.35" cy="0.3" r="0.9">
+      <stop offset="0" stop-color="#a89bff"/>
+      <stop offset="1" stop-color="#5a4fd0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2c3350"/>
+      <stop offset="1" stop-color="#1d2338"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" fill="url(#sky)"/>
+
+  <!-- stars -->
+  <g fill="#e8e8e8">
+    <circle cx="46" cy="240" r="2" opacity="0.8"/>
+    <circle cx="96" cy="132" r="1.6" opacity="0.55"/>
+    <circle cx="168" cy="86" r="2.2" opacity="0.75"/>
+    <circle cx="235" cy="150" r="1.5" opacity="0.5"/>
+    <circle cx="300" cy="84" r="1.8" opacity="0.7"/>
+    <circle cx="330" cy="205" r="1.5" opacity="0.45"/>
+    <circle cx="465" cy="205" r="2" opacity="0.7"/>
+    <circle cx="482" cy="90" r="1.6" opacity="0.55"/>
+    <circle cx="428" cy="248" r="1.4" opacity="0.5"/>
+    <circle cx="66" cy="60" r="1.6" opacity="0.6"/>
+    <circle cx="255" cy="230" r="1.4" opacity="0.4"/>
+    <circle cx="140" cy="255" r="1.6" opacity="0.5"/>
+  </g>
+  <g fill="#e2c04e">
+    <circle cx="205" cy="60" r="2" opacity="0.8"/>
+    <circle cx="450" cy="150" r="1.8" opacity="0.7"/>
+    <circle cx="30" cy="160" r="1.8" opacity="0.7"/>
+  </g>
+
+  <!-- neural constellation -->
+  <g stroke="#6ee7c7" stroke-width="1.4" opacity="0.55">
+    <line x1="76" y1="118" x2="140" y2="86"/>
+    <line x1="140" y1="86" x2="196" y2="140"/>
+    <line x1="76" y1="118" x2="118" y2="188"/>
+    <line x1="196" y1="140" x2="118" y2="188"/>
+    <line x1="140" y1="86" x2="118" y2="188"/>
+  </g>
+  <g fill="#6ee7c7" opacity="0.85">
+    <circle cx="76" cy="118" r="4"/>
+    <circle cx="140" cy="86" r="5"/>
+    <circle cx="196" cy="140" r="4"/>
+    <circle cx="118" cy="188" r="4.5"/>
+  </g>
+
+  <!-- ringed planet -->
+  <circle cx="402" cy="120" r="46" fill="url(#planet)"/>
+  <ellipse cx="402" cy="124" rx="72" ry="18" fill="none" stroke="#e2c04e" stroke-width="4" opacity="0.75" transform="rotate(-16 402 124)"/>
+
+  <!-- horizon glow -->
+  <ellipse cx="256" cy="302" rx="280" ry="70" fill="url(#glow)"/>
+  <line x1="0" y1="302" x2="512" y2="302" stroke="#e2c04e" stroke-width="1.4" opacity="0.35"/>
+
+  <!-- road to the horizon -->
+  <polygon points="100,512 412,512 268,302 244,302" fill="url(#road)"/>
+  <polygon points="100,512 130,512 250,302 244,302" fill="#3a4260" opacity="0.7"/>
+  <polygon points="382,512 412,512 268,302 262,302" fill="#3a4260" opacity="0.7"/>
+  <line x1="256" y1="496" x2="256" y2="312" stroke="#e2c04e" stroke-width="6" stroke-dasharray="30 26" opacity="0.85"/>
+
+  <!-- hitchhiking road sign -->
+  <rect x="352" y="348" width="12" height="128" rx="4" fill="#6b5f3e"/>
+  <polygon points="290,288 290,348 420,348 448,318 420,288" fill="#e2c04e" stroke="#b8983a" stroke-width="4" stroke-linejoin="round"/>
+  <text x="356" y="334" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="bold" fill="#1a1608">ШІ</text>
+
+  <!-- title -->
+  <text x="256" y="52" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="bold" letter-spacing="4" fill="#e8e8e8" opacity="0.9">АЎТАСПЫНАМ</text>
+  <text x="256" y="80" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" letter-spacing="6" fill="#e2c04e" opacity="0.85">ПА ШІ</text>
+</svg>

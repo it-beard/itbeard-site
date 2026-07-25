@@ -3,13 +3,20 @@ title:
   be: Пагост праектаў
   en: Pahost of projects
 dormantLabel: { be: вяла бягучы, en: slow burning }
+counterHint:
+  be: >
+    Усяго праектаў на пагосьце: {total}. Зь іх скончаных — {closed},
+    вяла бягучых — {dormant}
+  en: >
+    Total projects in the pahost: {total}. Finished — {closed},
+    slow-burning — {dormant}
 dormantHint:
   be: Вяла бягучы праект — час ад часу тут нешта з'яўляецца, але статус няпэўны
   en: A slow-burning project — something shows up from time to time, but the status is uncertain
 legend:
   closed:
-    be: шэрыя карткі — праекты, якія цалкам завершаныя
-    en: grey cards — projects that are fully finished
+    be: шэрыя карткі — праекты, якія цалкам завершаныя ці закрытыя
+    en: grey cards — projects that are fully finished or closed
   dormant:
     be: >
       карткі з цёплым фонам — вяла бягучыя: час ад часу там нешта
@@ -30,6 +37,12 @@ legend:
 ## Уладар Пярсьцёнкаў {#uladar}
 
 **«Уладар Пярсьцёнкаў па-беларуску»** — YouTube-канал, дзе я паціху агучваю «Ўладара Пярсьцёнкаў» паводле перакладу Дзьмітрыя Магілеўцава й Крысьціны Курчанковай.
+
+## DunkelSaga {#dunkelsaga}
+
+**DunkelSaga** — музычны праект з песьнямі пра адметныя падзеі сусьвету «Ўладара Пярсьцёнкаў», згенераванымі праз Suno: ад dark folk да эпічнага мэталу на нямецкай мове.
+
+Музыка даступная на ўсіх музычных пляцоўках, а картка вядзе на YouTube-канал праекту.
 
 ## Bloggers CMS {#bloggers-cms}
 
@@ -55,6 +68,18 @@ legend:
 
 Падкаст запісваўся анлайн на пачатку кожнага месяца і быў даступны маім патронам і спонсарам.
 
+## Твой AI {#tvoj-ai}
+
+**«Твой AI»** — беларускамоўны анлайн-курс па інструментах штучнага інтэлекту на прыкладзе сацыяльных праектаў, які мы правялі сумесна з адукацыйнай платформай [«Школа кампетэнцый»](https://competence.school/) — гэта быў першы курс на платформе. Навучаньне цягнулася з 17 красавіка да канца траўня 2026 году і скончылася прэзентацыяй ідэй — адказаў на сацыяльныя выклікі.
+
+З 316 заявак на курс былі прынятыя 56 чалавек (5,6 чалавека на месца). Сярэдняя ацэнка навучальных блокаў — 8,9/10, а самаацэнка ўдзельнікаў ва ўладанні інструментамі ШІ вырасла за курс з 3,8 да 7,5.
+
+## Аўтаспынам па ШІ {#autaspynam}
+
+**«Аўтаспынам па ШІ: даведнік для пачаткоўцаў»** — афлайн-курс для дзетак, які я правёў у Вроцлаве ў лютым–сакавіку 2026 году ў прасторы Przejście Dialogu. Чатыры прыпынкі-заняткі па-беларуску: што такое ШІ, як пасябраваць з ChatGPT, стварыць файную музыку і напісаць код — нават калі ніколі гэтага не рабіў/рабіла.
+
+Экіпаж пасьпяхова даляцеў да фінальнага прыпынку і даказаў: ШІ і беларуская мова — ідэальнае спалучэньне.
+
 ## AIA Podcast {#aia-podcast}
 
 **AIA Podcast** — найбуйнейшы расейскамоўны падкаст пра навіны штучнага інтэлекту, які мы вялі разам зь Вікай Шаленчанка кожныя два тыдні. Падкаст фінансаваўся кампаніяй EPAM і выходзіў пад яе брэндам EngX; за два з паловай гады выйшла 120 выпускаў.
@@ -78,6 +103,18 @@ legend:
 **«АйТиБорода Shorts»** — сумесны з Anywhere Club (EPAM) спін-оф «АйЦіБарады»: кароткія інтэрвію з інжынерамі EPAM пра тое, як увайсьці ў прафесію і што вучыць — Java, JavaScript, Python, Data Science, DevOps, Android, iOS і праектны мэнэджмэнт.
 
 Выйшла 8 выпускаў на YouTube-канале Anywhere Club.
+
+## Тёмный Лес {#darkless}
+
+**«Тёмный Лес»** — YouTube-канал, на якім я задумваў рабіць інтэрв'ю пра навуку. Зрабіў тры выпускі і закінуў канал: відэа адтуль і новыя навуковыя інтэрв'ю перакачавалі на канал «АйЦіБарада» ў рубрыку «Наука+».
+
+Самога канала ўжо не знайсьці на YouTube, але засталася аўдыявэрсія падкасту — картка вядзе акурат на яе.
+
+## Визуальная студия {#visual-studio}
+
+**«Визуальная студия»** — падкаст пра навіны са сьвету .NET, які мы рабілі з калегамі падчас маёй працы ў SoftTeco.
+
+З 10 траўня па 30 ліпеня 2019 году выйшла тры выпускі, пасьля чаго падкаст закрыўся.
 
 ## IT-Страна {#it-strana}
 
@@ -121,6 +158,12 @@ A deep bow to everyone who put their hands, time and heart into these projects. 
 
 **«Уладар Пярсьцёнкаў па-беларуску»** — a YouTube channel where I'm slowly voicing “The Lord of the Rings” in Belarusian, based on the translation by Dzmitry Mahileucau and Krystsina Kurchankova.
 
+## DunkelSaga {#dunkelsaga}
+
+**DunkelSaga** — a music project with songs about notable events of The Lord of the Rings universe, generated via Suno: from dark folk to epic metal, in German.
+
+The music is available on all major music platforms, and this card leads to the project's YouTube channel.
+
 ## Bloggers CMS {#bloggers-cms}
 
 **Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
@@ -145,6 +188,18 @@ For me it was also an experiment in recording podcasts in English — but we nev
 
 The podcast was recorded online at the beginning of each month and was available to my patrons and sponsors.
 
+## Tvoj AI {#tvoj-ai}
+
+**«Твой AI» ("Your AI")** — a Belarusian-language online course on AI tools through the lens of social projects, run together with the [Competence School](https://competence.school/) educational platform — it was the platform's first course. The program ran from April 17 to the end of May 2026 and wrapped up with participants presenting their ideas — answers to social challenges.
+
+Out of 316 applications, 56 people were accepted (5.6 applicants per spot). The learning blocks scored an average of 8.9/10, and participants' self-assessed command of AI tools grew from 3.8 to 7.5 over the course.
+
+## Hitchhiking through AI {#autaspynam}
+
+**«Аўтаспынам па ШІ» ("Hitchhiking through AI: a beginner's guide")** — an offline course for kids that I ran in Wrocław in February–March 2026 at the Przejście Dialogu space. Four "stops" taught in Belarusian: what AI is, how to make friends with ChatGPT, create cool music, and write code — even if you'd never done any of that before.
+
+The crew successfully reached the final stop and proved it: AI and the Belarusian language are a perfect match.
+
 ## AIA Podcast {#aia-podcast}
 
 **AIA Podcast** — the largest Russian-language podcast about AI news, which Vika Shelenchenko and I hosted every two weeks. It was funded by EPAM and released under its EngX brand; over two and a half years we put out 120 episodes.
@@ -168,6 +223,18 @@ The project closed over problems with the community funding itself and cost opti
 **«АйТиБорода Shorts»** ("ITBeard Shorts") — a spin-off of ITBeard made together with Anywhere Club (EPAM): short interviews with EPAM engineers about how to get into the profession and what to learn — Java, JavaScript, Python, Data Science, DevOps, Android, iOS and project management.
 
 8 episodes came out on the Anywhere Club YouTube channel.
+
+## The Dark Forest {#darkless}
+
+**«Тёмный Лес» ("The Dark Forest")** — a YouTube channel where I planned to make interviews about science. I recorded three episodes and abandoned it: the videos, along with new science interviews, migrated to the ITBeard channel under the "Science+" rubric.
+
+The channel itself can no longer be found on YouTube, but the audio version of the podcast survives — that's exactly where this card leads.
+
+## Visual Studio {#visual-studio}
+
+**«Визуальная студия» ("Visual Studio")** — a podcast about news from the .NET world that I made with colleagues during my time at SoftTeco.
+
+Three episodes came out between May 10 and July 30, 2019, after which the podcast closed.
 
 ## IT-Strana {#it-strana}
 

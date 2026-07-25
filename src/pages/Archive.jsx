@@ -49,7 +49,7 @@ export default function Archive() {
             const CardTag = p.url ? 'a' : 'div'
             const linkProps = p.url ? { href: p.url, target: '_blank', rel: 'noopener' } : {}
             return (
-              <CardTag key={p.id} {...linkProps} className={`card card-archived${p.dormant ? ' card-dormant' : ''}`}>
+              <CardTag key={p.id} id={p.id} {...linkProps} className={`card card-archived${p.dormant ? ' card-dormant' : ''}`}>
                 <div className="card-head">
                   <img src={p.image} alt="" loading="lazy" />
                   <div className="card-title">

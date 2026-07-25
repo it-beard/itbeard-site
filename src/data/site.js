@@ -28,7 +28,7 @@ export const PROJECTS = [
     id: 'aia',
     url: 'https://podcast.onvibe.io',
     image: '/images/onvibe.jpg',
-    started: '2023-02-16',
+    started: 2025,
     lang: 'ru',
   },
   {
@@ -87,11 +87,25 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://github.com/it-beard/bloggers-cms',
   },
   {
+    id: 'aia-podcast',
+    image: '/images/aia-logo.jpg',
+    started: 2023,
+    closed: 2025,
+    url: 'https://www.youtube.com/channel/UCxjs3aUQ9OnufZQZaCH-E4w',
+  },
+  {
     id: 'letapis',
     image: '/images/vkl-logo.jpg',
     started: 2023,
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',
+  },
+  {
+    id: 'nerodina',
+    image: '/images/nerodina-logo.jpg',
+    started: 2023,
+    closed: 2025,
+    url: 'https://www.youtube.com/playlist?list=PLdmSK1Qzu987ZTif0PGiZEdTSCH5PlBF_',
   },
   {
     id: 'beard-news',
@@ -105,6 +119,13 @@ export const ARCHIVE_PROJECTS = [
     started: 2024,
     closed: 2024,
     url: 'https://www.youtube.com/@imbadial',
+  },
+  {
+    id: 'itbeard-shorts',
+    image: '/images/itbeard-shorts-logo.jpg',
+    started: 2022,
+    closed: 2023,
+    url: 'https://www.youtube.com/playlist?list=PLhf2AM9rZ9b_DbNadCzxi7zfga9pB_3NK',
   },
   {
     id: 'it-strana',
@@ -163,11 +184,11 @@ export const CONTACT_LINKS = {
     icon: 'fab fa-mastodon',
     color: '#8c7dff',
   },
-  twitter: {
-    href: 'https://x.com/iamitbeard',
-    text: 'x.com/iamitbeard',
-    icon: 'fab fa-twitter',
-    color: '#1A8CD8',
+  instagram: {
+    href: 'https://instagram.com/iamsetivir',
+    text: 'instagram.com/iamsetivir',
+    icon: 'fab fa-instagram',
+    color: '#E1306C',
   },
   github: {
     href: 'https://github.com/itbeard',

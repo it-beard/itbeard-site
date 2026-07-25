@@ -75,18 +75,19 @@ export default function Home() {
             const card = projects.subs.find((s) => s.id === p.id)
             if (!card) return null
             return (
-              <a
-                key={p.id}
-                href={p.url}
-                target="_blank"
-                rel="noopener"
-                className={`card${p.commercial ? ' card-commercial' : ''}`}
-              >
+              <div key={p.id} className={`card card-linked${p.commercial ? ' card-commercial' : ''}`}>
+                <a
+                  className="card-cover"
+                  href={p.url}
+                  target="_blank"
+                  rel="noopener"
+                  aria-label={card.title.replace(/\*\*/g, '')}
+                ></a>
                 <div className="card-head">
                   <img src={p.image} alt="" loading="lazy" />
                   <h3 dangerouslySetInnerHTML={{ __html: mdInline(card.title) }} />
                 </div>
-                <div className="card-body prose" dangerouslySetInnerHTML={{ __html: card.html }} />
+                <Md className="card-body prose" html={card.html} />
                 <div className="card-foot">
                   <span className="since-chip" title={startTooltip(p.started, lang, shared.labels)}>
                     {shared.labels.since} {startYear(p.started)}
@@ -107,7 +108,7 @@ export default function Home() {
                     )}
                   </div>
                 </div>
-              </a>
+              </div>
             )
           })}
         </div>

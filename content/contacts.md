@@ -21,10 +21,10 @@ groups:
         label: { be: LinkedIn, en: LinkedIn }
       - id: github
         label: { be: GitHub, en: GitHub }
-      - id: blog-telegram
-        label: { be: ТГ-канал «АйЦіБарада», en: ITBeard on Telegram }
       - id: ciomnylos-telegram
         label: { be: ТГ-канал «Цёмны Лёс», en: Ciomny Los on Telegram }
-      - id: twitter
-        label: { be: Twitter, en: Twitter }
+      - id: instagram
+        label: { be: Instagram «Setivir», en: Setivir on Instagram }
+      - id: blog-telegram
+        label: { be: ТГ-канал «АйЦіБарада», en: ITBeard on Telegram }
 ---

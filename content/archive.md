@@ -47,17 +47,37 @@ legend:
 
 **«Imbalanced Dialogues»** — наш з жонкай Лесяй YouTube-канал дыялогаў: сям'я, здароўе, тэхналогіі і ўсё, што нас чапляе.
 
+Для мяне гэта быў яшчэ і эксьперымент запісу падкастаў па-ангельску — але далей за адзін выпуск мы не прасунуліся.
+
 ## Навіны Барады {#beard-news}
 
 **«Навіны Барады»** — солакаст, у якім я распавядаў пра IT-плёткі, падзеі са свайго жыцця, новы і стары кантэнт і бліжэйшыя планы.
 
 Падкаст запісваўся анлайн на пачатку кожнага месяца і быў даступны маім патронам і спонсарам.
 
+## AIA Podcast {#aia-podcast}
+
+**AIA Podcast** — найбуйнейшы рускамоўны падкаст пра навіны штучнага інтэлекту, які мы вялі разам зь Вікай Шаленчанка кожныя два тыдні. Падкаст фінансаваўся кампаніяй EPAM і выходзіў пад яе брэндам EngX; за два з паловай гады выйшла 120 выпускаў.
+
+Восенню 2025 году EPAM спыніў фінансаваньне, і падкаст перайшоў у [«на Вайбе»](https://podcast.onvibe.io) — а імя AIA Podcast засталося за кампаніяй.
+
 ## Letapis.VKL {#letapis}
 
-**Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world.
+**Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world. Там жыў і мой уласны блог. 
 
-Там жыў і мой уласны блог.
+Праект закрыўся праз праблемы з самафінансаваньнем суполкай і аптымізацыю выдаткаў.
+
+## неРодина {#nerodina}
+
+**«неРодина»** — шоў пра айцішнікаў, якія зьехалі і прыжыліся ў іншых краінах. Мы рабілі яго разам з Артурам Гайнуліным, маім сябрам з Татарстану. Кожны выпуск — адна краіна вачыма героя: Ісландыя, Сінгапур, ЗША, Аўстралія.
+
+Выйшла 4 выпускі на канале «АйТиБорода», пасьля чаго праект стаў на доўгую паўзу.
+
+## АйЦіБарада Shorts {#itbeard-shorts}
+
+**«АйТиБорода Shorts»** — сумесны з Anywhere Club (EPAM) спін-оф «АйЦіБарады»: кароткія інтэрвію з інжынерамі EPAM пра тое, як увайсьці ў прафесію і што вучыць — Java, JavaScript, Python, Data Science, DevOps, Android, iOS і праектны мэнэджмэнт.
+
+Выйшла 8 выпускаў на YouTube-канале Anywhere Club.
 
 ## IT-Страна {#it-strana}
 
@@ -117,17 +137,37 @@ An attempt to talk to the global audience directly; something appears there occa
 
 **«Imbalanced Dialogues»** — a YouTube channel of dialogues with my wife Lesia: family, health, tech and whatever else hooks us.
 
+For me it was also an experiment in recording podcasts in English — but we never got past a single episode.
+
 ## Beard News {#beard-news}
 
 **«Beard News»** — a solocast where I talked about IT gossip, events in my life, new and old content, and upcoming plans.
 
 The podcast was recorded online at the beginning of each month and was available to my patrons and sponsors.
 
+## AIA Podcast {#aia-podcast}
+
+**AIA Podcast** — the largest Russian-language podcast about AI news, which Vika Shelenchenko and I hosted every two weeks. It was funded by EPAM and released under its EngX brand; over two and a half years we put out 120 episodes.
+
+In autumn 2025 EPAM stopped funding it, and the show carried on as [“on Vibe”](https://podcast.onvibe.io) — while the AIA Podcast name stayed with the company.
+
 ## Letapis.VKL {#letapis}
 
-**Letapis.VKL** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community.
+**Letapis.VKL** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community. My own blog lived there too. 
 
-My own blog lived there too.
+The project closed over problems with the community funding itself and cost optimizations.
+
+## неРодина {#nerodina}
+
+**«неРодина»** ("neRodina" — "un-Motherland") — a show about IT folks who left and put down roots in other countries. We made it together with Artur Gainulin, my friend from Tatarstan. Each episode is one country through the guest's eyes: Iceland, Singapore, the USA, Australia.
+
+4 episodes came out on the ITBeard channel, after which the project went on a long pause.
+
+## ITBeard Shorts {#itbeard-shorts}
+
+**«АйТиБорода Shorts»** ("ITBeard Shorts") — a spin-off of ITBeard made together with Anywhere Club (EPAM): short interviews with EPAM engineers about how to get into the profession and what to learn — Java, JavaScript, Python, Data Science, DevOps, Android, iOS and project management.
+
+8 episodes came out on the Anywhere Club YouTube channel.
 
 ## IT-Strana {#it-strana}
 

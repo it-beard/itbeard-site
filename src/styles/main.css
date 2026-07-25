@@ -756,12 +756,35 @@ body.theme-restore #app {
 }
 
 @media (hover: hover) {
-  a.card:hover {
+  a.card:hover,
+  .card-linked:hover {
     transform: translateY(-5px);
     border-color: var(--accent-bright);
     box-shadow: 0 10px 30px rgba(165, 14, 30, 0.18);
     text-shadow: none;
   }
+}
+
+/* card as a div with a stretched cover link, so the body can hold its own links */
+.card-linked {
+  position: relative;
+}
+
+.card-linked .card-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+
+.card-linked .card-body a {
+  position: relative;
+  z-index: 2;
+}
+
+/* anchored archive cards land below the fixed header */
+.card-archived {
+  scroll-margin-top: calc(var(--header-h) + 24px);
 }
 
 .card-head {
@@ -856,6 +879,10 @@ body.theme-restore #app {
 /* Archived cards («Пагост») */
 .card-archived {
   -webkit-tap-highlight-color: transparent;
+}
+
+.card-archived .card-head {
+  align-items: flex-start;
 }
 
 .card-archived .card-head img {

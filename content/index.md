@@ -51,7 +51,7 @@ Mastodon — разьмеркаваны аналаг Twitter, без рэкла�
 
 ## На Вайбе {#aia}
 
-**«на Вайбе»** — падкаст, у якім мы разам зь Вікай Шаленчанка абмяркоўваем самыя сьвежыя навіны са сьвету нейрасетак і штучнага інтэлекту з акцэнтам на тэхналагічны асьпект.
+**«на Вайбе»** — падкаст, у якім мы разам зь Вікай Шаленчанка абмяркоўваем самыя сьвежыя навіны са сьвету нейрасетак і штучнага інтэлекту з акцэнтам на тэхналагічны асьпект. Працяг падкаста [AIA Podcast](/archive#aia-podcast), які цяпер спачывае на пагосьце праектаў.
 
 Падкаст выходзіць раз на два тыдні на ўсіх пляцоўках і існуе дзякуючы падтрымцы слухачоў.
 
@@ -103,7 +103,7 @@ The best place to dive deeper into software development in tandem with AI.
 
 ## on Vibe {#aia}
 
-**«on Vibe»** is a podcast where, together with Vika Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence, with an emphasis on the technological aspect.
+**«on Vibe»** is a podcast where, together with Vika Shelenchenko, we discuss the freshest news from the world of neural networks and artificial intelligence, with an emphasis on the technological aspect. It's the continuation of the [AIA Podcast](/archive#aia-podcast), which now rests in the pahost of projects.
 
 The podcast comes out every two weeks on all platforms and exists thanks to listener support.
 

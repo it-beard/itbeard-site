@@ -976,9 +976,9 @@ body.theme-restore #app {
   background: #e2c04e;
 }
 
-/* project counter next to the pahost heading */
+/* project counter next to section headings (pahost, home projects) */
 .pahost-count {
-  font-size: 0.42em;
+  font-size: 0.55em;
   font-weight: 700;
   color: #7ee787;
   vertical-align: super;

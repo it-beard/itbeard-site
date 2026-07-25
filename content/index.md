@@ -13,6 +13,11 @@ hero:
   toProjects:
     be: Пра мяне
     en: About me
+counterHint:
+  be: >
+    Усяго актыўных праектаў: {total}. Зь іх камерцыйных — {commercial}
+  en: >
+    Total active projects: {total}. Commercial — {commercial}
 ---
 
 <!-- be -->

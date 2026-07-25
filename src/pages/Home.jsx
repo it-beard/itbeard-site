@@ -14,6 +14,11 @@ export default function Home() {
   useTitle(page.title)
 
   const projects = getSection(page, 'projects')
+
+  const total = PROJECTS.length
+  const counterHint = page.counterHint
+    .replace('{total}', total)
+    .replace('{commercial}', PROJECTS.filter((p) => p.commercial).length)
   // touch press flips the hero photo (hover emulation for mobile)
   const [flipped, setFlipped] = useState(false)
 
@@ -68,7 +73,12 @@ export default function Home() {
       </section>
 
       <section id="projects" className="container section">
-        <h2>{projects.title}</h2>
+        <h2>
+          {projects.title}{' '}
+          <sup className="pahost-count" title={counterHint}>
+            ({total})
+          </sup>
+        </h2>
         <Ornament />
         <div className="cards">
           {PROJECTS.map((p) => {

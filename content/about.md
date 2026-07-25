@@ -185,6 +185,16 @@ timeline:
       en: |
         Around the end of 2022, right when the first public version of ChatGPT appeared, I began diving into the topic of artificial intelligence — and by early 2023 I was already making content about AI and programming. Gradually this grew into full-fledged work: I launched several news podcasts, teach programmers to work in tandem with AI, give lectures on AI-assisted programming and on creating content and music with AI, speak at Belarusian community events, consult companies on adopting AI, and do AI DevRel. You could say I've retrained from a programmer into an AI educator.
 
+  - period: { be: "2025 — цяпер", en: "2025 — now" }
+    title:
+      be: Традыцыйнае лучніцтва
+      en: Traditional archery
+    description:
+      be: |
+        З 2025 году займаюся традыцыйным лучніцтвам і працягваю дагэтуль — гэта маё вялікае хобі. Маю тры лукі, у тым ліку хэндмэйд кіпчацкі лук. Часам даю майстар-клясы, але страляю выключна для сябе — не палюю, бо люблю жывёл.
+      en: |
+        Since 2025 I've been practicing traditional archery, and I keep at it to this day — it's my big hobby. I own three bows, including a handmade Kipchak bow. From time to time I give workshops, but I shoot purely for myself — I don't hunt, because I love animals.
+
 headings:
   bio: { be: Біяграфія, en: Biography }
   achievements: { be: Дасягненьні, en: Achievements }
@@ -201,15 +211,17 @@ achievements:
        Удзельнічаў у International Visitor Leadership Program — флагманскай праграме прафесійных абменаў Дзярждэпартамэнту ЗША, удзельнікаў якой намінуюць амбасады ЗША. Кірунак — AI Innovation & Security. Сярод выпускнікоў праграмы — больш за 500 кіраўнікоў дзяржаваў і ўрадаў.
       en: |
         I took part in the International Visitor Leadership Program — the U.S. Department of State's flagship professional exchange program, whose participants are nominated by U.S. embassies. My track was AI Innovation & Security. Program alumni include more than 500 current and former heads of state and government.
-  - period: { be: "2025 — цяпер", en: "2025 — now" }
+  - period: { be: "красавік — травень 2025", en: "Apr — May 2025" }
     title:
-      be: Традыцыйнае лучніцтва
-      en: Traditional archery
+      be: Выкладаў праграмаваньне з ШІ
+      en: Taught programming with AI
+    org: { be: "School of Digital Competencies, Вільня", en: "School of Digital Competencies in Vilnius" }
+    link: https://www.esdc.lt/
     description:
       be: |
-        З 2025 году займаюся традыцыйным лучніцтвам і працягваю дагэтуль — гэта маё вялікае хобі. Маю тры лукі, у тым ліку хэндмэйд кіпчацкі лук. Часам даю майстар-клясы, але страляю выключна для сябе — не палюю, бо люблю жывёл.
+        У красавіку — траўні 2025 году выкладаў асновы праграмаваньня з ШІ ў School of Digital Competencies у Вільні — факультатыўны курс для студэнтаў-праграмістаў старэйшых курсаў праграмы Bachelor of Computer Science.
       en: |
-        Since 2025 I've been practicing traditional archery, and I keep at it to this day — it's my big hobby. I own three bows, including a handmade Kipchak bow. From time to time I give workshops, but I shoot purely for myself — I don't hunt, because I love animals.
+        In April–May 2025 I taught the fundamentals of programming with AI at the School of Digital Competencies in Vilnius — an elective course for senior-year students of the Bachelor of Computer Science program.
   - period: { be: "канец 2023 — 12 верасьня 2024", en: "end of 2023 — Sep 12, 2024" }
     title:
       be: Зрабіў фільм пра Kotlin

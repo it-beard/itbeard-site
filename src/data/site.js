@@ -116,7 +116,6 @@ export const ARCHIVE_PROJECTS = [
     image: '/images/genai-devhub-logo.jpg',
     started: 2025,
     closed: 2026,
-    hideDuration: true,
     url: 'https://www.skool.com/genai-devhub-5702',
     lang: 'en',
     types: ['community', 'education'],

@@ -73,13 +73,6 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://www.youtube.com/@uladarbel',
   },
   {
-    id: 'bloggers-cms',
-    image: '/images/bloggers-cms-logo.svg',
-    started: 2021,
-    dormant: true,
-    url: 'https://github.com/it-beard/bloggers-cms',
-  },
-  {
     id: 'lex-kartynnik',
     image: '/images/lex-kartynnik-logo.jpg',
     started: 2023,
@@ -87,8 +80,15 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q',
   },
   {
+    id: 'bloggers-cms',
+    image: '/images/bloggers-cms-logo.svg',
+    started: 2021,
+    dormant: true,
+    url: 'https://github.com/it-beard/bloggers-cms',
+  },
+  {
     id: 'letapis',
-    image: '/images/letapis-logo.svg',
+    image: '/images/vkl-logo.jpg',
     started: 2023,
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',

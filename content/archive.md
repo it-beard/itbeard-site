@@ -23,7 +23,9 @@ legend:
 
 # Пагост праектаў {#intro}
 
-Праекты, якія адыгралі сваю ролю і завяршыліся. Дзякуй усім, хто быў побач.
+На гэтым ціхім пагосьце спачываюць мае праекты. Адны ўжо закрытыя — яны адыгралі сваю ролю і сышлі на спачын. Іншыя — вяла бягучыя: час ад часу яшчэ падаюць прыкметы жыцьця. Кожны зь іх — частка майго шляху, і, магчыма, акурат па адным зь іх вы мяне і ведаеце.
+
+Нізкі паклон кожнаму, хто ўкладаў у гэтыя праекты свае рукі, час і сэрца. Без вас нічога з гэтага не было б.
 
 ## Уладар Пярсьцёнкаў {#uladar}
 
@@ -51,9 +53,9 @@ legend:
 
 Падкаст запісваўся анлайн на пачатку кожнага месяца і быў даступны маім патронам і спонсарам.
 
-## Летапіс {#letapis}
+## Letapis.VKL {#letapis}
 
-**«Летапіс»** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world.
+**Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world.
 
 Там жыў і мой уласны блог.
 
@@ -73,7 +75,9 @@ legend:
 
 # Pahost of projects {#intro}
 
-Projects that played their part and came to an end. Thanks to everyone who was around.
+In this quiet *pahost* — a Belarusian resting place — lie my projects. Some are closed: they played their part and went to rest. Others are slow-burning, still showing signs of life from time to time. Each of them is a piece of my journey — and chances are, one of them is exactly how you know me.
+
+A deep bow to everyone who put their hands, time and heart into these projects. None of this would have existed without you.
 
 ## The Lord of the Rings {#uladar}
 
@@ -101,9 +105,9 @@ An attempt to talk to the global audience directly; something appears there occa
 
 The podcast was recorded online at the beginning of each month and was available to my patrons and sponsors.
 
-## Летапіс {#letapis}
+## Letapis.VKL {#letapis}
 
-**«Летапіс»** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community.
+**Letapis.VKL** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community.
 
 My own blog lived there too.
 

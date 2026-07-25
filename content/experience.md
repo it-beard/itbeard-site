@@ -7,11 +7,11 @@ heading:
   en: My journey
 intro:
   be: >
-    Камерцыйны досьвед у храналогіі — месцы прац, якія могуць ісці паралельна.
-    Поўны кар'ерны шлях ёсьць у [LinkedIn](https://www.linkedin.com/in/akartynnik).
+    Ніжэй — мой прафесійны шлях у храналогіі.
+    А вось мой [LinkedIn](https://www.linkedin.com/in/akartynnik).
   en: >
-    Commercial experience in chronological order — jobs that can run in parallel.
-    The full career path is on [LinkedIn](https://www.linkedin.com/in/akartynnik).
+    Below is my professional journey in chronological order.
+    And here's my [LinkedIn](https://www.linkedin.com/in/akartynnik).
 overview:
   title: { be: Гады ў адным паглядзе, en: Years at a glance }
   now: { be: цяпер, en: now }

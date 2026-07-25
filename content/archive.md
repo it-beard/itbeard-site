@@ -80,6 +80,12 @@ legend:
 
 Экіпаж пасьпяхова даляцеў да фінальнага прыпынку і даказаў: ШІ і беларуская мова — ідэальнае спалучэньне.
 
+## AI DevHub {#genai-devhub}
+
+**AI DevHub** — англамоўная супольнасць на платформе Skool для інжынераў, якія хочуць разумна ўзмацніць сваю прадукцыйнасць з дапамогай ШІ. Задумваўся як англамоўны аналаг клуба [«Эвалюцыя Кода»](https://evocoders.ai), які я вёў з красавіка 2025 году.
+
+Часу на разьвіцьцё не хапала, а вялікага попыту так і не зьявілася — таму ў лютым 2026 году праект закрыўся.
+
 ## AIA Podcast {#aia-podcast}
 
 **AIA Podcast** — найбуйнейшы расейскамоўны падкаст пра навіны штучнага інтэлекту, які мы вялі разам зь Вікай Шаленчанка кожныя два тыдні. Падкаст фінансаваўся кампаніяй EPAM і выходзіў пад яе брэндам EngX; за два з паловай гады выйшла 120 выпускаў.
@@ -199,6 +205,12 @@ Out of 316 applications, 56 people were accepted (5.6 applicants per spot). The 
 **«Аўтаспынам па ШІ» ("Hitchhiking through AI: a beginner's guide")** — an offline course for kids that I ran in Wrocław in February–March 2026 at the Przejście Dialogu space. Four "stops" taught in Belarusian: what AI is, how to make friends with ChatGPT, create cool music, and write code — even if you'd never done any of that before.
 
 The crew successfully reached the final stop and proved it: AI and the Belarusian language are a perfect match.
+
+## AI DevHub {#genai-devhub}
+
+**AI DevHub** — an English-language community on Skool for software engineers looking to supercharge their productivity by using AI the smart way. It was meant to be the English-language counterpart of my [Evocoders](https://evocoders.ai) club, and I ran it from April 2025.
+
+There wasn't enough time to grow it, and the demand never really showed up — so the project closed in February 2026.
 
 ## AIA Podcast {#aia-podcast}
 

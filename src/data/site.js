@@ -106,6 +106,15 @@ export const ARCHIVE_PROJECTS = [
     lang: 'be',
   },
   {
+    id: 'genai-devhub',
+    image: '/images/genai-devhub-logo.jpg',
+    started: 2025,
+    closed: 2026,
+    hideDuration: true,
+    url: 'https://www.skool.com/genai-devhub-5702',
+    lang: 'en',
+  },
+  {
     id: 'aia-podcast',
     image: '/images/aia-logo.jpg',
     started: 2023,

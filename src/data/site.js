@@ -233,7 +233,7 @@ export const ARCHIVE_PROJECTS = [
     image: '/images/pushka-logo.png',
     started: 2015,
     closed: 2018,
-    types: ['education'],
+    types: ['education', 'code'],
   },
   {
     id: 'physlib',
@@ -241,7 +241,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2010,
     closed: 2016,
     lang: 'ru',
-    types: ['education', 'community'],
+    types: ['education', 'community', 'code'],
   },
   {
     id: 'bel-forum',
@@ -249,7 +249,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2008,
     closed: 2010,
     lang: 'ru',
-    types: ['community'],
+    types: ['community', 'code'],
   },
 ]
 

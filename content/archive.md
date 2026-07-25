@@ -65,7 +65,7 @@ legend:
 
 ## Bel-Forum.com {#bel-forum}
 
-**Bel-Forum.com** — беларускі форум і каталаг рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лякальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, чат і бібліятэка фэнтэзі.
+[**Bel-Forum.com**](lightbox:/images/bel-forum.jpg "Галоўная старонка Bel-Forum.com, 2010 год") — беларускі форум і каталаг рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лякальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, [чат](lightbox:/images/bel-forum-chat.jpg "Чат Bel-Forum.com — ElfChat, 2010 год") і бібліятэка фэнтэзі.
 
 Помнік беларускага інтэрнэту канца 2000-х. На верасень 2010 году меў 738 тэмаў, 3 881 паведамленьне і 4 906 карыстальнікаў.
 
@@ -115,6 +115,6 @@ We won the MTS «Telecom Idea 2015» competition and joined the GenerationS acce
 
 ## Bel-Forum.com {#bel-forum}
 
-**Bel-Forum.com** — a Belarusian forum and directory of ByFly guest-network resources, running on phpBB 3: guest-mode news, lists of local sites, game servers, file archives and access-setup guides.
+[**Bel-Forum.com**](lightbox:/images/bel-forum.jpg "The Bel-Forum.com front page, 2010") — a Belarusian forum and directory of ByFly guest-network resources, running on phpBB 3: guest-mode news, lists of local sites, game servers, file archives and access-setup guides, a [chat](lightbox:/images/bel-forum-chat.jpg "The Bel-Forum.com chat — ElfChat, 2010") and a fantasy library.
 
 A relic of the late-2000s Belarusian internet. As of September 2010 — 738 topics, 3,881 posts and 4,906 users; only a copy of the front page has survived.

@@ -16,9 +16,9 @@ nav:
   archive: { be: Пагост, en: Pahost }
   contacts: { be: Сувязь, en: Contacts }
 labels:
-  closedIn: { be: зачынены ў, en: closed in }
+  closedIn: { be: закрыты ў, en: closed in }
   closedInHint:
-    be: Год, калі праект быў канчаткова зачынены
+    be: Год, калі праект быў канчаткова закрыты
     en: The year the project was finally closed
   since: { be: з, en: since }
   sinceHint:

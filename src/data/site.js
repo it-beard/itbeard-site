@@ -87,17 +87,17 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q',
   },
   {
-    id: 'beard-news',
-    image: '/images/beard-news-logo.jpg',
-    started: 2022,
-    closed: 2024,
-  },
-  {
     id: 'letapis',
     image: '/images/letapis-logo.svg',
     started: 2023,
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',
+  },
+  {
+    id: 'beard-news',
+    image: '/images/beard-news-logo.jpg',
+    started: 2022,
+    closed: 2024,
   },
   {
     id: 'imbalanced-dialogues',
@@ -108,13 +108,13 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'pushka',
-    image: '/images/pushka-logo.svg',
+    image: '/images/pushka-logo.png',
     started: 2015,
     closed: 2018,
   },
   {
     id: 'bel-forum',
-    image: '/images/bel-forum-logo.svg',
+    image: '/images/bel-forum.jpg',
     started: 2008,
     closed: 2010,
   },

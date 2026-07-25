@@ -694,6 +694,38 @@ body.theme-restore #app {
   }
 }
 
+/* touch devices: press-and-hold emulates hover — .flipped is set while
+   the finger is down and removed on release */
+.hero-photo {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+.hero-photo.flipped {
+  border-color: rgba(150, 205, 255, 0.45);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.45), 0 0 26px rgba(130, 195, 255, 0.22);
+}
+
+.hero-photo.flipped::before {
+  opacity: 1;
+  animation: sparkSpin 1.3s linear infinite, sparkFlicker 0.32s steps(3) infinite;
+}
+
+.hero-photo.flipped::after {
+  opacity: 1;
+  animation: sparkSpinRev 0.8s linear infinite, sparkFlicker 0.21s steps(2) infinite;
+}
+
+.hero-photo.flipped .coin-front {
+  transform: rotateY(-180deg);
+}
+
+.hero-photo.flipped .coin-back {
+  transform: rotateY(0deg);
+}
+
 /* ===== Project cards ===== */
 .cards {
   display: grid;
@@ -818,9 +850,6 @@ body.theme-restore #app {
 .card-archived .card-head img {
   width: 60px;
   height: 60px;
-  filter: grayscale(0.9);
-  opacity: 0.85;
-  transition: filter 0.35s, opacity 0.35s;
 }
 
 /* only linked cards react to hover, and only on devices with a real cursor */
@@ -829,12 +858,6 @@ body.theme-restore #app {
     transform: translateY(-4px);
     border-color: var(--accent-bright);
     box-shadow: 0 14px 34px rgba(165, 14, 30, 0.16);
-  }
-
-  /* logo regains full color on hover */
-  a.card-archived:hover .card-head img {
-    filter: none;
-    opacity: 1;
   }
 }
 
@@ -876,11 +899,6 @@ body.theme-restore #app {
     border-color: #e2c04e;
     box-shadow: 0 14px 34px rgba(226, 192, 78, 0.12);
   }
-}
-
-.card-dormant .card-head img {
-  filter: grayscale(0.35);
-  opacity: 1;
 }
 
 /* Legend under the page intro */
@@ -1128,6 +1146,8 @@ body.theme-restore #app {
 .timeline-tail .overview {
   grid-column: 2;
   margin-top: 0;
+  /* let the panel shrink below its content so .overview-grid can scroll */
+  min-width: 0;
 }
 
 .timeline-item {

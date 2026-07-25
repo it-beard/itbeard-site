@@ -59,7 +59,7 @@ export default function Archive() {
                     </span>
                   </div>
                 </div>
-                <div className="card-body prose" dangerouslySetInnerHTML={{ __html: card.html }} />
+                <Md className="card-body prose" html={card.html} />
                 <div className="card-foot">
                   <span className="card-closed" title={p.dormant ? page.dormantHint : shared.labels.closedInHint}>
                     {p.dormant ? page.dormantLabel : `${shared.labels.closedIn} ${p.closed}`}

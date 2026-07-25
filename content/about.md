@@ -48,9 +48,9 @@ timeline:
       en: First website
     description:
       be: |
-        Дзесьці ў 2008 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](lightbox:/images/lex-kar.info.gif "lex-kar.info — вэб-студыя Аляксея Картыньніка, 2010 год") і [сайт Ракава](lightbox:/images/rakau.jpg "Rakov.info — сайт Ракава, 2010 год"), пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ чатыры гады.
+        Дзесьці ў 2008 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](https://it-beard.github.io/lex-kar-archive/) і [сайт Ракава](lightbox:/images/rakau.jpg "Rakov.info — сайт Ракава, 2010 год"), пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ чатыры гады.
       en: |
-        Sometime around 2008, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](lightbox:/images/lex-kar.info.gif "lex-kar.info — Aliaksei Kartynnik's web studio, 2010") and [a website about Rakaŭ](lightbox:/images/rakau.jpg "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
+        Sometime around 2008, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](https://it-beard.github.io/lex-kar-archive/) and [a website about Rakaŭ](lightbox:/images/rakau.jpg "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
 
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:

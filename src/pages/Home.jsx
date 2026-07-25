@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
 import { getPage, getSection, mdInline, startYear, startTooltip } from '../lib/content'
@@ -13,6 +14,8 @@ export default function Home() {
   useTitle(page.title)
 
   const projects = getSection(page, 'projects')
+  // touch press flips the hero photo (hover emulation for mobile)
+  const [flipped, setFlipped] = useState(false)
 
   return (
     <main>
@@ -50,7 +53,12 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-photo">
+        <div
+          className={`hero-photo${flipped ? ' flipped' : ''}`}
+          onTouchStart={() => setFlipped(true)}
+          onTouchEnd={() => setFlipped(false)}
+          onTouchCancel={() => setFlipped(false)}
+        >
           <div className="photo-coin">
             <img className="coin-front" src="/images/lex-linkedin.jpg" alt={page.hero.name} />
             <img className="coin-back" src="/images/itbeard-funny.jpg" alt="" />

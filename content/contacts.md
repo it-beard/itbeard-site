@@ -4,7 +4,7 @@ title:
   en: Contacts
 groups:
   contacts:
-    title: { be: Пішыце мне сюды, en: Reach me out }
+    title: { be: Пішыце мне сюды, en: Reach out to me }
     links:
       - id: telegram
         label: { be: Telegram, en: Telegram }

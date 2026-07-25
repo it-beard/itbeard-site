@@ -3,7 +3,7 @@ titleSuffix:
   be: "/ Пахне Чабор!"
   en: "/ Long Live Belarus!"
 notFound:
-  be: Прабач, але старонка не знойдзена, сябар...
+  be: Прабач, але старонка ня знойдзена, сябар...
   en: Sorry, but the page was not found, friend...
 backHome:
   be: На галоўную
@@ -58,7 +58,7 @@ labels:
 theme:
   toggle: { be: Уключыць сьветлую тэму, en: Switch to light theme }
   joke:
-    be: Сапраўдныя аматары тэхналогій не ведаюць, што такое сьветлая тэма!
+    be: Сапраўдныя аматары тэхналогій ня ведаюць, што такое сьветлая тэма!
     en: True tech lovers have no idea what a light theme is!
 footer:
   contacts: { be: Мае кантакты, en: My contacts }

@@ -15,19 +15,17 @@ labels:
 
 # Крыптагрошамі {#crypto}
 
-Для крыптаэнтузіястаў ёсць магчымасць падтрымаць мяне праз крыптагрошы напрамкі, вялікі вам дзякуй!
+Для крыптаэнтузіястаў ёсьць магчымасьць падтрымаць мяне праз крыптагрошы напрамкі, вялікі вам дзякуй!
 
 # Праз Patreon {#patreon}
 
 Таксама мяне можна падтрымаць праз [Patreon](https://www.patreon.com/itbeard). Вялікі дзякуй, вашая дапамога робіць значны ўнёсак у тое, чым я займаюся!
 
-Акрамя таго, стаўшы патронам вы атрымаеце доступ да спонсарскага кантэнту, да падкасту [«Навіны Барады»](/archive), і да патронскага [Discord-серверу](https://itbeard.com/s/sponsors-discord) *(праўда ў апошні час спонсарскі кантэнт выходзіць рэдка, а ў дыскордзе я бываю, напэўна, яшчэ радзей...)*.
-
 # Фірмовы мерч {#merch}
 
-У жыцці і ў відэа я з'яўляюся ў незвычайных рэчах з ачмурэннымі надпісамі. Набыць такія ж можна ў [маёй краме](https://streamlabs.com/itbeard/merch): байкі, майкі, шапкі, кубкі і стыкеры!
+У жыцьці і ў відэа я зьяўляюся ў незвычайных рэчах з ачмурэннымі надпісамі. Набыць такія ж можна ў [маёй краме](https://streamlabs.com/itbeard/merch): байкі, майкі, шапкі, кубкі і стыкеры!
 
-Кожнай пакупкай вы падтрымаеце мяне прыкладна на **$5**, дзякуй!
+Кожнай купляй вы падтрымаеце мяне прыкладна на **$5**, дзякуй!
 
 <!-- en -->
 
@@ -42,8 +40,6 @@ There is an opportunity for crypto-enthusiasts to support me directly via crypto
 # Via Patreon {#patreon}
 
 You can also support me and my projects through [Patreon](https://www.patreon.com/itbeard). Thank you very much, your help will make a huge contribution to what I do!
-
-In addition, by becoming a patron you will get access to patron content, the [«Beard News»](/archive) podcast, and to the patron's [Discord server](https://itbeard.com/s/sponsors-discord) *(although lately the patron content comes out rarely, and I'm probably even less active on Discord...)*.
 
 # Branded merch {#merch}
 

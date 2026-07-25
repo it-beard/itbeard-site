@@ -7,8 +7,8 @@ heading:
   en: My journey
 intro:
   be: >
-    Камерцыйны досвед у храналогіі — месцы прац, якія могуць ісці паралельна.
-    Поўны кар'ерны шлях ёсць у [LinkedIn](https://www.linkedin.com/in/akartynnik).
+    Камерцыйны досьвед у храналогіі — месцы прац, якія могуць ісці паралельна.
+    Поўны кар'ерны шлях ёсьць у [LinkedIn](https://www.linkedin.com/in/akartynnik).
   en: >
     Commercial experience in chronological order — jobs that can run in parallel.
     The full career path is on [LinkedIn](https://www.linkedin.com/in/akartynnik).
@@ -28,7 +28,7 @@ timeline:
     startMonth: 5
     label: { be: Эвалюцыя Кода, en: Evocoders }
     title:
-      be: Заснавальнік клуба «Эвалюцыя Кода», кансультант па ўкараненні ШІ
+      be: Заснавальнік клуба «Эвалюцыя Кода», кансультант па ўкараненьні ШІ
       en: Founder of the «Evocoders» club, AI adoption consultant
     org: evocoders.ai
     founded: true
@@ -37,9 +37,9 @@ timeline:
     description:
       be: >
         Дапамагаю распрацоўшчыкам зрабіць ШІ часткай штодзённай працы:
-        пабудаваў прыватную супольнасць з 800+ удзельнікаў, стварыў больш за
+        пабудаваў прыватную супольнасьць з 800+ удзельнікаў, стварыў больш за
         200 гадзін адукацыйнага кантэнту, вяду штотыднёвы дайджэст ШІ-навін
-        і падтрымліваю бібліятэку з 500+ інструментаў ШІ-праграмавання.
+        і падтрымліваю бібліятэку з 500+ інструментаў ШІ-праграмаваньня.
       en: >
         I help developers make AI a core part of their daily work: built a
         private community of 800+ members, created 200+ hours of educational
@@ -59,9 +59,9 @@ timeline:
     logo: /images/paysera-logo.png
     description:
       be: >
-        Вёў ШІ-трансфармацыю кампаніі — ад стратэгіі да практыкі: укараненне
+        Вёў ШІ-трансфармацыю кампаніі — ад стратэгіі да практыкі: укараненьне
         ШІ-інструментаў у распрацоўку прадуктаў, варштаты і хакатоны для
-        каманд, адзіны партал ведаў па ШІ-ініцыятывах і ўдзел у стварэнні
+        каманд, адзіны партал ведаў па ШІ-ініцыятывах і ўдзел у стварэньні
         ўнутраных ШІ-сістэм.
       en: >
         Drove the company's AI transformation — from strategy to practice:
@@ -83,8 +83,8 @@ timeline:
     description:
       be: >
         Чатыры з паловай гады ў DevRel-праектах EPAM: кансультант і лід
-        супольнасці Anywhere Club (2021—2022), кіраўнік аддзела мультымедыя
-        і супольнасці з камандай у 7 чалавек (2022—2024), затым кансультант
+        супольнасьці Anywhere Club (2021—2022), кіраўнік аддзела мультымедыя
+        і супольнасьці з камандай у 7 чалавек (2022—2024), затым кансультант
         па ШІ-медыякантэнце — YouTube-відэа і падкасты пра ШІ для соцень
         тысяч распрацоўшчыкаў у падтрымку ініцыятыў EngX і Anywhere Club
         (2024—2025).
@@ -246,7 +246,7 @@ timeline:
     description:
       be: >
         Адміністраваў HRM.by — партал Асацыяцыі кадравікоў Беларусі — і як
-        штатны праграміст падтрымліваў і развіваў сайты кампаніі.
+        штатны праграміст падтрымліваў і разьвіваў сайты кампаніі.
       en: >
         Administered HRM.by — the portal of the Belarusian HR Association —
         and, as an in-house programmer, maintained and developed the
@@ -254,9 +254,9 @@ timeline:
   - period: { be: 2008 — 2012, en: 2008 — 2012 }
     start: 2008
     end: 2012
-    label: { be: Вебмайстар, en: Webmaster }
+    label: { be: Вэбмайстар, en: Webmaster }
     title:
-      be: Вебмайстар
+      be: Вэбмайстар
       en: Webmaster
     description:
       be: >

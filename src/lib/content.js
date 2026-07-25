@@ -23,7 +23,7 @@ export const mdText = (src) => (src ? marked.parse(String(src).replace(/\n(?!\n)
 
 // Month names in the genitive case for «15 сакавіка 2024» / «March 15, 2024».
 const MONTHS = {
-  be: ['студзеня', 'лютага', 'сакавіка', 'красавіка', 'мая', 'чэрвеня', 'ліпеня', 'жніўня', 'верасня', 'кастрычніка', 'лістапада', 'снежня'],
+  be: ['студзеня', 'лютага', 'сакавіка', 'красавіка', 'траўня', 'чэрвеня', 'ліпеня', 'жніўня', 'верасьня', 'кастрычніка', 'лістапада', 'сьнежня'],
   en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 }
 

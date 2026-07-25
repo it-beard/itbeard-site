@@ -59,7 +59,7 @@ timeline:
     org: { be: фізічны профіль, en: physics track }
     description:
       be: |
-        Дзякуючы намаганьням бацькоў, я ў апошніх шэрагах ускочыў у адно з найлепшых для навучання месцаў Беларусі — Ліцэй БДУ. Прынамсьці, ён быў найлепшым датуль, пакуль дзяржава не вырашыла плюнуць у твар усім, хто будаваў гэтае месца, і не перайменавала яго ў ліцэй імя Дзяржынскага. Але ліцэйскі дух назаўжды з намі, як і людзі адтуль. Віват ліцэй!
+        Дзякуючы намаганьням бацькоў, я ў апошніх шэрагах ускочыў у адно з найлепшых для навучаньня месцаў Беларусі — Ліцэй БДУ. Прынамсьці, ён быў найлепшым датуль, пакуль дзяржава ня вырашыла плюнуць у твар усім, хто будаваў гэтае месца, і не перайменавала яго ў ліцэй імя Дзяржынскага. Але ліцэйскі дух назаўжды з намі, як і людзі адтуль. Віват ліцэй!
       en: |
         Thanks to my parents' efforts, I leapt in among the very last admitted to one of the best places in Belarus — the BSU Lyceum (the lyceum of the Belarusian State University). At least, it was the best until the state decided to spit in the face of everyone who had built that place and renamed it after Dzerzhinsky — the founder of the Soviet secret police. But the lyceum spirit stays with us forever, as do the people who came out of it. Vivat Lyceum!
         
@@ -77,10 +77,10 @@ timeline:
     title:
       be: Фізічны факультэт БДУ
       en: BSU Faculty of Physics
-    org: { be: атамная-малекулярная фізіка і фізічная інфарматыка, en: }
+    org: { be: атамна-малекулярная фізіка і фізічная інфарматыка, en: atomic and molecular physics and physical informatics }
     description:
       be: |
-        Адразу пасьля ліцэю я паступіў на фізічны факультэт БДУ. "Пасьпяхова" заваліўшы ЦТ па фізіцы, я патрапіў на настаўніцкі кірунак, але цягам першых двух курсаў зьмяніў яго на кіраўніцкую дзейнасьць. Рыхтавалі нас нібыта для кіраваньня высокатэхналагічнымі прадпрыемствамі кшталту беларускай АЭС, дый падчас разьмеркаваньня месцаў там не засталося (упс). Так што я проста працягнуў працаваць праграмістам — на той момант за плячыма ўжо было больш за два гады досьведу.
+        Адразу пасьля ліцэю я паступіў на фізічны факультэт БДУ. «Пасьпяхова» заваліўшы ЦТ па фізіцы, я патрапіў на настаўніцкі кірунак, але цягам першых двух курсаў зьмяніў яго на кіраўніцкую дзейнасьць. Рыхтавалі нас нібыта для кіраваньня высокатэхналагічнымі прадпрыемствамі кшталту беларускай АЭС, дый падчас разьмеркаваньня месцаў там не засталося (упс). Так што я проста працягнуў працаваць праграмістам — на той момант за плячыма ўжо было больш за два гады досьведу.
 
 
         Фізічны факультэт навучыў нас галоўнаму — вучыцца, думаць шырока і далёка, марыць і не губляць надзеі. Гэта была сапраўдная школа жыцьця, дый бадай што найлепшая для чалавека, які глядзіць у будучыню шырока расплюшчанымі вачыма. Дзякуй фізфаку, што захаваў ува мне дух авантурыста і дасьледчыка, прывіў любоў да навукі і тэхналогій, да ведаў і Сусьвету.
@@ -88,10 +88,10 @@ timeline:
         Right after the lyceum, I enrolled in the physics faculty of the Belarusian State University. Having successfully flunked the national physics entrance exam, I landed in the teacher-training track — and over the first two years traded it for the management one. We were supposedly being groomed to run high-tech enterprises like the Belarusian nuclear power plant, but when the time came for *razmierkavannie* — the mandatory job assignment Belarusian graduates go through — no spots were left there (oops). So I simply kept working as a programmer: by then I already had more than two years of code under my belt.
 
 
-        The physics faculty taught us the most important thing — how to learn, to think broadly and far ahead, to dream, and to never lose hope. It was a true school of life, and perhaps the best one for a person who looks into the future with eyes wide open. Thank you, physics faculty, for preserving in me the spirit of an adventurer and a researcher, and for instilling a love of science, technology, knowledge and Universe.
+        The physics faculty taught us the most important thing — how to learn, to think broadly and far ahead, to dream, and to never lose hope. It was a true school of life, and perhaps the best one for a person who looks into the future with eyes wide open. Thank you, physics faculty, for preserving in me the spirit of an adventurer and a researcher, and for instilling a love of science, technology, knowledge, and the Universe.
   - period: { be: "2018", en: "2018" }
     title:
-      be: «АйЦіБарады»
+      be: «АйЦіБарада»
       en: "ITBeard (АйТиБорода)" 
     link: https://youtube.com/@itbeard
     description:
@@ -104,7 +104,7 @@ timeline:
 
         Пры гэтым канал працягвае працу, хоць і значна менш актыўна: цяпер ён служыць пераважна камерцыйным мэтам, а час ад часу становіцца пляцоўкай для інтэрв'ю з расейскамоўнымі людзьмі, якія засталіся для мяне сумленнымі і цікавымі. А яшчэ менавіта праз гэты праект у мяне зьявілася мянушка АйЦіБарада, якая, здаецца, са мною надоўга.
       en: |
-        By the time I had become the seniorest of senior developers, I got the idea to launch a YouTube channel where I would share programming knowledge with my junior colleagues. The first episode came out on May 14, 2018, and over time the channel grew from homemade videos about code into one of the biggest and best-known Russian-language shows about IT: hundreds of interviews with engineers and scientists, episodes on technologies and programming languages, millions of views, international shoots, invitations to the largest industry events and the most renowned companies. From the vantage point of everything Thanks to it, practically every IT person knows me today; at one point the channel even turned into a full-fledged and very successful business, and it felt like spreading knowledge about IT could truly become my life's work.
+        By the time I had become the seniorest of senior developers, I got the idea to launch a YouTube channel where I would share programming knowledge with my junior colleagues. The first episode came out on May 14, 2018, and over time the channel grew from homemade videos about code into one of the biggest and best-known Russian-language shows about IT: hundreds of interviews with engineers and scientists, episodes on technologies and programming languages, millions of views, international shoots, invitations to the largest industry events and the most renowned companies. Thanks to it, practically every IT person knows me today; at one point the channel even turned into a full-fledged and very successful business, and it felt like spreading knowledge about IT could truly become my life's work.
 
 
         But in 2022 the time came to choose between conscience and a comfortable life. For me that choice is always unambiguous: nothing is more valuable to me than remaining a good and honest person. Millions listened to my episodes, and the right thing to do was to talk to those millions not only about IT but also about universal human values. So that's what I began doing — standing up to Russia's aggression against Ukraine where I could help the most: by getting information out through my content. That was roughly where the end of AjCiBarada as a project began: it would have been naive to expect an audience made up mostly of Russian IT specialists to support my position. Still, I believe everything was done right: even if just a few people changed their minds about the war in Ukraine, that alone is a victory. And it was worth all the effort poured into building that resource. For me, though, the main outcome of that decision was that the end of AjCiBarada became the beginning of the revival of Belarusianness within me. I realized that my audience is not IT people — least of all those steeped in propaganda, who made up the majority on the channel. My audience is Belarusians who, like me, want to find or restore their own roots. So thank you, AjCiBarada, and every person from there who helped bring about this transformation of mine.
@@ -134,7 +134,7 @@ timeline:
 
         2021 was dark and deceptively calm. In December 2021 they came for me — right on the eve of that referendum nobody ever learned about, because the war began.
         
-  - period: { be: "7 снежня 2021", en: "Dec 7, 2021" }
+  - period: { be: "7 сьнежня 2021", en: "Dec 7, 2021" }
     title:
       be: Уцёкі ва Ўкраіну
       en: Escape to Ukraine
@@ -149,7 +149,7 @@ timeline:
       en: Escape to Poland
     description:
       be: |
-        Паўнамаштабнае ўварваньне Расеі ва Ўкраіну я сустрэў у Кіеве — ва ўсіх "фарбах". Менавіта тое, што я там пасьпеў пабачыць, упэўніла мяне: ня можа быць ніякай іншай пазіцыі, акрамя адной — гэта цалкам вар'яцкая вайна, якой быць не павінна. Як і людзей, якія яе распачалі. Пасьля некалькіх дзён за барыкадамі я зьехаў у Польшчу, дзе жыву дагэтуль і ўсяляк падтрымліваю сваіх сяброў, што змагаюцца за Волю.
+        Паўнамаштабнае ўварваньне Расеі ва Ўкраіну я сустрэў у Кіеве — ва ўсіх «фарбах». Менавіта тое, што я там пасьпеў пабачыць, упэўніла мяне: ня можа быць ніякай іншай пазіцыі, акрамя адной — гэта цалкам вар'яцкая вайна, якой быць не павінна. Як і людзей, якія яе распачалі. Пасьля некалькіх дзён за барыкадамі я зьехаў у Польшчу, дзе жыву дагэтуль і ўсяляк падтрымліваю сваіх сяброў, што змагаюцца за Волю.
       en: |
         I met Russia's full-scale invasion of Ukraine in Kyiv — in all its "colors". What I managed to witness there convinced me that no position is possible other than this one: it is an utterly insane war that should never have happened. Same goes for the people who started it. After a few days behind the barricades, I left for Poland, where I live to this day, supporting in every way I can my friends who are fighting for Freedom.
 
@@ -191,9 +191,9 @@ timeline:
       en: Traditional archery
     description:
       be: |
-        З 2025 году займаюся традыцыйным лучніцтвам і працягваю дагэтуль — гэта маё вялікае хобі. Маю тры лукі, у тым ліку хэндмэйд кіпчацкі лук. Часам даю майстар-клясы, але страляю выключна для сябе — не палюю, бо люблю жывёл.
+        З 2025 году займаюся традыцыйным лучніцтвам — гэта маё вялікае хобі. Маю тры лукі, у тым ліку хэндмэйд кіпчацкі лук. Часам даю майстар-класы, але страляю выключна для сябе — не палюю, бо люблю жывёл.
       en: |
-        Since 2025 I've been practicing traditional archery, and I keep at it to this day — it's my big hobby. I own three bows, including a handmade Kipchak bow. From time to time I give workshops, but I shoot purely for myself — I don't hunt, because I love animals.
+        Since 2025 I've been practicing traditional archery — it's my big hobby. I own three bows, including a handmade Kipchak bow. From time to time I give workshops, but I shoot purely for myself — I don't hunt, because I love animals.
 
 headings:
   bio: { be: Біяграфія, en: Biography }
@@ -208,7 +208,7 @@ achievements:
     link: https://exchanges.state.gov/non-us/program/international-visitor-leadership-program-ivlp
     description:
       be: |
-       Удзельнічаў у International Visitor Leadership Program — флагманскай праграме прафесійных абменаў Дзярждэпартамэнту ЗША, удзельнікаў якой намінуюць амбасады ЗША. Кірунак — AI Innovation & Security. Сярод выпускнікоў праграмы — больш за 500 кіраўнікоў дзяржаваў і ўрадаў.
+       Удзельнічаў у International Visitor Leadership Program — флагманскай праграме прафесійных абменаў Дзярждэпартаменту ЗША, удзельнікаў якой намінуюць амбасады ЗША. Кірунак — AI Innovation & Security. Сярод выпускнікоў праграмы — больш за 500 кіраўнікоў дзяржаваў і ўрадаў.
       en: |
         I took part in the International Visitor Leadership Program — the U.S. Department of State's flagship professional exchange program, whose participants are nominated by U.S. embassies. My track was AI Innovation & Security. Program alumni include more than 500 current and former heads of state and government.
   - period: { be: "красавік — травень 2025", en: "Apr — May 2025" }
@@ -250,7 +250,7 @@ achievements:
       en: YouTube Silver Play Button
     description:
       be: |
-        Неўзабаве пасьля перамогі ў NextUp канал «АйЦіБарада» перасягнуў адзнаку ў 100 000 падпісантаў і атрымаў Срэбную кнопку YouTube — узнагароду відэаплятформы для аўтараў.
+        Неўзабаве пасьля перамогі ў NextUp канал «АйЦіБарада» перасягнуў адзнаку ў 100 000 падпісантаў і атрымаў Срэбную кнопку YouTube — узнагароду відэаплатформы для аўтараў.
       en: |
         Soon after the NextUp win, the ITBeard channel passed the 100,000-subscriber mark and received the YouTube Silver Play Button — the platform's creator award.
   - period: { be: "2019", en: "2019" }
@@ -277,11 +277,11 @@ achievements:
     title:
       be: Супэрфінал GenerationS са стартапам PUSHka
       en: GenerationS super-final with the PUSHka startup
-    org: { be: "акселератар МТС «Телеком Идея»", en: "MTS \"Telecom Idea\" accelerator" }
+    org: { be: "акселератар МТС «Telecom Idea»", en: "MTS \"Telecom Idea\" accelerator" }
     link: https://www.cnews.ru/articles/2015-10-16_telekom_ideya_mts_vybrala_5_finalistov_korporativnogo_akseleratora
     description:
       be: |
-        Апрыканцы 2015 году я далучыўся да адукацыйнага стартапу PUSHka — мы рабілі сэрвіс-памочнік, які дапамагаў абіраць анлайн-курсы на розных пляцоўках, аўтаматычна будаваць расклад навучаньня і не кідаць іх на паўдарозе. Праект стаў адным зь пяці пераможцаў карпаратыўнага акселератара МТС «Телеком Идея 2015» (трэк Telecom федэральнага акселератара GenerationS) і выйшаў у ягоны супэрфінал. Дадаткова каманда ўзяла прыз за актыўнасьць у сацсетках — паездку на канферэнцыю 4YFN у Барсэлону, — а сам праект атрымаў грант Фонду Бортніка. Праз тры гады стартап зачыніўся — але дагэтуль гэта адно з найпрыгажэйшых тэхнічных рашэньняў у маёй практыцы.
+        Апрыканцы 2015 году я далучыўся да адукацыйнага стартапу PUSHka — мы рабілі сэрвіс-памочнік, які дапамагаў абіраць анлайн-курсы на розных пляцоўках, аўтаматычна будаваць расклад навучаньня і ня кідаць іх на паўдарозе. Праект стаў адным зь пяці пераможцаў карпаратыўнага акселератара МТС «Telecom Idea 2015» (трэк Telecom федэральнага акселератара GenerationS) і выйшаў у ягоны супэрфінал. Дадаткова каманда ўзяла прыз за актыўнасьць у сацсетках — паездку на канферэнцыю 4YFN у Барсэлону, — а сам праект атрымаў грант Фонду Бортніка. Праз тры гады стартап зачыніўся — але дагэтуль гэта адно з найпрыгажэйшых тэхнічных рашэньняў у маёй практыцы.
       en: |
         At the end of 2015, I joined the educational startup PUSHka — we were building an assistant service that helped people pick online courses across different platforms, automatically build a study schedule, and not drop them halfway through. The project became one of the five winners of the MTS "Telecom Idea 2015" corporate accelerator (the Telecom track of GenerationS, Russia's federal startup accelerator) and reached its superfinal. On top of that, the team won a social media activity prize — a trip to the 4YFN conference in Barcelona — and the project itself received a grant from Russia's Bortnik innovation fund. Three years later the startup shut down, but to this day it remains one of the most beautiful pieces of engineering of my career.
   - period: { be: "2006", en: "2006" }

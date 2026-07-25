@@ -32,7 +32,7 @@ counterHint:
 
 ## VKL.world {#vkl}
 
-**«VKL.world»** — найбуйнейшая беларускамоўная супольнасьць ў сеціве Mastodon.
+**«VKL.world»** — найбуйнейшая беларускамоўная супольнасьць у сеціве Mastodon.
 
 Mastodon — разьмеркаваны аналаг Twitter, без рэкламы, ШІ-алгарытмаў і дыктатуры Ілана Маска.
 
@@ -50,7 +50,7 @@ Mastodon — разьмеркаваны аналаг Twitter, без рэкла�
 
 ## Эвалюцыя Кода {#evocode}
 
-**«Эвалюцыя Кода»** — закрыты клуб для распрацоўшчыкаў і распрацоўшчыц, якія ўзмацняюць навыкі праграмаваньня праз вывучэньне і выкарыстаньне ШІ-інструмэнтаў і практык.
+**«Эвалюцыя Кода»** — закрыты клуб для распрацоўшчыкаў і распрацоўшчыц, якія ўзмацняюць навыкі праграмаваньня праз вывучэньне і выкарыстаньне ШІ-інструментаў і практык.
 
 Лепшае месца для паглыбленьня ў распрацоўку праграмнага забесьпячэньня ў пары з ШІ.
 
@@ -96,7 +96,7 @@ On the channel, I also share my personal experience of working with AI and post 
 
 ## ITBeard {#itbeard}
 
-**«ITBeard»** is big YouTube channel dedicated to IT, technology, and science.
+**«ITBeard»** is a big YouTube channel dedicated to IT, technology, and science.
 
 On it, I make science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people, and sometimes share my knowledge of IT and AI.
 

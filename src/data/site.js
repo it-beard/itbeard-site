@@ -131,6 +131,15 @@ export const ARCHIVE_PROJECTS = [
     types: ['podcast', 'video'],
   },
   {
+    // community project with a bilingual (en/ru) audience — no language label
+    id: 'aia-catalog',
+    image: '/images/aia-catalog-logo.png',
+    started: 2024,
+    closed: 2025,
+    url: 'https://awclub.github.io/catalog/',
+    types: ['code', 'community'],
+  },
+  {
     id: 'letapis',
     image: '/images/vkl-logo.jpg',
     started: 2023,

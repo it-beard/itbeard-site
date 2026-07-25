@@ -101,6 +101,12 @@ filters:
 
 Восенню 2025 году EPAM спыніў фінансаваньне, і падкаст перайшоў у [«на Вайбе»](https://podcast.onvibe.io) — а імя AIA Podcast засталося за кампаніяй.
 
+## AI Tools Catalog {#aia-catalog}
+
+**AI Tools Catalog** — адкрыты каталог AI-інструментаў, згаданых у AIA Podcast: кожны сэрвіс трапляў туды толькі пасьля абмеркаваньня ў выпуску, а слухачы дадавалі новыя праз pull request'ы. Зроблены на Vue 3, [код](https://github.com/awclub/catalog) адкрыты на GitHub.
+
+Разам з падкастам каталог перастаў абнаўляцца, але сайт дагэтуль жывы — картка вядзе акурат на яго.
+
 ## Letapis.VKL {#letapis}
 
 **Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world. Там жыў і мой уласны блог. 
@@ -226,6 +232,12 @@ There wasn't enough time to grow it, and the demand never really showed up — s
 **AIA Podcast** — the largest Russian-language podcast about AI news, which Vika Shelenchenko and I hosted every two weeks. It was funded by EPAM and released under its EngX brand; over two and a half years we put out 120 episodes.
 
 In autumn 2025 EPAM stopped funding it, and the show carried on as [“on Vibe”](https://podcast.onvibe.io) — while the AIA Podcast name stayed with the company.
+
+## AI Tools Catalog {#aia-catalog}
+
+**AI Tools Catalog** — an open catalog of AI tools mentioned on the AIA Podcast: a service made it in only after being discussed in an episode, and listeners added new ones via pull requests. Built with Vue 3, the [code](https://github.com/awclub/catalog) is open on GitHub.
+
+The catalog stopped updating along with the podcast, but the site is still alive — that's exactly where this card leads.
 
 ## Letapis.VKL {#letapis}
 

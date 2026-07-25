@@ -1677,19 +1677,6 @@ body.theme-restore #app {
   text-align: center;
 }
 
-.nf-code {
-  display: flex;
-  align-items: center;
-  gap: 18px;
-}
-
-.nf-gem {
-  width: 14px;
-  height: 14px;
-  background: var(--accent);
-  transform: rotate(45deg);
-}
-
 .nf-num {
   font-size: clamp(72px, 12vw, 110px);
   font-weight: 700;
@@ -1700,13 +1687,6 @@ body.theme-restore #app {
   max-width: 420px;
   font-size: 17px;
   color: var(--muted);
-}
-
-.not-found img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: var(--radius);
-  border: 1px solid var(--line);
 }
 
 .not-found .btn {

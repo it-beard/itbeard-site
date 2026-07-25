@@ -11,13 +11,8 @@ export default function NotFound() {
   return (
     <main>
       <section className="not-found">
-        <div className="nf-code">
-          <span className="nf-gem" aria-hidden="true"></span>
-          <span className="nf-num">404</span>
-          <span className="nf-gem" aria-hidden="true"></span>
-        </div>
+        <span className="nf-num">404</span>
         <p>{shared.notFound}</p>
-        <img src="/images/404.gif" alt="" />
         <Link to="/" className="btn btn-primary">
           {shared.backHome}
         </Link>

@@ -133,6 +133,12 @@ export const CONTACT_LINKS = {
     icon: 'fab fa-telegram-plane',
     color: '#2A9DD6',
   },
+  whatsapp: {
+    href: 'https://wa.me/itbeard',
+    text: 'wa.me/itbeard',
+    icon: 'fab fa-whatsapp',
+    color: '#25D366',
+  },
   mastodon: {
     href: 'https://vkl.world/@itbeard',
     text: 'vkl.world/@itbeard',
@@ -160,6 +166,12 @@ export const CONTACT_LINKS = {
   'blog-telegram': {
     href: 'https://telegram.me/itbeard',
     text: 'telegram.me/itbeard',
+    icon: 'fab fa-telegram-plane',
+    color: '#2A9DD6',
+  },
+  'ciomnylos-telegram': {
+    href: 'https://telegram.me/ciomnylos',
+    text: 'telegram.me/ciomnylos',
     icon: 'fab fa-telegram-plane',
     color: '#2A9DD6',
   },

@@ -6,23 +6,25 @@ groups:
   contacts:
     title: { be: Пішыце мне сюды, en: Reach me out }
     links:
-      - id: email
-        label: { be: Электрапошта, en: Email }
       - id: telegram
         label: { be: Telegram, en: Telegram }
+      - id: whatsapp
+        label: { be: WhatsApp, en: WhatsApp }
+      - id: email
+        label: { be: Электрапошта, en: Email }
   socials:
     title: { be: Я ў інтэрнэце, en: I'm on the Web }
     links:
       - id: mastodon
         label: { be: Mastodon, en: Mastodon }
-      - id: twitter
-        label: { be: Twitter, en: Twitter }
-      - id: github
-        label: { be: GitHub, en: GitHub }
       - id: linkedin
         label: { be: LinkedIn, en: LinkedIn }
+      - id: github
+        label: { be: GitHub, en: GitHub }
       - id: blog-telegram
-        label: { be: Блог у Telegram, en: Blog on Telegram }
-      - id: merch
-        label: { be: Мерч, en: Merch }
+        label: { be: ТГ-канал «АйЦіБарада», en: ITBeard on Telegram }
+      - id: ciomnylos-telegram
+        label: { be: ТГ-канал «Цёмны Лёс», en: Ciomny Los on Telegram }
+      - id: twitter
+        label: { be: Twitter, en: Twitter }
 ---

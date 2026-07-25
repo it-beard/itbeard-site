@@ -58,6 +58,7 @@ export default function Home() {
           onTouchStart={() => setFlipped(true)}
           onTouchEnd={() => setFlipped(false)}
           onTouchCancel={() => setFlipped(false)}
+          onContextMenu={(e) => e.preventDefault()}
         >
           <div className="photo-coin">
             <img className="coin-front" src="/images/lex-linkedin.jpg" alt={page.hero.name} />

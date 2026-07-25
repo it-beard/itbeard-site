@@ -77,7 +77,7 @@ function OverviewPanel({ overview, entries }) {
                 className={`overview-row${hot === i ? ' hot' : ''}`}
                 onMouseEnter={() => setHot(i)}
                 onMouseLeave={() => setHot(null)}
-                onClick={() => jumpTo(j)}
+                onClick={() => setHot(i)}
               >
                 <div
                   className={`overview-bar${j.end ? '' : ' ongoing'}`}

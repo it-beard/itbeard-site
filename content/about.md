@@ -38,9 +38,9 @@ timeline:
       en: The Rakaŭ Folk Crew.
     description:
       be: |
-       Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным дзіцячым калектыве «Вянок». Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
+       Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным [дзіцячым калектыве «Вянок»](lightbox:/images/vianok-2.jpg "Ансамблі «Вянок» і «Гасцінец», Ракаў"). Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
       en: |
-        For almost ten years I was a member of *Vianok* ("Wreath"), a children's folk ensemble in Rakaŭ bearing the honorary "exemplary" title. We sang folk songs, danced, celebrated traditional holidays, and went on expeditions and performances all across Belarus and beyond (Völkersdorf, forever in my heart!). You couldn't invent a better childhood pursuit for nurturing and preserving one's Belarusian identity. Part of that experience now lives on in my project Setivir 😊
+        For almost ten years I was a member of [*Vianok* ("Wreath")](lightbox:/images/vianok-2.jpg "The Vianok and Hasciniec ensembles, Rakaŭ"), a children's folk ensemble in Rakaŭ bearing the honorary "exemplary" title. We sang folk songs, danced, celebrated traditional holidays, and went on expeditions and performances all across Belarus and beyond (Völkersdorf, forever in my heart!). You couldn't invent a better childhood pursuit for nurturing and preserving one's Belarusian identity. Part of that experience now lives on in my project Setivir 😊
    
   - period: { be: 2007, en: 2007 }
     title:
@@ -48,9 +48,9 @@ timeline:
       en: First website
     description:
       be: |
-        Дзесьці ў 2007 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі мая асабістая старонка і сайт Ракава, пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ пяць гадоў.
+        Дзесьці ў 2007 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](lightbox:/images/lex-kar.info.gif "lex-kar.info — вэб-студыя Аляксея Картыньніка, 2010 год") і сайт Ракава, пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ пяць гадоў.
       en: |
-        Sometime around 2007, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were my personal homepage and a website about Rakaŭ, built on WordPress. You could call that my start in IT — though real programming was still five years away.
+        Sometime around 2007, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](lightbox:/images/lex-kar.info.gif "lex-kar.info — Aliaksei Kartynnik's web studio, 2010") and a website about Rakaŭ, built on WordPress. You could call that my start in IT — though real programming was still five years away.
 
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:

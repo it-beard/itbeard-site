@@ -38,9 +38,9 @@ timeline:
       en: The Rakaŭ Folk Crew.
     description:
       be: |
-       Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным [дзіцячым калектыве «Вянок»](lightbox:/images/vianok-2.jpg "Ансамблі «Вянок» і «Гасцінец», Ракаў"). Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
+       Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным [дзіцячым калектыве «Вянок»](lightbox:/images/vianok-2.webp "Ансамблі «Вянок» і «Гасцінец», Ракаў"). Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
       en: |
-        For almost ten years I was a member of [*Vianok* ("Wreath")](lightbox:/images/vianok-2.jpg "The Vianok and Hasciniec ensembles, Rakaŭ"), a children's folk ensemble in Rakaŭ bearing the honorary "exemplary" title. We sang folk songs, danced, celebrated traditional holidays, and went on expeditions and performances all across Belarus and beyond (Völkersdorf, forever in my heart!). You couldn't invent a better childhood pursuit for nurturing and preserving one's Belarusian identity. Part of that experience now lives on in my project Setivir 😊
+        For almost ten years I was a member of [*Vianok* ("Wreath")](lightbox:/images/vianok-2.webp "The Vianok and Hasciniec ensembles, Rakaŭ"), a children's folk ensemble in Rakaŭ bearing the honorary "exemplary" title. We sang folk songs, danced, celebrated traditional holidays, and went on expeditions and performances all across Belarus and beyond (Völkersdorf, forever in my heart!). You couldn't invent a better childhood pursuit for nurturing and preserving one's Belarusian identity. Part of that experience now lives on in my project Setivir 😊
    
   - period: { be: 2008, en: 2008 }
     title:
@@ -48,9 +48,9 @@ timeline:
       en: First website
     description:
       be: |
-        Дзесьці ў 2008 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](https://it-beard.github.io/lex-kar-archive/) і [сайт Ракава](lightbox:/images/rakau.jpg "Rakov.info — сайт Ракава, 2010 год"), пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ чатыры гады.
+        Дзесьці ў 2008 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](https://it-beard.github.io/lex-kar-archive/) і [сайт Ракава](lightbox:/images/rakau.webp "Rakov.info — сайт Ракава, 2010 год"), пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ чатыры гады.
       en: |
-        Sometime around 2008, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](https://it-beard.github.io/lex-kar-archive/) and [a website about Rakaŭ](lightbox:/images/rakau.jpg "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
+        Sometime around 2008, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](https://it-beard.github.io/lex-kar-archive/) and [a website about Rakaŭ](lightbox:/images/rakau.webp "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
 
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:
@@ -270,9 +270,9 @@ achievements:
     org: { be: інавацыйнае прадпрымальніцтва, en: innovative entrepreneurship }
     description:
       be: |
-        У ліку першых студэнтаў курса скончыў адукацыйную праграму па інавацыйным прадпрымальніцтве пры Адміністрацыі Парку высокіх тэхналогій. Навучаньне цягнулася з 14 верасьня 2015 году па 12 лютага 2016-га і завяршылася [пасьпяховым засваеньнем праграмы](lightbox:/images/sert-pvt.JPG "Даведка аб навучаньні на курсах ПВТ").
+        У ліку першых студэнтаў курса скончыў адукацыйную праграму па інавацыйным прадпрымальніцтве пры Адміністрацыі Парку высокіх тэхналогій. Навучаньне цягнулася з 14 верасьня 2015 году па 12 лютага 2016-га і завяршылася [пасьпяховым засваеньнем праграмы](lightbox:/images/sert-pvt.webp "Даведка аб навучаньні на курсах ПВТ").
       en: |
-        I was among the first students to complete the educational program in innovative entrepreneurship run by the Administration of the Hi-Tech Park (Belarus). The studies lasted from September 14, 2015 to February 12, 2016 and ended with the [successful completion of the program](lightbox:/images/sert-pvt.JPG "The certificate of studies at the HTP courses").
+        I was among the first students to complete the educational program in innovative entrepreneurship run by the Administration of the Hi-Tech Park (Belarus). The studies lasted from September 14, 2015 to February 12, 2016 and ended with the [successful completion of the program](lightbox:/images/sert-pvt.webp "The certificate of studies at the HTP courses").
   - period: { be: "2015", en: "2015" }
     title:
       be: Супэрфінал GenerationS са стартапам PUSHka

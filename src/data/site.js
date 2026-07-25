@@ -5,14 +5,14 @@ export const PROJECTS = [
   {
     id: 'ciomnylos',
     url: 'https://youtube.com/@ciomnylos',
-    image: '/images/ciomnylos-logo.jpg',
+    image: '/images/ciomnylos-logo.webp',
     started: 2022,
     lang: 'be',
   },
   {
     id: 'itbeard',
     url: 'https://youtube.com/@itbeard',
-    image: '/images/itbeard-300.jpg',
+    image: '/images/itbeard-300.webp',
     commercial: true,
     started: '2018-04-11',
     lang: 'ru',
@@ -20,21 +20,21 @@ export const PROJECTS = [
   {
     id: 'kalasyai',
     url: 'https://youtube.com/@kalasyai',
-    image: '/images/kalasyai.jpg',
+    image: '/images/kalasyai.webp',
     started: 2025,
     lang: 'be',
   },
   {
     id: 'aia',
     url: 'https://podcast.onvibe.io',
-    image: '/images/onvibe.jpg',
+    image: '/images/onvibe.webp',
     started: 2025,
     lang: 'ru',
   },
   {
     id: 'evocode',
     url: 'https://evocoders.ai',
-    image: '/images/evocode.png',
+    image: '/images/evocode.webp',
     commercial: true,
     started: 2024,
     lang: 'ru',
@@ -42,21 +42,21 @@ export const PROJECTS = [
   {
     id: 'setivir',
     url: 'https://setivir.art',
-    image: '/images/setivir.jpg',
+    image: '/images/setivir.webp',
     started: 2025,
     lang: 'be',
   },
   {
     id: 'vkl',
     url: 'https://vkl.world',
-    image: '/images/vkl-logo.jpg',
+    image: '/images/vkl-logo.webp',
     started: 2022,
     lang: 'be',
   },
   {
     id: 'belarusai',
     url: 'https://telegram.me/belarusai',
-    image: '/images/belarusai-logo.jpg',
+    image: '/images/belarusai-logo.webp',
     started: 2023,
     lang: 'be',
   },
@@ -68,7 +68,7 @@ export const PROJECTS = [
 export const ARCHIVE_PROJECTS = [
   {
     id: 'uladar',
-    image: '/images/uladar-logo.jpg',
+    image: '/images/uladar-logo.webp',
     started: 2025,
     dormant: true,
     url: 'https://www.youtube.com/@uladarbel',
@@ -77,7 +77,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'lex-kartynnik',
-    image: '/images/lex-kartynnik-logo.jpg',
+    image: '/images/lex-kartynnik-logo.webp',
     started: 2023,
     dormant: true,
     url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q',
@@ -113,7 +113,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'genai-devhub',
-    image: '/images/genai-devhub-logo.jpg',
+    image: '/images/genai-devhub-logo.webp',
     started: 2025,
     closed: 2026,
     url: 'https://www.skool.com/genai-devhub-5702',
@@ -122,7 +122,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'aia-podcast',
-    image: '/images/aia-logo.jpg',
+    image: '/images/aia-logo.webp',
     started: 2023,
     closed: 2025,
     url: 'https://www.youtube.com/channel/UCxjs3aUQ9OnufZQZaCH-E4w',
@@ -132,7 +132,7 @@ export const ARCHIVE_PROJECTS = [
   {
     // community project with a bilingual (en/ru) audience — no language label
     id: 'aia-catalog',
-    image: '/images/aia-catalog-logo.png',
+    image: '/images/aia-catalog-logo.webp',
     started: 2024,
     closed: 2025,
     url: 'https://awclub.github.io/catalog/',
@@ -140,7 +140,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'letapis',
-    image: '/images/vkl-logo.jpg',
+    image: '/images/vkl-logo.webp',
     started: 2023,
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',
@@ -149,7 +149,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'nerodina',
-    image: '/images/nerodina-logo.jpg',
+    image: '/images/nerodina-logo.webp',
     started: 2023,
     closed: 2025,
     url: 'https://www.youtube.com/playlist?list=PLdmSK1Qzu987ZTif0PGiZEdTSCH5PlBF_',
@@ -158,7 +158,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'dunkelsaga',
-    image: '/images/dunkelsaga-logo.jpg',
+    image: '/images/dunkelsaga-logo.webp',
     started: 2025,
     closed: 2025,
     url: 'https://www.youtube.com/@dunkelsaga',
@@ -167,7 +167,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'beard-news',
-    image: '/images/beard-news-logo.jpg',
+    image: '/images/beard-news-logo.webp',
     started: 2022,
     closed: 2024,
     lang: 'ru',
@@ -175,7 +175,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'imbalanced-dialogues',
-    image: '/images/imbadial-logo.jpg',
+    image: '/images/imbadial-logo.webp',
     started: 2024,
     closed: 2024,
     url: 'https://www.youtube.com/@imbadial',
@@ -184,7 +184,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'itbeard-shorts',
-    image: '/images/itbeard-shorts-logo.jpg',
+    image: '/images/itbeard-shorts-logo.webp',
     started: 2022,
     closed: 2023,
     hideDuration: true,
@@ -194,7 +194,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'darkless',
-    image: '/images/logo_tl.jpg',
+    image: '/images/logo_tl.webp',
     started: 2021,
     closed: 2022,
     url: 'https://thedarkless.mave.digital/',
@@ -203,7 +203,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'visual-studio',
-    image: '/images/visual-studio-podcast.jpg',
+    image: '/images/visual-studio-podcast.webp',
     started: 2019,
     closed: 2019,
     url: 'https://soundcloud.com/visualnaya-studia',
@@ -212,7 +212,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'it-strana',
-    image: '/images/it-strana-logo.jpg',
+    image: '/images/it-strana-logo.webp',
     started: 2017,
     closed: 2019,
     lang: 'ru',
@@ -229,14 +229,14 @@ export const ARCHIVE_PROJECTS = [
   {
     // international project — no language label
     id: 'pushka',
-    image: '/images/pushka-logo.png',
+    image: '/images/pushka-logo.webp',
     started: 2015,
     closed: 2018,
     types: ['education', 'code'],
   },
   {
     id: 'physlib',
-    image: '/images/physlib_logo.png',
+    image: '/images/physlib_logo.webp',
     started: 2010,
     closed: 2016,
     lang: 'ru',
@@ -244,7 +244,7 @@ export const ARCHIVE_PROJECTS = [
   },
   {
     id: 'bel-forum',
-    image: '/images/bel-forum.jpg',
+    image: '/images/bel-forum.webp',
     started: 2008,
     closed: 2010,
     lang: 'ru',

@@ -66,8 +66,8 @@ export default function Home() {
           onContextMenu={(e) => e.preventDefault()}
         >
           <div className="photo-coin">
-            <img className="coin-front" src="/images/lex-linkedin.jpg" alt={page.hero.name} />
-            <img className="coin-back" src="/images/itbeard-funny.jpg" alt="" />
+            <img className="coin-front" src="/images/lex-linkedin.webp" alt={page.hero.name} />
+            <img className="coin-back" src="/images/itbeard-funny.webp" alt="" />
           </div>
         </div>
       </section>

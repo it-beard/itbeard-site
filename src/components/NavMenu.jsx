@@ -101,7 +101,7 @@ export default function NavMenu() {
     <header id="header">
       <div className="header-inner container">
         <Link to="/" className="brand" onClick={closeAll}>
-          <img src="/images/itbeard-300.jpg" alt="" />
+          <img src="/images/itbeard-300.webp" alt="" />
           <span>{nav.brand}</span>
         </Link>
 

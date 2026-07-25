@@ -32,7 +32,7 @@ timeline:
       en: Founder of the «Evocoders» club, AI adoption consultant
     org: evocoders.ai
     founded: true
-    logo: /images/evocode.png
+    logo: /images/evocode.webp
     link: https://evocoders.ai
     description:
       be: >
@@ -56,7 +56,7 @@ timeline:
       en: AI Ambassador
     org: Paysera
     link: https://www.paysera.com
-    logo: /images/paysera-logo.png
+    logo: /images/paysera-logo.webp
     description:
       be: >
         Вёў ШІ-трансфармацыю кампаніі — ад стратэгіі да практыкі: укараненьне
@@ -79,7 +79,7 @@ timeline:
       en: AI media content consultant, DevRel team lead
     org: EPAM Systems
     link: https://www.epam.com
-    logo: /images/epam-logo.png
+    logo: /images/epam-logo.webp
     description:
       be: >
         Чатыры з паловай гады ў DevRel-праектах EPAM: кансультант і лід
@@ -106,7 +106,7 @@ timeline:
       en: Senior Software Engineer
     org: AppXite
     link: https://appxite.com
-    logo: /images/appxite-logo.png
+    logo: /images/appxite-logo.webp
     description:
       be: >
         Бэкенд-распрацоўка на .NET/C#: мікрасэрвісная платформа.
@@ -123,7 +123,7 @@ timeline:
       en: Senior Software Engineer
     org: billwerk GmbH
     link: https://www.billwerk.plus
-    logo: /images/billwerk-logo.png
+    logo: /images/billwerk-logo.webp
     description:
       be: >
         Бэкенд-распрацоўка на .NET/C# для нямецкай платформы рэкурэнтных
@@ -141,7 +141,7 @@ timeline:
       en: Senior Software Engineer, then Team Lead
     org: SoftTeco
     link: https://softteco.com
-    logo: /images/softteco-logo.png
+    logo: /images/softteco-logo.webp
     description:
       be: >
         Пачынаў з фул-стэк распрацоўкі на .NET/C# (бэкенд, фронтэнд, дэсктоп),
@@ -159,7 +159,7 @@ timeline:
       be: Заснавальнік YouTube-канала «АйЦіБарада»
       en: Founder of the «ITBeard» YouTube channel
     founded: true
-    logo: /images/itbeard-300.jpg
+    logo: /images/itbeard-300.webp
     link: https://youtube.com/@itbeard
     description:
       be: >
@@ -179,7 +179,7 @@ timeline:
       en: Software Engineer
     org: Itransition Group
     link: https://www.itransition.com
-    logo: /images/itransition-logo.png
+    logo: /images/itransition-logo.webp
     description:
       be: >
         Фул-стэк распрацоўка на .NET/C#.
@@ -195,7 +195,7 @@ timeline:
       be: Інжынер-праграміст
       en: Software Engineer
     org: { be: "ООО «Грузовой Обоз»", en: Gruzovoi Oboz }
-    logo: /images/gruzovoioboz-logo.jpg
+    logo: /images/gruzovoioboz-logo.webp
     description:
       be: >
         Распрацоўка рухавіка для буйной лагістычнай кампаніі: .NET/C#, з нуля, без каманды.
@@ -211,7 +211,7 @@ timeline:
       be: Малодшы інжынер-праграміст
       en: Junior Software Engineer
     org: PowerMeMobile
-    logo: /images/powermemobile-logo.jpg
+    logo: /images/powermemobile-logo.webp
     description:
       be: >
         Фул-стэк распрацоўка сістэмы рассылкі СМС-паведамленьняў на .NET/C# для буйных аператараў у ААЭ.
@@ -228,7 +228,7 @@ timeline:
       en: Trainee
     org: Oxagile
     link: https://www.oxagile.com
-    logo: /images/oxagile-logo.png
+    logo: /images/oxagile-logo.webp
     description:
       be: >
         Першыя крокі ў камерцыйнай распрацоўцы: .NET/C#.
@@ -242,7 +242,7 @@ timeline:
       be: Адміністратар і штатны праграміст
       en: Administrator and in-house programmer
     org: { be: "ООО «СЕРВИС КАДРОВ» — Асацыяцыя кадравікоў Беларусі", en: "SERVIS KADROV LLC — the Belarusian HR Association" }
-    logo: /images/hrmby-logo.jpg
+    logo: /images/hrmby-logo.webp
     description:
       be: >
         Адміністраваў HRM.by — партал Асацыяцыі кадравікоў Беларусі — і як

@@ -163,7 +163,7 @@ filters:
 
 ## Bel-Forum.com {#bel-forum}
 
-[**Bel-Forum.com**](lightbox:/images/bel-forum.jpg "Галоўная старонка Bel-Forum.com, 2010 год") — беларускі форум і каталог рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лакальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, [чат](lightbox:/images/bel-forum-chat.jpg "Чат Bel-Forum.com — ElfChat, 2010 год") і бібліятэка фэнтэзі.
+[**Bel-Forum.com**](lightbox:/images/bel-forum.webp "Галоўная старонка Bel-Forum.com, 2010 год") — беларускі форум і каталог рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лакальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, [чат](lightbox:/images/bel-forum-chat.webp "Чат Bel-Forum.com — ElfChat, 2010 год") і бібліятэка фэнтэзі.
 
 Помнік беларускага інтэрнэту канца 2000-х. На верасень 2010 году меў 738 тэмаў, 3 881 паведамленьне і 4 906 карыстальнікаў.
 
@@ -295,6 +295,6 @@ The archive grew to 3.5 GB and more than 450 topical collections. The physlib.by
 
 ## Bel-Forum.com {#bel-forum}
 
-[**Bel-Forum.com**](lightbox:/images/bel-forum.jpg "The Bel-Forum.com front page, 2010") — a Belarusian forum and directory of ByFly guest-network resources, running on phpBB 3: guest-mode news, lists of local sites, game servers, file archives and access-setup guides, a [chat](lightbox:/images/bel-forum-chat.jpg "The Bel-Forum.com chat — ElfChat, 2010") and a fantasy library.
+[**Bel-Forum.com**](lightbox:/images/bel-forum.webp "The Bel-Forum.com front page, 2010") — a Belarusian forum and directory of ByFly guest-network resources, running on phpBB 3: guest-mode news, lists of local sites, game servers, file archives and access-setup guides, a [chat](lightbox:/images/bel-forum-chat.webp "The Bel-Forum.com chat — ElfChat, 2010") and a fantasy library.
 
 A relic of the late-2000s Belarusian internet. As of September 2010 — 738 topics, 3,881 posts and 4,906 users.

@@ -267,6 +267,7 @@ h2 + .ornament-sm {
   font-weight: 700;
   font-size: 18px;
   color: var(--text);
+  white-space: nowrap;
 }
 
 .brand img {
@@ -1723,6 +1724,20 @@ body.theme-restore #app {
 
 /* ===== Responsive ===== */
 @media screen and (max-width: 860px) {
+  .header-inner {
+    gap: 12px;
+  }
+
+  .brand {
+    font-size: 15px;
+    gap: 8px;
+  }
+
+  .brand img {
+    width: 30px;
+    height: 30px;
+  }
+
   /* theme + language toggles sit before the burger on mobile */
   .menu-toggle {
     display: flex;

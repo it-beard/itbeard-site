@@ -28,6 +28,7 @@ export default function Footer() {
         </div>
         <div className="footer-small">
           <Md tag="p" html={mdInline(footer.github)} />
+          {footer.note && <Md tag="p" html={mdInline(footer.note)} />}
         </div>
       </div>
       <a rel="me" style={{ display: 'none' }} href="https://mementomori.social/@Itbeard">Mastodon</a>

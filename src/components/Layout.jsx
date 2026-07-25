@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import NavMenu from './NavMenu'
 import Footer from './Footer'
+import BackToTop from './BackToTop'
 
 export default function Layout() {
   const { pathname, hash } = useLocation()
@@ -17,6 +18,7 @@ export default function Layout() {
       <NavMenu />
       <Outlet />
       <Footer />
+      <BackToTop />
     </>
   )
 }

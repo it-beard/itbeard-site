@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
 import { getPage, mdText } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
@@ -214,15 +215,34 @@ export default function TimelinePage({ name }) {
     return key(b) - key(a)
   })
 
+  // in-page anchors, one per section that actually renders
+  const anchors = [
+    headings.bio && { id: 'bio', label: headings.bio },
+    page.achievements && headings.achievements && { id: 'achievements', label: headings.achievements },
+    page.interviews && headings.interviews && { id: 'interviews', label: headings.interviews },
+  ].filter(Boolean)
+
   return (
     <main>
       <section className="container section page-head">
         <h1>{page.heading}</h1>
         <Ornament />
         <Md className="prose intro" html={mdText(page.intro)} />
+        {anchors.length > 1 && (
+          <nav className="anchor-nav">
+            {anchors.map((a) => (
+              // Link (not <a href="#...">): index.html sets <base href="/">, which
+              // makes bare-hash hrefs resolve to the home page
+              <Link key={a.id} to={`#${a.id}`}>
+                <span className="anchor-gem" aria-hidden="true"></span>
+                {a.label}
+              </Link>
+            ))}
+          </nav>
+        )}
       </section>
 
-      <section className="container section">
+      <section id="bio" className="container section">
         {headings.bio && (
           <>
             <h2>{headings.bio}</h2>
@@ -238,7 +258,7 @@ export default function TimelinePage({ name }) {
       </section>
 
       {page.achievements && (
-        <section className="container section">
+        <section id="achievements" className="container section">
           <h2>{headings.achievements}</h2>
           <Ornament />
           <Timeline entries={page.achievements} page={page} idPrefix="ach" />
@@ -246,7 +266,7 @@ export default function TimelinePage({ name }) {
       )}
 
       {page.interviews && (
-        <section className="container section">
+        <section id="interviews" className="container section">
           <h2>{headings.interviews}</h2>
           <Ornament />
           <InterviewsSection interviews={page.interviews} />

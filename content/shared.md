@@ -8,6 +8,9 @@ notFound:
 backHome:
   be: На галоўную
   en: Back home
+backToTop:
+  be: Дагары
+  en: To the top
 nav:
   brand: { be: Лёхін сайт, en: Lex's site }
   index: { be: Галоўная, en: Home }
@@ -66,5 +69,8 @@ footer:
   github:
     be: "Код гэтага сайта на [GitHub](https://github.com/it-beard/itbeard-site)"
     en: "The code of this site on [GitHub](https://github.com/it-beard/itbeard-site)"
+  note:
+    be: "На сайце выкарыстоўваецца **ракаўская дзеясловіца** 😎"
+    en: ""
   language: { be: Мова сайта, en: Site language }
 ---

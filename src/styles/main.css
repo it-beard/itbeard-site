@@ -1452,6 +1452,110 @@ body.theme-restore #app {
   font-size: 15.5px;
 }
 
+/* ===== Back-to-top button ===== */
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 30;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(28, 28, 28, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(12px);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s, border-color 0.2s, color 0.2s;
+}
+
+.back-to-top.shown {
+  opacity: 1;
+  transform: none;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  border-color: rgba(226, 67, 78, 0.45);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+.btt-arrow {
+  color: var(--accent);
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.back-to-top:hover .btt-arrow {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 640px) {
+  .back-to-top {
+    right: 14px;
+    bottom: 14px;
+    padding: 9px 14px;
+  }
+}
+
+/* ===== About: in-page anchor nav ===== */
+.anchor-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.anchor-nav a {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: var(--bg-raised);
+  color: var(--muted);
+  font-size: 14.5px;
+  text-decoration: none;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.anchor-nav a:hover {
+  border-color: rgba(226, 67, 78, 0.45);
+  color: var(--text);
+  transform: translateY(-2px);
+}
+
+/* tiny rotated gem, echoing the timeline marks */
+.anchor-gem {
+  width: 7px;
+  height: 7px;
+  border-radius: 1px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  transition: transform 0.2s;
+}
+
+.anchor-nav a:hover .anchor-gem {
+  transform: rotate(225deg);
+}
+
+/* anchored sections stop below the fixed header */
+#bio,
+#achievements,
+#interviews {
+  scroll-margin-top: calc(var(--header-h) + 8px);
+}
+
 /* ===== About: interviews section ===== */
 .video-embed {
   position: relative;
@@ -1951,6 +2055,11 @@ body.theme-restore #app {
 
   .footer-small {
     text-align: center;
+  }
+
+  /* room for the floating «Дагары ↑» button, so it doesn't cover the links */
+  #footer {
+    padding-bottom: 96px;
   }
 
   /* overview gantt scrolls horizontally instead of squeezing */

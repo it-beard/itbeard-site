@@ -24,13 +24,22 @@ legend:
     en: >
       warm-tinted cards — slow-burning ones: something shows up there
       from time to time, but the status is uncertain
+filtersLabel: { be: Фільтр праектаў па кірунках, en: Filter projects by direction }
+filters:
+  all: { be: Усе, en: All }
+  video: { be: Відэа, en: Video }
+  podcast: { be: Падкасты, en: Podcasts }
+  education: { be: Адукацыя, en: Education }
+  community: { be: Супольнасьці, en: Communities }
+  code: { be: Праграмаваньне, en: Programming }
+  art: { be: Творчасьць, en: Creative }
 ---
 
 <!-- be -->
 
 # Пагост праектаў {#intro}
 
-На гэтым ціхім пагосьце спачываюць мае праекты. Адны ўжо закрытыя — яны адыгралі сваю ролю і сышлі на спачын. Іншыя — вяла бягучыя: час ад часу яшчэ падаюць прыкметы жыцьця. Кожны зь іх — частка майго шляху, і, магчыма, акурат па адным зь іх вы мяне і ведаеце.
+На гэтым ціхім пагосьце спачываюць мае праекты — не ўсе, а найбольш адметныя. Адны ўжо закрытыя — яны адыгралі сваю ролю і сышлі на спачын. Іншыя — вяла бягучыя: час ад часу яшчэ падаюць прыкметы жыцьця. Кожны зь іх — частка майго шляху, і, магчыма, акурат па адным зь іх вы мяне і ведаеце.
 
 Нізкі паклон кожнаму, хто ўкладаў у гэтыя праекты свае рукі, час і сэрца. Без вас нічога з гэтага не было б.
 
@@ -156,7 +165,7 @@ legend:
 
 # Pahost of projects {#intro}
 
-In this quiet *pahost* — a Belarusian resting place — lie my projects. Some are closed: they played their part and went to rest. Others are slow-burning, still showing signs of life from time to time. Each of them is a piece of my journey — and chances are, one of them is exactly how you know me.
+In this quiet *pahost* — a Belarusian resting place — lie my projects: not all of them, only the most notable ones. Some are closed: they played their part and went to rest. Others are slow-burning, still showing signs of life from time to time. Each of them is a piece of my journey — and chances are, one of them is exactly how you know me.
 
 A deep bow to everyone who put their hands, time and heart into these projects. None of this would have existed without you.
 

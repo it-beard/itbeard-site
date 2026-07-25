@@ -976,6 +976,69 @@ body.theme-restore #app {
   background: #e2c04e;
 }
 
+/* Category filter chips between the legend and the cards */
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 13px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+@media (hover: hover) {
+  .filter-chip:hover {
+    border-color: var(--accent-bright);
+    color: var(--text);
+  }
+}
+
+.filter-chip[aria-pressed='true'] {
+  border-color: var(--accent-bright);
+  background: rgba(226, 67, 78, 0.08);
+  color: var(--text);
+}
+
+/* per-category counter — same green as the pahost counter */
+.filter-chip .chip-count {
+  font-size: 11px;
+  font-weight: 700;
+  color: #7ee787;
+}
+
+/* soft fade-in when the filter changes */
+.cards-fade {
+  animation: cards-fade 0.25s ease;
+}
+
+@keyframes cards-fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards-fade {
+    animation: none;
+  }
+}
+
 /* project counter next to section headings (pahost, home projects) */
 .pahost-count {
   font-size: 0.55em;

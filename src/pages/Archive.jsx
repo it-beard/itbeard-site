@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { useLang } from '../lib/LangContext'
 import { getPage, getSection, mdInline } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
@@ -32,6 +33,11 @@ export default function Archive() {
     .replace('{closed}', total - dormantCount)
     .replace('{dormant}', dormantCount)
 
+  const [filter, setFilter] = useState('all')
+  const typeCount = (type) =>
+    type === 'all' ? total : ARCHIVE_PROJECTS.filter((p) => p.types?.includes(type)).length
+  const shown = filter === 'all' ? ARCHIVE_PROJECTS : ARCHIVE_PROJECTS.filter((p) => p.types?.includes(filter))
+
   return (
     <main>
       <section className="container section page-head">
@@ -51,11 +57,24 @@ export default function Archive() {
             <span className="legend-gem legend-gem-dormant" aria-hidden="true"></span> {page.legend.dormant}
           </li>
         </ul>
+        <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
+          {Object.keys(page.filters).map((type) => (
+            <button
+              key={type}
+              type="button"
+              className="filter-chip"
+              aria-pressed={filter === type}
+              onClick={() => setFilter(filter === type ? 'all' : type)}
+            >
+              {page.filters[type]} <span className="chip-count">{typeCount(type)}</span>
+            </button>
+          ))}
+        </div>
       </section>
 
       <section className="container section">
-        <div className="cards">
-          {ARCHIVE_PROJECTS.map((p) => {
+        <div key={filter} className="cards cards-fade">
+          {shown.map((p) => {
             const card = intro.subs.find((s) => s.id === p.id)
             if (!card) return null
             const CardTag = p.url ? 'a' : 'div'

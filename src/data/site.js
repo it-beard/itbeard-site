@@ -64,6 +64,7 @@ export const PROJECTS = [
 
 
 // dormant projects (no `closed`) are listed first, then closed ones by close year
+// `types` — categories for the archive filter; a project may belong to several
 export const ARCHIVE_PROJECTS = [
   {
     id: 'uladar',
@@ -72,6 +73,7 @@ export const ARCHIVE_PROJECTS = [
     dormant: true,
     url: 'https://www.youtube.com/@uladarbel',
     lang: 'be',
+    types: ['video', 'art'],
   },
   {
     id: 'lex-kartynnik',
@@ -80,6 +82,7 @@ export const ARCHIVE_PROJECTS = [
     dormant: true,
     url: 'https://www.youtube.com/channel/UCrdwRUaU3ieEf8UkSTzwT7Q',
     lang: 'en',
+    types: ['video'],
   },
   {
     id: 'bloggers-cms',
@@ -87,6 +90,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2021,
     dormant: true,
     url: 'https://github.com/it-beard/bloggers-cms',
+    types: ['code'],
   },
   {
     id: 'tvoj-ai',
@@ -96,6 +100,7 @@ export const ARCHIVE_PROJECTS = [
     hideDuration: true,
     url: 'https://competence.school/',
     lang: 'be',
+    types: ['education'],
   },
   {
     id: 'autaspynam',
@@ -104,6 +109,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2026,
     hideDuration: true,
     lang: 'be',
+    types: ['education'],
   },
   {
     id: 'genai-devhub',
@@ -113,6 +119,7 @@ export const ARCHIVE_PROJECTS = [
     hideDuration: true,
     url: 'https://www.skool.com/genai-devhub-5702',
     lang: 'en',
+    types: ['community', 'education'],
   },
   {
     id: 'aia-podcast',
@@ -121,6 +128,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2025,
     url: 'https://www.youtube.com/channel/UCxjs3aUQ9OnufZQZaCH-E4w',
     lang: 'ru',
+    types: ['podcast', 'video'],
   },
   {
     id: 'letapis',
@@ -129,6 +137,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2025,
     url: 'https://github.com/it-beard/writefreely-vkl',
     lang: 'be',
+    types: ['code', 'community'],
   },
   {
     id: 'nerodina',
@@ -137,6 +146,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2025,
     url: 'https://www.youtube.com/playlist?list=PLdmSK1Qzu987ZTif0PGiZEdTSCH5PlBF_',
     lang: 'ru',
+    types: ['video'],
   },
   {
     id: 'dunkelsaga',
@@ -145,6 +155,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2025,
     url: 'https://www.youtube.com/@dunkelsaga',
     lang: 'de',
+    types: ['art'],
   },
   {
     id: 'beard-news',
@@ -152,6 +163,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2022,
     closed: 2024,
     lang: 'ru',
+    types: ['podcast'],
   },
   {
     id: 'imbalanced-dialogues',
@@ -160,6 +172,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2024,
     url: 'https://www.youtube.com/@imbadial',
     lang: 'en',
+    types: ['podcast', 'video'],
   },
   {
     id: 'itbeard-shorts',
@@ -169,6 +182,7 @@ export const ARCHIVE_PROJECTS = [
     hideDuration: true,
     url: 'https://www.youtube.com/playlist?list=PLhf2AM9rZ9b_DbNadCzxi7zfga9pB_3NK',
     lang: 'ru',
+    types: ['video'],
   },
   {
     id: 'darkless',
@@ -177,6 +191,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2022,
     url: 'https://thedarkless.mave.digital/',
     lang: 'ru',
+    types: ['podcast', 'video'],
   },
   {
     id: 'visual-studio',
@@ -185,6 +200,7 @@ export const ARCHIVE_PROJECTS = [
     closed: 2019,
     url: 'https://soundcloud.com/visualnaya-studia',
     lang: 'ru',
+    types: ['podcast'],
   },
   {
     id: 'it-strana',
@@ -192,6 +208,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2017,
     closed: 2019,
     lang: 'ru',
+    types: ['community'],
   },
   {
     id: 'genesis',
@@ -199,6 +216,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2018,
     closed: 2019,
     lang: 'ru',
+    types: ['education'],
   },
   {
     // international project — no language label
@@ -206,6 +224,7 @@ export const ARCHIVE_PROJECTS = [
     image: '/images/pushka-logo.png',
     started: 2015,
     closed: 2018,
+    types: ['education'],
   },
   {
     id: 'physlib',
@@ -213,6 +232,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2010,
     closed: 2016,
     lang: 'ru',
+    types: ['education', 'community'],
   },
   {
     id: 'bel-forum',
@@ -220,6 +240,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2008,
     closed: 2010,
     lang: 'ru',
+    types: ['community'],
   },
 ]
 

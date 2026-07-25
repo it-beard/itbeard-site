@@ -36,7 +36,7 @@ timeline:
     link: https://evocoders.ai
     description:
       be: >
-        Дапамагаю распрацоўнікам зрабіць ШІ часткай штодзённай працы:
+        Дапамагаю распрацоўшчыкам зрабіць ШІ часткай штодзённай працы:
         пабудаваў прыватную супольнасць з 800+ удзельнікаў, стварыў больш за
         200 гадзін адукацыйнага кантэнту, вяду штотыднёвы дайджэст ШІ-навін
         і падтрымліваю бібліятэку з 500+ інструментаў ШІ-праграмавання.
@@ -86,7 +86,7 @@ timeline:
         супольнасці Anywhere Club (2021—2022), кіраўнік аддзела мультымедыя
         і супольнасці з камандай у 7 чалавек (2022—2024), затым кансультант
         па ШІ-медыякантэнце — YouTube-відэа і падкасты пра ШІ для соцень
-        тысяч распрацоўнікаў у падтрымку ініцыятыў EngX і Anywhere Club
+        тысяч распрацоўшчыкаў у падтрымку ініцыятыў EngX і Anywhere Club
         (2024—2025).
       en: >
         Four and a half years in EPAM's DevRel projects: Anywhere Club
@@ -102,8 +102,8 @@ timeline:
     endMonth: 3
     label: { be: AppXite, en: AppXite }
     title:
-      be: Сеньёр-распрацоўнік (.NET)
-      en: Senior Software Engineer (.NET)
+      be: Сеньёр-распрацоўшчык
+      en: Senior Software Engineer
     org: AppXite
     link: https://appxite.com
     logo: /images/appxite-logo.png
@@ -119,8 +119,8 @@ timeline:
     endMonth: 5
     label: { be: billwerk, en: billwerk }
     title:
-      be: Сеньёр-распрацоўнік (.NET)
-      en: Senior Software Engineer (.NET)
+      be: Сеньёр-распрацоўшчык
+      en: Senior Software Engineer
     org: billwerk GmbH
     link: https://www.billwerk.plus
     logo: /images/billwerk-logo.png
@@ -137,7 +137,7 @@ timeline:
     endMonth: 9
     label: { be: SoftTeco, en: SoftTeco }
     title:
-      be: Сеньёр-распрацоўнік, затым тымлід
+      be: Сеньёр-распрацоўшчык, затым тымлід
       en: Senior Software Engineer, then Team Lead
     org: SoftTeco
     link: https://softteco.com
@@ -194,7 +194,8 @@ timeline:
     title:
       be: Інжынер-праграміст
       en: Software Engineer
-    org: Gruzovoi Oboz
+    org: { be: "ООО «Грузовой Обоз»", en: Gruzovoi Oboz }
+    logo: /images/gruzovoioboz-logo.jpg
     description:
       be: >
         Распрацоўка рухавіка для буйной лагістычнай кампаніі: .NET/C#, з нуля, без каманды.
@@ -210,6 +211,7 @@ timeline:
       be: Малодшы інжынер-праграміст
       en: Junior Software Engineer
     org: PowerMeMobile
+    logo: /images/powermemobile-logo.jpg
     description:
       be: >
         Фул-стэк распрацоўка сістэмы рассылкі СМС-паведамленьняў на .NET/C# для буйных аператараў у ААЭ.
@@ -222,7 +224,7 @@ timeline:
     endMonth: 3
     label: { be: Oxagile, en: Oxagile }
     title:
-      be: Стажор-распрацоўнік
+      be: Стажор-распрацоўшчык
       en: Trainee
     org: Oxagile
     link: https://www.oxagile.com
@@ -232,8 +234,25 @@ timeline:
         Першыя крокі ў камерцыйнай распрацоўцы: .NET/C#.
       en: >
         First steps in commercial development: .NET/C#.
-  - period: { be: 2007 — 2012, en: 2007 — 2012 }
-    start: 2007
+  - period: { be: 2011 — 2012, en: 2011 — 2012 }
+    start: 2011
+    end: 2012
+    label: { be: HRM.by, en: HRM.by }
+    title:
+      be: Адміністратар і штатны праграміст
+      en: Administrator and in-house programmer
+    org: { be: "ООО «СЕРВИС КАДРОВ» — Асацыяцыя кадравікоў Беларусі", en: "SERVIS KADROV LLC — the Belarusian HR Association" }
+    logo: /images/hrmby-logo.jpg
+    description:
+      be: >
+        Адміністраваў HRM.by — партал Асацыяцыі кадравікоў Беларусі — і як
+        штатны праграміст падтрымліваў і развіваў сайты кампаніі.
+      en: >
+        Administered HRM.by — the portal of the Belarusian HR Association —
+        and, as an in-house programmer, maintained and developed the
+        company's websites.
+  - period: { be: 2008 — 2012, en: 2008 — 2012 }
+    start: 2008
     end: 2012
     label: { be: Вебмайстар, en: Webmaster }
     title:

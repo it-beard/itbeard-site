@@ -59,11 +59,23 @@ legend:
 
 Там жыў і мой уласны блог.
 
+## IT-Страна {#it-strana}
+
+**«IT-Страна»** — Telegram-канал-агрэгатар навінаў беларускага IT «адной строкай»: штодня 4–6 навінаў пра стартапы, ПВТ, Дэкрэт №8, буйныя кампаніі і кар'еру распрацоўнікаў — са спасылкамі на першакрыніцы.
+
+На піку меў каля 2 000 падпісчыкаў і ўваходзіў у топ-10 беларускіх Telegram-каналаў. Рэдакцыйная праца была спыненая ў 2018 годзе, але асобныя допісы зьяўляліся да ліпеня 2019-га — усяго 981 публікацыя.
+
 ## PUSHka {#pushka}
 
 **PUSHka** — адукацыйны стартап, разумны памочнік для анлайн-навучання.
 
 Перамога ў конкурсе МТС «Telecom Idea 2015», акселератар GenerationS — але праз два з паловай гады каманда разышлася.
+
+## PhysLib {#physlib}
+
+**PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: канспэкты лекцый, падручнікі, мэтадычкі і лябараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мной бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
+
+Архіў вырас да 3,5 ГБ і больш як 450 тэматычных зборак. Сайт physlib.by працаваў да сакавіка 2016 году, а [архіў](https://drive.google.com/drive/folders/0B3YaDDz_084lZC1hNFEtNWxPdUU) бібліятэкі дагэтуль захоўваецца на Google Дыску.
 
 ## Bel-Forum.com {#bel-forum}
 
@@ -111,11 +123,23 @@ The podcast was recorded online at the beginning of each month and was available
 
 My own blog lived there too.
 
+## IT-Strana {#it-strana}
+
+**«IT-Страна»** ("IT-Country") — a Telegram channel aggregating Belarusian IT news "in one line": 4–6 posts a day about startups, the Hi-Tech Park, Decree No. 8, major companies and developer careers — with links to the original sources.
+
+At its peak it had around 2,000 subscribers and ranked among the top-10 Belarusian Telegram channels. Editorial work stopped in 2018, though occasional posts kept appearing until July 2019 — 981 posts in total.
+
 ## PUSHka {#pushka}
 
 **PUSHka** — an educational startup, a smart assistant for online learning.
 
 We won the MTS «Telecom Idea 2015» competition and joined the GenerationS accelerator — but after two and a half years the team went separate ways.
+
+## PhysLib {#physlib}
+
+**PhysLib** — a free library for physics students: lecture notes, textbooks, study guides and lab works for the Physics and Radiophysics faculties of BSU, and later for physics students of Belarusian universities in general. I ran the library together with Yauhen Sliaptsou — who, in the final years, was effectively keeping it going on his own.
+
+The archive grew to 3.5 GB and more than 450 topical collections. The physlib.by site ran until March 2016, and the library [archive](https://drive.google.com/drive/folders/0B3YaDDz_084lZC1hNFEtNWxPdUU) is still preserved on Google Drive.
 
 ## Bel-Forum.com {#bel-forum}
 

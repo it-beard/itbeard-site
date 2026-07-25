@@ -107,10 +107,22 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://www.youtube.com/@imbadial',
   },
   {
+    id: 'it-strana',
+    image: '/images/it-strana-logo.jpg',
+    started: 2017,
+    closed: 2019,
+  },
+  {
     id: 'pushka',
     image: '/images/pushka-logo.png',
     started: 2015,
     closed: 2018,
+  },
+  {
+    id: 'physlib',
+    image: '/images/physlib_logo.png',
+    started: 2010,
+    closed: 2016,
   },
   {
     id: 'bel-forum',

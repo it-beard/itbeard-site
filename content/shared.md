@@ -1,6 +1,6 @@
 ---
 titleSuffix:
-  be: "/ Жыве Беларусь!"
+  be: "/ Пахне Чабор!"
   en: "/ Long Live Belarus!"
 notFound:
   be: Прабач, але старонка не знойдзена, сябар...

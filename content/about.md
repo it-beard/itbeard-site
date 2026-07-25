@@ -7,13 +7,13 @@ heading:
   en: About me
 intro:
   be: |
-    Мяне клічуць **Аляксеем Картыньнікам**, я родам зь Беларусі, а з 2022 году жыву ў Польшчы, у Вроцлаве. Я прафесійны праграміст, ШІ-адукатар, стваральнік тэхналагічнага кантэнту і сьвядомы беларус.
+    Мяне клічуць **Аляксеем Картыньнікам**, хоць шмат хто ведае мяне пад мянушкай **АйЦіБарада**. Родам зь Беларусі, з 2022 году жыву ў польскім Вроцлаве. Я прафесійны праграміст, ШІ-адукатар, стваральнік тэхналагічнага кантэнту і сьвядомы беларус.
 
-    Сайты я раблю з 2008 году, з 2012-га шчыльна займаўся backend-распрацоўкай, а з 2023-га навучаю распрацоўшчыкаў **працаваць з ШІ**. Раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў падкастах, ствараю **суполкі** і дапамагаю разьвіваць **беларускамоўнае** інфаполе.
+    З 2008 году раблю сайты, з 2012-га шчыльна займаўся backend-распрацоўкай, а з 2023-га навучаю распрацоўшчыкаў **працаваць з ШІ**. Таксама, я раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў падкастах, ствараю **суполкі** і дапамагаю разьвіваць **беларускамоўнае** інфаполе.
 
     Ніжэй — некаторыя падзеі і факты, якія, лічу, апісваюць мяне найлепш.
   en: |
-    My name is **Aliaksei Kartynnik**, I'm originally from Belarus, and since 2022 I've been living in Wrocław, Poland. I'm a professional software engineer, an AI educator, a tech content creator, and a nationally conscious Belarusian.
+    My name is **Aliaksei Kartynnik**, though many know me by the nickname **ITBeard**. Originally from Belarus, since 2022 I've been living in Wrocław, Poland. I'm a professional software engineer, an AI educator, a tech content creator, and a nationally conscious Belarusian.
 
     I've been building websites since 2008, worked intensively in backend development starting in 2012, and since 2023 I've been teaching developers how to **work with AI**. I create a lot of **IT**, **science-adjacent**, and **technical** content on YouTube and in podcast form, build **communities**, and help grow the **Belarusian-language** information space.
 

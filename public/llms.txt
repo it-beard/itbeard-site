@@ -1,0 +1,32 @@
+# Aliaksei Kartynnik (Лёха Картыньнік, АйЦіБарада / ITBeard)
+
+> Personal website of Aliaksei Kartynnik — software engineer since 2008, AI educator since 2023, tech content creator, podcaster, and community builder. Known online as ITBeard (АйЦіБарада). Originally from Belarus, based in Wrocław, Poland since 2022. The site is bilingual: Belarusian (default) and English (?lang=en).
+
+Key facts:
+
+- Professional software engineer since 2008; intensive backend development since 2012.
+- Since 2023 teaches developers how to work with AI tools and AI-assisted programming practices.
+- Founder of Evocoders («Эвалюцыя Кода», since May 2024) — a private club for developers who strengthen their programming skills by learning and using AI tools and practices.
+- Author of the YouTube channel «АйЦіБарада» (ITBeard) — IT, technology, and science interviews.
+- Author of the YouTube channel and podcast «Цёмны Лёс» (Ciomny Los) — conversations with Belarusians about their crafts.
+- Co-host of AI podcasts: «Каласы пад сярпом ШІ» (KPSAI) and «на Вайбе» (on Vibe) — biweekly AI news podcasts in Belarusian and Russian.
+- Founder of VKL.world — the largest Belarusian-language community on the Mastodon network.
+- Founder of «Беларускі ШІ» (Belarusian AI) — a Belarusian-language Telegram community about artificial intelligence.
+- Creator of Setivir — a musical art project with Belarusian-language songs based on classic and folk texts.
+
+## Pages
+
+- [Home](https://itbeard.com/): active projects overview
+- [About](https://itbeard.com/about): biography, key events, and facts
+- [Career](https://itbeard.com/experience): professional timeline since 2008
+- [Project archive](https://itbeard.com/archive): finished and dormant projects
+- [Support](https://itbeard.com/support): donation options (card, crypto, Patreon, merch)
+- [Contacts](https://itbeard.com/contacts): Telegram, email, Mastodon, LinkedIn, GitHub
+
+## Elsewhere
+
+- [YouTube: ITBeard](https://youtube.com/@itbeard)
+- [GitHub: itbeard](https://github.com/itbeard)
+- [LinkedIn](https://www.linkedin.com/in/akartynnik)
+- [Mastodon](https://vkl.world/@itbeard)
+- [Telegram](https://telegram.me/itbeard)

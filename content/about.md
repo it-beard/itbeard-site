@@ -2,6 +2,15 @@
 title:
   be: Пра мяне
   en: About me
+description:
+  be: >-
+    Хто такі Аляксей Картыньнік (АйЦіБарада): праграміст з 2008 году,
+    ШІ-адукатар з 2023-га, стваральнік беларускамоўнага кантэнту і суполак.
+    Ключавыя падзеі і факты зь біяграфіі.
+  en: >-
+    Who is Aliaksei Kartynnik (ITBeard): programmer since 2008, AI educator
+    since 2023, creator of Belarusian-language content and communities. Key
+    events and facts from his biography.
 heading:
   be: Пра мяне
   en: About me

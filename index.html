@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="be">
 
 <head>
     <!-- Google Analytics -->
@@ -17,7 +17,25 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <title>Сайт Лёхі Картыньніка</title>
+    <meta name="description"
+        content="Афіцыйны сайт Аляксея Картыньніка (АйЦіБарада, ITBeard) — распрацоўшчыка з 2008 году, ШІ-адукатара, аўтара YouTube-каналаў і падкастаў, заснавальніка клуба «Эвалюцыя Кода» і беларускамоўных суполак." />
     <base href="/" />
+    <link rel="canonical" href="https://itbeard.com/" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Сайт Лёхі Картыньніка" />
+    <meta property="og:title" content="Сайт Лёхі Картыньніка" />
+    <meta property="og:description"
+        content="Аляксей Картыньнік (АйЦіБарада, ITBeard) — распрацоўшчык, ШІ-адукатар, аўтар YouTube-каналаў і падкастаў, заснавальнік клуба «Эвалюцыя Кода»." />
+    <meta property="og:url" content="https://itbeard.com/" />
+    <meta property="og:image" content="https://itbeard.com/images/lex-linkedin.webp" />
+    <meta property="og:locale" content="be_BY" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Сайт Лёхі Картыньніка" />
+    <meta name="twitter:image" content="https://itbeard.com/images/lex-linkedin.webp" />
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap"
         rel="stylesheet" />
     <link rel="shortcut icon" href="/favicon.jpg" />
@@ -25,28 +43,54 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "@id": "https://itbeard.com/#person",
-        "name": "Лёха Картыньнік",
-        "alternateName": [
-            "Лёха Картыньнік",
-            "Алексей Картынник",
-            "Aliaksei Kartynnik",
-            "АйЦіБарада",
-            "АйТиБорода",
-            "ITBeard",
-            "LeX_K@R",
-            "LeX_KaR"
-        ],
-        "url": "https://itbeard.com",
-        "image": "https://itbeard.com/images/itbeard-300.webp",
-        "sameAs": [
-            "https://youtube.com/@itbeard",
-            "https://github.com/itbeard",
-            "https://www.linkedin.com/in/akartynnik",
-            "https://vkl.world/@itbeard",
-            "https://telegram.me/itbeard",
-            "https://telegram.me/iamitbeard"
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://itbeard.com/#person",
+                "name": "Лёха Картыньнік",
+                "alternateName": [
+                    "Лёха Картыньнік",
+                    "Алексей Картынник",
+                    "Aliaksei Kartynnik",
+                    "АйЦіБарада",
+                    "АйТиБорода",
+                    "ITBeard",
+                    "LeX_K@R",
+                    "LeX_KaR"
+                ],
+                "description": "Праграміст з 2008 году, ШІ-адукатар, стваральнік тэхналагічнага кантэнту, заснавальнік клуба «Эвалюцыя Кода» і беларускамоўных суполак. Software engineer since 2008, AI educator, tech content creator.",
+                "jobTitle": ["Software Engineer", "AI Educator", "Content Creator"],
+                "nationality": { "@type": "Country", "name": "Belarus" },
+                "homeLocation": { "@type": "Place", "name": "Wrocław, Poland" },
+                "knowsAbout": [
+                    "Software Development",
+                    "Artificial Intelligence",
+                    "AI-assisted Programming",
+                    "Large Language Models",
+                    "Backend Development",
+                    "Podcasting"
+                ],
+                "knowsLanguage": ["be", "ru", "en"],
+                "url": "https://itbeard.com",
+                "image": "https://itbeard.com/images/itbeard-300.webp",
+                "sameAs": [
+                    "https://youtube.com/@itbeard",
+                    "https://github.com/itbeard",
+                    "https://www.linkedin.com/in/akartynnik",
+                    "https://vkl.world/@itbeard",
+                    "https://telegram.me/itbeard",
+                    "https://telegram.me/iamitbeard"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://itbeard.com/#website",
+                "url": "https://itbeard.com",
+                "name": "Сайт Лёхі Картыньніка",
+                "alternateName": "Lex Kartynnik's website",
+                "inLanguage": ["be", "en"],
+                "publisher": { "@id": "https://itbeard.com/#person" }
+            }
         ]
     }
     </script>
@@ -54,6 +98,23 @@
 
 <body>
     <div id="app"></div>
+    <noscript>
+        <h1>Лёха Картыньнік (Aliaksei Kartynnik, АйЦіБарада / ITBeard)</h1>
+        <p>Распрацоўшчык, адукатар, аўтар падкастаў і відэа, стваральнік суполак і ШІ-амбасадар. Праграміст з 2008
+            году, з 2023-га навучае распрацоўшчыкаў працаваць з ШІ. Родам зь Беларусі, жыве ў польскім Вроцлаве.</p>
+        <p>Software engineer since 2008, AI educator since 2023, podcast and video author, community builder.
+            Originally from Belarus, based in Wrocław, Poland.</p>
+        <ul>
+            <li><a href="/about">Пра мяне / About</a></li>
+            <li><a href="/experience">Кар'ера / Career</a></li>
+            <li><a href="/archive">Пагост праектаў / Project archive</a></li>
+            <li><a href="/support">Падтрымаць / Support</a></li>
+            <li><a href="/contacts">Кантакты / Contacts</a></li>
+        </ul>
+        <p>Праекты / Projects: YouTube-каналы «АйЦіБарада» і «Цёмны Лёс», падкасты «Каласы пад сярпом ШІ» і «на
+            Вайбе», клуб для распрацоўшчыкаў «Эвалюцыя Кода» (Evocoders), суполкі VKL.world і «Беларускі ШІ»,
+            музычны праект Setivir.</p>
+    </noscript>
     <script type="module" src="/src/main.jsx"></script>
 </body>
 

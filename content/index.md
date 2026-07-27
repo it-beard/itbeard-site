@@ -2,6 +2,15 @@
 title:
   be: Сайт Лёхі Картыньніка
   en: Lex Kartynnik's website
+description:
+  be: >-
+    Афіцыйны сайт Аляксея Картыньніка (АйЦіБарада, ITBeard) — распрацоўшчыка
+    з 2008 году, ШІ-адукатара, аўтара YouTube-каналаў і падкастаў,
+    заснавальніка клуба «Эвалюцыя Кода» і беларускамоўных суполак.
+  en: >-
+    Official website of Aliaksei Kartynnik (ITBeard) — software engineer since
+    2008, AI educator, author of YouTube channels and podcasts, founder of the
+    Evocoders club and Belarusian-language communities.
 hero:
   greeting:
     be: Ку! Гэта мой сайт і я

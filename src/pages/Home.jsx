@@ -11,7 +11,7 @@ export default function Home() {
   const { lang } = useLang()
   const page = getPage('index', lang)
   const shared = getPage('shared', lang)
-  useTitle(page.title)
+  useTitle(page.title, page.description)
 
   const projects = getSection(page, 'projects')
 

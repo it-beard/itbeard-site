@@ -2,6 +2,13 @@
 title:
   be: Падтрымаць мяне
   en: Support me
+description:
+  be: >-
+    Спосабы падтрымаць Аляксея Картыньніка (АйЦіБарада): данат з карткі праз
+    Tribute, крыптагрошы, Patreon і фірмовы мерч.
+  en: >-
+    Ways to support Aliaksei Kartynnik (ITBeard): card donations via Tribute,
+    cryptocurrency, Patreon, and branded merch.
 labels:
   copy: { be: Скапіяваць, en: Copy }
   copied: { be: Скапіявана!, en: Copied! }

@@ -2,6 +2,13 @@
 title:
   be: Кантакты
   en: Contacts
+description:
+  be: >-
+    Як зьвязацца з Аляксеем Картыньнікам (АйЦіБарада): Telegram, WhatsApp,
+    электрапошта, а таксама Mastodon, LinkedIn, GitHub і іншыя сацсеткі.
+  en: >-
+    How to reach Aliaksei Kartynnik (ITBeard): Telegram, WhatsApp, email, as
+    well as Mastodon, LinkedIn, GitHub, and other social networks.
 groups:
   contacts:
     title: { be: Пішыце мне сюды, en: Reach out to me }

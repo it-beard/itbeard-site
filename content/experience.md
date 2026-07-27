@@ -2,6 +2,15 @@
 title:
   be: Кар'ера
   en: Career
+description:
+  be: >-
+    Прафесійны шлях Аляксея Картыньніка з 2008 году: ад вэб-распрацоўшчыка да
+    Senior-інжынера і заснавальніка клуба «Эвалюцыя Кода». Поўная храналогія
+    працы і ўласных праектаў.
+  en: >-
+    Aliaksei Kartynnik's professional journey since 2008: from web developer
+    to senior engineer and founder of the Evocoders club. Complete timeline of
+    jobs and personal projects.
 heading:
   be: Мой шлях
   en: My journey

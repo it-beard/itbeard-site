@@ -22,7 +22,7 @@ export default function Archive() {
   const { lang } = useLang()
   const page = getPage('archive', lang)
   const shared = getPage('shared', lang)
-  useTitle(page.title)
+  useTitle(page.title, page.description)
 
   const intro = getSection(page, 'intro')
 

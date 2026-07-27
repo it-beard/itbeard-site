@@ -28,7 +28,7 @@ function ContactGroup({ group }) {
 export default function Contacts() {
   const { lang } = useLang()
   const page = getPage('contacts', lang)
-  useTitle(page.title)
+  useTitle(page.title, page.description)
 
   return (
     <main>

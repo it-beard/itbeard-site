@@ -34,7 +34,7 @@ function CopyButton({ value, labels }) {
 export default function Support() {
   const { lang } = useLang()
   const page = getPage('support', lang)
-  useTitle(page.title)
+  useTitle(page.title, page.description, '/support')
 
   const sections = ['card', 'crypto', 'patreon', 'merch'].map((id) => getSection(page, id))
 

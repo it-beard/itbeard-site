@@ -2,6 +2,14 @@
 title:
   be: Пагост праектаў
   en: Pahost of projects
+description:
+  be: >-
+    Архіў праектаў Аляксея Картыньніка (АйЦіБарада): завершаныя і мляваплынныя
+    падкасты, YouTube-каналы, суполкі і іншыя ініцыятывы розных гадоў.
+  en: >-
+    Archive of Aliaksei Kartynnik's (ITBeard) projects: finished and
+    slow-burning podcasts, YouTube channels, communities, and other
+    initiatives over the years.
 dormantLabel: { be: мляваплынны, en: slow burning }
 counterHint:
   be: >

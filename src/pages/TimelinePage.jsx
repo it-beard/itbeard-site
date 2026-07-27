@@ -204,7 +204,7 @@ function InterviewsSection({ interviews }) {
 export default function TimelinePage({ name }) {
   const { lang } = useLang()
   const page = getPage(name, lang)
-  useTitle(page.title)
+  useTitle(page.title, page.description)
   const headings = page.headings ?? {}
 
   // ongoing jobs first, then newest start first; undated entries last

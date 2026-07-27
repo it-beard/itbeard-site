@@ -12,7 +12,7 @@ backToTop:
   be: Дагары
   en: To the top
 nav:
-  brand: { be: Лёхін сайт, en: Lex's site }
+  brand: { be: Сайт Лёхі, en: Lex's site }
   index: { be: Галоўная, en: Home }
   experience: { be: Кар'ера, en: Career }
   about: { be: Пра мяне, en: About }

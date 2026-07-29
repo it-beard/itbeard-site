@@ -2,9 +2,9 @@ import { useEffect } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import { REDIRECTS } from '../data/site'
 
-export default function Redirector() {
+export default function Redirector({ to }) {
   const { key } = useParams()
-  const target = REDIRECTS[key?.toLowerCase()]
+  const target = to ?? REDIRECTS[key?.toLowerCase()]
 
   useEffect(() => {
     if (target) window.location.replace(target)

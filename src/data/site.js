@@ -366,6 +366,9 @@ export const CRYPTO_WALLETS = [
   },
 ]
 
+export const MEDIAKIT_URL =
+  'https://docs.google.com/document/d/1IYkdSA9oy5wozg7wVaC673yZ2h8VG0jQVsOkjy9bVe0/edit?tab=t.0'
+
 export const REDIRECTS = {
   mediakit: 'https://itbeard.com/assets/mediakit-itbeard_en.pdf',
   'mediakit-more': 'https://docs.google.com/document/d/1IYkdSA9oy5wozg7wVaC673yZ2h8VG0jQVsOkjy9bVe0',

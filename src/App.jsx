@@ -8,6 +8,7 @@ import Support from './pages/Support'
 import Contacts from './pages/Contacts'
 import NotFound from './pages/NotFound'
 import Redirector from './pages/Redirector'
+import { MEDIAKIT_URL } from './data/site'
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/help" element={<Support />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/beard-news" element={<Navigate to="/archive" replace />} />
+            <Route path="/mediakit" element={<Redirector to={MEDIAKIT_URL} />} />
             <Route path="/s/:key" element={<Redirector />} />
             <Route path="*" element={<NotFound />} />
           </Route>

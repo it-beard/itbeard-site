@@ -19,7 +19,7 @@ export const PROJECTS = [
   },
   {
     id: 'kalasyai',
-    url: 'https://youtube.com/@kalasyai',
+    url: 'https://kalasy.ai',
     image: '/images/kalasyai.webp',
     started: 2025,
     lang: 'be',

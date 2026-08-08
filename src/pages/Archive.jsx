@@ -18,6 +18,9 @@ function formatDuration(years, labels) {
 
 const NOW = new Date().getFullYear()
 
+// `lang` is a single code or an array for multilingual projects
+const langsOf = (p) => (Array.isArray(p.lang) ? p.lang : p.lang ? [p.lang] : [])
+
 export default function Archive() {
   const { lang } = useLang()
   const page = getPage('archive', lang)
@@ -34,9 +37,18 @@ export default function Archive() {
     .replace('{dormant}', dormantCount)
 
   const [filter, setFilter] = useState('all')
+  const [langFilter, setLangFilter] = useState('all')
   const typeCount = (type) =>
     type === 'all' ? total : ARCHIVE_PROJECTS.filter((p) => p.types?.includes(type)).length
-  const shown = filter === 'all' ? ARCHIVE_PROJECTS : ARCHIVE_PROJECTS.filter((p) => p.types?.includes(filter))
+  const langCount = (code) =>
+    code === 'all' ? total : ARCHIVE_PROJECTS.filter((p) => langsOf(p).includes(code)).length
+  // language chips in the shared-labels order, only for languages present in the archive
+  const archiveLangs = Object.keys(shared.labels.langNames).filter((code) => langCount(code) > 0)
+  const shown = ARCHIVE_PROJECTS.filter(
+    (p) =>
+      (filter === 'all' || p.types?.includes(filter)) &&
+      (langFilter === 'all' || langsOf(p).includes(langFilter))
+  )
 
   return (
     <main>
@@ -70,10 +82,23 @@ export default function Archive() {
             </button>
           ))}
         </div>
+        <div className="filter-chips filter-chips-langs" role="group" aria-label={page.langFiltersLabel}>
+          {archiveLangs.map((code) => (
+            <button
+              key={code}
+              type="button"
+              className="filter-chip"
+              aria-pressed={langFilter === code}
+              onClick={() => setLangFilter(langFilter === code ? 'all' : code)}
+            >
+              {shared.labels.langNames[code]} <span className="chip-count">{langCount(code)}</span>
+            </button>
+          ))}
+        </div>
       </section>
 
       <section className="container section">
-        <div key={filter} className="cards cards-fade">
+        <div key={`${filter}-${langFilter}`} className="cards cards-fade">
           {shown.map((p) => {
             const card = intro.subs.find((s) => s.id === p.id)
             if (!card) return null
@@ -88,14 +113,15 @@ export default function Archive() {
                     <span className="range-chip" title={shared.labels.sinceHint}>
                       {shared.labels.since} {p.started}
                     </span>
-                    {p.lang && (
+                    {langsOf(p).map((code) => (
                       <span
+                        key={code}
                         className="badge badge-static badge-lang"
-                        title={`${shared.labels.langHint}: ${shared.labels.langNames[p.lang]}`}
+                        title={`${shared.labels.langHint}: ${shared.labels.langNames[code]}`}
                       >
-                        {shared.labels.langCodes[p.lang]}
+                        {shared.labels.langCodes[code]}
                       </span>
-                    )}
+                    ))}
                   </div>
                 </div>
                 <Md className="card-body prose" html={card.html} />

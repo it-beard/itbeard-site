@@ -984,6 +984,11 @@ body.theme-restore #app {
   margin-top: 20px;
 }
 
+/* language chips sit right under the category row */
+.filter-chips-langs {
+  margin-top: 10px;
+}
+
 .filter-chip {
   display: inline-flex;
   align-items: center;

@@ -33,6 +33,7 @@ legend:
       warm-tinted cards — slow-burning ones: something shows up there
       from time to time, but the status is uncertain
 filtersLabel: { be: Фільтр праектаў па кірунках, en: Filter projects by direction }
+langFiltersLabel: { be: Фільтр праектаў па мовах, en: Filter projects by language }
 filters:
   all: { be: Усе, en: All }
   video: { be: Відэа, en: Video }

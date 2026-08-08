@@ -65,6 +65,7 @@ export const PROJECTS = [
 
 // dormant projects (no `closed`) are listed first, then closed ones by close year
 // `types` — categories for the archive filter; a project may belong to several
+// `lang` — a single code or an array for multilingual projects
 export const ARCHIVE_PROJECTS = [
   {
     id: 'uladar',
@@ -90,6 +91,7 @@ export const ARCHIVE_PROJECTS = [
     started: 2021,
     dormant: true,
     url: 'https://github.com/it-beard/bloggers-cms',
+    lang: ['ru'],
     types: ['code'],
   },
   {
@@ -130,12 +132,13 @@ export const ARCHIVE_PROJECTS = [
     types: ['podcast', 'video'],
   },
   {
-    // community project with a bilingual (en/ru) audience — no language label
+    // community project with a bilingual (en/ru) audience
     id: 'aia-catalog',
     image: '/images/aia-catalog-logo.webp',
     started: 2024,
     closed: 2025,
     url: 'https://awclub.github.io/catalog/',
+    lang: ['ru', 'en'],
     types: ['code', 'community'],
   },
   {
@@ -227,11 +230,12 @@ export const ARCHIVE_PROJECTS = [
     types: ['education'],
   },
   {
-    // international project — no language label
+    // international project with a bilingual (en/ru) audience
     id: 'pushka',
     image: '/images/pushka-logo.webp',
     started: 2015,
     closed: 2018,
+    lang: ['ru', 'en'],
     types: ['education', 'code'],
   },
   {

@@ -39,6 +39,9 @@ export default function Home() {
             <a href="https://vkl.world/@itbeard" target="_blank" rel="noopener" className="mastodon" title="Mastodon">
               <i className="fab fa-brands fa-mastodon"></i>
             </a>
+            <a href="https://instagram.com/iamitbeard" target="_blank" rel="noopener" className="instagram" title="Instagram">
+              <i className="fab fa-brands fa-instagram"></i>
+            </a>
             <a href="https://www.linkedin.com/in/akartynnik" target="_blank" rel="noopener" className="linkedin" title="LinkedIn">
               <i className="fab fa-brands fa-linkedin-in"></i>
             </a>

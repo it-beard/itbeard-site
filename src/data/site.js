@@ -282,8 +282,8 @@ export const CONTACT_LINKS = {
     color: '#8c7dff',
   },
   instagram: {
-    href: 'https://instagram.com/iamsetivir',
-    text: 'instagram.com/iamsetivir',
+    href: 'https://instagram.com/iamitbeard',
+    text: 'instagram.com/iamitbeard',
     icon: 'fab fa-instagram',
     color: '#E1306C',
   },

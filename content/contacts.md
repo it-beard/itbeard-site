@@ -31,7 +31,7 @@ groups:
       - id: ciomnylos-telegram
         label: { be: ТГ-канал «Цёмны Лёс», en: Ciomny Los on Telegram }
       - id: instagram
-        label: { be: Instagram «Setivir», en: Setivir on Instagram }
+        label: { be: Instagram, en: Instagram }
       - id: blog-telegram
         label: { be: ТГ-канал «АйЦіБарада», en: ITBeard on Telegram }
 ---

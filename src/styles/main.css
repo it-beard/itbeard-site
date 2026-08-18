@@ -1946,6 +1946,13 @@ body.theme-restore #app {
   text-shadow: none;
 }
 
+.social a.instagram:hover {
+  border-color: #e1306c;
+  color: #e1306c;
+  box-shadow: 0 0 10px rgba(225, 48, 108, 0.5);
+  text-shadow: none;
+}
+
 .social a.linkedin:hover {
   border-color: #4c9ce8;
   color: #4c9ce8;

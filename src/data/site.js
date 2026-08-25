@@ -250,6 +250,16 @@ export const ARCHIVE_PROJECTS = [
     types: ['code', 'art'],
   },
   {
+    // trilingual (be/ru/en) marketplace showcase
+    id: 'svarog',
+    image: '/images/svarog-logo.webp',
+    started: 2016,
+    closed: 2016,
+    hideDuration: true,
+    lang: ['be', 'ru', 'en'],
+    types: ['code', 'community'],
+  },
+  {
     id: 'physlib',
     image: '/images/physlib_logo.webp',
     started: 2010,

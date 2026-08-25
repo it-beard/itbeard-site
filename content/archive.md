@@ -178,6 +178,12 @@ filters:
 
 Гульня дагэтуль жыве на тэлевізарах LG (бясплатна ў LG Gaming Portal), а картка вядзе на відэаагляд.
 
+## Svarog {#svarog}
+
+**Svarog** — крама славянскіх рамесьнікаў: вітрына беларускіх майстроў на беларускай, расейскай і ангельскай мовах, якую мы рабілі з братам у першай палове 2016 году.
+
+База майстроў і сам партал тэхнічна былі гатовыя, але праект так і не пабачыў сьвет — захлынуўся на этапе раскаткі на прадакшан. А лёс у яго мог скласьціся вялікі: прасоўваць беларускіх рамесьнікаў на ўвесь сьвет.
+
 ## PhysLib {#physlib}
 
 **PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: канспэкты лекцый, падручнікі, мэтадычкі і лабараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мною бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
@@ -323,6 +329,12 @@ We won the MTS «Telecom Idea 2015» competition and joined the GenerationS acce
 We built it in 2016 together with my friends Zhenya Buturlia and Liosha Maiseyonak during an LG hackathon in Minsk — and took third place there.
 
 The game still lives on LG TVs (free in the LG Gaming Portal), and this card leads to a video review.
+
+## Svarog {#svarog}
+
+**Svarog** — a marketplace for Slavic artisans: a showcase of Belarusian craftspeople in Belarusian, Russian and English, which my brother and I built in the first half of 2016.
+
+The artisan database and the portal itself were technically ready, but the project never saw the light of day — it stalled at the production rollout stage. It could have had a big destiny: promoting Belarusian artisans to the whole world.
 
 ## PhysLib {#physlib}
 

@@ -27,6 +27,16 @@ const MONTHS = {
   en: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
 }
 
+// Pick the noun form for a count: 1 год / 2–4 гады / 5+ гадоў, respecting 11–14.
+// `forms` is { one, few, many }; English labels simply repeat the plural in few/many.
+export function plural(n, forms) {
+  const mod10 = n % 10
+  const mod100 = n % 100
+  if (mod10 === 1 && mod100 !== 11) return forms.one
+  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return forms.few
+  return forms.many
+}
+
 // Extract the four-digit year from a start value (ISO date or bare year).
 export function startYear(value) {
   const m = /^(\d{4})/.exec(String(value ?? ''))

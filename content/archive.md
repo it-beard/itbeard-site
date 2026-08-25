@@ -216,7 +216,7 @@ A deep bow to everyone who put their hands, time and heart into these projects. 
 
 **«ITBeard»** is a big YouTube channel dedicated to IT, technology, and science.
 
-On it, I made science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people, and shared my knowledge of IT and AI.
+On it, I make science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people, and share my knowledge of IT and AI.
 
 ## The Lord of the Rings {#uladar}
 

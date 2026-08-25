@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLang } from '../lib/LangContext'
-import { getPage, getSection, mdInline } from '../lib/content'
+import { getPage, getSection, mdInline, plural } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
@@ -9,11 +9,7 @@ import { ARCHIVE_PROJECTS } from '../data/site'
 // «5 гадоў»: 1 год / 2–4 гады / інакш гадоў, respecting 11–14
 function formatDuration(years, labels) {
   if (years < 1) return labels.lessThanYear
-  const mod10 = years % 10
-  const mod100 = years % 100
-  if (mod10 === 1 && mod100 !== 11) return `${years} ${labels.yearOne}`
-  if (mod10 >= 2 && mod10 <= 4 && (mod100 < 12 || mod100 > 14)) return `${years} ${labels.yearFew}`
-  return `${years} ${labels.yearMany}`
+  return `${years} ${plural(years, { one: labels.yearOne, few: labels.yearFew, many: labels.yearMany })}`
 }
 
 const NOW = new Date().getFullYear()

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
-import { getPage, getSection, mdInline, mdText, startYear, startTooltip } from '../lib/content'
+import { getPage, getSection, mdInline, mdText, plural, startYear, startTooltip } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
@@ -19,7 +19,9 @@ export default function Home() {
   const counterHint = page.counterHint
     .replace('{total}', total)
     .replace('{commercial}', PROJECTS.filter((p) => p.commercial).length)
-  const pahostHtml = mdText(page.pahost.text.replace('{count}', ARCHIVE_PROJECTS.length))
+  // «25 гісторый» — number + noun in the right form
+  const archived = ARCHIVE_PROJECTS.length
+  const pahostHtml = mdText(page.pahost.text.replace('{stories}', `${archived} ${plural(archived, page.pahost.stories)}`))
   // touch press flips the hero photo (hover emulation for mobile)
   const [flipped, setFlipped] = useState(false)
 

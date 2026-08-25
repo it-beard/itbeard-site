@@ -7,7 +7,7 @@ Key facts:
 - Professional software engineer since 2008; intensive backend development since 2012.
 - Since 2023 teaches developers how to work with AI tools and AI-assisted programming practices.
 - Founder of Evocoders («Эвалюцыя Кода», since May 2024) — a private club for developers who strengthen their programming skills by learning and using AI tools and practices.
-- Author of the YouTube channel «АйЦіБарада» (ITBeard) — IT, technology, and science interviews.
+- Author of the YouTube channel «АйЦіБарада» (ITBeard) — IT, technology, and science interviews; the channel is now dormant and listed in the project archive.
 - Author of the YouTube channel and podcast «Цёмны Лёс» (Ciomny Los) — conversations with Belarusians about their crafts.
 - Co-host of AI podcasts: «Каласы пад сярпом ШІ» (KPSAI) and «на Вайбе» (on Vibe) — biweekly AI news podcasts in Belarusian and Russian.
 - Founder of VKL.world — the largest Belarusian-language community on the Mastodon network.

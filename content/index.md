@@ -27,6 +27,17 @@ counterHint:
     Усяго актыўных праектаў: {total}. Зь іх камерцыйных — {commercial}
   en: >
     Total active projects: {total}. Commercial — {commercial}
+pahost:
+  text:
+    be: >-
+      Праекты не паміраюць — яны сыходзяць на пагост. Тыя, што ўжо скончыліся
+      ці цякуць млява, спачываюць на **[Пагосьце праектаў](/archive)**:
+      {count} гісторый, і ў кожнай — кавалак мяне.
+    en: >-
+      Projects don't die — they retire to the pahost. The ones that have ended
+      or are slow-burning rest in the **[Pahost of projects](/archive)**:
+      {count} stories, each with a piece of me in it.
+  link: { be: Зазірнуць на Пагост, en: Visit the Pahost }
 ---
 
 <!-- be -->

@@ -1044,6 +1044,45 @@ body.theme-restore #app {
   }
 }
 
+/* ===== Pahost teaser under the active projects (home) ===== */
+.pahost-teaser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 640px;
+  margin: 40px auto 8px;
+}
+
+.pahost-teaser .ornament-sm {
+  justify-content: center;
+  margin: 0 0 14px;
+}
+
+.pahost-teaser-text p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.pahost-teaser-text a {
+  color: var(--accent-hover);
+}
+
+.pahost-teaser-btn {
+  margin-top: 18px;
+  gap: 8px;
+}
+
+.pahost-teaser-btn span {
+  transition: transform 0.25s;
+}
+
+.pahost-teaser-btn:hover span {
+  transform: translateX(3px);
+}
+
 /* project counter next to section headings (pahost, home projects) */
 .pahost-count {
   font-size: 0.55em;

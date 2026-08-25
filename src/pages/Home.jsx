@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
-import { getPage, getSection, mdInline, startYear, startTooltip } from '../lib/content'
+import { getPage, getSection, mdInline, mdText, startYear, startTooltip } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
-import { PROJECTS } from '../data/site'
+import { PROJECTS, ARCHIVE_PROJECTS } from '../data/site'
 
 export default function Home() {
   const { lang } = useLang()
@@ -19,6 +19,7 @@ export default function Home() {
   const counterHint = page.counterHint
     .replace('{total}', total)
     .replace('{commercial}', PROJECTS.filter((p) => p.commercial).length)
+  const pahostHtml = mdText(page.pahost.text.replace('{count}', ARCHIVE_PROJECTS.length))
   // touch press flips the hero photo (hover emulation for mobile)
   const [flipped, setFlipped] = useState(false)
 
@@ -125,6 +126,15 @@ export default function Home() {
             )
           })}
         </div>
+
+        {/* invitation to the pahost — where finished and slow-burning projects rest */}
+        <aside className="pahost-teaser">
+          <Ornament small />
+          <Md className="pahost-teaser-text prose" html={pahostHtml} />
+          <Link to="/archive" className="btn btn-secondary pahost-teaser-btn">
+            {page.pahost.link} <span aria-hidden="true">→</span>
+          </Link>
+        </aside>
       </section>
     </main>
   )

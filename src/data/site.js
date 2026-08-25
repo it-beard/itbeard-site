@@ -240,6 +240,16 @@ export const ARCHIVE_PROJECTS = [
     types: ['education', 'code'],
   },
   {
+    id: 'tribute-to-xonix',
+    image: '/images/tribute-to-xonix-logo.webp',
+    started: 2016,
+    closed: 2016,
+    hideDuration: true,
+    url: 'https://www.youtube.com/watch?v=w5W_BYinCXg',
+    lang: 'en',
+    types: ['code', 'art'],
+  },
+  {
     id: 'physlib',
     image: '/images/physlib_logo.webp',
     started: 2010,

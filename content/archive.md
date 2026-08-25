@@ -170,6 +170,14 @@ filters:
 
 Перамога ў конкурсе МТС «Telecom Idea 2015», акселератар GenerationS — але праз два з паловай гады каманда разышлася.
 
+## Tribute to Xonix {#tribute-to-xonix}
+
+**Tribute to Xonix** — гульня для тэлевізараў LG на webOS, прысьвечаная легендарнай аркадзе Xonix: адразаеш кавалкі поля, уцякаючы ад ворагаў, і мусіш заняць 80% плошчы, каб прайсьці далей.
+
+Мы зрабілі яе ў 2016 годзе разам з маімі сябрамі Жэням Бутурлёй і Лёшам Майсеёнкам падчас хакатону ад LG у Менску — і занялі там трэцяе месца.
+
+Гульня дагэтуль жыве на тэлевізарах LG (бясплатна ў LG Gaming Portal), а картка вядзе на відэаагляд.
+
 ## PhysLib {#physlib}
 
 **PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: канспэкты лекцый, падручнікі, мэтадычкі і лабараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мною бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
@@ -307,6 +315,14 @@ The school's [YouTube channel](https://www.youtube.com/@genesis-academy) and [Gi
 **PUSHka** — an educational startup, a smart assistant for online learning.
 
 We won the MTS «Telecom Idea 2015» competition and joined the GenerationS accelerator — but after two and a half years the team went separate ways.
+
+## Tribute to Xonix {#tribute-to-xonix}
+
+**Tribute to Xonix** — a game for LG webOS TVs, a homage to the legendary Xonix arcade: you carve off pieces of the field while dodging enemies, and must claim 80% of the area to move on.
+
+We built it in 2016 together with my friends Zhenya Buturlia and Liosha Maiseyonak during an LG hackathon in Minsk — and took third place there.
+
+The game still lives on LG TVs (free in the LG Gaming Portal), and this card leads to a video review.
 
 ## PhysLib {#physlib}
 

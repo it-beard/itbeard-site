@@ -51,12 +51,6 @@ Mastodon — разьмеркаваны аналаг Twitter, без рэкла�
 
 Таксама на канале я дзялюся асабістым досьведам працы з ШІ і выкладваю запісы сваіх выступаў.
 
-## АйЦіБарада {#itbeard}
-
-**«АйЦіБарада»** — буйны YouTube-канал, прысьвечаны IT, тэхналогіям і навуцы.
-
-На ім я раблю калянавуковыя і тэхнічныя інтэрв'ю пра мовы праграмаваньня, тэхналогіі, прафесіі і вядомых людзей, а таксама часамі дзялюся ведамі ў галіне IT і ШІ.
-
 ## Эвалюцыя Кода {#evocode}
 
 **«Эвалюцыя Кода»** — закрыты клуб для распрацоўшчыкаў і распрацоўшчыц, якія ўзмацняюць навыкі праграмаваньня праз вывучэньне і выкарыстаньне ШІ-інструментаў і практык.
@@ -102,12 +96,6 @@ Mastodon is a distributed analogue of Twitter, without ads, AI algorithms, or th
 **«Цёмны Лёс»** (*Ciomny Los*, “Dark Fate”) is a YouTube channel and podcast of the same name, where I talk with interesting Belarusians about what they do: from stand-up, computer games, and music to Warhammer, neural networks, and science.
 
 On the channel, I also share my personal experience of working with AI and post recordings of my talks.
-
-## ITBeard {#itbeard}
-
-**«ITBeard»** is a big YouTube channel dedicated to IT, technology, and science.
-
-On it, I make science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people, and sometimes share my knowledge of IT and AI.
 
 ## Evocoders {#evocode}
 

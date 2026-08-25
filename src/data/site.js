@@ -10,14 +10,6 @@ export const PROJECTS = [
     lang: 'be',
   },
   {
-    id: 'itbeard',
-    url: 'https://youtube.com/@itbeard',
-    image: '/images/itbeard-300.webp',
-    commercial: true,
-    started: '2018-04-11',
-    lang: 'ru',
-  },
-  {
     id: 'kalasyai',
     url: 'https://kalasy.ai',
     image: '/images/kalasyai.webp',
@@ -67,6 +59,15 @@ export const PROJECTS = [
 // `types` — categories for the archive filter; a project may belong to several
 // `lang` — a single code or an array for multilingual projects
 export const ARCHIVE_PROJECTS = [
+  {
+    id: 'itbeard',
+    image: '/images/itbeard-300.webp',
+    started: 2018,
+    dormant: true,
+    url: 'https://youtube.com/@itbeard',
+    lang: 'ru',
+    types: ['video'],
+  },
   {
     id: 'uladar',
     image: '/images/uladar-logo.webp',

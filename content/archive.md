@@ -52,6 +52,12 @@ filters:
 
 Нізкі паклон кожнаму, хто ўкладаў у гэтыя праекты свае рукі, час і сэрца. Без вас нічога з гэтага не было б.
 
+## АйЦіБарада {#itbeard}
+
+**«АйЦіБарада»** — буйны YouTube-канал, прысьвечаны IT, тэхналогіям і навуцы.
+
+На ім я рабіў калянавуковыя і тэхнічныя інтэрв'ю пра мовы праграмаваньня, тэхналогіі, прафесіі і вядомых людзей, а таксама дзяліўся ведамі ў галіне IT і ШІ.
+
 ## Уладар Пярсьцёнкаў {#uladar}
 
 **«Уладар Пярсьцёнкаў па-беларуску»** — YouTube-канал, дзе я паціху агучваю «Ўладара Пярсьцёнкаў» паводле перакладу Дзьмітрыя Магілеўцава й Крысьціны Курчанковай.
@@ -183,6 +189,12 @@ filters:
 In this quiet *pahost* — a Belarusian resting place — lie my projects: not all of them, only the most notable ones. Some are closed: they played their part and went to rest. Others are slow-burning, still showing signs of life from time to time. Each of them is a piece of my journey — and chances are, one of them is exactly how you know me.
 
 A deep bow to everyone who put their hands, time and heart into these projects. None of this would have existed without you.
+
+## ITBeard {#itbeard}
+
+**«ITBeard»** is a big YouTube channel dedicated to IT, technology, and science.
+
+On it, I made science-adjacent and technical interviews about programming languages, technologies, professions, and well-known people, and shared my knowledge of IT and AI.
 
 ## The Lord of the Rings {#uladar}
 

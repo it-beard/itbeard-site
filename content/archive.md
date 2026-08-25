@@ -184,6 +184,14 @@ filters:
 
 База майстроў і сам партал тэхнічна былі гатовыя, але праект так і не пабачыў сьвет — захлынуўся на этапе раскаткі на прадакшан. А лёс у яго мог скласьціся вялікі: прасоўваць беларускіх рамесьнікаў на ўвесь сьвет.
 
+## Православная свеча {#svecha}
+
+**«Православная свеча»** — праект, які я рабіў у 2016 годзе разам са знаёмымі, у тым ліку з настаяцелем жыровіцкага храма.
+
+Ён мусіў стаць адзіным месцам для онлайн-набыцьця сьвечак і замовы малітваў па ўсіх цэрквах Беларусі, а таксама парталам з асабістымі старонкамі цэркваў і навінамі для прыходаў — адзіным царкоўным парталам краіны.
+
+Тэхнічную базу я цалкам скончыў, але праект так і не пайшоў у жыцьцё праз бюракратызаванасьць царкоўнай вярхушкі.
+
 ## PhysLib {#physlib}
 
 **PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: канспэкты лекцый, падручнікі, мэтадычкі і лабараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мною бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
@@ -335,6 +343,14 @@ The game still lives on LG TVs (free in the LG Gaming Portal), and this card lea
 **Svarog** — a marketplace for Slavic artisans: a showcase of Belarusian craftspeople in Belarusian, Russian and English, which my brother and I built in the first half of 2016.
 
 The artisan database and the portal itself were technically ready, but the project never saw the light of day — it stalled at the production rollout stage. It could have had a big destiny: promoting Belarusian artisans to the whole world.
+
+## Orthodox Candle {#svecha}
+
+**«Православная свеча»** (“Orthodox Candle”) — a project I built in 2016 together with acquaintances, including the rector of the Zhyrovichy church.
+
+It was meant to become a single place to buy candles online and order prayers across all churches in Belarus, as well as a portal with personal pages for churches and news for parishes — the one church portal of the country.
+
+I fully finished the technical foundation, but the project never came to life because of the bureaucracy of the church leadership.
 
 ## PhysLib {#physlib}
 

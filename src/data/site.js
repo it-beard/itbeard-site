@@ -247,7 +247,7 @@ export const ARCHIVE_PROJECTS = [
     hideDuration: true,
     url: 'https://www.youtube.com/watch?v=w5W_BYinCXg',
     lang: 'en',
-    types: ['code', 'art'],
+    types: ['code'],
   },
   {
     // trilingual (be/ru/en) marketplace showcase
@@ -257,6 +257,15 @@ export const ARCHIVE_PROJECTS = [
     closed: 2016,
     hideDuration: true,
     lang: ['be', 'ru', 'en'],
+    types: ['code', 'community'],
+  },
+  {
+    id: 'svecha',
+    image: '/images/svecha-logo.webp',
+    started: 2016,
+    closed: 2016,
+    hideDuration: true,
+    lang: 'ru',
     types: ['code', 'community'],
   },
   {

@@ -78,6 +78,15 @@ export const ARCHIVE_PROJECTS = [
     types: ['video', 'art'],
   },
   {
+    id: 'elist',
+    image: '/images/elist-logo.webp',
+    started: 2026,
+    dormant: true,
+    url: 'https://elist.itbeard.com/',
+    lang: 'be',
+    types: ['code', 'community'],
+  },
+  {
     id: 'lex-kartynnik',
     image: '/images/lex-kartynnik-logo.webp',
     started: 2023,

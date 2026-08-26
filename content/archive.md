@@ -74,6 +74,12 @@ filters:
 
 Код адкрыты на GitHub; час ад часу абнаўляю пад свае патрэбы.
 
+## Elist {#elist}
+
+**Elist** — сэрвіс для зручнага і бясьпечнага пошуку па Рэспубліканскім сьпісе экстрэмісцкіх матэрыялаў Беларусі: можна праверыць нік, Telegram-канал, сайт ці кнігу — і сябе ў тым ліку.
+
+Сайт ня мае базы дадзеных і цалкам працуе ў браўзэры карыстальніка — нічога не зьбірае і не адпраўляе. Ёсьць RSS-стужка, Telegram-бот і магчымасьць адсочваць новыя запісы па сваіх пошукавых запытах. Код адкрыты на GitHub.
+
 ## Lex Kartynnik {#lex-kartynnik}
 
 **«Lex Kartynnik»** — мой англамоўны YouTube-канал пра навуку, праграмаваньне і ШІ.
@@ -233,6 +239,12 @@ The music is available on all major music platforms, and this card leads to the 
 **Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
 
 The code is open on GitHub; I update it now and then for my own needs.
+
+## Elist {#elist}
+
+**Elist** — a service for convenient and safe searching through the Republican list of extremist materials of Belarus: you can check a nickname, a Telegram channel, a website or a book — including yourself.
+
+The site has no database and runs entirely in the user's browser — it collects and sends nothing. It has an RSS feed, a Telegram bot, and the ability to track new entries matching your search queries. The code is open on GitHub.
 
 ## Lex Kartynnik {#lex-kartynnik}
 

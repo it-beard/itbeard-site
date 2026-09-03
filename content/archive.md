@@ -76,9 +76,9 @@ filters:
 
 ## Elist {#elist}
 
-**Elist** — сэрвіс для зручнага і бясьпечнага пошуку па Рэспубліканскім сьпісе экстрэмісцкіх матэрыялаў Беларусі: можна праверыць нік, Telegram-канал, сайт ці кнігу — і сябе ў тым ліку.
+**Elist** — пошук па экстрэмісцкіх сьпісах Беларусі: па Рэспубліканскім сьпісе экстрэмісцкіх матэрыялаў і па пераліку экстрэмісцкіх фарміраваньняў МУС/КДБ. Можна праверыць нік, Telegram-канал, сайт ці кнігу — і сябе ў тым ліку.
 
-Сайт ня мае базы дадзеных і цалкам працуе ў браўзэры карыстальніка — нічога не зьбірае і не адпраўляе. Ёсьць RSS-стужка, Telegram-бот і магчымасьць адсочваць новыя запісы па сваіх пошукавых запытах. Код адкрыты на GitHub.
+Сьпісы абнаўляюцца штодня. Сайт ня мае базы дадзеных і цалкам працуе ў браўзэры карыстальніка, а пасьля першага адкрыцьця — і афлайн; нічога не зьбірае і не адпраўляе. Ёсьць сьпіс назіраньня з апавяшчэньнямі па сваіх запытах, RSS-стужка і дайджэст у Telegram. Код адкрыты на GitHub.
 
 ## Lex Kartynnik {#lex-kartynnik}
 
@@ -242,9 +242,9 @@ The code is open on GitHub; I update it now and then for my own needs.
 
 ## Elist {#elist}
 
-**Elist** — a service for convenient and safe searching through the Republican list of extremist materials of Belarus: you can check a nickname, a Telegram channel, a website or a book — including yourself.
+**Elist** — a search across the extremist lists of Belarus: the Republican list of extremist materials and the Interior Ministry/KGB register of extremist formations. You can check a nickname, a Telegram channel, a website or a book — including yourself.
 
-The site has no database and runs entirely in the user's browser — it collects and sends nothing. It has an RSS feed, a Telegram bot, and the ability to track new entries matching your search queries. The code is open on GitHub.
+The lists are updated daily. The site has no database and runs entirely in the user's browser — offline too, after the first visit; it collects and sends nothing. There is a watchlist with notifications for your queries, an RSS feed and a Telegram digest. The code is open on GitHub.
 
 ## Lex Kartynnik {#lex-kartynnik}
 

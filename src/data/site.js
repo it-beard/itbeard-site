@@ -78,15 +78,6 @@ export const ARCHIVE_PROJECTS = [
     types: ['video', 'art'],
   },
   {
-    id: 'elist',
-    image: '/images/elist-logo.webp',
-    started: 2026,
-    dormant: true,
-    url: 'https://elist.itbeard.com/',
-    lang: 'be',
-    types: ['code', 'community'],
-  },
-  {
     id: 'lex-kartynnik',
     image: '/images/lex-kartynnik-logo.webp',
     started: 2023,
@@ -103,6 +94,15 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://github.com/it-beard/bloggers-cms',
     lang: ['ru'],
     types: ['code'],
+  },
+  {
+    id: 'elist',
+    image: '/images/elist-logo.webp',
+    started: 2026,
+    closed: 2026,
+    url: 'https://elist.itbeard.com/',
+    lang: ['be', 'en'],
+    types: ['code', 'community'],
   },
   {
     id: 'tvoj-ai',

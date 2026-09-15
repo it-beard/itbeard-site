@@ -383,30 +383,6 @@ export const CRYPTO_WALLETS = [
     coin: 'USDT (TON)',
     address: 'UQC86cyjCPr_GMCMF7egShO835tgntiBGceZwVr9ilFp_14u',
   },
-  {
-    coin: 'SOL',
-    address: '2ZK7hJ8pQ5NXb2ezRtdKWXSAvHLZDMpPKJe5xw5Ak76Y',
-  },
-  {
-    coin: 'DOT',
-    address: '13bYtwi73W4Z2rJoyWxdMiaVQrq1S3PkhzzsGrNzfdHcSFoQ',
-  },
-  {
-    coin: 'NEAR',
-    address: 'cfe98a5294eb92a6affba80b8265d00c2f09a6a169a8a9da7712ed6e6b951e71',
-  },
-  {
-    coin: 'XTZ',
-    address: 'tz1Ppo34Z8TfBSo6bhFZ6qSwTGU3L3FqXJJr',
-  },
-  {
-    coin: 'LTC',
-    address: 'ltc1qj8e0jrxc3wx7pfmjfyyjkg8hf2ajs9ecp5wwr2',
-  },
-  {
-    coin: 'DOGE',
-    address: 'DFFZkkTsiyEKbGbK2ANACiB35wQU5iJAPk',
-  },
 ]
 
 export const MEDIAKIT_URL =

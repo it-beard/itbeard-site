@@ -20,7 +20,7 @@ Key facts:
 - [About](https://itbeard.com/about): biography, key events, and facts
 - [Career](https://itbeard.com/experience): professional timeline since 2008
 - [Project archive](https://itbeard.com/archive): finished and dormant projects
-- [Support](https://itbeard.com/support): donation options (card, crypto, Patreon, merch)
+- [Thank me](https://itbeard.com/support): ways to say thanks via Buy Me a Coffee, Patreon, Tribute, or cryptocurrency
 - [Contacts](https://itbeard.com/contacts): Telegram, email, Mastodon, LinkedIn, GitHub
 
 ## Elsewhere

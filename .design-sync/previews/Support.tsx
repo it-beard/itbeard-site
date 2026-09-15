@@ -16,7 +16,7 @@ const Dark = ({ children }: { children?: any }) => {
   )
 }
 
-// Support page: donation options and crypto wallet rows with copy buttons
+// Thank-you page: branded option cards and crypto wallet rows with copy buttons
 // (CRYPTO_WALLETS data). Copy feedback is interaction-only.
 export const Default = () => (
   <Dark>

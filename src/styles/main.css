@@ -1734,6 +1734,16 @@ body.theme-restore #app {
   max-width: 760px;
 }
 
+.support-intro {
+  margin-bottom: 4px;
+}
+
+.support-intro p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
 .support-card {
   padding: 24px 26px;
   border-radius: var(--radius);
@@ -1741,10 +1751,46 @@ body.theme-restore #app {
   background: var(--bg-raised);
 }
 
+.support-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
 .support-card h2 {
   font-size: 22px;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   color: var(--text);
+}
+
+.support-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.support-logo-buymeacoffee {
+  color: #111;
+  background: #ffdd00;
+}
+
+.support-logo-patreon {
+  background: #ff424d;
+}
+
+.support-logo-tribute {
+  background: #2aabee;
+}
+
+.support-logo-crypto {
+  background: #f7931a;
 }
 
 .support-card .prose p {

@@ -65,7 +65,7 @@ theme:
     en: True tech lovers have no idea what a light theme is!
 footer:
   contacts: { be: Мае кантакты, en: My contacts }
-  support: { be: Падтрымаць, en: Support }
+  support: { be: Падзякаваць, en: Say thanks }
   github:
     be: "Код гэтага сайта на [GitHub](https://github.com/it-beard/itbeard-site)"
     en: "The code of this site on [GitHub](https://github.com/it-beard/itbeard-site)"

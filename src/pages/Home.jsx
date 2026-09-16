@@ -72,7 +72,7 @@ export default function Home() {
           onContextMenu={(e) => e.preventDefault()}
         >
           <div className="photo-coin">
-            <img className="coin-front" src="/images/lex-linkedin.webp" alt={page.hero.name} />
+            <img className="coin-front" src="/images/lex-portrait.webp" alt={page.hero.name} />
             <img className="coin-back" src="/images/itbeard-funny.webp" alt="" />
           </div>
         </div>

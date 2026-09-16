@@ -660,7 +660,7 @@ body.theme-restore #app {
   }
 }
 
-/* the photo is a two-sided coin: LinkedIn portrait by default,
+/* the photo is a two-sided coin: portrait by default,
    flips to the funny one on hover */
 .photo-coin {
   position: relative;

@@ -41,6 +41,7 @@ filters:
   education: { be: Адукацыя, en: Education }
   community: { be: Супольнасьці, en: Communities }
   code: { be: Праграмаваньне, en: Programming }
+  games: { be: Гульні, en: Games }
   art: { be: Творчасьць, en: Creative }
 ---
 

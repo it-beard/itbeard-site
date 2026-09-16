@@ -91,18 +91,20 @@ export const ARCHIVE_PROJECTS = [
     image: '/images/alias-bel-logo.svg',
     started: 2026,
     closed: 2026,
+    hideDuration: true,
     url: 'https://alias.itbeard.com/',
     lang: 'be',
-    types: ['code'],
+    types: ['code', 'games'],
   },
   {
     id: 'elist',
     image: '/images/elist-logo.webp',
     started: 2026,
     closed: 2026,
+    hideDuration: true,
     url: 'https://elist.itbeard.com/',
     lang: ['be', 'en'],
-    types: ['code', 'community'],
+    types: ['code'],
   },
   {
     id: 'tvoj-ai',
@@ -265,7 +267,7 @@ export const ARCHIVE_PROJECTS = [
     hideDuration: true,
     url: 'https://www.youtube.com/watch?v=w5W_BYinCXg',
     lang: 'en',
-    types: ['code'],
+    types: ['code', 'games'],
   },
   {
     // trilingual (be/ru/en) marketplace showcase

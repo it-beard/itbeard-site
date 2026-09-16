@@ -87,15 +87,6 @@ export const ARCHIVE_PROJECTS = [
     types: ['video'],
   },
   {
-    id: 'bloggers-cms',
-    image: '/images/bloggers-cms-logo.svg',
-    started: 2021,
-    dormant: true,
-    url: 'https://github.com/it-beard/bloggers-cms',
-    lang: ['ru'],
-    types: ['code'],
-  },
-  {
     id: 'alias',
     image: '/images/alias-bel-logo.svg',
     started: 2026,
@@ -140,6 +131,15 @@ export const ARCHIVE_PROJECTS = [
     url: 'https://www.skool.com/genai-devhub-5702',
     lang: 'en',
     types: ['community', 'education'],
+  },
+  {
+    id: 'bloggers-cms',
+    image: '/images/bloggers-cms-logo.svg',
+    started: 2021,
+    closed: 2025,
+    url: 'https://github.com/it-beard/bloggers-cms',
+    lang: ['ru'],
+    types: ['code'],
   },
   {
     id: 'aia-podcast',

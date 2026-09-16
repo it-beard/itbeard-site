@@ -72,7 +72,7 @@ filters:
 
 **Bloggers CMS** — уласная сістэма кіраваньня кантэнтам для блогераў: госьці, выпускі, спонсары і ўся кухня канала ў адным месцы.
 
-Код адкрыты на GitHub; час ад часу абнаўляю пад свае патрэбы.
+Код адкрыты на GitHub; абнаўляў пад свае патрэбы, пакуль карыстаўся.
 
 ## Аліяс па-беларуску {#alias}
 
@@ -82,9 +82,9 @@ filters:
 
 ## Elist {#elist}
 
-**Elist** — пошук па экстрэмісцкіх сьпісах Беларусі адразу па чатырох крыніцах: Рэспубліканскі сьпіс экстрэмісцкіх матэрыялаў, пералік экстрэмісцкіх фарміраваньняў МУС/КДБ, пералік фізічных асобаў, прычасных да экстрэмісцкай дзейнасьці, і беларусы ў базе вышуку МУС РФ (паводле «Медыязоны»). Можна праверыць нік, Telegram-канал, сайт, кнігу ці імя — і сябе ў тым ліку.
+**Elist** — пошук па чатырох экстрэмісцкіх сьпісах Беларусі: матэрыялы, фарміраваньні, фізічныя асобы і беларусы ў вышуку МУС РФ. Можна праверыць нік, канал, сайт, кнігу ці імя — і сябе ў тым ліку.
 
-Крыніцы правяраюцца двойчы на дзень. Сайт ня мае базы дадзеных і цалкам працуе ў браўзэры карыстальніка, а пасьля першага адкрыцьця — і афлайн; нічога не зьбірае і не адпраўляе. Ёсьць сьпіс назіраньня з апавяшчэньнямі па сваіх запытах, статыстыка росту сьпісаў, RSS-стужка, Telegram-канал і FAQ пра тое, што пагражае за рэпост. Інтэрфэйс беларускі й ангельскі, код адкрыты на GitHub — распрацоўка завершаная, далей сайт абнаўляецца сам.
+Сайт ня мае базы дадзеных, працуе цалкам у браўзэры і нічога не зьбірае. Ёсьць сьпіс назіраньня, RSS і Telegram-канал. Код адкрыты на GitHub; распрацоўка завершаная, сайт абнаўляецца сам.
 
 ## Lex Kartynnik {#lex-kartynnik}
 
@@ -244,7 +244,7 @@ The music is available on all major music platforms, and this card leads to the 
 
 **Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
 
-The code is open on GitHub; I update it now and then for my own needs.
+The code is open on GitHub; I kept updating it for my own needs while I used it.
 
 ## Alias in Belarusian {#alias}
 
@@ -254,9 +254,9 @@ It runs right in a mobile browser, nothing to install; the game state is saved, 
 
 ## Elist {#elist}
 
-**Elist** — a search across the extremist lists of Belarus, over four sources at once: the Republican list of extremist materials, the Interior Ministry/KGB register of extremist formations, the Interior Ministry list of individuals involved in extremist activity, and Belarusians in the Russian Interior Ministry's wanted database (per Mediazona). You can check a nickname, a Telegram channel, a website, a book or a name — including yourself.
+**Elist** — a search across four extremist lists of Belarus: materials, formations, individuals, and Belarusians in the Russian Interior Ministry's wanted database. You can check a nickname, a channel, a website, a book or a name — including yourself.
 
-The sources are re-checked twice a day. The site has no database and runs entirely in the user's browser — offline too, after the first visit; it collects and sends nothing. There is a watchlist with notifications for your queries, statistics on how the lists have grown, an RSS feed, a Telegram channel and an FAQ on what a repost can cost you. The interface is in Belarusian and English, and the code is open on GitHub — development is finished, and the site keeps updating itself.
+The site has no database, runs entirely in the browser and collects nothing. There is a watchlist, an RSS feed and a Telegram channel. The code is open on GitHub; development is finished, and the site keeps updating itself.
 
 ## Lex Kartynnik {#lex-kartynnik}
 

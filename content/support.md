@@ -1,6 +1,6 @@
 ---
 title:
-  be: Падзякаваць мне
+  be: Падзякаваць
   en: Thank me
 description:
   be: >-

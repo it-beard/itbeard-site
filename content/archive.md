@@ -74,6 +74,12 @@ filters:
 
 Код адкрыты на GitHub; час ад часу абнаўляю пад свае патрэбы.
 
+## Аліяс па-беларуску {#alias}
+
+**«Аліяс па-беларуску»** — вэб-вэрсія гульні «Аліяс»: адзін гулец тлумачыць слова, каманда адгадвае. 886 беларускіх словаў на трох узроўнях складанасьці, ад 1 да 5 камандаў, кірыліца або лацінка.
+
+Працуе проста ў мабільным браўзэры, нічога ставіць ня трэба; стан гульні захоўваецца, так што партыю можна працягнуць і пасьля закрыцьця ўкладкі. Ёсьць сьветлая і цёмная тэмы, гук, вібрацыя і піксэльныя знакі камандаў з назвамі накшталт «Вусы Мулявіна» ці «Карона Вітаўта». Код адкрыты на GitHub — распрацоўка завершаная.
+
 ## Elist {#elist}
 
 **Elist** — пошук па экстрэмісцкіх сьпісах Беларусі адразу па чатырох крыніцах: Рэспубліканскі сьпіс экстрэмісцкіх матэрыялаў, пералік экстрэмісцкіх фарміраваньняў МУС/КДБ, пералік фізічных асобаў, прычасных да экстрэмісцкай дзейнасьці, і беларусы ў базе вышуку МУС РФ (паводле «Медыязоны»). Можна праверыць нік, Telegram-канал, сайт, кнігу ці імя — і сябе ў тым ліку.
@@ -239,6 +245,12 @@ The music is available on all major music platforms, and this card leads to the 
 **Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
 
 The code is open on GitHub; I update it now and then for my own needs.
+
+## Alias in Belarusian {#alias}
+
+**«Alias in Belarusian»** — a web version of the Alias party game: one player explains a word, the team guesses it. 886 Belarusian words across three difficulty levels, 1 to 5 teams, Cyrillic or Latin script.
+
+It runs right in a mobile browser, nothing to install; the game state is saved, so a match can be continued even after the tab is closed. There are light and dark themes, sound, vibration and pixel-art team emblems for names like "Mulavin's Moustache" or "Vytautas's Crown". The code is open on GitHub — development is finished.
 
 ## Elist {#elist}
 

@@ -96,6 +96,15 @@ export const ARCHIVE_PROJECTS = [
     types: ['code'],
   },
   {
+    id: 'alias',
+    image: '/images/alias-bel-logo.svg',
+    started: 2026,
+    closed: 2026,
+    url: 'https://alias.itbeard.com/',
+    lang: 'be',
+    types: ['code'],
+  },
+  {
     id: 'elist',
     image: '/images/elist-logo.webp',
     started: 2026,

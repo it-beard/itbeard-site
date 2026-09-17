@@ -1408,9 +1408,13 @@ body.theme-restore #app {
   }
 }
 
-/* Founded-from-scratch cards: deeper background + corner label */
-.timeline-card.founded {
+/* Ongoing entries: deeper background, so current work reads apart from past */
+.timeline-item.ongoing .timeline-card {
   background: var(--bg-deep);
+}
+
+/* Founded-from-scratch cards: room for the corner label */
+.timeline-card.founded {
   padding-bottom: 44px;
 }
 

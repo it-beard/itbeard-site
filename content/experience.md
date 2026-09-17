@@ -32,6 +32,21 @@ periodHint:
   be: Перыяд працы ў фармаце «год.месяц»
   en: Employment period in “year.month” format
 timeline:
+  - period: { be: 2026.09 — цяпер, en: 2026.09 — now }
+    start: 2026
+    startMonth: 9
+    label: { be: Junie, en: Junie }
+    title:
+      be: Developer Conversations Master
+      en: Developer Conversations Master
+    org: JetBrains
+    link: https://junie.jetbrains.com
+    logo: /images/junie-logo.svg
+    description:
+      be: >
+        Працую з камандай Junie — ШІ-агента для распрацоўкі ад JetBrains.
+      en: >
+        Working with the Junie team — JetBrains' AI coding agent.
   - period: { be: 2024.05 — цяпер, en: 2024.05 — now }
     start: 2024
     startMonth: 5

@@ -2316,3 +2316,241 @@ a[href^="lightbox:"] {
     right: -10px;
   }
 }
+
+/* ===== Vinyl collection (unlisted /vinils) ===== */
+.vinyl-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 34px 24px;
+}
+
+.vinyl-item {
+  position: relative; /* so the hover z-index lifts the sliding record over its neighbours */
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* the sleeve keeps overflow visible so the record can slide out from behind it */
+.vinyl-sleeve {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+}
+
+.vinyl-sleeve img {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--bg-deep);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* a pressed record: grooves, a red label, a spindle hole and a diagonal sheen */
+.vinyl-disc {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 50%, var(--bg) 0 1.5%, transparent 1.7%),
+    radial-gradient(circle at 50% 50%, var(--accent) 0 17%, transparent 17.2%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.11) 8%, transparent 32%, transparent 68%, rgba(255, 255, 255, 0.07) 92%),
+    repeating-radial-gradient(circle at 50% 50%, #1b1b1b 0 2px, #0e0e0e 2px 4px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+  transition: transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+@media (hover: hover) {
+  .vinyl-item:hover {
+    z-index: 3;
+  }
+
+  .vinyl-item:hover .vinyl-disc,
+  .vinyl-item:focus-visible .vinyl-disc {
+    transform: translateX(26%) rotate(8deg);
+  }
+
+  .vinyl-item:hover .vinyl-sleeve img,
+  .vinyl-item:focus-visible .vinyl-sleeve img {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.55);
+  }
+}
+
+.vinyl-item:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 6px;
+  border-radius: 6px;
+}
+
+.vinyl-cap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 13px;
+}
+
+.vinyl-artist {
+  color: var(--accent-hover);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.vinyl-title {
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.vinyl-year {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+
+.vinyl-empty {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+/* ----- sleeve view (reuses the .lightbox shell) ----- */
+.vinyl-view {
+  max-width: min(880px, 100%);
+  overflow-y: auto;
+  gap: 20px;
+  padding: 18px;
+}
+
+.vinyl-view img {
+  border-radius: 4px;
+}
+
+ /* beats the centred `.lightbox-body figcaption` default */
+.vinyl-view .vinyl-view-info {
+  padding: 0;
+  text-align: left;
+}
+
+.vinyl-view-title {
+  margin-top: 2px;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--text);
+}
+
+.vinyl-view-info .ornament-sm {
+  margin: 12px 0 14px;
+}
+
+.vinyl-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 10px;
+  margin: 0 0 14px;
+}
+
+.vinyl-facts > div {
+  padding: 4px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.vinyl-facts dt {
+  display: inline;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.vinyl-facts dd {
+  display: inline;
+  margin: 0 0 0 7px;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.vinyl-note p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.vinyl-steps {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.vinyl-steps button {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+@media (hover: hover) {
+  .vinyl-steps button:hover {
+    border-color: var(--accent-bright);
+    color: var(--accent-hover);
+  }
+}
+
+@media (min-width: 760px) {
+  .vinyl-view {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .vinyl-view img {
+    width: 46%;
+    flex-shrink: 0;
+  }
+
+  .vinyl-view-info {
+    flex: 1;
+    min-width: 0;
+  }
+}
+
+/* two sleeves per row on a phone rather than one oversized one */
+@media (max-width: 520px) {
+  .vinyl-grid {
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    gap: 26px 16px;
+  }
+
+  .vinyl-title {
+    font-size: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .vinyl-disc,
+  .vinyl-sleeve img {
+    transition: none;
+  }
+
+  .vinyl-item:hover .vinyl-disc {
+    transform: none;
+  }
+}

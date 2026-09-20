@@ -406,3 +406,105 @@ export const REDIRECTS = {
     'https://calendar.google.com/calendar/embed?src=144869480c3c1c44b3063bfe8f4a20168383e25a13c351c0b2d35ef2b4eee971%40group.calendar.google.com&ctz=Europe%2FWarsaw',
   'sponsors-discord': 'https://discord.gg/78qkQJjH2b',
 }
+
+// Vinyl collection — the unlisted /vinils page.
+// `year` is the album's own year, not the year of this particular pressing;
+// `label`/`catno` are filled in only where the copy on the shelf confirms them.
+// `tags` drive the filter chips; the per-record notes live in content/vinyl.md.
+export const VINYL = [
+  {
+    id: 'ravel-bolero',
+    artist: 'Maurice Ravel · Leonard Bernstein',
+    title: 'Boléro / La Valse / Rapsodie espagnole',
+    year: 1958,
+    label: 'Vinyl Passion Classical',
+    catno: 'VPC 85030',
+    tags: ['classic'],
+  },
+  {
+    id: 'beethoven-emperor',
+    artist: 'Ludwig van Beethoven · Wilhelm Kempff',
+    title: 'Piano Concerto No. 5 «Emperor» / «Moonlight» Sonata',
+    label: 'Deutsche Grammophon',
+    catno: 'SMG-2015',
+    tags: ['classic'],
+  },
+  {
+    id: 'bremen-musicians',
+    artist: 'Генадзь Гладкоў · Юры Энцін',
+    title: 'Бременские музыканты',
+    year: 1969,
+    label: 'Мелодыя',
+    catno: 'Д-24107-08',
+    tags: ['kids'],
+  },
+  {
+    id: 'pesniary-2',
+    artist: 'Песьняры',
+    title: 'Песняры II',
+    year: 1974,
+    label: 'Мелодыя',
+    catno: '33С 04655-56',
+    tags: ['bel'],
+  },
+  {
+    id: 'pink-floyd-animals',
+    artist: 'Pink Floyd',
+    title: 'Animals',
+    year: 1977,
+    label: 'Harvest',
+    tags: ['rock'],
+  },
+  {
+    id: 'pink-floyd-the-wall',
+    artist: 'Pink Floyd',
+    title: 'The Wall',
+    year: 1979,
+    label: 'Harvest',
+    tags: ['rock'],
+  },
+  {
+    id: 'noize-mc-greatest-hits-2',
+    artist: 'Noize MC',
+    title: 'The Greatest Hits Vol. 2',
+    year: 2010,
+    tags: ['rock'],
+  },
+  {
+    id: 'jmors-electricity',
+    artist: 'J:Морс',
+    title: 'Электричество',
+    year: 2010,
+    tags: ['bel', 'rock'],
+  },
+  {
+    id: 'volski-hramadaznaustva',
+    artist: 'Лявон Вольскі',
+    title: 'Hramadaznaŭstva',
+    year: 2014,
+    tags: ['bel', 'rock'],
+  },
+  {
+    id: 'james-brown-collected',
+    artist: 'James Brown',
+    title: 'Collected',
+    year: 2020,
+    label: 'Music On Vinyl',
+    tags: ['funk'],
+  },
+  {
+    id: 'pink-floyd-wembley-1974',
+    artist: 'Pink Floyd',
+    title: 'The Dark Side of the Moon — Live at Wembley 1974',
+    year: 2023,
+    label: 'Pink Floyd Records',
+    tags: ['rock'],
+  },
+  {
+    id: 'meute-jubel',
+    artist: 'MEUTE',
+    title: 'Jubel — Best of 10 Years',
+    year: 2025,
+    tags: ['electro'],
+  },
+].map((r) => ({ ...r, image: `/images/vinyl/${r.id}.webp` }))

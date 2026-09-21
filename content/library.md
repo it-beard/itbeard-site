@@ -194,10 +194,6 @@ title: { be: Бібліятэка, en: Library }
 
 Поўны тэкст Старога і Новага Запавету ў расейскім Сінадальным перакладзе з гравюрамі францускага мастака Гюстава Дарэ, створанымі ў 1860-я гады. Том на 1200 старонак у цёмна-карычневай вокладцы «пад скуру» з выявай крыжа-ўкрыжаваньня; выдавецтва АСТ, Масква.
 
-## Дети капитана Гранта {#verne-deti-kapitana-granta}
-
-Прыгодніцкі раман Жуля Верна пра пошукі зьніклага капітана Гранта: падарожнікі на яхце «Дункан» ідуць уздоўж 37-й паралелі праз Паўднёвую Амерыку, Аўстралію і Новую Зеландыю. Расейскае выданьне серыі «Всемирная классика приключений» у перакладзе Аляксандры Бекетавай, з гравюрамі Эдуара Рыю.
-
 ## Цель. Процесс непрерывного улучшения {#goldratt-cel}
 
 Бізнес-раман пра кіраўніка заводу Алекса Рога, якому далі тры месяцы, каб выратаваць прадпрыемства ад закрыцьця; праз сюжэт Эліягу Голдрат выкладае сваю тэорыю абмежаваньняў. Спецыяльнае расейскамоўнае выданьне мінскага «Попурри», дапоўненае артыкулам «Стоячы на плячах гігантаў» — пра вытворчыя сістэмы Форда і «Таёты».
@@ -641,10 +637,6 @@ Comic and philosophical stories about the space voyages of Ijon Tichy: time loop
 ## Библия. С иллюстрациями Гюстава Доре {#biblija-dore}
 
 The complete Old and New Testaments in the Russian Synodal translation, with the engravings the French artist Gustave Doré made in the 1860s. A 1,200-page volume in a dark-brown leather-look binding with a crucifix on the front; published by AST, Moscow.
-
-## Дети капитана Гранта {#verne-deti-kapitana-granta}
-
-Jules Verne's adventure novel about the search for the missing Captain Grant: the yacht Duncan follows the 37th parallel across South America, Australia and New Zealand. A Russian edition in Eksmo's "World Adventure Classics" series, in Alexandra Beketova's translation, with Édouard Riou's original engravings inside.
 
 ## Цель. Процесс непрерывного улучшения {#goldratt-cel}
 

@@ -94,7 +94,6 @@ const LIBRARY_FACTS = {
   'grzedowicz-haspadar-3': { year: 2024, publisher: 'Янушкевіч', translator: 'Марыя Пушкіна, Алена Пятровіч', isbn: '978-83-68202-15-1', pages: 424, cover: true },
   'lem-zornyja-dzionniki': { year: 2024, publisher: 'Янушкевіч', translator: 'Марыя Пушкіна', isbn: '978-83-68202-11-3', pages: 386, cover: true },
   'biblija-dore': { publisher: 'АСТ', city: 'Москва', translator: 'Синодальный перевод', isbn: '978-5-17-138165-3', pages: 1200, cover: true },
-  'verne-deti-kapitana-granta': { year: 2014, publisher: 'Эксмо', city: 'Москва', translator: 'А. Бекетова', isbn: '978-5-699-72717-9', pages: 800, cover: true },
   'goldratt-cel': { publisher: 'Попурри', city: 'Минск', translator: 'Елена Федурко', pages: 400, cover: true },
   'mitnick-prizrak-v-seti': { year: 2012, publisher: 'Эксмо', city: 'Москва', isbn: '978-5-699-58256-3', pages: 416, cover: true },
   'petzold-kod': { year: 2019, publisher: 'Манн, Иванов и Фербер', city: 'Москва', translator: 'Олег Сивченко', isbn: '978-5-00117-545-2', pages: 448, cover: true },
@@ -250,7 +249,6 @@ const BOOKS = [
 
   // Russian-language shelf
   book('biblija-dore', '', 'Библия. С иллюстрациями Гюстава Доре', 'ru', 'nonfic', '#3a2618', '#d9b15a', 3),
-  book('verne-deti-kapitana-granta', 'Жюль Верн', 'Дети капитана Гранта', 'ru', 'fiction', '#5f8fc4', '#ffffff', 3),
   book('goldratt-cel', 'Элияху Голдратт, Джефф Кокс', 'Цель. Процесс непрерывного улучшения', 'ru', 'tech', '#161616', '#ffffff'),
   book('mitnick-prizrak-v-seti', 'Кевин Митник, Уильям Саймон', 'Призрак в сети. Мемуары величайшего хакера', 'ru', 'tech', '#1c4fb0', '#ffffff'),
   book('petzold-kod', 'Чарльз Петцольд', 'Код', 'ru', 'tech', '#f6f6f4', '#8a6a22'),
@@ -329,18 +327,35 @@ const BOOKS = [
 ]
 
 // Default order of the library: by language, and within a language the series first
-// (series by name, volumes by number), then the single books by title.
+// (series by name, volumes by number), then the single books by author — filed under the
+// surname — and by title within one author. Books with no author close the language, by title.
 export const LANG_ORDER = ['be', 'en', 'pl', 'ru']
 
 // «(Ня)чысты Мінск» sorts under Н, «[Пра] мастацтва» under П: punctuation does not count
 const sortKey = (text) => text.replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
+
+// Names are printed «Імя Прозьвішча», so the surname is the last word of the first author.
+// The exceptions are compound surnames and collectives, which would otherwise be filed under their tail.
+const SURNAMES = {
+  'Владстон Феррейра Фило': 'Феррейра Фило',
+  '«Шуфлядка пісьменніка»': 'Шуфлядка пісьменніка',
+}
+export const surnameOf = (author) => {
+  const first = author.split(',')[0].trim()
+  return sortKey(SURNAMES[first] ?? first.split(' ').at(-1))
+}
 
 function byShelfOrder(a, b) {
   if (a.lang !== b.lang) return LANG_ORDER.indexOf(a.lang) - LANG_ORDER.indexOf(b.lang)
   if (!a.series !== !b.series) return a.series ? -1 : 1
   if (a.series && a.series !== b.series) return sortKey(a.series).localeCompare(sortKey(b.series), a.lang)
   if (a.series) return a.part - b.part
-  return sortKey(a.title).localeCompare(sortKey(b.title), a.lang, { numeric: true })
+  if (!a.author !== !b.author) return a.author ? -1 : 1
+  return (
+    surnameOf(a.author).localeCompare(surnameOf(b.author), a.lang) ||
+    sortKey(a.author).localeCompare(sortKey(b.author), a.lang) ||
+    sortKey(a.title).localeCompare(sortKey(b.title), a.lang, { numeric: true })
+  )
 }
 
 export const LIBRARY = BOOKS.map((b) => ({

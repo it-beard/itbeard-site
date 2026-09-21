@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
-import { LANG_ORDER, LIBRARY, WANTED } from '../data/books'
+import { LANG_ORDER, LIBRARY, surnameOf, WANTED } from '../data/books'
 import Books from './Books'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -158,15 +158,36 @@ describe('library data', () => {
     }
   })
 
-  it('lists the single books alphabetically, ignoring punctuation', () => {
-    const titles = LIBRARY.filter((b) => b.lang === 'be' && !b.series).map((b) => b.title)
-    const at = (t) => titles.indexOf(t)
-    expect(at('Адысея')).toBeLessThan(at('Дарога'))
-    expect(at('Дарога')).toBeLessThan(at('Энэіда'))
-    // «(В)ядомыя гісторыі» files under В, «(Ня)чысты Мінск» under Н
-    expect(at('Бел-чырвона-белы')).toBeLessThan(at('(В)ядомыя гісторыі'))
-    expect(at('(В)ядомыя гісторыі')).toBeLessThan(at('Гвалт'))
-    expect(at('На ростанях')).toBeLessThan(at('(Ня)чысты Мінск'))
+  it('files the single books under the author\'s surname, then by title', () => {
+    const singles = LIBRARY.filter((b) => b.lang === 'be' && !b.series && b.author)
+    const surnames = singles.map((b) => surnameOf(b.author))
+    expect(surnames).toEqual([...surnames].sort((a, b) => a.localeCompare(b, 'be')))
+    expect(surnameOf('Уладзімір Караткевіч')).toBe('Караткевіч')
+    expect(surnameOf('Дж. Р. Р. Толкін')).toBe('Толкін')
+    expect(surnameOf('Уладзімір Арлоў, Зьміцер Герасімовіч')).toBe('Арлоў')
+    expect(surnameOf('Антуан дэ Сент-Экзюперы')).toBe('Сент Экзюперы')
+    expect(surnameOf('Владстон Феррейра Фило')).toBe('Феррейра Фило')
+
+    // one author's books stand together, by title
+    const karatkievich = singles.filter((b) => b.author === 'Уладзімір Караткевіч')
+    const from = singles.indexOf(karatkievich[0])
+    expect(singles.slice(from, from + karatkievich.length)).toEqual(karatkievich)
+    const titles = karatkievich.map((b) => b.title)
+    expect(titles).toEqual([...titles].sort((a, b) => a.localeCompare(b, 'be')))
+    const homer = singles.filter((b) => b.author === 'Гамер').map((b) => b.title)
+    expect(homer).toEqual(['Адысея', 'Іліяда'])
+  })
+
+  it('closes each language with the books that name no author, by title', () => {
+    for (const lang of LANG_ORDER) {
+      const singles = LIBRARY.filter((b) => b.lang === lang && !b.series)
+      const firstAnonymous = singles.findIndex((b) => !b.author)
+      if (firstAnonymous === -1) continue
+      const tail = singles.slice(firstAnonymous)
+      expect(tail.every((b) => !b.author), lang).toBe(true)
+      const titles = tail.map((b) => b.title)
+      expect(titles, lang).toEqual([...titles].sort((a, b) => a.localeCompare(b, lang)))
+    }
   })
 
   it('paints all volumes of one series the same colour', () => {

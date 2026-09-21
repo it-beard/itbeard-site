@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { createPortal } from 'react-dom'
 import Md from '../lib/Md'
+import Ornament from './Ornament'
 
 // Full-screen view of one item from a cover gallery (records, books): the cover
 // on the left, facts and the note on the right. Arrow keys and the footer
@@ -57,6 +58,7 @@ export default function CoverView({
             <div className="cover-view-head">
               <p className="cover-overline">{overline}</p>
               <h2 className="cover-view-title">{title}</h2>
+              <Ornament />
               {shownFacts.length > 0 && (
                 <dl className="cover-facts">
                   {shownFacts.map(([term, value]) => (

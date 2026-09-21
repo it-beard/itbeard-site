@@ -2533,10 +2533,25 @@ a[href^="lightbox:"] {
 }
 
 .cover-view-title {
-  margin: 2px 0 14px;
+  margin: 2px 0 12px;
   font-size: 22px;
   line-height: 1.25;
   color: var(--text);
+}
+
+/* the site's usual divider, scaled to the card; phones skip it to keep the column short */
+.cover-view-info .ornament {
+  gap: 6px;
+  margin: 0 0 14px;
+}
+
+.cover-view-info .ornament .orn-line {
+  width: 24px;
+}
+
+.cover-view-info .ornament .orn-gem {
+  width: 7px;
+  height: 7px;
 }
 
 .cover-facts {
@@ -2675,6 +2690,10 @@ a[href^="lightbox:"] {
 
   .cover-view .cover-typeset strong {
     font-size: 13px;
+  }
+
+  .cover-view-info .ornament {
+    display: none;
   }
 
   /* its own formatting context: stays a column next to the floated cover */
@@ -2974,35 +2993,10 @@ a[href^="lightbox:"] {
   }
 }
 
-/* books lie flat in piles: one pile per shelf, the piles flow into columns */
-.shelves {
+/* books lie flat in piles, one pile per column */
+.spines {
   columns: 3 300px;
   column-gap: 30px;
-}
-
-.shelf {
-  margin-bottom: 30px;
-  break-inside: avoid;
-}
-
-.shelf-name {
-  margin: 0 0 10px;
-  padding-bottom: 7px;
-  border-bottom: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
-.shelf-name span {
-  margin-left: 4px;
-  color: #7ee787;
-  font-size: 11px;
-}
-
-.spines {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -3010,6 +3004,7 @@ a[href^="lightbox:"] {
 
 .spines > li {
   margin-bottom: 3px;
+  break-inside: avoid;
 }
 
 .spine {

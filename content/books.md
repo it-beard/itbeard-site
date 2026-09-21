@@ -27,19 +27,6 @@ filters:
   lang: { be: Мова і слоўнікі, en: Language & dictionaries }
   nonfic: { be: Нон-фікшн, en: Non-fiction }
   tech: { be: IT і праца, en: IT & work }
-shelves:
-  sf-ru: { be: Фантастыка па-расейску, en: Science fiction in Russian }
-  new-be: { be: Новае беларускае, en: New Belarusian books }
-  tolkien: { be: Толкін і «Дзюна», en: Tolkien and Dune }
-  world-be: { be: Сусьветная літаратура па-беларуску, en: World literature in Belarusian }
-  epics: { be: Эпасы і сагі, en: Epics and sagas }
-  ru: { be: Расейская паліца, en: The Russian shelf }
-  en: { be: Ангельская паліца, en: The English shelf }
-  folk: { be: Фальклор і спадчына, en: Folklore and heritage }
-  small: { be: Маленькая паліца, en: The small shelf }
-  vkl: { be: Вялікае Княства Літоўскае, en: The Grand Duchy of Lithuania }
-  classics: { be: Беларуская класіка, en: Belarusian classics }
-  ref: { be: 'Гісторыя, мова, слоўнікі', en: 'History, language, dictionaries' }
 labels:
   part: { be: частка, en: part }
   year: { be: Год, en: Year }
@@ -104,7 +91,7 @@ details:
 
 # Мая бібліятэка {#library}
 
-Кнігі стаяць тут так, як стаяць дома, — паліца за паліцай, з колерамі сапраўдных карэньчыкаў, а тамы адной серыі — адным колерам. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы. Націсьніце на карэньчык, каб выцягнуць кнігу са стосу і разгледзець яе.
+Спачатку ідуць беларускія кнігі, потым ангельскія, польскія і расейскія. У кожнай мове наперадзе серыі — том за томам, — а за імі асобныя кнігі паводле алфавіту. Карэньчыкі маюць колеры сапраўдных, а тамы адной серыі — адзін колер. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы. Націсьніце на карэньчык, каб выцягнуць кнігу са стосу і разгледзець яе.
 
 <!-- en -->
 
@@ -130,4 +117,4 @@ The closing volume of the same edition: the same translation by Dzmitry Mahileut
 
 # My library {#library}
 
-The books stand here the way they stand at home — shelf by shelf, in the colours of their real spines, with the volumes of one series sharing a colour. Titles and authors are given exactly as printed on the cover. Click a spine to pull the book out of the pile and take a closer look.
+Belarusian books come first, then English, Polish and Russian. Within a language the series lead, volume by volume, followed by the single books in alphabetical order. Spines keep the colours of the real ones, and the volumes of one series share a colour. Titles and authors are given exactly as printed on the cover. Click a spine to pull the book out of the pile and take a closer look.

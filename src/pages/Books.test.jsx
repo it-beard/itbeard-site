@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
-import { LIBRARY, SHELVES, WANTED } from '../data/books'
+import { LANG_ORDER, LIBRARY, WANTED } from '../data/books'
 import Books from './Books'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -135,12 +135,38 @@ describe('library data', () => {
     }
   })
 
-  it('puts every book on a shelf that has a name in both languages', () => {
-    for (const b of LIBRARY) expect(SHELVES, b.title).toContain(b.shelf)
-    for (const lang of ['be', 'en']) {
-      const names = getPage('books', lang).shelves
-      for (const key of SHELVES) expect(typeof names[key], `${key} (${lang})`).toBe('string')
+  it('sorts by language first: Belarusian, English, Polish, Russian', () => {
+    const langs = LIBRARY.map((b) => LANG_ORDER.indexOf(b.lang))
+    expect(langs.every((n) => n >= 0)).toBe(true)
+    expect(langs).toEqual([...langs].sort((a, b) => a - b))
+    expect(LIBRARY[0].lang).toBe('be')
+    expect(LIBRARY.at(-1).lang).toBe('ru')
+  })
+
+  it('puts the series first within a language, by name, volume by volume', () => {
+    for (const lang of LANG_ORDER) {
+      const books = LIBRARY.filter((b) => b.lang === lang)
+      const firstSingle = books.findIndex((b) => !b.series)
+      const inSeries = firstSingle === -1 ? books : books.slice(0, firstSingle)
+      expect(books.slice(inSeries.length).every((b) => !b.series), lang).toBe(true)
+      const names = [...new Set(inSeries.map((b) => b.series))]
+      expect(names, lang).toEqual([...names].sort((a, b) => a.localeCompare(b, lang)))
+      for (const name of names) {
+        const parts = inSeries.filter((b) => b.series === name).map((b) => b.part)
+        expect(parts, name).toEqual([...parts].sort((a, b) => a - b))
+      }
     }
+  })
+
+  it('lists the single books alphabetically, ignoring punctuation', () => {
+    const titles = LIBRARY.filter((b) => b.lang === 'be' && !b.series).map((b) => b.title)
+    const at = (t) => titles.indexOf(t)
+    expect(at('Адысея')).toBeLessThan(at('Дарога'))
+    expect(at('Дарога')).toBeLessThan(at('Энэіда'))
+    // «(В)ядомыя гісторыі» files under В, «(Ня)чысты Мінск» under Н
+    expect(at('Бел-чырвона-белы')).toBeLessThan(at('(В)ядомыя гісторыі'))
+    expect(at('(В)ядомыя гісторыі')).toBeLessThan(at('Гвалт'))
+    expect(at('На ростанях')).toBeLessThan(at('(Ня)чысты Мінск'))
   })
 
   it('paints all volumes of one series the same colour', () => {
@@ -245,25 +271,6 @@ describe('books page: library', () => {
     show()
     expect(spines()).toHaveLength(LIBRARY.length)
     expect(screen.getByText(`Знойдзена: ${LIBRARY.length} з ${LIBRARY.length}`)).toBeInTheDocument()
-  })
-
-  it('groups the books by shelf, each with a heading and a count', () => {
-    show()
-    const heads = screen.getAllByRole('heading', { level: 3 })
-    expect(heads).toHaveLength(SHELVES.length)
-    const epics = heads.find((h) => h.textContent.startsWith('Эпасы і сагі'))
-    expect(epics).toHaveTextContent(String(LIBRARY.filter((b) => b.shelf === 'epics').length))
-    expect(within(epics.parentElement).getByText('Адысея')).toBeInTheDocument()
-  })
-
-  it('hides the shelves a filter leaves empty and recounts the rest', async () => {
-    const user = userEvent.setup()
-    show()
-    await user.click(chip('IT і праца'))
-    const heads = screen.getAllByRole('heading', { level: 3 }).map((h) => h.textContent)
-    const expected = SHELVES.filter((k) => LIBRARY.some((b) => b.shelf === k && b.tags.includes('tech')))
-    expect(heads).toHaveLength(expected.length)
-    expect(heads.some((t) => t.startsWith('Эпасы'))).toBe(false)
   })
 
   it('prints the author, the title and the language code on a spine', () => {

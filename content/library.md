@@ -52,7 +52,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Васіль Быкаў. [Пра] мастацтва {#shapran-bykau-pra-mastactva}
 
-Дасьледаваньне Сяргея Шапрана пра малавядомы бок таленту Васіля Быкава — выяўленчае мастацтва: франтавыя малюнкі, ілюстрацыі для «Гродзенскай праўды» 1940–1950-х гадоў, капіяваньне славутых жывапісцаў, шаржы на самога пісьменьніка і яго сувязі з мастакамі — ад Барыса Заборава й Арлена Кашкурэвіча да Міхаіла Савіцкага й Марка Шагала. Больш за 500 старонак і больш за 500 ілюстрацыяў.
+Дасьледаваньне Сяргея Шапрана пра малавядомы бок таленту Васіля Быкава — выяўленчае мастацтва: франтавыя малюнкі, ілюстрацыі для «Гродзенскай праўды» 1940–1950-х гадоў, капіяваньне славутых жывапісцаў, шаржы на самога пісьменьніка і яго сувязі з мастакамі — ад Барыса Заборава й Арлена Кашкурэвіча да Міхаіла Савіцкага й Марка Шагала. Пяцьсот старонак і больш за 500 ілюстрацыяў; на вокладцы — малюнак самога Быкава і сяброўскі шарж Міхаіла Лісоўскага.
 
 ## Пражытае-напісанае {#buraukin-prazhytaje-napisanaje}
 
@@ -68,7 +68,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Уладар Пярсьцёнкаў. 1. Зьвяз Пярсьцёнка {#tolkien-uladar-1-2008}
 
-Першы том першага беларускага перакладу «Ўладара Пярсьцёнкаў», зробленага з ангельскай Дзьмітрыем Магілеўцавым і Крысьцінай Курчанковай класічным правапісам. Малюнкі К. Шэмяк, мапы перамаляваныя Т. Яфімавай. Выйшаў у Мінску ў 2008 годзе без пазначэньня выдавецтва, накладам 500 асобнікаў.
+Першы том першага беларускага перакладу «Ўладара Пярсьцёнкаў», зробленага з ангельскай Дзьмітрыем Магілеўцавым і Крысьцінай Курчанковай класічным правапісам. Малюнкі К. Шэмяк, мапы перамаляваныя Т. Яфімавай. Выйшаў у Мінску ў 2008 годзе без пазначэньня выдавецтва, накладам 500 асобнікаў; на адвароце тытула стаіць падзяка Ігару Хазанаву, які шмат у чым паспрыяў выхаду кнігі.
 
 ## Мой боль і запавет {#buraukin-moj-bol-i-zapaviet}
 
@@ -376,7 +376,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-white}
 
-Раман Уладзімера Караткевіча пра шляхецкі род Загорскіх і пакаленьне, якое падыходзіла да паўстаньня 1863 году; сярод герояў ёсьць і Кастусь Каліноўскі. Гэта расцэнзураваная версія раману — з фрагментамі, якія ў свой час выкрасьліла савецкая цэнзура.
+Раман Уладзімера Караткевіча пра шляхецкі род Загорскіх і пакаленьне, якое падыходзіла да паўстаньня 1863 году; сярод герояў ёсьць і Кастусь Каліноўскі. Гэта расцэнзураваная версія: надрукаваны той тэкст, за які аўтар змагаўся пры жыцьці, бяз правак, зробленых для выданьня 1968 году. Тэкст падрыхтавала Валянціна Андрэева, вокладку зрабіў Артур Вакараў. Па-беларуску раман упершыню выйшаў за межамі Беларусі — у фондзе Kamunikat.org пры ўдзеле Gutenberg Publisher.
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-yellow}
 
@@ -472,7 +472,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
 
-Першая кніга шматтомнага выданьня пра традыцыйную карціну сьвету беларусаў: як у народных уяўленьнях уладкаваныя неба, зямля, сонца, месяц і зоркі. Тэкст ідзе на трох мовах — беларускай, расейскай і ангельскай.
+Першая зь пяці ілюстраваных кніг Інстытуту філасофіі НАН Беларусі пра традыцыйную карціну сьвету беларусаў: паходжаньне і будова Сусьвету, прастора чалавечай супольнасьці, кругабег часу. Уклалі і адрэдагавалі І. Дубянецкая і С. Санько, тэксты напісалі Т. Валодзіна, У. Лобач, С. Санько і Дз. Скварчэўскі, мастак — М. Храпавіцкі. Тэкст ідзе на трох мовах — беларускай, расейскай і ангельскай.
 
 ## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
 
@@ -536,7 +536,7 @@ A dystopia with a detective plot: in a future metropolis medicine quietly cures 
 
 ## Васіль Быкаў. [Пра] мастацтва {#shapran-bykau-pra-mastactva}
 
-Siarhei Shapran's study of a little-known side of Vasil Bykau — visual art: his wartime drawings, his 1940s–50s illustrations for the Hrodzenskaya Prauda newspaper, the painters he copied, the caricatures artists drew of him, and his ties with artists from Barys Zabarau and Arlen Kashkurevich to Mikhail Savitski and Marc Chagall. Over 500 pages and 500 illustrations.
+Siarhei Shapran's study of a little-known side of Vasil Bykau — visual art: his wartime drawings, his 1940s–50s illustrations for the Hrodzenskaya Prauda newspaper, the painters he copied, the caricatures artists drew of him, and his ties with artists from Barys Zabarau and Arlen Kashkurevich to Mikhail Savitski and Marc Chagall. Five hundred pages and over 500 illustrations; the cover uses a drawing by Bykau himself and a friendly caricature by Mikhail Lisouski.
 
 ## Пражытае-напісанае {#buraukin-prazhytaje-napisanaje}
 
@@ -552,7 +552,7 @@ Mystical short stories by members of the Belarusian speculative-fiction society 
 
 ## Уладар Пярсьцёнкаў. 1. Зьвяз Пярсьцёнка {#tolkien-uladar-1-2008}
 
-Volume one of the first Belarusian translation of The Lord of the Rings, made from the English by Dzmitry Mahileutsau and Krystsina Kurchankova in the classical orthography. Drawings by K. Shemiak, maps redrawn by T. Yafimava. Issued in Minsk in 2008 with no publisher named, in a run of 500 copies.
+Volume one of the first Belarusian translation of The Lord of the Rings, made from the English by Dzmitry Mahileutsau and Krystsina Kurchankova in the classical orthography. Drawings by K. Shemiak, maps redrawn by T. Yafimava. Issued in Minsk in 2008 with no publisher named, in a run of 500 copies; the verso of the title page thanks Ihar Khazanau, who did much to make the book happen.
 
 ## Мой боль і запавет {#buraukin-moj-bol-i-zapaviet}
 
@@ -860,7 +860,7 @@ A large-format gift edition of Uladzimir Karatkievich's historical detective sto
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-white}
 
-Uladzimir Karatkievich's novel about the noble Zahorski family and the generation that grew up towards the 1863 uprising, with Kastus Kalinouski among its characters. This is the uncensored version of the novel, with the passages once cut by Soviet censors restored.
+Uladzimir Karatkievich's novel about the noble Zahorski family and the generation that grew up towards the 1863 uprising, with Kastus Kalinouski among its characters. This is the uncensored version: it prints the text the author fought for in his lifetime, without the changes made for the 1968 edition. The text was prepared by Valiantsina Andreyeva, the cover is by Artur Vakarau. It is the first time the novel has come out in Belarusian outside Belarus — from the Kamunikat.org foundation together with Gutenberg Publisher.
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-yellow}
 
@@ -956,7 +956,7 @@ The academic Russian–Belarusian dictionary of the Institute of Linguistics, ed
 
 ## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
 
-The first book of a multi-volume edition on the traditional Belarusian picture of the world: how folk belief arranges the sky, the earth, the sun, the moon and the stars. The text runs in three languages — Belarusian, Russian and English.
+The first of five illustrated books from the Institute of Philosophy of the National Academy of Sciences on the traditional Belarusian picture of the world: the origin and structure of the Universe, the space of the human community, the cycle of time. Compiled and edited by I. Dubianetskaya and S. Sanko, with texts by T. Valodzina, U. Lobach, S. Sanko and Dz. Skvarcheuski and art by M. Khrapavitski. The text runs in three languages — Belarusian, Russian and English.
 
 ## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
 

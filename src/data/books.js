@@ -128,7 +128,7 @@ const LIBRARY_FACTS = {
   'zycciadajnyja-krynicy': { year: 2002, publisher: 'Юнацтва', city: 'Мінск', isbn: '985-05-0432-3', pages: 159, cover: true },
   'patajemnaja-spadcyna-1': { year: 2025, publisher: 'ByProsvet', city: 'Варшава', isbn: '978-83-974131-5-3', pages: 120, cover: true },
   'patajemnaja-spadcyna-2': { year: 2025, publisher: 'ByProsvet', city: 'Варшава', isbn: '978-83-974131-6-0', pages: 80, cover: true },
-  'mysl-bialoruska-xx-wieku': { year: 1998, publisher: 'Slawistyczny Ośrodek Wydawniczy (Instytut Slawistyki PAN)', city: 'Warszawa', isbn: '83-86619-62-7', pages: 741 },
+  'mysl-bialoruska-xx-wieku': { year: 1998, publisher: 'Slawistyczny Ośrodek Wydawniczy (Instytut Slawistyki PAN)', city: 'Warszawa', isbn: '83-86619-62-7', pages: 741, cover: true },
   'biel-cyrvona-biely': { year: 2024, publisher: 'Янушкевіч', city: 'Варшава', isbn: '978-83-970292-6-2', pages: 308, cover: true },
   'irdorath-bestiarium': { year: 2026, publisher: 'Irdorath (самвыдат гурта)', cover: true },
   'barsceuski-sliachcic-zavalnia': { year: 2024, publisher: 'Папуры', city: 'Мінск', translator: 'Мікола Хаўстовіч', isbn: '978-985-15-5592-1', pages: 360, cover: true },
@@ -158,7 +158,7 @@ const LIBRARY_FACTS = {
   'kupala-vybranaje': { year: 2022, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5065-0', pages: 288, cover: true },
   'sieviaryniec-hascinica-bielhija': { year: 2025, publisher: 'Czabor Publishing', city: 'Варшава', isbn: '978-83-971664-6-2', pages: 712, cover: true },
   'arlou-kraina-bielarus': { year: 2013, publisher: 'Kalligram', city: 'Браціслава', isbn: '978-80-8101-603-5', pages: 320, cover: true },
-  'danilovic-slova-i-frazealahizm': { year: 2015, publisher: 'ЮрСаПрынт', city: 'Гродна', isbn: '978-985-7128-04-8', pages: 300 },
+  'danilovic-slova-i-frazealahizm': { year: 2015, publisher: 'ЮрСаПрынт', city: 'Гродна', isbn: '978-985-7128-04-8', pages: 300, cover: true },
   'cyrvinski-bielarus-u-vojnach': { year: 2019, publisher: 'Харвест', city: 'Мінск', isbn: '978-985-18-4543-5', pages: 447, cover: true },
   'starabielaruskaja-litaratura': { year: 2004, publisher: 'Універсітэт у Беластоку', city: 'Беласток', isbn: '83-89031-81-7', pages: 772, cover: true },
   'michaluk-bnr-1918-1920': { year: 2015, publisher: 'Інбелкульт', city: 'Смаленск', translator: 'Алесь Пілецкі', isbn: '978-5-00076-016-1', pages: 496, cover: true },
@@ -167,6 +167,15 @@ const LIBRARY_FACTS = {
   'savicki-slounik-pa-infarmatycy': { year: 2014, publisher: 'Медыял', city: 'Менск', isbn: '978-985-6914-20-4', pages: 418, cover: true },
   'arendt-pra-calaviecnasc': { year: 2026, publisher: 'Пфляўмбаўм', city: 'Вільня', translator: 'Алена Пятровіч, Вольга Гронская, Алена Талапіла, Кацярына Тэвес', isbn: '978-609-8350-16-6', pages: 287, cover: true },
   'leksicny-atlas-5': { year: 1998, publisher: 'Камітэт дзяржаўных знакаў пры Міністэрстве фінансаў Рэспублікі Беларусь', city: 'Мінск', cover: true },
+}
+
+// Bilingual and trilingual editions: the languages a book carries besides its main one.
+// The main language (`lang`) decides where the book stands; these only get marked and filtered.
+const ALSO_IN = {
+  'mysl-bialoruska-xx-wieku': ['pl'],
+  'galczynski-vulica-sarlatanau': ['pl'],
+  'harady-bielarusi-na-pastoukach': ['en'],
+  'tradycyjny-svietapohlad-1': ['ru', 'en'],
 }
 
 const book = (id, author, title, lang, tags, spine, ink, size = 2) => ({
@@ -287,7 +296,7 @@ const BOOKS = [
   book('zycciadajnyja-krynicy', 'Аляксей Ненадавец', 'Жыццядайныя крыніцы. Легенды і паданні', 'be', 'folk', '#1f8da1', '#ffffff'),
   volume('patajemnaja-spadcyna-1', '', 'Патаемная спадчына. Казкі пра беларускіх жанчын. Том I', 'be', 'history', 'Патаемная спадчына', 1),
   volume('patajemnaja-spadcyna-2', '', 'Патаемная спадчына. Казкі пра беларускіх жанчын. Том II', 'be', 'history', 'Патаемная спадчына', 2),
-  book('mysl-bialoruska-xx-wieku', 'Юры Гарбінскі', 'Myśl białoruska XX wieku. Antologia', 'be', 'history', '#4a342a', '#d9b45a', 3),
+  book('mysl-bialoruska-xx-wieku', 'Юры Гарбінскі', 'Беларуская думка XX стагоддзя / Myśl białoruska XX wieku', 'be', 'history', '#4a342a', '#d9b45a', 3),
   book('biel-cyrvona-biely', '', 'Бел-чырвона-белы', 'be', 'history', '#f7f7f7', '#d22630', 3),
   book('irdorath-bestiarium', 'Irdorath', 'Bestiarium', 'be', 'folk', '#111111', '#d9a82f'),
   book('barsceuski-sliachcic-zavalnia', 'Ян Баршчэўскі', 'Шляхціц Завальня', 'be', 'fiction', '#5a3fa0', '#ffffff', 3),
@@ -361,26 +370,37 @@ const SURNAMES = {
   'Владстон Феррейра Фило': 'Феррейра Фило',
   '«Шуфлядка пісьменніка»': 'Шуфлядка пісьменніка',
 }
+// every language a book is printed in, the main one first
+export const langsOf = (b) => [b.lang, ...(b.also ?? [])]
+
 export const surnameOf = (author) => {
   const first = author.split(',')[0].trim()
   return sortKey(SURNAMES[first] ?? first.split(' ').at(-1))
 }
 
+// Browsers ship different collation data: with the same 'be' locale Chrome puts Latin before
+// Cyrillic and Node after it. So the script order is decided here — digits, Cyrillic, the rest —
+// and localeCompare only orders the letters within a script.
+const scriptRank = (text) => (/^\p{Nd}/u.test(text) ? 0 : /^\p{Script=Cyrillic}/u.test(text) ? 1 : 2)
+export const compareText = (a, b, lang) =>
+  scriptRank(a) - scriptRank(b) || a.localeCompare(b, lang, { numeric: true })
+
 function byShelfOrder(a, b) {
   if (a.lang !== b.lang) return LANG_ORDER.indexOf(a.lang) - LANG_ORDER.indexOf(b.lang)
   if (!a.series !== !b.series) return a.series ? -1 : 1
-  if (a.series && a.series !== b.series) return sortKey(a.series).localeCompare(sortKey(b.series), a.lang)
+  if (a.series && a.series !== b.series) return compareText(sortKey(a.series), sortKey(b.series), a.lang)
   if (a.series) return a.part - b.part
   if (!a.author !== !b.author) return a.author ? -1 : 1
   return (
-    surnameOf(a.author).localeCompare(surnameOf(b.author), a.lang) ||
-    sortKey(a.author).localeCompare(sortKey(b.author), a.lang) ||
-    sortKey(a.title).localeCompare(sortKey(b.title), a.lang, { numeric: true })
+    compareText(surnameOf(a.author), surnameOf(b.author), a.lang) ||
+    compareText(sortKey(a.author), sortKey(b.author), a.lang) ||
+    compareText(sortKey(a.title), sortKey(b.title), a.lang)
   )
 }
 
 export const LIBRARY = BOOKS.map((b) => ({
   ...b,
+  ...(ALSO_IN[b.id] && { also: ALSO_IN[b.id] }),
   ...LIBRARY_FACTS[b.id],
   ...(LIBRARY_FACTS[b.id]?.cover && { image: `/images/library/${b.id}.webp` }),
 })).sort(byShelfOrder)

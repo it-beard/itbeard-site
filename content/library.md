@@ -290,9 +290,9 @@ title: { be: Бібліятэка, en: Library }
 
 Другі том праекту ByProsvet: пяць казак пра беларусак XX стагодзьдзя, якія засталіся па-за школьнымі падручнікамі. Як і першы том, кніга паказвае гераінь у розных ролях — ад мастацтва да навукі і грамадзкай дзейнасьці; аформленая ў той самай стылістыцы, але ў бардовым колеры.
 
-## Myśl białoruska XX wieku. Antologia {#mysl-bialoruska-xx-wieku}
+## Беларуская думка XX стагоддзя / Myśl białoruska XX wieku {#mysl-bialoruska-xx-wieku}
 
-Анталогія беларускай грамадзкай, філасофскай і рэлігійнай думкі ХХ стагодзьдзя, укладзеная Юрыем Гарбінскім у варшаўскім Інстытуце славістыкі ПАН. Сем храналагічных разьдзелаў, тэксты каля 60 аўтараў — ад Купалы і Багдановіча да эміграцыйных публіцыстаў — зь біяграфічнымі даведкамі. Нягледзячы на польскі тытул на карэньчыку, тэксты надрукаваныя па-беларуску.
+Анталогія беларускай грамадзкай, філасофскай і рэлігійнай думкі ХХ стагодзьдзя, укладзеная Юрыем Гарбінскім у варшаўскім Інстытуце славістыкі ПАН. Сем храналагічных разьдзелаў, тэксты каля 60 аўтараў — ад Купалы і Багдановіча да эміграцыйных публіцыстаў — зь біяграфічнымі даведкамі. Кніга двухмоўная: тытулы, прадмова і апарат ідуць па-беларуску і па-польску, а на вокладцы стаіць толькі польская назва.
 
 ## Бел-чырвона-белы {#biel-cyrvona-biely}
 
@@ -774,9 +774,9 @@ Volume one of an educational project by ByProsvet: seven fairy tales about remar
 
 The second volume of the ByProsvet project: five fairy tales about Belarusian women of the 20th century who were left out of school textbooks. Like volume one, it shows its heroines in many different roles; the design repeats the first book, this time in maroon.
 
-## Myśl białoruska XX wieku. Antologia {#mysl-bialoruska-xx-wieku}
+## Беларуская думка XX стагоддзя / Myśl białoruska XX wieku {#mysl-bialoruska-xx-wieku}
 
-An anthology of 20th-century Belarusian social, philosophical and religious thought, compiled by Jury Harbinski at the Institute of Slavic Studies of the Polish Academy of Sciences in Warsaw. Seven chronological sections with texts by about 60 authors, from Kupala and Bahdanovich to émigré essayists, each with a short biography. Despite the Polish spine title, the texts are printed in Belarusian.
+An anthology of 20th-century Belarusian social, philosophical and religious thought, compiled by Jury Harbinski at the Institute of Slavic Studies of the Polish Academy of Sciences in Warsaw. Seven chronological sections with texts by about 60 authors, from Kupala and Bahdanovich to émigré essayists, each with a short biography. The book is bilingual: the title pages, the preface and the apparatus run in Belarusian and Polish, while the cover carries the Polish title only.
 
 ## Бел-чырвона-белы {#biel-cyrvona-biely}
 

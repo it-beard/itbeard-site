@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
-import { LANG_ORDER, LIBRARY, surnameOf, WANTED } from '../data/books'
+import { LANG_ORDER, LIBRARY, compareText, langsOf, surnameOf, WANTED } from '../data/books'
 import Books from './Books'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -135,6 +135,17 @@ describe('library data', () => {
     }
   })
 
+  it('marks bilingual editions with known languages, never repeating the main one', () => {
+    const { langNames } = getPage('shared', 'be').labels
+    const bilingual = LIBRARY.filter((b) => b.also)
+    expect(bilingual.length).toBeGreaterThan(2)
+    for (const b of bilingual) {
+      expect(b.also, b.title).not.toContain(b.lang)
+      for (const code of b.also) expect(langNames[code], `${b.title}: ${code}`).toBeTruthy()
+    }
+    expect(langsOf(LIBRARY.find((b) => b.id === 'mysl-bialoruska-xx-wieku'))).toEqual(['be', 'pl'])
+  })
+
   it('sorts by language first: Belarusian, English, Polish, Russian', () => {
     const langs = LIBRARY.map((b) => LANG_ORDER.indexOf(b.lang))
     expect(langs.every((n) => n >= 0)).toBe(true)
@@ -176,6 +187,15 @@ describe('library data', () => {
     expect(titles).toEqual([...titles].sort((a, b) => a.localeCompare(b, 'be')))
     const homer = singles.filter((b) => b.author === 'Гамер').map((b) => b.title)
     expect(homer).toEqual(['Адысея', 'Іліяда'])
+  })
+
+  it('orders scripts itself instead of trusting the browser: digits, Cyrillic, then Latin', () => {
+    // under the 'en' locale plain localeCompare would put Latin first — the rank must win
+    expect('Irdorath'.localeCompare('Шапран', 'en')).toBeLessThan(0)
+    expect(compareText('Irdorath', 'Шапран', 'en')).toBeGreaterThan(0)
+    expect(compareText('1984', 'Ферма жывёлаў', 'be')).toBeLessThan(0)
+    const authors = LIBRARY.filter((b) => b.lang === 'be' && !b.series && b.author).map((b) => b.author)
+    expect(authors.at(-1)).toBe('Irdorath')
   })
 
   it('closes each language with the books that name no author, by title', () => {
@@ -385,7 +405,9 @@ describe('books page: library', () => {
     await user.click(chip('IT і праца'))
     expect(spines()).toHaveLength(LIBRARY.filter((b) => b.tags.includes('tech')).length)
     await user.click(chip('Ангельская'))
-    expect(spines()).toHaveLength(LIBRARY.filter((b) => b.tags.includes('tech') && b.lang === 'en').length)
+    expect(spines()).toHaveLength(
+      LIBRARY.filter((b) => b.tags.includes('tech') && langsOf(b).includes('en')).length
+    )
     await user.type(search(), 'clean')
     expect(spines()).toHaveLength(1)
     expect(screen.getByText('Clean Architecture')).toBeInTheDocument()
@@ -395,6 +417,21 @@ describe('books page: library', () => {
     show()
     expect(chip('Ангельская')).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /^Нямецкая/ })).not.toBeInTheDocument()
+  })
+
+  it('files a bilingual book under its main language but finds it under both', async () => {
+    const user = userEvent.setup()
+    show()
+    const spine = spines().find((el) => /Беларуская думка/.test(el.textContent))
+    expect(within(spine).getByText('бел · пол')).toBeInTheDocument()
+
+    // Polish has no books of its own, so its chip exists only thanks to the bilingual ones
+    const polish = LIBRARY.filter((b) => langsOf(b).includes('pl'))
+    expect(polish.every((b) => b.lang === 'be')).toBe(true)
+    await user.click(chip('Польская'))
+    expect(spines()).toHaveLength(polish.length)
+    await user.click(spines().find((el) => /Беларуская думка/.test(el.textContent)))
+    expect(within(screen.getByRole('dialog')).getByText('Беларуская, Польская')).toBeInTheDocument()
   })
 
   it('says so when nothing matches, and resets everything in one click', async () => {

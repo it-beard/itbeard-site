@@ -91,7 +91,7 @@ details:
 
 # Мая бібліятэка {#library}
 
-Спачатку ідуць беларускія кнігі, потым ангельскія, польскія і расейскія. У кожнай мове наперадзе серыі — том за томам, — а за імі асобныя кнігі паводле аўтараў: па прозьвішчы, а ў аднаго аўтара — па назьве. Карэньчыкі маюць колеры сапраўдных, а тамы адной серыі — адзін колер. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы. Націсьніце на карэньчык, каб выцягнуць кнігу са стосу і разгледзець яе.
+Спачатку ідуць беларускія кнігі, потым ангельскія, польскія і расейскія. У кожнай мове наперадзе серыі — том за томам, — а за імі асобныя кнігі паводле аўтараў: па прозьвішчы, а ў аднаго аўтара — па назьве. Двухмоўныя выданьні стаяць паводле галоўнай мовы, а другая пазначаная на карэньчыку. Карэньчыкі маюць колеры сапраўдных, а тамы адной серыі — адзін колер. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы. Націсьніце на карэньчык, каб выцягнуць кнігу са стосу і разгледзець яе.
 
 <!-- en -->
 
@@ -117,4 +117,4 @@ The closing volume of the same edition: the same translation by Dzmitry Mahileut
 
 # My library {#library}
 
-Belarusian books come first, then English, Polish and Russian. Within a language the series lead, volume by volume, followed by the single books by author — filed under the surname, and by title within one author. Spines keep the colours of the real ones, and the volumes of one series share a colour. Titles and authors are given exactly as printed on the cover. Click a spine to pull the book out of the pile and take a closer look.
+Belarusian books come first, then English, Polish and Russian. Within a language the series lead, volume by volume, followed by the single books by author — filed under the surname, and by title within one author. Bilingual editions stand by their main language, with the second one marked on the spine. Spines keep the colours of the real ones, and the volumes of one series share a colour. Titles and authors are given exactly as printed on the cover. Click a spine to pull the book out of the pile and take a closer look.

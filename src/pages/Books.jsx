@@ -6,7 +6,7 @@ import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
-import { LANG_ORDER, LIBRARY, WANTED } from '../data/books'
+import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
 
 // «Хронікі Нарніі · частка 1»
 const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
@@ -44,15 +44,21 @@ export default function Books() {
 
   const total = LIBRARY.length
   const tagCount = (t) => (t === 'all' ? total : LIBRARY.filter((b) => b.tags.includes(t)).length)
-  const langCount = (code) => LIBRARY.filter((b) => b.lang === code).length
+  const langCount = (code) => LIBRARY.filter((b) => langsOf(b).includes(code)).length
   // language chips in the order the library is sorted, only for languages present on the shelves
   const langs = LANG_ORDER.filter((code) => langCount(code) > 0)
+
+  // «Беларуская, Польская» for a bilingual edition
+  const langNamesOf = (b) =>
+    langsOf(b)
+      .map((code) => shared.labels.langNames[code])
+      .join(', ')
 
   const needle = fold(query.trim())
   const shown = LIBRARY.filter(
     (b) =>
       (tag === 'all' || b.tags.includes(tag)) &&
-      (bookLang === 'all' || b.lang === bookLang) &&
+      (bookLang === 'all' || langsOf(b).includes(bookLang)) &&
       (!needle || haystack(b).includes(needle))
   )
   const filtered = tag !== 'all' || bookLang !== 'all' || needle
@@ -187,8 +193,10 @@ export default function Books() {
                     {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
                     <span className="spine-title">{b.title}</span>
                   </span>
-                  <span className="spine-lang" title={shared.labels.langNames[b.lang]}>
-                    {shared.labels.langCodes[b.lang]}
+                  <span className="spine-lang" title={langNamesOf(b)}>
+                    {langsOf(b)
+                      .map((code) => shared.labels.langCodes[code])
+                      .join(' · ')}
                   </span>
                 </button>
               </li>
@@ -245,7 +253,7 @@ export default function Books() {
             [page.labels.translator, book.translator],
             [page.labels.publisher, [book.publisher, book.city].filter(Boolean).join(', ')],
             [page.labels.pages, book.pages],
-            [page.labels.language, shared.labels.langNames[book.lang]],
+            [page.labels.language, langNamesOf(book)],
             [page.labels.isbn, book.isbn],
           ]}
           note={libraryNoteOf(book.id)}

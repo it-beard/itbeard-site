@@ -2661,6 +2661,56 @@ a[href^="lightbox:"] {
   font-weight: 600;
 }
 
+/* phones: a magazine layout — a small cover floats at the left, the credit, the title and
+   the facts sit beside it, and the note wraps underneath. A column would squeeze the
+   cover into a letterboxed strip. */
+@media (max-width: 759px) {
+  .cover-view-scroll {
+    display: block;
+  }
+
+  .cover-view img,
+  .cover-view .cover-typeset {
+    float: left;
+    width: 40%;
+    max-width: 190px;
+    margin: 2px 16px 10px 0;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+  }
+
+  .cover-view-portrait img,
+  .cover-view-portrait .cover-typeset {
+    width: 34%;
+    max-width: 150px;
+  }
+
+  .cover-view .cover-typeset {
+    padding: 14px 12px;
+    gap: 12px;
+  }
+
+  .cover-view .cover-typeset span {
+    font-size: 9px;
+  }
+
+  .cover-view .cover-typeset strong {
+    font-size: 13px;
+  }
+
+  .cover-view-title {
+    font-size: 19px;
+  }
+
+  /* chips that do not fit beside the cover drop under it instead of overflowing */
+  .cover-facts > div {
+    border-radius: 14px;
+  }
+
+  .cover-steps {
+    clear: both;
+  }
+}
+
 @media (min-width: 760px) {
   /* a fixed width, so a card with little to say is the same size as its neighbours */
   .cover-view {

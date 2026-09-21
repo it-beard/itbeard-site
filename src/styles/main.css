@@ -2392,14 +2392,14 @@ a[href^="lightbox:"] {
   border-radius: 6px;
 }
 
-.vinyl-cap {
+.cover-cap {
   display: flex;
   flex-direction: column;
   gap: 2px;
   margin-top: 13px;
 }
 
-.vinyl-artist {
+.cover-overline {
   color: var(--accent-hover);
   font-size: 11.5px;
   font-weight: 700;
@@ -2407,65 +2407,65 @@ a[href^="lightbox:"] {
   text-transform: uppercase;
 }
 
-.vinyl-title {
+.cover-title {
   color: var(--text);
   font-size: 15px;
   line-height: 1.35;
 }
 
-.vinyl-year {
+.cover-sub {
   color: var(--muted);
   font-size: 12.5px;
 }
 
-.vinyl-empty {
+.cover-empty {
   color: var(--muted);
   font-size: 13px;
 }
 
-/* ----- sleeve view (reuses the .lightbox shell) ----- */
-.vinyl-view {
+/* ----- cover view, shared by the vinyl and book galleries (reuses the .lightbox shell) ----- */
+.cover-view {
   max-width: min(880px, 100%);
   overflow-y: auto;
   gap: 20px;
   padding: 18px;
 }
 
-.vinyl-view img {
+.cover-view img {
   border-radius: 4px;
 }
 
  /* beats the centred `.lightbox-body figcaption` default */
-.vinyl-view .vinyl-view-info {
+.cover-view .cover-view-info {
   padding: 0;
   text-align: left;
 }
 
-.vinyl-view-title {
+.cover-view-title {
   margin-top: 2px;
   font-size: 22px;
   line-height: 1.25;
   color: var(--text);
 }
 
-.vinyl-view-info .ornament-sm {
+.cover-view-info .ornament-sm {
   margin: 12px 0 14px;
 }
 
-.vinyl-facts {
+.cover-facts {
   display: flex;
   flex-wrap: wrap;
   gap: 8px 10px;
   margin: 0 0 14px;
 }
 
-.vinyl-facts > div {
+.cover-facts > div {
   padding: 4px 12px;
   border: 1px solid var(--line);
   border-radius: 999px;
 }
 
-.vinyl-facts dt {
+.cover-facts dt {
   display: inline;
   color: var(--muted);
   font-size: 11px;
@@ -2474,7 +2474,7 @@ a[href^="lightbox:"] {
   text-transform: uppercase;
 }
 
-.vinyl-facts dd {
+.cover-facts dd {
   display: inline;
   margin: 0 0 0 7px;
   color: var(--text);
@@ -2482,12 +2482,12 @@ a[href^="lightbox:"] {
   font-weight: 600;
 }
 
-.vinyl-note p {
+.cover-note p {
   font-size: 15px;
   color: var(--muted);
 }
 
-.vinyl-steps {
+.cover-steps {
   display: flex;
   align-items: center;
   gap: 14px;
@@ -2497,7 +2497,7 @@ a[href^="lightbox:"] {
   font-weight: 600;
 }
 
-.vinyl-steps button {
+.cover-steps button {
   width: 36px;
   height: 36px;
   border: 1px solid var(--line);
@@ -2509,27 +2509,120 @@ a[href^="lightbox:"] {
 }
 
 @media (hover: hover) {
-  .vinyl-steps button:hover {
+  .cover-steps button:hover {
     border-color: var(--accent-bright);
     color: var(--accent-hover);
   }
 }
 
+.cover-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
 @media (min-width: 760px) {
-  .vinyl-view {
+  .cover-view {
     flex-direction: row;
     align-items: flex-start;
   }
 
-  .vinyl-view img {
+  .cover-view img {
     width: 46%;
     flex-shrink: 0;
   }
 
-  .vinyl-view-info {
+  .cover-view-info {
     flex: 1;
     min-width: 0;
   }
+
+  /* a book cover is taller than a sleeve, so it gets a narrower column */
+  .cover-view-portrait img {
+    width: 38%;
+  }
+}
+
+/* ===== Book wishlist (unlisted /books) ===== */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
+  gap: 38px 34px;
+}
+
+.book-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  text-align: left;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* the cover swings open on its spine, so the box needs depth */
+.book-cover {
+  position: relative;
+  display: block;
+  aspect-ratio: 0.64;
+  perspective: 900px;
+}
+
+/* the page block that shows once the cover swings away */
+.book-pages {
+  position: absolute;
+  inset: 4px 1px 4px 6px;
+  border-radius: 2px 3px 3px 2px;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.35), transparent 14%),
+    repeating-linear-gradient(90deg, #ece5d3 0 2px, #d6cdb6 2px 3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
+.book-front {
+  /* out of flow, so covers of different proportions can't stretch the box */
+  position: absolute;
+  inset: 0;
+  display: block;
+  transform-origin: left center;
+  transition: transform 0.4s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.book-front img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px 4px 4px 2px;
+  background: var(--bg-deep);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.45);
+}
+
+/* spine crease along the binding edge */
+.book-front::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 2px 4px 4px 2px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.32) 0, rgba(255, 255, 255, 0.14) 3.5%, transparent 8%);
+  pointer-events: none;
+}
+
+@media (hover: hover) {
+  .book-item:hover .book-front,
+  .book-item:focus-visible .book-front {
+    transform: rotateY(-27deg);
+  }
+}
+
+.book-item:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 6px;
+  border-radius: 6px;
 }
 
 /* two sleeves per row on a phone rather than one oversized one */
@@ -2539,18 +2632,25 @@ a[href^="lightbox:"] {
     gap: 26px 16px;
   }
 
-  .vinyl-title {
+  .book-grid {
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    gap: 28px 18px;
+  }
+
+  .cover-title {
     font-size: 14px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
   .vinyl-disc,
-  .vinyl-sleeve img {
+  .vinyl-sleeve img,
+  .book-front {
     transition: none;
   }
 
-  .vinyl-item:hover .vinyl-disc {
+  .vinyl-item:hover .vinyl-disc,
+  .book-item:hover .book-front {
     transform: none;
   }
 }

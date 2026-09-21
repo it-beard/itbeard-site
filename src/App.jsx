@@ -7,6 +7,7 @@ import Archive from './pages/Archive'
 import Support from './pages/Support'
 import Contacts from './pages/Contacts'
 import Vinyl from './pages/Vinyl'
+import Books from './pages/Books'
 import NotFound from './pages/NotFound'
 import Redirector from './pages/Redirector'
 import { MEDIAKIT_URL } from './data/site'
@@ -25,8 +26,9 @@ export default function App() {
             <Route path="/sponsorship" element={<Support />} />
             <Route path="/help" element={<Support />} />
             <Route path="/contacts" element={<Contacts />} />
-            {/* unlisted: reachable only by direct link, absent from the nav and the sitemap */}
+            {/* unlisted pages: reachable only by direct link, absent from the nav and the sitemap */}
             <Route path="/vinils" element={<Vinyl />} />
+            <Route path="/books" element={<Books />} />
             <Route path="/beard-news" element={<Navigate to="/archive" replace />} />
             <Route path="/mediakit" element={<Redirector to={MEDIAKIT_URL} />} />
             <Route path="/s/:key" element={<Redirector />} />

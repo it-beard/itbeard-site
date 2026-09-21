@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import { NavLink, Link } from 'react-router-dom'
+import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
 import { getPage } from '../lib/content'
 
@@ -90,6 +90,63 @@ function LangToggle() {
   )
 }
 
+// «Паліцы»: a group of pages that has no page of its own. On desktop it is a dropdown
+// (hover, click or keyboard; Escape and an outside click close it); in the mobile menu
+// the same markup lies open as a captioned pair of links — nothing to expand.
+const SHELVES = [
+  { to: '/books', key: 'books' },
+  { to: '/vinils', key: 'vinyl' },
+]
+
+function ShelvesMenu({ nav, onNavigate }) {
+  const { pathname } = useLocation()
+  const [open, setOpen] = useState(false)
+  const root = useRef(null)
+  const active = SHELVES.some((s) => pathname.startsWith(s.to))
+
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e) => e.key === 'Escape' && setOpen(false)
+    const onDown = (e) => !root.current?.contains(e.target) && setOpen(false)
+    document.addEventListener('keydown', onKey)
+    document.addEventListener('pointerdown', onDown)
+    return () => {
+      document.removeEventListener('keydown', onKey)
+      document.removeEventListener('pointerdown', onDown)
+    }
+  }, [open])
+
+  return (
+    <div className={`nav-group${open ? ' opened' : ''}`} ref={root}>
+      <button
+        type="button"
+        className={`nav-link nav-group-toggle${active ? ' active' : ''}`}
+        aria-expanded={open}
+        aria-controls="shelves-menu"
+        onClick={() => setOpen(!open)}
+      >
+        {nav.shelves}
+        <i className="fas fa-chevron-down" aria-hidden="true"></i>
+      </button>
+      <div className="nav-group-list" id="shelves-menu">
+        {SHELVES.map((s) => (
+          <NavLink
+            key={s.to}
+            to={s.to}
+            className="nav-link"
+            onClick={() => {
+              setOpen(false)
+              onNavigate()
+            }}
+          >
+            {nav[s.key]}
+          </NavLink>
+        ))}
+      </div>
+    </div>
+  )
+}
+
 export default function NavMenu() {
   const { lang } = useLang()
   const { nav } = getPage('shared', lang)
@@ -129,6 +186,7 @@ export default function NavMenu() {
           <NavLink to="/archive" className="nav-link" onClick={closeAll}>
             {nav.archive}
           </NavLink>
+          <ShelvesMenu nav={nav} onNavigate={closeAll} />
           <NavLink to="/contacts" className="nav-link" onClick={closeAll}>
             {nav.contacts}
           </NavLink>

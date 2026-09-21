@@ -17,6 +17,9 @@ nav:
   experience: { be: Кар'ера, en: Career }
   about: { be: Пра мяне, en: About }
   archive: { be: Пагост, en: Pahost }
+  shelves: { be: Паліцы, en: Shelves }
+  books: { be: Кнігі, en: Books }
+  vinyl: { be: Кружэлкі, en: Vinyl }
   contacts: { be: Сувязь, en: Contacts }
 labels:
   closedIn: { be: скончаны ў, en: finished in }

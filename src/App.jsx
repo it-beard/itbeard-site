@@ -26,7 +26,6 @@ export default function App() {
             <Route path="/sponsorship" element={<Support />} />
             <Route path="/help" element={<Support />} />
             <Route path="/contacts" element={<Contacts />} />
-            {/* unlisted pages: reachable only by direct link, absent from the nav and the sitemap */}
             <Route path="/vinils" element={<Vinyl />} />
             <Route path="/books" element={<Books />} />
             <Route path="/beard-news" element={<Navigate to="/archive" replace />} />

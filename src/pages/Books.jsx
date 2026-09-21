@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { useLang } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
-import { useNoIndex } from '../lib/useNoIndex'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
@@ -92,7 +91,6 @@ export default function Books() {
   const page = getPage('books', lang)
   const shared = getPage('shared', lang)
   useTitle(page.title, page.description)
-  useNoIndex()
 
   const intro = getSection(page, 'intro')
   const wanted = getSection(page, 'wanted')

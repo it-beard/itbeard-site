@@ -365,12 +365,6 @@ describe('books page: library', () => {
 })
 
 describe('books page: housekeeping', () => {
-  it('keeps the page out of search indexes while it is open', () => {
-    const { unmount } = show()
-    expect(document.head.querySelector('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow')
-    unmount()
-    expect(document.head.querySelector('meta[name="robots"]')).toBeNull()
-  })
 
   // Regression: the ✕ hangs off the frame's corner, so the frame must not be the
   // scroll container — `overflow` there clipped half of the button.

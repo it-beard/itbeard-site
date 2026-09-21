@@ -7,7 +7,6 @@ import react from '@vitejs/plugin-react'
 // served by 404.html with an HTTP 404 status, which keeps crawlers from
 // indexing those pages. Copying index.html into each route's folder makes
 // Pages serve them with a proper 200.
-// 'vinils' and 'books' are unlisted, but they still get folders so the direct links answer 200
 const ROUTES = ['about', 'experience', 'archive', 'support', 'sponsorship', 'help', 'contacts', 'mediakit', 'vinils', 'books']
 
 function spaRoutePages() {

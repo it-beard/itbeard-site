@@ -5,14 +5,12 @@ import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
-import { useNoIndex } from '../lib/useNoIndex'
 import { VINYL } from '../data/site'
 
 export default function Vinyl() {
   const { lang } = useLang()
   const page = getPage('vinyl', lang)
   useTitle(page.title, page.description)
-  useNoIndex()
 
   const intro = getSection(page, 'intro')
   const noteOf = (id) => intro.subs.find((s) => s.id === id)?.html

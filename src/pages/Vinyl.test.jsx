@@ -136,10 +136,4 @@ describe('vinyl page', () => {
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
-  it('keeps the page out of search indexes while it is open', () => {
-    const { unmount } = show()
-    expect(document.head.querySelector('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow')
-    unmount()
-    expect(document.head.querySelector('meta[name="robots"]')).toBeNull()
-  })
 })

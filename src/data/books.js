@@ -47,7 +47,7 @@ export const WANTED = [
 // Facts for the book cards, by id: what the edition itself states (year, publisher,
 // city, translator, isbn, pages), and `cover: true` when public/images/library/<id>.webp exists.
 const LIBRARY_FACTS = {
-  'sciezkami-mifau': { year: 2023, pages: 42, cover: true },
+  'sciezkami-mifau': { year: 2023, publisher: 'самвыдат', pages: 42, cover: true },
   'niaklajeu-kniha-losau': { year: 2025, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-351-9', cover: true },
   'mify-backauscyny': { year: 1994, publisher: 'Беларуская Энцыклапедыя', city: 'Мінск', isbn: '5-85700-162-5', cover: true },
   'kazakova-mifalahiemy-i-mahija': { year: 1997, publisher: 'БОФФ', city: 'Мінск', isbn: '985-430-003-X', pages: 119, cover: true },
@@ -166,7 +166,7 @@ const LIBRARY_FACTS = {
   'raslinny-sviet-slounik': { year: 2001, publisher: 'Беларуская навука', city: 'Мінск', isbn: '985-08-0457-2', pages: 655, cover: true },
   'savicki-slounik-pa-infarmatycy': { year: 2014, publisher: 'Медыял', city: 'Менск', isbn: '978-985-6914-20-4', pages: 418, cover: true },
   'arendt-pra-calaviecnasc': { year: 2026, publisher: 'Пфляўмбаўм', city: 'Вільня', translator: 'Алена Пятровіч, Вольга Гронская, Алена Талапіла, Кацярына Тэвес', isbn: '978-609-8350-16-6', pages: 287, cover: true },
-  'leksicny-atlas-5': { year: 1998, publisher: 'Акадэмія навук Беларусі, Інстытут мовазнаўства імя Якуба Коласа', city: 'Мінск' },
+  'leksicny-atlas-5': { year: 1998, publisher: 'Камітэт дзяржаўных знакаў пры Міністэрстве фінансаў Рэспублікі Беларусь', city: 'Мінск', cover: true },
 }
 
 const book = (id, author, title, lang, tags, spine, ink, size = 2) => ({

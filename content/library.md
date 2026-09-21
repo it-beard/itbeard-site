@@ -444,7 +444,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Лексічны атлас беларускіх народных гаворак. Том 5 {#leksicny-atlas-5}
 
-Апошні, пяты том акадэмічнага атласу беларускіх гаворак (1993–1998) пад рэдакцыяй М. Бірылы й Ю. Мацкевіч: карты «Сэмантыка. Словаўтварэньне. Націск» і асобны сшытак каментароў да іх. Атлас працягвае «Дыялекталагічны атлас беларускай мовы» 1963 году і ў папяровым выглядзе трапляецца рэдка.
+Апошні, пяты том акадэмічнага атласу беларускіх гаворак, падрыхтаванага ў Інстытуце мовазнаўства імя Якуба Коласа: 337 лінгвістычных картаў на тэму «Семантыка. Словаўтварэнне. Націск». Том выйшаў пад рэдакцыяй Ю. Мацкевіч, навуковыя рэдактары — В. Курцова і І. Яшкін; наклад — 1250 асобнікаў. Выданьне асабістым укладам падтрымаў айцец Аляксандар Надсан зь Вялікабрытаніі. Атлас працягвае «Дыялекталагічны атлас беларускай мовы» 1963 году.
 
 ## Кніга лёсаў {#niaklajeu-kniha-losau}
 
@@ -928,7 +928,7 @@ The first book by Hannah Arendt in Belarusian: a selection of essays put togethe
 
 ## Лексічны атлас беларускіх народных гаворак. Том 5 {#leksicny-atlas-5}
 
-The fifth and last volume of the academic atlas of Belarusian dialects (1993–1998), edited by M. Biryla and Yu. Matskevich: maps on semantics, word formation and stress, with a separate part of commentaries. The atlas continues the 1963 Dialectological Atlas of the Belarusian Language and is hard to find in print.
+The fifth and last volume of the academic atlas of Belarusian dialects, prepared at the Yakub Kolas Institute of Linguistics: 337 linguistic maps on semantics, word formation and stress. Edited by Yu. Matskevich, with V. Kurtsova and I. Yashkin as the volume's academic editors; 1,250 copies printed. Father Alexander Nadson of Great Britain supported the edition with a personal contribution. The atlas continues the 1963 Dialectological Atlas of the Belarusian Language.
 
 ## Кніга лёсаў {#niaklajeu-kniha-losau}
 

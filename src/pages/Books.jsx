@@ -11,6 +11,10 @@ import { LIBRARY, WANTED } from '../data/books'
 // «Хронікі Нарніі · частка 1»
 const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
 
+// The credit line on a spine: the author, plus the series unless the title already names it
+const spineCredit = (b) =>
+  [b.author, b.series && !b.title.includes(b.series) && b.series].filter(Boolean).join(' · ')
+
 // Search ignores case and the letters people routinely swap when typing Belarusian
 const fold = (text) => text.toLowerCase().replace(/ё/g, 'е').replace(/ў/g, 'у').replace(/[’'`]/g, '')
 const haystack = (b) => fold([b.author, b.title, b.series].filter(Boolean).join(' '))
@@ -96,11 +100,11 @@ export default function Books() {
   const noteOf = (id) => wanted.subs.find((s) => s.id === id)?.html
   const detailsOf = (id) => page.details?.[id] ?? {}
 
-  // ----- wanted: the cover view walks the whole list and wraps around
-  const [active, setActive] = useState(null)
-  const step = useCallback((delta) => setActive((i) => (i + delta + WANTED.length) % WANTED.length), [])
-  const book = active !== null ? WANTED[active] : null
-  const details = book ? detailsOf(book.id) : null
+  const libraryNotes = getSection(getPage('library', lang), 'notes').subs
+  const libraryNoteOf = (id) => libraryNotes.find((s) => s.id === id)?.html
+
+  // ----- the open card: which list it came from, and the position in that list
+  const [open, setOpen] = useState(null)
 
   // ----- library: free-text search plus subject and language chips
   const [query, setQuery] = useState('')
@@ -127,6 +131,17 @@ export default function Books() {
     setBookLang('all')
   }
 
+  // the card walks the list it was opened from — the library one as currently filtered —
+  // and wraps around, so the arrows never dead-end
+  const openList = open?.list === 'wanted' ? WANTED : shown
+  const step = useCallback(
+    (delta) => setOpen((o) => o && { ...o, index: (o.index + delta + openList.length) % openList.length }),
+    [openList.length]
+  )
+  const close = useCallback(() => setOpen(null), [])
+  const book = open ? openList[open.index] : null
+  const details = book && open.list === 'wanted' ? detailsOf(book.id) : null
+
   return (
     <main>
       <section className="container section page-head">
@@ -144,7 +159,12 @@ export default function Books() {
         </h2>
         <Ornament small />
         <Md className="prose intro book-lead" html={wanted.html} />
-        <WantedRail books={WANTED} labels={page.labels} detailsOf={detailsOf} onOpen={setActive} />
+        <WantedRail
+          books={WANTED}
+          labels={page.labels}
+          detailsOf={detailsOf}
+          onOpen={(index) => setOpen({ list: 'wanted', index })}
+        />
       </section>
 
       <section className="container section">
@@ -207,28 +227,29 @@ export default function Books() {
           <p className="cover-empty">{page.labels.empty}</p>
         ) : (
           <ul key={`${tag}-${bookLang}`} className="spines cards-fade">
-            {shown.map((b) => (
-              <li
-                key={b.id}
-                className={`spine spine-${b.size}`}
-                style={{ '--spine': b.spine, '--ink': b.ink }}
-              >
-                <span className="spine-text">
-                  {(b.author || b.series) && (
-                    <span className="spine-author">{[b.author, b.series].filter(Boolean).join(' · ')}</span>
-                  )}
-                  <span className="spine-title">{b.title}</span>
-                </span>
-                <span className="spine-lang" title={shared.labels.langNames[b.lang]}>
-                  {shared.labels.langCodes[b.lang]}
-                </span>
+            {shown.map((b, index) => (
+              <li key={b.id}>
+                <button
+                  type="button"
+                  className={`spine spine-${b.size}`}
+                  style={{ '--spine': b.spine, '--ink': b.ink }}
+                  onClick={() => setOpen({ list: 'library', index })}
+                >
+                  <span className="spine-text">
+                    {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
+                    <span className="spine-title">{b.title}</span>
+                  </span>
+                  <span className="spine-lang" title={shared.labels.langNames[b.lang]}>
+                    {shared.labels.langCodes[b.lang]}
+                  </span>
+                </button>
               </li>
             ))}
           </ul>
         )}
       </section>
 
-      {book && (
+      {book && open.list === 'wanted' && (
         <CoverView
           portrait
           image={book.image}
@@ -243,9 +264,9 @@ export default function Books() {
           ]}
           note={noteOf(book.id)}
           labels={page.labels}
-          position={active + 1}
-          total={WANTED.length}
-          onClose={() => setActive(null)}
+          position={open.index + 1}
+          total={openList.length}
+          onClose={close}
           onStep={step}
         >
           <p className="cover-source">
@@ -256,6 +277,41 @@ export default function Books() {
               </a>
             )}
           </p>
+        </CoverView>
+      )}
+
+      {book && open.list === 'library' && (
+        <CoverView
+          portrait
+          image={book.image}
+          fallback={
+            <div className="cover-typeset" style={{ '--spine': book.spine, '--ink': book.ink }} aria-hidden="true">
+              <span>{book.author}</span>
+              <strong>{book.title}</strong>
+            </div>
+          }
+          overline={book.author || book.series || shared.labels.langNames[book.lang]}
+          title={book.title}
+          facts={[
+            [page.labels.year, book.year],
+            [page.labels.translator, book.translator],
+            [page.labels.publisher, [book.publisher, book.city].filter(Boolean).join(', ')],
+            [page.labels.pages, book.pages],
+            [page.labels.language, shared.labels.langNames[book.lang]],
+            [page.labels.isbn, book.isbn],
+          ]}
+          note={libraryNoteOf(book.id)}
+          labels={{ ...page.labels, prev: page.labels.prevOnShelf, next: page.labels.nextOnShelf }}
+          position={open.index + 1}
+          total={openList.length}
+          onClose={close}
+          onStep={step}
+        >
+          {book.series && (
+            <p className="cover-source">
+              <span>{seriesLine(book, page.labels)}</span>
+            </p>
+          )}
         </CoverView>
       )}
     </main>

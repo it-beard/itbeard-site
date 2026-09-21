@@ -35,6 +35,11 @@ labels:
   printRun: { be: Наклад, en: Print run }
   copies: { be: ас., en: copies }
   isbn: { be: ISBN, en: ISBN }
+  pages: { be: Старонак, en: Pages }
+  language: { be: Мова, en: Language }
+  openBook: { be: Адкрыць картку кнігі, en: Open the book card }
+  prevOnShelf: { be: Папярэдняя кніга на паліцы, en: Previous book on the shelf }
+  nextOnShelf: { be: Наступная кніга на паліцы, en: Next book on the shelf }
   source: { be: Пра выданьне, en: About this edition }
   close: { be: Зачыніць, en: Close }
   prev: { be: Папярэдняя кніга, en: Previous book }
@@ -86,7 +91,7 @@ details:
 
 # Мая бібліятэка {#library}
 
-Кнігі стаяць тут так, як стаяць дома, — паліца за паліцай, з колерамі сапраўдных карэньчыкаў. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы.
+Кнігі стаяць тут так, як стаяць дома, — паліца за паліцай, з колерамі сапраўдных карэньчыкаў, а тамы адной сэрыі — адным колерам. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы. Націсьніце на карэньчык, каб выцягнуць кнігу з стосу і разгледзець яе.
 
 <!-- en -->
 
@@ -112,4 +117,4 @@ The closing volume of the same edition: the same translation by Dzmitry Mahileut
 
 # My library {#library}
 
-The books stand here the way they stand at home — shelf by shelf, in the colours of their real spines. Titles and authors are given exactly as printed on the cover.
+The books stand here the way they stand at home — shelf by shelf, in the colours of their real spines, with the volumes of one series sharing a colour. Titles and authors are given exactly as printed on the cover. Click a spine to pull the book out of the pile and take a closer look.

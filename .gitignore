@@ -19,3 +19,6 @@ dist-ds/
 .design-sync/.cache/
 .design-sync/learnings/
 .design-sync/node_modules
+
+# unreviewed research for the /books cards (covers, facts, draft notes) — see .research/library/README.md
+.research/

@@ -2524,6 +2524,35 @@ a[href^="lightbox:"] {
   }
 }
 
+/* stands in for a missing cover: the book's own colours, typeset like a plain jacket */
+.cover-typeset {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  aspect-ratio: 0.66;
+  padding: 26px 22px;
+  border-radius: 3px 5px 5px 3px;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0, rgba(255, 255, 255, 0.12) 9px, transparent 20px),
+    var(--spine);
+  color: var(--ink);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cover-typeset span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.cover-typeset strong {
+  font-size: 22px;
+  line-height: 1.22;
+}
+
 .cover-source {
   display: flex;
   flex-wrap: wrap;
@@ -2535,6 +2564,11 @@ a[href^="lightbox:"] {
 }
 
 @media (min-width: 760px) {
+  /* a fixed width, so a card with little to say is the same size as its neighbours */
+  .cover-view {
+    width: min(880px, 100%);
+  }
+
   .cover-view-scroll {
     flex-direction: row;
     align-items: flex-start;
@@ -2551,8 +2585,10 @@ a[href^="lightbox:"] {
   }
 
   /* a book cover is taller than a sleeve, so it gets a narrower column */
-  .cover-view-portrait img {
+  .cover-view-portrait img,
+  .cover-view-portrait .cover-typeset {
     width: 38%;
+    flex-shrink: 0;
   }
 }
 
@@ -2763,14 +2799,20 @@ a[href^="lightbox:"] {
   list-style: none;
 }
 
+.spines > li {
+  margin-bottom: 3px;
+  break-inside: avoid;
+}
+
 .spine {
   display: flex;
   align-items: center;
   gap: 12px;
+  width: 100%;
   min-height: 42px;
-  margin-bottom: 3px;
   padding: 6px 12px 6px 16px;
-  break-inside: avoid;
+  text-align: left;
+  cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.07); /* keeps near-black spines off the dark page */
   border-radius: 3px 2px 2px 3px;
   background:
@@ -2804,7 +2846,16 @@ a[href^="lightbox:"] {
   min-width: 0;
 }
 
+.spine:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+
+/* one line only: long «author · series» credits get an ellipsis, not a taller spine */
 .spine-author {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   font-size: 10.5px;
   font-weight: 700;
   letter-spacing: 0.06em;

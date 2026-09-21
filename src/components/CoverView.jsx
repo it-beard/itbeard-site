@@ -7,8 +7,10 @@ import Ornament from './Ornament'
 // on the left, facts and the note on the right. Arrow keys and the footer
 // buttons walk the list; `onStep` receives -1 / +1. `facts` is a list of
 // [term, value] pairs — empty values are skipped. `children` land under the note.
+// Without an `image`, the `fallback` node (a typeset cover) takes its place.
 export default function CoverView({
   image,
+  fallback,
   overline,
   title,
   facts = [],
@@ -50,7 +52,7 @@ export default function CoverView({
         {/* the figure scrolls on short screens; the frame around it must not clip,
             or the ✕ that hangs off its corner gets cut */}
         <figure className="cover-view-scroll">
-          <img src={image} alt={full} />
+          {image ? <img src={image} alt={full} /> : fallback}
           <figcaption className="cover-view-info">
             <p className="cover-overline">{overline}</p>
             <h2 className="cover-view-title">{title}</h2>

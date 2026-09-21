@@ -23,7 +23,7 @@ function show(lang = 'be') {
 }
 
 const covers = () => screen.getAllByRole('button').filter((b) => b.classList.contains('book-item'))
-const spines = () => screen.queryAllByRole('listitem').filter((li) => li.classList.contains('spine'))
+const spines = () => screen.queryAllByRole('button').filter((b) => b.classList.contains('spine'))
 const chip = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
 const search = () => screen.getByRole('searchbox')
 
@@ -105,6 +105,22 @@ describe('library data', () => {
       expect(b.spine, b.title).toMatch(/^#[0-9a-f]{6}$/)
       expect(b.ink, b.title).toMatch(/^#[0-9a-f]{6}$/)
       expect([1, 2, 3], b.title).toContain(b.size)
+    }
+  })
+
+  it('paints all volumes of one series the same colour', () => {
+    const colours = {}
+    for (const b of LIBRARY.filter((x) => x.series)) (colours[b.series] ??= new Set()).add(`${b.spine}/${b.ink}`)
+    expect(Object.keys(colours).length).toBeGreaterThan(5)
+    for (const [series, set] of Object.entries(colours)) expect([...set], series).toHaveLength(1)
+  })
+
+  it('numbers the volumes of a series without repeats', () => {
+    const parts = {}
+    for (const b of LIBRARY.filter((x) => x.series)) {
+      expect(Number.isInteger(b.part), b.title).toBe(true)
+      expect((parts[b.series] ??= new Set()).has(b.part), `${b.series} has two parts ${b.part}`).toBe(false)
+      parts[b.series].add(b.part)
     }
   })
 
@@ -198,9 +214,44 @@ describe('books page: library', () => {
 
   it('prints the author, the title and the language code on a spine', () => {
     show()
-    const spine = spines().find((li) => within(li).queryByText('Сабакі Эўропы'))
+    const spine = spines().find((el) => within(el).queryByText('Сабакі Эўропы'))
     expect(within(spine).getByText('Альгерд Бахарэвіч')).toBeInTheDocument()
     expect(within(spine).getByText('бел')).toBeInTheDocument()
+  })
+
+  it('names the series on the spine unless the title already does', () => {
+    show()
+    const witcher = spines().find((el) => within(el).queryByText('Кроў эльфаў'))
+    expect(within(witcher).getByText('Анджэй Сапкоўскі · Вядзьмар')).toBeInTheDocument()
+    const potter = spines().find((el) => within(el).queryByText('Гары Потэр і Келіх агню'))
+    expect(within(potter).getByText('Дж. К. Роўлінг')).toBeInTheDocument()
+  })
+
+  it('opens a card for a book, with the series line and the language', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(spines().find((el) => within(el).queryByText('Час пагарды')))
+    const view = screen.getByRole('dialog')
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Час пагарды')
+    // the author also appears on the typeset stand-in cover, so ask for the credit line itself
+    expect(view.querySelector('.cover-overline')).toHaveTextContent('Анджэй Сапкоўскі')
+    expect(within(view).getByText('Вядзьмар · частка 4')).toBeInTheDocument()
+    expect(within(view).getByText('Беларуская')).toBeInTheDocument()
+  })
+
+  it('walks the filtered list from an open card, wrapping around', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(chip('Паэзія'))
+    const poetry = LIBRARY.filter((b) => b.tags.includes('poetry'))
+    await user.click(spines()[0])
+    expect(screen.getByRole('dialog')).toHaveTextContent(`1 / ${poetry.length}`)
+    await user.keyboard('{ArrowLeft}')
+    const view = screen.getByRole('dialog')
+    expect(view).toHaveTextContent(`${poetry.length} / ${poetry.length}`)
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent(poetry.at(-1).title)
+    await user.keyboard('{Escape}')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
   it('finds books by title', async () => {
@@ -220,7 +271,7 @@ describe('books page: library', () => {
     await user.clear(search())
     await user.type(search(), 'быкау')
     expect(spines().length).toBeGreaterThan(0)
-    expect(spines().every((li) => /Быкаў/.test(li.textContent))).toBe(true)
+    expect(spines().every((el) => /Быкаў/.test(el.textContent))).toBe(true)
   })
 
   it('finds books by series, even though it is not part of the title', async () => {

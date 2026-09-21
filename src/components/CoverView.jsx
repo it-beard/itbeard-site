@@ -40,43 +40,47 @@ export default function CoverView({
 
   return createPortal(
     <div className="lightbox" role="dialog" aria-modal="true" aria-label={full} onClick={onClose}>
-      <figure
+      <div
         className={`lightbox-body cover-view${portrait ? ' cover-view-portrait' : ''}`}
         onClick={(e) => e.stopPropagation()}
       >
         <button type="button" className="lightbox-close" aria-label={labels.close} onClick={onClose}>
           ✕
         </button>
-        <img src={image} alt={full} />
-        <figcaption className="cover-view-info">
-          <p className="cover-overline">{overline}</p>
-          <h2 className="cover-view-title">{title}</h2>
-          <Ornament small />
-          {shownFacts.length > 0 && (
-            <dl className="cover-facts">
-              {shownFacts.map(([term, value]) => (
-                <div key={term}>
-                  <dt>{term}</dt>
-                  <dd>{value}</dd>
-                </div>
-              ))}
-            </dl>
-          )}
-          {note && <Md className="prose cover-note" html={note} />}
-          {children}
-          <div className="cover-steps">
-            <button type="button" aria-label={labels.prev} onClick={() => onStep(-1)}>
-              ‹
-            </button>
-            <span>
-              {position} / {total}
-            </span>
-            <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
-              ›
-            </button>
-          </div>
-        </figcaption>
-      </figure>
+        {/* the figure scrolls on short screens; the frame around it must not clip,
+            or the ✕ that hangs off its corner gets cut */}
+        <figure className="cover-view-scroll">
+          <img src={image} alt={full} />
+          <figcaption className="cover-view-info">
+            <p className="cover-overline">{overline}</p>
+            <h2 className="cover-view-title">{title}</h2>
+            <Ornament small />
+            {shownFacts.length > 0 && (
+              <dl className="cover-facts">
+                {shownFacts.map(([term, value]) => (
+                  <div key={term}>
+                    <dt>{term}</dt>
+                    <dd>{value}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
+            {note && <Md className="prose cover-note" html={note} />}
+            {children}
+            <div className="cover-steps">
+              <button type="button" aria-label={labels.prev} onClick={() => onStep(-1)}>
+                ‹
+              </button>
+              <span>
+                {position} / {total}
+              </span>
+              <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
+                ›
+              </button>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
     </div>,
     document.body
   )

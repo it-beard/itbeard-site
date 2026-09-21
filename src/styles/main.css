@@ -2426,9 +2426,18 @@ a[href^="lightbox:"] {
 /* ----- cover view, shared by the vinyl and book galleries (reuses the .lightbox shell) ----- */
 .cover-view {
   max-width: min(880px, 100%);
-  overflow-y: auto;
-  gap: 20px;
   padding: 18px;
+}
+
+/* the scroller is inside the frame: overflow on .cover-view itself would clip
+   the close button, which hangs off the frame's corner */
+.cover-view-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-height: 0;
+  margin: 0;
+  overflow-y: auto;
 }
 
 .cover-view img {
@@ -2526,7 +2535,7 @@ a[href^="lightbox:"] {
 }
 
 @media (min-width: 760px) {
-  .cover-view {
+  .cover-view-scroll {
     flex-direction: row;
     align-items: flex-start;
   }

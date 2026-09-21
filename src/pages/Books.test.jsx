@@ -1,4 +1,4 @@
-import { existsSync } from 'node:fs'
+import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
 import { cleanup, render, screen, within } from '@testing-library/react'
@@ -134,5 +134,24 @@ describe('book wishlist page', () => {
     expect(document.head.querySelector('meta[name="robots"]')).toHaveAttribute('content', 'noindex, nofollow')
     unmount()
     expect(document.head.querySelector('meta[name="robots"]')).toBeNull()
+  })
+})
+
+// Regression: the ✕ hangs off the frame's corner, so the frame must not be the
+// scroll container — `overflow` there clipped half of the button.
+describe('cover view close button', () => {
+  it('sits outside the scrolling element', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(covers()[0])
+    const close = within(screen.getByRole('dialog')).getByRole('button', { name: 'Зачыніць' })
+    expect(close.closest('.cover-view-scroll')).toBeNull()
+    expect(close.parentElement).toHaveClass('cover-view')
+  })
+
+  it('keeps overflow off the frame in the stylesheet', () => {
+    const css = readFileSync(resolve(ROOT, 'src/styles/main.css'), 'utf8')
+    const frame = /\.cover-view \{[^}]*\}/.exec(css)[0]
+    expect(frame).not.toMatch(/overflow/)
   })
 })

@@ -376,7 +376,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-white}
 
-Раман Уладзімера Караткевіча пра шляхецкі род Загорскіх і пакаленьне, якое падыходзіла да паўстаньня 1863 году; сярод герояў ёсьць і Кастусь Каліноўскі. Выданьне ў белай вокладцы з чырвоным арнаментам вышыванкі й серпам, назва напісаная ад рукі.
+Раман Уладзімера Караткевіча пра шляхецкі род Загорскіх і пакаленьне, якое падыходзіла да паўстаньня 1863 году; сярод герояў ёсьць і Кастусь Каліноўскі. Гэта расцэнзураваная версія раману — з фрагментамі, якія ў свой час выкрасьліла савецкая цэнзура.
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-yellow}
 
@@ -820,7 +820,7 @@ A large-format gift edition of Uladzimir Karatkievich's historical detective sto
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-white}
 
-Uladzimir Karatkievich's novel about the noble Zahorski family and the generation that grew up towards the 1863 uprising, with Kastus Kalinouski among its characters. This edition has a white cover with red embroidery ornament and a sickle, the title set in a handwriting-style script.
+Uladzimir Karatkievich's novel about the noble Zahorski family and the generation that grew up towards the 1863 uprising, with Kastus Kalinouski among its characters. This is the uncensored version of the novel, with the passages once cut by Soviet censors restored.
 
 ## Каласы пад сярпом тваім {#karatkievich-kalasy-yellow}
 

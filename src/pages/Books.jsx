@@ -6,7 +6,7 @@ import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
-import { LIBRARY, WANTED } from '../data/books'
+import { LIBRARY, SHELVES, WANTED } from '../data/books'
 
 // «Хронікі Нарніі · частка 1»
 const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
@@ -174,26 +174,38 @@ export default function Books() {
         {shown.length === 0 ? (
           <p className="cover-empty">{page.labels.empty}</p>
         ) : (
-          <ul key={`${tag}-${bookLang}`} className="spines cards-fade">
-            {shown.map((b, index) => (
-              <li key={b.id}>
-                <button
-                  type="button"
-                  className={`spine spine-${b.size}`}
-                  style={{ '--spine': b.spine, '--ink': b.ink }}
-                  onClick={() => setOpen({ list: 'library', index })}
-                >
-                  <span className="spine-text">
-                    {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
-                    <span className="spine-title">{b.title}</span>
-                  </span>
-                  <span className="spine-lang" title={shared.labels.langNames[b.lang]}>
-                    {shared.labels.langCodes[b.lang]}
-                  </span>
-                </button>
-              </li>
+          <div key={`${tag}-${bookLang}`} className="shelves cards-fade">
+            {SHELVES.filter((key) => shown.some((b) => b.shelf === key)).map((key) => (
+              <section key={key} className="shelf">
+                <h3 className="shelf-name">
+                  {page.shelves[key]} <span>{shown.filter((b) => b.shelf === key).length}</span>
+                </h3>
+                <ul className="spines">
+                  {shown.map(
+                    (b, index) =>
+                      b.shelf === key && (
+                        <li key={b.id}>
+                          <button
+                            type="button"
+                            className={`spine spine-${b.size}`}
+                            style={{ '--spine': b.spine, '--ink': b.ink }}
+                            onClick={() => setOpen({ list: 'library', index })}
+                          >
+                            <span className="spine-text">
+                              {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
+                              <span className="spine-title">{b.title}</span>
+                            </span>
+                            <span className="spine-lang" title={shared.labels.langNames[b.lang]}>
+                              {shared.labels.langCodes[b.lang]}
+                            </span>
+                          </button>
+                        </li>
+                      )
+                  )}
+                </ul>
+              </section>
             ))}
-          </ul>
+          </div>
         )}
       </section>
 

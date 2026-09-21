@@ -27,6 +27,19 @@ filters:
   lang: { be: Мова і слоўнікі, en: Language & dictionaries }
   nonfic: { be: Нон-фікшн, en: Non-fiction }
   tech: { be: IT і праца, en: IT & work }
+shelves:
+  sf-ru: { be: Фантастыка па-расейску, en: Science fiction in Russian }
+  new-be: { be: Новае беларускае, en: New Belarusian books }
+  tolkien: { be: Толкін і «Дзюна», en: Tolkien and Dune }
+  world-be: { be: Сусьветная літаратура па-беларуску, en: World literature in Belarusian }
+  epics: { be: Эпасы і сагі, en: Epics and sagas }
+  ru: { be: Расейская паліца, en: The Russian shelf }
+  en: { be: Ангельская паліца, en: The English shelf }
+  folk: { be: Фальклор і спадчына, en: Folklore and heritage }
+  small: { be: Маленькая паліца, en: The small shelf }
+  vkl: { be: Вялікае Княства Літоўскае, en: The Grand Duchy of Lithuania }
+  classics: { be: Беларуская класіка, en: Belarusian classics }
+  ref: { be: 'Гісторыя, мова, слоўнікі', en: 'History, language, dictionaries' }
 labels:
   part: { be: частка, en: part }
   year: { be: Год, en: Year }

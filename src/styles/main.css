@@ -2974,10 +2974,35 @@ a[href^="lightbox:"] {
   }
 }
 
-/* books lie flat in piles, one pile per column */
-.spines {
+/* books lie flat in piles: one pile per shelf, the piles flow into columns */
+.shelves {
   columns: 3 300px;
   column-gap: 30px;
+}
+
+.shelf {
+  margin-bottom: 30px;
+  break-inside: avoid;
+}
+
+.shelf-name {
+  margin: 0 0 10px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.shelf-name span {
+  margin-left: 4px;
+  color: #7ee787;
+  font-size: 11px;
+}
+
+.spines {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -2985,7 +3010,6 @@ a[href^="lightbox:"] {
 
 .spines > li {
   margin-bottom: 3px;
-  break-inside: avoid;
 }
 
 .spine {

@@ -35,7 +35,7 @@ export const WANTED = [
   },
 ].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
 
-// Home library, shelf by shelf, in the order the books stand.
+// Home library, shelf by shelf (see `shelf()` markers), in the order the books stand.
 // Authors and titles are kept exactly as printed on the spine, in the book's own language.
 //   lang  — language of the edition: be / ru / en / pl
 //   tags  — categories for the filter chips (see `filters` in content/books.md)
@@ -190,8 +190,13 @@ const volume = (id, author, title, lang, tags, series, part, size = 2) => ({
   part,
 })
 
-export const LIBRARY = [
+// A marker inside the list: every book after it stands on that shelf.
+// Shelf names live in content/books.md (`shelves`).
+const shelf = (key) => ({ shelfStart: key })
+
+const SHELVED = [
   // science fiction in Russian
+  shelf('sf-ru'),
   book('reynolds-house-of-suns', 'Аластер Рейнольдс', 'Дом солнц', 'ru', 'sf', '#cdbfb3', '#4a3c38', 3),
   book('snegov-men-like-gods', 'Сергей Снегов', 'Люди как боги', 'ru', 'sf', '#2b2f8f', '#f1d9a0', 3),
   volume('liu-three-body', 'Лю Цысинь', 'Задача трёх тел', 'ru', 'sf', 'В память о прошлом Земли', 1, 3),
@@ -200,6 +205,7 @@ export const LIBRARY = [
   book('kaku-future-of-humanity', 'Митио Каку', 'Будущее человечества', 'ru', 'nonfic', '#f1f1f4', '#31408f', 3),
 
   // new Belarusian prose and fantasy
+  shelf('new-be'),
   book('latyshkevich-vek-ludzej', 'Маргарыта Латышкевіч', 'Век людзей', 'be', 'sf', '#1d1f26', '#d9a441', 3),
   book('bychkouski-dzieci-silmaryliona', 'Алесь Бычкоўскі', 'Дзеці Сільмарыліёна', 'be', 'fiction', '#1f2340', '#ffffff'),
   volume('shukanau-pentakvantar-1', 'Арцём Шуканаў', 'Пентаквантар. Кніга 1', 'be', 'sf', 'Пентаквантар', 1),
@@ -214,12 +220,14 @@ export const LIBRARY = [
   book('karatkievich-dzikaje-palavannie-pocket', 'Уладзімір Караткевіч', 'Дзікае паляванне караля Стаха', 'be', 'fiction', '#15181a', '#ffffff', 1),
 
   // Tolkien in Ihar Kulikou's translation, and Dune
+  shelf('tolkien'),
   volume('tolkien-valadar-1', 'Дж. Р. Р. Толкін', 'Брацтва Пярсцёнка', 'be', 'sf', 'Валадар Пярсцёнкаў', 1, 3),
   volume('tolkien-valadar-2', 'Дж. Р. Р. Толкін', 'Дзве вежы', 'be', 'sf', 'Валадар Пярсцёнкаў', 2, 3),
   volume('tolkien-valadar-3', 'Дж. Р. Р. Толкін', 'Вяртанне караля', 'be', 'sf', 'Валадар Пярсцёнкаў', 3, 3),
   book('herbert-dziuna', 'Фрэнк Герберт', 'Дзюна', 'be', 'sf', '#1f2433', '#e7d3a8', 3),
 
   // world fiction in Belarusian
+  shelf('world-be'),
   book('weir-marsijanin', 'Эндзі Ўір', 'Марсіянін', 'be', 'sf', '#c4623a', '#ffffff', 3),
   book('saint-exupery-malenki-prync', 'Антуан дэ Сент-Экзюперы', 'Маленькі прынц', 'be', 'fiction', '#1d78a6', '#ffffff', 1),
   book('mccarthy-daroha', 'Кормак Макарці', 'Дарога', 'be', 'fiction', '#141414', '#e0a23a'),
@@ -234,6 +242,7 @@ export const LIBRARY = [
   book('adams-autaspynam-pa-halaktycy', 'Дуглас Адамс', 'Аўтаспынам па Галактыцы', 'be', 'sf', '#17171a', '#f0a028'),
 
   // epics and sagas
+  shelf('epics'),
   book('homer-ilijada', 'Гамер', 'Іліяда', 'be', 'poetry', '#111111', '#f0a13a', 3),
   book('homer-adysieja', 'Гамер', 'Адысея', 'be', 'poetry', '#111111', '#3aa0f0', 3),
   book('vergil-eneida', 'Вергілій', 'Энэіда', 'be', 'poetry', '#111111', '#e8433a', 3),
@@ -248,6 +257,7 @@ export const LIBRARY = [
   book('lem-zornyja-dzionniki', 'Станіслаў Лем', 'Зорныя дзённікі', 'be', 'sf', '#1f2a38', '#7fb6e8'),
 
   // Russian-language shelf
+  shelf('ru'),
   book('biblija-dore', '', 'Библия. С иллюстрациями Гюстава Доре', 'ru', 'nonfic', '#3a2618', '#d9b15a', 3),
   book('verne-deti-kapitana-granta', 'Жюль Верн', 'Дети капитана Гранта', 'ru', 'fiction', '#5f8fc4', '#ffffff', 3),
   book('goldratt-cel', 'Элияху Голдратт, Джефф Кокс', 'Цель. Процесс непрерывного улучшения', 'ru', 'tech', '#161616', '#ffffff'),
@@ -257,6 +267,7 @@ export const LIBRARY = [
   book('hawking-kratchajshaja-istorija-vremeni', 'Стивен Хокинг', 'Кратчайшая история времени', 'ru', 'nonfic', '#141414', '#ffffff', 1),
 
   // English-language shelf
+  shelf('en'),
   book('arlou-belarus-illustrated-history', 'Uladzimir Arloŭ, Paviel Tatarnikaŭ', 'Belarus: An Illustrated History. From Rahnieda to Kaściuška', 'en', 'history', '#17171a', '#d9a441'),
   book('harady-bielarusi-na-pastoukach', 'Вячка Целеш', 'Гарады Беларусі на старых паштоўках', 'be', 'history', '#b8862f', '#2a1c08'),
   book('basak-forest-bogeyfolk', 'Artur Basak', 'Belarusian Bogeyfolk: Forest', 'en', 'folk', '#1f5f9c', '#ffffff', 1),
@@ -273,6 +284,7 @@ export const LIBRARY = [
   book('orwell-fierma-zyviolau', 'Джордж Оруэл', 'Ферма жывёлаў', 'be', 'fiction', '#1e7a44', '#e6f2ea', 1),
 
   // folklore, heritage and new Belarusian writing
+  shelf('folk'),
   volume('basak-niacysciki-vodnyja', 'Артур Басак', 'Беларускія нячысцікі. Водныя і балотныя', 'be', 'folk', 'Беларускія нячысцікі', 2, 1),
   volume('basak-niacysciki-liasnyja', 'Артур Басак', 'Беларускія нячысцікі. Лясныя', 'be', 'folk', 'Беларускія нячысцікі', 1, 1),
   book('zycciadajnyja-krynicy', 'Аляксей Ненадавец', 'Жыццядайныя крыніцы. Легенды і паданні', 'be', 'folk', '#1f8da1', '#ffffff'),
@@ -288,6 +300,8 @@ export const LIBRARY = [
   book('ryzkou-dzviery-zamknionyja-na-klucy', 'Віталь Рыжкоў', 'Дзверы, замкнёныя на ключы', 'be', 'poetry', '#161616', '#f2d23a', 1),
   book('hapiejeva-v-jadomyja-historyi', 'Вольга Гапеева', '(В)ядомыя гісторыі', 'be', 'fiction', '#f5f3ee', '#b0392e', 1),
 
+  // the small shelf
+  shelf('small'),
   book('corny-posuki-buducyni', 'Кузьма Чорны', 'Пошукі будучыні', 'be', 'fiction', '#1f5f4a', '#ffffff'),
   book('kupala-tutejsyja', 'Янка Купала', 'Тутэйшыя. Выбраныя творы', 'be', 'fiction', '#4a2f2a', '#ffffff'),
   book('karatkievich-ladzdzia-rospacy', 'Уладзімір Караткевіч', 'Ладдзя Роспачы', 'be', 'fiction', '#1a1a1a', '#dddddd', 1),
@@ -295,6 +309,7 @@ export const LIBRARY = [
   book('bielavieskin-volia-da-zyccia', 'Андрусь Белавешкін', 'Воля да жыцьця', 'be', 'nonfic', '#1f7a3f', '#ffffff', 3),
 
   // the Grand Duchy of Lithuania
+  shelf('vkl'),
   volume('vkl-encyklapiedyja-1', '', 'Вялікае Княства Літоўскае. Энцыклапедыя. Том 1 (А–К)', 'be', 'history', 'Вялікае Княства Літоўскае. Энцыклапедыя', 1, 3),
   volume('vkl-encyklapiedyja-2', '', 'Вялікае Княства Літоўскае. Энцыклапедыя. Том 2 (К–Я)', 'be', 'history', 'Вялікае Княства Літоўскае. Энцыклапедыя', 2, 3),
   book('hulecki-100-manet-vkl', 'Дзмітрый Гулецкі, Мікалай Дарашкевіч', '100 манет Вялікага Княства Літоўскага', 'be', 'history', '#1b1f2e', '#d9c58a', 1),
@@ -303,6 +318,7 @@ export const LIBRARY = [
   book('adamovic-jan-niaprecki', 'Аляксей Адамовіч', 'Ян Няпрэцкі і карта Вялікага Княства Літоўскага', 'be', 'history', '#17171a', '#cfcfcf'),
 
   // Belarusian classics
+  shelf('classics'),
   book('karatkievich-dzikaje-palavannie', 'Уладзімір Караткевіч', 'Дзікае паляванне караля Стаха', 'be', 'fiction', '#1b1b1d', '#d8d8d8', 3),
   book('karatkievich-kalasy-white', 'Уладзімір Караткевіч', 'Каласы пад сярпом тваім', 'be', 'fiction', '#f3f1ee', '#c8202f', 3),
   book('karatkievich-kalasy-yellow', 'Уладзімір Караткевіч', 'Каласы пад сярпом тваім', 'be', 'fiction', '#f6efc9', '#c8202f', 3),
@@ -314,6 +330,7 @@ export const LIBRARY = [
   book('sieviaryniec-hascinica-bielhija', 'Ганна Севярынец', 'Гасцініца «Бельгія». Дзень Святога Патрыка', 'be', 'fiction', '#161616', '#eeeeee', 3),
 
   // history, language and dictionaries
+  shelf('ref'),
   book('arlou-kraina-bielarus', 'Уладзімір Арлоў, Зьміцер Герасімовіч', 'Краіна Беларусь. Ілюстраваная гісторыя', 'be', 'history', '#17171a', '#ffffff'),
   book('danilovic-slova-i-frazealahizm', 'М. А. Даніловіч', 'Слова і фразеалагізм у беларускай мове', 'be', 'lang', '#f4eeee', '#c02a3a'),
   book('cyrvinski-bielarus-u-vojnach', 'Віталь Чырвінскі', 'Беларусь у войнах Расійскай імперыі: асобы і падзеі', 'be', 'history', '#b8a377', '#8f1d1d', 3),
@@ -324,8 +341,19 @@ export const LIBRARY = [
   book('savicki-slounik-pa-infarmatycy', 'М. І. Савіцкі', 'Тлумачальны слоўнік па інфарматыцы', 'be', ['lang', 'tech'], '#a9c4e0', '#1d2f4f'),
   book('arendt-pra-calaviecnasc', 'Ханна Арэнт', 'Пра чалавечнасць у цёмныя часы', 'be', 'nonfic', '#1f2f9c', '#e7b0c0', 3),
   book('leksicny-atlas-5', '', 'Лексічны атлас беларускіх народных гаворак. Том 5', 'be', 'lang', '#6c6c70', '#f0d382', 3),
-].map((b) => ({
+]
+
+export const LIBRARY = SHELVED.reduce(
+  ({ current, books }, entry) =>
+    entry.shelfStart
+      ? { current: entry.shelfStart, books }
+      : { current, books: [...books, { ...entry, shelf: current }] },
+  { current: null, books: [] }
+).books.map((b) => ({
   ...b,
   ...LIBRARY_FACTS[b.id],
   ...(LIBRARY_FACTS[b.id]?.cover && { image: `/images/library/${b.id}.webp` }),
 }))
+
+// shelf keys in the order the shelves appear
+export const SHELVES = [...new Set(LIBRARY.map((b) => b.shelf))]

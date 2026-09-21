@@ -153,26 +153,6 @@ img {
   background: var(--accent);
 }
 
-.ornament-sm {
-  gap: 6px;
-  margin: 10px 0 18px;
-}
-
-h2 + .ornament-sm {
-  margin-top: -10px;
-}
-
-.ornament-sm .orn-line {
-  width: 28px;
-  height: 3px;
-  border-radius: 2px;
-}
-
-.ornament-sm .orn-gem {
-  width: 8px;
-  height: 8px;
-}
-
 /* ===== Buttons ===== */
 .btn {
   display: inline-flex;
@@ -1122,7 +1102,7 @@ body.theme-restore #app {
   margin: 40px auto 8px;
 }
 
-.pahost-teaser .ornament-sm {
+.pahost-teaser .ornament {
   justify-content: center;
   margin: 0 0 14px;
 }

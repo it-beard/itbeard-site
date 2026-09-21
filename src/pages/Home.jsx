@@ -131,7 +131,7 @@ export default function Home() {
 
         {/* invitation to the pahost — where finished and slow-burning projects rest */}
         <aside className="pahost-teaser">
-          <Ornament small />
+          <Ornament />
           <Md className="pahost-teaser-text prose" html={pahostHtml} />
           <Link to="/archive" className="btn btn-secondary pahost-teaser-btn">
             {page.pahost.link} <span aria-hidden="true">→</span>

@@ -446,6 +446,42 @@ title: { be: Бібліятэка, en: Library }
 
 Апошні, пяты том акадэмічнага атласу беларускіх гаворак (1993–1998) пад рэдакцыяй М. Бірылы й Ю. Мацкевіч: карты «Сэмантыка. Словаўтварэньне. Націск» і асобны сшытак каментароў да іх. Атлас працягвае «Дыялекталагічны атлас беларускай мовы» 1963 году і ў папяровым выглядзе трапляецца рэдка.
 
+## Кніга лёсаў {#niaklajeu-kniha-losau}
+
+Зборнік вершаў Уладзіміра Някляева, выдадзены ў Польшчы Калегіюмам Усходняй Эўропы імя Яна Новака-Езяранскага. Вокладку зрабіла Ірына Міхеева.
+
+## Міфы Бацькаўшчыны {#mify-backauscyny}
+
+Невялікі зборнік беларускіх міфаў і паданьняў, які ўклаў фалькларыст Уладзімір Васілевіч: пра багоў, духаў і пачатак сьвету. Мастак — Т. В. Шабунька. На тытуле стаіць пячатка ранейшага ўладальніка, варшаўскага прафэсара Міхала Кандрацюка.
+
+## Міфалагемы і магія ў беларускім абрадавым фальклоры {#kazakova-mifalahiemy-i-mahija}
+
+Манаграфія Ірыны Казаковай пра тое, як працуе магія ў народнай культуры: міфалагемы зямлі, сонца і жанчыны ў аграрных і сямейных абрадах. З той самай варшаўскай бібліятэкі прафэсара Кандрацюка.
+
+## Падляшскае на ўік-энд {#padlasskaje-na-uik-end}
+
+Турыстычны даведнік па Падляшскім ваяводзтве па-беларуску, які выдала ваяводзкая ўправа ў Беластоку. Пераклаў Міраслаў Лукша; раздаецца бясплатна.
+
+## Імёны Свабоды. 1 {#arlou-imiony-svabody-1}
+
+Шостае, дапрацаванае выданьне: 410 гістарычных партрэтаў тых, хто з часоў Тадэвуша Рэйтана і Тадэвуша Касьцюшкі змагаўся за свабоду і незалежнасьць беларускай зямлі. Кніга вырасла з праекту Радыё Свабода; гэта першая частка, другая выходзіць асобна.
+
+## Руска-беларускі слоўнік {#ruska-bielaruski-slounik-1953}
+
+Акадэмічны слоўнік Інстытуту мовазнаўства АН БССР пад рэдакцыяй Якуба Коласа, Кандрата Крапівы і Пятра Глебкі — каля 86 000 словаў. Выдадзены ў Маскве ў 1953 годзе; на вокладцы назва стаіць па-расейску.
+
+## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
+
+Першая кніга шматтомнага выданьня пра традыцыйную карціну сьвету беларусаў: як у народных уяўленьнях уладкаваныя неба, зямля, сонца, месяц і зоркі. Тэкст ідзе на трох мовах — беларускай, расейскай і ангельскай.
+
+## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
+
+Кішэннага фармату зборнік вершаў Генадзя Бураўкіна, які ўклаў Сяргей Шапран. Выйшаў у «Мон літары» накладам усяго 300 асобнікаў.
+
+## Я выходжу {#pirs-ja-vychodzu}
+
+Альбом пратэсных плякатаў 2020 году: графічны дызайнэр Аляксей Пірс адабраў больш за 350 здымкаў з тысяч, дасланых удзельнікамі маршаў. Назва — словы Рамана Бандарэнкі.
+
 <!-- en -->
 
 # Notes {#notes}
@@ -889,3 +925,39 @@ The first book by Hannah Arendt in Belarusian: a selection of essays put togethe
 ## Лексічны атлас беларускіх народных гаворак. Том 5 {#leksicny-atlas-5}
 
 The fifth and last volume of the academic atlas of Belarusian dialects (1993–1998), edited by M. Biryla and Yu. Matskevich: maps on semantics, word formation and stress, with a separate part of commentaries. The atlas continues the 1963 Dialectological Atlas of the Belarusian Language and is hard to find in print.
+
+## Кніга лёсаў {#niaklajeu-kniha-losau}
+
+A collection of poems by Uladzimir Niaklajeu, published in Poland by the Jan Nowak-Jeziorański College of Eastern Europe. Cover by Iryna Micheeva.
+
+## Міфы Бацькаўшчыны {#mify-backauscyny}
+
+A small collection of Belarusian myths and legends compiled by the folklorist Uladzimir Vasilevich: gods, spirits and the beginning of the world. Illustrated by T. V. Shabunka. The title page carries the stamp of a previous owner, the Warsaw professor Michał Kondratiuk.
+
+## Міфалагемы і магія ў беларускім абрадавым фальклоры {#kazakova-mifalahiemy-i-mahija}
+
+Iryna Kazakova's monograph on how magic works in folk culture: the mythologems of the earth, the sun and the woman in agrarian and family rites. From the same Warsaw library of Professor Kondratiuk.
+
+## Падляшскае на ўік-энд {#padlasskaje-na-uik-end}
+
+A tourist guide to the Podlaskie region in Belarusian, published by the regional government in Białystok. Translated by Miraslau Luksha; distributed free of charge.
+
+## Імёны Свабоды. 1 {#arlou-imiony-svabody-1}
+
+The sixth, revised edition: 410 historical portraits of those who, since the days of Tadeusz Rejtan and Tadeusz Kościuszko, fought for the freedom and independence of the Belarusian land. The book grew out of a Radio Svaboda project; this is part one, part two is published separately.
+
+## Руска-беларускі слоўнік {#ruska-bielaruski-slounik-1953}
+
+The academic Russian–Belarusian dictionary of the Institute of Linguistics, edited by Yakub Kolas, Kandrat Krapiva and Piatro Hlebka — about 86,000 words. Printed in Moscow in 1953; the title on the cover is in Russian.
+
+## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
+
+The first book of a multi-volume edition on the traditional Belarusian picture of the world: how folk belief arranges the sky, the earth, the sun, the moon and the stars. The text runs in three languages — Belarusian, Russian and English.
+
+## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
+
+A pocket-sized collection of Hienadz Buraukin's poems, compiled by Siarhei Shapran. Published by Mon Litara in a run of just 300 copies.
+
+## Я выходжу {#pirs-ja-vychodzu}
+
+An album of protest posters from 2020: graphic designer Aliaksei Pirs picked more than 350 photographs out of thousands sent in by people who marched. The title is Raman Bandarenka's words.

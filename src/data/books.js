@@ -47,6 +47,15 @@ export const WANTED = [
 // Facts for the book cards, by id: what the edition itself states (year, publisher,
 // city, translator, isbn, pages), and `cover: true` when public/images/library/<id>.webp exists.
 const LIBRARY_FACTS = {
+  'niaklajeu-kniha-losau': { year: 2025, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-351-9', cover: true },
+  'mify-backauscyny': { year: 1994, publisher: 'Беларуская Энцыклапедыя', city: 'Мінск', isbn: '5-85700-162-5', cover: true },
+  'kazakova-mifalahiemy-i-mahija': { year: 1997, publisher: 'БОФФ', city: 'Мінск', isbn: '985-430-003-X', pages: 119, cover: true },
+  'padlasskaje-na-uik-end': { publisher: 'Маршалкоўская Управа Падляшскага ваяводства', city: 'Беласток', translator: 'Міраслава Лукша', isbn: '978-83-962873-5-9', cover: true },
+  'arlou-imiony-svabody-1': { year: 2026, publisher: 'Uladzimir Arlou', city: 'Беласток', isbn: '978-83-980428-1-9', cover: true },
+  'ruska-bielaruski-slounik-1953': { year: 1953, publisher: 'Дзяржаўнае выдавецтва замежных і нацыянальных слоўнікаў', city: 'Масква', cover: true },
+  'tradycyjny-svietapohlad-1': { cover: true },
+  'buraukin-nahavarycca-z-zorkami': { year: 2026, publisher: 'Мон літара', city: 'Мінск', cover: true },
+  'pirs-ja-vychodzu': { year: 2021, publisher: 'Pearce', city: 'Варшава', cover: true },
   'reynolds-house-of-suns': { year: 2022, publisher: 'Азбука', city: 'Санкт-Петербург', translator: 'Алла Ахмерова, Кирилл Плешков', isbn: '978-5-389-20484-3', pages: 576, cover: true },
   'snegov-men-like-gods': { year: 2023, publisher: 'Азбука', city: 'Санкт-Петербург', isbn: '978-5-389-22045-4', pages: 672, cover: true },
   'liu-three-body': { year: 2017, publisher: 'fanzon', city: 'Москва', translator: 'Ольга Глушкова', isbn: '978-5-04-089112-2', pages: 464, cover: true },
@@ -126,7 +135,7 @@ const LIBRARY_FACTS = {
   'arkus-jak-padaje-snieh': { year: 2024, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-30-6', pages: 172, cover: true },
   'horvat-radziva-prudok': { year: 2017, publisher: 'Медысонт', city: 'Мінск', isbn: '978-985-7136-89-6', pages: 248, cover: true },
   'ryzkou-dzviery-zamknionyja-na-klucy': { year: 2025, publisher: 'Экапрэс' },
-  'hapiejeva-v-jadomyja-historyi': { year: 2016, publisher: 'Логвінаў', city: 'Вільня', isbn: '978-609-8147-76-6', pages: 76, cover: true },
+  'hapiejeva-v-jadomyja-historyi': { year: 2017, publisher: 'Логвінаў', city: 'Вільня', isbn: '978-609-8147-76-6', pages: 76, cover: true },
   'corny-posuki-buducyni': { year: 2023, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5527-3', pages: 256, cover: true },
   'kupala-tutejsyja': { year: 2015, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-2421-7', pages: 272, cover: true },
   'karatkievich-ladzdzia-rospacy': { year: 2024, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5586-0', pages: 64, cover: true },
@@ -324,6 +333,16 @@ const BOOKS = [
   book('savicki-slounik-pa-infarmatycy', 'М. І. Савіцкі', 'Тлумачальны слоўнік па інфарматыцы', 'be', ['lang', 'tech'], '#a9c4e0', '#1d2f4f'),
   book('arendt-pra-calaviecnasc', 'Ханна Арэнт', 'Пра чалавечнасць у цёмныя часы', 'be', 'nonfic', '#1f2f9c', '#e7b0c0', 3),
   book('leksicny-atlas-5', '', 'Лексічны атлас беларускіх народных гаворак. Том 5', 'be', 'lang', '#6c6c70', '#f0d382', 3),
+  // added from the owner's photos, 2026-09-22
+  book('niaklajeu-kniha-losau', 'Уладзімір Някляеў', 'Кніга лёсаў', 'be', 'poetry', '#f2f2f0', '#c4562f'),
+  book('mify-backauscyny', 'Уладзімір Васілевіч', 'Міфы Бацькаўшчыны', 'be', 'folk', '#6a6f8f', '#ffffff', 1),
+  book('kazakova-mifalahiemy-i-mahija', 'І. В. Казакова', 'Міфалагемы і магія ў беларускім абрадавым фальклоры', 'be', 'folk', '#5fa8d8', '#10243a', 1),
+  book('padlasskaje-na-uik-end', '', 'Падляшскае на ўік-энд', 'be', 'nonfic', '#2a2f33', '#f08a3c', 1),
+  book('arlou-imiony-svabody-1', 'Уладзімір Арлоў', 'Імёны Свабоды. 1', 'be', 'history', '#1f5a5f', '#f0d23a', 3),
+  book('ruska-bielaruski-slounik-1953', '', 'Руска-беларускі слоўнік', 'be', 'lang', '#4a3a30', '#d9c08a', 3),
+  book('tradycyjny-svietapohlad-1', '', 'Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія', 'be', 'folk', '#2b3160', '#e3a93c'),
+  book('buraukin-nahavarycca-z-zorkami', 'Генадзь Бураўкін', 'Нагаварыцца з зоркамі', 'be', 'poetry', '#f4f4f4', '#222222', 1),
+  book('pirs-ja-vychodzu', 'Л. Пірс', 'Я выходжу', 'be', 'history', '#f7f7f7', '#c8252f'),
 ]
 
 // Default order of the library: by language, and within a language the series first

@@ -93,9 +93,9 @@ describe('vinyl page', () => {
     const user = userEvent.setup()
     show()
     const expected = VINYL.filter((r) => r.tags.includes('classic')).length
-    await user.click(chip('Клясыка'))
+    await user.click(chip('Класіка'))
     expect(sleeves()).toHaveLength(expected)
-    await user.click(chip('Клясыка'))
+    await user.click(chip('Класіка'))
     expect(sleeves()).toHaveLength(VINYL.length)
   })
 
@@ -123,7 +123,7 @@ describe('vinyl page', () => {
   it('steps only within the active filter', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(chip('Клясыка'))
+    await user.click(chip('Класіка'))
     await user.click(sleeves()[0])
     expect(screen.getByRole('dialog')).toHaveTextContent('1 / 2')
   })

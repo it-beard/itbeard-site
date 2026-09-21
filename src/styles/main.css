@@ -2422,6 +2422,10 @@ a[href^="lightbox:"] {
   gap: 34px 24px;
 }
 
+.vinyl-grid-spaced {
+  margin-top: 26px;
+}
+
 .vinyl-item {
   position: relative; /* so the hover z-index lifts the sliding record over its neighbours */
   display: flex;
@@ -2743,12 +2747,12 @@ a[href^="lightbox:"] {
 /* ===== Book wishlist (unlisted /books) ===== */
 /* wanted books: a snap-scrolling strip. The padding leaves room for the swinging
    cover and its shadow — a scroll container clips everything past its box */
-.book-rail-wrap {
+.cover-rail-wrap {
   position: relative;
   margin-top: 8px;
 }
 
-.book-rail {
+.cover-rail {
   display: flex;
   gap: 34px;
   /* the swinging cover grows taller than its box (perspective), so the strip keeps
@@ -2761,19 +2765,19 @@ a[href^="lightbox:"] {
   scrollbar-width: none;
 }
 
-.book-rail::-webkit-scrollbar {
+.cover-rail::-webkit-scrollbar {
   display: none;
 }
 
-.book-rail .book-item {
+.cover-rail .book-item {
   flex: 0 0 200px;
   scroll-snap-align: start;
 }
 
 /* arrows float over the strip's edges, level with the middle of the covers */
-.book-rail-arrow {
+.cover-rail-arrow {
   position: absolute;
-  top: 150px;
+  top: 96px;
   z-index: 3;
   width: 40px;
   height: 40px;
@@ -2787,16 +2791,36 @@ a[href^="lightbox:"] {
   transition: border-color 0.2s, color 0.2s;
 }
 
-.book-rail-prev {
+.cover-rail-tall .cover-rail-arrow {
+  top: 150px;
+}
+
+.cover-rail .vinyl-item {
+  flex: 0 0 220px;
+  scroll-snap-align: start;
+}
+
+/* the wanted pressing is clear vinyl with a purple «yolk», so its record looks the part */
+.vinyl-disc-yolk {
+  background:
+    radial-gradient(circle at 50% 50%, var(--bg) 0 1.5%, transparent 1.7%),
+    radial-gradient(circle at 50% 50%, #1d1d22 0 15%, transparent 15.3%),
+    radial-gradient(circle at 50% 50%, #8a3fd6 0 30%, rgba(138, 63, 214, 0.55) 36%, transparent 44%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.35) 8%, transparent 32%, transparent 68%, rgba(255, 255, 255, 0.22) 92%),
+    repeating-radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.2) 0 2px, rgba(255, 255, 255, 0.1) 2px 4px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.cover-rail-prev {
   left: -14px;
 }
 
-.book-rail-next {
+.cover-rail-next {
   right: -14px;
 }
 
 @media (hover: hover) {
-  .book-rail-arrow:hover {
+  .cover-rail-arrow:hover {
     border-color: var(--accent-bright);
     color: var(--accent-hover);
   }
@@ -3040,23 +3064,31 @@ a[href^="lightbox:"] {
     gap: 26px 16px;
   }
 
-  .book-rail {
+  .cover-rail {
     gap: 22px;
   }
 
-  .book-rail .book-item {
+  .cover-rail .book-item {
     flex-basis: 150px;
   }
 
-  .book-rail-arrow {
+  .cover-rail-arrow {
+    top: 70px;
+  }
+
+  .cover-rail-tall .cover-rail-arrow {
     top: 105px;
   }
 
-  .book-rail-prev {
+  .cover-rail .vinyl-item {
+    flex-basis: 165px;
+  }
+
+  .cover-rail-prev {
     left: -6px;
   }
 
-  .book-rail-next {
+  .cover-rail-next {
     right: -6px;
   }
 

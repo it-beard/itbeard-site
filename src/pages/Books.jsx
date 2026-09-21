@@ -1,10 +1,11 @@
-import { useCallback, useEffect, useRef, useState } from 'react'
+import { useCallback, useState } from 'react'
 import { useLang } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
+import CoverRail from '../components/CoverRail'
 import { LIBRARY, WANTED } from '../data/books'
 
 // «Хронікі Нарніі · частка 1»
@@ -17,74 +18,6 @@ const spineCredit = (b) =>
 // Search ignores case and the letters people routinely swap when typing Belarusian
 const fold = (text) => text.toLowerCase().replace(/ё/g, 'е').replace(/ў/g, 'у').replace(/[’'`]/g, '')
 const haystack = (b) => fold([b.author, b.title, b.series].filter(Boolean).join(' '))
-
-// Horizontal strip of wanted books. Each arrow shows only while there is
-// something left to scroll to on its side.
-function WantedRail({ books, labels, detailsOf, onOpen }) {
-  const rail = useRef(null)
-  const [edges, setEdges] = useState({ prev: false, next: false })
-
-  const measure = useCallback(() => {
-    const el = rail.current
-    if (!el) return
-    setEdges({
-      prev: el.scrollLeft > 4,
-      next: el.scrollLeft + el.clientWidth < el.scrollWidth - 4,
-    })
-  }, [])
-
-  useEffect(() => {
-    measure()
-    window.addEventListener('resize', measure)
-    return () => window.removeEventListener('resize', measure)
-  }, [measure, books.length])
-
-  const scroll = (dir) => {
-    const el = rail.current
-    const card = el.querySelector('.book-item')
-    el.scrollBy({ left: dir * ((card?.offsetWidth ?? 200) + 34), behavior: 'smooth' })
-  }
-
-  return (
-    <div className="book-rail-wrap">
-      <div className="book-rail" ref={rail} onScroll={measure}>
-        {books.map((b, i) => (
-          <button key={b.id} type="button" className="book-item" title={labels.openHint} onClick={() => onOpen(i)}>
-            <span className="book-cover">
-              <span className="book-pages" aria-hidden="true" />
-              <span className="book-front">
-                <img src={b.image} alt="" width="400" height="625" loading="lazy" />
-              </span>
-            </span>
-            <span className="cover-cap">
-              <span className="cover-overline">{detailsOf(b.id).author}</span>
-              <span className="cover-title">{b.title}</span>
-              <span className="cover-sub">{seriesLine(b, labels)}</span>
-            </span>
-          </button>
-        ))}
-      </div>
-      <button
-        type="button"
-        className="book-rail-arrow book-rail-prev"
-        aria-label={labels.scrollPrev}
-        hidden={!edges.prev}
-        onClick={() => scroll(-1)}
-      >
-        ‹
-      </button>
-      <button
-        type="button"
-        className="book-rail-arrow book-rail-next"
-        aria-label={labels.scrollNext}
-        hidden={!edges.next}
-        onClick={() => scroll(1)}
-      >
-        ›
-      </button>
-    </div>
-  )
-}
 
 export default function Books() {
   const { lang } = useLang()
@@ -157,12 +90,29 @@ export default function Books() {
         </h2>
         <Ornament small />
         <Md className="prose intro book-lead" html={wanted.html} />
-        <WantedRail
-          books={WANTED}
-          labels={page.labels}
-          detailsOf={detailsOf}
-          onOpen={(index) => setOpen({ list: 'wanted', index })}
-        />
+        <CoverRail labels={page.labels} tall>
+          {WANTED.map((b, index) => (
+            <button
+              key={b.id}
+              type="button"
+              className="book-item"
+              title={page.labels.openHint}
+              onClick={() => setOpen({ list: 'wanted', index })}
+            >
+              <span className="book-cover">
+                <span className="book-pages" aria-hidden="true" />
+                <span className="book-front">
+                  <img src={b.image} alt="" width="400" height="625" loading="lazy" />
+                </span>
+              </span>
+              <span className="cover-cap">
+                <span className="cover-overline">{detailsOf(b.id).author}</span>
+                <span className="cover-title">{b.title}</span>
+                <span className="cover-sub">{seriesLine(b, page.labels)}</span>
+              </span>
+            </button>
+          ))}
+        </CoverRail>
       </section>
 
       <section className="container section">

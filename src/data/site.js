@@ -508,3 +508,18 @@ export const VINYL = [
     tags: ['electro'],
   },
 ].map((r) => ({ ...r, image: `/images/vinyl/${r.id}.webp` }))
+
+// Records being hunted for — the carousel at the top of /vinyl.
+// `disc` picks a record style for the tile (see .vinyl-disc-* in main.css); `url` is where it is sold.
+export const WANTED_VINYL = [
+  {
+    id: 'noize-mc-exit-to-the-city',
+    artist: 'Noize MC',
+    title: 'Выход в город',
+    year: 2021,
+    label: 'Noize MC Shop EU',
+    format: '2LP · 180 g · clear / purple yolk',
+    disc: 'yolk',
+    url: 'https://noizemc.shop/products/exit-to-the-city-purple-yolk-2lp',
+  },
+].map((r) => ({ ...r, image: `/images/vinyl/${r.id}.webp` }))

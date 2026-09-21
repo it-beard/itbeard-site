@@ -383,7 +383,7 @@ describe('books page: housekeeping', () => {
   // it would clip the swinging cover and its shadow.
   it('pads the carousel so the scroll container cannot clip the covers', () => {
     const css = readFileSync(resolve(ROOT, 'src/styles/main.css'), 'utf8')
-    const rail = /\.book-rail \{[^}]*\}/.exec(css)[0]
+    const rail = /\.cover-rail \{[^}]*\}/.exec(css)[0]
     expect(rail).toMatch(/overflow-x: auto/)
     expect(rail).toMatch(/padding: \d+px \d+px \d+px/)
   })

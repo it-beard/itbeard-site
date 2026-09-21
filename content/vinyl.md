@@ -9,6 +9,9 @@ description:
   en: >-
     Lex Kartynnik's vinyl collection: from Soviet Melodiya pressings
     to present-day reissues.
+wantedHint:
+  be: 'Кружэлак у вышуку: {total}'
+  en: 'Records on the wanted list: {total}'
 counterHint:
   be: 'Усяго кружэлак на паліцы: {total}'
   en: 'Records on the shelf: {total}'
@@ -24,6 +27,10 @@ filters:
 labels:
   label: { be: Лэйбл, en: Label }
   catno: { be: Каталог, en: Cat. no. }
+  format: { be: Фармат, en: Format }
+  shop: { be: У краме, en: In the shop }
+  scrollPrev: { be: Пракруціць назад, en: Scroll back }
+  scrollNext: { be: Пракруціць далей, en: Scroll forward }
   year: { be: Год, en: Year }
   close: { be: Зачыніць, en: Close }
   prev: { be: Папярэдняя кружэлка, en: Previous record }
@@ -42,6 +49,18 @@ artists:
 <!-- be -->
 
 # Мае кружэлкі {#intro}
+
+Тут дзьве паліцы: кружэлкі, якія я шукаю, і тыя, што ўжо стаяць дома каля прайгравальніка.
+
+# Шукаю {#wanted}
+
+Выданьні, якія разышліся раней, чым я пасьпеў іх набыць. Калі ведаеце, дзе такое ляжыць, — [напішыце мне](/contacts).
+
+## Noize MC — Выход в город {#noize-mc-exit-to-the-city}
+
+Падвойны альбом 2021 году на празрыстым вініле зь фіялетавым «жаўтком» пасярэдзіне — кожная плыта выходзіць крыху іншай. У краме музыкі наклад скончыўся. А хачу яго зь вельмі простае прычыны: першым трэкам на першым баку стаіць «Вояджер-1», і мне страшэнна карціць пачуць яго менавіта з кружэлкі.
+
+# Мая калекцыя {#collection}
 
 Паліца зь вінілам расьце павольна і без сістэмы: тут і савецкая «Мелодыя», і японскі Deutsche Grammophon, і сьвежыя перавыданьні. Аб'ядноўвае іх толькі адно — кожную зь іх хочацца ставіць на прайгравальнік зноў.
 
@@ -98,6 +117,18 @@ artists:
 <!-- en -->
 
 # My vinyl {#intro}
+
+Two shelves live here: the records I am looking for, and the ones already standing next to the turntable.
+
+# Wanted {#wanted}
+
+Pressings that sold out before I got to them. If you know where one is sitting — [drop me a line](/contacts).
+
+## Noize MC — Exit to the City {#noize-mc-exit-to-the-city}
+
+The 2021 double album on clear vinyl with a purple «yolk» in the middle — every disc comes out slightly different. The artist's own shop has run out. My reason for wanting it is simple: side one opens with «Вояджер-1», and I badly want to hear that track from a record.
+
+# My collection {#collection}
 
 The shelf grows slowly and without a system: Soviet Melodiya pressings, a Japanese Deutsche Grammophon, a few recent reissues. The only thing they share is that each one keeps finding its way back onto the turntable.
 

@@ -5,7 +5,8 @@ import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
-import { VINYL } from '../data/site'
+import CoverRail from '../components/CoverRail'
+import { VINYL, WANTED_VINYL } from '../data/site'
 
 export default function Vinyl() {
   const { lang } = useLang()
@@ -13,13 +14,17 @@ export default function Vinyl() {
   useTitle(page.title, page.description)
 
   const intro = getSection(page, 'intro')
-  const noteOf = (id) => intro.subs.find((s) => s.id === id)?.html
+  const wanted = getSection(page, 'wanted')
+  const collection = getSection(page, 'collection')
+  const noteOf = (id) => [...wanted.subs, ...collection.subs].find((s) => s.id === id)?.html
   // Cyrillic sleeve credits get a transliteration on the English page
   const artistOf = (r) => page.artists?.[r.id] ?? r.artist
 
   const total = VINYL.length
   const [filter, setFilter] = useState('all')
+  // the open card: an index into the list it was opened from
   const [active, setActive] = useState(null)
+  const [fromWanted, setFromWanted] = useState(false)
 
   const tagCount = (tag) => (tag === 'all' ? total : VINYL.filter((r) => r.tags.includes(tag)).length)
   const shown = VINYL.filter((r) => filter === 'all' || r.tags.includes(filter))
@@ -29,19 +34,57 @@ export default function Vinyl() {
     setActive(null)
   }
   // wraps around, so the arrows never dead-end
-  const step = useCallback((delta) => setActive((i) => (i + delta + shown.length) % shown.length), [shown.length])
+  const list = fromWanted ? WANTED_VINYL : shown
+  const step = useCallback((delta) => setActive((i) => (i + delta + list.length) % list.length), [list.length])
+  const openFrom = (wantedList, index) => {
+    setFromWanted(wantedList)
+    setActive(index)
+  }
+  const record = active !== null ? list[active] : null
+
+  const tile = (r, onClick) => (
+    <button key={r.id} type="button" className="vinyl-item" title={page.labels.openHint} onClick={onClick}>
+      <span className="vinyl-sleeve">
+        <span className={`vinyl-disc${r.disc ? ` vinyl-disc-${r.disc}` : ''}`} aria-hidden="true" />
+        <img src={r.image} alt="" width="600" height="600" loading="lazy" />
+      </span>
+      <span className="cover-cap">
+        <span className="cover-overline">{artistOf(r)}</span>
+        <span className="cover-title">{r.title}</span>
+        {r.year && <span className="cover-sub">{r.year}</span>}
+      </span>
+    </button>
+  )
 
   return (
     <main>
       <section className="container section page-head">
-        <h1>
-          {intro.title}{' '}
+        <h1>{intro.title}</h1>
+        <Ornament />
+        <Md className="prose intro" html={intro.html} />
+      </section>
+
+      <section className="container section">
+        <h2>
+          {wanted.title}{' '}
+          <sup className="pahost-count" title={page.wantedHint.replace('{total}', WANTED_VINYL.length)}>
+            ({WANTED_VINYL.length})
+          </sup>
+        </h2>
+        <Ornament small />
+        <Md className="prose intro book-lead" html={wanted.html} />
+        <CoverRail labels={page.labels}>{WANTED_VINYL.map((r, i) => tile(r, () => openFrom(true, i)))}</CoverRail>
+      </section>
+
+      <section className="container section">
+        <h2>
+          {collection.title}{' '}
           <sup className="pahost-count" title={page.counterHint.replace('{total}', total)}>
             ({total})
           </sup>
-        </h1>
-        <Ornament />
-        <Md className="prose intro" html={intro.html} />
+        </h2>
+        <Ornament small />
+        <Md className="prose intro book-lead" html={collection.html} />
         <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
           {Object.keys(page.filters).map((tag) => (
             <button
@@ -55,50 +98,38 @@ export default function Vinyl() {
             </button>
           ))}
         </div>
-      </section>
-
-      <section className="container section">
-        <div key={filter} className="vinyl-grid cards-fade">
-          {shown.map((r, i) => (
-            <button
-              key={r.id}
-              type="button"
-              className="vinyl-item"
-              title={page.labels.openHint}
-              onClick={() => setActive(i)}
-            >
-              <span className="vinyl-sleeve">
-                <span className="vinyl-disc" aria-hidden="true" />
-                <img src={r.image} alt="" width="600" height="600" loading="lazy" />
-              </span>
-              <span className="cover-cap">
-                <span className="cover-overline">{artistOf(r)}</span>
-                <span className="cover-title">{r.title}</span>
-                {r.year && <span className="cover-sub">{r.year}</span>}
-              </span>
-            </button>
-          ))}
+        <div key={filter} className="vinyl-grid cards-fade vinyl-grid-spaced">
+          {shown.map((r, i) => tile(r, () => openFrom(false, i)))}
         </div>
         {shown.length === 0 && <p className="cover-empty">{page.labels.empty}</p>}
       </section>
 
-      {active !== null && shown[active] && (
+      {record && (
         <CoverView
-          image={shown[active].image}
-          overline={artistOf(shown[active])}
-          title={shown[active].title}
+          image={record.image}
+          overline={artistOf(record)}
+          title={record.title}
           facts={[
-            [page.labels.year, shown[active].year],
-            [page.labels.label, shown[active].label],
-            [page.labels.catno, shown[active].catno],
+            [page.labels.year, record.year],
+            [page.labels.label, record.label],
+            [page.labels.catno, record.catno],
+            [page.labels.format, record.format],
           ]}
-          note={noteOf(shown[active].id)}
+          note={noteOf(record.id)}
           labels={page.labels}
           position={active + 1}
-          total={shown.length}
+          total={list.length}
           onClose={() => setActive(null)}
           onStep={step}
-        />
+        >
+          {record.url && (
+            <p className="cover-source">
+              <a href={record.url} target="_blank" rel="noopener">
+                {page.labels.shop} ↗
+              </a>
+            </p>
+          )}
+        </CoverView>
       )}
     </main>
   )

@@ -6,7 +6,7 @@ import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
-import { VINYL } from '../data/site'
+import { VINYL, WANTED_VINYL } from '../data/site'
 import Vinyl from './Vinyl'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -23,7 +23,9 @@ function show(lang = 'be') {
 }
 
 // every sleeve is a button whose accessible name starts with the artist
-const sleeves = () => screen.getAllByRole('button').filter((b) => b.classList.contains('vinyl-item'))
+const tiles = () => screen.getAllByRole('button').filter((b) => b.classList.contains('vinyl-item'))
+const sleeves = () => tiles().filter((b) => !b.closest('.cover-rail'))
+const wantedSleeves = () => tiles().filter((b) => b.closest('.cover-rail'))
 const chip = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
 
 beforeEach(() => localStorage.clear())
@@ -59,7 +61,7 @@ describe('vinyl data', () => {
 
   it('has a note for every record in both languages', () => {
     for (const lang of ['be', 'en']) {
-      const notes = getSection(getPage('vinyl', lang), 'intro').subs
+      const notes = getSection(getPage('vinyl', lang), 'collection').subs
       for (const r of VINYL) {
         const note = notes.find((s) => s.id === r.id)
         expect(note, `${r.id} has no ${lang} note`).toBeDefined()
@@ -73,7 +75,7 @@ describe('vinyl page', () => {
   it('renders every sleeve and counts them in the heading', () => {
     show()
     expect(sleeves()).toHaveLength(VINYL.length)
-    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(`(${VINYL.length})`)
+    expect(screen.getByRole('heading', { level: 2, name: /Мая калекцыя/ })).toHaveTextContent(`(${VINYL.length})`)
   })
 
   it('labels each sleeve with its artist and title', () => {
@@ -136,4 +138,51 @@ describe('vinyl page', () => {
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
   })
 
+})
+
+describe('vinyl page: wanted carousel', () => {
+  it('ships a cover, a shop link and a note in both languages for every wanted record', () => {
+    for (const r of WANTED_VINYL) {
+      expect(existsSync(resolve(ROOT, `public${r.image}`)), `missing cover for ${r.id}`).toBe(true)
+      expect(r.url, r.id).toMatch(/^https:\/\//)
+      for (const lang of ['be', 'en']) {
+        const note = getSection(getPage('vinyl', lang), 'wanted').subs.find((s) => s.id === r.id)
+        expect(note?.html.trim(), `${r.id} has no ${lang} note`).toBeTruthy()
+      }
+    }
+  })
+
+  it('sits above the collection with its own counter', () => {
+    show()
+    const [wantedHead, collectionHead] = screen.getAllByRole('heading', { level: 2 })
+    expect(wantedHead).toHaveTextContent(`Шукаю (${WANTED_VINYL.length})`)
+    expect(wantedHead.compareDocumentPosition(collectionHead) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+    expect(wantedSleeves()).toHaveLength(WANTED_VINYL.length)
+  })
+
+  it('shows the wanted pressing with its own kind of record', () => {
+    show()
+    expect(wantedSleeves()[0].querySelector('.vinyl-disc')).toHaveClass('vinyl-disc-yolk')
+    expect(sleeves()[0].querySelector('.vinyl-disc')).not.toHaveClass('vinyl-disc-yolk')
+  })
+
+  it('opens the wanted record with the reason it is wanted and a link to the shop', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(wantedSleeves()[0])
+    const view = screen.getByRole('dialog')
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Выход в город')
+    expect(view).toHaveTextContent('Вояджер-1')
+    expect(view).toHaveTextContent(`1 / ${WANTED_VINYL.length}`)
+    expect(within(view).getByRole('link', { name: /У краме/ })).toHaveAttribute('href', WANTED_VINYL[0].url)
+  })
+
+  it('keeps the two lists apart: a collection card has no shop link and counts the collection', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(sleeves()[0])
+    const view = screen.getByRole('dialog')
+    expect(view).toHaveTextContent(`1 / ${VINYL.length}`)
+    expect(within(view).queryByRole('link', { name: /У краме/ })).not.toBeInTheDocument()
+  })
 })

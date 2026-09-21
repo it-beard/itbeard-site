@@ -2415,7 +2415,7 @@ a[href^="lightbox:"] {
   }
 }
 
-/* ===== Vinyl collection (unlisted /vinils) ===== */
+/* ===== Vinyl collection (unlisted /vinyl) ===== */
 .vinyl-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));

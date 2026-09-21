@@ -26,7 +26,7 @@ export default function App() {
             <Route path="/sponsorship" element={<Support />} />
             <Route path="/help" element={<Support />} />
             <Route path="/contacts" element={<Contacts />} />
-            <Route path="/vinils" element={<Vinyl />} />
+            <Route path="/vinyl" element={<Vinyl />} />
             <Route path="/books" element={<Books />} />
             <Route path="/beard-news" element={<Navigate to="/archive" replace />} />
             <Route path="/mediakit" element={<Redirector to={MEDIAKIT_URL} />} />

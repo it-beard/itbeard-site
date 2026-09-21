@@ -407,7 +407,7 @@ export const REDIRECTS = {
   'sponsors-discord': 'https://discord.gg/78qkQJjH2b',
 }
 
-// Vinyl collection — the unlisted /vinils page.
+// Vinyl collection — the unlisted /vinyl page.
 // `year` is the album's own year, not the year of this particular pressing;
 // `label`/`catno` are filled in only where the copy on the shelf confirms them.
 // `tags` drive the filter chips; the per-record notes live in content/vinyl.md.

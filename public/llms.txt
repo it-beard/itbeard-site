@@ -21,7 +21,7 @@ Key facts:
 - [Career](https://itbeard.com/experience): professional timeline since 2008
 - [Project archive](https://itbeard.com/archive): finished and dormant projects
 - [My books](https://itbeard.com/books): home library of about 110 books with covers and notes, plus a wanted list of rare Belarusian editions
-- [My vinyl](https://itbeard.com/vinils): vinyl record collection
+- [My vinyl](https://itbeard.com/vinyl): vinyl record collection
 - [Thank me](https://itbeard.com/support): ways to say thanks via Buy Me a Coffee, Patreon, Tribute, or cryptocurrency
 - [Contacts](https://itbeard.com/contacts): Telegram, email, Mastodon, LinkedIn, GitHub
 

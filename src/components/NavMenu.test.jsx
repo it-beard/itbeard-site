@@ -33,7 +33,7 @@ describe('«Паліцы» in the nav', () => {
     const links = within(list).getAllByRole('link')
     expect(links.map((a) => [a.textContent, a.getAttribute('href')])).toEqual([
       ['Кнігі', '/books'],
-      ['Кружэлкі', '/vinils'],
+      ['Кружэлкі', '/vinyl'],
     ])
   })
 
@@ -66,7 +66,7 @@ describe('«Паліцы» in the nav', () => {
   })
 
   it('lights up while one of its pages is open', () => {
-    show('/vinils')
+    show('/vinyl')
     expect(shelves()).toHaveClass('active')
     expect(screen.getByRole('link', { name: 'Кружэлкі' })).toHaveClass('active')
     cleanup()
@@ -77,12 +77,12 @@ describe('«Паліцы» in the nav', () => {
   it('is translated', () => {
     show('/', 'en')
     expect(screen.getByRole('button', { name: /Shelves/ })).toBeInTheDocument()
-    expect(screen.getByRole('link', { name: 'Vinyl' })).toHaveAttribute('href', '/vinils')
+    expect(screen.getByRole('link', { name: 'Vinyl' })).toHaveAttribute('href', '/vinyl')
   })
 })
 
 // The pages used to be unlisted; now they are public and have to be discoverable everywhere.
-describe.each(['books', 'vinils'])('/%s is a public page', (route) => {
+describe.each(['books', 'vinyl'])('/%s is a public page', (route) => {
   it('is in the sitemap, llms.txt and the noscript fallback', () => {
     for (const file of ['public/sitemap.xml', 'public/llms.txt', 'index.html']) {
       expect(read(file), `${file} does not mention /${route}`).toMatch(new RegExp(`/${route}\\b`))

@@ -95,7 +95,7 @@ function LangToggle() {
 // the same markup lies open as a captioned pair of links — nothing to expand.
 const SHELVES = [
   { to: '/books', key: 'books' },
-  { to: '/vinils', key: 'vinyl' },
+  { to: '/vinyl', key: 'vinyl' },
 ]
 
 function ShelvesMenu({ nav, onNavigate }) {

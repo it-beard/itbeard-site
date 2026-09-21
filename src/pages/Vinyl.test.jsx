@@ -15,7 +15,7 @@ function show(lang = 'be') {
   localStorage.setItem('siteLang', lang)
   return render(
     <LangProvider>
-      <MemoryRouter initialEntries={['/vinils']}>
+      <MemoryRouter initialEntries={['/vinyl']}>
         <Vinyl />
       </MemoryRouter>
     </LangProvider>

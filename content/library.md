@@ -482,6 +482,10 @@ title: { be: Бібліятэка, en: Library }
 
 Альбом пратэсных плякатаў 2020 году: графічны дызайнэр Аляксей Пірс адабраў больш за 350 здымкаў з тысяч, дасланых удзельнікамі маршаў. Назва — словы Рамана Бандарэнкі.
 
+## Сцежкамі міфаў {#sciezkami-mifau}
+
+Арт-зборнік, зін па беларускай міфалогіі, які зрабілі энтузіясты: 16 мастакоў і 6 пісьменьнікаў, 17 гісторыяў на 42 глянцавых старонках пад цьвёрдай вокладкай. Чытач ідзе па вёсках сьледам за Вандроўцам і знаёміцца зь нячысьцікамі — ад папараць-кветкі да вужынага караля.
+
 <!-- en -->
 
 # Notes {#notes}
@@ -961,3 +965,7 @@ A pocket-sized collection of Hienadz Buraukin's poems, compiled by Siarhei Shapr
 ## Я выходжу {#pirs-ja-vychodzu}
 
 An album of protest posters from 2020: graphic designer Aliaksei Pirs picked more than 350 photographs out of thousands sent in by people who marched. The title is Raman Bandarenka's words.
+
+## Сцежкамі міфаў {#sciezkami-mifau}
+
+An art collection — a zine on Belarusian mythology made by enthusiasts: 16 artists and 6 writers, 17 stories on 42 glossy pages in a hard cover. The reader follows the Wanderer from village to village and meets the local spirits, from the fern flower to the king of the grass snakes.

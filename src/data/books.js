@@ -47,6 +47,7 @@ export const WANTED = [
 // Facts for the book cards, by id: what the edition itself states (year, publisher,
 // city, translator, isbn, pages), and `cover: true` when public/images/library/<id>.webp exists.
 const LIBRARY_FACTS = {
+  'sciezkami-mifau': { year: 2023, pages: 42, cover: true },
   'niaklajeu-kniha-losau': { year: 2025, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-351-9', cover: true },
   'mify-backauscyny': { year: 1994, publisher: 'Беларуская Энцыклапедыя', city: 'Мінск', isbn: '5-85700-162-5', cover: true },
   'kazakova-mifalahiemy-i-mahija': { year: 1997, publisher: 'БОФФ', city: 'Мінск', isbn: '985-430-003-X', pages: 119, cover: true },
@@ -343,6 +344,7 @@ const BOOKS = [
   book('tradycyjny-svietapohlad-1', '', 'Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія', 'be', 'folk', '#2b3160', '#e3a93c'),
   book('buraukin-nahavarycca-z-zorkami', 'Генадзь Бураўкін', 'Нагаварыцца з зоркамі', 'be', 'poetry', '#f4f4f4', '#222222', 1),
   book('pirs-ja-vychodzu', 'Л. Пірс', 'Я выходжу', 'be', 'history', '#f7f7f7', '#c8252f'),
+  book('sciezkami-mifau', '', 'Сцежкамі міфаў', 'be', 'folk', '#161a3a', '#e8a33a'),
 ]
 
 // Default order of the library: by language, and within a language the series first

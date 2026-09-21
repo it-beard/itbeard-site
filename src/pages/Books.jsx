@@ -88,7 +88,7 @@ export default function Books() {
             ({WANTED.length})
           </sup>
         </h2>
-        <Ornament small />
+        <Ornament />
         <Md className="prose intro book-lead" html={wanted.html} />
         <CoverRail labels={page.labels} tall>
           {WANTED.map((b, index) => (
@@ -122,7 +122,7 @@ export default function Books() {
             ({total})
           </sup>
         </h2>
-        <Ornament small />
+        <Ornament />
         <Md className="prose intro book-lead" html={library.html} />
 
         <div className="library-search">

@@ -2559,8 +2559,19 @@ a[href^="lightbox:"] {
   color: var(--text);
 }
 
-.cover-view-info .ornament-sm {
+/* the site's usual divider, scaled to the card */
+.cover-view-info .ornament {
+  gap: 6px;
   margin: 12px 0 14px;
+}
+
+.cover-view-info .ornament .orn-line {
+  width: 24px;
+}
+
+.cover-view-info .ornament .orn-gem {
+  width: 7px;
+  height: 7px;
 }
 
 .cover-facts {
@@ -2665,9 +2676,9 @@ a[href^="lightbox:"] {
   font-weight: 600;
 }
 
-/* phones: a magazine layout — a small cover floats at the left, the credit, the title and
-   the facts sit beside it, and the note wraps underneath. A column would squeeze the
-   cover into a letterboxed strip. */
+/* phones: the cover on the left, and beside it a column with the credit, the title and
+   the facts as a plain spec sheet — rows, not chips, so nothing wraps around the cover
+   and the column ends about where the cover does. The note runs full width below. */
 @media (max-width: 759px) {
   .cover-view-scroll {
     display: block;
@@ -2676,16 +2687,16 @@ a[href^="lightbox:"] {
   .cover-view img,
   .cover-view .cover-typeset {
     float: left;
-    width: 40%;
-    max-width: 190px;
-    margin: 2px 16px 10px 0;
+    width: 42%;
+    max-width: 200px;
+    margin: 2px 16px 4px 0;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
   }
 
   .cover-view-portrait img,
   .cover-view-portrait .cover-typeset {
-    width: 34%;
-    max-width: 150px;
+    width: 38%;
+    max-width: 170px;
   }
 
   .cover-view .cover-typeset {
@@ -2701,17 +2712,55 @@ a[href^="lightbox:"] {
     font-size: 13px;
   }
 
+  /* its own formatting context: stays a column next to the floated cover */
+  .cover-view-head {
+    overflow: hidden;
+  }
+
   .cover-view-title {
     font-size: 19px;
   }
 
-  /* chips that do not fit beside the cover drop under it instead of overflowing */
-  .cover-facts > div {
-    border-radius: 14px;
+  .cover-view-info .ornament {
+    margin: 10px 0 8px;
   }
 
+  .cover-facts {
+    display: block;
+    margin: 0;
+  }
+
+  .cover-facts > div {
+    padding: 6px 0;
+    border: none;
+    border-top: 1px solid var(--line);
+    border-radius: 0;
+  }
+
+  .cover-facts dt,
+  .cover-facts dd {
+    display: block;
+    margin: 0;
+  }
+
+  .cover-facts dt {
+    font-size: 10px;
+  }
+
+  .cover-facts dd {
+    font-size: 13px;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  .cover-note,
+  .cover-source,
   .cover-steps {
     clear: both;
+  }
+
+  .cover-note {
+    padding-top: 14px;
   }
 }
 

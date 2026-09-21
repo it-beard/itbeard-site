@@ -1,7 +1,7 @@
-import { useEffect } from 'react'
-import { createPortal } from 'react-dom'
-import Md from '../lib/Md'
-import Ornament from './Ornament'
+import { useEffect } from "react";
+import { createPortal } from "react-dom";
+import Md from "../lib/Md";
+import Ornament from "./Ornament";
 
 // Full-screen view of one item from a cover gallery (records, books): the cover
 // on the left, facts and the note on the right. Arrow keys and the footer
@@ -25,28 +25,39 @@ export default function CoverView({
 }) {
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === 'Escape') onClose()
-      else if (e.key === 'ArrowLeft') onStep(-1)
-      else if (e.key === 'ArrowRight') onStep(1)
-    }
-    document.addEventListener('keydown', onKey)
-    document.body.style.overflow = 'hidden'
+      if (e.key === "Escape") onClose();
+      else if (e.key === "ArrowLeft") onStep(-1);
+      else if (e.key === "ArrowRight") onStep(1);
+    };
+    document.addEventListener("keydown", onKey);
+    document.body.style.overflow = "hidden";
     return () => {
-      document.removeEventListener('keydown', onKey)
-      document.body.style.overflow = ''
-    }
-  }, [onClose, onStep])
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = "";
+    };
+  }, [onClose, onStep]);
 
-  const full = `${overline} — ${title}`
-  const shownFacts = facts.filter(([, value]) => value)
+  const full = `${overline} — ${title}`;
+  const shownFacts = facts.filter(([, value]) => value);
 
   return createPortal(
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={full} onClick={onClose}>
+    <div
+      className="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label={full}
+      onClick={onClose}
+    >
       <div
-        className={`lightbox-body cover-view${portrait ? ' cover-view-portrait' : ''}`}
+        className={`lightbox-body cover-view${portrait ? " cover-view-portrait" : ""}`}
         onClick={(e) => e.stopPropagation()}
       >
-        <button type="button" className="lightbox-close" aria-label={labels.close} onClick={onClose}>
+        <button
+          type="button"
+          className="lightbox-close"
+          aria-label={labels.close}
+          onClick={onClose}
+        >
           ✕
         </button>
         {/* the figure scrolls on short screens; the frame around it must not clip,
@@ -54,29 +65,40 @@ export default function CoverView({
         <figure className="cover-view-scroll">
           {image ? <img src={image} alt={full} /> : fallback}
           <figcaption className="cover-view-info">
-            <p className="cover-overline">{overline}</p>
-            <h2 className="cover-view-title">{title}</h2>
-            <Ornament small />
-            {shownFacts.length > 0 && (
-              <dl className="cover-facts">
-                {shownFacts.map(([term, value]) => (
-                  <div key={term}>
-                    <dt>{term}</dt>
-                    <dd>{value}</dd>
-                  </div>
-                ))}
-              </dl>
-            )}
+            {/* on phones this block is the column beside the cover; the note runs full width below */}
+            <div className="cover-view-head">
+              <p className="cover-overline">{overline}</p>
+              <h2 className="cover-view-title">{title}</h2>
+              <Ornament />
+              {shownFacts.length > 0 && (
+                <dl className="cover-facts">
+                  {shownFacts.map(([term, value]) => (
+                    <div key={term}>
+                      <dt>{term}</dt>
+                      <dd>{value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+            </div>
             {note && <Md className="prose cover-note" html={note} />}
             {children}
             <div className="cover-steps">
-              <button type="button" aria-label={labels.prev} onClick={() => onStep(-1)}>
+              <button
+                type="button"
+                aria-label={labels.prev}
+                onClick={() => onStep(-1)}
+              >
                 ‹
               </button>
               <span>
                 {position} / {total}
               </span>
-              <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
+              <button
+                type="button"
+                aria-label={labels.next}
+                onClick={() => onStep(1)}
+              >
                 ›
               </button>
             </div>
@@ -84,6 +106,6 @@ export default function CoverView({
         </figure>
       </div>
     </div>,
-    document.body
-  )
+    document.body,
+  );
 }

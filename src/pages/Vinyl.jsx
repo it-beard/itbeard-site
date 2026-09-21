@@ -71,7 +71,7 @@ export default function Vinyl() {
             ({WANTED_VINYL.length})
           </sup>
         </h2>
-        <Ornament small />
+        <Ornament />
         <Md className="prose intro book-lead" html={wanted.html} />
         <CoverRail labels={page.labels}>{WANTED_VINYL.map((r, i) => tile(r, () => openFrom(true, i)))}</CoverRail>
       </section>
@@ -83,7 +83,7 @@ export default function Vinyl() {
             ({total})
           </sup>
         </h2>
-        <Ornament small />
+        <Ornament />
         <Md className="prose intro book-lead" html={collection.html} />
         <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
           {Object.keys(page.filters).map((tag) => (

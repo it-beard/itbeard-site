@@ -508,37 +508,3 @@ export const VINYL = [
     tags: ['electro'],
   },
 ].map((r) => ({ ...r, image: `/images/vinyl/${r.id}.webp` }))
-
-// Book wishlist — the unlisted /books page: editions being hunted for.
-// Titles and series are kept exactly as printed on the cover; people and
-// publishers (which need transliteration) and the notes live in content/books.md.
-// `url` points at a write-up of the edition.
-export const BOOKS = [
-  {
-    id: 'narnia-magicians-nephew',
-    series: 'Хронікі Нарніі',
-    part: 1,
-    title: 'Пляменнік чараўніка',
-    year: 2016,
-    isbn: '978-985-6983-76-7',
-    url: 'https://budzma.org/news/khroniki-narnii-pa-byelarusku-prezyentacyya-11-lyutaha.html',
-  },
-  {
-    id: 'lotr-two-towers',
-    series: 'Уладар Пярсьцёнкаў',
-    part: 2,
-    title: 'Дзьве вежы',
-    year: 2008,
-    printRun: 500,
-    url: 'https://nashaniva.com/21412',
-  },
-  {
-    id: 'lotr-return-of-the-king',
-    series: 'Уладар Пярсьцёнкаў',
-    part: 3,
-    title: 'Вяртаньне караля',
-    year: 2009,
-    printRun: 500,
-    url: 'https://knihi.com/Dzon_Ronald_Ruel_Tolkin/Uladar_piarscionkau_3_Viartannie_karala.html',
-  },
-].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))

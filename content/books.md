@@ -1,17 +1,32 @@
 ---
 title:
-  be: Кнігі, якія шукаю
-  en: Books I'm looking for
+  be: Кнігі
+  en: Books
 description:
   be: >-
-    Кнігі, якія Лёха Картыньнік шукае для сваёй паліцы: рэдкія беларускія
-    выданьні, якіх ужо не знайсьці ў кнігарнях.
+    Хатняя бібліятэка Лёхі Картыньніка і сьпіс рэдкіх беларускіх выданьняў,
+    якія ён шукае для сваёй паліцы.
   en: >-
-    Books Lex Kartynnik is hunting for: rare Belarusian editions that are
-    no longer on sale anywhere.
-counterHint:
+    Lex Kartynnik's home library, and the list of rare Belarusian editions
+    he is hunting for.
+wantedHint:
   be: 'Кніг у вышуку: {total}'
   en: 'Books on the wanted list: {total}'
+libraryHint:
+  be: 'Кніг на паліцах: {total}'
+  en: 'Books on the shelves: {total}'
+filtersLabel: { be: Фільтр кніг па тэмах, en: Filter books by subject }
+langFiltersLabel: { be: Фільтр кніг па мовах, en: Filter books by language }
+filters:
+  all: { be: Усе, en: All }
+  sf: { be: Фантастыка і фэнтэзі, en: Sci-fi & fantasy }
+  fiction: { be: Мастацкая літаратура, en: Fiction }
+  poetry: { be: Паэзія, en: Poetry }
+  history: { be: Гісторыя, en: History }
+  folk: { be: Міталёгія і фальклёр, en: Myth & folklore }
+  lang: { be: Мова і слоўнікі, en: Language & dictionaries }
+  nonfic: { be: Нон-фікшн, en: Non-fiction }
+  tech: { be: IT і праца, en: IT & work }
 labels:
   part: { be: частка, en: part }
   year: { be: Год, en: Year }
@@ -25,6 +40,12 @@ labels:
   prev: { be: Папярэдняя кніга, en: Previous book }
   next: { be: Наступная кніга, en: Next book }
   openHint: { be: Разгледзець вокладку, en: View the cover }
+  scrollPrev: { be: Пракруціць назад, en: Scroll back }
+  scrollNext: { be: Пракруціць далей, en: Scroll forward }
+  search: { be: Пошук па аўтару ці назьве, en: Search by author or title }
+  found: { be: 'Знойдзена: {shown} з {total}', en: 'Showing {shown} of {total}' }
+  empty: { be: Такой кнігі на паліцах няма., en: No such book on the shelves. }
+  reset: { be: Скінуць, en: Reset }
 # People and publishers, transliterated for the English page
 details:
   narnia-magicians-nephew:
@@ -43,40 +64,52 @@ details:
 
 <!-- be -->
 
-# Кнігі, якія шукаю {#intro}
+# Кнігі {#intro}
 
-Ёсьць кнігі, якія не купіш у краме: наклад даўно разышоўся, перавыданьня няма, і застаецца толькі паляваць на іх па букіністах і чужых паліцах. Тут — мой сьпіс такога паляваньня.
+Тут дзьве паліцы. На першай — кнігі, якіх у мяне яшчэ няма і якія я шукаю. На другой — усё, што ўжо стаіць дома.
 
-Калі нейкая з гэтых кніг стаіць у вас і вы гатовыя зь ёй разьвітацца — [напішыце мне](/contacts), набуду з радасьцю.
+# Шукаю {#wanted}
+
+Ёсьць кнігі, якія не купіш у краме: наклад даўно разышоўся, перавыданьня няма, і застаецца толькі паляваць на іх па букіністах і чужых паліцах. Калі нейкая з гэтых кніг стаіць у вас і вы гатовыя зь ёй разьвітацца — [напішыце мне](/contacts), набуду з радасьцю.
 
 ## Хронікі Нарніі. Пляменнік чараўніка {#narnia-magicians-nephew}
 
-Кніга пра тое, як паўстала Нарнія і як у ёй упершыню апынуліся людзі, — першая частка «Хронік» па-беларуску. Пераклала Надзея Кім, вокладку стварыў графік Раман Сустаў, а ўнутры — клясычныя ілюстрацыі Паўліны Бэйнс зь першага ангельскага выданьня. Выйшла ў сэрыі «Добрая кніга».
+Кніга пра тое, як паўстала Нарнія і як у ёй упершыню апынуліся людзі, — першая частка «Хронік» па-беларуску. Пераклала Надзея Кім, вокладку стварыў графік Раман Сустаў, а ўнутры — клясычныя ілюстрацыі Паўліны Бэйнс зь першага ангельскага выданьня. Выйшла ў сэрыі «Добрая кніга». Тры наступныя часткі ўжо стаяць на паліцы — бракуе якраз пачатку.
 
 ## Уладар Пярсьцёнкаў. Дзьве вежы {#lotr-two-towers}
 
-Другі том першага беларускага перакладу трылёгіі — клясычным правапісам, з малюнкамі К. Шэмяк і мапамі Т. Яфімавай. Выйшаў у Менску накладам усяго 500 асобнікаў, таму знайсьці яго цяпер — квэст, варты самога Толкіна.
+Другі том першага беларускага перакладу трылёгіі — клясычным правапісам, з малюнкамі К. Шэмяк і мапамі Т. Яфімавай. Выйшаў у Менску накладам усяго 500 асобнікаў, таму знайсьці яго цяпер — квэст, варты самога Толкіна. Першы том у мяне ёсьць.
 
 ## Уладар Пярсьцёнкаў. Вяртаньне караля {#lotr-return-of-the-king}
 
 Заключны том таго ж выданьня: той самы пераклад Дзьмітрыя Магілеўцава і Крысьціны Курчанковай, тыя самыя 500 асобнікаў. Без яго трылёгія на паліцы так і застаецца недачытанай.
 
+# Мая бібліятэка {#library}
+
+Кнігі стаяць тут так, як стаяць дома, — паліца за паліцай, з колерамі сапраўдных карэньчыкаў. Назвы і аўтары пададзеныя так, як яны надрукаваныя на вокладцы.
+
 <!-- en -->
 
-# Books I'm looking for {#intro}
+# Books {#intro}
 
-Some books can't be bought in a shop: the print run sold out long ago, there is no reissue, and all that is left is to hunt for them in second-hand stores and on other people's shelves. This is my hunting list.
+Two shelves live here. The first holds the books I don't have yet and am looking for. The second is everything that already stands at home.
 
-If one of these is sitting on your shelf and you are ready to part with it — [drop me a line](/contacts), I'll gladly buy it.
+# Wanted {#wanted}
+
+Some books can't be bought in a shop: the print run sold out long ago, there is no reissue, and all that is left is to hunt for them in second-hand stores and on other people's shelves. If one of these is sitting on your shelf and you are ready to part with it — [drop me a line](/contacts), I'll gladly buy it.
 
 ## The Chronicles of Narnia. The Magician's Nephew {#narnia-magicians-nephew}
 
-The story of how Narnia came to be and how humans first found their way there — the first part of the Chronicles in Belarusian. Translated by Nadzeya Kim, with a cover by graphic artist Raman Sustau and Pauline Baynes's classic illustrations from the first English edition inside. Published in the «Dobraja Kniha» series.
+The story of how Narnia came to be and how humans first found their way there — the first part of the Chronicles in Belarusian. Translated by Nadzeya Kim, with a cover by graphic artist Raman Sustau and Pauline Baynes's classic illustrations from the first English edition inside. Published in the «Dobraja Kniha» series. The next three parts are already on my shelf — it is the beginning that is missing.
 
 ## The Lord of the Rings. The Two Towers {#lotr-two-towers}
 
-The second volume of the first Belarusian translation of the trilogy — in the classical orthography, with drawings by K. Shemiak and maps by T. Yafimava. Printed in Minsk in a run of just 500 copies, which makes finding one today a quest worthy of Tolkien himself.
+The second volume of the first Belarusian translation of the trilogy — in the classical orthography, with drawings by K. Shemiak and maps by T. Yafimava. Printed in Minsk in a run of just 500 copies, which makes finding one today a quest worthy of Tolkien himself. Volume one I already have.
 
 ## The Lord of the Rings. The Return of the King {#lotr-return-of-the-king}
 
 The closing volume of the same edition: the same translation by Dzmitry Mahileutsau and Krystsina Kurchankova, the same 500 copies. Without it the trilogy on the shelf stays unfinished.
+
+# My library {#library}
+
+The books stand here the way they stand at home — shelf by shelf, in the colours of their real spines. Titles and authors are given exactly as printed on the cover.

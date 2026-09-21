@@ -2557,10 +2557,70 @@ a[href^="lightbox:"] {
 }
 
 /* ===== Book wishlist (unlisted /books) ===== */
-.book-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
-  gap: 38px 34px;
+/* wanted books: a snap-scrolling strip. The padding leaves room for the swinging
+   cover and its shadow — a scroll container clips everything past its box */
+.book-rail-wrap {
+  position: relative;
+  margin-top: 8px;
+}
+
+.book-rail {
+  display: flex;
+  gap: 34px;
+  margin: 0 -12px;
+  padding: 12px 12px 30px;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-padding: 0 12px; /* without it the first card snaps past the padding and the strip starts scrolled */
+  scrollbar-width: none;
+}
+
+.book-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.book-rail .book-item {
+  flex: 0 0 200px;
+  scroll-snap-align: start;
+}
+
+/* arrows float over the strip's edges, level with the middle of the covers */
+.book-rail-arrow {
+  position: absolute;
+  top: 150px;
+  z-index: 3;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--bg-deep);
+  color: var(--text);
+  font-size: 22px;
+  line-height: 1;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.5);
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.book-rail-prev {
+  left: -14px;
+}
+
+.book-rail-next {
+  right: -14px;
+}
+
+@media (hover: hover) {
+  .book-rail-arrow:hover {
+    border-color: var(--accent-bright);
+    color: var(--accent-hover);
+  }
+}
+
+/* section intros under an h2 read like the page-head intro */
+.book-lead {
+  max-width: 760px;
+  margin-bottom: 8px;
+  color: var(--muted);
 }
 
 .book-item {
@@ -2634,6 +2694,144 @@ a[href^="lightbox:"] {
   border-radius: 6px;
 }
 
+/* ----- home library: stacks of spines ----- */
+.library-search {
+  position: relative;
+  max-width: 420px;
+  margin-top: 22px;
+}
+
+.library-search i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--muted);
+  font-size: 13px;
+  pointer-events: none;
+}
+
+.library-search input {
+  width: 100%;
+  padding: 10px 16px 10px 40px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 14.5px;
+  transition: border-color 0.2s;
+}
+
+.library-search input::placeholder {
+  color: var(--muted);
+}
+
+.library-search input:focus {
+  outline: none;
+  border-color: var(--accent-bright);
+}
+
+.library-found {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 18px 0 14px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.library-reset {
+  color: var(--accent-bright);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+@media (hover: hover) {
+  .library-reset:hover {
+    color: var(--accent-hover);
+  }
+}
+
+/* books lie flat in piles, one pile per column */
+.spines {
+  columns: 3 300px;
+  column-gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.spine {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+  margin-bottom: 3px;
+  padding: 6px 12px 6px 16px;
+  break-inside: avoid;
+  border: 1px solid rgba(255, 255, 255, 0.07); /* keeps near-black spines off the dark page */
+  border-radius: 3px 2px 2px 3px;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.28) 0, rgba(255, 255, 255, 0.1) 5px, transparent 12px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 30%, rgba(0, 0, 0, 0.18)),
+    var(--spine);
+  color: var(--ink);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5), 0 3px 8px rgba(0, 0, 0, 0.28);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.spine-1 {
+  min-height: 32px;
+}
+
+.spine-3 {
+  min-height: 56px;
+}
+
+@media (hover: hover) {
+  .spine:hover {
+    transform: translateX(10px);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5), 0 8px 18px rgba(0, 0, 0, 0.45);
+  }
+}
+
+.spine-text {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.spine-author {
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.35;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.spine-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.spine-1 .spine-title {
+  font-size: 13px;
+}
+
+.spine-lang {
+  flex-shrink: 0;
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+
 /* two sleeves per row on a phone rather than one oversized one */
 @media (max-width: 520px) {
   .vinyl-grid {
@@ -2641,9 +2839,24 @@ a[href^="lightbox:"] {
     gap: 26px 16px;
   }
 
-  .book-grid {
-    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-    gap: 28px 18px;
+  .book-rail {
+    gap: 22px;
+  }
+
+  .book-rail .book-item {
+    flex-basis: 150px;
+  }
+
+  .book-rail-arrow {
+    top: 105px;
+  }
+
+  .book-rail-prev {
+    left: -6px;
+  }
+
+  .book-rail-next {
+    right: -6px;
   }
 
   .cover-title {
@@ -2654,12 +2867,14 @@ a[href^="lightbox:"] {
 @media (prefers-reduced-motion: reduce) {
   .vinyl-disc,
   .vinyl-sleeve img,
-  .book-front {
+  .book-front,
+  .spine {
     transition: none;
   }
 
   .vinyl-item:hover .vinyl-disc,
-  .book-item:hover .book-front {
+  .book-item:hover .book-front,
+  .spine:hover {
     transform: none;
   }
 }

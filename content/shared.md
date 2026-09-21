@@ -45,11 +45,13 @@ labels:
     ru: { be: рас, en: ru }
     en: { be: анг, en: en }
     de: { be: ням, en: de }
+    pl: { be: пол, en: pl }
   langNames:
     be: { be: Беларуская, en: Belarusian }
     ru: { be: Расейская, en: Russian }
     en: { be: Ангельская, en: English }
     de: { be: Нямецкая, en: German }
+    pl: { be: Польская, en: Polish }
   yearOne: { be: год, en: year }
   yearFew: { be: гады, en: years }
   yearMany: { be: гадоў, en: years }

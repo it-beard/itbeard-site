@@ -108,6 +108,33 @@ describe('library data', () => {
     }
   })
 
+  it('has a note for every book in both languages', () => {
+    for (const lang of ['be', 'en']) {
+      const notes = getSection(getPage('library', lang), 'notes').subs
+      for (const b of LIBRARY) {
+        expect(notes.find((s) => s.id === b.id)?.html.trim(), `${b.id} has no ${lang} note`).toBeTruthy()
+      }
+    }
+  })
+
+  it('ships the cover file for every book that claims one, and covers most of the shelf', () => {
+    const withCover = LIBRARY.filter((b) => b.image)
+    expect(withCover.length).toBeGreaterThan(LIBRARY.length * 0.9)
+    for (const b of withCover) {
+      expect(b.image).toBe(`/images/library/${b.id}.webp`)
+      expect(existsSync(resolve(ROOT, `public${b.image}`)), `missing cover for ${b.id}`).toBe(true)
+    }
+  })
+
+  it('knows the publisher of nearly every book and keeps the facts well-formed', () => {
+    // a few editions name no publisher anywhere — those stay blank rather than guessed
+    expect(LIBRARY.filter((b) => b.publisher).length).toBeGreaterThan(LIBRARY.length * 0.95)
+    for (const b of LIBRARY) {
+      if (b.year) expect(b.year, b.id).toBeGreaterThan(1900)
+      if (b.pages) expect(Number.isInteger(b.pages), b.id).toBe(true)
+    }
+  })
+
   it('paints all volumes of one series the same colour', () => {
     const colours = {}
     for (const b of LIBRARY.filter((x) => x.series)) (colours[b.series] ??= new Set()).add(`${b.spine}/${b.ink}`)
@@ -230,13 +257,28 @@ describe('books page: library', () => {
   it('opens a card for a book, with the series line and the language', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(spines().find((el) => within(el).queryByText('Час пагарды')))
+    await user.click(spines().find((el) => within(el).queryByText('Час ганьбы')))
     const view = screen.getByRole('dialog')
-    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Час пагарды')
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Час ганьбы')
     // the author also appears on the typeset stand-in cover, so ask for the credit line itself
     expect(view.querySelector('.cover-overline')).toHaveTextContent('Анджэй Сапкоўскі')
     expect(within(view).getByText('Вядзьмар · частка 4')).toBeInTheDocument()
     expect(within(view).getByText('Беларуская')).toBeInTheDocument()
+    // facts, a real cover and the note come from the research
+    expect(within(view).getByText('Янушкевіч', { exact: false })).toBeInTheDocument()
+    expect(within(view).getByRole('img')).toHaveAttribute('src', '/images/library/sapkowski-4-cas-pahardy.webp')
+    expect(view.querySelector('.cover-note')).not.toBeEmptyDOMElement()
+  })
+
+  it('falls back to a typeset cover when a book has no image', async () => {
+    const user = userEvent.setup()
+    show()
+    const bare = LIBRARY.find((b) => !b.image)
+    await user.type(search(), bare.title)
+    await user.click(spines()[0])
+    const view = screen.getByRole('dialog')
+    expect(within(view).queryByRole('img')).not.toBeInTheDocument()
+    expect(view.querySelector('.cover-typeset')).toHaveTextContent(bare.title)
   })
 
   it('walks the filtered list from an open card, wrapping around', async () => {
@@ -296,7 +338,7 @@ describe('books page: library', () => {
 
   it('offers only the languages that are actually on the shelves', () => {
     show()
-    expect(chip('Польская')).toBeInTheDocument()
+    expect(chip('Ангельская')).toBeInTheDocument()
     expect(screen.queryByRole('button', { name: /^Нямецкая/ })).not.toBeInTheDocument()
   })
 

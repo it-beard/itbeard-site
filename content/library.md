@@ -146,6 +146,14 @@ title: { be: Бібліятэка, en: Library }
 
 Першы поўны беларускі пераклад «Іліяды» — усе 24 песьні эпасу пра Траянскую вайну. Са старажытнагрэцкай пераклаў Лявон Баршчэўскі; ёсьць каментары ў зносках, слоўнікі і сьпіс дадатковых крыніцаў. Ранейшы пераклад Браніслава Тарашкевіча 1920–30-х гадоў захаваўся толькі ва ўрыўках.
 
+## Адысея {#homer-adysieja}
+
+Першы поўны беларускі пераклад «Адысеі» — гісторыі пра дарогу героя дадому пасьля Траянскай вайны, праз багоў, пачвараў і выпрабаваньні вернасьці. Лявон Баршчэўскі ад пачатку да канца вытрымаў гекзаметр; у выданьні ёсьць каментары да тэксту. Пара да «Іліяды» таго ж перакладніка і таго ж выдавецтва.
+
+## Энэіда {#vergil-eneida}
+
+Эпас Вергілія пра ўцёкі Энэя з Троі і пачатак Рыму — у перакладзе Лявона Баршчэўскага. Аднатомнае, наноў адрэдагаванае выданьне: поўны тэкст з каментарамі і слоўнікам імёнаў.
+
 ## Апошняе жаданне {#sapkowski-1-aposniaje-zadannie}
 
 Першая кніга цыклу пра вядзьмара Геральта з Рывіі — сем навеляў пра найміта, які за грошы бароніць людзей ад пачвараў. З польскай пераклала Кацярына Маціеўская, лаўрэатка прэміі Карласа Шэрмана. Упершыню па-беларуску кніга выйшла ў «Янушкевічы» ў Мінску ў 2019 годзе.
@@ -585,6 +593,14 @@ The Earth is demolished to make way for a hyperspace bypass, and Englishman Arth
 ## Іліяда {#homer-ilijada}
 
 The first complete Belarusian translation of the Iliad — all 24 books of the epic of the Trojan War. Translated from Ancient Greek by Liavon Barshcheuski, with footnote commentary, glossaries and a list of further sources. An earlier translation by Branislau Tarashkevich from the 1920s–30s survives only in fragments.
+
+## Адысея {#homer-adysieja}
+
+The first complete Belarusian translation of the Odyssey — the hero's road home after the Trojan War, past gods, monsters and tests of loyalty. Lavon Barshcheuski kept the hexameter from the first line to the last; the edition comes with a commentary. A companion to the Iliad by the same translator and publisher.
+
+## Энэіда {#vergil-eneida}
+
+Virgil's epic of Aeneas's flight from Troy and the beginnings of Rome, translated by Lavon Barshcheuski. A newly edited one-volume edition: the full text with a commentary and a glossary of names.
 
 ## Апошняе жаданне {#sapkowski-1-aposniaje-zadannie}
 

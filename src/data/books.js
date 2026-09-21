@@ -81,6 +81,8 @@ const LIBRARY_FACTS = {
   'bradbury-marsijanskija-chroniki': { year: 2025, publisher: 'Янушкевіч', isbn: '978-83-68202-28-1', pages: 312, cover: true },
   'adams-autaspynam-pa-halaktycy': { year: 2015, publisher: 'Логвінаў', city: 'Вільня', translator: 'Павал Касцюкевіч', isbn: '978-609-8147-06-3', pages: 224, cover: true },
   'homer-ilijada': { year: 2024, publisher: 'Полацкія лабірынты', translator: 'Лявон Баршчэўскі', isbn: '978-83-965621-6-6', pages: 472, cover: true },
+  'homer-adysieja': { year: 2026, publisher: 'Полацкія лабірынты', translator: 'Лявон Баршчэўскі', isbn: '978-83-982922-0-7', pages: 392, cover: true },
+  'vergil-eneida': { year: 2025, publisher: 'Полацкія лабірынты', translator: 'Лявон Баршчэўскі', isbn: '978-83-68460-01-8', pages: 364, cover: true },
   'sapkowski-1-aposniaje-zadannie': { year: 2024, publisher: 'Янушкевіч', translator: 'Кацярына Маціеўская', isbn: '978-83-68202-08-3', pages: 342, cover: true },
   'sapkowski-2-miec-nakanavannia': { year: 2024, publisher: 'Янушкевіч', translator: 'Кацярына Маціеўская', isbn: '978-83-68202-09-0', pages: 412, cover: true },
   'sapkowski-3-krou-elfau': { year: 2024, publisher: 'Янушкевіч', translator: 'Кацярына Маціеўская', isbn: '978-83-68202-10-6', pages: 364, cover: true },
@@ -233,6 +235,8 @@ export const LIBRARY = [
 
   // epics and sagas
   book('homer-ilijada', 'Гамер', 'Іліяда', 'be', 'poetry', '#111111', '#f0a13a', 3),
+  book('homer-adysieja', 'Гамер', 'Адысея', 'be', 'poetry', '#111111', '#3aa0f0', 3),
+  book('vergil-eneida', 'Вергілій', 'Энэіда', 'be', 'poetry', '#111111', '#e8433a', 3),
   volume('sapkowski-1-aposniaje-zadannie', 'Анджэй Сапкоўскі', 'Апошняе жаданне', 'be', 'sf', 'Вядзьмар', 1),
   volume('sapkowski-2-miec-nakanavannia', 'Анджэй Сапкоўскі', 'Меч наканавання', 'be', 'sf', 'Вядзьмар', 2),
   volume('sapkowski-3-krou-elfau', 'Анджэй Сапкоўскі', 'Кроў эльфаў', 'be', 'sf', 'Вядзьмар', 3),

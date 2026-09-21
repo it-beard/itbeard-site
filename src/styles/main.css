@@ -2533,25 +2533,10 @@ a[href^="lightbox:"] {
 }
 
 .cover-view-title {
-  margin-top: 2px;
+  margin: 2px 0 14px;
   font-size: 22px;
   line-height: 1.25;
   color: var(--text);
-}
-
-/* the site's usual divider, scaled to the card */
-.cover-view-info .ornament {
-  gap: 6px;
-  margin: 12px 0 14px;
-}
-
-.cover-view-info .ornament .orn-line {
-  width: 24px;
-}
-
-.cover-view-info .ornament .orn-gem {
-  width: 7px;
-  height: 7px;
 }
 
 .cover-facts {
@@ -2699,10 +2684,6 @@ a[href^="lightbox:"] {
 
   .cover-view-title {
     font-size: 19px;
-  }
-
-  .cover-view-info .ornament {
-    margin: 10px 0 8px;
   }
 
   .cover-facts {

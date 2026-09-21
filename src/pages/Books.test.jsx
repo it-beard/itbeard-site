@@ -8,6 +8,7 @@ import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
 import { LANG_ORDER, LIBRARY, compareText, langsOf, surnameOf, WANTED } from '../data/books'
 import Books from './Books'
+import CoverView from '../components/CoverView'
 
 const ROOT = resolve(import.meta.dirname, '../..')
 
@@ -117,9 +118,9 @@ describe('library data', () => {
     }
   })
 
-  it('ships the cover file for every book that claims one, and covers most of the shelf', () => {
+  it('ships a cover file for every book', () => {
     const withCover = LIBRARY.filter((b) => b.image)
-    expect(withCover.length).toBeGreaterThan(LIBRARY.length * 0.9)
+    expect(withCover).toHaveLength(LIBRARY.length)
     for (const b of withCover) {
       expect(b.image).toBe(`/images/library/${b.id}.webp`)
       expect(existsSync(resolve(ROOT, `public${b.image}`)), `missing cover for ${b.id}`).toBe(true)
@@ -345,17 +346,6 @@ describe('books page: library', () => {
     expect(view.querySelector('.cover-note')).not.toBeEmptyDOMElement()
   })
 
-  it('falls back to a typeset cover when a book has no image', async () => {
-    const user = userEvent.setup()
-    show()
-    const bare = LIBRARY.find((b) => !b.image)
-    await user.type(search(), bare.title)
-    await user.click(spines()[0])
-    const view = screen.getByRole('dialog')
-    expect(within(view).queryByRole('img')).not.toBeInTheDocument()
-    expect(view.querySelector('.cover-typeset')).toHaveTextContent(bare.title)
-  })
-
   it('walks the filtered list from an open card, wrapping around', async () => {
     const user = userEvent.setup()
     show()
@@ -478,5 +468,28 @@ describe('books page: housekeeping', () => {
     const rail = /\.cover-rail \{[^}]*\}/.exec(css)[0]
     expect(rail).toMatch(/overflow-x: auto/)
     expect(rail).toMatch(/padding: \d+px \d+px \d+px/)
+  })
+})
+
+// Every library book has a cover now, so the stand-in is exercised on the component itself.
+describe('cover view without an image', () => {
+  it('shows the typeset stand-in instead of a broken picture', () => {
+    render(
+      <MemoryRouter>
+        <CoverView
+          fallback={<div className="cover-typeset">Кніга без вокладкі</div>}
+          overline="Аўтар"
+          title="Кніга без вокладкі"
+          labels={{ close: 'Зачыніць', prev: 'Назад', next: 'Далей' }}
+          position={1}
+          total={1}
+          onClose={() => {}}
+          onStep={() => {}}
+        />
+      </MemoryRouter>
+    )
+    const view = screen.getByRole('dialog')
+    expect(within(view).queryByRole('img')).not.toBeInTheDocument()
+    expect(view.querySelector('.cover-typeset')).toHaveTextContent('Кніга без вокладкі')
   })
 })

@@ -56,7 +56,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Пражытае-напісанае {#buraukin-prazhytaje-napisanaje}
 
-Кніга да 90-годзьдзя паэта, укладзеная Сяргеем Шапранам паводле хатняга архіву Бураўкіна і фондаў Беларускага дзяржаўнага архіву-музею літаратуры і мастацтва. Упершыню разам сабраныя яго аповеды пра калег-пісьменьнікаў, працу ў «Маладосьці», «ЛіМе» і на Дзяржтэлерадыё, а таксама ўспаміны блізкіх, дзёньнікі жонкі Юліі Якаўлеўны, лісты і дакументы.
+Кніга да 90-годзьдзя паэта, укладзеная Сяргеем Шапранам паводле хатняга архіву Бураўкіна і фондаў Беларускага дзяржаўнага архіву-музею літаратуры і мастацтва. Упершыню разам сабраныя яго аповеды пра калег-пісьменьнікаў, працу ў «Маладосьці», «ЛіМе» і на Дзяржтэлерадыё, а таксама ўспаміны блізкіх, дзёньнікі жонкі Юліі Якаўлеўны, лісты і дакументы. На вокладцы — партрэт Бураўкіна працы Леаніда Шчамялёва.
 
 ## Калыханка для Мінска {#hlinistaja-kalychanka-dla-minska}
 
@@ -220,7 +220,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Гарады Беларусі на старых паштоўках {#harady-bielarusi-na-pastoukach}
 
-Двухмоўны, беларуска-ангельскі альбом калекцыянера Вячкі Целеша: паштоўкі канца ХІХ — пачатку ХХ стагодзьдзя зь відамі губернскіх і павятовых гарадоў Беларусі, з гістарычнымі даведкамі пра кожны горад. Выходзіў у мінскім выдавецтве «Беларусь» некалькі разоў — у прыватнасьці, у 2001, 2005 і 2014 гадах.
+Двухмоўны, беларуска-ангельскі альбом калекцыянера Вячкі Целеша: паштоўкі канца ХІХ — пачатку ХХ стагодзьдзя зь відамі губернскіх і павятовых гарадоў Беларусі, з гістарычнымі даведкамі пра кожны горад. Гэта другое выданьне, якое выйшла ў мінскім выдавецтве «Беларусь» у 2001 годзе; на ангельскую тэкст пераклаў У. Чарнышоў, мастак — А. Цароў.
 
 ## Belarusian Bogeyfolk: Forest {#basak-forest-bogeyfolk}
 
@@ -320,7 +320,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Дзверы, замкнёныя на ключы {#ryzkou-dzviery-zamknionyja-na-klucy}
 
-Першы зборнік паэзіі Віталя Рыжкова: выбраныя вершы, напісаныя ў Магілёве і Мінску ў 2002–2010 гадах, і разьдзел перакладаў. Кніга выйшла ў 2010-м у «Логвінава», атрымала прэмію «Дэбют» імя Максіма Багдановіча і двойчы цалкам разышлася. Гэта трэцяе выданьне — чорная вокладка з жоўтай замочнай шчылінай, — выпушчанае ў 2025 годзе пры падтрымцы беластоцкага фонду Tutaka.
+Першы зборнік паэзіі Віталя Рыжкова: выбраныя вершы, напісаныя ў Магілёве і Мінску ў 2002–2010 гадах, і разьдзел перакладаў. Кніга выйшла ў 2010-м у «Логвінава», атрымала прэмію «Дэбют» імя Максіма Багдановіча і двойчы цалкам разышлася. Гэта трэцяе выданьне — чорная вокладка з жоўтай замочнай шчылінай, — выпушчанае ў 2025 годзе ў Беластоку выдавецтвам Tutaka. Рэдактар — Андрэй Хадановіч, ілюстрацыі зрабіла Васіліса Паляніна.
 
 ## (В)ядомыя гісторыі {#hapiejeva-v-jadomyja-historyi}
 
@@ -360,7 +360,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Гравюры Францыска Скарыны {#hraviury-skaryny}
 
-Альбом, які сабраў мастак Лявон Баразна: гравюры, тытульныя аркушы, застаўкі й ініцыялы з праскай Бібліі Францішка Скарыны (1517–1519) і віленскіх «Малой падарожнай кніжкі» ды «Апостала». Першае выданьне 1972 году хутка зрабілася рэдкасьцю; гэта другое, з прадмовай Віктара Шматава і тэкстамі на шасьці мовах. На вокладцы — славуты партрэт Скарыны.
+Альбом, які сабраў мастак Лявон Баразна: гравюры, тытульныя аркушы, застаўкі й ініцыялы з праскай Бібліі Францішка Скарыны (1517–1519) і віленскіх «Малой падарожнай кніжкі» ды «Апостала», з уступным артыкулам і мастацтвазнаўчым аналізам. Гэта першае выданьне 1972 году — у сьветлай тканіне з залатым Скарынавым знакам сонца і месяца, накладам 5000 асобнікаў. Тэкст ідзе па-беларуску і па-расейску; фотарэпрадукцыі зрабіў П. Захарэнка.
 
 ## Картаграфія Вялікага Княства Літоўскага ад XV да сярэдзіны XVIII стагоддзя {#aleksandrovic-kartahrafija-vkl}
 
@@ -540,7 +540,7 @@ Siarhei Shapran's study of a little-known side of Vasil Bykau — visual art: hi
 
 ## Пражытае-напісанае {#buraukin-prazhytaje-napisanaje}
 
-Published for the poet's 90th birthday and compiled by Siarhei Shapran from Buraukin's home archive and the State Archive-Museum of Literature and Art. It gathers for the first time his accounts of fellow writers and of his work at Maladosts, LiM and State Television and Radio, alongside memoirs of those close to him, his wife Yulia's diaries, letters and documents.
+Published for the poet's 90th birthday and compiled by Siarhei Shapran from Buraukin's home archive and the State Archive-Museum of Literature and Art. It gathers for the first time his accounts of fellow writers and of his work at Maladosts, LiM and State Television and Radio, alongside memoirs of those close to him, his wife Yulia's diaries, letters and documents. The cover carries Leanid Shchamialiou's portrait of Buraukin.
 
 ## Калыханка для Мінска {#hlinistaja-kalychanka-dla-minska}
 
@@ -704,7 +704,7 @@ Part one of the illustrated history by writer Uladzimir Arlou and artist Paviel 
 
 ## Гарады Беларусі на старых паштоўках {#harady-bielarusi-na-pastoukach}
 
-A bilingual Belarusian-English album by collector Viachka Tsielesh: postcards from the late nineteenth and early twentieth centuries showing the provincial and district towns of Belarus, with a historical note on each town. The Minsk publishing house Belarus has issued it several times, including in 2001, 2005 and 2014.
+A bilingual Belarusian-English album by collector Viachka Tsielesh: postcards from the late nineteenth and early twentieth centuries showing the provincial and district towns of Belarus, with a historical note on each town. This is the second edition, published by Belarus in Minsk in 2001; the English translation is by U. Charnyshou, the design by A. Tsarou.
 
 ## Belarusian Bogeyfolk: Forest {#basak-forest-bogeyfolk}
 
@@ -804,7 +804,7 @@ The diary of a Minsk journalist and Kupala Theatre yard-sweeper who moved into h
 
 ## Дзверы, замкнёныя на ключы {#ryzkou-dzviery-zamknionyja-na-klucy}
 
-Vital Ryzhkou's first poetry collection: selected poems written in Mahiliou and Minsk between 2002 and 2010, plus a section of translations. First published by Lohvinau in 2010, it won the Maksim Bahdanovich Debut prize and sold out twice. This is the third edition — a black cover with a yellow keyhole — issued in 2025 with the support of the Bialystok-based Tutaka foundation.
+Vital Ryzhkou's first poetry collection: selected poems written in Mahiliou and Minsk in 2002–2010, plus a section of translations. First published by Lohvinau in 2010, it won the Maksim Bahdanovich «Debut» prize and sold out twice. This is the third edition — a black cover with a yellow keyhole — published in Białystok in 2025 by Tutaka. Edited by Andrei Khadanovich, with illustrations by Vasilisa Palianina.
 
 ## (В)ядомыя гісторыі {#hapiejeva-v-jadomyja-historyi}
 
@@ -844,7 +844,7 @@ An album-encyclopedia by numismatists Dzmitry Huletski and Mikalai Darashkevich:
 
 ## Гравюры Францыска Скарыны {#hraviury-skaryny}
 
-An album compiled by the artist Liavon Barazna: the woodcuts, title pages, headpieces and initials from Francysk Skaryna's Prague Bible (1517–1519) and his Vilnius "Little Travel Book" and "Apostle". The first edition of 1972 quickly became a rarity; this is the second, with a foreword by Viktar Shmatau and texts in six languages. Skaryna's famous portrait is on the cover.
+An album compiled by the artist Liavon Barazna: engravings, title pages, headpieces and initials from Francysk Skaryna's Prague Bible (1517–1519) and his Vilnius «Little Travel Book» and «Apostle», with an introductory essay and an art-historical analysis. This is the first edition of 1972 — light cloth with Skaryna's sun-and-moon sign in gold, 5,000 copies. The text runs in Belarusian and Russian; photo reproductions by P. Zakharenka.
 
 ## Картаграфія Вялікага Княства Літоўскага ад XV да сярэдзіны XVIII стагоддзя {#aleksandrovic-kartahrafija-vkl}
 

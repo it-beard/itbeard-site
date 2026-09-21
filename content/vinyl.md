@@ -1,7 +1,7 @@
 ---
 title:
-  be: Кружэлкі
-  en: Vinyl
+  be: Мае кружэлкі
+  en: My vinyl
 description:
   be: >-
     Калекцыя вінілавых кружэлак Лёхі Картыньніка: ад савецкай «Мелодыі»
@@ -41,7 +41,7 @@ artists:
 
 <!-- be -->
 
-# Кружэлкі {#intro}
+# Мае кружэлкі {#intro}
 
 Паліца зь вінілам расьце павольна і без сістэмы: тут і савецкая «Мелодыя», і японскі Deutsche Grammophon, і сьвежыя перавыданьні. Аб'ядноўвае іх толькі адно — кожную зь іх хочацца ставіць на прайгравальнік зноў.
 
@@ -97,7 +97,7 @@ artists:
 
 <!-- en -->
 
-# Vinyl {#intro}
+# My vinyl {#intro}
 
 The shelf grows slowly and without a system: Soviet Melodiya pressings, a Japanese Deutsche Grammophon, a few recent reissues. The only thing they share is that each one keeps finding its way back onto the turntable.
 

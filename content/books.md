@@ -1,7 +1,7 @@
 ---
 title:
-  be: Кнігі
-  en: Books
+  be: Мае кнігі
+  en: My books
 description:
   be: >-
     Хатняя бібліятэка Лёхі Картыньніка і сьпіс рэдкіх беларускіх выданьняў,
@@ -69,7 +69,7 @@ details:
 
 <!-- be -->
 
-# Кнігі {#intro}
+# Мае кнігі {#intro}
 
 Тут дзьве паліцы. На першай — кнігі, якіх у мяне яшчэ няма і якія я шукаю. На другой — усё, што ўжо стаіць дома.
 
@@ -95,7 +95,7 @@ details:
 
 <!-- en -->
 
-# Books {#intro}
+# My books {#intro}
 
 Two shelves live here. The first holds the books I don't have yet and am looking for. The second is everything that already stands at home.
 

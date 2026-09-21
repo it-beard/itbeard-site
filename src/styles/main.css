@@ -2603,8 +2603,10 @@ a[href^="lightbox:"] {
 .book-rail {
   display: flex;
   gap: 34px;
-  margin: 0 -12px;
-  padding: 12px 12px 30px;
+  /* the swinging cover grows taller than its box (perspective), so the strip keeps
+     generous headroom and pulls itself back up with a negative margin */
+  margin: -24px -12px 0;
+  padding: 36px 12px 36px;
   overflow-x: auto;
   scroll-snap-type: x proximity;
   scroll-padding: 0 12px; /* without it the first card snaps past the padding and the strip starts scrolled */

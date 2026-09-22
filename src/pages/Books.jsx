@@ -144,7 +144,6 @@ export default function Books() {
             aria-label={page.labels.search}
             onChange={(e) => setQuery(e.target.value)}
           />
-          {!query && <p className="library-search-hint">{page.labels.searchHint}</p>}
         </div>
         <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
           {Object.keys(page.filters).map((t) => (

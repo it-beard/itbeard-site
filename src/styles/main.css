@@ -2944,7 +2944,7 @@ a[href^="lightbox:"] {
 
 .library-search i {
   position: absolute;
-  top: 50%;
+  top: 21px; /* the input's own centre line, so anything added under the box cannot pull the icon down */
   left: 15px;
   transform: translateY(-50%);
   color: var(--muted);
@@ -2962,13 +2962,6 @@ a[href^="lightbox:"] {
   font-family: inherit;
   font-size: 14.5px;
   transition: border-color 0.2s;
-}
-
-.library-search-hint {
-  margin: 7px 0 0 16px;
-  color: var(--muted);
-  font-size: 12px;
-  opacity: 0.8;
 }
 
 .library-search input::placeholder {

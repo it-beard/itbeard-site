@@ -395,14 +395,6 @@ describe('books page: library', () => {
     expect(screen.getByText('Уладар Пярсьцёнкаў. 1. Зьвяз Пярсьцёнка')).toBeInTheDocument()
   })
 
-  it('hides the search hint once something is typed', async () => {
-    const user = userEvent.setup()
-    show()
-    expect(screen.getByText(/Лічбы разумеюцца/)).toBeInTheDocument()
-    await user.type(search(), '2')
-    expect(screen.queryByText(/Лічбы разумеюцца/)).not.toBeInTheDocument()
-  })
-
   it('finds books by series, even though it is not part of the title', async () => {
     const user = userEvent.setup()
     show()

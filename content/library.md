@@ -300,7 +300,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Bestiarium {#irdorath-bestiarium}
 
-Кніга-спадарожнік да аднайменнага альбому фолк-гурта Irdorath (2026): дзесяць песень — дзесяць істотаў беларускай міфалогіі. Пад вокладкай тэксты песень з ангельскім перакладам, легенды, аўтарскія каментары і ілюстрацыі; выданьне двухмоўнае, беларуска-ангельскае. Частку тэкстаў Надзея Калач напісала яшчэ ў зьняволеньні.
+Кніга-спадарожнік да аднайменнага альбому фолк-гурта Irdorath (2026): дзесяць песень — дзесяць істотаў беларускай міфалогіі. Пад вокладкай тэксты песень з ангельскім перакладам, легенды, аўтарскія каментары і ілюстрацыі; выданьне двухмоўнае, беларуска-ангельскае. Частку тэкстаў Надзея Калач напісала яшчэ ў зьняволеньні. Тэкст, музыка і словы — Надзея Калач, арт-дырэктар — Уладзімір Калач, ілюстрацыі Kali Yulia; у камплекце з кнігай ідзе CD.
 
 ## Шляхціц Завальня {#barsceuski-sliachcic-zavalnia}
 
@@ -476,7 +476,7 @@ title: { be: Бібліятэка, en: Library }
 
 ## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
 
-Кішэннага фармату зборнік вершаў Генадзя Бураўкіна, які ўклаў Сяргей Шапран. Выйшаў у «Мон літары» накладам усяго 300 асобнікаў.
+Кішэннага фармату зборнік вершаў Генадзя Бураўкіна да 90-годзьдзя паэта, які ўклаў Сяргей Шапран. Тут перадрукаваная апошняя прыжыцьцёвая кніга «Нагаварыцца з зоркамі» (2014), якую паэт трымаў у руках за тры дні да сьмерці, а таксама вершы, якія ў яе не ўвайшлі. Выйшаў у «Мон літары» накладам усяго 300 асобнікаў; на вокладцы — фотапартрэт Паўла Татарнікава.
 
 ## Я выходжу {#pirs-ja-vychodzu}
 
@@ -784,7 +784,7 @@ A collective scholarly monograph on the history of the white-red-white flag: the
 
 ## Bestiarium {#irdorath-bestiarium}
 
-The companion book to the 2026 album of the same name by the Belarusian pagan-folk band Irdorath: ten songs, ten creatures of Belarusian mythology. It holds the lyrics with English translations, legends, the band's commentary and illustrations, all in Belarusian and English. Some of the lyrics were written by Nadzeya Kalach while she was a political prisoner.
+The companion book to the 2026 album of the same name by the Belarusian pagan-folk band Irdorath: ten songs, ten creatures of Belarusian mythology. It holds the lyrics with English translations, legends, the band's commentary and illustrations, all in Belarusian and English. Some of the lyrics were written by Nadzeya Kalach while she was a political prisoner. Text, music and lyrics by Nadzeya Kalach, art direction by Uladzimir Kalach, illustrations by Kali Yulia; the book comes with a CD.
 
 ## Шляхціц Завальня {#barsceuski-sliachcic-zavalnia}
 
@@ -960,7 +960,7 @@ The first of five illustrated books from the Institute of Philosophy of the Nati
 
 ## Нагаварыцца з зоркамі {#buraukin-nahavarycca-z-zorkami}
 
-A pocket-sized collection of Hienadz Buraukin's poems, compiled by Siarhei Shapran. Published by Mon Litara in a run of just 300 copies.
+A pocket-sized collection of Hienadz Buraukin's poems for the poet's 90th anniversary, compiled by Siarhei Shapran. It reprints his last lifetime book, «Нагаварыцца з зоркамі» (2014), which he held in his hands three days before his death, together with poems that did not make it into that edition. Published by Mon Litara in a run of just 300 copies; the cover photo is by Pavel Tatarnikau.
 
 ## Я выходжу {#pirs-ja-vychodzu}
 

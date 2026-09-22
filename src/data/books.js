@@ -56,7 +56,7 @@ const LIBRARY_FACTS = {
   'ruska-bielaruski-slounik-1953': { year: 1953, publisher: 'Дзяржаўнае выдавецтва замежных і нацыянальных слоўнікаў', city: 'Масква', cover: true },
   'tradycyjny-svietapohlad-1': { year: 2023, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-2972-6', pages: 87, cover: true },
   'buraukin-nahavarycca-z-zorkami': { year: 2026, publisher: 'Мон літара', city: 'Мінск', cover: true },
-  'pirs-ja-vychodzu': { year: 2021, publisher: 'Pearce', city: 'Варшава', cover: true },
+  'pirs-ja-vychodzu': { year: 2021, publisher: 'Pearce', city: 'Варшава', isbn: '978-83-960861-1-2', pages: 209, cover: true },
   'reynolds-house-of-suns': { year: 2022, publisher: 'Азбука', city: 'Санкт-Петербург', translator: 'Алла Ахмерова, Кирилл Плешков', isbn: '978-5-389-20484-3', pages: 576, cover: true },
   'snegov-men-like-gods': { year: 2023, publisher: 'Азбука', city: 'Санкт-Петербург', isbn: '978-5-389-22045-4', pages: 672, cover: true },
   'liu-three-body': { year: 2017, publisher: 'fanzon', city: 'Москва', translator: 'Ольга Глушкова', isbn: '978-5-04-089112-2', pages: 464, cover: true },

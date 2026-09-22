@@ -7,6 +7,7 @@ import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
+import { matchesNumbers, parseQuery } from '../lib/bookQuery'
 
 // «Хронікі Нарніі · частка 1»
 const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
@@ -54,14 +55,17 @@ export default function Books() {
       .map((code) => shared.labels.langNames[code])
       .join(', ')
 
-  const needle = fold(query.trim())
+  // numbers in the box mean a year or a page count; the words match author, title, series
+  const parsed = parseQuery(query)
+  const needle = fold(parsed.text)
   const shown = LIBRARY.filter(
     (b) =>
       (tag === 'all' || b.tags.includes(tag)) &&
       (bookLang === 'all' || langsOf(b).includes(bookLang)) &&
-      (!needle || haystack(b).includes(needle))
+      (!needle || haystack(b).includes(needle)) &&
+      matchesNumbers(b, parsed)
   )
-  const filtered = tag !== 'all' || bookLang !== 'all' || needle
+  const filtered = tag !== 'all' || bookLang !== 'all' || query.trim() !== ''
   const reset = () => {
     setQuery('')
     setTag('all')
@@ -140,6 +144,7 @@ export default function Books() {
             aria-label={page.labels.search}
             onChange={(e) => setQuery(e.target.value)}
           />
+          {!query && <p className="library-search-hint">{page.labels.searchHint}</p>}
         </div>
         <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
           {Object.keys(page.filters).map((t) => (

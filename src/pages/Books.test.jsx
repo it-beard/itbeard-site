@@ -381,6 +381,28 @@ describe('books page: library', () => {
     expect(spines().every((el) => /Быкаў/.test(el.textContent))).toBe(true)
   })
 
+  it('filters by year and by page count typed into the same box', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), '2023')
+    expect(spines()).toHaveLength(LIBRARY.filter((b) => b.year === 2023).length)
+    await user.clear(search())
+    await user.type(search(), '>500')
+    expect(spines()).toHaveLength(LIBRARY.filter((b) => b.pages > 500).length)
+    await user.clear(search())
+    await user.type(search(), 'толкін 2008')
+    expect(spines()).toHaveLength(1)
+    expect(screen.getByText('Уладар Пярсьцёнкаў. 1. Зьвяз Пярсьцёнка')).toBeInTheDocument()
+  })
+
+  it('hides the search hint once something is typed', async () => {
+    const user = userEvent.setup()
+    show()
+    expect(screen.getByText(/Лічбы разумеюцца/)).toBeInTheDocument()
+    await user.type(search(), '2')
+    expect(screen.queryByText(/Лічбы разумеюцца/)).not.toBeInTheDocument()
+  })
+
   it('finds books by series, even though it is not part of the title', async () => {
     const user = userEvent.setup()
     show()
@@ -440,7 +462,7 @@ describe('books page: library', () => {
   it('translates the chrome but keeps titles as printed on the English page', () => {
     show('en')
     expect(screen.getByRole('heading', { level: 2, name: /My library/ })).toBeInTheDocument()
-    expect(screen.getByPlaceholderText('Search by author or title')).toBeInTheDocument()
+    expect(screen.getByPlaceholderText('Search: author, title, year, pages')).toBeInTheDocument()
     expect(screen.getByText('Сабакі Эўропы')).toBeInTheDocument()
     expect(screen.getAllByText('J. R. R. Tolkien')).toHaveLength(2)
   })

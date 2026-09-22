@@ -2962,6 +2962,13 @@ a[href^="lightbox:"] {
   transition: border-color 0.2s;
 }
 
+.library-search-hint {
+  margin: 7px 0 0 16px;
+  color: var(--muted);
+  font-size: 12px;
+  opacity: 0.8;
+}
+
 .library-search input::placeholder {
   color: var(--muted);
 }

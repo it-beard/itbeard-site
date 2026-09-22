@@ -47,7 +47,10 @@ labels:
   openHint: { be: Разгледзець вокладку, en: View the cover }
   scrollPrev: { be: Пракруціць назад, en: Scroll back }
   scrollNext: { be: Пракруціць далей, en: Scroll forward }
-  search: { be: Пошук па аўтару ці назьве, en: Search by author or title }
+  search: { be: 'Пошук: аўтар, назва, год, старонкі', en: 'Search: author, title, year, pages' }
+  searchHint:
+    be: 'Лічбы разумеюцца як год ці старонкі: «2023», «1990–2005», «>500», «да 100»'
+    en: 'Numbers are read as a year or a page count: “2023”, “1990–2005”, “>500”, “<100”'
   found: { be: 'Знойдзена: {shown} з {total}', en: 'Showing {shown} of {total}' }
   empty: { be: Такой кнігі на паліцах няма., en: No such book on the shelves. }
   reset: { be: Скінуць, en: Reset }

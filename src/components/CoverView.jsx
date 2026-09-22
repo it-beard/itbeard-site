@@ -72,19 +72,21 @@ export default function CoverView({
             </div>
             {note && <Md className="prose cover-note" html={note} />}
             {children}
-            <div className="cover-steps">
-              <button type="button" aria-label={labels.prev} onClick={() => onStep(-1)}>
-                ‹
-              </button>
-              <span>
-                {position} / {total}
-              </span>
-              <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
-                ›
-              </button>
-            </div>
           </figcaption>
         </figure>
+        {/* outside the scroller, so it stays put at the foot of the frame while a long
+            card scrolls — the same spot to tap for every book */}
+        <div className="cover-steps">
+          <button type="button" aria-label={labels.prev} onClick={() => onStep(-1)}>
+            ‹
+          </button>
+          <span>
+            {position} / {total}
+          </span>
+          <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
+            ›
+          </button>
+        </div>
       </div>
     </div>,
     document.body,

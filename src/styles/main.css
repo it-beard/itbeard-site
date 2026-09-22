@@ -2589,11 +2589,15 @@ a[href^="lightbox:"] {
   color: var(--muted);
 }
 
+/* a footer of the frame, not of the scrolling text: a long card scrolls above it */
 .cover-steps {
   display: flex;
   align-items: center;
+  flex-shrink: 0;
   gap: 14px;
-  margin-top: 18px;
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 13px;
   font-weight: 600;
@@ -2736,8 +2740,7 @@ a[href^="lightbox:"] {
   }
 
   .cover-note,
-  .cover-source,
-  .cover-steps {
+  .cover-source {
     clear: both;
   }
 

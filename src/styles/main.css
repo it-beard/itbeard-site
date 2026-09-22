@@ -2696,9 +2696,10 @@ a[href^="lightbox:"] {
     display: none;
   }
 
-  /* its own formatting context: stays a column next to the floated cover */
+  /* no formatting context of its own: the rows wrap around the floated cover, and
+     the ones that land below it stretch to the full width instead of leaving a hole */
   .cover-view-head {
-    overflow: hidden;
+    overflow: visible;
   }
 
   .cover-view-title {
@@ -2711,6 +2712,7 @@ a[href^="lightbox:"] {
   }
 
   .cover-facts > div {
+    display: flow-root; /* each row sits beside the float, then spans full width once below it */
     padding: 6px 0;
     border: none;
     border-top: 1px solid var(--line);

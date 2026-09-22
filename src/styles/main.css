@@ -2513,6 +2513,7 @@ a[href^="lightbox:"] {
 /* ----- cover view, shared by the vinyl and book galleries (reuses the .lightbox shell) ----- */
 .cover-view {
   max-width: min(880px, 100%);
+  height: min(640px, 100%); /* fixed, so the footer stays put from one book to the next */
   padding: 18px;
 }
 
@@ -2520,6 +2521,7 @@ a[href^="lightbox:"] {
    the close button, which hangs off the frame's corner */
 .cover-view-scroll {
   display: flex;
+  flex: 1; /* takes all the height the fixed frame leaves above the footer */
   flex-direction: column;
   gap: 20px;
   min-height: 0;
@@ -2610,6 +2612,7 @@ a[href^="lightbox:"] {
 }
 
 .cover-steps button {
+  -webkit-tap-highlight-color: transparent;
   width: 36px;
   height: 36px;
   border: 1px solid var(--line);
@@ -2670,6 +2673,32 @@ a[href^="lightbox:"] {
    the facts as a plain spec sheet — rows, not chips, so nothing wraps around the cover
    and the column ends about where the cover does. The note runs full width below. */
 @media (max-width: 759px) {
+  /* the card fills the phone screen: the same height for every book, the arrows in the same place */
+  .lightbox:has(.cover-view) {
+    padding: 0;
+  }
+
+  .cover-view {
+    width: 100%;
+    height: 100%;
+    max-height: none;
+    border: none;
+    border-radius: 0;
+    padding: 16px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+  }
+
+  /* the ✕ can no longer hang off a corner — the frame is the screen; it floats over the text */
+  .lightbox .cover-view .lightbox-close {
+    top: calc(10px + env(safe-area-inset-top, 0px));
+    right: 10px;
+    z-index: 2;
+  }
+
+  /* leave the top-right corner to the ✕ */
+  .cover-view-info {
+    padding-right: 30px;
+  }
+
   .cover-view-scroll {
     display: block;
   }

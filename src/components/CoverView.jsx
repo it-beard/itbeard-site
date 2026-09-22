@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import Md from '../lib/Md'
 import Ornament from './Ornament'
@@ -7,6 +7,7 @@ import Ornament from './Ornament'
 // on the left, facts and the note on the right. Arrow keys and the footer
 // buttons walk the list; `onStep` receives -1 / +1. `facts` is a list of
 // [term, value] pairs — empty values are skipped. `children` land under the note.
+// `shareUrl`, when given, adds a share button that copies the card's address.
 // Without an `image`, the `fallback` node (a typeset cover) takes its place.
 export default function CoverView({
   image,
@@ -19,6 +20,7 @@ export default function CoverView({
   position,
   total,
   portrait = false,
+  shareUrl,
   onClose,
   onStep,
   children,
@@ -38,6 +40,18 @@ export default function CoverView({
   }, [onClose, onStep])
 
   const full = `${overline} — ${title}`
+  const [shared, setShared] = useState(false)
+  const share = async () => {
+    try {
+      // the system share sheet where there is one (phones), the clipboard elsewhere
+      if (navigator.share) await navigator.share({ title: full, url: shareUrl })
+      else await navigator.clipboard.writeText(shareUrl)
+      setShared(true)
+      setTimeout(() => setShared(false), 1800)
+    } catch {
+      /* the person dismissed the sheet, or the clipboard is unavailable — nothing to report */
+    }
+  }
   const shownFacts = facts.filter(([, value]) => value)
 
   return createPortal(
@@ -86,6 +100,12 @@ export default function CoverView({
           <button type="button" aria-label={labels.next} onClick={() => onStep(1)}>
             ›
           </button>
+          {shareUrl && (
+            <button type="button" className="cover-share" onClick={share} title={labels.share}>
+              <i className={`fas ${shared ? 'fa-check' : 'fa-link'}`} aria-hidden="true"></i>
+              <span>{shared ? labels.copied : labels.share}</span>
+            </button>
+          )}
         </div>
       </div>
     </div>,

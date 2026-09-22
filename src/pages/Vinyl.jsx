@@ -7,6 +7,7 @@ import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { VINYL, WANTED_VINYL } from '../data/site'
+import { cardUrl, useCardLink } from '../lib/useCardLink'
 
 export default function Vinyl() {
   const { lang } = useLang()
@@ -22,25 +23,26 @@ export default function Vinyl() {
 
   const total = VINYL.length
   const [filter, setFilter] = useState('all')
-  // the open card: an index into the list it was opened from
-  const [active, setActive] = useState(null)
-  const [fromWanted, setFromWanted] = useState(false)
+  // the open card lives in the address (?record=id), so it can be shared
+  const [openId, setOpenId] = useCardLink('record')
 
   const tagCount = (tag) => (tag === 'all' ? total : VINYL.filter((r) => r.tags.includes(tag)).length)
   const shown = VINYL.filter((r) => filter === 'all' || r.tags.includes(filter))
 
   const pick = (tag) => {
     setFilter(filter === tag ? 'all' : tag)
-    setActive(null)
+    setOpenId(null)
   }
   // wraps around, so the arrows never dead-end
-  const list = fromWanted ? WANTED_VINYL : shown
-  const step = useCallback((delta) => setActive((i) => (i + delta + list.length) % list.length), [list.length])
-  const openFrom = (wantedList, index) => {
-    setFromWanted(wantedList)
-    setActive(index)
-  }
-  const record = active !== null ? list[active] : null
+  // the card walks the list it was opened from (a shared link to a record the filter
+  // hides falls back to the whole collection) and wraps around
+  const list = WANTED_VINYL.some((r) => r.id === openId) ? WANTED_VINYL : shown.some((r) => r.id === openId) ? shown : VINYL
+  const active = openId ? list.findIndex((r) => r.id === openId) : -1
+  const step = useCallback(
+    (delta) => setOpenId(list[(active + delta + list.length) % list.length].id),
+    [list, active, setOpenId]
+  )
+  const record = active >= 0 ? list[active] : null
 
   const tile = (r, onClick) => (
     <button key={r.id} type="button" className="vinyl-item" title={page.labels.openHint} onClick={onClick}>
@@ -73,7 +75,7 @@ export default function Vinyl() {
         </h2>
         <Ornament />
         <Md className="prose intro book-lead" html={wanted.html} />
-        <CoverRail labels={page.labels}>{WANTED_VINYL.map((r, i) => tile(r, () => openFrom(true, i)))}</CoverRail>
+        <CoverRail labels={page.labels}>{WANTED_VINYL.map((r) => tile(r, () => setOpenId(r.id)))}</CoverRail>
       </section>
 
       <section className="container section">
@@ -98,7 +100,7 @@ export default function Vinyl() {
           ))}
         </div>
         <div key={filter} className="vinyl-grid cards-fade vinyl-grid-spaced">
-          {shown.map((r, i) => tile(r, () => openFrom(false, i)))}
+          {shown.map((r) => tile(r, () => setOpenId(r.id)))}
         </div>
         {shown.length === 0 && <p className="cover-empty">{page.labels.empty}</p>}
       </section>
@@ -118,7 +120,8 @@ export default function Vinyl() {
           labels={page.labels}
           position={active + 1}
           total={list.length}
-          onClose={() => setActive(null)}
+          shareUrl={cardUrl('record', record.id)}
+          onClose={() => setOpenId(null)}
           onStep={step}
         >
           {record.url && (

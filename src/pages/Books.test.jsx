@@ -12,11 +12,11 @@ import CoverView from '../components/CoverView'
 
 const ROOT = resolve(import.meta.dirname, '../..')
 
-function show(lang = 'be') {
+function show(lang = 'be', path = '/books') {
   localStorage.setItem('siteLang', lang)
   return render(
     <LangProvider>
-      <MemoryRouter initialEntries={['/books']}>
+      <MemoryRouter initialEntries={[path]}>
         <Books />
       </MemoryRouter>
     </LangProvider>
@@ -505,5 +505,38 @@ describe('cover view without an image', () => {
     const view = screen.getByRole('dialog')
     expect(within(view).queryByRole('img')).not.toBeInTheDocument()
     expect(view.querySelector('.cover-typeset')).toHaveTextContent('Кніга без вокладкі')
+  })
+})
+
+describe('books page: card links', () => {
+  it('opens the card named in the address', () => {
+    show('be', '/books?book=orwell-1984')
+    const view = screen.getByRole('dialog')
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('1984')
+  })
+
+  it('opens a wanted book from the address and walks the wanted list', async () => {
+    const user = userEvent.setup()
+    show('be', '/books?book=lotr-two-towers')
+    expect(screen.getByRole('dialog')).toHaveTextContent(`2 / ${WANTED.length}`)
+    await user.keyboard('{ArrowRight}')
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent('Вяртаньне караля')
+  })
+
+  it('ignores an id that is not a book', () => {
+    show('be', '/books?book=no-such-book')
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
+  })
+
+  it('offers a share button that copies the card address', async () => {
+    const user = userEvent.setup()
+    const written = []
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: (t) => (written.push(t), Promise.resolve()) } })
+    show()
+    await user.click(spines().find((el) => within(el).queryByText('1984')))
+    await user.click(screen.getByRole('button', { name: /Падзяліцца/ }))
+    expect(written).toHaveLength(1)
+    expect(new URL(written[0]).searchParams.get('book')).toBe('orwell-1984')
+    expect(screen.getByText('Спасылка скапіяваная')).toBeInTheDocument()
   })
 })

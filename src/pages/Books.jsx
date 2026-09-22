@@ -8,6 +8,7 @@ import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
 import { matchesNumbers, parseQuery } from '../lib/bookQuery'
+import { cardUrl, useCardLink } from '../lib/useCardLink'
 
 // «Хронікі Нарніі · частка 1»
 const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
@@ -35,8 +36,8 @@ export default function Books() {
   const libraryNotes = getSection(getPage('library', lang), 'notes').subs
   const libraryNoteOf = (id) => libraryNotes.find((s) => s.id === id)?.html
 
-  // ----- the open card: which list it came from, and the position in that list
-  const [open, setOpen] = useState(null)
+  // ----- the open card lives in the address (?book=id), so it can be shared
+  const [openId, setOpenId] = useCardLink('book')
 
   // ----- library: free-text search plus subject and language chips
   const [query, setQuery] = useState('')
@@ -72,14 +73,18 @@ export default function Books() {
     setBookLang('all')
   }
 
-  // the card walks the list it was opened from — the library one as currently filtered —
-  // and wraps around, so the arrows never dead-end
-  const openList = open?.list === 'wanted' ? WANTED : shown
+  // the card walks the list it was opened from — the wanted strip, or the library as
+  // currently filtered (a shared link to a book the filters hide falls back to the
+  // whole library) — and wraps around, so the arrows never dead-end
+  const inWanted = WANTED.some((b) => b.id === openId)
+  const openList = inWanted ? WANTED : shown.some((b) => b.id === openId) ? shown : LIBRARY
+  const index = openId ? openList.findIndex((b) => b.id === openId) : -1
+  const open = index >= 0 ? { list: inWanted ? 'wanted' : 'library', index } : null
   const step = useCallback(
-    (delta) => setOpen((o) => o && { ...o, index: (o.index + delta + openList.length) % openList.length }),
-    [openList.length]
+    (delta) => setOpenId(openList[(index + delta + openList.length) % openList.length].id),
+    [openList, index, setOpenId]
   )
-  const close = useCallback(() => setOpen(null), [])
+  const close = useCallback(() => setOpenId(null), [setOpenId])
   const book = open ? openList[open.index] : null
   const details = book && open.list === 'wanted' ? detailsOf(book.id) : null
 
@@ -107,7 +112,7 @@ export default function Books() {
               type="button"
               className="book-item"
               title={page.labels.openHint}
-              onClick={() => setOpen({ list: 'wanted', index })}
+              onClick={() => setOpenId(b.id)}
             >
               <span className="book-cover">
                 <span className="book-pages" aria-hidden="true" />
@@ -184,13 +189,13 @@ export default function Books() {
           <p className="cover-empty">{page.labels.empty}</p>
         ) : (
           <ul key={`${tag}-${bookLang}`} className="spines cards-fade">
-            {shown.map((b, index) => (
+            {shown.map((b) => (
               <li key={b.id}>
                 <button
                   type="button"
                   className={`spine spine-${b.size}`}
                   style={{ '--spine': b.spine, '--ink': b.ink }}
-                  onClick={() => setOpen({ list: 'library', index })}
+                  onClick={() => setOpenId(b.id)}
                 >
                   <span className="spine-text">
                     {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
@@ -225,6 +230,7 @@ export default function Books() {
           labels={page.labels}
           position={open.index + 1}
           total={openList.length}
+          shareUrl={cardUrl('book', book.id)}
           onClose={close}
           onStep={step}
         >
@@ -263,6 +269,7 @@ export default function Books() {
           labels={{ ...page.labels, prev: page.labels.prevOnShelf, next: page.labels.nextOnShelf }}
           position={open.index + 1}
           total={openList.length}
+          shareUrl={cardUrl('book', book.id)}
           onClose={close}
           onStep={step}
         >

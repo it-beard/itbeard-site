@@ -11,11 +11,11 @@ import Vinyl from './Vinyl'
 
 const ROOT = resolve(import.meta.dirname, '../..')
 
-function show(lang = 'be') {
+function show(lang = 'be', path = '/vinyl') {
   localStorage.setItem('siteLang', lang)
   return render(
     <LangProvider>
-      <MemoryRouter initialEntries={['/vinyl']}>
+      <MemoryRouter initialEntries={[path]}>
         <Vinyl />
       </MemoryRouter>
     </LangProvider>
@@ -184,5 +184,25 @@ describe('vinyl page: wanted carousel', () => {
     const view = screen.getByRole('dialog')
     expect(view).toHaveTextContent(`1 / ${VINYL.length}`)
     expect(within(view).queryByRole('link', { name: /У краме/ })).not.toBeInTheDocument()
+  })
+})
+
+describe('vinyl page: card links', () => {
+  it('opens the record named in the address, from either list', () => {
+    show('be', '/vinyl?record=pink-floyd-animals')
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent('Animals')
+    cleanup()
+    show('be', `/vinyl?record=${WANTED_VINYL[0].id}`)
+    expect(screen.getByRole('dialog')).toHaveTextContent(`1 / ${WANTED_VINYL.length}`)
+  })
+
+  it('shares the record address', async () => {
+    const user = userEvent.setup()
+    const written = []
+    Object.defineProperty(navigator, 'clipboard', { configurable: true, value: { writeText: (t) => (written.push(t), Promise.resolve()) } })
+    show()
+    await user.click(sleeves()[0])
+    await user.click(screen.getByRole('button', { name: /Падзяліцца/ }))
+    expect(new URL(written[0]).searchParams.get('record')).toBe(VINYL[0].id)
   })
 })

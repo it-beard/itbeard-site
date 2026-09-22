@@ -33,6 +33,8 @@ labels:
   scrollNext: { be: Пракруціць далей, en: Scroll forward }
   year: { be: Год, en: Year }
   close: { be: Зачыніць, en: Close }
+  share: { be: Падзяліцца, en: Share }
+  copied: { be: Спасылка скапіяваная, en: Link copied }
   prev: { be: Папярэдняя кружэлка, en: Previous record }
   next: { be: Наступная кружэлка, en: Next record }
   openHint: { be: Разгледзець вокладку, en: View the sleeve }

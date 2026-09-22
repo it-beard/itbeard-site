@@ -42,6 +42,8 @@ labels:
   nextOnShelf: { be: Наступная кніга на паліцы, en: Next book on the shelf }
   source: { be: Пра выданьне, en: About this edition }
   close: { be: Зачыніць, en: Close }
+  share: { be: Падзяліцца, en: Share }
+  copied: { be: Спасылка скапіяваная, en: Link copied }
   prev: { be: Папярэдняя кніга, en: Previous book }
   next: { be: Наступная кніга, en: Next book }
   openHint: { be: Разгледзець вокладку, en: View the cover }

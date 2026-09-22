@@ -2623,6 +2623,25 @@ a[href^="lightbox:"] {
   transition: border-color 0.2s, color 0.2s;
 }
 
+/* share sits at the right end of the footer, the arrows stay centred */
+.cover-steps .cover-share {
+  position: absolute;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  width: auto;
+  height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cover-steps {
+  position: relative;
+}
+
 @media (hover: hover) {
   .cover-steps button:hover {
     border-color: var(--accent-bright);
@@ -2777,6 +2796,21 @@ a[href^="lightbox:"] {
   .cover-note,
   .cover-source {
     clear: both;
+  }
+
+  .cover-steps .cover-share span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  .cover-steps .cover-share {
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    justify-content: center;
   }
 
   .cover-note {

@@ -62,10 +62,6 @@ artists:
 
 # Мая калекцыя {#collection}
 
-Паліца зь вінілам расьце павольна і без сістэмы: тут і савецкая «Мелодыя», і японскі Deutsche Grammophon, і сьвежыя перавыданьні. Аб'ядноўвае іх толькі адно — кожную зь іх хочацца ставіць на прайгравальнік зноў.
-
-Націсьніце на вокладку, каб разгледзець яе буйней.
-
 ## Ravel — Boléro / La Valse / Rapsodie espagnole {#ravel-bolero}
 
 Тры аркестравыя творы Морыса Равеля ў запісах Леанарда Бернстайна з Нью-Ёрскай філармоніяй. Перавыданьне лейбла Vinyl Passion Classical.
@@ -129,10 +125,6 @@ Pressings that sold out before I got to them. If you know where one is sitting �
 The 2021 double album on clear vinyl with a purple «yolk» in the middle — every disc comes out slightly different. The artist's own shop has run out. My reason for wanting it is simple: side one opens with «Вояджер-1», and I badly want to hear that track from a record.
 
 # My collection {#collection}
-
-The shelf grows slowly and without a system: Soviet Melodiya pressings, a Japanese Deutsche Grammophon, a few recent reissues. The only thing they share is that each one keeps finding its way back onto the turntable.
-
-Click a sleeve to see it larger.
 
 ## Ravel — Boléro / La Valse / Rapsodie espagnole {#ravel-bolero}
 

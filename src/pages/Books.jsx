@@ -133,7 +133,6 @@ export default function Books() {
           </sup>
         </h2>
         <Ornament />
-        <Md className="prose intro book-lead" html={library.html} />
 
         <div className="library-search">
           <i className="fas fa-search" aria-hidden="true" />

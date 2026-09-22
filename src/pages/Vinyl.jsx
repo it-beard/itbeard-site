@@ -84,7 +84,6 @@ export default function Vinyl() {
           </sup>
         </h2>
         <Ornament />
-        <Md className="prose intro book-lead" html={collection.html} />
         <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
           {Object.keys(page.filters).map((tag) => (
             <button

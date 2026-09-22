@@ -1032,6 +1032,11 @@ body.theme-restore #app {
   margin-top: 20px;
 }
 
+/* right under a section divider the chips need no extra room */
+.ornament + .filter-chips {
+  margin-top: 4px;
+}
+
 /* language chips sit right under the category row */
 .filter-chips-langs {
   margin-top: 10px;
@@ -2593,6 +2598,7 @@ a[href^="lightbox:"] {
 .cover-steps {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
   gap: 14px;
   margin: 14px 0 0;
@@ -2942,7 +2948,7 @@ a[href^="lightbox:"] {
 .library-search {
   position: relative;
   max-width: 420px;
-  margin-top: 22px;
+  margin-top: 4px;
 }
 
 .library-search i {

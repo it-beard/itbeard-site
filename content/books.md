@@ -528,9 +528,47 @@ details:
     author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
     translator: { be: 'Дзьмітры Магілеўцаў, Крысьціна Курчанкова', en: 'Dzmitry Mahileutsau, Krystsina Kurchankova' }
     publisher: { be: Мінск, en: Minsk }
+  tolkien-chobit:
+    author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
+    translator: { be: Франц Корзун, en: Frants Korzun }
+    publisher: { be: '«Капітал Прынт», Мінск', en: 'Kapital Print, Minsk' }
   bielaruski-klasycny-pravapis:
     author: { be: 'Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка', en: 'Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko, Zmitser Sauka' }
     publisher: { be: 'Вільня — Менск', en: 'Vilnius — Minsk' }
+  maur-zbor-tvorau-1:
+    author: { be: Янка Маўр, en: Yanka Maur }
+    publisher: { be: '«Мастацкая літаратура», Мінск', en: 'Mastatskaya Litaratura, Minsk' }
+  cviatkou-planeta-heja:
+    author: { be: 'Уладзімір Цьвяткоў, Аляксандар Коршакевіч', en: 'Vladimir Tsvetkov, Alexander Korshakevich' }
+    publisher: { be: '«Эрыдан», Мінск', en: 'Eridan, Minsk' }
+  drazdovic-niabiesnyja-biehi:
+    author: { be: Язэп Драздовіч, en: Yazep Drazdovich }
+    publisher: { be: 'Выданьне аўтара, Вільня', en: 'Published by the author, Vilnius' }
+  bychkouski-anamalija:
+    author: { be: Алесь Бычкоўскі, en: Ales Bychkouski }
+    publisher: { be: '«Галіяфы», Мінск', en: 'Haliyafy, Minsk' }
+  shycik-u-cas-nie-viarnulisia:
+    author: { be: Уладзімір Шыцік, en: Uladzimir Shytsik }
+    publisher: { be: '«Мастацкая літаратура», Мінск', en: 'Mastatskaya Litaratura, Minsk' }
+  shycik-zorny-kamen:
+    author: { be: Уладзімір Шыцік, en: Uladzimir Shytsik }
+    publisher: { be: '«Беларусь», Мінск', en: 'Belarus, Minsk' }
+  hamolka-szosty-akijan:
+    author: { be: Мікола Гамолка, en: Mikola Hamolka }
+    publisher: { be: 'Дзяржаўнае выдавецтва БССР, Мінск', en: 'State Publishing House of the BSSR, Minsk' }
+  aleksandrovic-palot-u-minulaje:
+    author: { be: Андрэй Александровіч, en: Andrei Aleksandrovich }
+    publisher: { be: '«Белтрэстдрук», Менск', en: 'Beltrestdruk, Minsk' }
+  balachonau-boh-kachannia-mars:
+    author: { be: Сяргей Балахонаў, en: Siarhei Balakhonau }
+    publisher: { be: '«Янушкевіч», Мінск', en: 'Januskevic, Minsk' }
+  lastouski-labirynty-1944:
+    author: { be: Вацлаў Ластоўскі, en: Vatslau Lastouski }
+    publisher: { be: '«Народная бібліятэчка», Бэрлін', en: 'Narodnaja biblijatechka, Berlin' }
+  lem-nieperamozny:
+    author: { be: Станіслаў Лем, en: Stanisław Lem }
+    translator: { be: Анатоль Бутэвіч, en: Anatol Butevich }
+    publisher: { be: '«Літаратура і Мастацтва», Мінск', en: 'Litaratura i Mastatstva, Minsk' }
 ---
 
 <!-- be -->
@@ -555,9 +593,57 @@ details:
 
 Заключны том таго ж выданьня: той самы пераклад Дзьмітрыя Магілеўцава і Крысьціны Курчанковай, тыя самыя 500 асобнікаў. Без яго трылогія на паліцы так і застаецца недачытанай.
 
+## Хобіт, альбо Падарожжа туды і назад {#tolkien-chobit}
+
+Паважанага хобіта Більба Торбінса запрашаюць далучыцца да талакі гномаў, што зьбіраецца змагацца за скарб з лютым цмокам Смаўгам, — і ён згаджаецца, яшчэ ня ведаючы, што вернецца дадому зусім іншым. Пераклад Франца Корзуна, ілюстрацыі Ірыны Дражынай і Ганны Плотнікавай; выданьне «Капітал Прынту» ў серыі «Кніжны рысь» — у цьвёрдай вокладцы з супервокладкай. Трылогія пра Пярсьцёнак у мяне ўжо стаіць, а вось гісторыі, зь якой усё пачалося, пакуль няма.
+
 ## Беларускі клясычны правапіс. Збор правілаў. Сучасная нармалізацыя {#bielaruski-klasycny-pravapis}
 
 Папяровае выданьне нармалізаванага класічнага беларускага правапісу — збор правілаў, які падрыхтавалі Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько і Зьміцер Саўка. Выйшла ў 2005 годзе і прадавалася праз Knihi.net; цяпер у звычайным продажы кніга практычна не сустракаецца і фактычна зьяўляецца букіністычнай рэдкасьцю. Дакладны наклад пакуль невядомы. А калі хтосьці захоча раздрукаваць яе самастойна і падарыць — будзе крута.
+
+## Збор твораў. Том 1. Аповесці {#maur-zbor-tvorau-1}
+
+Першы том чатырохтомнага збору твораў Янкі Маўра: аповесьці «Чалавек ідзе», «У краіне райскай птушкі», «Сын вады» і «Фантамабіль прафесара Цылякоўскага» — менавіта дзеля яго я і шукаю гэтую кнігу. Прадмова Алеся Якімовіча, каментары М. Яфімавай. Выйшаў у «Мастацкай літаратуры» ў 1975 годзе накладам 17 000 асобнікаў.
+
+## Планета Гэя. Комикс. Артур Гор {#cviatkou-planeta-heja}
+
+Беларускі комікс на самым зломе эпох: касьмічныя прыгоды Артура Гора ў васьмі гісторыях, сярод іх «Меткий стрелок», «Город мутантов» і «Погоня». Тэкст Уладзіміра Цьвяткова, малюнкі Аляксандра Коршакевіча. Выйшаў у Мінску ў «Эрыдане» ў 1991 годзе па-расейску. Наклад быў вялізны — 200 000 асобнікаў, — але тонкія каляровыя сшыткі рэдка дажываюць да нашых дзён.
+
+## Нябесныя бегі {#drazdovic-niabiesnyja-biehi}
+
+Язэпа Драздовіча называлі беларускім Леанарда да Вінчы: мастак, скульптар, этнограф, археолаг — і астраном-аматар, які стварыў уласную касмалагічную тэорыю паходжаньня планет. У 1931 годзе ён выдаў у Вільні за свае грошы невялічкім накладам папулярную кніжку па астраноміі на беларускай мове — два нарысы, «Пазаатмосфэрная бронь зямной паверхні» і «Кружнік Сатурна», — і сам аздобіў яе ўласнымі лінарытамі. Усяго 24 старонкі. Калі гэтая кніжка калі-небудзь знойдзецца — гэта будзе сапраўдны скарб.
+
+## Анамалія {#bychkouski-anamalija}
+
+Зборнік фантастыкі Алеся Бычкоўскага, другі выпуск «Калекцыі беларускай фантастыкі» ад «Галіяфаў»: загалоўная аповесьць «Анамалія», апавяданьні «Скарпіёны Даўра», «Ён прыйдзе апоўначы», «Муары Лідлу», «Дзень імператара» і філасофскія «Хвалі. Бязмежная плынь». Зоркалёты, мужныя касмапраходцы і хітрыя кантрабандысты. Кніжка кішэннага фармату выйшла накладам усяго 200 асобнікаў. «Дзеці Сільмарыліёна» таго ж аўтара ў мяне ўжо ёсьць.
+
+## У час не вярнуліся {#shycik-u-cas-nie-viarnulisia}
+
+«Пройдзе час, з зямных касмадромаў возьмуць старт вялізныя зоркалёты і накіруюцца да далёкіх галактык…» — адзінаццаць фантастычных апавяданьняў Уладзіміра Шыціка пра прыгоды, лёс і знаходкі астралётчыкаў у бясконцай прасторы. У загалоўным студэнт-гісторык Балачан прылятае на Марс, каб узяцца за амаль недасьледаваную тэму — першыя палёты да зорак. Выйшаў у «Мастацкай літаратуры» ў 1975 годзе накладам 14 000 асобнікаў, у мяккай вокладцы.
+
+## Зорны камень {#shycik-zorny-kamen}
+
+Зборнік дзесяці фантастычных апавяданьняў Уладзіміра Шыціка, выдадзены выдавецтвам «Беларусь» у 1967 годзе. Загалоўны «Зорны камень» упершыню зьявіўся ў «Маладосці» ў скарочаным выглядзе пад назвай «Мега-буна», а пазьней ня раз перадрукоўваўся ў іншых зборніках — але шукаю менавіта гэтую, першую кніжку: цьвёрдая вокладка і ілюстрацыі Г. Скамарохава, наклад 20 000 асобнікаў.
+
+## Шосты акіян {#hamolka-szosty-akijan}
+
+Навукова-фантастычны раман Міколы Гамолкі ў дзьвюх кнігах — «За вялікую трасу» і «Цытадэль неба»: беларуская касьмічная фантастыка часоў першых спадарожнікаў. Выйшаў у Дзяржаўным выдавецтве БССР у 1959 годзе накладам 10 000 асобнікаў, з вокладкай і ілюстрацыямі Ю. Пучынскага.
+
+## Палёт у мінулае. «Маладняк», 1924, № 5 {#aleksandrovic-palot-u-minulaje}
+
+Гістарычна-фантастычнае апавяданьне з падзагалоўкам «Ад Каліноўскага да нашых дзён»: падарожжа ў часе да герояў паўстаньня 1863 году. Некаторыя дасьледчыкі называюць яго першым беларускім навукова-фантастычным творам. Асобнай кнігай «Палёт у мінулае» ніколі ня выходзіў — ён надрукаваны толькі ў пятым нумары часопіса «Маладняк» за 1924 год, які выдаваў «Белтрэстдрук» у Менску. Таму шукаю менавіта гэты нумар.
+
+## Бог кахання Марс {#balachonau-boh-kachannia-mars}
+
+Недалёкая будучыня. Знайшоўшы на раскопках у легендарных Юравічах ідал боства каханьня, гомельскі дасьледчык старажытнасьцяў Ягор Руткоўскі неўзабаве перажывае невытлумачальны разрыў з каханай — і, каб вярнуць яе, бярэцца то за літаратуру, то за сьпевы, а то і ляціць на Марс. На Зямлі тым часам лютуе эпідэмія сіндрому татальнай адзіноты. Кніга выйшла ў «Янушкевічы» ў 2020 годзе, у цьвёрдай вокладцы.
+
+## Лябірынты. Навукова-фантастычнае апавяданьне {#lastouski-labirynty-1944}
+
+Фантастычная аповесьць пра таямнічыя падзямельлі пад старым Полацкам: апавядальнік прыяжджае туды «для апазнаньня роднай старасьвеччыны» і праз мясцовых аматараў даўніны трапляе ў лябірынты, дзе ажываюць мінулыя вякі. Упершыню яна друкавалася ў 1923 годзе ў коўенскім часопісе «Крывіч», а асобнай кніжкай выйшла толькі аднойчы — у Бэрліне ў 1944 годзе, сёмым выпускам «Народнай бібліятэчкі». Гэтую кніжку я і шукаю.
+
+## Непераможны {#lem-nieperamozny}
+
+Навукоўцы на караблі «Непераможны» ляцяць на планету Рэгіс, каб высьветліць, дзе, чаму і як зьнікла каманда зоркалёта «Кандор». Апроч рамана, у кнізе аповесьць «Сябар» і тры апавяданьні, сярод іх «Сто трыццаць сем секунд» і «Казка пра вылічальную машыну, якая з цмокам змагалася». З польскай пераклаў Анатоль Бутэвіч, пасьляслоўе Віктара Язневіча. Кніга выйшла ў серыі «Бібліятэка сусветнай літаратуры» накладам 1600 асобнікаў. «Зорныя дзённікі» Лема на паліцы ўжо стаяць.
 
 # Мая бібліятэка {#library}
 
@@ -583,9 +669,57 @@ The second volume of the first Belarusian translation of the trilogy — in the 
 
 The closing volume of the same edition: the same translation by Dzmitry Mahileutsau and Krystsina Kurchankova, the same 500 copies. Without it the trilogy on the shelf stays unfinished.
 
+## The Hobbit, or There and Back Again {#tolkien-chobit}
+
+The respectable hobbit Bilbo Baggins is invited to join a company of dwarves setting out to fight the fierce dragon Smaug for his treasure — and he agrees, not yet knowing he will come home a quite different hobbit. Translated by Frants Korzun, illustrated by Iryna Drazhyna and Hanna Plotnikava; published by Kapital Print in its «Knizhny rys» series, hardcover with a dust jacket. The Ring trilogy already stands on my shelf, but the story where it all began is still missing.
+
 ## Belarusian Classical Orthography. A Set of Rules. Modern Normalisation {#bielaruski-klasycny-pravapis}
 
 The paper edition of the normalised classical Belarusian orthography — the set of rules drawn up by Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko and Zmitser Sauka. It came out in 2005 and was sold through Knihi.net; today it hardly ever turns up in regular sale and is, in effect, a second-hand rarity. The exact print run is still unknown. And if someone feels like printing a copy themselves and giving it as a present — that would be great.
+
+## Collected Works. Volume 1. Novellas {#maur-zbor-tvorau-1}
+
+The first volume of Yanka Maur's four-volume collected works: the novellas «Chalaviek idzie», «U krainie rajskaj ptushki», «Syn vady» and «Fantamabil prafiesara Tsyliakouskaha» (Professor Tsyliakouski's Fantomobile) — the last one is the reason I am hunting for this book. Foreword by Ales Yakimovich, commentary by M. Yafimava. Published by Mastatskaya Litaratura in 1975 in a run of 17,000 copies.
+
+## Planet Gaia. A Comic. Arthur Gor {#cviatkou-planeta-heja}
+
+A Belarusian comic from the very turn of an era: the space adventures of Arthur Gor in eight stories, among them "The Sharpshooter", "City of Mutants" and "The Chase". Text by Vladimir Tsvetkov, drawings by Alexander Korshakevich. Published in Minsk by Eridan in 1991, in Russian. The print run was huge — 200,000 copies — but thin colour booklets rarely survive to this day.
+
+## Heavenly Courses {#drazdovic-niabiesnyja-biehi}
+
+Yazep Drazdovich has been called the Belarusian Leonardo da Vinci: painter, sculptor, ethnographer, archaeologist — and amateur astronomer with a cosmological theory of his own about how the planets came to be. In 1931 in Vilnius he published, at his own expense and in a small run, a popular book on astronomy in Belarusian — two essays, "The Extra-Atmospheric Armour of the Earth's Surface" and "The Ring of Saturn" — illustrated with his own linocuts. Just 24 pages. If a copy ever turns up, it will be a real treasure.
+
+## Anomaly {#bychkouski-anamalija}
+
+A collection of science fiction by Ales Bychkouski, the second issue of Haliyafy's «Collection of Belarusian Science Fiction»: the title novella "Anomaly", the stories "The Scorpions of Daur", "He Will Come at Midnight", "The Moirés of Lidlu", "The Emperor's Day", and the philosophical "Waves. The Boundless Stream". Starships, brave space explorers and cunning smugglers. The pocket-size book came out in a run of only 200 copies. The same author's «Dzieci Silmaryliona» is already on my shelf.
+
+## Did Not Return in Time {#shycik-u-cas-nie-viarnulisia}
+
+"Time will pass, and huge starships will lift off from Earth's spaceports and head for distant galaxies…" — eleven science-fiction stories by Uladzimir Shytsik about the adventures, fates and discoveries of star travellers in endless space. In the title story Balachan, a history student, comes to Mars to take up a subject hardly anyone has studied: the first flights to the stars. Published by Mastatskaya Litaratura in 1975 in a run of 14,000 copies, softcover.
+
+## The Star Stone {#shycik-zorny-kamen}
+
+A collection of ten science-fiction stories by Uladzimir Shytsik, published by Belarus in 1967. The title story "The Star Stone" first appeared, shortened, in the magazine «Maladosc» as "Mega-buna", and was later reprinted in other collections more than once — but it is this first book I am after: hardcover, illustrations by H. Skamarokhau, a run of 20,000 copies.
+
+## The Sixth Ocean {#hamolka-szosty-akijan}
+
+A science-fiction novel by Mikola Hamolka in two books — "For the Great Route" and "Citadel of the Sky": Belarusian space fiction from the days of the first satellites. Published by the State Publishing House of the BSSR in 1959 in a run of 10,000 copies, with a cover and illustrations by Yu. Puchynski.
+
+## A Flight into the Past. «Maladniak», 1924, No. 5 {#aleksandrovic-palot-u-minulaje}
+
+A historical fantasy story subtitled "From Kalinouski to Our Days": a journey back in time to the heroes of the 1863 uprising. Some researchers call it the first Belarusian science-fiction story. "A Flight into the Past" never came out as a book of its own — it was printed only in the fifth issue of the magazine «Maladniak» for 1924, published by Beltrestdruk in Minsk. So that very issue is what I am looking for.
+
+## The God of Love Mars {#balachonau-boh-kachannia-mars}
+
+The near future. Soon after finding an idol of the deity of love at a dig in legendary Yuravichy, the Homel antiquarian Yahor Rutkouski goes through an inexplicable break-up with the woman he loves — and to win her back he turns to writing, then to singing, and finally flies to Mars. Meanwhile an epidemic of total-loneliness syndrome rages on Earth. Published by Januskevic in 2020, hardcover.
+
+## Labyrinths. A Science-Fiction Story {#lastouski-labirynty-1944}
+
+A fantastic novella about the mysterious underground passages beneath old Polatsk: the narrator travels there to explore the antiquities of his homeland and, through local lovers of the past, finds his way into labyrinths where bygone centuries come alive. It was first printed in 1923 in the Kaunas magazine «Kryvich», and came out as a separate booklet only once — in Berlin in 1944, as issue No. 7 of the «Narodnaja biblijatechka» (People's Library) series. That booklet is the one I am looking for.
+
+## The Invincible {#lem-nieperamozny}
+
+Scientists aboard the ship Invincible fly to the planet Regis to find out where, why and how the crew of the starship Condor vanished. Besides the novel, the book holds the novella "The Friend" and three short stories, among them "One Hundred and Thirty-Seven Seconds" and "Tale of the Computing Machine That Fought a Dragon". Translated from Polish by Anatol Butevich, with an afterword by Viktar Yaznevich. Published in the «World Literature Library» series in a run of 1,600 copies. Lem's «Zornyja dzionniki» (The Star Diaries) already stand on my shelf.
 
 # My library {#library}
 

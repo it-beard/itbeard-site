@@ -296,10 +296,10 @@ describe('books page: wanted carousel', () => {
 
   it('captions a book outside any series with its subtitle instead of a part number', () => {
     show()
-    const last = covers()[WANTED.length - 1]
-    expect(within(last).getByText('Беларускі клясычны правапіс')).toBeInTheDocument()
-    expect(within(last).getByText('Збор правілаў. Сучасная нармалізацыя')).toBeInTheDocument()
-    expect(within(last).queryByText(/частка/)).not.toBeInTheDocument()
+    const pravapis = covers()[WANTED.findIndex((b) => b.id === 'bielaruski-klasycny-pravapis')]
+    expect(within(pravapis).getByText('Беларускі клясычны правапіс')).toBeInTheDocument()
+    expect(within(pravapis).getByText('Збор правілаў. Сучасная нармалізацыя')).toBeInTheDocument()
+    expect(within(pravapis).queryByText(/частка/)).not.toBeInTheDocument()
   })
 
   it('hides both arrows while the strip has nothing to scroll', () => {
@@ -339,7 +339,7 @@ describe('books page: wanted carousel', () => {
   it('opens a book outside any series with its page count and without a translator line', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(covers()[WANTED.length - 1])
+    await user.click(covers()[WANTED.findIndex((b) => b.id === 'bielaruski-klasycny-pravapis')])
     const view = screen.getByRole('dialog')
     expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Беларускі клясычны правапіс')
     expect(within(view).getByText('Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка')).toBeInTheDocument()
@@ -575,7 +575,8 @@ describe('books page: library', () => {
     expect(screen.getByRole('heading', { level: 2, name: /My library/ })).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Search: author, title, year, pages')).toBeInTheDocument()
     expect(screen.getByText('Сабакі Эўропы')).toBeInTheDocument()
-    expect(screen.getAllByText('J. R. R. Tolkien')).toHaveLength(2)
+    // the wanted captions: two volumes of the Lord of the Rings and the Hobbit
+    expect(screen.getAllByText('J. R. R. Tolkien')).toHaveLength(3)
   })
 })
 

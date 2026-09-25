@@ -44,22 +44,21 @@ describe('wanted list data', () => {
     }
   })
 
-  it('gives every book a title, a series and a part number', () => {
+  it('gives every book a title, and every volume of a series its part number', () => {
     for (const b of WANTED) {
       expect(b.title, b.id).toBeTruthy()
-      expect(b.series, b.id).toBeTruthy()
-      expect(Number.isInteger(b.part), b.id).toBe(true)
+      if (b.series) expect(Number.isInteger(b.part), b.id).toBe(true)
     }
   })
 
-  it('has an author, a translator, a publisher and a note for every book in both languages', () => {
+  it('has an author, a publisher and a note for every book in both languages', () => {
     for (const lang of ['be', 'en']) {
       const page = getPage('books', lang)
       const notes = getSection(page, 'wanted').subs
       for (const b of WANTED) {
         const details = page.details[b.id]
         expect(details, `${b.id} has no ${lang} details`).toBeDefined()
-        for (const field of ['author', 'translator', 'publisher']) {
+        for (const field of ['author', 'publisher']) {
           expect(details[field], `${b.id} ${lang} ${field}`).toBeTruthy()
         }
         expect(notes.find((s) => s.id === b.id)?.html.trim(), `${b.id} has no ${lang} note`).toBeTruthy()
@@ -261,6 +260,14 @@ describe('books page: wanted carousel', () => {
     expect(within(first).getByText('Хронікі Нарніі · частка 1')).toBeInTheDocument()
   })
 
+  it('captions a book outside any series with its subtitle instead of a part number', () => {
+    show()
+    const last = covers()[WANTED.length - 1]
+    expect(within(last).getByText('Беларускі клясычны правапіс')).toBeInTheDocument()
+    expect(within(last).getByText('Збор правілаў. Сучасная нармалізацыя')).toBeInTheDocument()
+    expect(within(last).queryByText(/частка/)).not.toBeInTheDocument()
+  })
+
   it('hides both arrows while the strip has nothing to scroll', () => {
     show()
     expect(screen.queryByRole('button', { name: 'Пракруціць назад' })).not.toBeInTheDocument()
@@ -293,6 +300,19 @@ describe('books page: wanted carousel', () => {
     const view = screen.getByRole('dialog')
     expect(within(view).getByText(WANTED[0].isbn)).toBeInTheDocument()
     expect(within(view).queryByText('Наклад')).not.toBeInTheDocument()
+  })
+
+  it('opens a book outside any series with its page count and without a translator line', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(covers()[WANTED.length - 1])
+    const view = screen.getByRole('dialog')
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Беларускі клясычны правапіс')
+    expect(within(view).getByText('Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка')).toBeInTheDocument()
+    expect(within(view).getByText('158')).toBeInTheDocument()
+    expect(within(view).getByText('Вільня — Менск')).toBeInTheDocument()
+    expect(within(view).queryByText('Пераклад')).not.toBeInTheDocument()
+    expect(within(view).queryByText(/частка/)).not.toBeInTheDocument()
   })
 
   it('steps through the list with the arrow keys, wraps around, and closes on Escape', async () => {

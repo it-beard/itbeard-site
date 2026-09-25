@@ -2,9 +2,10 @@
 // Everything here is language-independent; the texts live in content/books.md.
 
 // Wanted list — the carousel at the top of the unlisted /books page: editions being hunted for.
-// Titles and series are kept exactly as printed on the cover; people and
+// Titles, series and subtitles are kept exactly as printed on the cover; people and
 // publishers (which need transliteration) and the notes live in content/books.md.
-// `url` points at a write-up of the edition.
+// A volume of a series carries `series` and `part`; a book that stands alone may
+// carry a `subtitle` instead. `url` points at a write-up of the edition.
 export const WANTED = [
   {
     id: 'narnia-magicians-nephew',
@@ -32,6 +33,14 @@ export const WANTED = [
     year: 2009,
     printRun: 500,
     url: 'https://knihi.com/Dzon_Ronald_Ruel_Tolkin/Uladar_piarscionkau_3_Viartannie_karala.html',
+  },
+  {
+    id: 'bielaruski-klasycny-pravapis',
+    title: 'Беларускі клясычны правапіс',
+    subtitle: 'Збор правілаў. Сучасная нармалізацыя',
+    year: 2005,
+    pages: 158,
+    url: 'https://ethnoby.org/vydanni/430081836',
   },
 ].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
 

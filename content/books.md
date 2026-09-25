@@ -67,6 +67,9 @@ details:
     author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
     translator: { be: 'Дзьмітры Магілеўцаў, Крысьціна Курчанкова', en: 'Dzmitry Mahileutsau, Krystsina Kurchankova' }
     publisher: { be: Мінск, en: Minsk }
+  bielaruski-klasycny-pravapis:
+    author: { be: 'Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка', en: 'Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko, Zmitser Sauka' }
+    publisher: { be: 'Вільня — Менск', en: 'Vilnius — Minsk' }
 ---
 
 <!-- be -->
@@ -91,6 +94,10 @@ details:
 
 Заключны том таго ж выданьня: той самы пераклад Дзьмітрыя Магілеўцава і Крысьціны Курчанковай, тыя самыя 500 асобнікаў. Без яго трылогія на паліцы так і застаецца недачытанай.
 
+## Беларускі клясычны правапіс. Збор правілаў. Сучасная нармалізацыя {#bielaruski-klasycny-pravapis}
+
+Папяровае выданьне нармалізаванага класічнага беларускага правапісу — збор правілаў, які падрыхтавалі Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько і Зьміцер Саўка. Выйшла ў 2005 годзе і прадавалася праз Knihi.net; цяпер у звычайным продажы кніга практычна не сустракаецца і фактычна зьяўляецца букіністычнай рэдкасьцю. Дакладны наклад пакуль невядомы. А калі хтосьці захоча раздрукаваць яе самастойна і падарыць — будзе крута.
+
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -114,6 +121,10 @@ The second volume of the first Belarusian translation of the trilogy — in the 
 ## The Lord of the Rings. The Return of the King {#lotr-return-of-the-king}
 
 The closing volume of the same edition: the same translation by Dzmitry Mahileutsau and Krystsina Kurchankova, the same 500 copies. Without it the trilogy on the shelf stays unfinished.
+
+## Belarusian Classical Orthography. A Set of Rules. Modern Normalisation {#bielaruski-klasycny-pravapis}
+
+The paper edition of the normalised classical Belarusian orthography — the set of rules drawn up by Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko and Zmitser Sauka. It came out in 2005 and was sold through Knihi.net; today it hardly ever turns up in regular sale and is, in effect, a second-hand rarity. The exact print run is still unknown. And if someone feels like printing a copy themselves and giving it as a present — that would be great.
 
 # My library {#library}
 

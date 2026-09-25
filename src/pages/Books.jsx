@@ -10,8 +10,9 @@ import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
 import { matchesNumbers, parseQuery } from '../lib/bookQuery'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
 
-// «Хронікі Нарніі · частка 1»
-const seriesLine = (book, labels) => `${book.series} · ${labels.part} ${book.part}`
+// «Хронікі Нарніі · частка 1» — or the subtitle of a book that stands outside any series
+const seriesLine = (book, labels) =>
+  book.series ? `${book.series} · ${labels.part} ${book.part}` : book.subtitle
 
 // The credit line on a spine: the author, plus the series unless the title already names it
 const spineCredit = (b) =>
@@ -123,7 +124,7 @@ export default function Books() {
               <span className="cover-cap">
                 <span className="cover-overline">{detailsOf(b.id).author}</span>
                 <span className="cover-title">{b.title}</span>
-                <span className="cover-sub">{seriesLine(b, page.labels)}</span>
+                {seriesLine(b, page.labels) && <span className="cover-sub">{seriesLine(b, page.labels)}</span>}
               </span>
             </button>
           ))}
@@ -223,6 +224,7 @@ export default function Books() {
             [page.labels.year, book.year],
             [page.labels.translator, details.translator],
             [page.labels.publisher, details.publisher],
+            [page.labels.pages, book.pages],
             [page.labels.printRun, book.printRun && `${book.printRun} ${page.labels.copies}`],
             [page.labels.isbn, book.isbn],
           ]}
@@ -235,7 +237,7 @@ export default function Books() {
           onStep={step}
         >
           <p className="cover-source">
-            <span>{seriesLine(book, page.labels)}</span>
+            {seriesLine(book, page.labels) && <span>{seriesLine(book, page.labels)}</span>}
             {book.url && (
               <a href={book.url} target="_blank" rel="noopener">
                 {page.labels.source} ↗

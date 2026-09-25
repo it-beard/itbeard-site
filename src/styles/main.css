@@ -3214,3 +3214,90 @@ a[href^="lightbox:"] {
     transform: none;
   }
 }
+
+/* ----- what the search proposes under the shelf, and the similar books in a card ----- */
+.library-suggest {
+  margin-top: 28px;
+}
+.library-suggest-title,
+.cover-similar-title {
+  margin-bottom: 10px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+}
+.suggest-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 10px 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.suggest-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--bg-deep);
+  color: var(--text);
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (hover: hover) {
+  .suggest-item:hover {
+    border-color: var(--accent-bright);
+  }
+}
+.suggest-item:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: 2px;
+}
+.book-thumb {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 66px;
+  border-radius: 2px 3px 3px 2px;
+  background: var(--bg-raised);
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+}
+.book-thumb-blank {
+  border-left: 3px solid var(--ink);
+  background: var(--spine);
+}
+.suggest-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.suggest-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.suggest-author {
+  color: var(--muted);
+  font-size: 12.5px;
+}
+.suggest-why {
+  margin-top: 3px;
+  color: var(--accent-hover);
+  font-size: 12px;
+  line-height: 1.4;
+}
+/* inside a card the list runs in one column under the note */
+.cover-similar {
+  margin-top: 18px;
+}
+.cover-similar .suggest-list {
+  grid-template-columns: 1fr;
+  gap: 8px;
+}

@@ -1,5 +1,6 @@
 // Data for the unlisted /books page: the wanted list and the home library.
 // Everything here is language-independent; the texts live in content/books.md.
+import { PROFILES } from './bookProfiles'
 
 // Wanted list — the carousel at the top of the unlisted /books page: editions being hunted for.
 // Titles, series and subtitles are kept exactly as printed on the cover; people and
@@ -52,7 +53,8 @@ export const WANTED = [
 //   spine — spine colour, ink — lettering colour, both picked from the real book
 //   size  — spine thickness: 1 thin, 2 regular, 3 thick
 // The note for each book lives in content/library.md under the same id; the
-// facts for its card (year, publisher, translator…) are in LIBRARY_FACTS below.
+// facts for its card (year, publisher, translator…) are in LIBRARY_FACTS below,
+// and what the book is about (genre, themes, mood, form) in bookProfiles.js.
 // Facts for the book cards, by id: what the edition itself states (year, publisher,
 // city, translator, isbn, pages), and `cover: true` when public/images/library/<id>.webp exists.
 const LIBRARY_FACTS = {
@@ -413,5 +415,6 @@ export const LIBRARY = BOOKS.map((b) => ({
   ...b,
   ...(ALSO_IN[b.id] && { also: ALSO_IN[b.id] }),
   ...LIBRARY_FACTS[b.id],
+  ...PROFILES[b.id],
   ...(LIBRARY_FACTS[b.id]?.cover && { image: `/images/library/${b.id}.webp` }),
 })).sort(byShelfOrder)

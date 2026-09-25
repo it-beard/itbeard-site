@@ -240,6 +240,40 @@ describe('library data', () => {
       expect((hi + 0.05) / (lo + 0.05), `${b.title}: ${b.ink} on ${b.spine}`).toBeGreaterThanOrEqual(3)
     }
   })
+
+  it('gives every book a profile: a genre, themes and a form', () => {
+    for (const b of LIBRARY) {
+      expect(Array.isArray(b.genre) && b.genre.length > 0, `${b.id} has no genre`).toBe(true)
+      expect(Array.isArray(b.themes) && b.themes.length > 0, `${b.id} has no themes`).toBe(true)
+      expect(Array.isArray(b.mood), `${b.id} has no mood list`).toBe(true)
+      expect(typeof b.form, `${b.id} has no form`).toBe('string')
+      for (const key of [...b.genre, ...b.themes, ...b.mood, b.form]) {
+        expect(new Set([...b.genre, ...b.themes, ...b.mood, b.form]).size, `${b.id} repeats a key`).toBe(
+          b.genre.length + b.themes.length + b.mood.length + 1
+        )
+        expect(typeof key, `${b.id} has a malformed key`).toBe('string')
+      }
+    }
+  })
+
+  it('only uses profile keys that the concept dictionary labels in both languages', () => {
+    const be = getPage('books', 'be').concepts
+    const en = getPage('books', 'en').concepts
+    for (const b of LIBRARY) {
+      for (const key of [...b.genre, ...b.themes, ...b.mood, b.form]) {
+        expect(be[key]?.label, `${b.id}: «${key}» is not in the dictionary`).toBeTruthy()
+        expect(en[key]?.label, `${b.id}: «${key}» has no English label`).toBeTruthy()
+        expect(be[key].aka.length, `«${key}» has no search words`).toBeGreaterThan(0)
+        expect(be[key].aka.every((w) => typeof w === 'string'), `«${key}» has a non-word in aka`).toBe(true)
+      }
+    }
+  })
+
+  it('uses every concept of the dictionary in at least one profile', () => {
+    const used = new Set(LIBRARY.flatMap((b) => [...b.genre, ...b.themes, ...b.mood, b.form]))
+    const unused = Object.keys(getPage('books', 'be').concepts).filter((k) => !used.has(k))
+    expect(unused).toEqual([])
+  })
 })
 
 describe('books page: wanted carousel', () => {
@@ -469,6 +503,71 @@ describe('books page: library', () => {
     expect(spines()).toHaveLength(LIBRARY.length)
     expect(search()).toHaveValue('')
     expect(screen.queryByRole('button', { name: 'Скінуць' })).not.toBeInTheDocument()
+  })
+
+
+  it('finds a book by a theme word, a typo and a Russian spelling', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'марс')
+    const titles = spines().map((el) => el.textContent)
+    expect(titles.some((t) => /Марсіянін/.test(t))).toBe(true)
+    expect(titles.some((t) => /Марсіянскія хронікі/.test(t))).toBe(true)
+    await user.clear(search())
+    await user.type(search(), 'тлокін')
+    expect(spines().length).toBeGreaterThan(0)
+    expect(spines().every((el) => /Толкін/.test(el.textContent))).toBe(true)
+    await user.clear(search())
+    await user.type(search(), 'Дюна')
+    expect(spines()).toHaveLength(1)
+    expect(screen.getByText('Фрэнк Герберт')).toBeInTheDocument()
+  })
+
+  it('reads «па-беларуску» and «кароткае» as filters, not as words', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'кароткае па-беларуску')
+    const expected = LIBRARY.filter((b) => langsOf(b).includes('be') && b.pages != null && b.pages <= 200).length
+    expect(spines()).toHaveLength(expected)
+  })
+
+  it('proposes books like the ones found, with the reasons, and opens one on click', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'толкін')
+    expect(screen.getByText('Магчыма, вам падыдзе')).toBeInTheDocument()
+    const proposed = screen.getAllByRole('button').filter((b) => b.classList.contains('suggest-item'))
+    expect(proposed.length).toBeGreaterThan(0)
+    expect(proposed.length).toBeLessThanOrEqual(5)
+    expect(proposed.every((el) => !/Толкін/.test(el.textContent))).toBe(true)
+    expect(proposed[0].querySelector('.suggest-why').textContent).toMatch(/як «|жанр: /)
+    await user.click(proposed[0])
+    expect(screen.getByRole('dialog')).toBeInTheDocument()
+  })
+
+  it('offers the partial matches when no book matches every word', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'толкін вершы')
+    expect(spines()).toHaveLength(0)
+    expect(screen.getByText('Магчыма, вы шукалі')).toBeInTheDocument()
+    const proposed = screen.getAllByRole('button').filter((b) => b.classList.contains('suggest-item'))
+    expect(proposed.some((el) => /Толкін/.test(el.textContent))).toBe(true)
+  })
+
+  it('shows the genre on a card and the similar books under the note', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(spines().find((el) => /Дзюна/.test(el.textContent)))
+    const dialog = screen.getByRole('dialog')
+    expect(within(dialog).getByText('Жанр')).toBeInTheDocument()
+    expect(within(dialog).getByText(/навуковая фантастыка/, { selector: 'dd' })).toBeInTheDocument()
+    expect(within(dialog).getByText('Падобныя кнігі')).toBeInTheDocument()
+    const similar = within(dialog).getAllByRole('button').filter((b) => b.classList.contains('suggest-item'))
+    expect(similar.length).toBeGreaterThan(0)
+    expect(similar.every((el) => !/Дзюна/.test(el.textContent))).toBe(true)
+    await user.click(similar[0])
+    expect(within(screen.getByRole('dialog')).queryByText('Дзюна', { selector: 'h2' })).not.toBeInTheDocument()
   })
 
   it('translates the chrome but keeps titles as printed on the English page', () => {

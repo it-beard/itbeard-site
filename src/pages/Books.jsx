@@ -1,13 +1,13 @@
 import { useCallback, useState } from 'react'
 import { useLang } from '../lib/LangContext'
-import { getPage, getSection } from '../lib/content'
+import { LANGS, getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
-import { matchesNumbers, parseQuery } from '../lib/bookQuery'
+import { CONCEPT_KINDS, buildIndex, search, similarBooks } from '../lib/bookSearch'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
 
 // «Хронікі Нарніі · частка 1» — or the subtitle of a book that stands outside any series
@@ -18,9 +18,32 @@ const seriesLine = (book, labels) =>
 const spineCredit = (b) =>
   [b.author, b.series && !b.title.includes(b.series) && b.series].filter(Boolean).join(' · ')
 
-// Search ignores case and the letters people routinely swap when typing Belarusian
-const fold = (text) => text.toLowerCase().replace(/ё/g, 'е').replace(/ў/g, 'у').replace(/[’'`]/g, '')
-const haystack = (b) => fold([b.author, b.title, b.series].filter(Boolean).join(' '))
+// The search index: the books, their profiles through the concept dictionary (its
+// words plus the labels of both languages) and the notes in both languages. It does
+// not depend on the reader's language, so it is built once.
+let INDEX = null
+const libraryIndex = () => {
+  if (!INDEX) {
+    const pages = LANGS.map((l) => getPage('books', l))
+    const notes = LANGS.map((l) => getSection(getPage('library', l), 'notes').subs)
+    const concepts = Object.fromEntries(
+      Object.entries(pages[0].concepts).map(([key, c]) => [key, { aka: [...c.aka, ...pages.map((p) => p.concepts[key].label)] }])
+    )
+    INDEX = buildIndex(LIBRARY, {
+      concepts,
+      notesOf: (id) => notes.map((subs) => subs.find((s) => s.id === id)?.html).filter(Boolean),
+    })
+  }
+  return INDEX
+}
+
+// a small cover, or the spine colours when the edition has no cover file
+const BookThumb = ({ book }) =>
+  book.image ? (
+    <img className="book-thumb" src={book.image} alt="" width="44" height="66" loading="lazy" />
+  ) : (
+    <span className="book-thumb book-thumb-blank" style={{ '--spine': book.spine, '--ink': book.ink }} aria-hidden="true" />
+  )
 
 export default function Books() {
   const { lang } = useLang()
@@ -57,15 +80,36 @@ export default function Books() {
       .map((code) => shared.labels.langNames[code])
       .join(', ')
 
-  // numbers in the box mean a year or a page count; the words match author, title, series
-  const parsed = parseQuery(query)
-  const needle = fold(parsed.text)
-  const shown = LIBRARY.filter(
-    (b) =>
-      (tag === 'all' || b.tags.includes(tag)) &&
-      (bookLang === 'all' || langsOf(b).includes(bookLang)) &&
-      (!needle || haystack(b).includes(needle)) &&
-      matchesNumbers(b, parsed)
+  // the chips narrow the shelf; the box goes to the search, which reads words, numbers
+  // and phrases like «па-беларуску» and also proposes books beside the ones found
+  const searchIndex = libraryIndex()
+  const { shelf: shown, suggestions } = search(searchIndex, query, {
+    filter: (b) => (tag === 'all' || b.tags.includes(tag)) && (bookLang === 'all' || langsOf(b).includes(bookLang)),
+  })
+
+  // «жанр: касьмічная опера» — why a proposed book is proposed, in the reader's language
+  const conceptLabel = (key) => page.concepts[key]?.label ?? key
+  const describe = (r) => {
+    if (r.kind === 'like') return page.labels.likeBook.replace('{title}', r.text)
+    const what = CONCEPT_KINDS.includes(r.kind) ? conceptLabel(r.key) : r.kind === 'subject' ? page.filters[r.key] : r.text
+    return `${page.kinds[r.kind]}: ${what}`
+  }
+  const genresOf = (b) => (b.genre ?? []).map(conceptLabel).join(', ')
+  const proposals = (items) => (
+    <ul className="suggest-list">
+      {items.map(({ book: b, reasons }) => (
+        <li key={b.id}>
+          <button type="button" className="suggest-item" onClick={() => setOpenId(b.id)}>
+            <BookThumb book={b} />
+            <span className="suggest-text">
+              <span className="suggest-title">{b.title}</span>
+              {b.author && <span className="suggest-author">{b.author}</span>}
+              {reasons.length > 0 && <span className="suggest-why">{reasons.map(describe).join(' · ')}</span>}
+            </span>
+          </button>
+        </li>
+      ))}
+    </ul>
   )
   const filtered = tag !== 'all' || bookLang !== 'all' || query.trim() !== ''
   const reset = () => {
@@ -88,6 +132,7 @@ export default function Books() {
   const close = useCallback(() => setOpenId(null), [setOpenId])
   const book = open ? openList[open.index] : null
   const details = book && open.list === 'wanted' ? detailsOf(book.id) : null
+  const similar = book && open.list === 'library' ? similarBooks(searchIndex, book.id) : []
 
   return (
     <main>
@@ -212,6 +257,13 @@ export default function Books() {
             ))}
           </ul>
         )}
+
+        {suggestions.length > 0 && (
+          <div className="library-suggest">
+            <p className="library-suggest-title">{shown.length > 0 ? page.labels.suggest : page.labels.didYouMean}</p>
+            {proposals(suggestions)}
+          </div>
+        )}
       </section>
 
       {book && open.list === 'wanted' && (
@@ -265,6 +317,7 @@ export default function Books() {
             [page.labels.publisher, [book.publisher, book.city].filter(Boolean).join(', ')],
             [page.labels.pages, book.pages],
             [page.labels.language, langNamesOf(book)],
+            [page.labels.genre, genresOf(book)],
             [page.labels.isbn, book.isbn],
           ]}
           note={libraryNoteOf(book.id)}
@@ -279,6 +332,12 @@ export default function Books() {
             <p className="cover-source">
               <span>{seriesLine(book, page.labels)}</span>
             </p>
+          )}
+          {similar.length > 0 && (
+            <div className="cover-similar">
+              <p className="cover-similar-title">{page.labels.similar}</p>
+              {proposals(similar)}
+            </div>
           )}
         </CoverView>
       )}

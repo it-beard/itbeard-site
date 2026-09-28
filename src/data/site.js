@@ -464,6 +464,14 @@ export const VINYL = [
     tags: ['rock'],
   },
   {
+    id: 'prodigy-fat-of-the-land',
+    artist: 'The Prodigy',
+    title: 'The Fat of the Land',
+    year: 1997,
+    label: 'XL Recordings',
+    tags: ['electro'],
+  },
+  {
     id: 'noize-mc-greatest-hits-2',
     artist: 'Noize MC',
     title: 'The Greatest Hits Vol. 2',

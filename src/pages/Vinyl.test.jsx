@@ -109,7 +109,7 @@ describe('vinyl page', () => {
     expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent(VINYL[0].title)
     expect(within(view).getByText(String(VINYL[0].year))).toBeInTheDocument()
     expect(within(view).getByText(VINYL[0].catno)).toBeInTheDocument()
-    expect(within(view).getByText('1 / 12')).toBeInTheDocument()
+    expect(within(view).getByText(`1 / ${VINYL.length}`)).toBeInTheDocument()
   })
 
   it('steps through the collection with the arrow keys and wraps around', async () => {
@@ -117,9 +117,9 @@ describe('vinyl page', () => {
     show()
     await user.click(sleeves()[0])
     await user.keyboard('{ArrowRight}')
-    expect(screen.getByRole('dialog')).toHaveTextContent('2 / 12')
+    expect(screen.getByRole('dialog')).toHaveTextContent(`2 / ${VINYL.length}`)
     await user.keyboard('{ArrowLeft}{ArrowLeft}')
-    expect(screen.getByRole('dialog')).toHaveTextContent('12 / 12')
+    expect(screen.getByRole('dialog')).toHaveTextContent(`${VINYL.length} / ${VINYL.length}`)
   })
 
   it('steps only within the active filter', async () => {

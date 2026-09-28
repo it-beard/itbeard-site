@@ -88,6 +88,10 @@ artists:
 
 Падвойная рок-опера пра сьцяну, якую чалавек цаглінка за цаглінкай будуе вакол сябе.
 
+## The Prodigy — The Fat of the Land {#prodigy-fat-of-the-land}
+
+Трэці альбом The Prodigy, які ў 1997-м узначаліў чарты і ў Брытаніі, і ў ЗША: «Firestarter», «Breathe», «Smack My Bitch Up» — біг-біт, што выйшаў з рэйваў на стадыёны. На вокладцы — чырвоны краб з узьнятымі клюшнямі. Падвойная плыта на XL Recordings.
+
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 
 Другі зборнік лепшага ад Івана Аляксеева — з часоў, калі ягоныя песьні яшчэ можна было пачуць па радыё.
@@ -151,6 +155,10 @@ An Orwellian parable about pigs, dogs and sheep, with an inflatable pig floating
 ## Pink Floyd — The Wall {#pink-floyd-the-wall}
 
 A double rock opera about the wall a person builds around themselves, one brick at a time.
+
+## The Prodigy — The Fat of the Land {#prodigy-fat-of-the-land}
+
+The Prodigy's third album, which went to number one in both Britain and the United States in 1997: «Firestarter», «Breathe» and «Smack My Bitch Up» — big beat that walked out of the raves onto stadium stages. A red crab with its claws raised on the sleeve. A double LP on XL Recordings.
 
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 

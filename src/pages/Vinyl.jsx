@@ -7,7 +7,15 @@ import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { VINYL, WANTED_VINYL } from '../data/site'
+import { compareText } from '../data/books'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
+
+// The shelf can stand by year (oldest first, a record without a year at the end)
+// or by title; within one year the titles decide, and within one title the years.
+const SORTS = {
+  year: (lang) => (a, b) => (a.year ?? Infinity) - (b.year ?? Infinity) || compareText(a.title, b.title, lang),
+  title: (lang) => (a, b) => compareText(a.title, b.title, lang) || (a.year ?? Infinity) - (b.year ?? Infinity),
+}
 
 export default function Vinyl() {
   const { lang } = useLang()
@@ -23,11 +31,13 @@ export default function Vinyl() {
 
   const total = VINYL.length
   const [filter, setFilter] = useState('all')
+  const [sort, setSort] = useState('year')
   // the open card lives in the address (?record=id), so it can be shared
   const [openId, setOpenId] = useCardLink('record')
 
   const tagCount = (tag) => (tag === 'all' ? total : VINYL.filter((r) => r.tags.includes(tag)).length)
-  const shown = VINYL.filter((r) => filter === 'all' || r.tags.includes(filter))
+  const ordered = [...VINYL].sort(SORTS[sort](lang))
+  const shown = ordered.filter((r) => filter === 'all' || r.tags.includes(filter))
 
   const pick = (tag) => {
     setFilter(filter === tag ? 'all' : tag)
@@ -36,7 +46,7 @@ export default function Vinyl() {
   // wraps around, so the arrows never dead-end
   // the card walks the list it was opened from (a shared link to a record the filter
   // hides falls back to the whole collection) and wraps around
-  const list = WANTED_VINYL.some((r) => r.id === openId) ? WANTED_VINYL : shown.some((r) => r.id === openId) ? shown : VINYL
+  const list = WANTED_VINYL.some((r) => r.id === openId) ? WANTED_VINYL : shown.some((r) => r.id === openId) ? shown : ordered
   const active = openId ? list.findIndex((r) => r.id === openId) : -1
   const step = useCallback(
     (delta) => setOpenId(list[(active + delta + list.length) % list.length].id),
@@ -86,20 +96,35 @@ export default function Vinyl() {
           </sup>
         </h2>
         <Ornament />
-        <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
-          {Object.keys(page.filters).map((tag) => (
-            <button
-              key={tag}
-              type="button"
-              className="filter-chip"
-              aria-pressed={filter === tag}
-              onClick={() => pick(tag)}
-            >
-              {page.filters[tag]} <span className="chip-count">{tagCount(tag)}</span>
-            </button>
-          ))}
+        <div className="filter-row">
+          <div className="filter-chips" role="group" aria-label={page.filtersLabel}>
+            {Object.keys(page.filters).map((tag) => (
+              <button
+                key={tag}
+                type="button"
+                className="filter-chip"
+                aria-pressed={filter === tag}
+                onClick={() => pick(tag)}
+              >
+                {page.filters[tag]} <span className="chip-count">{tagCount(tag)}</span>
+              </button>
+            ))}
+          </div>
+          <div className="sort-switch" role="group" aria-label={page.sortLabel}>
+            {Object.keys(page.sort).map((key) => (
+              <button
+                key={key}
+                type="button"
+                className="sort-option"
+                aria-pressed={sort === key}
+                onClick={() => setSort(key)}
+              >
+                {page.sort[key]}
+              </button>
+            ))}
+          </div>
         </div>
-        <div key={filter} className="vinyl-grid cards-fade vinyl-grid-spaced">
+        <div key={`${filter}-${sort}`} className="vinyl-grid cards-fade vinyl-grid-spaced">
           {shown.map((r) => tile(r, () => setOpenId(r.id)))}
         </div>
         {shown.length === 0 && <p className="cover-empty">{page.labels.empty}</p>}

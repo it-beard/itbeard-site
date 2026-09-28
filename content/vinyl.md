@@ -16,6 +16,10 @@ counterHint:
   be: 'Усяго кружэлак на паліцы: {total}'
   en: 'Records on the shelf: {total}'
 filtersLabel: { be: Фільтр кружэлак па кірунках, en: Filter records by genre }
+sortLabel: { be: Парадак кружэлак, en: Order of the records }
+sort:
+  year: { be: Па годзе, en: By year }
+  title: { be: Па назьве, en: By title }
 filters:
   all: { be: Усе, en: All }
   bel: { be: Беларускае, en: Belarusian }
@@ -70,7 +74,7 @@ artists:
 
 ## Beethoven — «Emperor» / «Moonlight» {#beethoven-emperor}
 
-Японскае выданьне Deutsche Grammophon зь серыі Deluxe: Пяты фартэпіянны канцэрт і «Месяцовая саната». За раялем — Вільгельм Кемпф, за пультам Берлінскай філармоніі — Фердынанд Ляйтнер.
+Японскае выданьне Deutsche Grammophon 1967 году зь серыі Deluxe: Пяты фартэпіянны канцэрт у запісе 1961 году і «Месяцовая саната». За раялем — Вільгельм Кемпф, за пультам Берлінскай філармоніі — Фердынанд Ляйтнер.
 
 ## Бременские музыканты {#bremen-musicians}
 
@@ -138,7 +142,7 @@ Three orchestral pieces by Maurice Ravel, recorded by Leonard Bernstein with the
 
 ## Beethoven — «Emperor» / «Moonlight» {#beethoven-emperor}
 
-A Japanese Deutsche Grammophon Deluxe Series pressing: the Fifth Piano Concerto and the «Moonlight» Sonata. Wilhelm Kempff at the piano, Ferdinand Leitner conducting the Berlin Philharmonic.
+A 1967 Japanese Deutsche Grammophon Deluxe Series pressing: the Fifth Piano Concerto, recorded in 1961, and the «Moonlight» Sonata. Wilhelm Kempff at the piano, Ferdinand Leitner conducting the Berlin Philharmonic.
 
 ## The Bremen Town Musicians {#bremen-musicians}
 

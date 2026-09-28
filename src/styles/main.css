@@ -1079,6 +1079,59 @@ body.theme-restore #app {
   color: #7ee787;
 }
 
+/* the filter chips on the left, the sort switch on the right; wraps on narrow screens */
+.filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px 20px;
+  margin-top: 20px;
+}
+
+.ornament + .filter-row {
+  margin-top: 4px;
+}
+
+.filter-row .filter-chips {
+  margin-top: 0;
+}
+
+/* a segmented pill: the pressed option is filled with the accent tint */
+.sort-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+}
+
+.sort-option {
+  padding: 3px 13px;
+  border: 0;
+  border-radius: 999px;
+  background: none;
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+@media (hover: hover) {
+  .sort-option:hover {
+    color: var(--text);
+  }
+}
+
+.sort-option[aria-pressed='true'] {
+  background: rgba(226, 67, 78, 0.14);
+  color: var(--text);
+}
+
 /* soft fade-in when the filter changes */
 .cards-fade {
   animation: cards-fade 0.25s ease;

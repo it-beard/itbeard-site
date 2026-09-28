@@ -425,6 +425,7 @@ export const VINYL = [
     id: 'beethoven-emperor',
     artist: 'Ludwig van Beethoven · Wilhelm Kempff',
     title: 'Piano Concerto No. 5 «Emperor» / «Moonlight» Sonata',
+    year: 1967,
     label: 'Deutsche Grammophon',
     catno: 'SMG-2015',
     tags: ['classic'],

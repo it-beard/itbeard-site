@@ -7,6 +7,7 @@ import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
 import { getPage, getSection } from '../lib/content'
 import { VINYL, WANTED_VINYL } from '../data/site'
+import { compareText } from '../data/books'
 import Vinyl from './Vinyl'
 
 const ROOT = resolve(import.meta.dirname, '../..')
@@ -27,6 +28,10 @@ const tiles = () => screen.getAllByRole('button').filter((b) => b.classList.cont
 const sleeves = () => tiles().filter((b) => !b.closest('.cover-rail'))
 const wantedSleeves = () => tiles().filter((b) => b.closest('.cover-rail'))
 const chip = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
+const titlesShown = () => sleeves().map((el) => el.querySelector('.cover-title').textContent)
+// the shelf as the page shows it by default: by year, oldest first
+const byYear = [...VINYL].sort((a, b) => (a.year ?? Infinity) - (b.year ?? Infinity) || compareText(a.title, b.title, 'be'))
+const oldest = byYear[0]
 
 beforeEach(() => localStorage.clear())
 afterEach(cleanup)
@@ -81,8 +86,38 @@ describe('vinyl page', () => {
   it('labels each sleeve with its artist and title', () => {
     show()
     const first = sleeves()[0]
-    expect(within(first).getByText(VINYL[0].title)).toBeInTheDocument()
-    expect(first.querySelector('img')).toHaveAttribute('src', VINYL[0].image)
+    expect(within(first).getByText(oldest.title)).toBeInTheDocument()
+    expect(first.querySelector('img')).toHaveAttribute('src', oldest.image)
+  })
+
+  it('stands the shelf by year, oldest first, and by title on request', async () => {
+    const user = userEvent.setup()
+    show()
+    const year = screen.getByRole('button', { name: 'Па годзе' })
+    const title = screen.getByRole('button', { name: 'Па назьве' })
+    expect(year).toHaveAttribute('aria-pressed', 'true')
+    expect(title).toHaveAttribute('aria-pressed', 'false')
+    expect(titlesShown()).toEqual(byYear.map((r) => r.title))
+
+    await user.click(title)
+    expect(title).toHaveAttribute('aria-pressed', 'true')
+    expect(year).toHaveAttribute('aria-pressed', 'false')
+    expect(titlesShown()).toEqual([...VINYL].sort((a, b) => compareText(a.title, b.title, 'be')).map((r) => r.title))
+
+    await user.click(year)
+    expect(titlesShown()).toEqual(byYear.map((r) => r.title))
+  })
+
+  it('keeps the chosen order inside a filter, and walks the card in that order', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(screen.getByRole('button', { name: 'Па назьве' }))
+    await user.click(chip('Рок'))
+    const rock = VINYL.filter((r) => r.tags.includes('rock')).sort((a, b) => compareText(a.title, b.title, 'be'))
+    expect(titlesShown()).toEqual(rock.map((r) => r.title))
+    await user.click(sleeves()[0])
+    await user.keyboard('{ArrowRight}')
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent(rock[1].title)
   })
 
   it('transliterates Cyrillic credits on the English page', () => {
@@ -106,9 +141,9 @@ describe('vinyl page', () => {
     show()
     await user.click(sleeves()[0])
     const view = screen.getByRole('dialog')
-    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent(VINYL[0].title)
-    expect(within(view).getByText(String(VINYL[0].year))).toBeInTheDocument()
-    expect(within(view).getByText(VINYL[0].catno)).toBeInTheDocument()
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent(oldest.title)
+    expect(within(view).getByText(String(oldest.year))).toBeInTheDocument()
+    expect(within(view).getByText(oldest.catno)).toBeInTheDocument()
     expect(within(view).getByText(`1 / ${VINYL.length}`)).toBeInTheDocument()
   })
 

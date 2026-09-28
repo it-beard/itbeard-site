@@ -532,15 +532,16 @@ details:
     author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
     translator: { be: Франц Корзун, en: Frants Korzun }
     publisher: { be: '«Капітал Прынт», Мінск', en: 'Kapital Print, Minsk' }
+  tolkien-chobit-2002:
+    author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
+    translator: { be: 'Дзьмітры Магілеўцаў, Крысьціна Курчанкова', en: 'Dzmitry Mahileutsau, Krystsina Kurchankova' }
+    publisher: { be: Менск, en: Minsk }
   bielaruski-klasycny-pravapis:
     author: { be: 'Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка', en: 'Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko, Zmitser Sauka' }
     publisher: { be: 'Вільня — Менск', en: 'Vilnius — Minsk' }
   maur-zbor-tvorau-1:
     author: { be: Янка Маўр, en: Yanka Maur }
     publisher: { be: '«Мастацкая літаратура», Мінск', en: 'Mastatskaya Litaratura, Minsk' }
-  cviatkou-planeta-heja:
-    author: { be: 'Уладзімір Цьвяткоў, Аляксандар Коршакевіч', en: 'Vladimir Tsvetkov, Alexander Korshakevich' }
-    publisher: { be: '«Эрыдан», Мінск', en: 'Eridan, Minsk' }
   drazdovic-niabiesnyja-biehi:
     author: { be: Язэп Драздовіч, en: Yazep Drazdovich }
     publisher: { be: 'Выданьне аўтара, Вільня', en: 'Published by the author, Vilnius' }
@@ -597,6 +598,10 @@ details:
 
 Паважанага хобіта Більба Торбінса запрашаюць далучыцца да талакі гномаў, што зьбіраецца змагацца за скарб з лютым цмокам Смаўгам, — і ён згаджаецца, яшчэ ня ведаючы, што вернецца дадому зусім іншым. Пераклад Франца Корзуна, ілюстрацыі Ірыны Дражынай і Ганны Плотнікавай; выданьне «Капітал Прынту» ў серыі «Кніжны рысь» — у цьвёрдай вокладцы з супервокладкай. Трылогія пра Пярсьцёнак у мяне ўжо стаіць, а вось гісторыі, зь якой усё пачалося, пакуль няма.
 
+## Хобіт, або Вандроўка туды і назад {#tolkien-chobit-2002}
+
+Беларускі «Хобіт» 2002 году, за шэсьць гадоў да «Ўладара Пярсьцёнкаў» тых самых перакладчыкаў — Дзьмітрыя Магілеўцава і Крысьціны Курчанковай, класічным правапісам. Выйшаў у Менску без назвы выдавецтва на тытуле, накладам 299 асобнікаў: мяккая вокладка, 264 старонкі, на вокладцы і ў тэксьце малюнкі Т. Яфімавай, якая пасьля рабіла мапы для «Ўладара». Кніжка, зь якой пачаўся беларускі Толкін, і адна з самых рэдкіх на гэтай паліцы.
+
 ## Беларускі клясычны правапіс. Збор правілаў. Сучасная нармалізацыя {#bielaruski-klasycny-pravapis}
 
 Папяровае выданьне нармалізаванага класічнага беларускага правапісу — збор правілаў, які падрыхтавалі Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько і Зьміцер Саўка. Выйшла ў 2005 годзе і прадавалася праз Knihi.net; цяпер у звычайным продажы кніга практычна не сустракаецца і фактычна зьяўляецца букіністычнай рэдкасьцю. Дакладны наклад пакуль невядомы. А калі хтосьці захоча раздрукаваць яе самастойна і падарыць — будзе крута.
@@ -604,10 +609,6 @@ details:
 ## Збор твораў. Том 1. Аповесці {#maur-zbor-tvorau-1}
 
 Першы том чатырохтомнага збору твораў Янкі Маўра: аповесьці «Чалавек ідзе», «У краіне райскай птушкі», «Сын вады» і «Фантамабіль прафесара Цылякоўскага» — менавіта дзеля яго я і шукаю гэтую кнігу. Прадмова Алеся Якімовіча, каментары М. Яфімавай. Выйшаў у «Мастацкай літаратуры» ў 1975 годзе накладам 17 000 асобнікаў.
-
-## Планета Гэя. Комикс. Артур Гор {#cviatkou-planeta-heja}
-
-Беларускі комікс на самым зломе эпох: касьмічныя прыгоды Артура Гора ў васьмі гісторыях, сярод іх «Меткий стрелок», «Город мутантов» і «Погоня». Тэкст Уладзіміра Цьвяткова, малюнкі Аляксандра Коршакевіча. Выйшаў у Мінску ў «Эрыдане» ў 1991 годзе па-расейску. Наклад быў вялізны — 200 000 асобнікаў, — але тонкія каляровыя сшыткі рэдка дажываюць да нашых дзён.
 
 ## Нябесныя бегі {#drazdovic-niabiesnyja-biehi}
 
@@ -673,6 +674,10 @@ The closing volume of the same edition: the same translation by Dzmitry Mahileut
 
 The respectable hobbit Bilbo Baggins is invited to join a company of dwarves setting out to fight the fierce dragon Smaug for his treasure — and he agrees, not yet knowing he will come home a quite different hobbit. Translated by Frants Korzun, illustrated by Iryna Drazhyna and Hanna Plotnikava; published by Kapital Print in its «Knizhny rys» series, hardcover with a dust jacket. The Ring trilogy already stands on my shelf, but the story where it all began is still missing.
 
+## The Hobbit, or There and Back Again (2002) {#tolkien-chobit-2002}
+
+The Belarusian «Hobbit» of 2002, six years before the same translators' «Lord of the Rings»: Dzmitry Mahileutsau and Krystsina Kurchankova, in the classical orthography. Printed in Minsk with no publisher named on the title page, in a run of 299 copies: softcover, 264 pages, with cover and inside drawings by T. Yafimava, who later drew the maps for «The Lord of the Rings». The book Belarusian Tolkien began with, and one of the rarest on this shelf.
+
 ## Belarusian Classical Orthography. A Set of Rules. Modern Normalisation {#bielaruski-klasycny-pravapis}
 
 The paper edition of the normalised classical Belarusian orthography — the set of rules drawn up by Yuras Bushliakou, Vintsuk Viachorka, Zmitser Sanko and Zmitser Sauka. It came out in 2005 and was sold through Knihi.net; today it hardly ever turns up in regular sale and is, in effect, a second-hand rarity. The exact print run is still unknown. And if someone feels like printing a copy themselves and giving it as a present — that would be great.
@@ -680,10 +685,6 @@ The paper edition of the normalised classical Belarusian orthography — the set
 ## Collected Works. Volume 1. Novellas {#maur-zbor-tvorau-1}
 
 The first volume of Yanka Maur's four-volume collected works: the novellas «Chalaviek idzie», «U krainie rajskaj ptushki», «Syn vady» and «Fantamabil prafiesara Tsyliakouskaha» (Professor Tsyliakouski's Fantomobile) — the last one is the reason I am hunting for this book. Foreword by Ales Yakimovich, commentary by M. Yafimava. Published by Mastatskaya Litaratura in 1975 in a run of 17,000 copies.
-
-## Planet Gaia. A Comic. Arthur Gor {#cviatkou-planeta-heja}
-
-A Belarusian comic from the very turn of an era: the space adventures of Arthur Gor in eight stories, among them "The Sharpshooter", "City of Mutants" and "The Chase". Text by Vladimir Tsvetkov, drawings by Alexander Korshakevich. Published in Minsk by Eridan in 1991, in Russian. The print run was huge — 200,000 copies — but thin colour booklets rarely survive to this day.
 
 ## Heavenly Courses {#drazdovic-niabiesnyja-biehi}
 

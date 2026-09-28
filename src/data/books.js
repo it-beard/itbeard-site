@@ -45,6 +45,15 @@ export const WANTED = [
     url: 'https://exlibris.by/tolkin-dzon-ronald-ruel-chobit-albo-padarozza-tudy-i-nazad',
   },
   {
+    id: 'tolkien-chobit-2002',
+    title: 'Хобіт',
+    subtitle: 'або Вандроўка туды і назад',
+    year: 2002,
+    pages: 264,
+    printRun: 299,
+    url: 'https://fantlab.ru/edition83366',
+  },
+  {
     id: 'bielaruski-klasycny-pravapis',
     title: 'Беларускі клясычны правапіс',
     subtitle: 'Збор правілаў. Сучасная нармалізацыя',
@@ -60,15 +69,6 @@ export const WANTED = [
     pages: 374,
     printRun: 17000,
     url: 'https://fantlab.ru/edition88726',
-  },
-  {
-    id: 'cviatkou-planeta-heja',
-    title: 'Планета Гэя',
-    subtitle: 'Комикс. Артур Гор',
-    year: 1991,
-    pages: 22,
-    printRun: 200000,
-    url: 'https://fantlab.ru/edition70502',
   },
   {
     id: 'drazdovic-niabiesnyja-biehi',

@@ -575,8 +575,9 @@ describe('books page: library', () => {
     expect(screen.getByRole('heading', { level: 2, name: /My library/ })).toBeInTheDocument()
     expect(screen.getByPlaceholderText('Search: author, title, year, pages')).toBeInTheDocument()
     expect(screen.getByText('Сабакі Эўропы')).toBeInTheDocument()
-    // the wanted captions: two volumes of the Lord of the Rings and the Hobbit
-    expect(screen.getAllByText('J. R. R. Tolkien')).toHaveLength(3)
+    // the wanted captions: every Tolkien edition on the wanted list
+    const tolkiens = Object.values(getPage('books', 'en').details).filter((d) => d.author === 'J. R. R. Tolkien').length
+    expect(screen.getAllByText('J. R. R. Tolkien')).toHaveLength(tolkiens)
   })
 })
 

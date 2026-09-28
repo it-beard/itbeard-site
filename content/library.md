@@ -486,6 +486,26 @@ title: { be: Бібліятэка, en: Library }
 
 Арт-зборнік, зін па беларускай міфалогіі, які зрабілі энтузіясты: 16 мастакоў і 6 пісьменьнікаў, 17 гісторыяў на 42 глянцавых старонках пад цьвёрдай вокладкай. Чытач ідзе па вёсках сьледам за Вандроўцам і знаёміцца зь нячысьцікамі — ад папараць-кветкі да вужынага караля.
 
+## Як гавораць беларусы {#shkliaryk-jak-havorac-bielarusy}
+
+Навукова-папулярная кніга дыялектолага з Інстытуту мовазнаўства імя Якуба Коласа: чым беларуская мова адрозьніваецца ад расейскай і ўкраінскай, на якіх гаворках вырасла літаратурная мова і як гавораць у розных кутках краіны — ад «бык/бук» і «нясіце/нясеце» на вокладцы да ганавіцаў і мятлушкі. Амаль на кожнай старонцы QR-код, усяго 48: на мапы «Дыялекталагічнага атласу» і «Лексічнага атласу беларускіх народных гаворак» і на вершы, якія цытуюцца ў тэксьце. Ілюстрацыі Надзеі Леановіч зь вядомымі храмамі і будынкамі розных рэгіёнаў, рэдактар Зьміцер Санько. Другое выданьне 2025 году, надрукаванае разам з «Папуры» накладам 1500 асобнікаў; першае выйшла ў «Тэхналогіі» ў 2024-м.
+
+## Мовазнаўчыя працы {#lastouski-movaznaucyja-pracy}
+
+Першы збор моўных тэкстаў Вацлава Ластоўскага: каля сямідзесяці артыкулаў і нататак 1912–1927 гадоў з «Нашай Нівы», коўнаскага «Крывіча», «Крывічаніна», «Узвышша» і календароў — ад перапіскі па-беларуску і мовы ў царкве да «Пагляду расійскіх вучоных на беларускую мову», «Пляновай асыміляцыі», прычынаў заняпаду крыўскай мовы ў XVII стагодзьдзі і рэформы кірылічнай азбукі; з «Падручнага расійска-крыўскага (беларускага) слоўніка» 1924 году ўзятая прадмова. Тэксты захоўваюць аўтарскія формы словаў, лацінкавыя надрукаваныя лацінкай. Уклаў і напісаў прадмову Ўладзіслаў Гарбацкі, пасьляслоўе — Ніна Баршчэўская; на вокладцы — рукапісная памятка беларускай лацінкай, як вымаўляць нямецкія літары. Выдадзена да 140-годзьдзя аўтара; наклад разышоўся менш чым за год.
+
+## Калі я выйду на волю {#komar-kali-ja-vyjdu-na-volu}
+
+Дакументальная проза паэткі з Баранавічаў: дзёньнікавыя запісы дзевяці сутак арышту ўвосень 2020 году, пасьля затрыманьня на акцыі ў падтрымку Марыі Калесьнікавай, і інтэрв'ю з тымі, хто тады ж прайшоў праз міліцэйскі гвалт, арышт і зьняволеньне, разам з галасамі іхніх блізкіх. Чужыя сьведчаньні набраныя амаль без знакаў прыпынку, з доўгімі прабеламі там, дзе чалавек маўчаў; расейскамоўныя суразмоўцы гавораць па-расейску. Дызайн Аліны Одрэн — назва на вокладцы закрэсьленая, як у цэнзураваным дакуменце. Доўгі сьпіс прэміі Гедройця 2025 году; у 2026-м выйшла па-ангельску як «When I'm Out of Here».
+
+## Дом {#horvat-dom}
+
+Трэцяя кніга аўтара «Радзіва „Прудок“» — пра Нараўлянскі палац над Прыпяцьцю, руіны якога ён упершыню ўбачыў у 2006 годзе, а ў лістападзе 2020-га выкупіў з аўкцыёну разам з двума прадпрымальнікамі. Літаратурнае дасьледаваньне, у якім біяграфія палаца і лёс апошняга гаспадара Эдварда Горвата (аднафамільца, не сваяка) пераплятаюцца з асабістай гісторыяй аўтара, рэстаўрацыяй і ад'ездам зь Беларусі; побач з рэалізмам — бронзавыя львы, што гуляюць па парку, і людзі з партрэтаў у калідорах. Пісалася ў 2021–2025 гадах. Аўтар сам зьвярстаў кнігу і выдаў яе без выдавецтва ў Вільні: цьвёрдая вокладка, шчыльная крэмавая папера, шмат архіўных і сучасных фатаздымкаў; на вокладцы — здымак палаца каля 1914 году са збораў Інстытуту мастацтва Польскай акадэміі навук.
+
+## Spiritus flat ubi vult. Вершы 1945–1947 {#hienijus-spiritus-flat-ubi-vult}
+
+Факсіміле адзінага рукапіснага зборніка, які Ларыса Геніюш сама перапісала, аздобіла і перапляла ў Празе ў 1945–1947 гадах і перад арыштам пасьпела перадаць у надзейныя рукі; з канца 1980-х ён захоўваецца ў Беларускай бібліятэцы імя Францішка Скарыны ў Лондане. 41 верш надрукаваны і наборам, з захаваньнем мовы арыгіналу і моўным каментаром, і як каляровая рэпрадукцыя рукапісу. Прадмовы па-беларуску і па-ангельску: Тацьцяна Астроўская пра Геніюш і гісторыю беларускага самвыдату, Арнольд Макмілін (з машынапіснага выданьня бібліятэкі 1992 году) і Яніна Лаўнік. Уклаў Ігар Іваноў, дызайн Сяргея Шабохіна; наклад 500 асобнікаў.
+
 <!-- en -->
 
 # Notes {#notes}
@@ -969,3 +989,23 @@ An album of protest posters from 2020: graphic designer Aliaksei Pirs picked mor
 ## Сцежкамі міфаў {#sciezkami-mifau}
 
 An art collection — a zine on Belarusian mythology made by enthusiasts: 16 artists and 6 writers, 17 stories on 42 glossy pages in a hard cover. The reader follows the Wanderer from village to village and meets the local spirits, from the fern flower to the king of the grass snakes.
+
+## Як гавораць беларусы {#shkliaryk-jak-havorac-bielarusy}
+
+A short popular-science book by a dialectologist from the Yakub Kolas Institute of Linguistics: how Belarusian differs from Russian and Ukrainian, which dialects the literary language grew from, and how people speak in different corners of the country — from «бык/бук» and «нясіце/нясеце» on the cover to ганавіцы and мятлушка. Almost every page carries a QR code, 48 in all, linking to maps of the dialectological and lexical atlases and to the poems the text quotes. Illustrations by Nadzeya Leanovich show well-known churches and buildings of the regions; edited by Zmitser Sanko. The second edition of 2025, printed together with Papury in 1,500 copies; the first came out at Tekhnalohiya in 2024.
+
+## Мовазнаўчыя працы {#lastouski-movaznaucyja-pracy}
+
+The first collected edition of Vacłaŭ Łastoŭski's writings on language: some seventy articles and notes of 1912–1927 from «Наша Ніва», the Kaunas «Крывіч», «Крывічанін», «Узвышша» and calendars — from letter-writing in Belarusian and the language of church services to «The View of Russian Scholars on the Belarusian Language», «Planned Assimilation», the causes of the decline of the Kryvian language in the seventeenth century and a reform of the Cyrillic alphabet; of the 1924 Russian–Kryvian (Belarusian) dictionary, the preface is included. The texts keep the author's word forms, and the Łacinka pieces stay in Latin script. Compiled and prefaced by Uladzislaŭ Harbacki, with an afterword by Nina Barszczewska; the cover carries a handwritten guide, in Belarusian Łacinka, to pronouncing German letters. Published for the author's 140th anniversary; the print run sold out in under a year.
+
+## Калі я выйду на волю {#komar-kali-ja-vyjdu-na-volu}
+
+Documentary prose by a poet from Baranavichy: diary entries from nine days of detention in autumn 2020, after an arrest at a rally in support of Maria Kalesnikava, and interviews with people who went through police violence, arrest and jail at the same time, together with the voices of their families. The others' testimonies are set almost without punctuation, with long gaps where the speaker fell silent; Russian-speaking interviewees speak Russian. Designed by Alina Odren, with the title blacked out on the cover like a censored document. Long-listed for the 2025 Giedroyc Prize; an English version, «When I'm Out of Here», followed in 2026.
+
+## Дом {#horvat-dom}
+
+The third book by the author of «Радзіва „Прудок“», about the Naroŭlia palace on the Prypiać, whose ruins he first saw in 2006 and bought at auction in November 2020 together with two businessmen. A literary study in which the biography of the palace and the fate of its last owner, Edward Horvat (a namesake, not a relative), are woven into the author's own story, the restoration and his leaving Belarus; alongside the realism, bronze lions stroll in the park and people step out of the portraits into the corridors. Written in 2021–2025. The author typeset the book himself and published it without a press in Vilnius: hardcover, thick cream paper, many archive and present-day photographs; the cover carries a photo of the palace from around 1914 from the collection of the Institute of Art of the Polish Academy of Sciences.
+
+## Spiritus flat ubi vult. Вершы 1945–1947 {#hienijus-spiritus-flat-ubi-vult}
+
+A facsimile of the one handwritten collection that Larysa Hienijuš copied out, decorated and bound herself in Prague in 1945–1947 and managed to pass into safe hands before her arrest; since the late 1980s it has been kept at the Francis Skaryna Belarusian Library in London. The 41 poems are given both typeset, keeping the language of the original, with linguistic commentary, and as a colour reproduction of the manuscript. Prefaces in Belarusian and English: Tacciana Astroŭskaja on Hienijuš and the history of Belarusian samizdat, Arnold McMillin (from the library's typewritten edition of 1992) and Janina Laŭnik. Compiled by Ihar Ivanoŭ, designed by Siarhei Shabokhin; 500 copies.

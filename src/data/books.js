@@ -278,6 +278,11 @@ const LIBRARY_FACTS = {
   'savicki-slounik-pa-infarmatycy': { year: 2014, publisher: 'Медыял', city: 'Менск', isbn: '978-985-6914-20-4', pages: 418, cover: true },
   'arendt-pra-calaviecnasc': { year: 2026, publisher: 'Пфляўмбаўм', city: 'Вільня', translator: 'Алена Пятровіч, Вольга Гронская, Алена Талапіла, Кацярына Тэвес', isbn: '978-609-8350-16-6', pages: 287, cover: true },
   'leksicny-atlas-5': { year: 1998, publisher: 'Камітэт дзяржаўных знакаў пры Міністэрстве фінансаў Рэспублікі Беларусь', city: 'Мінск', cover: true },
+  'shkliaryk-jak-havorac-bielarusy': { year: 2025, publisher: 'Тэхналогія, Папуры', city: 'Мінск', isbn: '978-985-458-411-9', pages: 34, cover: true },
+  'lastouski-movaznaucyja-pracy': { year: 2023, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-31-5', pages: 238, cover: true },
+  'komar-kali-ja-vyjdu-na-volu': { year: 2024, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-33-9', pages: 276, cover: true },
+  'hienijus-spiritus-flat-ubi-vult': { year: 2026, publisher: 'Skaryna Press', city: 'Лёндан — Вільня', isbn: '978-1-915601-76-6', pages: 192, cover: true },
+  'horvat-dom': { year: 2025, publisher: 'выданьне аўтара', city: 'Вільня', isbn: '978-609-08-0827-6', cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -467,6 +472,12 @@ const BOOKS = [
   book('buraukin-nahavarycca-z-zorkami', 'Генадзь Бураўкін', 'Нагаварыцца з зоркамі', 'be', 'poetry', '#f4f4f4', '#222222', 1),
   book('pirs-ja-vychodzu', 'Л. Пірс', 'Я выходжу', 'be', 'history', '#f7f7f7', '#c8252f'),
   book('sciezkami-mifau', '', 'Сцежкамі міфаў', 'be', 'folk', '#161a3a', '#e8a33a'),
+  // added from the owner's photos, 2026-09-28
+  book('shkliaryk-jak-havorac-bielarusy', 'Вадзім Шклярык', 'Як гавораць беларусы', 'be', 'lang', '#b9d2e0', '#1d3140', 1),
+  book('lastouski-movaznaucyja-pracy', 'Вацлаў Ластоўскі', 'Мовазнаўчыя працы', 'be', 'lang', '#d9cfb6', '#4a3428'),
+  book('komar-kali-ja-vyjdu-na-volu', 'Ганна Комар', 'Калі я выйду на волю', 'be', 'nonfic', '#f4f4f2', '#1a1a1a'),
+  book('horvat-dom', 'Андрэй Горват', 'Дом', 'be', 'fiction', '#efeeea', '#3a3a3a'),
+  book('hienijus-spiritus-flat-ubi-vult', 'Ларыса Геніюш', 'Spiritus flat ubi vult. Вершы 1945–1947', 'be', 'poetry', '#f7f7f5', '#222222'),
 ]
 
 // Default order of the library: by language, and within a language the series first

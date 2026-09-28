@@ -920,5 +920,41 @@ export const PROFILES = {
     mood: ['eerie', 'warm'],
     form: 'zine',
     aka: ['зін', 'zine', 'Вандровец', 'нячысьцікі', 'нячысцікі', 'папараць-кветка', 'вужыны кароль', 'самвыдат'],
+  },  // ----- added from the owner's photos, 2026-09-28
+  'shkliaryk-jak-havorac-bielarusy': {
+    genre: ['popular-science'],
+    themes: ['language', 'belarus', 'maps'],
+    mood: ['light'],
+    form: 'nonfiction',
+    aka: ['Шклярык', 'Шклярик', 'дыялекты', 'гаворкі', 'дыялекталогія', 'QR-коды', 'Леановіч', 'Санько', 'Гаворкі Беларусі', 'Тэхналогія', 'Папуры'],
   },
+  'lastouski-movaznaucyja-pracy': {
+    genre: ['academic', 'classic'],
+    themes: ['language', 'belarus', 'history', 'politics'],
+    mood: ['thoughtful'],
+    form: 'essays',
+    aka: ['Ластоўскі', 'Ластовский', 'Lastouski', 'Lastoŭski', 'Власт', 'крыўская мова', 'крывіцкая мова', 'Крывіч', 'Наша Ніва', 'Коўна', 'Гарбацкі', 'Баршчэўская', 'артыкулы', 'мовазнаўства', 'лацінка', 'Skaryna Press'],
+  },
+  'komar-kali-ja-vyjdu-na-volu': {
+    genre: ['memoir'],
+    themes: ['protests-2020', 'belarus', 'politics', 'violence', 'women', 'totalitarianism'],
+    mood: ['tragic', 'inspiring', 'thoughtful'],
+    form: 'diary',
+    aka: ['Комар', 'Komar', 'Hanna Komar', "When I'm Out of Here", 'дзёньнік', 'дзённік', 'Акрэсьціна', 'Акрэсціна', 'арышт', 'зьняволеньне', 'зняволенне', 'турма', 'інтэрв\'ю', 'сьведчаньні', 'сведчанні', 'дакументальная проза', '2020', 'Одрэн', 'Skaryna Press'],
+  },
+  'horvat-dom': {
+    genre: ['literary', 'memoir'],
+    themes: ['polesia', 'belarus', 'history', 'nobility', 'family', 'exile', 'magic'],
+    mood: ['lyrical', 'thoughtful'],
+    form: 'novella',
+    aka: ['Горват', 'Андрусь Горват', 'Horvat', 'Нароўля', 'Нараўлянскі палац', 'палац', 'сядзіба', 'маёнтак', 'Прыпяць', 'рэстаўрацыя', 'Эдвард Горват', 'самвыдат', 'аповесьць', 'аповесць', 'магічны рэалізм'],
+  },
+  'hienijus-spiritus-flat-ubi-vult': {
+    genre: ['lyric-poetry', 'classic'],
+    themes: ['belarus', 'exile', 'destiny', 'religion', 'war'],
+    mood: ['lyrical', 'tragic'],
+    form: 'poems',
+    aka: ['Геніюш', 'Гениюш', 'Hienijuš', 'Hienijus', 'Spiritus flat', 'вершы', 'рукапіс', 'факсіміле', 'Прага', 'самвыдат', 'Макмілін', 'Астроўская', 'Лаўнік', 'Іваноў', 'Шабохін', 'Скарынаўская бібліятэка', 'Skaryna Press'],
+  },
+
 }

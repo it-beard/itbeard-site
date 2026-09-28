@@ -1132,6 +1132,21 @@ body.theme-restore #app {
   color: var(--text);
 }
 
+.sort-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sort-arrow {
+  color: var(--accent-bright);
+  transition: transform 0.2s ease;
+}
+
+.sort-arrow-reversed {
+  transform: rotate(180deg);
+}
+
 /* soft fade-in when the filter changes */
 .cards-fade {
   animation: cards-fade 0.25s ease;

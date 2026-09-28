@@ -10,12 +10,32 @@ import { VINYL, WANTED_VINYL } from '../data/site'
 import { compareText } from '../data/books'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
 
-// The shelf can stand by year (oldest first, a record without a year at the end)
-// or by title; within one year the titles decide, and within one title the years.
-const SORTS = {
-  year: (lang) => (a, b) => (a.year ?? Infinity) - (b.year ?? Infinity) || compareText(a.title, b.title, lang),
-  title: (lang) => (a, b) => compareText(a.title, b.title, lang) || (a.year ?? Infinity) - (b.year ?? Infinity),
+// What a record is filed under: a person by the surname of the first name on the
+// sleeve, a band by its name without a leading «The».
+const filedAs = (r, artist) => {
+  const first = artist.split(' · ')[0].trim()
+  return r.person ? first.split(' ').at(-1) : first.replace(/^The\s+/i, '')
 }
+
+// The shelf can stand by year or by artist, each way up. The direction flips only
+// the main key: within one year the artists still read A to Z and a record without
+// a year stays last; within one artist the albums keep their alphabetical order.
+const SORTS = {
+  year: (dir, lang, artistOf) => (a, b) =>
+    (a.year == null) - (b.year == null) ||
+    dir * ((a.year ?? 0) - (b.year ?? 0)) ||
+    compareText(filedAs(a, artistOf(a)), filedAs(b, artistOf(b)), lang) ||
+    compareText(a.title, b.title, lang),
+  artist: (dir, lang, artistOf) => (a, b) =>
+    dir * compareText(filedAs(a, artistOf(a)), filedAs(b, artistOf(b)), lang) || compareText(a.title, b.title, lang),
+}
+
+// a small arrow that points down the shelf: up for the default direction, turned for the reverse
+const SortArrow = ({ reversed }) => (
+  <svg className={`sort-arrow${reversed ? ' sort-arrow-reversed' : ''}`} viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
+    <path d="M6 10.5V1.5M2.5 5 6 1.5 9.5 5" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+)
 
 export default function Vinyl() {
   const { lang } = useLang()
@@ -31,18 +51,21 @@ export default function Vinyl() {
 
   const total = VINYL.length
   const [filter, setFilter] = useState('all')
-  const [sort, setSort] = useState('year')
+  // the order of the shelf: which key, and 1 for the default direction or -1 for the reverse
+  const [sort, setSort] = useState({ key: 'year', dir: 1 })
   // the open card lives in the address (?record=id), so it can be shared
   const [openId, setOpenId] = useCardLink('record')
 
   const tagCount = (tag) => (tag === 'all' ? total : VINYL.filter((r) => r.tags.includes(tag)).length)
-  const ordered = [...VINYL].sort(SORTS[sort](lang))
+  const ordered = [...VINYL].sort(SORTS[sort.key](sort.dir, lang, artistOf))
   const shown = ordered.filter((r) => filter === 'all' || r.tags.includes(filter))
 
   const pick = (tag) => {
     setFilter(filter === tag ? 'all' : tag)
     setOpenId(null)
   }
+  // a second press on the active order turns it around; another order starts its default way up
+  const order = (key) => setSort(sort.key === key ? { key, dir: -sort.dir } : { key, dir: 1 })
   // wraps around, so the arrows never dead-end
   // the card walks the list it was opened from (a shared link to a record the filter
   // hides falls back to the whole collection) and wraps around
@@ -111,20 +134,27 @@ export default function Vinyl() {
             ))}
           </div>
           <div className="sort-switch" role="group" aria-label={page.sortLabel}>
-            {Object.keys(page.sort).map((key) => (
-              <button
-                key={key}
-                type="button"
-                className="sort-option"
-                aria-pressed={sort === key}
-                onClick={() => setSort(key)}
-              >
-                {page.sort[key]}
-              </button>
-            ))}
+            {Object.keys(page.sort).map((key) => {
+              const active = sort.key === key
+              const way = page.sort[key][active && sort.dir < 0 ? 'desc' : 'asc']
+              return (
+                <button
+                  key={key}
+                  type="button"
+                  className="sort-option"
+                  aria-pressed={active}
+                  aria-label={`${page.sort[key].label}: ${way}`}
+                  title={active ? page.sortFlipHint : way}
+                  onClick={() => order(key)}
+                >
+                  {page.sort[key].label}
+                  {active && <SortArrow reversed={sort.dir < 0} />}
+                </button>
+              )
+            })}
           </div>
         </div>
-        <div key={`${filter}-${sort}`} className="vinyl-grid cards-fade vinyl-grid-spaced">
+        <div key={`${filter}-${sort.key}-${sort.dir}`} className="vinyl-grid cards-fade vinyl-grid-spaced">
           {shown.map((r) => tile(r, () => setOpenId(r.id)))}
         </div>
         {shown.length === 0 && <p className="cover-empty">{page.labels.empty}</p>}

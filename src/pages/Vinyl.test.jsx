@@ -29,9 +29,12 @@ const sleeves = () => tiles().filter((b) => !b.closest('.cover-rail'))
 const wantedSleeves = () => tiles().filter((b) => b.closest('.cover-rail'))
 const chip = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
 const titlesShown = () => sleeves().map((el) => el.querySelector('.cover-title').textContent)
+const artistsShown = () => sleeves().map((el) => el.querySelector('.cover-overline').textContent)
+const yearsShown = () => sleeves().map((el) => Number(el.querySelector('.cover-sub')?.textContent))
+const option = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
+const nonDecreasing = (xs) => xs.every((x, i) => i === 0 || xs[i - 1] <= x)
 // the shelf as the page shows it by default: by year, oldest first
-const byYear = [...VINYL].sort((a, b) => (a.year ?? Infinity) - (b.year ?? Infinity) || compareText(a.title, b.title, 'be'))
-const oldest = byYear[0]
+const oldest = [...VINYL].sort((a, b) => (a.year ?? Infinity) - (b.year ?? Infinity))[0]
 
 beforeEach(() => localStorage.clear())
 afterEach(cleanup)
@@ -90,34 +93,81 @@ describe('vinyl page', () => {
     expect(first.querySelector('img')).toHaveAttribute('src', oldest.image)
   })
 
-  it('stands the shelf by year, oldest first, and by title on request', async () => {
+  it('stands the shelf by year, oldest first, and turns it around on a second press', async () => {
     const user = userEvent.setup()
     show()
-    const year = screen.getByRole('button', { name: 'Па годзе' })
-    const title = screen.getByRole('button', { name: 'Па назьве' })
+    const year = option('Па годзе')
     expect(year).toHaveAttribute('aria-pressed', 'true')
-    expect(title).toHaveAttribute('aria-pressed', 'false')
-    expect(titlesShown()).toEqual(byYear.map((r) => r.title))
-
-    await user.click(title)
-    expect(title).toHaveAttribute('aria-pressed', 'true')
-    expect(year).toHaveAttribute('aria-pressed', 'false')
-    expect(titlesShown()).toEqual([...VINYL].sort((a, b) => compareText(a.title, b.title, 'be')).map((r) => r.title))
+    expect(year).toHaveAccessibleName('Па годзе: ад старых да новых')
+    expect(option('Па гурце')).toHaveAttribute('aria-pressed', 'false')
+    expect(nonDecreasing(yearsShown())).toBe(true)
+    expect(titlesShown()[0]).toBe(oldest.title)
 
     await user.click(year)
-    expect(titlesShown()).toEqual(byYear.map((r) => r.title))
+    expect(year).toHaveAttribute('aria-pressed', 'true')
+    expect(year).toHaveAccessibleName('Па годзе: ад новых да старых')
+    expect(nonDecreasing([...yearsShown()].reverse())).toBe(true)
+    expect(titlesShown().at(-1)).toBe(oldest.title)
+
+    await user.click(year)
+    expect(year).toHaveAccessibleName('Па годзе: ад старых да новых')
+    expect(titlesShown()[0]).toBe(oldest.title)
+  })
+
+  it('files the records by artist — a person under the surname, a band without «The» — and by album within one', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(option('Па гурце'))
+    expect(option('Па гурце')).toHaveAccessibleName('Па гурце: ад А да Я')
+    expect(option('Па годзе')).toHaveAttribute('aria-pressed', 'false')
+    const at = (artist) => artistsShown().indexOf(artist)
+    // Cyrillic names open the Belarusian shelf, in alphabetical order
+    expect(at('Лявон Вольскі')).toBeLessThan(at('Генадзь Гладкоў · Юры Энцін'))
+    expect(at('Генадзь Гладкоў · Юры Энцін')).toBeLessThan(at('Песьняры'))
+    expect(at('Песьняры')).toBeLessThan(at('Ludwig van Beethoven · Wilhelm Kempff'))
+    // Beethoven under B, Brown under B after him, Ravel under R, Prodigy under P after Pink Floyd
+    expect(at('Ludwig van Beethoven · Wilhelm Kempff')).toBeLessThan(at('James Brown'))
+    expect(at('James Brown')).toBeLessThan(at('MEUTE'))
+    expect(at('Pink Floyd')).toBeLessThan(at('The Prodigy'))
+    expect(at('The Prodigy')).toBeLessThan(at('Maurice Ravel · Leonard Bernstein'))
+    // the three Pink Floyd sleeves stand together, albums A to Z
+    const floyd = titlesShown().filter((_, i) => artistsShown()[i] === 'Pink Floyd')
+    expect(floyd).toEqual([...floyd].sort((a, b) => compareText(a, b, 'be')))
+
+    await user.click(option('Па гурце'))
+    expect(option('Па гурце')).toHaveAccessibleName('Па гурце: ад Я да А')
+    expect(artistsShown()[0]).toBe('Maurice Ravel · Leonard Bernstein')
+    expect(artistsShown().at(-1)).toBe('Лявон Вольскі')
+    // the albums of one artist keep their order even when the shelf is turned around
+    expect(titlesShown().filter((_, i) => artistsShown()[i] === 'Pink Floyd')).toEqual(floyd)
+
+    // another order starts its default way up
+    await user.click(option('Па годзе'))
+    expect(option('Па годзе')).toHaveAccessibleName('Па годзе: ад старых да новых')
+    expect(titlesShown()[0]).toBe(oldest.title)
+  })
+
+  it('sorts the English page by the transliterated names it shows', async () => {
+    const user = userEvent.setup()
+    show('en')
+    await user.click(option('By artist'))
+    const shown = artistsShown()
+    expect(shown.indexOf('Gennady Gladkov · Yuri Entin')).toBeLessThan(shown.indexOf('Pesniary'))
+    expect(shown.indexOf('Pesniary')).toBeLessThan(shown.indexOf('Lavon Volski'))
   })
 
   it('keeps the chosen order inside a filter, and walks the card in that order', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(screen.getByRole('button', { name: 'Па назьве' }))
+    await user.click(option('Па гурце'))
+    await user.click(option('Па гурце'))
     await user.click(chip('Рок'))
-    const rock = VINYL.filter((r) => r.tags.includes('rock')).sort((a, b) => compareText(a.title, b.title, 'be'))
-    expect(titlesShown()).toEqual(rock.map((r) => r.title))
+    const shown = titlesShown()
+    expect(shown).toHaveLength(VINYL.filter((r) => r.tags.includes('rock')).length)
+    expect(artistsShown()[0]).toBe('Pink Floyd')
     await user.click(sleeves()[0])
     await user.keyboard('{ArrowRight}')
-    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent(rock[1].title)
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent(shown[1])
   })
 
   it('transliterates Cyrillic credits on the English page', () => {

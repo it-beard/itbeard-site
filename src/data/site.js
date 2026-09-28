@@ -411,10 +411,13 @@ export const REDIRECTS = {
 // `year` is the album's own year, not the year of this particular pressing;
 // `label`/`catno` are filled in only where the copy on the shelf confirms them.
 // `tags` drive the filter chips; the per-record notes live in content/vinyl.md.
+// `person: true` files the record under the surname of the first name on the sleeve
+// (Ravel under R, James Brown under B); a band stands under its name, without «The».
 export const VINYL = [
   {
     id: 'ravel-bolero',
     artist: 'Maurice Ravel · Leonard Bernstein',
+    person: true,
     title: 'Boléro / La Valse / Rapsodie espagnole',
     year: 1958,
     label: 'Vinyl Passion Classical',
@@ -424,6 +427,7 @@ export const VINYL = [
   {
     id: 'beethoven-emperor',
     artist: 'Ludwig van Beethoven · Wilhelm Kempff',
+    person: true,
     title: 'Piano Concerto No. 5 «Emperor» / «Moonlight» Sonata',
     year: 1967,
     label: 'Deutsche Grammophon',
@@ -433,6 +437,7 @@ export const VINYL = [
   {
     id: 'bremen-musicians',
     artist: 'Генадзь Гладкоў · Юры Энцін',
+    person: true,
     title: 'Бременские музыканты',
     year: 1969,
     label: 'Мелодыя',
@@ -489,6 +494,7 @@ export const VINYL = [
   {
     id: 'volski-hramadaznaustva',
     artist: 'Лявон Вольскі',
+    person: true,
     title: 'Hramadaznaŭstva',
     year: 2014,
     tags: ['bel', 'rock'],
@@ -496,6 +502,7 @@ export const VINYL = [
   {
     id: 'james-brown-collected',
     artist: 'James Brown',
+    person: true,
     title: 'Collected',
     year: 2020,
     label: 'Music On Vinyl',

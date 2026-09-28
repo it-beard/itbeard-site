@@ -17,9 +17,16 @@ counterHint:
   en: 'Records on the shelf: {total}'
 filtersLabel: { be: Фільтр кружэлак па кірунках, en: Filter records by genre }
 sortLabel: { be: Парадак кружэлак, en: Order of the records }
+sortFlipHint: { be: 'Націсьніце яшчэ раз, каб разьвярнуць', en: Press again to reverse }
 sort:
-  year: { be: Па годзе, en: By year }
-  title: { be: Па назьве, en: By title }
+  year:
+    label: { be: Па годзе, en: By year }
+    asc: { be: ад старых да новых, en: oldest first }
+    desc: { be: ад новых да старых, en: newest first }
+  artist:
+    label: { be: Па гурце, en: By artist }
+    asc: { be: ад А да Я, en: A to Z }
+    desc: { be: ад Я да А, en: Z to A }
 filters:
   all: { be: Усе, en: All }
   bel: { be: Беларускае, en: Belarusian }

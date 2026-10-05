@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { buildIndex, fold, parseSearch, search, similarBooks, tokens } from './bookSearch'
 
-// a shelf of six, enough to tell a match from a guess
+// a shelf of nine, enough to tell a match from a guess
 const CONCEPTS = {
   'space-opera': { aka: ['касьмічная опера', 'space opera'] },
   'epic-fantasy': { aka: ['фэнтэзі', 'эпічнае фэнтэзі', 'fantasy'] },
@@ -22,11 +22,15 @@ const BOOKS = [
   { id: 'witcher', title: 'Апошняе жаданне', author: 'Анджэй Сапкоўскі', lang: 'be', tags: ['sf'], genre: ['epic-fantasy'], themes: ['magic'], mood: ['dark'], form: 'stories', pages: 342, year: 2024 },
   { id: 'kupala', title: 'Выбранае', author: 'Янка Купала', lang: 'be', tags: ['poetry'], genre: ['lyric-poetry'], themes: [], mood: ['lyrical'], form: 'poems', pages: 288, year: 2021 },
   { id: 'martian', title: 'Марсіянін', author: 'Эндзі Ўір', lang: 'be', tags: ['sf'], genre: [], themes: ['space'], mood: [], form: 'novel', pages: 490, year: 2024 },
-  { id: 'code', title: 'Код', author: 'Чарльз Петцольд', lang: 'ru', tags: ['tech'], genre: [], themes: [], mood: [], form: 'nonfiction', pages: 448, year: 2019 },
+  { id: 'code', title: 'Код. Тайный язык информатики', author: 'Чарльз Петцольд', lang: 'ru', tags: ['tech'], genre: [], themes: [], mood: [], form: 'nonfiction', pages: 448, year: 2019 },
+  { id: 'road', title: 'Дарога', author: 'Кормак Макарці', lang: 'be', tags: ['fiction'], genre: [], themes: [], mood: [], form: 'novel', pages: 256, year: 2022, original: 'Cormac McCarthy. The Road' },
+  { id: 'orwell', title: '1984', author: 'Джордж Оруэл', lang: 'be', tags: ['fiction'], genre: [], themes: [], mood: [], form: 'novel', pages: 338, year: 2020 },
+  { id: 'we', title: 'Мы', author: 'Яўген Замяцін', lang: 'be', tags: ['fiction'], genre: [], themes: [], mood: [], form: 'novel', pages: 240, year: 2021 },
 ]
 const NOTES = {
-  martian: ['<p>Раман пра астранаўта, якога пакінулі аднаго на Марсе.</p>', '<p>A novel about an astronaut left alone on Mars.</p>'],
+  martian: ['<p>Раман пра астранаўта, якога пакінулі аднаго на Марсе.</p>', '<p>A novel about an astronaut left alone on Mars, and his long road home.</p>'],
   dune: ['<p>Раман пра пустэльную планету Аракіс.</p>'],
+  lotr: ['<p>Доўгая дарога да Самотнай гары, а код на браме яшчэ трэба разгадаць.</p>'],
 }
 const index = buildIndex(BOOKS, { concepts: CONCEPTS, notesOf: (id) => NOTES[id] ?? [] })
 const shelf = (q, opts) => search(index, q, opts).shelf.map((b) => b.id)
@@ -102,6 +106,36 @@ describe('search', () => {
     expect(shelf('па-расейску')).toEqual(['code'])
     expect(shelf('раман 2024')).toEqual(['martian'])
     expect(shelf('раман кароткі')).toEqual([])
+  })
+
+  it('puts the book whose title is the query first, before the ones that only mention the word', () => {
+    expect(shelf('астранаўт дарога')).toEqual([])
+    expect(shelf('дарога')).toEqual(['road', 'lotr'])
+    expect(shelf('ДАРОГА!')).toEqual(['road', 'lotr'])
+    // the title up to its first full stop is a name too; the whole of it finds only the book
+    expect(shelf('код')).toEqual(['code', 'lotr'])
+    expect(shelf('Код. Тайный язык информатики')).toEqual(['code'])
+    // a word of a longer title is not the title: the shelf keeps its order
+    expect(shelf('пярсцёнка')).toEqual(['lotr'])
+    expect(shelf('дарога', { filter: (b) => b.id !== 'road' })).toEqual(['lotr'])
+  })
+
+  it('knows a book by its title in the original too', () => {
+    expect(shelf('The Road')).toEqual(['road', 'martian'])
+    expect(shelf('road home')).toEqual(['martian'])
+  })
+
+  it('takes a title made of small words for the book, not for an empty query', () => {
+    expect(shelf('мы')).toEqual(['we'])
+    expect(shelf('Мы!')).toEqual(['we'])
+    expect(shelf('мы яны')).toHaveLength(BOOKS.length)
+    expect(shelf('мы', { filter: (b) => b.id !== 'we' })).toHaveLength(BOOKS.length - 1)
+  })
+
+  it('finds a title that reads as a number instead of taking it for a year', () => {
+    expect(shelf('1984')).toEqual(['orwell'])
+    expect(shelf('2020')).toEqual(['orwell'])
+    expect(shelf('1984', { filter: (b) => b.lang === 'ru' })).toEqual([])
   })
 
   it('suggests the books that match some of the words when none matches all', () => {

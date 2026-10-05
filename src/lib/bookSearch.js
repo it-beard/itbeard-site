@@ -12,7 +12,10 @@
 // language, «кароткае» to the page count, «новае» to the last years; numbers are
 // handled by bookQuery.js.
 //
+// A query that is the title of a book puts that book first, whatever else matches.
+//
 //   search(index, «космас»)         → every book whose profile or note speaks of space
+//   search(index, «дарога»)         → «Дарога» itself, then the books that mention a road
 //   search(index, «толкін вершы»)   → no book matches both words, so the shelf is empty
 //                                     and the suggestions hold Tolkien and the poetry
 //   similarBooks(index, «herbert-dziuna») → the books nearest to Dune by profile
@@ -75,6 +78,20 @@ const STOP = new Set(
      not no but so than then also into over out up more most very just only one two first`
   )
 )
+
+// A title as one string of folded letters and digits, to tell whether a query names
+// a book outright: «(Ня)чысты Мінск» and «нячысты мінск» are the same title.
+const titleKey = (text) => fold(text).replace(/[^\p{L}\p{N}]+/gu, '')
+
+// What a book may be called in full: its title, the title without what follows the
+// first full stop or colon («Тутэйшыя. Выбраныя творы» → «Тутэйшыя»), and each half
+// of a title printed in two languages. The same goes for the title in the original,
+// which the profile gives after the author's name («Frank Herbert. Dune»).
+const namesOf = (book) => {
+  const original = book.original?.includes('. ') ? book.original.split('. ').pop() : null
+  const titles = [book.title, original].filter(Boolean)
+  return new Set(titles.flatMap((t) => [t, t.split(/[.:]\s/)[0], ...t.split(' / ')]).map(titleKey).filter(Boolean))
+}
 
 // ----- the words that are filters
 
@@ -145,6 +162,7 @@ const stripHtml = (html) =>
 // `notesOf`  — the notes of a book, in every language: id → [html, ...]
 export function buildIndex(books, { concepts, notesOf = () => [] }) {
   const docs = new Map()
+  const names = new Map(books.map((b) => [b.id, namesOf(b)]))
   const vocab = new Map() // folded word → Set of book ids that carry it
   const surface = new Map() // folded word → how it was first spelled, for the reasons
 
@@ -205,7 +223,7 @@ export function buildIndex(books, { concepts, notesOf = () => [] }) {
     vectors.set(id, new Map(Array.from(weighted, ([k, w]) => [k, w / norm])))
   }
 
-  return { books, byId: new Map(books.map((b) => [b.id, b])), docs, vocab, surface, idf, vectors }
+  return { books, byId: new Map(books.map((b) => [b.id, b])), docs, names, vocab, surface, idf, vectors }
 }
 
 // ----- matching
@@ -337,23 +355,33 @@ const SUGGEST_MAX = 5
 const SUGGEST_MIN = 0.3
 
 // `filter` — the chips: which books may be considered at all
-// Returns the shelf (every book that matches all of the words, in the order given)
-// and the suggestions under it: books that match some of the words, or look like
-// the ones found, each with the reasons: [{ book, reasons: [{ kind, key | text }] }]
+// Returns the shelf (every book that matches all of the words, in the order given,
+// but the books whose title is the query first) and the suggestions under it: books
+// that match some of the words, or look like the ones found, each with the reasons:
+// [{ book, reasons: [{ kind, key | text }] }]
 export function search(index, raw, { filter = () => true } = {}) {
   const parsed = parseSearch(raw)
+  // a query that is a title finds its book even when it reads as a filter: «1984»
+  const title = titleKey(raw)
+  const named = (b) => title !== '' && index.names.get(b.id).has(title)
+  const namedFirst = (books) => [...books.filter(named), ...books.filter((b) => !named(b))]
   const pool = index.books.filter(
-    (b) => filter(b) && matchesNumbers(b, parsed) && (!parsed.lang || langsOf(b).includes(parsed.lang))
+    (b) => filter(b) && (named(b) || (matchesNumbers(b, parsed) && (!parsed.lang || langsOf(b).includes(parsed.lang))))
   )
-  if (parsed.tokens.length === 0) return { parsed, shelf: pool, suggestions: [] }
+  if (parsed.tokens.length === 0) {
+    // «Сам» is nothing but a small word, and a title: then the shelf is that book alone
+    const filtered = parsed.year || parsed.pages || parsed.lang
+    const shelf = !filtered && pool.some(named) ? pool.filter(named) : namedFirst(pool)
+    return { parsed, shelf, suggestions: [] }
+  }
 
   const expansions = parsed.tokens.map((q) => expand(q, index))
   const scored = pool.map((b) => {
     const hits = expansions.map((e) => bestHit(index, index.docs.get(b.id), e))
     const matched = hits.filter(Boolean)
-    return { book: b, hits: matched, total: matched.reduce((s, h) => s + h.score, 0), all: matched.length === hits.length }
+    return { book: b, hits: matched, total: matched.reduce((s, h) => s + h.score, 0), all: named(b) || matched.length === hits.length }
   })
-  const shelf = scored.filter((s) => s.all).map((s) => s.book)
+  const shelf = namedFirst(scored.filter((s) => s.all).map((s) => s.book))
 
   // what the books found have in common, to look for more of the same
   let centroid = null

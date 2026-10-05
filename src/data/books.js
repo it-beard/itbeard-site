@@ -283,6 +283,21 @@ const LIBRARY_FACTS = {
   'komar-kali-ja-vyjdu-na-volu': { year: 2024, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-33-9', pages: 276, cover: true },
   'hienijus-spiritus-flat-ubi-vult': { year: 2026, publisher: 'Skaryna Press', city: 'Лёндан — Вільня', isbn: '978-1-915601-76-6', pages: 192, cover: true },
   'horvat-dom': { year: 2025, publisher: 'выданьне аўтара', city: 'Вільня', isbn: '978-609-08-0827-6', cover: true },
+  'niaklajeu-sam': { year: 2023, publisher: 'KEW, Instytut Kultury Willa Decjusza', city: 'Wrocław–Wojnowice', translator: 'Adam Pomorski, Bohdan Zadura, Czesław Seniuch, Jarosław Anders', isbn: '978-83-7893-328-1', pages: 352, cover: true },
+  'lovecraft-insyja-bahi': { year: 2025, publisher: 'Gutenberg Publisher', city: 'Кракаў', translator: 'ініцыятыва BelRead пад рэдакцыяй Андрэя Хадановіча', isbn: '978-83-68016-66-6', pages: 200, cover: true },
+  'karnauch-chalodnyja-ziemli': { year: 2025, publisher: 'Gutenberg Publisher', city: 'Кракаў', isbn: '978-83-68016-38-3', pages: 416, cover: true },
+  'marcinovic-hlybinia': { year: 2026, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-456-1', pages: 326, cover: true },
+  'bradbury-vino-z-dzmuchaucou': { year: 2026, publisher: 'Янушкевіч', isbn: '978-83-68202-56-4', pages: 326, cover: true },
+  'ciotka-tvory': { year: 2026, publisher: 'Skaryna Press', isbn: '978-1-915601-94-0', pages: 158, cover: true },
+  'vojcik-tam-dzie-mianie-niama': { year: 2026, publisher: 'Skaryna Press', isbn: '978-1-915601-37-7', pages: 208, cover: true },
+  'zamirovskaya-evridika': { year: 2024, publisher: 'Мяне Няма', city: 'Варшава', isbn: '978-83-971348-3-6', pages: 452, cover: true },
+  'dziadzienka-kab-nie-srali-haluby': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-86-3', pages: 130, cover: true },
+  'harbacki-hid-pa-feminizacyi': { year: 2024, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-48-3', pages: 112, cover: true },
+  'antipov-kratkaja-istorija-premii-g': { year: 2026, publisher: 'Bukinist:ka Press, «Лысы Чэрап»', isbn: '978-83-976380-3-7', pages: 192, cover: true },
+  'hlobus-nas-susied-karatkievic': { year: 2025, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-51-1', pages: 136, cover: true },
+  'chadanovic-viersy': { year: 2023, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-968534-6-2', pages: 124, cover: true },
+  'kudasava-liryka': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-79-5', pages: 100, cover: true },
+  'niaklajeu-pieravybranaje': { year: 2023, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-03-0', pages: 124, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -294,6 +309,7 @@ const ALSO_IN = {
   'irdorath-bestiarium': ['en'],
   'hraviury-skaryny': ['ru'],
   'tradycyjny-svietapohlad-1': ['ru', 'en'],
+  'niaklajeu-sam': ['be'],
 }
 
 const book = (id, author, title, lang, tags, spine, ink, size = 2) => ({
@@ -478,6 +494,22 @@ const BOOKS = [
   book('komar-kali-ja-vyjdu-na-volu', 'Ганна Комар', 'Калі я выйду на волю', 'be', 'nonfic', '#f4f4f2', '#1a1a1a'),
   book('horvat-dom', 'Андрэй Горват', 'Дом', 'be', 'fiction', '#efeeea', '#3a3a3a'),
   book('hienijus-spiritus-flat-ubi-vult', 'Ларыса Геніюш', 'Spiritus flat ubi vult. Вершы 1945–1947', 'be', 'poetry', '#f7f7f5', '#222222'),
+  // added from the owner's photos, 2026-10-05
+  book('niaklajeu-sam', 'Uładzimir Niaklajeu', 'Sam', 'pl', 'poetry', '#e9e9eb', '#1a1a1a', 3),
+  book('lovecraft-insyja-bahi', 'Гаўард Філіпс Лаўкрафт', 'Іншыя багі', 'be', 'sf', '#2f3d42', '#8fd3e0'),
+  book('karnauch-chalodnyja-ziemli', 'Аляксандр Карнаўх', 'Халодныя землі', 'be', 'sf', '#7ba2ad', '#6e2a20', 3),
+  book('marcinovic-hlybinia', 'Віктар Марціновіч', 'Глыбіня', 'be', 'sf', '#14151a', '#3d7cf0'),
+  book('bradbury-vino-z-dzmuchaucou', 'Рэй Брэдберы', 'Віно з дзьмухаўцоў', 'be', 'fiction', '#f0b414', '#2f4a9e'),
+  book('ciotka-tvory', 'Ciotka', 'Tvory', 'be', ['poetry', 'fiction'], '#2596be', '#ffffff'),
+  book('vojcik-tam-dzie-mianie-niama', 'Галіна Войцік', 'Там, дзе мяне няма', 'be', ['history', 'nonfic'], '#c8414f', '#ffffff'),
+  book('zamirovskaya-evridika', 'Татьяна Замировская', 'Эвридика, проверь, выключила ли ты газ', 'ru', 'nonfic', '#f4f3ee', '#1c1c1c', 3),
+  book('dziadzienka-kab-nie-srali-haluby', 'Зміцер Дзядзенка', '#каб не ср@лі галубы', 'be', 'poetry', '#d9d7d4', '#2a5f96', 1),
+  book('harbacki-hid-pa-feminizacyi', 'Уладзіслаў Гарбацкі', 'Гід па фэмінізацыі беларускае мовы', 'be', 'lang', '#c9c6c6', '#222222', 1),
+  book('antipov-kratkaja-istorija-premii-g', 'Павел Антипов', 'Краткая история премии Г.', 'ru', 'fiction', '#2e2a2b', '#e8b9ad'),
+  book('hlobus-nas-susied-karatkievic', 'Адам Глобус', 'Наш сусед Караткевіч', 'be', 'nonfic', '#c9a595', '#1a1a1a', 1),
+  book('chadanovic-viersy', 'Андрэй Хадановіч', 'Вершы', 'be', 'poetry', '#b97a75', '#ffffff', 1),
+  book('kudasava-liryka', 'Наста Кудасава', 'Лірыка', 'be', 'poetry', '#a8643a', '#ffffff', 1),
+  book('niaklajeu-pieravybranaje', 'Уладзімір Някляеў', 'Перавыбранае', 'be', 'poetry', '#5f3d94', '#ffffff', 1),
 ]
 
 // Default order of the library: by language, and within a language the series first

@@ -423,12 +423,30 @@ describe('books page: library', () => {
     expect(screen.getByText('Фрэнк Герберт')).toBeInTheDocument()
   })
 
+  it('puts the book whose title was typed first, and finds a title made of digits', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'дарога')
+    expect(spines().length).toBeGreaterThan(1)
+    expect(spines()[0]).toHaveTextContent('Кормак Макарці')
+    await user.clear(search())
+    await user.type(search(), '1984')
+    expect(spines()[0]).toHaveTextContent('Джордж Оруэл')
+    // «сам» is a small word the search skips, and the title of a book in the original
+    await user.clear(search())
+    await user.type(search(), 'Сам')
+    expect(spines()).toHaveLength(1)
+    expect(spines()[0]).toHaveTextContent('Uładzimir Niaklajeu')
+  })
+
   it('finds books by author, ignoring case and the ў/у, ё/е slips', async () => {
     const user = userEvent.setup()
-    const expected = LIBRARY.filter((b) => b.author === 'Уладзімір Караткевіч').length
+    // his own books, and the one written about him
+    const expected = LIBRARY.filter((b) => /Караткевіч/.test(`${b.author} ${b.title}`)).length
     show()
     await user.type(search(), 'УЛАДЗІМІР КАРАТКЕВІЧ')
     expect(spines()).toHaveLength(expected)
+    expect(expected).toBeGreaterThan(LIBRARY.filter((b) => b.author === 'Уладзімір Караткевіч').length)
     await user.clear(search())
     await user.type(search(), 'быкау')
     expect(spines().length).toBeGreaterThan(0)
@@ -483,9 +501,10 @@ describe('books page: library', () => {
     const spine = spines().find((el) => /Беларуская думка/.test(el.textContent))
     expect(within(spine).getByText('бел · пол')).toBeInTheDocument()
 
-    // Polish has no books of its own, so its chip exists only thanks to the bilingual ones
+    // the Polish chip counts the bilingual Belarusian books together with the one Polish edition
     const polish = LIBRARY.filter((b) => langsOf(b).includes('pl'))
-    expect(polish.every((b) => b.lang === 'be')).toBe(true)
+    expect(polish.some((b) => b.lang === 'be')).toBe(true)
+    expect(polish.filter((b) => b.lang === 'pl').map((b) => b.id)).toEqual(['niaklajeu-sam'])
     await user.click(chip('Польская'))
     expect(spines()).toHaveLength(polish.length)
     await user.click(spines().find((el) => /Беларуская думка/.test(el.textContent)))

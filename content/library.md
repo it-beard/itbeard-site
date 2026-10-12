@@ -566,6 +566,18 @@ title: { be: Бібліятэка, en: Library }
 
 Кішэнны томік выбранай паэзіі ў серыі «Паэты планеты» — адзін з трох, зь якімі серыя ў 2023 годзе ажыла ў Беластоку. Уклаў Язэп Янушкевіч, рэдактар Лявон Баршчэўскі; на вокладцы — фотапартрэт працы Сяргея Гапона (2023) і страфа «Пры дарозе, як іголку ў стозе, / Я пакіну тое, што знайду, / Хоць ніколі сам па той дарозе / Болей не праеду, не прайду». Выйшаў у той самы год, што і вялікі двухмоўны том «Sam», які стаіць на польскай паліцы. Сярод ста найлепшых кніг 2023 году паводле Bellit.info.
 
+## Разьюшанасьць і любоў {#scur-razjusanasc-i-lubou}
+
+«Успаміны кліматычнага актывіста», кажа падзагаловак: вольны працяг 900-старонкавай «Спробы экспэрымэнтальнага канструяваньня сябе» (2025). Макс Шчур — паэт і перакладчык з Брэста, які з 1998 году жыве ў Чэхіі, лаўрэат прэміі Гедройця 2016 году, — апісвае дзьве рэвалюцыі 2019–2020 гадоў: кліматычны рух вакол Грэты Тунбэрг, да якога далучыўся сам, і беларускія падзеі восені 2020-га, а пасьля — выгараньне і дэпрэсію. Тэкст, які аўтар называе антылітаратурай, напісаны за 13 дзён у студзені 2026 году адным патокам, у манеры Керуака; фотаздымкі — з архіву аўтара, правапіс — аўтарскі. Продаж пачаўся 30 траўня 2026 году на Варшаўскім кніжным кірмашы.
+
+## Па-за межамі мроі {#nosau-pa-za-miezami-mroi}
+
+Навукова-фантастычная аповесьць пра Беларусь 2065 году недзе ў паралельным сьвеце: дэмакратыя тут даўно перамагла, людзі жывуць у згодзе з прыродай і навукай, а ў сюжэце — каханьне, прыгоды і крыху філасофіі пра амаль ідэальнае грамадзтва. Арыгінал напісаны па-руску («За границей мечты», верасень 2025); на беларускую мову кнігу пераклаў Пётар Уманскі — аўтар турэмнага раману «Раз два тры чатыры два», лаўрэат прэміі імя Аляхновіча 2025 году. Друк па замове праз Lulu; прэзентацыя адбылася на фестывалі PRADMOVA ў Варшаве 23 лістапада 2025 году.
+
+## Соль зямлі {#sieviaryniec-sol-ziamli}
+
+Дванаццаць віктарынаў па 33 пытаньні — амаль 400 пытаньняў і адказаў пра Беларусь, Бога і чалавека: сусьветная культура, навука, кіно, спорт, геаграфія, палітыка і Біблія, і ў кожнай тэме — беларускі сьлед. Павел Севярынец, сузаснавальнік «Маладога Фронту» і БХД, пачаў складаць пытаньні ў ліпені 2020 году ў карцары на Акрэсьціна і перадаваў іх на волю ў лістах да сына; скончыў ужо на волі. Выдавец не названы: толькі аўтарскае права, менеджмент Вольгі Севярынец і падрыхтоўка да друку ад «Пурпурнай Майстэрні». Прэзентацыя адбылася 8 кастрычніка 2026 году ў Беларускім моладзевым хабе ў Варшаве і адкрыла тур па дзесяці гарадах Польшчы.
+
 <!-- en -->
 
 # Notes {#notes}
@@ -1129,3 +1141,15 @@ A hundred poems — from texts of 2001 to the newest, some from earlier collecti
 ## Перавыбранае {#niaklajeu-pieravybranaje}
 
 A pocket volume of selected poetry in the series “Paety planiety” (Poets of the Planet) — one of the three with which the series came back to life in Białystok in 2023. Compiled by Jazep Januškievič, edited by Lavon Barščeŭski; the cover carries a photo portrait by Siarhiej Hapon (2023) and the stanza “By the road, like a needle in a haystack, / I shall leave what I find, / Though I myself shall never again / Ride or walk along that road.” It came out in the same year as the large bilingual volume “Sam”, which stands on the Polish shelf. One of Bellit.info's hundred best books of 2023.
+
+## Разьюшанасьць і любоў {#scur-razjusanasc-i-lubou}
+
+“Memoirs of a Climate Activist”, says the subtitle: a loose sequel to the 900-page “Sproba ekspierymentalnaha kanstrujavańnia siabie” (2025). Max Ščur — a poet and translator from Brest, living in Czechia since 1998 and a 2016 Giedroyc Prize winner — recalls two revolutions of 2019–2020: the climate movement around Greta Thunberg, which he joined himself, and the Belarusian events of autumn 2020, followed by burnout and depression. Written in thirteen days in January 2026 in one Kerouac-like stream, the text is what he calls anti-literature; the photographs come from his archive and the spelling is his own. Sales opened on 30 May 2026 at the Warsaw Book Fair.
+
+## Па-за межамі мроі {#nosau-pa-za-miezami-mroi}
+
+A science-fiction novella about Belarus in 2065, somewhere in a parallel world: democracy won long ago, people live in harmony with nature and science, and the plot brings a love story, adventure and a little philosophy about a near-ideal society. The Russian original, “Za granitsey mechty”, came out in September 2025; the Belarusian version is by Piotar Umanski, author of the prison novel “Raz dva try čatyry dva” and winner of the 2025 Alachnovič Prize. Printed on demand via Lulu and launched at the PRADMOVA festival in Warsaw on 23 November 2025.
+
+## Соль зямлі {#sieviaryniec-sol-ziamli}
+
+Twelve quizzes of 33 questions each — nearly 400 questions and answers about Belarus, God and humanity, ranging over world culture, science, cinema, sport, geography, politics and the Bible, always with a Belarusian thread. Pavel Sieviarynets, co-founder of the Young Front and of Belarusian Christian Democracy, began composing them in July 2020 in a punishment cell at Akrestsina, sent them home in letters to his son, and finished them after his release. The imprint names no publisher: only the author's copyright, management by Volha Sieviarynets and pre-press by Purpurnaja Majsternia. Launched on 8 October 2026 at the Belarusian Youth Hub in Warsaw, opening a tour of ten Polish cities.

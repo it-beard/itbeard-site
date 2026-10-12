@@ -1065,5 +1065,27 @@ export const PROFILES = {
     form: 'poems',
     aka: ['Някляеў', 'Некляев', 'Niaklajeŭ', 'Niaklajeu', 'Nyaklyaeu', 'выбранае', 'Паэты планеты', 'кішэнная серыя', 'Янушкевіч', 'Баршчэўскі', 'Гапон', 'Kamunikat', 'Камунікат'],
   },
+  'scur-razjusanasc-i-lubou': {
+    genre: ['memoir'],
+    themes: ['politics', 'belarus', 'exile', 'nature', 'everyday'],
+    mood: ['tense', 'thoughtful', 'dark'],
+    form: 'nonfiction',
+    aka: ['Шчур', 'Макс Шчур', 'Макс Щур', 'Max Ščur', 'Max Shchur', 'Разьюшанасьць & любоў', "Раз'юшанасць і любоў", 'Razjuszanaść i lubou', 'Успаміны кліматычнага актывіста', 'кліматычны актывіст', 'Грэта Тунбэрг', 'Greta Thunberg', 'Керуак', 'антылітаратура', 'Спроба экспэрымэнтальнага канструяваньня сябе', 'RozUM Media', 'Розум Медыя', 'Познань', 'Poznań'],
+  },
+  'nosau-pa-za-miezami-mroi': {
+    genre: ['science-fiction'],
+    themes: ['belarus', 'politics', 'love', 'humanity', 'nature', 'science'],
+    mood: ['light', 'inspiring', 'thoughtful'],
+    form: 'novella',
+    original: 'Алексей Носов. За границей мечты',
+    aka: ['Носаў', 'Аляксей Носаў', 'Алексей Носов', 'Aliaksei Nosau', 'Alexei Nosov', 'Pa-za miežami mroi', 'За границей мечты', 'Пётар Уманскі', 'Piotar Umanski', 'паралельны сьвет', 'Беларусь будучыні', 'утопія', '2065', 'PRADMOVA', 'Прадмова', 'RozUM Media', 'Розум Медыя', 'Lulu'],
+  },
+  'sieviaryniec-sol-ziamli': {
+    genre: ['religious'],
+    themes: ['religion', 'belarus', 'history', 'science', 'politics', 'heroes'],
+    mood: ['inspiring', 'light'],
+    form: 'anthology',
+    aka: ['Севярынец', 'Павал Севярынец', 'Северинец', 'Павел Северинец', 'Sieviarynets', 'Sieviaryniec', 'Seviarynets', 'Соль земли', 'Sol ziamli', 'Salt of the Earth', 'Зборнік віктарынаў', 'віктарыны', 'квізы', 'квіз', 'Акрэсьціна', 'Акрэсціна', 'БХД', 'Малады Фронт', 'Пурпурная Майстэрня', 'Purpurnaja Majsternia', 'Вольга Севярынец'],
+  },
 
 }

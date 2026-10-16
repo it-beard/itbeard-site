@@ -1087,5 +1087,12 @@ export const PROFILES = {
     form: 'anthology',
     aka: ['Севярынец', 'Павал Севярынец', 'Северинец', 'Павел Северинец', 'Sieviarynets', 'Sieviaryniec', 'Seviarynets', 'Соль земли', 'Sol ziamli', 'Salt of the Earth', 'Зборнік віктарынаў', 'віктарыны', 'квізы', 'квіз', 'Акрэсьціна', 'Акрэсціна', 'БХД', 'Малады Фронт', 'Пурпурная Майстэрня', 'Purpurnaja Majsternia', 'Вольга Севярынец'],
   },
+  'lukasuk-bielaruskaja-nacyjanalnaja-ideja': {
+    genre: ['essay'],
+    themes: ['belarus', 'politics', 'philosophy', 'history', 'language', 'exile'],
+    mood: ['thoughtful'],
+    form: 'anthology',
+    aka: ['Лукашук', 'Зьміцер Лукашук', 'Дмитрий Лукашук', 'Źmicier Lukašuk', 'Zmitser Lukashuk', 'Гаруноў', 'Максім Гаруноў', 'Максим Горюнов', 'Maksim Harunoŭ', 'Maxim Goryunov', 'Белорусская национальная идея', 'Białoruska idea narodowa', 'Belarusian National Idea', 'нацыянальная ідэя', 'нацыянальны праект', 'інтэрв\'ю', 'інтэрвію', 'Ідэя X', 'Idea X', 'Еўрарадыё', 'Еврорадио', 'Euroradio', 'Шушкевіч', 'Мацкевіч', 'Фядута', 'экстрэмісцкія матэрыялы', 'Studio Magenta', 'Медысонт'],
+  },
 
 }

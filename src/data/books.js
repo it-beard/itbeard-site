@@ -301,6 +301,7 @@ const LIBRARY_FACTS = {
   'scur-razjusanasc-i-lubou': { year: 2026, publisher: 'Fundacja RozUM Media', city: 'Познань', isbn: '978-83-979126-3-2', pages: 292, cover: true },
   'nosau-pa-za-miezami-mroi': { year: 2025, publisher: 'RozUM Media', translator: 'Пётар Уманскі', isbn: '978-1-326-08274-1', pages: 214, cover: true },
   'sieviaryniec-sol-ziamli': { year: 2026, publisher: 'выданьне аўтара', city: 'Вільня — Варшава', isbn: '978-83-980074-6-7', cover: true },
+  'lukasuk-bielaruskaja-nacyjanalnaja-ideja': { year: 2022, publisher: 'Studio Magenta', city: 'Варшава', isbn: '978-83-963661-1-5', pages: 400, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -516,6 +517,7 @@ const BOOKS = [
   book('scur-razjusanasc-i-lubou', 'Макс Шчур', 'Разьюшанасьць і любоў', 'be', 'nonfic', '#8e8b93', '#161616'),
   book('nosau-pa-za-miezami-mroi', 'Аляксей Носаў', 'Па-за межамі мроі', 'be', 'sf', '#2f6fb5', '#ffffff'),
   book('sieviaryniec-sol-ziamli', 'Павел Севярынец', 'Соль зямлі', 'be', 'nonfic', '#f2f1ec', '#1c1c1c'),
+  book('lukasuk-bielaruskaja-nacyjanalnaja-ideja', 'Зміцер Лукашук, Максім Гаруноў', 'Беларуская нацыянальная ідэя', 'be', 'nonfic', '#f3f3f5', '#6f6f7d', 3),
 ]
 
 // Default order of the library: by language, and within a language the series first

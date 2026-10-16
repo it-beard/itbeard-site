@@ -237,11 +237,11 @@ describe('vinyl page: wanted carousel', () => {
     }
   })
 
-  it('sits above the collection with its own counter', () => {
+  it('sits below the collection with its own counter', () => {
     show()
-    const [wantedHead, collectionHead] = screen.getAllByRole('heading', { level: 2 })
+    const [collectionHead, wantedHead] = screen.getAllByRole('heading', { level: 2 })
+    expect(collectionHead).toHaveTextContent(`Мая калекцыя (${VINYL.length})`)
     expect(wantedHead).toHaveTextContent(`Шукаю (${WANTED_VINYL.length})`)
-    expect(wantedHead.compareDocumentPosition(collectionHead) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
     expect(wantedSleeves()).toHaveLength(WANTED_VINYL.length)
   })
 

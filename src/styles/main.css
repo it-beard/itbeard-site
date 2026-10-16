@@ -337,21 +337,22 @@ img {
   inset: -10px 0 100% 0;
 }
 
-.nav-group.opened .nav-group-list,
-.nav-group:focus-within .nav-group-list {
+/* open only while the menu says so (or under the mouse) — not on :focus-within: a clicked
+   button or link keeps the focus, and the list then hung open until a click elsewhere */
+.nav-group.opened .nav-group-list {
   opacity: 1;
   visibility: visible;
   transform: translateY(6px);
 }
 
 @media (hover: hover) {
-  .nav-group:hover .nav-group-list {
+  .nav-group:not(.chosen):hover .nav-group-list {
     opacity: 1;
     visibility: visible;
     transform: translateY(6px);
   }
 
-  .nav-group:hover .nav-group-toggle i {
+  .nav-group:not(.chosen):hover .nav-group-toggle i {
     transform: rotate(180deg);
   }
 }
@@ -2915,8 +2916,8 @@ a[href^="lightbox:"] {
   }
 }
 
-/* ===== Book wishlist (unlisted /books) ===== */
-/* wanted books: a snap-scrolling strip. The padding leaves room for the swinging
+/* ===== Cover strips (/books, /vinyl) ===== */
+/* the newest and the wanted books, the wanted records: a snap-scrolling strip. The padding leaves room for the swinging
    cover and its shadow — a scroll container clips everything past its box */
 .cover-rail-wrap {
   position: relative;

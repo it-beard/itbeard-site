@@ -63,7 +63,7 @@ artists:
 
 # Мае кружэлкі {#intro}
 
-Тут дзьве паліцы: кружэлкі, якія я шукаю, і тыя, што ўжо стаяць дома каля прайгравальніка.
+Тут дзьве паліцы: кружэлкі, што ўжо стаяць дома каля прайгравальніка, і тыя, якія я шукаю.
 
 # Шукаю {#wanted}
 
@@ -131,7 +131,7 @@ artists:
 
 # My vinyl {#intro}
 
-Two shelves live here: the records I am looking for, and the ones already standing next to the turntable.
+Two shelves live here: the records already standing next to the turntable, and the ones I am looking for.
 
 # Wanted {#wanted}
 

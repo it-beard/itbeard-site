@@ -101,18 +101,6 @@ export default function Vinyl() {
 
       <section className="container section">
         <h2>
-          {wanted.title}{' '}
-          <sup className="pahost-count" title={page.wantedHint.replace('{total}', WANTED_VINYL.length)}>
-            ({WANTED_VINYL.length})
-          </sup>
-        </h2>
-        <Ornament />
-        <Md className="prose intro book-lead" html={wanted.html} />
-        <CoverRail labels={page.labels}>{WANTED_VINYL.map((r) => tile(r, () => setOpenId(r.id)))}</CoverRail>
-      </section>
-
-      <section className="container section">
-        <h2>
           {collection.title}{' '}
           <sup className="pahost-count" title={page.counterHint.replace('{total}', total)}>
             ({total})
@@ -158,6 +146,18 @@ export default function Vinyl() {
           {shown.map((r) => tile(r, () => setOpenId(r.id)))}
         </div>
         {shown.length === 0 && <p className="cover-empty">{page.labels.empty}</p>}
+      </section>
+
+      <section className="container section">
+        <h2>
+          {wanted.title}{' '}
+          <sup className="pahost-count" title={page.wantedHint.replace('{total}', WANTED_VINYL.length)}>
+            ({WANTED_VINYL.length})
+          </sup>
+        </h2>
+        <Ornament />
+        <Md className="prose intro book-lead" html={wanted.html} />
+        <CoverRail labels={page.labels}>{WANTED_VINYL.map((r) => tile(r, () => setOpenId(r.id)))}</CoverRail>
       </section>
 
       {record && (

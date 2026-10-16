@@ -57,12 +57,59 @@ describe('«Паліцы» in the nav', () => {
     expect(shelves()).toHaveAttribute('aria-expanded', 'false')
   })
 
-  it('closes after a link is chosen', async () => {
+  it('closes after a link is chosen, and stays hidden under the pointer until it leaves', async () => {
     const user = userEvent.setup()
     show()
+    const group = shelves().parentElement
     await user.click(shelves())
     await user.click(screen.getByRole('link', { name: 'Кнігі' }))
     expect(shelves()).toHaveAttribute('aria-expanded', 'false')
+    expect(group).toHaveClass('chosen')
+    await user.unhover(group)
+    expect(group).not.toHaveClass('chosen')
+  })
+
+  it('closes when the mouse leaves it', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(shelves())
+    expect(shelves()).toHaveAttribute('aria-expanded', 'true')
+    await user.unhover(shelves().parentElement)
+    expect(shelves()).toHaveAttribute('aria-expanded', 'false')
+  })
+
+  it('stays open while the keyboard walks its links and closes when the focus moves on', async () => {
+    const user = userEvent.setup()
+    show()
+    shelves().focus()
+    await user.keyboard('{Enter}')
+    expect(shelves()).toHaveAttribute('aria-expanded', 'true')
+    await user.tab()
+    expect(screen.getByRole('link', { name: 'Кнігі' })).toHaveFocus()
+    await user.tab()
+    expect(shelves()).toHaveAttribute('aria-expanded', 'true')
+    await user.tab()
+    expect(screen.getByRole('link', { name: 'Сувязь' })).toHaveFocus()
+    expect(shelves()).toHaveAttribute('aria-expanded', 'false')
+  })
+
+  it('hands the focus back to its button on Escape', async () => {
+    const user = userEvent.setup()
+    show()
+    shelves().focus()
+    await user.keyboard('{Enter}')
+    await user.tab()
+    await user.keyboard('{Escape}')
+    expect(shelves()).toHaveFocus()
+    expect(shelves()).toHaveAttribute('aria-expanded', 'false')
+  })
+
+  // Regression: a clicked button or link keeps the focus, so a list shown on
+  // :focus-within hung open until the next click somewhere else.
+  it('is not held open by the focus alone', () => {
+    const css = read('src/styles/main.css')
+    expect(css).not.toMatch(/\.nav-group:focus-within/)
+    expect(css).toMatch(/\.nav-group:not\(\.chosen\):hover \.nav-group-list/)
   })
 
   it('lights up while one of its pages is open', () => {

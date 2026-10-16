@@ -5,8 +5,8 @@ import { cleanup, render, screen, within } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
 import { MemoryRouter } from 'react-router-dom'
 import { LangProvider } from '../lib/LangContext'
-import { getPage, getSection } from '../lib/content'
-import { LANG_ORDER, LIBRARY, compareText, langsOf, surnameOf, WANTED } from '../data/books'
+import { formatDate, getPage, getSection } from '../lib/content'
+import { LANG_ORDER, LIBRARY, RECENT, compareText, langsOf, surnameOf, WANTED } from '../data/books'
 import Books from './Books'
 import CoverView from '../components/CoverView'
 
@@ -23,7 +23,11 @@ function show(lang = 'be', path = '/books') {
   )
 }
 
-const covers = () => screen.getAllByRole('button').filter((b) => b.classList.contains('book-item'))
+// the cover tiles of one strip, found by the heading of its section
+const strip = (heading) => screen.getByRole('heading', { level: 2, name: new RegExp(`^${heading}`) }).closest('section')
+const tilesOf = (heading) => within(strip(heading)).getAllByRole('button').filter((b) => b.classList.contains('book-item'))
+const covers = () => tilesOf('Шукаю')
+const newest = () => tilesOf('Нядаўна дададзеныя')
 const spines = () => screen.queryAllByRole('button').filter((b) => b.classList.contains('spine'))
 const chip = (name) => screen.getByRole('button', { name: new RegExp(`^${name}`) })
 const search = () => screen.getByRole('searchbox')
@@ -276,15 +280,76 @@ describe('library data', () => {
   })
 })
 
-describe('books page: wanted carousel', () => {
-  it('shows the wanted books above the library, each section with its counter', () => {
-    show()
-    const [wantedHead, libraryHead] = screen.getAllByRole('heading', { level: 2 })
-    expect(wantedHead).toHaveTextContent(`Шукаю (${WANTED.length})`)
-    expect(libraryHead).toHaveTextContent(`Мая бібліятэка (${LIBRARY.length})`)
-    expect(covers()).toHaveLength(WANTED.length)
-    expect(wantedHead.compareDocumentPosition(libraryHead) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy()
+describe('newest books data', () => {
+  it('dates every library book', () => {
+    for (const b of LIBRARY) {
+      expect(b.added, b.id).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+      expect(b.added >= '2026-09-21', b.id).toBe(true)
+    }
   })
+
+  it('picks the ten books added last, newest first, each a library book', () => {
+    expect(RECENT).toHaveLength(10)
+    expect(new Set(RECENT.map((b) => b?.id)).size).toBe(10)
+    for (const b of RECENT) expect(LIBRARY, 'a day in ADDED names an unknown id').toContain(b)
+    const days = RECENT.map((b) => b.added)
+    expect(days).toEqual([...days].sort().reverse())
+    const rest = LIBRARY.filter((b) => !RECENT.includes(b))
+    for (const b of rest) expect(b.added <= days.at(-1), b.id).toBe(true)
+  })
+
+  // new books are written at the bottom of BOOKS; one left out of ADDED would never reach the strip
+  it('starts the strip with the book written last in BOOKS', () => {
+    const src = readFileSync(resolve(ROOT, 'src/data/books.js'), 'utf8')
+    const books = src.slice(src.indexOf('const BOOKS = ['))
+    const last = [...books.slice(0, books.indexOf('\n]\n')).matchAll(/(?:book|volume)\('([^']+)'/g)].at(-1)[1]
+    expect(RECENT[0].id, `date «${last}» in ADDED in src/data/books.js`).toBe(last)
+  })
+})
+
+describe('books page: newest books', () => {
+  it('opens with the newest books, then the library, then the wanted list', () => {
+    show()
+    const heads = screen.getAllByRole('heading', { level: 2 }).map((h) => h.textContent)
+    expect(heads).toEqual(['Нядаўна дададзеныя', `Мая бібліятэка (${LIBRARY.length})`, `Шукаю (${WANTED.length})`])
+    expect(newest()).toHaveLength(RECENT.length)
+    expect(covers()).toHaveLength(WANTED.length)
+  })
+
+  it('captions a cover with the author, the title and the day it was added', () => {
+    show()
+    const [first] = newest()
+    expect(first.querySelector('.cover-overline')).toHaveTextContent(RECENT[0].author)
+    expect(first.querySelector('.cover-title')).toHaveTextContent(RECENT[0].title)
+    expect(first.querySelector('.cover-sub')).toHaveTextContent(formatDate(RECENT[0].added, 'be'))
+    expect(first.querySelector('.cover-sub')).toHaveTextContent(/^\d{1,2} \S+ \d{4}$/)
+    expect(first.querySelector('img')).toHaveAttribute('src', RECENT[0].image)
+  })
+
+  it('opens the library card and walks only the newest books, wrapping around', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.click(newest()[0])
+    let view = screen.getByRole('dialog')
+    expect(view).toHaveTextContent(`1 / ${RECENT.length}`)
+    expect(within(view).getByText('Жанр')).toBeInTheDocument()
+    expect(within(view).getByRole('button', { name: 'Папярэдняя кніга' })).toBeInTheDocument()
+    await user.keyboard('{ArrowLeft}')
+    view = screen.getByRole('dialog')
+    expect(view).toHaveTextContent(`${RECENT.length} / ${RECENT.length}`)
+    expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent(RECENT.at(-1).title)
+  })
+
+  it('walks the library when the same book is opened from its spine', async () => {
+    const user = userEvent.setup()
+    show()
+    const book = RECENT[0]
+    await user.click(spines().find((el) => within(el).queryByText(book.title)))
+    expect(screen.getByRole('dialog')).toHaveTextContent(`${LIBRARY.indexOf(book) + 1} / ${LIBRARY.length}`)
+  })
+})
+
+describe('books page: wanted carousel', () => {
 
   it('captions a cover with the author, the title and the series line', () => {
     show()

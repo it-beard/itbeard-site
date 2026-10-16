@@ -1,8 +1,8 @@
-// Data for the unlisted /books page: the wanted list and the home library.
+// Data for the /books page: the home library, its newest books and the wanted list.
 // Everything here is language-independent; the texts live in content/books.md.
 import { PROFILES } from './bookProfiles'
 
-// Wanted list — the carousel at the top of the unlisted /books page: editions being hunted for.
+// Wanted list — the carousel under the library on /books: editions being hunted for.
 // Titles, series and subtitles are kept exactly as printed on the cover; people and
 // publishers (which need transliteration) and the notes live in content/books.md.
 // A volume of a series carries `series` and `part`; a book that stands alone may
@@ -316,6 +316,53 @@ const ALSO_IN = {
   'niaklajeu-sam': ['be'],
 }
 
+// When books joined the library: each day lists its books in the order they were added.
+// Every book not listed here came in the first evening, FIRST_DAY. A new batch gets its
+// own day at the bottom. The «Нядаўна дададзеныя» strip at the top of /books shows the
+// RECENT books: the latest day first, and within a day the book added last first.
+const FIRST_DAY = '2026-09-21'
+const ADDED = {
+  '2026-09-22': [
+    'niaklajeu-kniha-losau',
+    'mify-backauscyny',
+    'kazakova-mifalahiemy-i-mahija',
+    'padlasskaje-na-uik-end',
+    'arlou-imiony-svabody-1',
+    'ruska-bielaruski-slounik-1953',
+    'tradycyjny-svietapohlad-1',
+    'buraukin-nahavarycca-z-zorkami',
+    'pirs-ja-vychodzu',
+    'sciezkami-mifau',
+  ],
+  '2026-09-28': [
+    'shkliaryk-jak-havorac-bielarusy',
+    'lastouski-movaznaucyja-pracy',
+    'komar-kali-ja-vyjdu-na-volu',
+    'horvat-dom',
+    'hienijus-spiritus-flat-ubi-vult',
+  ],
+  '2026-10-05': [
+    'niaklajeu-sam',
+    'lovecraft-insyja-bahi',
+    'karnauch-chalodnyja-ziemli',
+    'marcinovic-hlybinia',
+    'bradbury-vino-z-dzmuchaucou',
+    'ciotka-tvory',
+    'vojcik-tam-dzie-mianie-niama',
+    'zamirovskaya-evridika',
+    'dziadzienka-kab-nie-srali-haluby',
+    'harbacki-hid-pa-feminizacyi',
+    'antipov-kratkaja-istorija-premii-g',
+    'hlobus-nas-susied-karatkievic',
+    'chadanovic-viersy',
+    'kudasava-liryka',
+    'niaklajeu-pieravybranaje',
+  ],
+  '2026-10-12': ['scur-razjusanasc-i-lubou', 'nosau-pa-za-miezami-mroi', 'sieviaryniec-sol-ziamli'],
+  '2026-10-16': ['lukasuk-bielaruskaja-nacyjanalnaja-ideja'],
+}
+const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
+
 const book = (id, author, title, lang, tags, spine, ink, size = 2) => ({
   id,
   author,
@@ -514,9 +561,11 @@ const BOOKS = [
   book('chadanovic-viersy', 'Андрэй Хадановіч', 'Вершы', 'be', 'poetry', '#b97a75', '#ffffff', 1),
   book('kudasava-liryka', 'Наста Кудасава', 'Лірыка', 'be', 'poetry', '#a8643a', '#ffffff', 1),
   book('niaklajeu-pieravybranaje', 'Уладзімір Някляеў', 'Перавыбранае', 'be', 'poetry', '#5f3d94', '#ffffff', 1),
+  // added from the owner's photos, 2026-10-12
   book('scur-razjusanasc-i-lubou', 'Макс Шчур', 'Разьюшанасьць і любоў', 'be', 'nonfic', '#8e8b93', '#161616'),
   book('nosau-pa-za-miezami-mroi', 'Аляксей Носаў', 'Па-за межамі мроі', 'be', 'sf', '#2f6fb5', '#ffffff'),
   book('sieviaryniec-sol-ziamli', 'Павел Севярынец', 'Соль зямлі', 'be', 'nonfic', '#f2f1ec', '#1c1c1c'),
+  // added from the owner's photos, 2026-10-16
   book('lukasuk-bielaruskaja-nacyjanalnaja-ideja', 'Зміцер Лукашук, Максім Гаруноў', 'Беларуская нацыянальная ідэя', 'be', 'nonfic', '#f3f3f5', '#6f6f7d', 3),
 ]
 
@@ -564,8 +613,17 @@ function byShelfOrder(a, b) {
 
 export const LIBRARY = BOOKS.map((b) => ({
   ...b,
+  added: ADDED_ON[b.id] ?? FIRST_DAY,
   ...(ALSO_IN[b.id] && { also: ALSO_IN[b.id] }),
   ...LIBRARY_FACTS[b.id],
   ...PROFILES[b.id],
   ...(LIBRARY_FACTS[b.id]?.cover && { image: `/images/library/${b.id}.webp` }),
 })).sort(byShelfOrder)
+
+// The ten books added last, newest first (see ADDED)
+export const RECENT = Object.keys(ADDED)
+  .sort()
+  .flatMap((day) => ADDED[day])
+  .slice(-10)
+  .reverse()
+  .map((id) => LIBRARY.find((b) => b.id === id))

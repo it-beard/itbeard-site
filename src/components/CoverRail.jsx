@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-// Horizontal snap-scrolling strip of cover tiles (wanted books, wanted records).
+// Horizontal snap-scrolling strip of cover tiles (newest books, wanted books, wanted records).
 // Each arrow shows only while there is something left to scroll to on its side.
 // `tall` moves the arrows down to the middle of portrait covers.
 export default function CoverRail({ labels, tall = false, children }) {

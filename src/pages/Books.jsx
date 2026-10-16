@@ -1,12 +1,12 @@
 import { useCallback, useState } from 'react'
 import { useLang } from '../lib/LangContext'
-import { LANGS, getPage, getSection } from '../lib/content'
+import { LANGS, formatDate, getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
-import { LANG_ORDER, LIBRARY, WANTED, langsOf } from '../data/books'
+import { LANG_ORDER, LIBRARY, RECENT, WANTED, langsOf } from '../data/books'
 import { CONCEPT_KINDS, buildIndex, search, similarBooks } from '../lib/bookSearch'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
 
@@ -45,6 +45,23 @@ const BookThumb = ({ book }) =>
     <span className="book-thumb book-thumb-blank" style={{ '--spine': book.spine, '--ink': book.ink }} aria-hidden="true" />
   )
 
+// a cover in a strip that swings open on hover, captioned with the author, the title and one more line
+const BookTile = ({ image, overline, title, sub, hint, onClick }) => (
+  <button type="button" className="book-item" title={hint} onClick={onClick}>
+    <span className="book-cover">
+      <span className="book-pages" aria-hidden="true" />
+      <span className="book-front">
+        <img src={image} alt="" width="400" height="625" loading="lazy" />
+      </span>
+    </span>
+    <span className="cover-cap">
+      <span className="cover-overline">{overline}</span>
+      <span className="cover-title">{title}</span>
+      {sub && <span className="cover-sub">{sub}</span>}
+    </span>
+  </button>
+)
+
 export default function Books() {
   const { lang } = useLang()
   const page = getPage('books', lang)
@@ -52,6 +69,7 @@ export default function Books() {
   useTitle(page.title, page.description)
 
   const intro = getSection(page, 'intro')
+  const recent = getSection(page, 'recent')
   const wanted = getSection(page, 'wanted')
   const library = getSection(page, 'library')
   const noteOf = (id) => wanted.subs.find((s) => s.id === id)?.html
@@ -60,8 +78,14 @@ export default function Books() {
   const libraryNotes = getSection(getPage('library', lang), 'notes').subs
   const libraryNoteOf = (id) => libraryNotes.find((s) => s.id === id)?.html
 
-  // ----- the open card lives in the address (?book=id), so it can be shared
+  // ----- the open card lives in the address (?book=id), so it can be shared; `from`
+  // remembers which list it was opened from: 'recent', 'library' or 'wanted'
   const [openId, setOpenId] = useCardLink('book')
+  const [from, setFrom] = useState('library')
+  const openCard = (list, id) => {
+    setFrom(list)
+    setOpenId(id)
+  }
 
   // ----- library: free-text search plus subject and language chips
   const [query, setQuery] = useState('')
@@ -99,7 +123,7 @@ export default function Books() {
     <ul className="suggest-list">
       {items.map(({ book: b, reasons }) => (
         <li key={b.id}>
-          <button type="button" className="suggest-item" onClick={() => setOpenId(b.id)}>
+          <button type="button" className="suggest-item" onClick={() => openCard('library', b.id)}>
             <BookThumb book={b} />
             <span className="suggest-text">
               <span className="suggest-title">{b.title}</span>
@@ -118,13 +142,19 @@ export default function Books() {
     setBookLang('all')
   }
 
-  // the card walks the list it was opened from — the wanted strip, or the library as
-  // currently filtered (a shared link to a book the filters hide falls back to the
-  // whole library) — and wraps around, so the arrows never dead-end
-  const inWanted = WANTED.some((b) => b.id === openId)
-  const openList = inWanted ? WANTED : shown.some((b) => b.id === openId) ? shown : LIBRARY
+  // the card walks the list it was opened from — the newest books, the library as
+  // currently filtered, or the wanted strip — and wraps around, so the arrows never
+  // dead-end. A shared link opens a wanted book in the wanted list and any other in the
+  // library; a book the filters hide falls back to the whole library.
+  const source = WANTED.some((b) => b.id === openId)
+    ? 'wanted'
+    : from === 'recent' && RECENT.some((b) => b.id === openId)
+      ? 'recent'
+      : 'library'
+  const openList =
+    source === 'wanted' ? WANTED : source === 'recent' ? RECENT : shown.some((b) => b.id === openId) ? shown : LIBRARY
   const index = openId ? openList.findIndex((b) => b.id === openId) : -1
-  const open = index >= 0 ? { list: inWanted ? 'wanted' : 'library', index } : null
+  const open = index >= 0 ? { list: source, index } : null
   const step = useCallback(
     (delta) => setOpenId(openList[(index + delta + openList.length) % openList.length].id),
     [openList, index, setOpenId]
@@ -132,7 +162,7 @@ export default function Books() {
   const close = useCallback(() => setOpenId(null), [setOpenId])
   const book = open ? openList[open.index] : null
   const details = book && open.list === 'wanted' ? detailsOf(book.id) : null
-  const similar = book && open.list === 'library' ? similarBooks(searchIndex, book.id) : []
+  const similar = book && open.list !== 'wanted' ? similarBooks(searchIndex, book.id) : []
 
   return (
     <main>
@@ -143,35 +173,19 @@ export default function Books() {
       </section>
 
       <section className="container section">
-        <h2>
-          {wanted.title}{' '}
-          <sup className="pahost-count" title={page.wantedHint.replace('{total}', WANTED.length)}>
-            ({WANTED.length})
-          </sup>
-        </h2>
+        <h2>{recent.title}</h2>
         <Ornament />
-        <Md className="prose intro book-lead" html={wanted.html} />
         <CoverRail labels={page.labels} tall>
-          {WANTED.map((b, index) => (
-            <button
+          {RECENT.map((b) => (
+            <BookTile
               key={b.id}
-              type="button"
-              className="book-item"
-              title={page.labels.openHint}
-              onClick={() => setOpenId(b.id)}
-            >
-              <span className="book-cover">
-                <span className="book-pages" aria-hidden="true" />
-                <span className="book-front">
-                  <img src={b.image} alt="" width="400" height="625" loading="lazy" />
-                </span>
-              </span>
-              <span className="cover-cap">
-                <span className="cover-overline">{detailsOf(b.id).author}</span>
-                <span className="cover-title">{b.title}</span>
-                {seriesLine(b, page.labels) && <span className="cover-sub">{seriesLine(b, page.labels)}</span>}
-              </span>
-            </button>
+              image={b.image}
+              overline={b.author || b.series}
+              title={b.title}
+              sub={formatDate(b.added, lang)}
+              hint={page.labels.openHint}
+              onClick={() => openCard('recent', b.id)}
+            />
           ))}
         </CoverRail>
       </section>
@@ -241,7 +255,7 @@ export default function Books() {
                   type="button"
                   className={`spine spine-${b.size}`}
                   style={{ '--spine': b.spine, '--ink': b.ink }}
-                  onClick={() => setOpenId(b.id)}
+                  onClick={() => openCard('library', b.id)}
                 >
                   <span className="spine-text">
                     {spineCredit(b) && <span className="spine-author">{spineCredit(b)}</span>}
@@ -264,6 +278,30 @@ export default function Books() {
             {proposals(suggestions)}
           </div>
         )}
+      </section>
+
+      <section className="container section">
+        <h2>
+          {wanted.title}{' '}
+          <sup className="pahost-count" title={page.wantedHint.replace('{total}', WANTED.length)}>
+            ({WANTED.length})
+          </sup>
+        </h2>
+        <Ornament />
+        <Md className="prose intro book-lead" html={wanted.html} />
+        <CoverRail labels={page.labels} tall>
+          {WANTED.map((b) => (
+            <BookTile
+              key={b.id}
+              image={b.image}
+              overline={detailsOf(b.id).author}
+              title={b.title}
+              sub={seriesLine(b, page.labels)}
+              hint={page.labels.openHint}
+              onClick={() => openCard('wanted', b.id)}
+            />
+          ))}
+        </CoverRail>
       </section>
 
       {book && open.list === 'wanted' && (
@@ -299,7 +337,7 @@ export default function Books() {
         </CoverView>
       )}
 
-      {book && open.list === 'library' && (
+      {book && open.list !== 'wanted' && (
         <CoverView
           portrait
           image={book.image}
@@ -321,7 +359,9 @@ export default function Books() {
             [page.labels.isbn, book.isbn],
           ]}
           note={libraryNoteOf(book.id)}
-          labels={{ ...page.labels, prev: page.labels.prevOnShelf, next: page.labels.nextOnShelf }}
+          labels={
+            open.list === 'library' ? { ...page.labels, prev: page.labels.prevOnShelf, next: page.labels.nextOnShelf } : page.labels
+          }
           position={open.index + 1}
           total={openList.length}
           shareUrl={cardUrl('book', book.id)}

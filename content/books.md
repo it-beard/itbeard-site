@@ -576,7 +576,9 @@ details:
 
 # Мае кнігі {#intro}
 
-Тут дзьве паліцы. На першай — кнігі, якіх у мяне яшчэ няма і якія я шукаю. На другой — усё, што ўжо стаіць дома.
+Тут дзьве паліцы. На першай — усё, што ўжо стаіць дома. На другой — кнігі, якіх у мяне яшчэ няма і якія я шукаю.
+
+# Нядаўна дададзеныя {#recent}
 
 # Шукаю {#wanted}
 
@@ -652,7 +654,9 @@ details:
 
 # My books {#intro}
 
-Two shelves live here. The first holds the books I don't have yet and am looking for. The second is everything that already stands at home.
+Two shelves live here. The first is everything that already stands at home. The second holds the books I don't have yet and am looking for.
+
+# Recently added {#recent}
 
 # Wanted {#wanted}
 

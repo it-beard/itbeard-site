@@ -90,9 +90,10 @@ function LangToggle() {
   )
 }
 
-// «Паліцы»: a group of pages that has no page of its own. On desktop it is a dropdown
-// (hover, click or keyboard; Escape and an outside click close it); in the mobile menu
-// the same markup lies open as a captioned pair of links — nothing to expand.
+// «Паліцы»: a group of pages that has no page of its own. On desktop it is a dropdown:
+// the mouse opens it by hovering, a click or Enter opens it until the mouse leaves, the
+// focus moves on, Escape is pressed or something else is clicked. In the mobile menu the
+// same markup lies open as a captioned pair of links — nothing to expand.
 const SHELVES = [
   { to: '/books', key: 'books' },
   { to: '/vinyl', key: 'vinyl' },
@@ -101,12 +102,19 @@ const SHELVES = [
 function ShelvesMenu({ nav, onNavigate }) {
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  // a chosen link hides the list at once, even under the pointer, until the pointer leaves
+  const [chosen, setChosen] = useState(false)
   const root = useRef(null)
+  const toggle = useRef(null)
   const active = SHELVES.some((s) => pathname.startsWith(s.to))
 
   useEffect(() => {
     if (!open) return
-    const onKey = (e) => e.key === 'Escape' && setOpen(false)
+    const onKey = (e) => {
+      if (e.key !== 'Escape') return
+      if (root.current?.contains(document.activeElement)) toggle.current?.focus()
+      setOpen(false)
+    }
     const onDown = (e) => !root.current?.contains(e.target) && setOpen(false)
     document.addEventListener('keydown', onKey)
     document.addEventListener('pointerdown', onDown)
@@ -117,9 +125,19 @@ function ShelvesMenu({ nav, onNavigate }) {
   }, [open])
 
   return (
-    <div className={`nav-group${open ? ' opened' : ''}`} ref={root}>
+    <div
+      className={`nav-group${open ? ' opened' : ''}${chosen ? ' chosen' : ''}`}
+      ref={root}
+      onPointerLeave={(e) => {
+        setChosen(false)
+        // a finger "leaves" right after every tap, so only the mouse closes the list this way
+        if (e.pointerType === 'mouse') setOpen(false)
+      }}
+      onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && setOpen(false)}
+    >
       <button
         type="button"
+        ref={toggle}
         className={`nav-link nav-group-toggle${active ? ' active' : ''}`}
         aria-expanded={open}
         aria-controls="shelves-menu"
@@ -136,6 +154,7 @@ function ShelvesMenu({ nav, onNavigate }) {
             className="nav-link"
             onClick={() => {
               setOpen(false)
+              setChosen(true)
               onNavigate()
             }}
           >

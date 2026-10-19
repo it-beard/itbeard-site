@@ -478,6 +478,15 @@ export const VINYL = [
     tags: ['electro'],
   },
   {
+    id: 'michael-jackson-number-ones',
+    artist: 'Michael Jackson',
+    person: true,
+    title: 'Number Ones',
+    year: 2003,
+    label: 'Epic',
+    tags: ['funk'],
+  },
+  {
     id: 'noize-mc-greatest-hits-2',
     artist: 'Noize MC',
     title: 'The Greatest Hits Vol. 2',
@@ -498,6 +507,16 @@ export const VINYL = [
     title: 'Hramadaznaŭstva',
     year: 2014,
     tags: ['bel', 'rock'],
+  },
+  {
+    id: 'phil-collins-the-singles',
+    artist: 'Phil Collins',
+    person: true,
+    title: 'The Singles',
+    year: 2016,
+    label: 'Atlantic',
+    catno: '603497808106',
+    tags: ['rock'],
   },
   {
     id: 'james-brown-collected',

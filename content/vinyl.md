@@ -103,6 +103,10 @@ artists:
 
 Трэці альбом The Prodigy, які ў 1997-м узначаліў чарты і ў Брытаніі, і ў ЗША: «Firestarter», «Breathe», «Smack My Bitch Up» — біг-біт, што выйшаў з рэйваў на стадыёны. На вокладцы — чырвоны краб з узьнятымі клюшнямі. Падвойная плыта на XL Recordings.
 
+## Michael Jackson — Number Ones {#michael-jackson-number-ones}
+
+Васямнаццаць найбуйнейшых хітоў Майкла Джэксана — ад «Don't Stop 'Til You Get Enough» і «Billie Jean» да «You Rock My World». Зборнік 2003 году, які на вініле выйшаў упершыню толькі ў 2026-м — падвойнай плытой у канвэрце-разгортцы. На вокладцы — Джэксан у зіхоткім пінжаку, замерлы ў скачку на белым фоне.
+
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 
 Другі зборнік лепшага ад Івана Аляксеева — з часоў, калі ягоныя песьні яшчэ можна было пачуць па радыё.
@@ -114,6 +118,10 @@ artists:
 ## Лявон Вольскі — Hramadaznaŭstva {#volski-hramadaznaustva}
 
 Сольны альбом Вольскага — іранічны падручнік беларускага грамадазнаўства, пакладзены на музыку.
+
+## Phil Collins — The Singles {#phil-collins-the-singles}
+
+Дзевятнаццаць сінглаў з сольнай кар'еры Філа Колінза — ад «In the Air Tonight» да «(Love Is Like A) Heatwave», з «Easy Lover» і «Another Day in Paradise» паміж імі. Абмежаванае выданьне да 75-годзьдзя Колінза: дзьве празрыстыя плыты, бірузовая і малінавая, у канвэрце з графіці на цаглянай сьцяне.
 
 ## James Brown — Collected {#james-brown-collected}
 
@@ -171,6 +179,10 @@ A double rock opera about the wall a person builds around themselves, one brick 
 
 The Prodigy's third album, which went to number one in both Britain and the United States in 1997: «Firestarter», «Breathe» and «Smack My Bitch Up» — big beat that walked out of the raves onto stadium stages. A red crab with its claws raised on the sleeve. A double LP on XL Recordings.
 
+## Michael Jackson — Number Ones {#michael-jackson-number-ones}
+
+Eighteen of Michael Jackson's biggest hits, from «Don't Stop 'Til You Get Enough» and «Billie Jean» to «You Rock My World». The 2003 compilation reached vinyl only in 2026, as a double LP in a gatefold sleeve. On the cover, Jackson in a sequinned jacket, frozen mid-jump against white.
+
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 
 The second best-of collection from Ivan Alexeyev — from the days when his songs still made it onto the radio.
@@ -182,6 +194,10 @@ The sixth studio album by the Minsk band, and probably the most pop-art sleeve o
 ## Lavon Volski — Hramadaznaŭstva {#volski-hramadaznaustva}
 
 Volski's solo album: a wry textbook of Belarusian social studies, set to music.
+
+## Phil Collins — The Singles {#phil-collins-the-singles}
+
+Nineteen singles from Phil Collins's solo years, from «In the Air Tonight» to «(Love Is Like A) Heatwave», with «Easy Lover» and «Another Day in Paradise» in between. A limited edition for his 75th birthday: two transparent discs, petrol and magenta, in a sleeve of graffiti sprayed on a brick wall.
 
 ## James Brown — Collected {#james-brown-collected}
 

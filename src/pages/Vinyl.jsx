@@ -17,9 +17,10 @@ const filedAs = (r, artist) => {
   return r.person ? first.split(' ').at(-1) : first.replace(/^The\s+/i, '')
 }
 
-// The shelf can stand by year or by artist, each way up. The direction flips only
-// the main key: within one year the artists still read A to Z and a record without
-// a year stays last; within one artist the albums keep their alphabetical order.
+// The shelf can stand by year, by artist or by the day a record joined it, each way up.
+// The direction flips only the main key: within one year the artists still read A to Z
+// and a record without a year stays last; within one artist the albums keep their
+// alphabetical order; records that came on the same day keep the year order.
 const SORTS = {
   year: (dir, lang, artistOf) => (a, b) =>
     (a.year == null) - (b.year == null) ||
@@ -28,6 +29,9 @@ const SORTS = {
     compareText(a.title, b.title, lang),
   artist: (dir, lang, artistOf) => (a, b) =>
     dir * compareText(filedAs(a, artistOf(a)), filedAs(b, artistOf(b)), lang) || compareText(a.title, b.title, lang),
+  // newest arrivals first by default (dates are ISO strings, so they compare as text)
+  added: (dir, lang, artistOf) => (a, b) =>
+    dir * (a.added < b.added ? 1 : a.added > b.added ? -1 : 0) || SORTS.year(1, lang, artistOf)(a, b),
 }
 
 // a small arrow that points down the shelf: up for the default direction, turned for the reverse

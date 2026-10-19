@@ -27,6 +27,10 @@ sort:
     label: { be: Па гурце, en: By artist }
     asc: { be: ад А да Я, en: A to Z }
     desc: { be: ад Я да А, en: Z to A }
+  added:
+    label: { be: Па навізьне, en: By date added }
+    asc: { be: спачатку нядаўна дададзеныя, en: newest additions first }
+    desc: { be: спачатку даўнія, en: oldest additions first }
 filters:
   all: { be: Усе, en: All }
   bel: { be: Беларускае, en: Belarusian }

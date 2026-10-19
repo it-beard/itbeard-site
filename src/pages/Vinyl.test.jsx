@@ -60,6 +60,14 @@ describe('vinyl data', () => {
     }
   })
 
+  it('dates the arrival of every record on the shelf as a day that has already come', () => {
+    const today = new Date().toISOString().slice(0, 10)
+    for (const r of VINYL) {
+      expect(r.added, r.id).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+      expect(r.added <= today, `${r.id} arrives in the future`).toBe(true)
+    }
+  })
+
   it('only uses tags that have a filter chip', () => {
     const chips = Object.keys(getPage('vinyl', 'be').filters)
     for (const r of VINYL) {
@@ -145,6 +153,26 @@ describe('vinyl page', () => {
     await user.click(option('Па годзе'))
     expect(option('Па годзе')).toHaveAccessibleName('Па годзе: ад старых да новых')
     expect(titlesShown()[0]).toBe(oldest.title)
+  })
+
+  it('lines the shelf up by the day a record arrived, newest first, and turns it around', async () => {
+    const user = userEvent.setup()
+    show()
+    const added = option('Па навізьне')
+    const addedShown = () => titlesShown().map((t) => VINYL.find((r) => r.title === t).added)
+    await user.click(added)
+    expect(added).toHaveAttribute('aria-pressed', 'true')
+    expect(added).toHaveAccessibleName('Па навізьне: спачатку нядаўна дададзеныя')
+    expect(option('Па годзе')).toHaveAttribute('aria-pressed', 'false')
+    expect(nonDecreasing([...addedShown()].reverse())).toBe(true)
+    // the two records of one day keep the year order, and the lone arrival of the week before follows
+    expect(titlesShown().slice(0, 3)).toEqual(['Number Ones', 'The Singles', 'The Fat of the Land'])
+
+    await user.click(added)
+    expect(added).toHaveAccessibleName('Па навізьне: спачатку даўнія')
+    expect(nonDecreasing(addedShown())).toBe(true)
+    expect(titlesShown()[0]).toBe(oldest.title)
+    expect(titlesShown().at(-1)).toBe('The Singles')
   })
 
   it('sorts the English page by the transliterated names it shows', async () => {

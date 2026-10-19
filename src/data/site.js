@@ -413,7 +413,7 @@ export const REDIRECTS = {
 // `tags` drive the filter chips; the per-record notes live in content/vinyl.md.
 // `person: true` files the record under the surname of the first name on the sleeve
 // (Ravel under R, James Brown under B); a band stands under its name, without «The».
-export const VINYL = [
+const RECORDS = [
   {
     id: 'ravel-bolero',
     artist: 'Maurice Ravel · Leonard Bernstein',
@@ -542,7 +542,23 @@ export const VINYL = [
     year: 2025,
     tags: ['electro'],
   },
-].map((r) => ({ ...r, image: `/images/vinyl/${r.id}.webp` }))
+]
+
+// When a record joined the shelf: each day lists its records in the order they were added.
+// Every record not listed here stood on the shelf from the first day. A new batch gets its
+// own day at the bottom; the «by date added» order on /vinyl reads this.
+const FIRST_DAY = '2026-09-21'
+const ADDED = {
+  '2026-09-28': ['prodigy-fat-of-the-land'],
+  '2026-10-19': ['michael-jackson-number-ones', 'phil-collins-the-singles'],
+}
+const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
+
+export const VINYL = RECORDS.map((r) => ({
+  ...r,
+  added: ADDED_ON[r.id] ?? FIRST_DAY,
+  image: `/images/vinyl/${r.id}.webp`,
+}))
 
 // Records being hunted for — the carousel at the top of /vinyl.
 // `disc` picks a record style for the tile (see .vinyl-disc-* in main.css); `url` is where it is sold.

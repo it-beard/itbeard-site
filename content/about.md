@@ -209,6 +209,27 @@ headings:
   achievements: { be: Дасягненьні, en: Achievements }
   interviews: { be: Інтэрв'ю, en: Interviews }
 achievements:
+  - period: { be: "2—4 кастрычніка 2026", en: "Oct 2—4, 2026" }
+    title:
+      be: Суарганізатар фестывалю «Прадмова» 2026
+      en: Co-organizer of the Pradmova 2026 festival
+    org: { be: "фестываль беларускай інтэлектуальнай кнігі, Вроцлаў", en: "the Belarusian intellectual book festival, Wrocław" }
+    link: https://pradmova.eu/
+    description:
+      be: |
+        2—4 кастрычніка 2026 году ў Вроцлаве, у гістарычных сьценах Ossolineum, прайшоў фестываль беларускай інтэлектуальнай кнігі «Прадмова» з тэмай «Чужая Бацькаўшчына»: больш за трыццаць сустрэч, дыскусій, прэзентацый і канцэртаў за тры дні. Я быў суарганізатарам і адказваў за ўсю тэхнічную частку — трансляцыі, гук, сьвятло, запісы і ўсё, што ўключаецца ў разетку. Пра тое, як гэта было, [расказаў Беларускай службе Польскага радыё](https://www.polskieradio.pl/396/7811/Artykul/3738992,%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D0%B0%D1%8F-%C2%AB%D0%BF%D1%80%D0%B0%D0%B4%D0%BC%D0%BE%D0%B2%D0%B0%C2%BB-%D0%BF%D1%80%D0%B0%D0%B9%D1%88%D0%BB%D0%B0-%D1%9E-%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D1%96%D0%BC-%D1%83%D1%80%D0%BE%D1%86%D0%BB%D0%B0%D0%B2%D0%B5-%D1%84%D0%BE%D1%82%D0%B0).
+      en: |
+        On October 2—4, 2026, Wrocław hosted Pradmova, the festival of Belarusian intellectual books, within the historic walls of the Ossolineum. This year's theme was «Чужая Бацькаўшчына» ("A Foreign Homeland"): more than thirty talks, discussions, book launches and concerts in three days. I was a co-organizer in charge of the entire technical side — live streams, sound, lighting, recordings and everything that plugs into a socket. I told Polskie Radio's Belarusian Service [how it went](https://www.polskieradio.pl/396/7811/Artykul/3738992,%D0%B1%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%BA%D0%B0%D1%8F-%C2%AB%D0%BF%D1%80%D0%B0%D0%B4%D0%BC%D0%BE%D0%B2%D0%B0%C2%BB-%D0%BF%D1%80%D0%B0%D0%B9%D1%88%D0%BB%D0%B0-%D1%9E-%D0%BF%D0%BE%D0%BB%D1%8C%D1%81%D0%BA%D1%96%D0%BC-%D1%83%D1%80%D0%BE%D1%86%D0%BB%D0%B0%D0%B2%D0%B5-%D1%84%D0%BE%D1%82%D0%B0).
+  - period: { be: "24—25 верасьня 2026", en: "Sep 24—25, 2026" }
+    title:
+      be: Выступіў з дакладам пра беларускую мову ў ШІ
+      en: Gave a talk on the Belarusian language in AI
+    org: { be: "канферэнцыя «Канструкты моўнага будаўніцтва», Вільня", en: "the \"Constructs of Language Building\" conference, Vilnius" }
+    description:
+      be: |
+        24—25 верасьня 2026 году ў Вільні, у Літоўскім дзяржаўным гістарычным архіве (Mindaugo g. 8), прайшла міжнародная навуковая канферэнцыя «Канструкты моўнага будаўніцтва: да стагоддзя Акадэмічнай канферэнцыі 1926 года», прысьвечаная стагодзьдзю мінскай Акадэмічнай канферэнцыі па рэформе беларускага правапісу. Я выступіў з дакладам [«Беларуская мова ў эпоху ШІ»](https://itbeard.github.io/bel-conf-preso-2026/): пра тое, як моўныя мадэлі разумеюць беларускую, што распрацоўшчыкі ўжо робяць для яе і дзе ім патрэбны досьвед лінгвістаў.
+      en: |
+        On September 24—25, 2026, the Lithuanian State Historical Archives in Vilnius (Mindaugo g. 8) hosted the international academic conference "Constructs of Language Building: Towards the Centenary of the 1926 Academic Conference", marking a hundred years since the Minsk Academic Conference on the reform of Belarusian orthography. I gave the talk ["Belarusian in the Age of AI"](https://itbeard.github.io/bel-conf-preso-2026/): how language models understand Belarusian, what developers are already doing for the language, and where they need the expertise of linguists.
   - period: { be: "20 чэрвеня — 12 ліпеня 2026", en: "Jun 20 — Jul 12, 2026" }
     title:
       be: Удзельнік IVLP

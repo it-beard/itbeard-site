@@ -143,6 +143,15 @@ export const WANTED = [
     isbn: '978-985-6994-29-9',
     url: 'https://www.goodreads.com/book/show/31833295',
   },
+  {
+    id: 'shtern-kovcheg-47-libra',
+    title: 'Ковчег 47 Либра',
+    year: 2016,
+    pages: 344,
+    printRun: 2000,
+    isbn: '978-5-89513-395-8',
+    url: 'https://fantlab.ru/edition223759',
+  },
 ].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
 
 // Home library. The source keeps the books grouped the way they stand at home;

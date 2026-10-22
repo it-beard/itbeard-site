@@ -570,6 +570,9 @@ details:
     author: { be: Станіслаў Лем, en: Stanisław Lem }
     translator: { be: Анатоль Бутэвіч, en: Anatol Butevich }
     publisher: { be: '«Літаратура і Мастацтва», Мінск', en: 'Litaratura i Mastatstva, Minsk' }
+  shtern-kovcheg-47-libra:
+    author: { be: Барыс Штэрн, en: Boris Stern }
+    publisher: { be: '«Троицкий вариант», Троіцк', en: 'Troitsky Variant, Troitsk' }
 ---
 
 <!-- be -->
@@ -648,6 +651,10 @@ details:
 
 Навукоўцы на караблі «Непераможны» ляцяць на планету Рэгіс, каб высьветліць, дзе, чаму і як зьнікла каманда зоркалёта «Кандор». Апроч рамана, у кнізе аповесьць «Сябар» і тры апавяданьні, сярод іх «Сто трыццаць сем секунд» і «Казка пра вылічальную машыну, якая з цмокам змагалася». З польскай пераклаў Анатоль Бутэвіч, пасьляслоўе Віктара Язневіча. Кніга выйшла ў серыі «Бібліятэка сусветнай літаратуры» накладам 1600 асобнікаў. «Зорныя дзённікі» Лема на паліцы ўжо стаяць.
 
+## Ковчег 47 Либра {#shtern-kovcheg-47-libra}
+
+Цьвёрдая навуковая фантастыка ад астрафізіка Барыса Штэрна, галоўнага рэдактара газеты «Троицкий вариант — Наука». Беспілотны каўчэг тысячы гадоў ляціць праз пустэчу да экзапланеты 47 Лібра b, несучы замарожаныя эмбрыёны, інкубатары, робатаў-зборшчыкаў і штучны інтэлект: спачатку ён мусіць тэрафармаваць планету і запусьціць на ёй паскораную эвалюцыю біясферы, а потым вырасьціць першых людзей. Праект, вынікаў якога не ўбачыць ніхто з тых, хто яго пачынаў, — і пытаньне, ці прыжывецца Чалавецтва-2 і што стане з розумам у гэтым кутку Сусьвету. Першае выданьне выйшла ў 2016 годзе ў выдавецтве пры той самай газеце накладам 2000 асобнікаў: цьвёрдая вокладка са здымкамі NASA, афармленьне Максіма Барысава.
+
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -725,6 +732,10 @@ A fantastic novella about the mysterious underground passages beneath old Polats
 ## The Invincible {#lem-nieperamozny}
 
 Scientists aboard the ship Invincible fly to the planet Regis to find out where, why and how the crew of the starship Condor vanished. Besides the novel, the book holds the novella "The Friend" and three short stories, among them "One Hundred and Thirty-Seven Seconds" and "Tale of the Computing Machine That Fought a Dragon". Translated from Polish by Anatol Butevich, with an afterword by Viktar Yaznevich. Published in the «World Literature Library» series in a run of 1,600 copies. Lem's «Zornyja dzionniki» (The Star Diaries) already stand on my shelf.
+
+## The Ark 47 Librae {#shtern-kovcheg-47-libra}
+
+Hard science fiction by the astrophysicist Boris Stern, editor-in-chief of the science newspaper «Troitsky Variant — Nauka». An unmanned ark flies through the void for thousands of years towards the exoplanet 47 Librae b, carrying frozen embryos, incubators, robot builders and an artificial intelligence: first it must terraform the planet and set off an accelerated evolution of its biosphere, then raise the first humans. A project whose outcome none of those who started it will live to see — and the question of whether Humanity-2 will take root, and what becomes of reason in that corner of the universe. The first edition came out in 2016 from the newspaper's own press in a run of 2,000 copies: hardcover with NASA photographs, designed by Maxim Borisov.
 
 # My library {#library}
 

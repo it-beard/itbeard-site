@@ -15,15 +15,15 @@
     "marked": "^15.0.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.18.3"
+    "react-router-dom": "^7.18.4"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^7.0.1",
     "@testing-library/react": "^16.3.3",
     "@testing-library/user-event": "^14.6.7",
     "@vitejs/plugin-react": "^4.3.4",
-    "jsdom": "^30.1.0",
-    "vite": "^6.2.0",
-    "vitest": "^5.0.1"
+    "jsdom": "^30.1.2",
+    "vite": "^6.4.4",
+    "vitest": "^5.0.3"
   }
 }

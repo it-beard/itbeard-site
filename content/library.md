@@ -470,7 +470,7 @@ title: { be: Бібліятэка, en: Library }
 
 Акадэмічны слоўнік Інстытуту мовазнаўства АН БССР пад рэдакцыяй Якуба Коласа, Кандрата Крапівы і Пятра Глебкі — каля 86 000 словаў. Выдадзены ў Маскве ў 1953 годзе; на вокладцы назва стаіць па-расейску.
 
-## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
+## Традыцыйны светалад беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietalad-1}
 
 Першая зь пяці ілюстраваных кніг Інстытуту філасофіі НАН Беларусі пра традыцыйную карціну сьвету беларусаў: паходжаньне і будова Сусьвету, прастора чалавечай супольнасьці, кругабег часу. Уклалі і адрэдагавалі І. Дубянецкая і С. Санько, тэксты напісалі Т. Валодзіна, У. Лобач, С. Санько і Дз. Скварчэўскі, мастак — М. Храпавіцкі. Тэкст ідзе на трох мовах — беларускай, расейскай і ангельскай.
 
@@ -581,6 +581,26 @@ title: { be: Бібліятэка, en: Library }
 ## Беларуская нацыянальная ідэя {#lukasuk-bielaruskaja-nacyjanalnaja-ideja}
 
 «Што такое Беларусь і хто такія беларусы» — пытаньні, зь якімі журналіст Зьміцер Лукашук і філосаф Максім Гаруноў ад ліпеня 2018 да жніўня 2020 году сустракалі гасьцей праграмы «Ідэя X» на Еўрарадыё. Кніга зьбірае 84 кароткія інтэрв'ю з людзьмі культуры, бізнэсу, палітыкі і навукі — сярод іх Станіслаў Шушкевіч, першы кіраўнік незалежнай Беларусі. Мова кожнага суразмоўцы захаваная, як гучала ў эфіры, таму беларуская тут часта перамешаная з расейскай. Першае выданьне (Мінск, 2020, каля 600 старонак) чытачы разабралі за тры месяцы, а ў 2021 годзе ўлады прызналі кнігу «экстрэмісцкай», і за яе захоўваньне ў Беларусі пагражае штраф. Гэтае другое, выпраўленае і дапоўненае выданьне вялікага фармату, з партрэтамі гасьцей, выйшла ў Варшаве ў 2022 годзе, калі большасьць герояў ужо жыла ў вымушанай эміграцыі, Аляксандар Фядута і Ўладзімір Мацкевіч сядзелі за кратамі, а Шушкевіча ня стала. Далей былі «Беларуская нацыянальная ідэя на маршы» (2022) і «Беларуская нацыянальная ідэя ў выгнаньні і на вайне» (2023).
+
+## Традыцыйны светалад беларусаў. Кніга 2. Сфера сакральнага. Народная тэалогія {#tradycyjny-svietalad-2}
+
+Другая зь пяці ілюстраваных кніг Інстытуту філасофіі НАН Беларусі пра традыцыйную карціну сьвету беларусаў — пра сферу сакральнага і народную тэалогію: як традыцыйная культура ўяўляе шматмерны сакральны вымер чалавечага досьведу, Бога і боскі сьвет, адносіны паміж Богам і чалавекам, элементы веры і культу. Уклалі і адрэдагавалі І. Дубянецкая і С. Санько, тэксты напісалі Т. Валодзіна, І. Дубянецкая і С. Санько пры ўдзеле С. Карасёвай і А. Крупадзеры, мастак — М. Храпавіцкі. Тэкст ідзе паралельна на трох мовах — беларускай, расейскай і ангельскай; ідэя праекту належыць старшыні Прэзідыума НАН акадэміку У. Гусакову. На вокладцы — два анёлы з трубамі абапал крыжа ў сонечным зьзяньні.
+
+## Традыцыйны светалад беларусаў. Кніга 3. Чалавек {#tradycyjny-svietalad-3}
+
+Трэцяя кніга серыі Інстытуту філасофіі НАН Беларусі пра традыцыйны сьветапогляд беларусаў — пра чалавека: як традыцыйная культура бачыць яго фізічны і духоўны сьвет, жыцьцёвы шлях і адносіны паміж жанчынай і мужчынам. Тэксты напісалі Т. Валодзіна, І. Дубянецкая, М. Завадскі, І. Новік, А. Падалінская, С. Санько і Дз. Скварчэўскі; уклалі і адрэдагавалі І. Дубянецкая і С. Санько, ілюстрацыі М. Храпавіцкага, пераклады на расейскую і ангельскую — І. Дубянецкай і А. Крупадзеры, таму кожны разварот чытаецца на трох мовах. На вокладцы — чалавек з сонцам і месяцам у руках, між катом і пеўнем.
+
+## Традыцыйны светалад беларусаў. Кніга 4. Грамадства {#tradycyjny-svietalad-4}
+
+Чацьвёртая кніга серыі — пра грамадства: як традыцыйная культура бачыць сям'ю і супольнасьць, іх будову і тое, як яны дзейнічаюць у розных жыцьцёвых сітуацыях. Тэксты напісалі Т. Валодзіна, І. Дубянецкая, М. Завадскі, У. Лобач, С. Санько і Дз. Скварчэўскі; укладаньне і агульная рэдакцыя І. Дубянецкай і С. Санько, мастак — М. Храпавіцкі, тэкст паралельна па-беларуску, па-расейску і па-ангельску. Серыю задумаў старшыня Прэзідыума НАН акадэмік У. Гусакоў; пятая, заключная кніга — «Каштоўнасці» — выйшла ў кастрычніку 2026 году. На вокладцы — шалі, на якіх узважваюцца месяц і сонца.
+
+## Уладзімір Караткевіч. Энцыклапедыя {#karatkievic-encyklapiedyja}
+
+Персанальная энцыклапедыя аднаго пісьменьніка: каля тысячы артыкулаў пра жыцьцё і творчасьць Уладзіміра Караткевіча — творы і іх герояў, мастацкія сродкі, якімі ён карыстаўся, людзей, зь якімі сябраваў і працаваў, дасьледчыкаў ягонае спадчыны. Фотаздымкі ўзятыя з фондаў Нацыянальнай бібліятэкі, музея Караткевіча ў Оршы, Беларускага дзяржаўнага архіва-музея літаратуры і мастацтва, універсітэтаў і музеяў па ўсёй краіне. Рэдакцыйную калегію ўзначаліла В. Ваніна; кніга выйшла ў лістападзе 2020 году, да 90-годзьдзя з дня нараджэньня пісьменьніка, па заказе і пры фінансавай падтрымцы Міністэрства інфармацыі. Вокладка — сіняе мармуровае палатно з партрэтам у залатой рамцы і карычневы карэньчык пад скуру з залатым цісьненьнем.
+
+## Вядзьмар, які рабіўся ваўком {#bryl-viadzmar-jaki-rabiusia-vaukom}
+
+Беларускія чарадзейныя казкі і паданьні з розных куткоў краіны, запісаныя ў канцы XIX — пачатку XX стагодзьдзя зьбіральнікамі накшталт Паўла Шэйна, Еўдакіма Раманава і Міхала Федароўскага, а цяпер нанова адабраныя і апрацаваныя паэтам і перакладчыкам Антонам Францішкам Брылём — ашчадна да арыгіналаў і разам з тым зразумела самым малым слухачам. Сярод герояў — лясун, русалка, цмок, балотныя паны, Пакацігарошак і вядзьмар з загалоўнай казкі, які ўмеў рабіцца ваўком. Упершыню зборнік з трыццаці казак выйшаў у 2020 годзе ў выдавецтве «Янушкевіч» накладам 2000 асобнікаў, а графіка Валерыя Славука да яго атрымала прэмію Цёткі за найлепшае мастацкае афармленьне. Выданьне «Папуры» 2026 году — перавыданьне з дапрацаванай паліграфіяй і адной новай казкай «Адкуль бяруцца кнігі», на якую ўкладальнік натрапіў ужо пасьля першага выхаду.
 
 <!-- en -->
 
@@ -1050,7 +1070,7 @@ The sixth, revised edition: 410 historical portraits of those who, since the day
 
 The academic Russian–Belarusian dictionary of the Institute of Linguistics, edited by Yakub Kolas, Kandrat Krapiva and Piatro Hlebka — about 86,000 words. Printed in Moscow in 1953; the title on the cover is in Russian.
 
-## Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietapohlad-1}
+## Традыцыйны светалад беларусаў. Кніга 1. Касмалогія {#tradycyjny-svietalad-1}
 
 The first of five illustrated books from the Institute of Philosophy of the National Academy of Sciences on the traditional Belarusian picture of the world: the origin and structure of the Universe, the space of the human community, the cycle of time. Compiled and edited by I. Dubianetskaya and S. Sanko, with texts by T. Valodzina, U. Lobach, S. Sanko and Dz. Skvarcheuski and art by M. Khrapavitski. The text runs in three languages — Belarusian, Russian and English.
 
@@ -1161,3 +1181,23 @@ Twelve quizzes of 33 questions each — nearly 400 questions and answers about B
 ## Беларуская нацыянальная ідэя {#lukasuk-bielaruskaja-nacyjanalnaja-ideja}
 
 “What is Belarus and who are the Belarusians” — the questions that journalist Źmicier Lukašuk and philosopher Maksim Harunoŭ put to the guests of Euroradio's programme “Idea X” from July 2018 to August 2020. The book gathers 84 short interviews with people from culture, business, politics and science, among them Stanislaŭ Šuškievič, the first leader of independent Belarus. Everyone's speech is kept as it sounded on air, so Belarusian often mixes with Russian. The first edition (Minsk, 2020, some 600 pages) sold out within three months, and in 2021 the authorities declared the book “extremist”, so keeping a copy in Belarus is punishable by a fine. This second, corrected and expanded edition — large format, with portraits of the guests — came out in Warsaw in 2022, when most of its heroes already lived in forced emigration, Aliaksandr Fiaduta and Uladzimir Mackievič were behind bars, and Šuškievič had died. Two sequels followed: “Belaruskaja nacyjanalnaja ideja na maršy” (2022) and “Belaruskaja nacyjanalnaja ideja ŭ vyhnańni i na vajnie” (2023).
+
+## Традыцыйны светалад беларусаў. Кніга 2. Сфера сакральнага. Народная тэалогія {#tradycyjny-svietalad-2}
+
+The second of five illustrated books from the Institute of Philosophy of the National Academy of Sciences on the traditional Belarusian picture of the world, this one on the sphere of the sacred and folk theology: how traditional culture imagines the many-layered sacred dimension of human experience, God and the divine world, the relations between God and people, the elements of faith and worship. Compiled and edited by I. Dubianetskaya and S. Sanko, with texts by T. Valodzina, I. Dubianetskaya and S. Sanko joined by S. Karasiova and A. Krupadziera, and art by M. Khrapavitski. The text runs in parallel in Belarusian, Russian and English; the series was conceived by academician U. Husakou, chairman of the Academy's presidium. On the cover, two angels with trumpets flank a cross in a sunburst.
+
+## Традыцыйны светалад беларусаў. Кніга 3. Чалавек {#tradycyjny-svietalad-3}
+
+The third book of the Institute of Philosophy's series on the traditional Belarusian worldview turns to the human being: how traditional culture sees a person's physical and spiritual world, the path of a life, and the relations between woman and man. Texts by T. Valodzina, I. Dubianetskaya, M. Zavadski, I. Novik, A. Padalinskaya, S. Sanko and Dz. Skvarcheuski; compiled and edited by I. Dubianetskaya and S. Sanko, illustrated by M. Khrapavitski, translated into Russian and English by I. Dubianetskaya and A. Krupadziera, so every spread reads in three languages. On the cover a man holds the sun and the moon, between a cat and a rooster.
+
+## Традыцыйны светалад беларусаў. Кніга 4. Грамадства {#tradycyjny-svietalad-4}
+
+The fourth book is about society: how traditional culture sees the family and the community, their structure, and the way they work in the different situations of life. Texts by T. Valodzina, I. Dubianetskaya, M. Zavadski, U. Lobach, S. Sanko and Dz. Skvarcheuski; compiled and edited by I. Dubianetskaya and S. Sanko, art by M. Khrapavitski, text in parallel Belarusian, Russian and English. The series was conceived by academician U. Husakou, chairman of the Academy's presidium; the fifth and final book, “Kashtounastsi” (Values), came out in October 2026. On the cover, a pair of scales weighs the moon against the sun.
+
+## Уладзімір Караткевіч. Энцыклапедыя {#karatkievic-encyklapiedyja}
+
+A one-writer encyclopedia: about a thousand articles on the life and work of Uladzimir Karatkievich — his works and their heroes, the devices of his craft, the people he was close to and worked with, and the scholars of his legacy. The photographs come from the National Library, the Karatkievich museum in Orsha, the Belarusian State Archive-Museum of Literature and Art, and universities and museums across the country. The editorial board was headed by V. Vanina; the book came out in November 2020, for the 90th anniversary of the writer's birth, commissioned and funded by the Ministry of Information. The cover is blue marbled cloth with a portrait in a gold frame and a brown leather-look spine band with gilt tooling.
+
+## Вядзьмар, які рабіўся ваўком {#bryl-viadzmar-jaki-rabiusia-vaukom}
+
+Belarusian tales of magic and legends from every corner of the country, recorded in the late 19th and early 20th centuries by collectors such as Pavel Shein, Eudakim Ramanau and Michał Federowski, newly selected and retold by the poet and translator Anton Francišak Bryl — sparingly, close to the originals, yet so that the youngest listeners can follow. Among the characters are a wood spirit, a rusalka, a dragon, the bog lords, Pakatsiharoshak and the sorcerer of the title tale, who could turn himself into a wolf. The collection of thirty tales first appeared in 2020 from the Januškievič publishing house in a run of 2,000 copies, and Valery Slauk's drawings for it won the Ciotka Prize for best book design. This 2026 edition from Papury is a reprint with improved printing and one new tale, “Where Books Come From”, which the compiler came across only after the first edition was out.

@@ -174,7 +174,7 @@ const LIBRARY_FACTS = {
   'padlasskaje-na-uik-end': { publisher: 'Маршалкоўская Управа Падляшскага ваяводства', city: 'Беласток', translator: 'Міраслава Лукша', isbn: '978-83-962873-5-9', cover: true },
   'arlou-imiony-svabody-1': { year: 2026, publisher: 'Uladzimir Arlou', city: 'Беласток', isbn: '978-83-980428-1-9' , pages: 448, cover: true },
   'ruska-bielaruski-slounik-1953': { year: 1953, publisher: 'Дзяржаўнае выдавецтва замежных і нацыянальных слоўнікаў', city: 'Масква', cover: true },
-  'tradycyjny-svietapohlad-1': { year: 2023, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-2972-6', pages: 87, cover: true },
+  'tradycyjny-svietalad-1': { year: 2023, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-2972-6', pages: 87, cover: true },
   'buraukin-nahavarycca-z-zorkami': { year: 2026, publisher: 'Мон літара', city: 'Мінск', isbn: '978-985-7278-56-5', pages: 142, cover: true },
   'pirs-ja-vychodzu': { year: 2021, publisher: 'Pearce', city: 'Варшава', isbn: '978-83-960861-1-2', pages: 209, cover: true },
   'reynolds-house-of-suns': { year: 2022, publisher: 'Азбука', city: 'Санкт-Петербург', translator: 'Алла Ахмерова, Кирилл Плешков', isbn: '978-5-389-20484-3', pages: 576, cover: true },
@@ -311,6 +311,11 @@ const LIBRARY_FACTS = {
   'nosau-pa-za-miezami-mroi': { year: 2025, publisher: 'RozUM Media', translator: 'Пётар Уманскі', isbn: '978-1-326-08274-1', pages: 214, cover: true },
   'sieviaryniec-sol-ziamli': { year: 2026, publisher: 'выданьне аўтара', city: 'Вільня — Варшава', isbn: '978-83-980074-6-7', cover: true },
   'lukasuk-bielaruskaja-nacyjanalnaja-ideja': { year: 2022, publisher: 'Studio Magenta', city: 'Варшава', isbn: '978-83-963661-1-5', pages: 400, cover: true },
+  'tradycyjny-svietalad-2': { year: 2023, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3059-3', pages: 92, cover: true },
+  'tradycyjny-svietalad-3': { year: 2024, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3127-9', pages: 97, cover: true },
+  'tradycyjny-svietalad-4': { year: 2025, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3295-5', pages: 95, cover: true },
+  'karatkievic-encyklapiedyja': { year: 2020, publisher: 'Беларуская Энцыклапедыя імя Петруся Броўкі', city: 'Мінск', isbn: '978-985-11-1257-5', pages: 432, cover: true },
+  'bryl-viadzmar-jaki-rabiusia-vaukom': { year: 2026, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-6324-7', pages: 120, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -321,7 +326,10 @@ const ALSO_IN = {
   'harady-bielarusi-na-pastoukach': ['en'],
   'irdorath-bestiarium': ['en'],
   'hraviury-skaryny': ['ru'],
-  'tradycyjny-svietapohlad-1': ['ru', 'en'],
+  'tradycyjny-svietalad-1': ['ru', 'en'],
+  'tradycyjny-svietalad-2': ['ru', 'en'],
+  'tradycyjny-svietalad-3': ['ru', 'en'],
+  'tradycyjny-svietalad-4': ['ru', 'en'],
   'niaklajeu-sam': ['be'],
 }
 
@@ -338,7 +346,7 @@ const ADDED = {
     'padlasskaje-na-uik-end',
     'arlou-imiony-svabody-1',
     'ruska-bielaruski-slounik-1953',
-    'tradycyjny-svietapohlad-1',
+    'tradycyjny-svietalad-1',
     'buraukin-nahavarycca-z-zorkami',
     'pirs-ja-vychodzu',
     'sciezkami-mifau',
@@ -369,6 +377,13 @@ const ADDED = {
   ],
   '2026-10-12': ['scur-razjusanasc-i-lubou', 'nosau-pa-za-miezami-mroi', 'sieviaryniec-sol-ziamli'],
   '2026-10-16': ['lukasuk-bielaruskaja-nacyjanalnaja-ideja'],
+  '2026-10-22': [
+    'tradycyjny-svietalad-2',
+    'tradycyjny-svietalad-3',
+    'tradycyjny-svietalad-4',
+    'karatkievic-encyklapiedyja',
+    'bryl-viadzmar-jaki-rabiusia-vaukom',
+  ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -395,6 +410,7 @@ const SERIES = {
   'Беларускія нячысцікі': ['#121212', '#e2b93b'],
   'Патаемная спадчына': ['#3a2f7a', '#e7c25a'],
   'Вялікае Княства Літоўскае. Энцыклапедыя': ['#cfc4b6', '#5a2f2f'],
+  'Традыцыйны светалад беларусаў': ['#2b3160', '#e3a93c'],
 }
 
 const volume = (id, author, title, lang, tags, series, part, size = 2) => ({
@@ -544,7 +560,7 @@ const BOOKS = [
   book('padlasskaje-na-uik-end', '', 'Падляшскае на ўік-энд', 'be', 'nonfic', '#2a2f33', '#f08a3c', 1),
   book('arlou-imiony-svabody-1', 'Уладзімір Арлоў', 'Імёны Свабоды. 1', 'be', 'history', '#1f5a5f', '#f0d23a', 3),
   book('ruska-bielaruski-slounik-1953', '', 'Руска-беларускі слоўнік', 'be', 'lang', '#4a3a30', '#d9c08a', 3),
-  book('tradycyjny-svietapohlad-1', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светапогляд беларусаў. Кніга 1. Касмалогія', 'be', 'folk', '#2b3160', '#e3a93c'),
+  volume('tradycyjny-svietalad-1', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 1. Касмалогія', 'be', 'folk', 'Традыцыйны светалад беларусаў', 1),
   book('buraukin-nahavarycca-z-zorkami', 'Генадзь Бураўкін', 'Нагаварыцца з зоркамі', 'be', 'poetry', '#f4f4f4', '#222222', 1),
   book('pirs-ja-vychodzu', 'Л. Пірс', 'Я выходжу', 'be', 'history', '#f7f7f7', '#c8252f'),
   book('sciezkami-mifau', '', 'Сцежкамі міфаў', 'be', 'folk', '#161a3a', '#e8a33a'),
@@ -576,6 +592,12 @@ const BOOKS = [
   book('sieviaryniec-sol-ziamli', 'Павел Севярынец', 'Соль зямлі', 'be', 'nonfic', '#f2f1ec', '#1c1c1c'),
   // added from the owner's photos, 2026-10-16
   book('lukasuk-bielaruskaja-nacyjanalnaja-ideja', 'Зміцер Лукашук, Максім Гаруноў', 'Беларуская нацыянальная ідэя', 'be', 'nonfic', '#f3f3f5', '#6f6f7d', 3),
+  // added from the owner's photos, 2026-10-22
+  volume('tradycyjny-svietalad-2', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 2. Сфера сакральнага. Народная тэалогія', 'be', 'folk', 'Традыцыйны светалад беларусаў', 2),
+  volume('tradycyjny-svietalad-3', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 3. Чалавек', 'be', 'folk', 'Традыцыйны светалад беларусаў', 3),
+  volume('tradycyjny-svietalad-4', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 4. Грамадства', 'be', 'folk', 'Традыцыйны светалад беларусаў', 4),
+  book('karatkievic-encyklapiedyja', '', 'Уладзімір Караткевіч. Энцыклапедыя', 'be', 'nonfic', '#1f4f7c', '#e2c377', 3),
+  book('bryl-viadzmar-jaki-rabiusia-vaukom', 'Антон Францішак Брыль', 'Вядзьмар, які рабіўся ваўком', 'be', 'folk', '#141414', '#c9a56b'),
 ]
 
 // Default order of the library: by language, and within a language the series first

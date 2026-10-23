@@ -316,6 +316,7 @@ const LIBRARY_FACTS = {
   'tradycyjny-svietalad-4': { year: 2025, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3295-5', pages: 95, cover: true },
   'karatkievic-encyklapiedyja': { year: 2020, publisher: 'Беларуская Энцыклапедыя імя Петруся Броўкі', city: 'Мінск', isbn: '978-985-11-1257-5', pages: 432, cover: true },
   'bryl-viadzmar-jaki-rabiusia-vaukom': { year: 2026, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-6324-7', pages: 120, cover: true },
+  'baranouski-volumen-1': { year: 2025, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7334-47-6', pages: 53, printRun: 300, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -384,6 +385,7 @@ const ADDED = {
     'karatkievic-encyklapiedyja',
     'bryl-viadzmar-jaki-rabiusia-vaukom',
   ],
+  '2026-10-24': ['baranouski-volumen-1'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -598,6 +600,8 @@ const BOOKS = [
   volume('tradycyjny-svietalad-4', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 4. Грамадства', 'be', 'folk', 'Традыцыйны светалад беларусаў', 4),
   book('karatkievic-encyklapiedyja', '', 'Уладзімір Караткевіч. Энцыклапедыя', 'be', 'nonfic', '#1f4f7c', '#e2c377', 3),
   book('bryl-viadzmar-jaki-rabiusia-vaukom', 'Антон Францішак Брыль', 'Вядзьмар, які рабіўся ваўком', 'be', 'folk', '#141414', '#c9a56b'),
+  // added from the owner's photos, 2026-10-24
+  book('baranouski-volumen-1', 'Міхал Бараноўскі', 'Volumen.1', 'be', 'poetry', '#161616', '#f2f2f2', 1),
 ]
 
 // Default order of the library: by language, and within a language the series first

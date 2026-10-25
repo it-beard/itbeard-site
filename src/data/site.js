@@ -87,6 +87,16 @@ export const ARCHIVE_PROJECTS = [
     types: ['video'],
   },
   {
+    id: 'slam-timer',
+    image: '/images/slam-timer-logo.svg',
+    started: 2026,
+    closed: 2026,
+    hideDuration: true,
+    url: 'https://timer.itbeard.com/',
+    lang: ['be', 'en'],
+    types: ['code'],
+  },
+  {
     id: 'alias',
     image: '/images/alias-bel-logo.svg',
     started: 2026,

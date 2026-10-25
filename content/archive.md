@@ -75,6 +75,12 @@ filters:
 
 Код адкрыты на GitHub; абнаўляў пад свае патрэбы, пакуль карыстаўся.
 
+## Таймер для сцэны {#slam-timer}
+
+**«Таймер для сцэны»** — паўнаэкранны таймер для паэтычных слэмаў, адкрытых мікрафонаў, пітчаў, дэбатаў і любых выступаў з рэгламентам. Вялікія лічбы, якія відаць з апошняга раду, арнамент у стылі вышыванкі, папярэджаньні перад канцом і сігнал, калі час скончыўся.
+
+Ёсьць этапы (выступ 3:00, журы 1:00), рэжым перабору часу, секундамер, асобны экран для залы без кнопак і спасылка, якая адкрывае таймер з гатовымі наладамі на любой прыладзе. Працуе без інтэрнэту і ставіцца як дадатак; усё на чыстых HTML, CSS і JS, без залежнасьцяў і зборкі. Код адкрыты на GitHub — распрацоўка завершаная.
+
 ## Аліяс па-беларуску {#alias}
 
 **«Аліяс па-беларуску»** — вэб-вэрсія гульні «Аліяс»: адзін гулец тлумачыць слова, каманда адгадвае. 886 беларускіх словаў на трох узроўнях складанасьці, ад 1 да 5 камандаў, кірыліца або лацінка.
@@ -246,6 +252,12 @@ The music is available on all major music platforms, and this card leads to the 
 **Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
 
 The code is open on GitHub; I kept updating it for my own needs while I used it.
+
+## Stage Timer {#slam-timer}
+
+**«Stage Timer»** — a fullscreen timer for poetry slams, open mics, pitch sessions, debates and any stage performance with a time limit. Big digits readable from the back row, an ornament in the style of Belarusian embroidery, warnings before the end and a signal when time is up.
+
+There are stages (a 3:00 performance, 1:00 for the jury), an overtime mode, a stopwatch, a separate button-free screen for the hall and a link that opens the timer with the same settings on any device. It works offline and installs as an app; plain HTML, CSS and JS, no dependencies and no build step. The code is open on GitHub — development is finished.
 
 ## Alias in Belarusian {#alias}
 

@@ -128,8 +128,8 @@ describe('«Паліцы» in the nav', () => {
   })
 })
 
-// The pages used to be unlisted; now they are public and have to be discoverable everywhere.
-describe.each(['books', 'vinyl'])('/%s is a public page', (route) => {
+// Public pages have to be discoverable everywhere (books and vinyl used to be unlisted).
+describe.each(['books', 'vinyl', 'sites'])('/%s is a public page', (route) => {
   it('is in the sitemap, llms.txt and the noscript fallback', () => {
     for (const file of ['public/sitemap.xml', 'public/llms.txt', 'index.html']) {
       expect(read(file), `${file} does not mention /${route}`).toMatch(new RegExp(`/${route}\\b`))
@@ -142,6 +142,6 @@ describe.each(['books', 'vinyl'])('/%s is a public page', (route) => {
   })
 
   it('no longer asks search engines to stay away', () => {
-    expect(read('src/pages/Books.jsx') + read('src/pages/Vinyl.jsx')).not.toMatch(/noindex/i)
+    expect(read(`src/pages/${route[0].toUpperCase()}${route.slice(1)}.jsx`)).not.toMatch(/noindex/i)
   })
 })

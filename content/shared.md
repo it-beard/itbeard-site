@@ -71,6 +71,7 @@ theme:
 footer:
   contacts: { be: Мае кантакты, en: My contacts }
   support: { be: Падзякаваць, en: Say thanks }
+  sites: { be: Мае сайты на itbeard.com, en: My sites on itbeard.com }
   github:
     be: "Код гэтага сайта на [GitHub](https://github.com/it-beard/itbeard-site)"
     en: "The code of this site on [GitHub](https://github.com/it-beard/itbeard-site)"

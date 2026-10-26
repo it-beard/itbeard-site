@@ -8,6 +8,7 @@ import Support from './pages/Support'
 import Contacts from './pages/Contacts'
 import Vinyl from './pages/Vinyl'
 import Books from './pages/Books'
+import Sites from './pages/Sites'
 import NotFound from './pages/NotFound'
 import Redirector from './pages/Redirector'
 import { MEDIAKIT_URL } from './data/site'
@@ -28,6 +29,7 @@ export default function App() {
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/vinyl" element={<Vinyl />} />
             <Route path="/books" element={<Books />} />
+            <Route path="/sites" element={<Sites />} />
             <Route path="/beard-news" element={<Navigate to="/archive" replace />} />
             <Route path="/mediakit" element={<Redirector to={MEDIAKIT_URL} />} />
             <Route path="/s/:key" element={<Redirector />} />

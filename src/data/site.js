@@ -316,6 +316,15 @@ export const ARCHIVE_PROJECTS = [
   },
 ]
 
+// Everything that lives on an itbeard.com subdomain (timer.itbeard.com, …): the /sites
+// page lists it. A project gets there just by having such a `url` above; `page`/`section`
+// say where its card text lives, `card` is the address of that full card.
+const onItbeardDomain = (p) => Boolean(p.url) && /\.itbeard\.com$/.test(new URL(p.url).hostname)
+export const SITES = [
+  ...PROJECTS.map((p) => ({ ...p, page: 'index', section: 'projects', card: '/#projects' })),
+  ...ARCHIVE_PROJECTS.map((p) => ({ ...p, page: 'archive', section: 'intro', card: `/archive#${p.id}` })),
+].filter(onItbeardDomain)
+
 export const CONTACT_LINKS = {
   email: {
     href: 'mailto:iamitbeard@gmail.com',

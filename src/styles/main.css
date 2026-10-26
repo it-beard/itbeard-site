@@ -994,6 +994,43 @@ body.theme-restore #app {
   }
 }
 
+/* ===== Sites on itbeard.com (/sites): short cards, the cover opens the site ===== */
+.card-site .card-head {
+  align-items: flex-start;
+}
+
+/* the subdomain under the title, as quiet as the start-date chip */
+.site-host {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  word-break: break-all;
+}
+
+/* the foot link to the full card lies above the stretched cover link */
+.card-site .card-foot {
+  justify-content: flex-end;
+}
+
+.card-site .card-foot a {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.card-site .card-foot a span {
+  transition: transform 0.25s;
+}
+
+.card-site .card-foot a:hover span {
+  transform: translateX(3px);
+}
+
 /* Legend under the page intro */
 .archive-legend {
   list-style: none;

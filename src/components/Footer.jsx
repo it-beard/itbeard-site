@@ -27,6 +27,9 @@ export default function Footer() {
           </Link>
         </div>
         <div className="footer-small">
+          <p>
+            <Link to="/sites">{footer.sites}</Link>
+          </p>
           <Md tag="p" html={mdInline(footer.github)} />
           {footer.note && <Md tag="p" html={mdInline(footer.note)} />}
         </div>

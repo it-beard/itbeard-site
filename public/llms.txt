@@ -22,6 +22,7 @@ Key facts:
 - [Project archive](https://itbeard.com/archive): finished and dormant projects
 - [My books](https://itbeard.com/books): home library of about 110 books with covers and notes, plus a wanted list of rare Belarusian editions
 - [My vinyl](https://itbeard.com/vinyl): vinyl record collection
+- [Sites on itbeard.com](https://itbeard.com/sites): sites and web apps that live on itbeard.com subdomains, with links to each
 - [Thank me](https://itbeard.com/support): ways to say thanks via Buy Me a Coffee, Patreon, Tribute, or cryptocurrency
 - [Contacts](https://itbeard.com/contacts): Telegram, email, Mastodon, LinkedIn, GitHub
 

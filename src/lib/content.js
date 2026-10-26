@@ -1,4 +1,4 @@
-import yaml from 'js-yaml'
+import { loadAll as loadYamlAll } from 'js-yaml'
 import { marked } from 'marked'
 
 export const LANGS = ['be', 'en']
@@ -144,7 +144,9 @@ const pages = {}
 for (const [path, raw] of Object.entries(files)) {
   const name = /([\w-]+)\.md$/.exec(path)[1]
   const fm = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw)
-  const meta = fm ? yaml.load(fm[1]) || {} : {}
+  // js-yaml 5 has no default export and load() throws on an empty or comment-only
+  // document; loadAll() returns [] for it, which keeps "empty frontmatter = no meta"
+  const meta = fm ? loadYamlAll(fm[1])[0] || {} : {}
   const bodies = splitBodyByLang(fm ? fm[2] : raw)
   pages[name] = {}
   for (const lang of LANGS) {

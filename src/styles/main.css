@@ -460,7 +460,6 @@ body.theme-restore #app {
   text-align: center;
   background: radial-gradient(ellipse at center, rgba(10, 12, 16, 0.66) 0%, rgba(4, 5, 7, 0.88) 100%);
   backdrop-filter: blur(3px);
-  -webkit-backdrop-filter: blur(3px);
   opacity: 0;
   animation: warn-in 0.35s cubic-bezier(0.2, 1.2, 0.4, 1) 0.9s forwards, warn-out 0.4s ease-in 4.2s forwards;
 }
@@ -2427,7 +2426,6 @@ a[href^="lightbox:"] {
   padding: 24px;
   background: rgba(16, 16, 16, 0.82);
   backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
   animation: lightbox-fade 0.22s ease;
   cursor: zoom-out;
 }

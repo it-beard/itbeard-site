@@ -423,6 +423,8 @@ export const REDIRECTS = {
   'mediakit-more': 'https://docs.google.com/document/d/1IYkdSA9oy5wozg7wVaC673yZ2h8VG0jQVsOkjy9bVe0',
   'evo-calendar':
     'https://calendar.google.com/calendar/embed?src=144869480c3c1c44b3063bfe8f4a20168383e25a13c351c0b2d35ef2b4eee971%40group.calendar.google.com&ctz=Europe%2FWarsaw',
+  'evo-calendar-bel':
+    'https://calendar.google.com/calendar/embed?src=300af6791f868b0c579dcd7babaf74b2601e5465c68046c27cfdfe201a35ef49%40group.calendar.google.com&ctz=Europe%2FWarsaw',
   'sponsors-discord': 'https://discord.gg/78qkQJjH2b',
 }
 

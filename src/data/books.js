@@ -152,6 +152,25 @@ export const WANTED = [
     isbn: '978-5-89513-395-8',
     url: 'https://fantlab.ru/edition223759',
   },
+  {
+    id: 'ruiny-bielarusi',
+    title: 'Руіны Беларусі',
+    subtitle: 'Ruins of Belarus. Ruiny Białorusi',
+    year: 2025,
+    pages: 256,
+    isbn: '978-83-66262-30-0',
+    url: 'https://kirma.sh/products/ruiny-belarusi',
+  },
+  {
+    id: 'hlobus-nas-paet-sys',
+    title: 'Наш паэт Сыс',
+    subtitle: 'Словы пра сапраўднага паэта Анатоля Сыса',
+    year: 2025,
+    pages: 106,
+    printRun: 99,
+    isbn: '978-985-7334-84-1',
+    url: 'https://bellit.store/%D0%BD%D0%B0%D1%88-%D0%BF%D0%B0%D1%8D%D1%82-%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C-%D1%81%D1%8B%D1%81-%D0%B0%D0%B4%D0%B0%D0%BC-%D0%B3%D0%BB%D0%BE%D0%B1%D1%83%D1%81/',
+  },
 ].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
 
 // Home library. The source keeps the books grouped the way they stand at home;

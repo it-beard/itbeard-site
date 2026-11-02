@@ -573,6 +573,12 @@ details:
   shtern-kovcheg-47-libra:
     author: { be: Барыс Штэрн, en: Boris Stern }
     publisher: { be: '«Троицкий вариант», Троіцк', en: 'Troitsky Variant, Troitsk' }
+  ruiny-bielarusi:
+    author: { be: Архіў VEHA, en: VEHA archive }
+    publisher: { be: 'Галерэя «Арсенал», Цэнтр беларускай культуры, Беласток', en: 'Arsenał Gallery, Belarusian Culture Centre, Białystok' }
+  hlobus-nas-paet-sys:
+    author: { be: Адам Глобус, en: Adam Hlobus }
+    publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
 ---
 
 <!-- be -->
@@ -655,6 +661,14 @@ details:
 
 Цьвёрдая навуковая фантастыка ад астрафізіка Барыса Штэрна, галоўнага рэдактара газеты «Троицкий вариант — Наука». Беспілотны каўчэг тысячы гадоў ляціць праз пустэчу да экзапланеты 47 Лібра b, несучы замарожаныя эмбрыёны, інкубатары, робатаў-зборшчыкаў і штучны інтэлект: спачатку ён мусіць тэрафармаваць планету і запусьціць на ёй паскораную эвалюцыю біясферы, а потым вырасьціць першых людзей. Праект, вынікаў якога не ўбачыць ніхто з тых, хто яго пачынаў, — і пытаньне, ці прыжывецца Чалавецтва-2 і што стане з розумам у гэтым кутку Сусьвету. Першае выданьне выйшла ў 2016 годзе ў выдавецтве пры той самай газеце накладам 2000 асобнікаў: цьвёрдая вокладка са здымкамі NASA, афармленьне Максіма Барысава.
 
+## Руіны Беларусі {#ruiny-bielarusi}
+
+Фотаальбом архіву VEHA пра лёс беларускіх камяніц — замкаў, ратушаў, сядзібаў, сінагог, цэркваў і касьцёлаў з усіх шасьці абласьцей, якія нішчылі войны, нядбайнасьць і дзяржаўны гвалт. Адны зьніклі бяз сьледу і засталіся толькі на здымках, іншыя ўратаваныя, а некаторыя руйнуюцца дагэтуль. Здымкі сабраныя з 45 прыватных сямейных і публічных архіваў, і на многіх ёсьць людзі: хтосьці фатаграфуецца на тле руінаў, каб дакрануцца да даўніны, а хтосьці зьдзекуецца з гарадоў, куды прыйшоў акупантам. Канцэпцыя і ўводзіны Лесі Пчолкі, каталагізацыя і апісаньні архітэктуры Асі Хмыз, эсэ Уладзіміра Грамовіча. Кніга трохмоўная — па-беларуску, па-польску і па-ангельску, — вялікага фармату 24 × 32 см. Выйшла ў сьнежні 2025 году ў Беластоку ў галерэі «Арсенал» і Цэнтры беларускай культуры, а ў конкурсе «Найпрыгажэйшыя польскія кнігі 2025» атрымала адзнаку ў катэгорыі «Мастацтва».
+
+## Наш паэт Сыс. Словы пра сапраўднага паэта Анатоля Сыса {#hlobus-nas-paet-sys}
+
+Кніжка Адама Глобуса пра Анатоля Сыса — паэта, якога ён лічыць геніем свайго пакаленьня. Пад адной вокладкай сабраныя ранейшыя публікацыі і новыя замалёўкі: факты, назіраньні, развагі, дзёньнікавыя запісы — ад літаратуразнаўства да п'янак і блазнаваньня. Сыс тут ня помнік, а жывы чалавек, які «п'е з усімі, але застаецца самотным». На вокладцы — «Наш паэт Анатоль Сыс» з партрэтам паэта. Кніга выйшла ў Мінску ў Рамана Цымберава ў 2025 годзе накладам усяго 99 асобнікаў. А ягоны «Наш сусед Караткевіч» на маёй паліцы ўжо стаіць.
+
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -736,6 +750,14 @@ Scientists aboard the ship Invincible fly to the planet Regis to find out where,
 ## The Ark 47 Librae {#shtern-kovcheg-47-libra}
 
 Hard science fiction by the astrophysicist Boris Stern, editor-in-chief of the science newspaper «Troitsky Variant — Nauka». An unmanned ark flies through the void for thousands of years towards the exoplanet 47 Librae b, carrying frozen embryos, incubators, robot builders and an artificial intelligence: first it must terraform the planet and set off an accelerated evolution of its biosphere, then raise the first humans. A project whose outcome none of those who started it will live to see — and the question of whether Humanity-2 will take root, and what becomes of reason in that corner of the universe. The first edition came out in 2016 from the newspaper's own press in a run of 2,000 copies: hardcover with NASA photographs, designed by Maxim Borisov.
+
+## Ruins of Belarus {#ruiny-bielarusi}
+
+A photo album by the VEHA archive about the fate of Belarus's stone buildings — castles, town halls, manors, synagogues, Orthodox and Catholic churches from all six regions, wrecked by wars, neglect and state violence. Some vanished without a trace and survive only in photographs, others were saved, and some are still crumbling. The pictures come from 45 private family and public archives, and many of them show people: some pose against the ruins to touch a noble past, others mock the towns they came to occupy. Concept and introduction by Lesia Pcholka, cataloguing and architectural descriptions by Asia Khmyz, essay by Uladzimir Hramovich. The book is trilingual — Belarusian, Polish and English — in a large 24 × 32 cm format. It came out in December 2025 in Białystok from the Arsenał Gallery and the Belarusian Culture Centre, and received an honourable mention in the Art category of the Most Beautiful Polish Books 2025 competition.
+
+## Our Poet Sys. Words about the True Poet Anatol Sys {#hlobus-nas-paet-sys}
+
+Adam Hlobus's little book about Anatol Sys — a poet he considers the genius of their generation. It gathers earlier pieces and new sketches under one cover: facts, observations, reflections, diary entries — from literary criticism to drinking bouts and clowning. Sys appears here not as a monument but as a living man who "drinks with everyone, yet stays lonely". The cover reads «Наш паэт Анатоль Сыс» (Our Poet Anatol Sys) over the poet's portrait. Published in Minsk by Raman Tsymberau in 2025, in a run of just 99 copies. His «Nash susied Karatkievich» (Our Neighbour Karatkievich) already stands on my shelf.
 
 # My library {#library}
 

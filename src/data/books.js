@@ -7,6 +7,8 @@ import { PROFILES } from './bookProfiles'
 // publishers (which need transliteration) and the notes live in content/books.md.
 // A volume of a series carries `series` and `part`; a book that stands alone may
 // carry a `subtitle` instead. `url` points at a write-up of the edition.
+// The source lists the books in the order they were added, so a new one goes at the
+// bottom; the page shows them the other way round, the book added last first.
 export const WANTED = [
   {
     id: 'narnia-magicians-nephew',
@@ -36,6 +38,14 @@ export const WANTED = [
     url: 'https://knihi.com/Dzon_Ronald_Ruel_Tolkin/Uladar_piarscionkau_3_Viartannie_karala.html',
   },
   {
+    id: 'bielaruski-klasycny-pravapis',
+    title: 'Беларускі клясычны правапіс',
+    subtitle: 'Збор правілаў. Сучасная нармалізацыя',
+    year: 2005,
+    pages: 158,
+    url: 'https://ethnoby.org/vydanni/430081836',
+  },
+  {
     id: 'tolkien-chobit',
     title: 'Хобіт',
     subtitle: 'альбо Падарожжа туды і назад',
@@ -43,23 +53,6 @@ export const WANTED = [
     pages: 368,
     isbn: '978-985-7354-03-0',
     url: 'https://exlibris.by/tolkin-dzon-ronald-ruel-chobit-albo-padarozza-tudy-i-nazad',
-  },
-  {
-    id: 'tolkien-chobit-2002',
-    title: 'Хобіт',
-    subtitle: 'або Вандроўка туды і назад',
-    year: 2002,
-    pages: 264,
-    printRun: 299,
-    url: 'https://fantlab.ru/edition83366',
-  },
-  {
-    id: 'bielaruski-klasycny-pravapis',
-    title: 'Беларускі клясычны правапіс',
-    subtitle: 'Збор правілаў. Сучасная нармалізацыя',
-    year: 2005,
-    pages: 158,
-    url: 'https://ethnoby.org/vydanni/430081836',
   },
   {
     id: 'maur-zbor-tvorau-1',
@@ -144,6 +137,15 @@ export const WANTED = [
     url: 'https://www.goodreads.com/book/show/31833295',
   },
   {
+    id: 'tolkien-chobit-2002',
+    title: 'Хобіт',
+    subtitle: 'або Вандроўка туды і назад',
+    year: 2002,
+    pages: 264,
+    printRun: 299,
+    url: 'https://fantlab.ru/edition83366',
+  },
+  {
     id: 'shtern-kovcheg-47-libra',
     title: 'Ковчег 47 Либра',
     year: 2016,
@@ -171,7 +173,18 @@ export const WANTED = [
     isbn: '978-985-7334-84-1',
     url: 'https://bellit.store/%D0%BD%D0%B0%D1%88-%D0%BF%D0%B0%D1%8D%D1%82-%D0%B0%D0%BD%D0%B0%D1%82%D0%BE%D0%BB%D1%8C-%D1%81%D1%8B%D1%81-%D0%B0%D0%B4%D0%B0%D0%BC-%D0%B3%D0%BB%D0%BE%D0%B1%D1%83%D1%81/',
   },
-].map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
+  {
+    id: 'karalou-kupala-i-kolas-zartujuc',
+    title: 'Купала і Колас жартуюць',
+    year: 2023,
+    pages: 285,
+    printRun: 600,
+    isbn: '978-985-7303-44-1',
+    url: 'https://knihi.by/be/kupala-i-kolas-zartujuc',
+  },
+]
+  .map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
+  .reverse()
 
 // Home library. The source keeps the books grouped the way they stand at home;
 // the page shows them in `byShelfOrder` (see below).

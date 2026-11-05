@@ -350,18 +350,26 @@ describe('books page: newest books', () => {
 })
 
 describe('books page: wanted carousel', () => {
+  const at = (id) => WANTED.findIndex((b) => b.id === id)
+
+  it('shows the book added last first, so the first one ever added comes last', () => {
+    show()
+    expect(WANTED.at(-1).id).toBe('narnia-magicians-nephew')
+    expect(within(covers()[0]).getByText(WANTED[0].title)).toBeInTheDocument()
+    expect(within(covers().at(-1)).getByText('Пляменнік чараўніка')).toBeInTheDocument()
+  })
 
   it('captions a cover with the author, the title and the series line', () => {
     show()
-    const first = covers()[0]
-    expect(within(first).getByText('К. С. Льюіс')).toBeInTheDocument()
-    expect(within(first).getByText(WANTED[0].title)).toBeInTheDocument()
-    expect(within(first).getByText('Хронікі Нарніі · частка 1')).toBeInTheDocument()
+    const narnia = covers()[at('narnia-magicians-nephew')]
+    expect(within(narnia).getByText('К. С. Льюіс')).toBeInTheDocument()
+    expect(within(narnia).getByText('Пляменнік чараўніка')).toBeInTheDocument()
+    expect(within(narnia).getByText('Хронікі Нарніі · частка 1')).toBeInTheDocument()
   })
 
   it('captions a book outside any series with its subtitle instead of a part number', () => {
     show()
-    const pravapis = covers()[WANTED.findIndex((b) => b.id === 'bielaruski-klasycny-pravapis')]
+    const pravapis = covers()[at('bielaruski-klasycny-pravapis')]
     expect(within(pravapis).getByText('Беларускі клясычны правапіс')).toBeInTheDocument()
     expect(within(pravapis).getByText('Збор правілаў. Сучасная нармалізацыя')).toBeInTheDocument()
     expect(within(pravapis).queryByText(/частка/)).not.toBeInTheDocument()
@@ -381,30 +389,30 @@ describe('books page: wanted carousel', () => {
   it('opens a book with its translators, print run and a source link', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(covers()[1])
+    await user.click(covers()[at('lotr-two-towers')])
     const view = screen.getByRole('dialog')
     expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Дзьве вежы')
     expect(within(view).getByText('Дзьмітры Магілеўцаў, Крысьціна Курчанкова')).toBeInTheDocument()
     expect(within(view).getByText('500 ас.')).toBeInTheDocument()
     expect(within(view).getByText('2008')).toBeInTheDocument()
     const source = within(view).getByRole('link', { name: /Пра выданьне/ })
-    expect(source).toHaveAttribute('href', WANTED[1].url)
+    expect(source).toHaveAttribute('href', WANTED[at('lotr-two-towers')].url)
     expect(source).toHaveAttribute('target', '_blank')
   })
 
   it('leaves out facts a book does not have', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(covers()[0]) // the Narnia volume has an ISBN but no known print run
+    await user.click(covers()[at('narnia-magicians-nephew')]) // an ISBN but no known print run
     const view = screen.getByRole('dialog')
-    expect(within(view).getByText(WANTED[0].isbn)).toBeInTheDocument()
+    expect(within(view).getByText(WANTED[at('narnia-magicians-nephew')].isbn)).toBeInTheDocument()
     expect(within(view).queryByText('Наклад')).not.toBeInTheDocument()
   })
 
   it('opens a book outside any series with its page count and without a translator line', async () => {
     const user = userEvent.setup()
     show()
-    await user.click(covers()[WANTED.findIndex((b) => b.id === 'bielaruski-klasycny-pravapis')])
+    await user.click(covers()[at('bielaruski-klasycny-pravapis')])
     const view = screen.getByRole('dialog')
     expect(within(view).getByRole('heading', { level: 2 })).toHaveTextContent('Беларускі клясычны правапіс')
     expect(within(view).getByText('Юрась Бушлякоў, Вінцук Вячорка, Зьміцер Санько, Зьміцер Саўка')).toBeInTheDocument()
@@ -723,9 +731,10 @@ describe('books page: card links', () => {
   it('opens a wanted book from the address and walks the wanted list', async () => {
     const user = userEvent.setup()
     show('be', '/books?book=lotr-two-towers')
-    expect(screen.getByRole('dialog')).toHaveTextContent(`2 / ${WANTED.length}`)
+    const index = WANTED.findIndex((b) => b.id === 'lotr-two-towers')
+    expect(screen.getByRole('dialog')).toHaveTextContent(`${index + 1} / ${WANTED.length}`)
     await user.keyboard('{ArrowRight}')
-    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent('Вяртаньне караля')
+    expect(within(screen.getByRole('dialog')).getByRole('heading', { level: 2 })).toHaveTextContent(WANTED[index + 1].title)
   })
 
   it('ignores an id that is not a book', () => {

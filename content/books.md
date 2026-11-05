@@ -579,6 +579,9 @@ details:
   hlobus-nas-paet-sys:
     author: { be: Адам Глобус, en: Adam Hlobus }
     publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
+  karalou-kupala-i-kolas-zartujuc:
+    author: { be: Павел Каралёў, en: Pavel Karaliou }
+    publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
 ---
 
 <!-- be -->
@@ -669,6 +672,10 @@ details:
 
 Кніжка Адама Глобуса пра Анатоля Сыса — паэта, якога ён лічыць геніем свайго пакаленьня. Пад адной вокладкай сабраныя ранейшыя публікацыі і новыя замалёўкі: факты, назіраньні, развагі, дзёньнікавыя запісы — ад літаратуразнаўства да п'янак і блазнаваньня. Сыс тут ня помнік, а жывы чалавек, які «п'е з усімі, але застаецца самотным». На вокладцы — «Наш паэт Анатоль Сыс» з партрэтам паэта. Кніга выйшла ў Мінску ў Рамана Цымберава ў 2025 годзе накладам усяго 99 асобнікаў. А ягоны «Наш сусед Караткевіч» на маёй паліцы ўжо стаіць.
 
+## Купала і Колас жартуюць {#karalou-kupala-i-kolas-zartujuc}
+
+Купала і Колас тут — не забранзавелыя «гаротнікі», а жывыя людзі з добрым пачуцьцём гумару. Павел Каралёў сабраў успаміны пра іхныя досьціпы, жарты і забаўныя гісторыі — і тыя, што здараліся з класікамі, і тыя, што яны самі ж і заводзілі. Атрымаўся ня зборнік анекдотаў, а нарысы са спасылкамі на крыніцы, з ілюстрацыямі, партрэтамі і факсіміле. На вокладцы — шарж: двое песьняроў ідуць, абняўшыся. Кніга выйшла ў Мінску ў Рамана Цымберава ў 2023 годзе накладам 600 асобнікаў. Купалавы «Тутэйшыя» і «Выбранае» ды Коласава «На ростанях» на маёй паліцы ўжо стаяць.
+
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -758,6 +765,10 @@ A photo album by the VEHA archive about the fate of Belarus's stone buildings �
 ## Our Poet Sys. Words about the True Poet Anatol Sys {#hlobus-nas-paet-sys}
 
 Adam Hlobus's little book about Anatol Sys — a poet he considers the genius of their generation. It gathers earlier pieces and new sketches under one cover: facts, observations, reflections, diary entries — from literary criticism to drinking bouts and clowning. Sys appears here not as a monument but as a living man who "drinks with everyone, yet stays lonely". The cover reads «Наш паэт Анатоль Сыс» (Our Poet Anatol Sys) over the poet's portrait. Published in Minsk by Raman Tsymberau in 2025, in a run of just 99 copies. His «Nash susied Karatkievich» (Our Neighbour Karatkievich) already stands on my shelf.
+
+## Kupala and Kolas Are Joking {#karalou-kupala-i-kolas-zartujuc}
+
+Here Kupala and Kolas are not bronze-cast "sufferers" but living people with a fine sense of humour. Pavel Karaliou has gathered memories of their wit, jokes and funny stories — both those that happened to the two classics and those they started themselves. The result is not a joke book but a set of essays with references to the sources, with illustrations, portraits and facsimiles. The cover shows a cartoon of the two poets walking with their arms round each other. Published in Minsk by Raman Tsymberau in 2023, in a run of 600 copies. Kupala's «Tutejshyja» (The Locals) and «Vybranaje» (Selected Works) and Kolas's «Na rostaniakh» (At the Crossroads) already stand on my shelf.
 
 # My library {#library}
 

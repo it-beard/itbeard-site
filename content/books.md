@@ -294,6 +294,9 @@ concepts:
   coins:
     label: { be: манеты, en: coins }
     aka: [манеты, манета, нумізматыка, нумізмат, грошы, грашовы, монеты, coins, coin, numismatics, money, currency]
+  stamps:
+    label: { be: паштовыя маркі, en: postage stamps }
+    aka: [маркі, паштовыя маркі, паштовых марак, філятэлія, філатэлія, філятэліст, філатэліст, калекцыя марак, почтовые марки, марки, филателия, stamps, stamp, postage stamps, philately, philatelist]
   uprising-1863:
     label: { be: паўстаньне 1863 году, en: uprising of 1863 }
     aka: [паўстаньне, паўстанне, паўстанцы, паўстанец, '1863', каліноўскі, касьцюшка, касцюшка, uprising, insurrection, kalinouski, kosciuszko]

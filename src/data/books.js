@@ -354,6 +354,13 @@ const LIBRARY_FACTS = {
   'chagall-svaje': { year: 2026, publisher: 'Мяне Няма', city: 'Варшава', translator: 'Сяргей Шупа', isbn: '978-83-980792-4-2', pages: 132, cover: true },
   'trusau-bou-i-mierc-u-chrotnie': { year: 2025, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-54-2', pages: 194, cover: true },
   'bielaruskija-kalychanki': { year: 2025, publisher: 'Tradycyja, Studio Magenta', city: 'Варшава', isbn: '978-83-974131-1-5', pages: 71, cover: true },
+  'karpovich-apaviadanni-pashtovych-marak': { year: 2025, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-47-4', pages: 208, cover: true },
+  'vysockaja-bielaruski-narodny-sonnik': { year: 2023, publisher: 'Gutenberg Publisher', city: 'Кракаў', isbn: '978-83-967644-1-6', pages: 356, printRun: 500, cover: true },
+  'hlobus-zorki': { year: 2026, publisher: 'Логвінаў', city: 'Вільня', isbn: '978-609-492-065-3', pages: 182, cover: true },
+  'arlou-vybranaja-liryka': { year: 2023, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-968534-0-0', pages: 88, cover: true },
+  'bykau-douhaja-daroha-dadomu': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-89-4', pages: 450, cover: true },
+  'karnauch-toj-chto-daje-imiony': { year: 2026, publisher: 'Gutenberg Publisher', city: 'Кракаў', isbn: '978-83-69016-00-9', pages: 396, cover: true },
+  'nierasstralianyja': { year: 2022, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-960735-3-2', pages: 440, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -429,6 +436,13 @@ const ADDED = {
     'chagall-svaje',
     'trusau-bou-i-mierc-u-chrotnie',
     'bielaruskija-kalychanki',
+    'karpovich-apaviadanni-pashtovych-marak',
+    'vysockaja-bielaruski-narodny-sonnik',
+    'hlobus-zorki',
+    'arlou-vybranaja-liryka',
+    'bykau-douhaja-daroha-dadomu',
+    'karnauch-toj-chto-daje-imiony',
+    'nierasstralianyja',
   ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
@@ -652,6 +666,14 @@ const BOOKS = [
   book('chagall-svaje', 'Марк Шагал', 'Сваё', 'be', 'nonfic', '#f3f0e9', '#1a1a1a', 1),
   book('trusau-bou-i-mierc-u-chrotnie', 'Дзяніс Трусаў', 'Боў і мерць у Хротне', 'be', 'fiction', '#f6f6f4', '#2b2b2b'),
   book('bielaruskija-kalychanki', '', 'Беларускія калыханкі', 'be', 'folk', '#1e2a33', '#d9b45a', 1),
+  // the second batch of the day, 2026-11-05 (covers found online)
+  book('karpovich-apaviadanni-pashtovych-marak', 'Лявон Карповіч', 'Апавяданьні паштовых марак пра Вялікае Княства', 'be', 'history', '#68181a', '#ffffff'),
+  book('vysockaja-bielaruski-narodny-sonnik', 'Аліна Высоцкая', 'Беларускі народны соннік', 'be', 'folk', '#1a1a18', '#c8c8c8', 3),
+  book('hlobus-zorki', 'Адам Глобус', 'Зоркі', 'be', 'nonfic', '#f5b529', '#1a1a1a'),
+  book('arlou-vybranaja-liryka', 'Уладзімір Арлоў', 'Выбраная лірыка', 'be', 'poetry', '#357539', '#ffffff', 1),
+  book('bykau-douhaja-daroha-dadomu', 'Васіль Быкаў', 'Доўгая дарога дадому', 'be', 'nonfic', '#007dc0', '#ffffff', 3),
+  book('karnauch-toj-chto-daje-imiony', 'Аляксандр Карнаўх', 'Той, хто дае імёны', 'be', 'sf', '#cb8a17', '#1a1a1a', 3),
+  book('nierasstralianyja', '', '(Не)расстраляныя', 'be', ['history', 'poetry'], '#f4f4f2', '#1a1a1a', 3),
 ]
 
 // Default order of the library: by language, and within a language the series first

@@ -203,6 +203,8 @@ describe('library data', () => {
   })
 
   it('closes each language with the books that name no author, by title', () => {
+    // punctuation does not count: «(Не)расстраляныя» stands under Н
+    const bare = (title) => title.replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
     for (const lang of LANG_ORDER) {
       const singles = LIBRARY.filter((b) => b.lang === lang && !b.series)
       const firstAnonymous = singles.findIndex((b) => !b.author)
@@ -210,8 +212,10 @@ describe('library data', () => {
       const tail = singles.slice(firstAnonymous)
       expect(tail.every((b) => !b.author), lang).toBe(true)
       const titles = tail.map((b) => b.title)
-      expect(titles, lang).toEqual([...titles].sort((a, b) => a.localeCompare(b, lang)))
+      expect(titles, lang).toEqual([...titles].sort((a, b) => bare(a).localeCompare(bare(b), lang)))
     }
+    const be = LIBRARY.filter((b) => b.lang === 'be' && !b.series && !b.author).map((b) => b.title)
+    expect(be.indexOf('(Не)расстраляныя')).toBe(be.indexOf('Падляшскае на ўік-энд') - 1)
   })
 
   it('paints all volumes of one series the same colour', () => {

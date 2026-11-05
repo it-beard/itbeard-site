@@ -1136,5 +1136,42 @@ export const PROFILES = {
     form: 'poems',
     aka: ['Бараноўскі', 'Міхась Бараноўскі', 'Барановский', 'Baranouski', 'Baranoŭski', 'Michał Baranoŭski', 'Volumen', 'Volumen 1', 'Валюмэн', 'дэбют', 'дэбютны зборнік', 'прэмія Дэбют', 'прэмія Багдановіча', 'Пункт адліку', 'Кнігазбор', 'Цымбераў', 'Раман Цымбераў', 'Шталенкова', 'Нельга забыць', 'Месца моцы', 'музей Багдановіча', 'Акудовіч'],
   },
+  'karatkievich-leanidy-nie-viernucca-da-ziamli': {
+    genre: ['literary', 'classic'],
+    themes: ['love', 'uprising-1863', 'literature', 'family', 'russia', 'destiny'],
+    mood: ['lyrical', 'tragic'],
+    form: 'novel',
+    aka: ['Караткевич', 'Короткевич', 'Владимир Короткевич', 'Uladzimir Karatkievich', 'Karatkevich', 'Нельга забыць', 'Нельзя забыть', 'Леониды не вернутся к Земле', 'The Leonids Won’t Return to Earth', 'раман амаль што сентыментальны', 'Паром на бурнай рацэ', 'Вераб’іная ноч', 'Андрэй Грынкевіч', 'Усяслаў Грынкевіч', 'Ірына Горава', 'Юры Гораў', 'Яніс Вайвадс', 'Пора-Леановіч', 'Леаніды', 'зорны дождж', 'Масква', 'Дняпро', 'Папуры', 'Popuri'],
+  },
+  'bradbury-451-hradus-pavodle-farenhiejta': {
+    genre: ['dystopia', 'classic'],
+    themes: ['totalitarianism', 'literature', 'surveillance', 'humanity'],
+    mood: ['dark', 'tense', 'thoughtful'],
+    form: 'novel',
+    original: 'Ray Bradbury. Fahrenheit 451',
+    aka: ['Брэдбери', 'Бредбери', 'Брэдбэры', 'Bradbury', 'Fahrenheit 451', '451 градус по Фаренгейту', '451 па Фарэнгейту', '451 градус па Фарэнгейце', 'Фарэнгейт', 'Фаренгейт', 'Монтэг', 'Montag', 'Кларыса', 'Clarisse', 'Мілдрэд', 'Mildred', 'пажарнік', 'пожарный', 'спальваньне кніг', 'сожжение книг', 'book burning', 'Карнацкая', 'Маціеўская', 'Шустава', 'Янушкевіч'],
+  },
+  'chagall-svaje': {
+    genre: ['memoir'],
+    themes: ['art', 'childhood', 'family', 'cities', 'belarus'],
+    mood: ['lyrical', 'warm'],
+    form: 'nonfiction',
+    original: 'Marc Chagall. Ejgens',
+    aka: ['Шагал', 'Chagall', 'Marc Chagall', 'Эйгенс', 'Ejgens', 'Eygens', 'Eigens', 'Своё', 'Маё жыццё', 'Моя жизнь', 'Ma vie', 'My Life', 'Шупа', 'Віцебск', 'Витебск', 'Vitebsk', 'Пескавацік', 'ідыш', 'идиш', 'Yiddish', 'яўрэі', 'YIVO', 'Прагулка', 'Мяне Няма', 'Бэла Шагал'],
+  },
+  'trusau-bou-i-mierc-u-chrotnie': {
+    genre: ['absurd', 'detective'],
+    themes: ['cities', 'belarus', 'religion', 'death', 'love'],
+    mood: ['eerie', 'thoughtful'],
+    form: 'novel',
+    aka: ['Трусаў', 'Трусов', 'Денис Трусов', 'Trusaŭ', 'Trusau', 'Бовь и мерть в Хротне', 'Хротна', 'Chrotna', 'Гродна', 'Гродно', 'Hrodna', 'любоў і сьмерць', 'Twin Peaks', 'Твін Пікс', 'Silent Hill', 'Хантар Томпсан', 'Жах і агіда ў Лас-Вегасе', 'Кафка', 'камандзіраваны', 'памежжа', 'метафізычны дэтэктыў', 'прэмія Гедройця', 'Барташ', 'Kamunikat', 'Камунікат'],
+  },
+  'bielaruskija-kalychanki': {
+    genre: ['children', 'lyric-poetry'],
+    themes: ['folklore', 'music', 'childhood', 'family', 'animals', 'belarus'],
+    mood: ['warm', 'lyrical'],
+    form: 'anthology',
+    aka: ['Доўгушаў', 'Сяржук Доўгушаў', 'Douhushau', 'Doŭhušaŭ', 'Dowhušaw', 'калыханкі', 'калыханка', 'колыбельные', 'Белорусские колыбельные', 'lullabies', 'Belarusian lullabies', 'спеўнік', 'сьпеўнік', 'ноты', 'QR-код', 'Tradycyja', 'Традыцыя', 'Этна Традыцыя', 'ЭтнаТрадыцыя', 'Studio Magenta', 'tikava_studio', 'VOLYA', 'Воля Дземка', 'каток', 'Падляшша'],
+  },
 
 }

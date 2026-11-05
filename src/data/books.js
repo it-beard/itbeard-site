@@ -349,6 +349,11 @@ const LIBRARY_FACTS = {
   'karatkievic-encyklapiedyja': { year: 2020, publisher: 'Беларуская Энцыклапедыя імя Петруся Броўкі', city: 'Мінск', isbn: '978-985-11-1257-5', pages: 432, cover: true },
   'bryl-viadzmar-jaki-rabiusia-vaukom': { year: 2026, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-6324-7', pages: 120, cover: true },
   'baranouski-volumen-1': { year: 2025, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7334-47-6', pages: 53, printRun: 300, cover: true },
+  'karatkievich-leanidy-nie-viernucca-da-ziamli': { year: 2021, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-4925-8', pages: 496, printRun: 2500, cover: true },
+  'bradbury-451-hradus-pavodle-farenhiejta': { year: 2026, publisher: 'Янушкевіч', translator: 'Наста Карнацкая', isbn: '978-83-68202-59-5', pages: 186, printRun: 1020, cover: true },
+  'chagall-svaje': { year: 2026, publisher: 'Мяне Няма', city: 'Варшава', translator: 'Сяргей Шупа', isbn: '978-83-980792-4-2', pages: 132, cover: true },
+  'trusau-bou-i-mierc-u-chrotnie': { year: 2025, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-54-2', pages: 194, cover: true },
+  'bielaruskija-kalychanki': { year: 2025, publisher: 'Tradycyja, Studio Magenta', city: 'Варшава', isbn: '978-83-974131-1-5', pages: 71, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -418,6 +423,13 @@ const ADDED = {
     'bryl-viadzmar-jaki-rabiusia-vaukom',
   ],
   '2026-10-24': ['baranouski-volumen-1'],
+  '2026-11-05': [
+    'karatkievich-leanidy-nie-viernucca-da-ziamli',
+    'bradbury-451-hradus-pavodle-farenhiejta',
+    'chagall-svaje',
+    'trusau-bou-i-mierc-u-chrotnie',
+    'bielaruskija-kalychanki',
+  ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -634,6 +646,12 @@ const BOOKS = [
   book('bryl-viadzmar-jaki-rabiusia-vaukom', 'Антон Францішак Брыль', 'Вядзьмар, які рабіўся ваўком', 'be', 'folk', '#141414', '#c9a56b'),
   // added from the owner's photos, 2026-10-24
   book('baranouski-volumen-1', 'Міхал Бараноўскі', 'Volumen.1', 'be', 'poetry', '#161616', '#f2f2f2', 1),
+  // added from the owner's photos, 2026-11-05 (covers found online)
+  book('karatkievich-leanidy-nie-viernucca-da-ziamli', 'Уладзімір Караткевіч', 'Леаніды не вернуцца да Зямлі', 'be', 'fiction', '#a08a6c', '#6e1a17', 3),
+  book('bradbury-451-hradus-pavodle-farenhiejta', 'Рэй Брэдберы', '451 градус паводле Фарэнгейта', 'be', 'sf', '#671100', '#ef752a'),
+  book('chagall-svaje', 'Марк Шагал', 'Сваё', 'be', 'nonfic', '#f3f0e9', '#1a1a1a', 1),
+  book('trusau-bou-i-mierc-u-chrotnie', 'Дзяніс Трусаў', 'Боў і мерць у Хротне', 'be', 'fiction', '#f6f6f4', '#2b2b2b'),
+  book('bielaruskija-kalychanki', '', 'Беларускія калыханкі', 'be', 'folk', '#1e2a33', '#d9b45a', 1),
 ]
 
 // Default order of the library: by language, and within a language the series first

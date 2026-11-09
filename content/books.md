@@ -255,6 +255,9 @@ concepts:
   politics:
     label: { be: палітыка, en: politics }
     aka: [палітыка, палітычны, палітычная, дзяржава, дзяржаўны, улада, інстытуцыі, грамадзтва, грамадства, politics, political, state, society]
+  human-rights:
+    label: { be: правы чалавека, en: human rights }
+    aka: [правы чалавека, праваабаронца, праваабаронцы, праваабарона, праваабарончы, палітвязень, палітвязні, палітзняволены, палітзняволеныя, вязні сумленьня, human rights, human rights defender, political prisoner, political prisoners, prisoner of conscience]
   economics:
     label: { be: эканоміка, en: economics }
     aka: [эканоміка, эканамічны, эканамічная, багацьце, багацце, беднасьць, беднасць, грошы, economics, economy, wealth, poverty, nations]
@@ -585,9 +588,6 @@ details:
   karalou-kupala-i-kolas-zartujuc:
     author: { be: Павел Каралёў, en: Pavel Karaliou }
     publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
-  baranouski-volumen-3:
-    author: { be: Міхал Бараноўскі, en: Mikhal Baranouski }
-    publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
 ---
 
 <!-- be -->
@@ -682,10 +682,6 @@ details:
 
 Купала і Колас тут — не забранзавелыя «гаротнікі», а жывыя людзі з добрым пачуцьцём гумару. Павел Каралёў сабраў успаміны пра іхныя досьціпы, жарты і забаўныя гісторыі — і тыя, што здараліся з класікамі, і тыя, што яны самі ж і заводзілі. Атрымаўся ня зборнік анекдотаў, а нарысы са спасылкамі на крыніцы, з ілюстрацыямі, партрэтамі і факсіміле. На вокладцы — шарж: двое песьняроў ідуць, абняўшыся. Кніга выйшла ў Мінску ў Рамана Цымберава ў 2023 годзе накладам 600 асобнікаў. Купалавы «Тутэйшыя» і «Выбранае» ды Коласава «На ростанях» на маёй паліцы ўжо стаяць.
 
-## Volumen.3 {#baranouski-volumen-3}
-
-Трэці паэтычны зборнік Міхала Бараноўскага — вершы, напісаныя ад восені 2020 да вясны 2024 году; частка зь іх друкавалася ў «Маладосьці», «Полымі» і «ЛіМе». У кнізе чатыры раздзелы — сярод іх «Вежа з ваўчыных костак», «Год замыкання зямлі» і «Зона рызыкоўнага земляробства», — і ў іх аўтар шукае сваю форму: ад малой паэмы да афарыстычных «пункціраў». Сам Бараноўскі кажа, што кніга, як і папярэднія, зьявілася «ў прадчуваньні цішыні», калі можна правесьці рысу і рухацца далей. Афармленьне і вёрстка Ксеніі Шталенковай, якая рабіла і першы том: палова вокладкі — туманны зімовы лес, палова — белая, а на мяжы — маленькі малюнак. Кніга выйшла ў Мінску ў Рамана Цымберава ў ліпені 2024 году накладам 300 асобнікаў. «Volumen.1» на маёй паліцы ўжо стаіць.
-
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -779,10 +775,6 @@ Adam Hlobus's little book about Anatol Sys — a poet he considers the genius of
 ## Kupala and Kolas Are Joking {#karalou-kupala-i-kolas-zartujuc}
 
 Here Kupala and Kolas are not bronze-cast "sufferers" but living people with a fine sense of humour. Pavel Karaliou has gathered memories of their wit, jokes and funny stories — both those that happened to the two classics and those they started themselves. The result is not a joke book but a set of essays with references to the sources, with illustrations, portraits and facsimiles. The cover shows a cartoon of the two poets walking with their arms round each other. Published in Minsk by Raman Tsymberau in 2023, in a run of 600 copies. Kupala's «Tutejshyja» (The Locals) and «Vybranaje» (Selected Works) and Kolas's «Na rostaniakh» (At the Crossroads) already stand on my shelf.
-
-## Volumen.3 {#baranouski-volumen-3}
-
-The third poetry collection by Mikhal Baranouski — poems written between autumn 2020 and spring 2024, some of them first printed in the magazines «Maladosts», «Polymia» and «LiM». The book has four sections, among them «Vezha z vauchynykh kostak» (A Tower of Wolf Bones), «Hod zamykannia ziamli» (The Year the Earth Shut Down) and «Zona ryzykounaha ziemlarobstva» (Risky Farming Zone), and in them the author looks for a form of his own, from a short narrative poem to aphoristic "dotted lines". Baranouski says that the book, like the earlier ones, came "in anticipation of silence", when you can draw a line and move on. Design and layout by Ksenia Shtalenkova, who also designed the first volume: half the cover is a foggy winter wood, half is white, with a small drawing where they meet. Published in Minsk by Raman Tsymberau in July 2024, in a run of 300 copies. «Volumen.1» already stands on my shelf.
 
 # My library {#library}
 

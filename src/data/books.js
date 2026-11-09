@@ -182,15 +182,6 @@ export const WANTED = [
     isbn: '978-985-7303-44-1',
     url: 'https://knihi.by/be/kupala-i-kolas-zartujuc',
   },
-  {
-    id: 'baranouski-volumen-3',
-    title: 'Volumen.3',
-    year: 2024,
-    pages: 54,
-    printRun: 300,
-    isbn: '978-985-7303-94-6',
-    url: 'https://bellit.info/news/vyjshla-trecjaja-kniha-paezii-mikhala-baranouskaha.html',
-  },
 ]
   .map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
   .reverse()
@@ -370,6 +361,19 @@ const LIBRARY_FACTS = {
   'bykau-douhaja-daroha-dadomu': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-89-4', pages: 450, cover: true },
   'karnauch-toj-chto-daje-imiony': { year: 2026, publisher: 'Gutenberg Publisher', city: 'Кракаў', isbn: '978-83-69016-00-9', pages: 396, cover: true },
   'nierasstralianyja': { year: 2022, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-960735-3-2', pages: 440, cover: true },
+  'chichanki-chachanki': { year: 2026, publisher: 'Bukinist:ka Press', city: 'Варшава', isbn: '978-83-976380-2-0', pages: 204, cover: true },
+  'skarynka-vyhareushy': { year: 2026, publisher: 'Лысы Чэрап', isbn: '978-83-983620-3-0', pages: 50, cover: true },
+  'kasciukovich-lirnik': { year: 2026, publisher: 'Лысы Чэрап', isbn: '978-83-983620-2-3', pages: 102, cover: true },
+  'dubaucevich-cieslia-zyccia': { year: 2026, publisher: 'Лысы Чэрап', isbn: '978-83-983620-1-6', pages: 64, cover: true },
+  'zalozny-pliac': { year: 2026, publisher: 'Лысы Чэрап', isbn: '978-83-983620-0-9', pages: 108, cover: true },
+  'bialiacki-ales': { year: 2022, publisher: 'Беларускі ПЭН, Полацкія лабірынты', city: 'Варшава', isbn: '978-83-965621-1-1', pages: 240, cover: true },
+  'bialiacki-ales-en': { year: 2026, publisher: 'Sviedki', city: 'Warsaw', translator: 'Jarosław Anders, Sasha Razor', isbn: '978-83-982922-3-8', pages: 293, cover: true },
+  'baryshnikava-i-dauniej-tak-pieli': { year: 2025, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-52-0', pages: 104, cover: true },
+  'karatkievich-chorny-zamak-alshanski': { year: 2025, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5956-1', pages: 496, cover: true },
+  'karatkievich-chrystos-pryziamliusia-u-harodni': { year: 2023, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5286-9', pages: 688, printRun: 2500, cover: true },
+  'maur-chalaviek-idzie': { year: 2016, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-3074-4', pages: 176, printRun: 2000, cover: true },
+  'arlou-imiony-svabody-2': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-80-1', pages: 492, cover: true },
+  'baranouski-volumen-3': { year: 2024, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7303-94-6', pages: 56, printRun: 300, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -452,6 +456,21 @@ const ADDED = {
     'bykau-douhaja-daroha-dadomu',
     'karnauch-toj-chto-daje-imiony',
     'nierasstralianyja',
+  ],
+  '2026-11-09': [
+    'chichanki-chachanki',
+    'skarynka-vyhareushy',
+    'kasciukovich-lirnik',
+    'dubaucevich-cieslia-zyccia',
+    'zalozny-pliac',
+    'bialiacki-ales',
+    'bialiacki-ales-en',
+    'baryshnikava-i-dauniej-tak-pieli',
+    'karatkievich-chorny-zamak-alshanski',
+    'karatkievich-chrystos-pryziamliusia-u-harodni',
+    'maur-chalaviek-idzie',
+    'arlou-imiony-svabody-2',
+    'baranouski-volumen-3',
   ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
@@ -683,6 +702,20 @@ const BOOKS = [
   book('bykau-douhaja-daroha-dadomu', 'Васіль Быкаў', 'Доўгая дарога дадому', 'be', 'nonfic', '#007dc0', '#ffffff', 3),
   book('karnauch-toj-chto-daje-imiony', 'Аляксандр Карнаўх', 'Той, хто дае імёны', 'be', 'sf', '#cb8a17', '#1a1a1a', 3),
   book('nierasstralianyja', '', '(Не)расстраляныя', 'be', ['history', 'poetry'], '#f4f4f2', '#1a1a1a', 3),
+  // added from the owner's photos, 2026-11-09 (covers found online)
+  book('chichanki-chachanki', '', 'Хіханькі-хаханькі', 'be', 'fiction', '#e3b6c9', '#2a2a2a'),
+  book('skarynka-vyhareushy', 'Наталля Міхаліна Скарынка', 'Выгарэўшы', 'be', 'fiction', '#3a3a3a', '#e6e0d4', 1),
+  book('kasciukovich-lirnik', 'Аляксандр Касцюковіч', 'Лірнік', 'be', 'fiction', '#c8914f', '#1a1a1a', 1),
+  book('dubaucevich-cieslia-zyccia', 'Сяргей Дубаўцэвіч', 'Цесля жыцця', 'be', 'fiction', '#1f1d1b', '#e9e4dc', 1),
+  book('zalozny-pliac', 'Зміцер Залозны', 'Пляц', 'be', 'fiction', '#9a3f86', '#c8e64a', 1),
+  book('bialiacki-ales', 'Алесь Бяляцкі', 'Алесь', 'be', ['nonfic', 'history'], '#f7f5ee', '#c8202f'),
+  book('bialiacki-ales-en', 'Aleś Bialacki', 'Aleś', 'en', ['nonfic', 'history'], '#ecebe6', '#c8202f'),
+  book('baryshnikava-i-dauniej-tak-pieli', 'Вольга Барышнікава', 'І даўней так пелі', 'be', 'folk', '#e9eae6', '#6b5a33', 1),
+  book('karatkievich-chorny-zamak-alshanski', 'Уладзімір Караткевіч', 'Чорны замак Альшанскі', 'be', 'fiction', '#a08a6c', '#6e1a17', 3),
+  book('karatkievich-chrystos-pryziamliusia-u-harodni', 'Уладзімір Караткевіч', 'Хрыстос прызямліўся ў Гародні', 'be', 'fiction', '#a08a6c', '#6e1a17', 3),
+  book('maur-chalaviek-idzie', 'Янка Маўр', 'Чалавек ідзе', 'be', 'fiction', '#0f4a52', '#d9b45a'),
+  book('arlou-imiony-svabody-2', 'Уладзімір Арлоў', 'Імёны Свабоды. 2', 'be', 'history', '#1d2a3a', '#f05a3c', 3),
+  book('baranouski-volumen-3', 'Міхал Бараноўскі', 'Volumen.3', 'be', 'poetry', '#9daab6', '#1f2a44', 1),
 ]
 
 // Default order of the library: by language, and within a language the series first

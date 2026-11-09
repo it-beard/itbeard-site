@@ -182,6 +182,15 @@ export const WANTED = [
     isbn: '978-985-7303-44-1',
     url: 'https://knihi.by/be/kupala-i-kolas-zartujuc',
   },
+  {
+    id: 'baranouski-volumen-3',
+    title: 'Volumen.3',
+    year: 2024,
+    pages: 54,
+    printRun: 300,
+    isbn: '978-985-7303-94-6',
+    url: 'https://bellit.info/news/vyjshla-trecjaja-kniha-paezii-mikhala-baranouskaha.html',
+  },
 ]
   .map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
   .reverse()

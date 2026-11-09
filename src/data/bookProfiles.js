@@ -1314,5 +1314,12 @@ export const PROFILES = {
     form: 'poems',
     aka: ['Бараноўскі', 'Міхась Бараноўскі', 'Барановский', 'Baranouski', 'Baranoŭski', 'Michał Baranoŭski', 'Volumen', 'Volumen 3', 'Валюмэн', 'трэці том', 'Вежа з ваўчыных костак', 'Год замыкання зямлі', 'Зона рызыкоўнага земляробства', 'пункціры', 'прадчуваньне цішыні', 'Цымбераў', 'Раман Цымбераў', 'Шталенкова', 'Маладосць', 'Полымя', 'ЛіМ'],
   },
+  'ilin-vodbliski-k': {
+    genre: ['fairy-tale', 'humour', 'absurd'],
+    themes: ['belarus', 'folklore', 'belarusian-mythology', 'magic', 'village', 'family', 'friendship', 'food'],
+    mood: ['funny', 'eerie', 'warm'],
+    form: 'novella',
+    aka: ['Ільін', 'Стас Ільін', 'Стас Ильин', 'Ильин', 'Stas Ilyin', 'Stas Ilin', 'Vodbliski K', 'Водблески К', 'водбліскі', 'Каляды', 'калядныя стравы', 'баба Фроня', 'Біскупцы', 'Лідчына', 'загадка', 'падказкі', 'містыка', 'фэнтэзі', 'RozUM Media', 'Розум Медыя', 'Познань', 'Poznań', 'Narnia Escapes'],
+  },
 
 }

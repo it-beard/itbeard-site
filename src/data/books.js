@@ -374,6 +374,7 @@ const LIBRARY_FACTS = {
   'maur-chalaviek-idzie': { year: 2016, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-3074-4', pages: 176, printRun: 2000, cover: true },
   'arlou-imiony-svabody-2': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-80-1', pages: 492, cover: true },
   'baranouski-volumen-3': { year: 2024, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7303-94-6', pages: 56, printRun: 300, cover: true },
+  'ilin-vodbliski-k': { year: 2026, publisher: 'Fundacja RozUM Media', city: 'Познань', isbn: '978-83-979126-7-0', pages: 300, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -471,6 +472,7 @@ const ADDED = {
     'maur-chalaviek-idzie',
     'arlou-imiony-svabody-2',
     'baranouski-volumen-3',
+    'ilin-vodbliski-k',
   ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
@@ -716,6 +718,7 @@ const BOOKS = [
   book('maur-chalaviek-idzie', 'Янка Маўр', 'Чалавек ідзе', 'be', 'fiction', '#0f4a52', '#d9b45a'),
   book('arlou-imiony-svabody-2', 'Уладзімір Арлоў', 'Імёны Свабоды. 2', 'be', 'history', '#1d2a3a', '#f05a3c', 3),
   book('baranouski-volumen-3', 'Міхал Бараноўскі', 'Volumen.3', 'be', 'poetry', '#9daab6', '#1f2a44', 1),
+  book('ilin-vodbliski-k', 'Стас Ільін', 'Водбліскі К', 'be', 'sf', '#293221', '#eadfc4'),
 ]
 
 // Default order of the library: by language, and within a language the series first

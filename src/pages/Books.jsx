@@ -354,6 +354,7 @@ export default function Books() {
             [page.labels.translator, book.translator],
             [page.labels.publisher, [book.publisher, book.city].filter(Boolean).join(', ')],
             [page.labels.pages, book.pages],
+            [page.labels.printRun, book.printRun && `${book.printRun} ${page.labels.copies}`],
             [page.labels.language, langNamesOf(book)],
             [page.labels.genre, genresOf(book)],
             [page.labels.isbn, book.isbn],

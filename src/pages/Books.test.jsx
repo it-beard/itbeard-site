@@ -475,6 +475,18 @@ describe('books page: library', () => {
     expect(within(view).getByText('Янушкевіч', { exact: false })).toBeInTheDocument()
     expect(within(view).getByRole('img')).toHaveAttribute('src', '/images/library/sapkowski-4-cas-pahardy.webp')
     expect(view.querySelector('.cover-note')).not.toBeEmptyDOMElement()
+    // no print run is known for this one, so the card has no such line
+    expect(within(view).queryByText('Наклад')).not.toBeInTheDocument()
+  })
+
+  it('shows the print run on a library card when the edition states one', async () => {
+    const user = userEvent.setup()
+    show()
+    const book = LIBRARY.find((b) => b.id === 'baranouski-volumen-1')
+    await user.click(spines().find((el) => within(el).queryByText(book.title)))
+    const view = screen.getByRole('dialog')
+    expect(within(view).getByText('Наклад')).toBeInTheDocument()
+    expect(within(view).getByText(`${book.printRun} ас.`)).toBeInTheDocument()
   })
 
   it('walks the filtered list from an open card, wrapping around', async () => {

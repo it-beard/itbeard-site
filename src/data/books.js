@@ -376,6 +376,7 @@ const LIBRARY_FACTS = {
   'arlou-imiony-svabody-2': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-80-1', pages: 492, cover: true },
   'baranouski-volumen-3': { year: 2024, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7303-94-6', pages: 56, printRun: 300, cover: true },
   'ilin-vodbliski-k': { year: 2026, publisher: 'Fundacja RozUM Media', city: 'Познань', isbn: '978-83-979126-7-0', pages: 300, cover: true },
+  'sciapan-vauka': { year: 2025, publisher: 'Мяне Няма', city: 'Варшава', isbn: '978-83-971348-7-4', pages: 188, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -475,6 +476,7 @@ const ADDED = {
     'baranouski-volumen-3',
     'ilin-vodbliski-k',
   ],
+  '2026-11-11': ['sciapan-vauka'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -720,6 +722,7 @@ const BOOKS = [
   book('arlou-imiony-svabody-2', 'Уладзімір Арлоў', 'Імёны Свабоды. 2', 'be', 'history', '#1d2a3a', '#f05a3c', 3),
   book('baranouski-volumen-3', 'Міхал Бараноўскі', 'Volumen.3', 'be', 'poetry', '#9daab6', '#1f2a44', 1),
   book('ilin-vodbliski-k', 'Стас Ільін', 'Водбліскі К', 'be', 'sf', '#293221', '#eadfc4'),
+  book('sciapan-vauka', 'Уладзімір Сцяпан', 'Ваўка', 'be', 'fiction', '#cdc8c1', '#b3261e'),
 ]
 
 // Default order of the library: by language, and within a language the series first

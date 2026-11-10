@@ -5,6 +5,7 @@ import { getPage, getSection, mdInline, mdText, plural, startYear, startTooltip 
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
+import SocialLinks from '../components/SocialLinks'
 import { PROJECTS, ARCHIVE_PROJECTS } from '../data/site'
 
 export default function Home() {
@@ -32,29 +33,7 @@ export default function Home() {
           <p className="hero-greeting">{page.hero.greeting}</p>
           <h1>{page.hero.name}</h1>
           <p className="hero-tagline">{page.hero.tagline}</p>
-          <nav className="social hero-social">
-            <a href="https://telegram.me/iamitbeard" target="_blank" rel="noopener" className="telegram" title="Telegram">
-              <i className="fab fa-brands fa-telegram-plane"></i>
-            </a>
-            <a href="https://wa.me/itbeard" target="_blank" rel="noopener" className="whatsapp" title="WhatsApp">
-              <i className="fab fa-brands fa-whatsapp"></i>
-            </a>
-            <a href="https://vkl.world/@itbeard" target="_blank" rel="noopener" className="mastodon" title="Mastodon">
-              <i className="fab fa-brands fa-mastodon"></i>
-            </a>
-            <a href="https://instagram.com/iamitbeard" target="_blank" rel="noopener" className="instagram" title="Instagram">
-              <i className="fab fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/akartynnik" target="_blank" rel="noopener" className="linkedin" title="LinkedIn">
-              <i className="fab fa-brands fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/itbeard" target="_blank" rel="noopener" className="github" title="GitHub">
-              <i className="fab fa-brands fa-github"></i>
-            </a>
-            <a href="mailto:iamitbeard@gmail.com" target="_blank" rel="noopener" className="email" title="Email">
-              <i className="fab fa fa-at"></i>
-            </a>
-          </nav>
+          <SocialLinks className="hero-social" ids={['telegram', 'whatsapp', 'mastodon', 'instagram', 'linkedin', 'github', 'email']} />
           <div className="hero-actions">
             <Link to="/about" className="btn btn-primary">
               {page.hero.toProjects}

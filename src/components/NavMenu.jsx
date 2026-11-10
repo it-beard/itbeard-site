@@ -3,6 +3,7 @@ import { createPortal } from 'react-dom'
 import { NavLink, Link, useLocation } from 'react-router-dom'
 import { useLang } from '../lib/LangContext'
 import { getPage } from '../lib/content'
+import Icon from './Icon'
 
 // A prank "light theme" switch: shatters the site into shards, drifts multiverse
 // echoes behind a joke warning, then puts everything back.
@@ -57,8 +58,8 @@ function ThemeToggle() {
 
   return (
     <>
-      <button className="theme-toggle" title={theme.toggle} aria-label={theme.toggle} onClick={explode}>
-        <i className="fa fa-sun" aria-hidden="true"></i>
+      <button type="button" className="theme-toggle" title={theme.toggle} aria-label={theme.toggle} onClick={explode}>
+        <Icon name="sun" />
       </button>
       {boom &&
         createPortal(
@@ -74,11 +75,14 @@ function ThemeToggle() {
 
 function LangToggle() {
   const { lang, setLang } = useLang()
+  const { footer } = getPage('shared', lang)
   return (
-    <div className="lang-toggle" role="group" aria-label="Language">
+    <div className="lang-toggle" role="group" aria-label={footer.language}>
       {['be', 'en'].map((l) => (
         <button
           key={l}
+          type="button"
+          lang={l}
           className={lang === l ? 'active' : ''}
           onClick={() => setLang(l)}
           aria-pressed={lang === l}
@@ -144,7 +148,7 @@ function ShelvesMenu({ nav, onNavigate }) {
         onClick={() => setOpen(!open)}
       >
         {nav.shelves}
-        <i className="fas fa-chevron-down" aria-hidden="true"></i>
+        <Icon name="chevron-down" />
       </button>
       <div className="nav-group-list" id="shelves-menu">
         {SHELVES.map((s) => (
@@ -182,8 +186,11 @@ export default function NavMenu() {
         </Link>
 
         <button
+          type="button"
           className={`menu-toggle ${open ? 'active' : ''}`}
-          aria-label="Menu"
+          aria-label={nav.menu}
+          aria-expanded={open}
+          aria-controls="menu"
           onClick={() => setOpen(!open)}
         >
           <span></span>

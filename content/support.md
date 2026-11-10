@@ -5,7 +5,7 @@ title:
 description:
   be: >-
     Спосабы падзякаваць Аляксею Картыньніку (АйЦіБарада): Buy Me a Coffee,
-    Patreon, Tribute любой карткай з любой краіны і крыптагрошы.
+    Patreon, Tribute любой карткай зь любой краіны і крыптагрошы.
   en: >-
     Ways to thank Aliaksei Kartynnik (ITBeard): Buy Me a Coffee, Patreon,
     Tribute with any card from any country, and cryptocurrency.
@@ -28,7 +28,7 @@ labels:
 
 # Праз Tribute {#tribute}
 
-Падзякаваць можна праз [афіцыйнага Telegram-бота «Tribute»](https://telegram.me/tribute/app?startapp=dn4b) — падыдзе любая картка з любой краіны. Кожны такі данат дадае +100 да маёй матывацыі працягваць працу, дзякуй!
+Падзякаваць можна праз [афіцыйнага Telegram-бота «Tribute»](https://telegram.me/tribute/app?startapp=dn4b) — падыдзе любая картка зь любой краіны. Кожны такі данат дадае +100 да маёй матывацыі працягваць працу, дзякуй!
 
 # Крыптагрошамі {#crypto}
 

@@ -1,34 +1,30 @@
-# Развертывание на GitHub Pages
+# Deployment
 
-## Настройка
+The site is a static build (Vite + React) published to GitHub Pages at https://itbeard.com.
 
-1. В настройках репозитория GitHub перейдите в **Settings → Pages**
-2. В разделе **Source** выберите **GitHub Actions**
-3. Сохраните изменения
+## How it runs
 
-## Автоматическое развертывание
+Every push to `main` (or a manual run from the Actions tab) starts
+[`.github/workflows/deploy.yml`](workflows/deploy.yml):
 
-Workflow автоматически запускается при:
-- Push в ветку `main`
-- Ручном запуске через вкладку Actions
+1. `npm ci` on Node 22
+2. `npm test` — the deploy stops if a test fails
+3. `npm run build` — output in `dist/`
+4. `.nojekyll`, `CNAME` (`itbeard.com`) and `404.html` (a copy of `index.html`, the SPA fallback) are added to `dist/`
+5. `dist/` is uploaded and published with `actions/deploy-pages`
 
-## Что делает workflow
+## What the build adds
 
-1. Устанавливает .NET 8.0
-2. Восстанавливает зависимости проекта
-3. Собирает проект в конфигурации Release
-4. Публикует Blazor WebAssembly проект
-5. Настраивает правильный base-href для GitHub Pages
-6. Добавляет .nojekyll файл (необходим для корректной работы)
-7. Создает 404.html для SPA роутинга
-8. Развертывает на GitHub Pages
+GitHub Pages has no rewrites and no custom headers, so the build (see `vite.config.js`) does this itself:
 
-## Доступ к сайту
+- every route gets its own HTML — `about/index.html` and `about.html` — with that page's title,
+  description and canonical address, so a deep link answers 200 and reads right without JavaScript;
+- a Content-Security-Policy `<meta>` goes into every page;
+- `sitemap.xml` gets the date of the newest book and record for `/books` and `/vinyl`.
 
-После успешного развертывания сайт будет доступен по адресу:
-`https://<username>.github.io/<repository-name>/`
+A new route needs an entry in `ROUTES` in `vite.config.js`, a `<Route>` in `src/App.jsx`
+and a line in `public/sitemap.xml`, `public/llms.txt` and the `<noscript>` block of `index.html`.
 
-Где:
-- `<username>` - ваше имя пользователя на GitHub
-- `<repository-name>` - название репозитория
+## One-time setup
 
+**Settings → Pages → Source: GitHub Actions**, custom domain `itbeard.com`, "Enforce HTTPS" on.

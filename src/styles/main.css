@@ -67,6 +67,16 @@ p {
   margin: 0;
 }
 
+/* inline icons (src/components/Icon.jsx): one em tall, in the text colour */
+.icon {
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
 a {
   color: var(--accent-bright);
   text-decoration: none;
@@ -301,12 +311,12 @@ img {
   cursor: pointer;
 }
 
-.nav-group-toggle i {
+.nav-group-toggle .icon {
   font-size: 10px;
   transition: transform 0.2s;
 }
 
-.nav-group.opened .nav-group-toggle i {
+.nav-group.opened .nav-group-toggle .icon {
   transform: rotate(180deg);
 }
 
@@ -352,7 +362,7 @@ img {
     transform: translateY(6px);
   }
 
-  .nav-group:not(.chosen):hover .nav-group-toggle i {
+  .nav-group:not(.chosen):hover .nav-group-toggle .icon {
     transform: rotate(180deg);
   }
 }
@@ -831,6 +841,14 @@ body.theme-restore #app {
   z-index: 2;
 }
 
+/* chips with a hint stay above the cover link where there is a cursor to hover them with */
+@media (hover: hover) {
+  .card.card-linked [title] {
+    position: relative;
+    z-index: 2;
+  }
+}
+
 /* anchored archive cards land below the fixed header */
 .card-archived {
   scroll-margin-top: calc(var(--header-h) + 24px);
@@ -941,7 +959,7 @@ body.theme-restore #app {
 
 /* only linked cards react to hover, and only on devices with a real cursor */
 @media (hover: hover) {
-  a.card-archived:hover {
+  .card-archived.card-linked:hover {
     transform: translateY(-4px);
     border-color: var(--accent-bright);
     box-shadow: 0 14px 34px rgba(165, 14, 30, 0.16);
@@ -988,7 +1006,7 @@ body.theme-restore #app {
 }
 
 @media (hover: hover) {
-  a.card-dormant:hover {
+  .card-dormant.card-linked:hover {
     border-color: #e2c04e;
     box-shadow: 0 14px 34px rgba(226, 192, 78, 0.12);
   }
@@ -1318,10 +1336,16 @@ body.theme-restore #app {
 }
 
 .overview-label {
+  display: block;
+  width: 100%;
   height: 30px;
   line-height: 30px;
-  padding-right: 12px;
+  padding: 0 12px 0 0;
+  border: 0;
+  background: none;
+  font-family: inherit;
   font-size: 13px;
+  text-align: left;
   color: var(--muted);
   overflow: hidden;
   white-space: nowrap;
@@ -1332,6 +1356,12 @@ body.theme-restore #app {
 
 .overview-label.hot {
   color: var(--text);
+}
+
+.overview-label:focus-visible {
+  outline: 2px solid var(--accent-bright);
+  outline-offset: -2px;
+  border-radius: 4px;
 }
 
 .overview-chart {
@@ -2049,7 +2079,7 @@ body.theme-restore #app {
   text-shadow: none;
 }
 
-.contact-card i {
+.contact-card .contact-icon {
   grid-row: span 2;
   width: 44px;
   height: 44px;
@@ -2293,7 +2323,7 @@ body.theme-restore #app {
     pointer-events: none;
   }
 
-  .nav-group-toggle i {
+  .nav-group-toggle .icon {
     display: none;
   }
 
@@ -2430,6 +2460,11 @@ a[href^="lightbox:"] {
   -webkit-backdrop-filter: blur(6px);
   animation: lightbox-fade 0.22s ease;
   cursor: zoom-out;
+}
+
+/* the dialog takes focus when it opens (useDialogFocus) — no ring around the whole screen */
+.lightbox:focus {
+  outline: none;
 }
 
 .lightbox-body {
@@ -3120,7 +3155,7 @@ a[href^="lightbox:"] {
   margin-top: 4px;
 }
 
-.library-search i {
+.library-search .icon {
   position: absolute;
   top: 21px; /* the input's own centre line, so anything added under the box cannot pull the icon down */
   left: 15px;
@@ -3140,6 +3175,13 @@ a[href^="lightbox:"] {
   font-family: inherit;
   font-size: 14.5px;
   transition: border-color 0.2s;
+}
+
+/* iOS zooms the page into any focused field set smaller than 16px */
+@media (pointer: coarse) {
+  .library-search input {
+    font-size: 16px;
+  }
 }
 
 .library-search input::placeholder {

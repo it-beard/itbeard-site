@@ -1,4 +1,5 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
+import '../lib/booksContent'
 import { useLang } from '../lib/LangContext'
 import { LANGS, formatDate, getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
@@ -6,6 +7,7 @@ import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
+import Icon from '../components/Icon'
 import { LANG_ORDER, LIBRARY, RECENT, WANTED, langsOf } from '../data/books'
 import { CONCEPT_KINDS, buildIndex, search, similarBooks } from '../lib/bookSearch'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
@@ -107,9 +109,13 @@ export default function Books() {
   // the chips narrow the shelf; the box goes to the search, which reads words, numbers
   // and phrases like «па-беларуску» and also proposes books beside the ones found
   const searchIndex = libraryIndex()
-  const { shelf: shown, suggestions } = search(searchIndex, query, {
-    filter: (b) => (tag === 'all' || b.tags.includes(tag)) && (bookLang === 'all' || langsOf(b).includes(bookLang)),
-  })
+  const { shelf: shown, suggestions } = useMemo(
+    () =>
+      search(searchIndex, query, {
+        filter: (b) => (tag === 'all' || b.tags.includes(tag)) && (bookLang === 'all' || langsOf(b).includes(bookLang)),
+      }),
+    [searchIndex, query, tag, bookLang]
+  )
 
   // «жанр: касьмічная опера» — why a proposed book is proposed, in the reader's language
   const conceptLabel = (key) => page.concepts[key]?.label ?? key
@@ -200,7 +206,7 @@ export default function Books() {
         <Ornament />
 
         <div className="library-search">
-          <i className="fas fa-search" aria-hidden="true" />
+          <Icon name="search" />
           <input
             type="search"
             value={query}

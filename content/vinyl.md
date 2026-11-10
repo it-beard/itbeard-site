@@ -53,7 +53,7 @@ labels:
   prev: { be: Папярэдняя кружэлка, en: Previous record }
   next: { be: Наступная кружэлка, en: Next record }
   openHint: { be: Разгледзець вокладку, en: View the sleeve }
-  empty: { be: Тут пуста — паспрабуйце іншы фільтар., en: Nothing here — try another filter. }
+  empty: { be: Тут пуста — паспрабуйце іншы фільтр., en: Nothing here — try another filter. }
 # Artist names are printed on the sleeve in Cyrillic; these give the English
 # page a readable transliteration. Latin-named artists fall back to site.js.
 artists:
@@ -81,7 +81,7 @@ artists:
 
 ## Ravel — Boléro / La Valse / Rapsodie espagnole {#ravel-bolero}
 
-Тры аркестравыя творы Морыса Равеля ў запісах Леанарда Бернстайна з Нью-Ёрскай філармоніяй. Перавыданьне лейбла Vinyl Passion Classical.
+Тры аркестравыя творы Морыса Равеля ў запісах Леанарда Бернстайна зь Нью-Ёрскай філармоніяй. Перавыданьне лэйбла Vinyl Passion Classical.
 
 ## Beethoven — «Emperor» / «Moonlight» {#beethoven-emperor}
 
@@ -109,7 +109,7 @@ artists:
 
 ## Michael Jackson — Number Ones {#michael-jackson-number-ones}
 
-Васямнаццаць найбуйнейшых хітоў Майкла Джэксана — ад «Don't Stop 'Til You Get Enough» і «Billie Jean» да «You Rock My World». Зборнік 2003 году, які на вініле выйшаў упершыню толькі ў 2026-м — падвойнай плытой у канвэрце-разгортцы. На вокладцы — Джэксан у зіхоткім пінжаку, замерлы ў скачку на белым фоне.
+Васямнаццаць найбуйнейшых хітоў Майкла Джэксана — ад «Don't Stop 'Til You Get Enough» і «Billie Jean» да «You Rock My World». Зборнік 2003 году, які на вініле выйшаў упершыню толькі ў 2026-м — падвойнай плытой у канверце-разгортцы. На вокладцы — Джэксан у зіхоткім пінжаку, замерлы ў скачку на белым фоне.
 
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 
@@ -125,19 +125,19 @@ artists:
 
 ## Phil Collins — The Singles {#phil-collins-the-singles}
 
-Дзевятнаццаць сінглаў з сольнай кар'еры Філа Колінза — ад «In the Air Tonight» да «(Love Is Like A) Heatwave», з «Easy Lover» і «Another Day in Paradise» паміж імі. Абмежаванае выданьне да 75-годзьдзя Колінза: дзьве празрыстыя плыты, бірузовая і малінавая, у канвэрце з графіці на цаглянай сьцяне.
+Дзевятнаццаць сінглаў з сольнай кар'еры Філа Колінза — ад «In the Air Tonight» да «(Love Is Like A) Heatwave», з «Easy Lover» і «Another Day in Paradise» паміж імі. Абмежаванае выданьне да 75-годзьдзя Колінза: дзьве празрыстыя плыты, бірузовая і малінавая, у канверце з графіці на цаглянай сьцяне.
 
 ## James Brown — Collected {#james-brown-collected}
 
-Анталогія хроснага бацькі соўлу на двух дысках: ад ранніх запісаў з The Famous Flames да фанку, зь якога вырас увесь астатні сьвет.
+Анталогія хроснага бацькі соўлу на двух дысках: ад раньніх запісаў з The Famous Flames да фанку, зь якога вырас увесь астатні сьвет.
 
 ## Pink Floyd — Live at Wembley 1974 {#pink-floyd-wembley-1974}
 
-Жывы «The Dark Side of the Moon» зь лонданскага Empire Pool, выдадзены да пяцідзесяцігодзьдзя альбома. На вокладцы — арыгінальны рабочы эскіз Джорджа Хардзі з паметкамі алоўкам.
+Жывы «The Dark Side of the Moon» з лонданскага Empire Pool, выдадзены да пяцідзесяцігодзьдзя альбома. На вокладцы — арыгінальны рабочы эскіз Джорджа Хардзі з паметкамі алоўкам.
 
 ## MEUTE — Jubel {#meute-jubel}
 
-Гамбурскі духавы аркестар, які іграе тэхна маршам па вуліцах. Зборнік да дзесяцігодзьдзя гурта.
+Гамбурскі духавы аркестр, які іграе тэхна маршам па вуліцах. Зборнік да дзесяцігодзьдзя гурта.
 
 <!-- en -->
 

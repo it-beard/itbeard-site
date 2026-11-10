@@ -1,3 +1,4 @@
+import { lazy } from 'react'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import { LangProvider } from './lib/LangContext'
 import Layout from './components/Layout'
@@ -7,11 +8,13 @@ import Archive from './pages/Archive'
 import Support from './pages/Support'
 import Contacts from './pages/Contacts'
 import Vinyl from './pages/Vinyl'
-import Books from './pages/Books'
 import Sites from './pages/Sites'
 import NotFound from './pages/NotFound'
 import Redirector from './pages/Redirector'
 import { MEDIAKIT_URL } from './data/site'
+
+// the library is half of the site's weight: it is fetched when /books is opened
+const Books = lazy(() => import('./pages/Books'))
 
 export default function App() {
   return (

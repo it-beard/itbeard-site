@@ -3,8 +3,8 @@ titleSuffix:
   be: "/ Пахне Чабор!"
   en: "/ Long Live Belarus!"
 notFound:
-  be: Прабачце, але старонка ня знойдзена...
-  en: Sorry, but the page was not found...
+  be: Прабачце, але старонка ня знойдзена…
+  en: Sorry, but the page was not found…
 backHome:
   be: На галоўную
   en: Back home
@@ -21,7 +21,9 @@ nav:
   books: { be: Кнігі, en: Books }
   vinyl: { be: Кружэлкі, en: Vinyl }
   contacts: { be: Сувязь, en: Contacts }
+  menu: { be: Меню, en: Menu }
 labels:
+  close: { be: Зачыніць, en: Close }
   closedIn: { be: скончаны ў, en: finished in }
   closedInHint:
     be: Год, калі праект канчаткова скончыўся

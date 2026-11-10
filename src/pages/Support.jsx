@@ -4,13 +4,14 @@ import { getPage, getSection } from '../lib/content'
 import { useTitle } from '../lib/useTitle'
 import Md from '../lib/Md'
 import Ornament from '../components/Ornament'
+import Icon from '../components/Icon'
 import { CRYPTO_WALLETS } from '../data/site'
 
 const SUPPORT_ICONS = {
-  buymeacoffee: 'fas fa-mug-hot',
-  patreon: 'fab fa-patreon',
-  tribute: 'fab fa-telegram-plane',
-  crypto: 'fab fa-bitcoin',
+  buymeacoffee: 'mug-hot',
+  patreon: 'patreon',
+  tribute: 'telegram',
+  crypto: 'bitcoin',
 }
 
 function CopyButton({ value, labels }) {
@@ -20,19 +21,26 @@ function CopyButton({ value, labels }) {
     try {
       await navigator.clipboard.writeText(value)
     } catch {
+      // no clipboard API (an old browser, a page not in focus): the textarea way
       const ta = document.createElement('textarea')
       ta.value = value
       document.body.appendChild(ta)
       ta.select()
-      document.execCommand('copy')
+      let done = false
+      try {
+        done = document.execCommand('copy')
+      } catch {
+        /* nothing copied */
+      }
       ta.remove()
+      if (!done) return
     }
     setCopied(true)
     setTimeout(() => setCopied(false), 1500)
   }
 
   return (
-    <button className={`copy-btn ${copied ? 'copied' : ''}`} onClick={copy} title={labels.copy}>
+    <button type="button" className={`copy-btn ${copied ? 'copied' : ''}`} onClick={copy} title={labels.copy}>
       {copied ? labels.copied : labels.copy}
     </button>
   )
@@ -58,7 +66,7 @@ export default function Support() {
           <article key={s.id} id={s.id} className="support-card">
             <div className="support-card-head">
               <span className={`support-logo support-logo-${s.id}`} aria-hidden="true">
-                <i className={SUPPORT_ICONS[s.id]}></i>
+                <Icon name={SUPPORT_ICONS[s.id]} />
               </span>
               <h2>{s.title}</h2>
             </div>

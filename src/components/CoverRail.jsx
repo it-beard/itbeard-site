@@ -10,10 +10,10 @@ export default function CoverRail({ labels, tall = false, children }) {
   const measure = useCallback(() => {
     const el = rail.current
     if (!el) return
-    setEdges({
-      prev: el.scrollLeft > 4,
-      next: el.scrollLeft + el.clientWidth < el.scrollWidth - 4,
-    })
+    const prev = el.scrollLeft > 4
+    const next = el.scrollLeft + el.clientWidth < el.scrollWidth - 4
+    // the same object while nothing changed, so a scroll does not re-render the strip
+    setEdges((edges) => (edges.prev === prev && edges.next === next ? edges : { prev, next }))
   }, [])
 
   useEffect(() => {

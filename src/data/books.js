@@ -1,6 +1,7 @@
 // Data for the /books page: the home library, its newest books and the wanted list.
 // Everything here is language-independent; the texts live in content/books.md.
 import { PROFILES } from './bookProfiles'
+import { compareText } from '../lib/compareText'
 
 // Wanted list — the carousel under the library on /books: editions being hunted for.
 // Titles, series and subtitles are kept exactly as printed on the cover; people and
@@ -743,12 +744,8 @@ export const surnameOf = (author) => {
   return sortKey(SURNAMES[first] ?? first.split(' ').at(-1))
 }
 
-// Browsers ship different collation data: with the same 'be' locale Chrome puts Latin before
-// Cyrillic and Node after it. So the script order is decided here — digits, Cyrillic, the rest —
-// and localeCompare only orders the letters within a script.
-const scriptRank = (text) => (/^\p{Nd}/u.test(text) ? 0 : /^\p{Script=Cyrillic}/u.test(text) ? 1 : 2)
-export const compareText = (a, b, lang) =>
-  scriptRank(a) - scriptRank(b) || a.localeCompare(b, lang, { numeric: true })
+// the shelf order of two strings; it lives apart so /vinyl can sort without loading the library
+export { compareText }
 
 function byShelfOrder(a, b) {
   if (a.lang !== b.lang) return LANG_ORDER.indexOf(a.lang) - LANG_ORDER.indexOf(b.lang)

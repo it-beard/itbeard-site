@@ -1,6 +1,6 @@
 # Aliaksei Kartynnik (Лёха Картыньнік, АйЦіБарада / ITBeard)
 
-> Personal website of Aliaksei Kartynnik — software engineer since 2008, AI educator since 2023, tech content creator, podcaster, and community builder. Known online as ITBeard (АйЦіБарада). Originally from Belarus, based in Wrocław, Poland since 2022. The site is bilingual: Belarusian (default) and English (?lang=en).
+> Personal website of Aliaksei Kartynnik — software engineer since 2008, AI educator since 2023, tech content creator, podcaster, and community builder. Known online as ITBeard (АйЦіБарада). Originally from Belarus, based in Wrocław, Poland since 2022. The site is bilingual, Belarusian and English: it follows the browser language, and ?lang=be or ?lang=en picks one.
 
 Key facts:
 
@@ -20,7 +20,7 @@ Key facts:
 - [About](https://itbeard.com/about): biography, key events, and facts
 - [Career](https://itbeard.com/experience): professional timeline since 2008
 - [Project archive](https://itbeard.com/archive): finished and dormant projects
-- [My books](https://itbeard.com/books): home library of about 110 books with covers and notes, plus a wanted list of rare Belarusian editions
+- [My books](https://itbeard.com/books): home library of more than 170 books with covers and notes, plus a wanted list of rare Belarusian editions
 - [My vinyl](https://itbeard.com/vinyl): vinyl record collection
 - [Sites on itbeard.com](https://itbeard.com/sites): sites and web apps that live on itbeard.com subdomains, with links to each
 - [Thank me](https://itbeard.com/support): ways to say thanks via Buy Me a Coffee, Patreon, Tribute, or cryptocurrency

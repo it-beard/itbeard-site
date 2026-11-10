@@ -7,7 +7,7 @@ import Ornament from '../components/Ornament'
 import CoverView from '../components/CoverView'
 import CoverRail from '../components/CoverRail'
 import { VINYL, WANTED_VINYL } from '../data/site'
-import { compareText } from '../data/books'
+import { compareText } from '../lib/compareText'
 import { cardUrl, useCardLink } from '../lib/useCardLink'
 
 // What a record is filed under: a person by the surname of the first name on the

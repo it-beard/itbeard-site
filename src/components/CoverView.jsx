@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react'
 import { createPortal } from 'react-dom'
 import Md from '../lib/Md'
 import Ornament from './Ornament'
+import Icon from './Icon'
+import { useDialogFocus } from '../lib/useDialogFocus'
 
 // Full-screen view of one item from a cover gallery (records, books): the cover
 // on the left, facts and the note on the right. Arrow keys and the footer
@@ -25,6 +27,8 @@ export default function CoverView({
   onStep,
   children,
 }) {
+  const dialog = useDialogFocus()
+
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') onClose()
@@ -43,9 +47,13 @@ export default function CoverView({
   const [shared, setShared] = useState(false)
   const share = async () => {
     try {
-      // the system share sheet where there is one (phones), the clipboard elsewhere
-      if (navigator.share) await navigator.share({ title: full, url: shareUrl })
-      else await navigator.clipboard.writeText(shareUrl)
+      // the system share sheet where there is one, and it says for itself what happened;
+      // the clipboard elsewhere, and then the button confirms the copy
+      if (navigator.share) {
+        await navigator.share({ title: full, url: shareUrl })
+        return
+      }
+      await navigator.clipboard.writeText(shareUrl)
       setShared(true)
       setTimeout(() => setShared(false), 1800)
     } catch {
@@ -55,7 +63,7 @@ export default function CoverView({
   const shownFacts = facts.filter(([, value]) => value)
 
   return createPortal(
-    <div className="lightbox" role="dialog" aria-modal="true" aria-label={full} onClick={onClose}>
+    <div className="lightbox" role="dialog" aria-modal="true" aria-label={full} tabIndex={-1} ref={dialog} onClick={onClose}>
       <div
         className={`lightbox-body cover-view${portrait ? ' cover-view-portrait' : ''}`}
         onClick={(e) => e.stopPropagation()}
@@ -102,7 +110,7 @@ export default function CoverView({
           </button>
           {shareUrl && (
             <button type="button" className="cover-share" onClick={share} title={labels.share}>
-              <i className={`fas ${shared ? 'fa-check' : 'fa-link'}`} aria-hidden="true"></i>
+              <Icon name={shared ? 'check' : 'link'} />
               <span>{shared ? labels.copied : labels.share}</span>
             </button>
           )}

@@ -10,7 +10,7 @@ description:
     Archive of Aliaksei Kartynnik's (ITBeard) projects: finished and
     slow-burning podcasts, YouTube channels, communities, and other
     initiatives over the years.
-dormantLabel: { be: мляваплынны, en: slow burning }
+dormantLabel: { be: мляваплынны, en: slow-burning }
 counterHint:
   be: >
     Усяго праектаў на пагосьце: {total}. Зь іх скончаных — {closed},
@@ -27,7 +27,7 @@ legend:
     en: grey cards — projects that are fully finished or closed
   dormant:
     be: >
-      карткі з цёплым фонам — мляваплынныя: час ад часу там нешта
+      карткі зь цёплым фонам — мляваплынныя: час ад часу там нешта
       зьяўляецца, але статус няпэўны
     en: >
       warm-tinted cards — slow-burning ones: something shows up there
@@ -49,7 +49,7 @@ filters:
 
 # Пагост праектаў {#intro}
 
-На гэтым ціхім пагосьце спачываюць мае праекты — не ўсе, а найбольш адметныя. Адны ўжо закрытыя — яны адыгралі сваю ролю і сышлі на спачын. Іншыя — мляваплынныя: час ад часу яшчэ падаюць прыкметы жыцьця. Кожны зь іх — частка майго шляху, і, магчыма, акурат па адным зь іх вы мяне і ведаеце.
+На гэтым ціхім пагосьце спачываюць мае праекты — ня ўсе, а найбольш адметныя. Адны ўжо закрытыя — яны адыгралі сваю ролю і сышлі на спачын. Іншыя — мляваплынныя: час ад часу яшчэ падаюць прыкметы жыцьця. Кожны зь іх — частка майго шляху, і, магчыма, акурат па адным зь іх вы мяне і ведаеце.
 
 Нізкі паклон кожнаму, хто ўкладаў у гэтыя праекты свае рукі, час і сэрца. Без вас нічога з гэтага не было б.
 
@@ -65,7 +65,7 @@ filters:
 
 ## DunkelSaga {#dunkelsaga}
 
-**DunkelSaga** — музычны праект з песьнямі пра адметныя падзеі сусьвету «Ўладара Пярсьцёнкаў», згенераванымі праз Suno: ад dark folk да эпічнага мэталу на нямецкай мове.
+**DunkelSaga** — музычны праект зь песьнямі пра адметныя падзеі сусьвету «Ўладара Пярсьцёнкаў», згенераванымі праз Suno: ад dark folk да эпічнага металу на нямецкай мове.
 
 Музыка даступная на ўсіх музычных пляцоўках, а картка вядзе на YouTube-канал праекту.
 
@@ -79,19 +79,19 @@ filters:
 
 **«Таймер для сцэны»** — паўнаэкранны таймер для паэтычных слэмаў, адкрытых мікрафонаў, пітчаў, дэбатаў і любых выступаў з рэгламентам. Вялікія лічбы, якія відаць з апошняга раду, арнамент у стылі вышыванкі, папярэджаньні перад канцом і сігнал, калі час скончыўся.
 
-Ёсьць этапы (выступ 3:00, журы 1:00), рэжым перабору часу, секундамер, асобны экран для залы без кнопак і спасылка, якая адкрывае таймер з гатовымі наладамі на любой прыладзе. Працуе без інтэрнэту і ставіцца як дадатак; усё на чыстых HTML, CSS і JS, без залежнасьцяў і зборкі. Код адкрыты на GitHub — распрацоўка завершаная.
+Ёсьць этапы (выступ 3:00, журы 1:00), рэжым перабору часу, секундамер, асобны экран для залы без кнопак і спасылка, якая адкрывае таймер з гатовымі наладамі на любой прыладзе. Працуе безь інтэрнэту і ставіцца як дадатак; усё на чыстых HTML, CSS і JS, без залежнасьцяў і зборкі. Код адкрыты на GitHub — распрацоўка завершаная.
 
 ## Аліяс па-беларуску {#alias}
 
-**«Аліяс па-беларуску»** — вэб-вэрсія гульні «Аліяс»: адзін гулец тлумачыць слова, каманда адгадвае. 886 беларускіх словаў на трох узроўнях складанасьці, ад 1 да 5 камандаў, кірыліца або лацінка.
+**«Аліяс па-беларуску»** — вэб-версія гульні «Аліяс»: адзін гулец тлумачыць слова, каманда адгадвае. 886 беларускіх словаў на трох узроўнях складанасьці, ад 1 да 5 камандаў, кірыліца або лацінка.
 
-Працуе проста ў мабільным браўзэры, нічога ставіць ня трэба; стан гульні захоўваецца, так што партыю можна працягнуць і пасьля закрыцьця ўкладкі. Ёсьць сьветлая і цёмная тэмы, гук, вібрацыя і піксэльныя знакі камандаў з назвамі накшталт «Вусы Мулявіна» ці «Карона Вітаўта». Код адкрыты на GitHub — распрацоўка завершаная.
+Працуе проста ў мабільным браўзеры, нічога ставіць ня трэба; стан гульні захоўваецца, так што партыю можна працягнуць і пасьля закрыцьця ўкладкі. Ёсьць сьветлая і цёмная тэмы, гук, вібрацыя і піксельныя знакі камандаў з назвамі накшталт «Вусы Мулявіна» ці «Карона Вітаўта». Код адкрыты на GitHub — распрацоўка завершаная.
 
 ## Elist {#elist}
 
 **Elist** — пошук па чатырох экстрэмісцкіх сьпісах Беларусі: матэрыялы, фарміраваньні, фізічныя асобы і беларусы ў вышуку МУС РФ. Можна праверыць нік, канал, сайт, кнігу ці імя — і сябе ў тым ліку.
 
-Сайт ня мае базы дадзеных, працуе цалкам у браўзэры і нічога не зьбірае. Ёсьць сьпіс назіраньня, RSS і Telegram-канал. Код адкрыты на GitHub; распрацоўка завершаная, сайт абнаўляецца сам.
+Сайт ня мае базы дадзеных, працуе цалкам у браўзеры і нічога не зьбірае. Ёсьць сьпіс назіраньня, RSS і Telegram-канал. Код адкрыты на GitHub; распрацоўка завершаная, сайт абнаўляецца сам.
 
 ## Lex Kartynnik {#lex-kartynnik}
 
@@ -103,7 +103,7 @@ filters:
 
 **«Imbalanced Dialogues»** — наш з жонкай Лесяй YouTube-канал дыялогаў: сям'я, здароўе, тэхналогіі і ўсё, што нас чапляе.
 
-Для мяне гэта быў яшчэ і эксьперымент запісу падкастаў па-ангельску — але далей за адзін выпуск мы не прасунуліся.
+Для мяне гэта быў яшчэ і эксперымент запісу падкастаў па-ангельску — але далей за адзін выпуск мы не прасунуліся.
 
 ## Навіны Барады {#beard-news}
 
@@ -125,7 +125,7 @@ filters:
 
 ## AI DevHub {#genai-devhub}
 
-**AI DevHub** — англамоўная супольнасьць на платформе Skool для інжынераў, якія хочуць разумна ўзмацніць сваю прадукцыйнасьць з дапамогай ШІ. Задумваўся як англамоўны аналаг клуба [«Эвалюцыя Кода»](https://evocoders.ai), які я вёў з красавіка 2025 году.
+**AI DevHub** — англамоўная супольнасьць на платформе Skool для інжынераў, якія хочуць разумна ўзмацніць сваю прадукцыйнасьць з дапамогай ШІ. Задумвалася як англамоўны аналаг клуба [«Эвалюцыя Кода»](https://evocoders.ai); я вёў яе з красавіка 2025 году.
 
 Часу на разьвіцьцё не хапала, а вялікага попыту так і не зьявілася — таму ў лютым 2026 году праект закрыўся.
 
@@ -143,9 +143,9 @@ filters:
 
 ## Letapis.VKL {#letapis}
 
-**Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world. Там жыў і мой уласны блог. 
+**Letapis.VKL** — беларускамоўная блог-платформа на базе WriteFreely, якую я падняў і лакалізаваў для суполкі VKL.world. Там жыў і мой уласны блог.
 
-Праект закрыўся праз праблемы з самафінансаваньнем суполкай і аптымізацыю выдаткаў.
+Праект закрыўся праз праблемы з самафінансаваньнем суполкі і аптымізацыю выдаткаў.
 
 ## неРодина {#nerodina}
 
@@ -155,7 +155,7 @@ filters:
 
 ## АйТиБорода Shorts {#itbeard-shorts}
 
-**«АйТиБорода Shorts»** — сумесны з Anywhere Club (EPAM) спін-оф «АйЦіБарады»: кароткія інтэрв'ю з інжынерамі EPAM пра тое, як увайсьці ў прафесію і што вучыць — Java, JavaScript, Python, Data Science, DevOps, Android, iOS і праектны мэнэджмэнт.
+**«АйТиБорода Shorts»** — сумесны з Anywhere Club (EPAM) спін-оф «АйЦіБарады»: кароткія інтэрв'ю зь інжынерамі EPAM пра тое, як увайсьці ў прафесію і што вучыць — Java, JavaScript, Python, Data Science, DevOps, Android, iOS і праектны менеджмент.
 
 Выйшла 8 выпускаў на YouTube-канале Anywhere Club.
 
@@ -163,13 +163,13 @@ filters:
 
 **«Тёмный Лес»** — YouTube-канал, на якім я задумваў рабіць інтэрв'ю пра навуку. Зрабіў тры выпускі і закінуў канал: відэа адтуль і новыя навуковыя інтэрв'ю перакачавалі на канал «АйЦіБарада» ў рубрыку «Наука+».
 
-Самога канала ўжо не знайсьці на YouTube, але засталася аўдыявэрсія падкасту — картка вядзе акурат на яе.
+Самога канала ўжо не знайсьці на YouTube, але засталася аўдыяверсія падкасту — картка вядзе акурат на яе.
 
 ## Визуальная студия {#visual-studio}
 
 **«Визуальная студия»** — падкаст пра навіны са сьвету .NET, які мы рабілі з калегамі падчас маёй працы ў SoftTeco.
 
-З 10 траўня па 30 ліпеня 2019 году выйшлі тры выпускі, пасьля чаго падкаст закрыўся.
+З 10 траўня да 30 ліпеня 2019 году выйшлі тры выпускі, пасьля чаго падкаст закрыўся.
 
 ## IT-Страна {#it-strana}
 
@@ -179,9 +179,9 @@ filters:
 
 ## IT-Акадэмія GENESIS {#genesis}
 
-**Genesis IT-Academy** — невялікая менская школа праграмаваньня, якую мы заснавалі з Максімам Гордзіным. Галоўным кірункам была школа для падлеткаў па HTML і CSS — выпусьцілі некалькі бясплатных груп [выпускнікоў](lightbox:/images/genesis_it_academy_graduates_1.webp "Выпускнікі IT-Акадэміі GENESIS з сэртыфікатамі"). Пазьней дадаліся платныя курсы для дарослых: HTML і CSS ды тэставаньне ПЗ, якое выкладаў Стас Спадарык.
+**Genesis IT-Academy** — невялікая мінская школа праграмаваньня, якую мы заснавалі з Максімам Гордзіным. Галоўным кірункам была школа для падлеткаў па HTML і CSS — выпусьцілі некалькі бясплатных груп [выпускнікоў](lightbox:/images/genesis_it_academy_graduates_1.webp "Выпускнікі IT-Акадэміі GENESIS зь сертыфікатамі"). Пазьней дадаліся платныя курсы для дарослых: HTML і CSS ды тэставаньне ПЗ, якое выкладаў Стас Спадарык.
 
-Ад школы засталіся [YouTube-канал](https://www.youtube.com/@genesis-academy) і [GitHub](https://github.com/GenesisAcademy) з навучальнымі праектамі. Прапрацавалі каля года: адміністрацыйная руціна забірала амаль увесь час, і школу давялося закрыць.
+Ад школы засталіся [YouTube-канал](https://www.youtube.com/@genesis-academy) і [GitHub](https://github.com/GenesisAcademy) з навучальнымі праектамі. Прапрацавалі каля году: адміністрацыйная руціна забірала амаль увесь час, і школу давялося закрыць.
 
 ## PUSHka {#pushka}
 
@@ -193,7 +193,7 @@ filters:
 
 **Tribute to Xonix** — гульня для тэлевізараў LG на webOS, прысьвечаная легендарнай аркадзе Xonix: адразаеш кавалкі поля, уцякаючы ад ворагаў, і мусіш заняць 80% плошчы, каб прайсьці далей.
 
-Мы зрабілі яе ў 2016 годзе разам з маімі сябрамі Жэням Бутурлёй і Лёшам Майсеёнкам падчас хакатону ад LG у Менску — і занялі там трэцяе месца.
+Мы зрабілі яе ў 2016 годзе разам з маімі сябрамі Жэнем Бутурлёй і Лёшам Майсеёнкам падчас хакатону ад LG у Мінску — і занялі там трэцяе месца.
 
 Гульня дагэтуль жыве на тэлевізарах LG (бясплатна ў LG Gaming Portal), а картка вядзе на відэаагляд.
 
@@ -207,19 +207,19 @@ filters:
 
 **«Православная свеча»** — праект, які я рабіў у 2016 годзе разам са знаёмымі, у тым ліку з настаяцелем жыровіцкага храма.
 
-Ён мусіў стаць адзіным месцам для онлайн-набыцьця сьвечак і замовы малітваў па ўсіх цэрквах Беларусі, а таксама парталам з асабістымі старонкамі цэркваў і навінамі для прыходаў — адзіным царкоўным парталам краіны.
+Ён мусіў стаць адзіным месцам для анлайн-набыцьця сьвечак і замовы малітваў па ўсіх цэрквах Беларусі, а таксама парталам з асабістымі старонкамі цэркваў і навінамі для прыходаў — адзіным царкоўным парталам краіны.
 
 Тэхнічную базу я цалкам скончыў, але праект так і не пайшоў у жыцьцё праз бюракратызаванасьць царкоўнай вярхушкі.
 
 ## PhysLib {#physlib}
 
-**PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: канспэкты лекцый, падручнікі, мэтадычкі і лабараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мною бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
+**PhysLib** — свабодная бібліятэка студэнтаў-фізікаў: кансьпекты лекцый, падручнікі, метадычкі і лабараторныя для фізфака й РФіКТ БДУ, а пазьней — для студэнтаў-фізікаў усіх беларускіх ВНУ. Разам са мною бібліятэку вёў Яўген Сляпцоў — апошнія гады ён фактычна цягнуў яе сам.
 
 Архіў вырас да 3,5 ГБ і больш як 450 тэматычных зборак. Сайт physlib.by працаваў да сакавіка 2016 году, а [архіў](https://drive.google.com/drive/folders/0B3YaDDz_084lZC1hNFEtNWxPdUU) бібліятэкі дагэтуль захоўваецца на Google Дыску.
 
 ## Bel-Forum.com {#bel-forum}
 
-[**Bel-Forum.com**](lightbox:/images/bel-forum.webp "Галоўная старонка Bel-Forum.com, 2010 год") — беларускі форум і каталог рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лакальных сайтаў, гульнявыя сэрвэры, файлавыя архівы і інструкцыі па наладжваньні доступу, [чат](lightbox:/images/bel-forum-chat.webp "Чат Bel-Forum.com — ElfChat, 2010 год") і бібліятэка фэнтэзі.
+[**Bel-Forum.com**](lightbox:/images/bel-forum.webp "Галоўная старонка Bel-Forum.com, 2010 год") — беларускі форум і каталог рэсурсаў гасьцявой сеткі ByFly на рухавіку phpBB 3: навіны «госьця», сьпісы лакальных сайтаў, гульнявыя серверы, файлавыя архівы і інструкцыі па наладжваньні доступу, [чат](lightbox:/images/bel-forum-chat.webp "Чат Bel-Forum.com — ElfChat, 2010 год") і бібліятэка фэнтэзі.
 
 Помнік беларускага інтэрнэту канца 2000-х. На верасень 2010 году меў 738 тэмаў, 3 881 паведамленьне і 4 906 карыстальнікаў.
 
@@ -239,7 +239,7 @@ On it, I make science-adjacent and technical interviews about programming langua
 
 ## The Lord of the Rings {#uladar}
 
-**«Уладар Пярсьцёнкаў па-беларуску»** — a YouTube channel where I'm slowly voicing “The Lord of the Rings” in Belarusian, based on the translation by Dzmitry Mahileucau and Krystsina Kurchankova.
+**«Уладар Пярсьцёнкаў па-беларуску»** — a YouTube channel where I'm slowly voicing “The Lord of the Rings” in Belarusian, based on the translation by Dzmitry Mahileutsau and Krystsina Kurchankova.
 
 ## DunkelSaga {#dunkelsaga}
 
@@ -249,7 +249,7 @@ The music is available on all major music platforms, and this card leads to the 
 
 ## Bloggers CMS {#bloggers-cms}
 
-**Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and the whole channel kitchen in one place.
+**Bloggers CMS** — my own content-management system for bloggers: guests, episodes, sponsors and everything behind the scenes of a channel in one place.
 
 The code is open on GitHub; I kept updating it for my own needs while I used it.
 
@@ -275,7 +275,7 @@ The site has no database, runs entirely in the browser and collects nothing. The
 
 **«Lex Kartynnik»** — my English-language YouTube channel about science, programming and AI.
 
-An attempt to talk to the global audience directly; something appears there occasionally.
+An attempt to talk to a global audience directly; something appears there occasionally.
 
 ## Imbalanced Dialogues {#imbalanced-dialogues}
 
@@ -297,7 +297,7 @@ Out of 316 applications, 56 people were accepted (5.6 applicants per spot). The 
 
 ## Hitchhiking through AI {#autaspynam}
 
-**«Аўтаспынам па ШІ» ("Hitchhiking through AI: a beginner's guide")** — an offline course for kids that I ran in Wrocław in February–March 2026 at the Przejście Dialogu space. Four "stops" taught in Belarusian: what AI is, how to make friends with ChatGPT, create cool music, and write code — even if you'd never done any of that before.
+**«Аўтаспынам па ШІ» ("Hitchhiking through AI: a beginner's guide")** — an offline course for kids that I ran in Wrocław in February–March 2026 at the Przejście Dialogu space. Four "stops" taught in Belarusian: what AI is, how to make friends with ChatGPT, create cool music, and write code — even if you've never done any of that before.
 
 The crew successfully reached the final stop and proved it: AI and the Belarusian language are a perfect match.
 
@@ -315,13 +315,13 @@ In autumn 2025 EPAM stopped funding it, and the show carried on as [“on Vibe�
 
 ## AI Tools Catalog {#aia-catalog}
 
-**AI Tools Catalog** — an open catalog of AI tools mentioned on the AIA Podcast: a service made it in only after being discussed in an episode, and listeners added new ones via pull requests. Built with Vue 3, the [code](https://github.com/awclub/catalog) is open on GitHub.
+**AI Tools Catalog** — an open catalog of AI tools mentioned on the AIA Podcast: a service made it in only after being discussed in an episode, and listeners added new ones via pull requests. Built with Vue 3; the [code](https://github.com/awclub/catalog) is open on GitHub.
 
 The catalog stopped updating along with the podcast, but the site is still alive — that's exactly where this card leads.
 
 ## Letapis.VKL {#letapis}
 
-**Letapis.VKL** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community. My own blog lived there too. 
+**Letapis.VKL** — a Belarusian-language blogging platform based on WriteFreely that I set up and localized for the VKL.world community. My own blog lived there too.
 
 The project closed over problems with the community funding itself and cost optimizations.
 
@@ -391,7 +391,7 @@ I fully finished the technical foundation, but the project never came to life be
 
 ## PhysLib {#physlib}
 
-**PhysLib** — a free library for physics students: lecture notes, textbooks, study guides and lab works for the Physics and Radiophysics faculties of BSU, and later for physics students of Belarusian universities in general. I ran the library together with Yauhen Sliaptsou — who, in the final years, was effectively keeping it going on his own.
+**PhysLib** — a free library for physics students: lecture notes, textbooks, study guides and lab assignments for the Physics and Radiophysics faculties of BSU, and later for physics students of Belarusian universities in general. I ran the library together with Yauhen Sliaptsou — who, in the final years, was effectively keeping it going on his own.
 
 The archive grew to 3.5 GB and more than 450 topical collections. The physlib.by site ran until March 2016, and the library [archive](https://drive.google.com/drive/folders/0B3YaDDz_084lZC1hNFEtNWxPdUU) is still preserved on Google Drive.
 

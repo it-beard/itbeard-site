@@ -770,3 +770,38 @@ describe('books page: card links', () => {
     expect(screen.getByText('Спасылка скапіяваная')).toBeInTheDocument()
   })
 })
+
+// Regression: a number in the query used to be taken for a page count and nothing else,
+// so a title or a volume with a number in it could not be found.
+describe('books page: numbers that are part of a name', () => {
+  const titles = () => spines().map((el) => el.querySelector('.spine-title').textContent)
+
+  it('finds «451 градус» by the number in its title', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), '451 градус')
+    // the book itself first; another Bradbury may follow, its note names this one
+    expect(titles()[0]).toBe(LIBRARY.find((b) => b.id === 'bradbury-451-hradus-pavodle-farenhiejta').title)
+    expect(titles().length).toBeLessThan(5)
+  })
+
+  it('finds a volume of a series by its number', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), 'Гары Потэр 3')
+    expect(titles()).toEqual([LIBRARY.find((b) => b.id === 'rowling-hary-poter-3').title])
+    await user.clear(search())
+    await user.type(search(), 'пентаквантар 2')
+    expect(titles()).toEqual([LIBRARY.find((b) => b.id === 'shukanau-pentakvantar-2').title])
+  })
+
+  it('still filters by pages and by year', async () => {
+    const user = userEvent.setup()
+    show()
+    await user.type(search(), '>900')
+    expect(spines().length).toBe(LIBRARY.filter((b) => b.pages > 900).length)
+    await user.clear(search())
+    await user.type(search(), '2025')
+    expect(spines().length).toBe(LIBRARY.filter((b) => b.year === 2025).length)
+  })
+})

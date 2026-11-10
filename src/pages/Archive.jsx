@@ -98,10 +98,23 @@ export default function Archive() {
           {shown.map((p) => {
             const card = intro.subs.find((s) => s.id === p.id)
             if (!card) return null
-            const CardTag = p.url ? 'a' : 'div'
-            const linkProps = p.url ? { href: p.url, target: '_blank', rel: 'noopener' } : {}
+            // a linked card is a div under a stretched cover link (as on the home page),
+            // so the links inside its text are not links within a link
             return (
-              <CardTag key={p.id} id={p.id} {...linkProps} className={`card card-archived${p.dormant ? ' card-dormant' : ''}`}>
+              <div
+                key={p.id}
+                id={p.id}
+                className={`card card-archived${p.url ? ' card-linked' : ''}${p.dormant ? ' card-dormant' : ''}`}
+              >
+                {p.url && (
+                  <a
+                    className="card-cover"
+                    href={p.url}
+                    target="_blank"
+                    rel="noopener"
+                    aria-label={card.title.replace(/\*\*/g, '')}
+                  ></a>
+                )}
                 <div className="card-head">
                   <img src={p.image} alt="" loading="lazy" />
                   <div className="card-title">
@@ -131,7 +144,7 @@ export default function Archive() {
                     </span>
                   )}
                 </div>
-              </CardTag>
+              </div>
             )
           })}
         </div>

@@ -18,7 +18,7 @@ intro:
   be: |
     Мяне клічуць **Аляксеем Картыньнікам**, хоць шмат хто ведае мяне пад мянушкай **АйЦіБарада**. Родам зь Беларусі, з 2022 году жыву ў польскім Вроцлаве. Я прафесійны праграміст, ШІ-адукатар, стваральнік тэхналагічнага кантэнту і сьвядомы беларус.
 
-    З 2008 году раблю сайты, з 2012-га шчыльна займаўся backend-распрацоўкай, а з 2023-га навучаю распрацоўшчыкаў **працаваць з ШІ**. Таксама, я раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў падкастах, ствараю **суполкі** і дапамагаю разьвіваць **беларускамоўнае** інфаполе.
+    З 2008 году раблю сайты, з 2012-га шчыльна займаўся backend-распрацоўкай, а з 2023-га навучаю распрацоўшчыкаў **працаваць з ШІ**. Таксама я раблю шмат **айцішнага**, **калянавуковага** і **тэхнічнага** кантэнту на YouTube і ў падкастах, ствараю **суполкі** і дапамагаю разьвіваць **беларускамоўнае** інфаполе.
 
     Ніжэй — некаторыя падзеі і факты, якія, лічу, апісваюць мяне найлепш.
   en: |
@@ -31,7 +31,7 @@ periodHint:
   be: Дата ці перыяд падзеі
   en: The date or period of the event
 timeline:
-  - period: { be: "4 лютага 1992 года", en: "Feb 4, 1992" }
+  - period: { be: "4 лютага 1992 году", en: "Feb 4, 1992" }
     title:
       be: Я нарадзіўся тут
       en: Born
@@ -39,12 +39,12 @@ timeline:
       be: |
         У Петрыкаве. Маленькі горад на Прыпяці, Гомельскае Палесьсе. Але доўга я там не пражыў, бо бацькі амаль адразу пераехалі ў Ракаў, што пад Мінскам. Аднак Палесься ўва мне шмат — багата часу я праводзіў у бабуль зь дзядулямі ў Петрыкаве і ў Курыцічах непадалёк. Адтуль я маю палескую ўпартасьць і звычку даводзіць пачатае да канца.
       en: |
-        In Pietrykaŭ. A small town on the Prypiać River, in the Homiel part of Palessie (Polesia). I didn't live there long, though: almost right away my parents moved to Rakaŭ, near Minsk. Still, there's plenty of Palessie in me — I spent a lot of time with my grandparents in Pietrykaŭ and in Kurycičy nearby. That's where I get my Palessian stubbornness and my habit of finishing what I start.
+        In Pietrykaŭ. A small town on the Prypiać River, in the Homiel part of Palesse (Polesia). I didn't live there long, though: almost right away my parents moved to Rakaŭ, near Minsk. Still, there's plenty of Palesse in me — I spent a lot of time with my grandparents in Pietrykaŭ and in Kurycičy nearby. That's where I get my Palessian stubbornness and my habit of finishing what I start.
         
   - period: { be: 2001 — 2010, en: 2001 — 2010 }
     title:
       be: Ракаўскія народнікі
-      en: The Rakaŭ Folk Crew.
+      en: The Rakaŭ Folk Crew
     description:
       be: |
        Амаль дзесяць гадоў я ўдзельнічаў у ракаўскім узорным [дзіцячым калектыве «Вянок»](lightbox:/images/vianok-2.webp "Ансамблі «Вянок» і «Гасцінец», Ракаў"). Мы сьпявалі народныя песьні, танчылі, адзначалі традыцыйныя сьвяты, езьдзілі ў экспедыцыі і на выступленьні па ўсёй Беларусі і ня толькі (Фёлькерсдорф назаўжды ў сэрцы!). Лепшага занятку ў дзяцінстве, каб выхаваць і захаваць у сабе беларускасьць, не прыдумаеш. Частка гэтага досьведу цяпер перайшла ў мой праект Setivir 😊
@@ -59,7 +59,7 @@ timeline:
       be: |
         Дзесьці ў 2008 годзе, акурат пасьля таго, як на маім хутары зьявіўся інтэрнэт ByFly (так, фактычна я жыў на хутары Лявонаўка, які лічыцца часткай Ракава), я пачаў вывучаць HTML і CSS і зрабіў свае першыя сайты. Гэта былі [мая асабістая старонка](https://it-beard.github.io/lex-kar-archive/) і [сайт Ракава](lightbox:/images/rakau.webp "Rakov.info — сайт Ракава, 2010 год"), пабудаваны на WordPress. Можна лічыць, што гэта быў мой старт у айцішцы — хоць да першага сапраўднага праграмаваньня заставалася яшчэ чатыры гады.
       en: |
-        Sometime around 2008, right after ByFly internet arrived at my khutar — a small farmstead — (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](https://it-beard.github.io/lex-kar-archive/) and [a website about Rakaŭ](lightbox:/images/rakau.webp "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
+        Sometime around 2008, right after ByFly internet arrived at my khutar, a small farmstead (yes, I actually lived on the Liavonaŭka farmstead, which counts as part of Rakaŭ), I started learning HTML and CSS and built my first websites. They were [my personal homepage](https://it-beard.github.io/lex-kar-archive/) and [a website about Rakaŭ](lightbox:/images/rakau.webp "Rakov.info — the website about Rakaŭ, 2010"), built on WordPress. You could call that my start in IT — though real programming was still four years away.
 
   - period: { be: 2008 — 2009, en: 2008 — 2009 }
     title:
@@ -70,7 +70,7 @@ timeline:
       be: |
         Дзякуючы намаганьням бацькоў, я ў апошніх шэрагах ускочыў у адно з найлепшых для навучаньня месцаў Беларусі — Ліцэй БДУ. Прынамсьці, ён быў найлепшым датуль, пакуль дзяржава ня вырашыла плюнуць у твар усім, хто будаваў гэтае месца, і не перайменавала яго ў ліцэй імя Дзяржынскага. Але ліцэйскі дух назаўжды з намі, як і людзі адтуль. Віват ліцэй!
       en: |
-        Thanks to my parents' efforts, I leapt in among the very last admitted to one of the best places in Belarus — the BSU Lyceum (the lyceum of the Belarusian State University). At least, it was the best until the state decided to spit in the face of everyone who had built that place and renamed it after Dzerzhinsky — the founder of the Soviet secret police. But the lyceum spirit stays with us forever, as do the people who came out of it. Vivat Lyceum!
+        Thanks to my parents' efforts, I leapt in among the very last admitted to one of the best places to study in Belarus — the BSU Lyceum (the lyceum of the Belarusian State University). At least, it was the best until the state decided to spit in the face of everyone who had built that place and renamed it after Dzerzhinsky — the founder of the Soviet secret police. But the lyceum spirit stays with us forever, as do the people who came out of it. Vivat Lyceum!
         
   - period: { be: 2008 — 2010, en: 2008 — 2010 }
     title:
@@ -80,7 +80,7 @@ timeline:
       be: |
         У ліцэйскія гады я гуляў у ЧДК («Што? Дзе? Калі?») у складзе ліцэйскай каманды «ГрынПыс». Зорак зь неба мы не хапалі, але досьвед быў шыкоўны і даў мне шмат каштоўных кантактаў. А яшчэ ў 2009 годзе я пабываў у лагеры БЛІК у Жабінцы.
       en: |
-        In my lyceum years I played "What? Where? When?" — a popular post-Soviet team quiz game — as part of the lyceum team "HrynPys" (a wordplay on Greenpeace). We were no superstars, but the experience was brilliant and gave me plenty of valuable connections. In 2009 I also spent time at the BLIK camp in Žabinka.
+        In my lyceum years I played "What? Where? When?" — a popular post-Soviet team quiz game — as part of the lyceum team "HrynPys" (a play on Greenpeace). We were no superstars, but the experience was brilliant and gave me plenty of valuable connections. In 2009 I also spent time at the BLIK camp in Žabinka.
 
   - period: { be: 2009 — 2014, en: 2009 — 2014 }
     title:
@@ -105,7 +105,7 @@ timeline:
     link: https://youtube.com/@itbeard
     description:
       be: |
-        Калі я ўжо быў сеньёрыстым сеньёрам у праграмаваньні, да мяне прыйшла ідэя запусьціць YouTube-канал, дзе я дзяліўся б ведамі пра праграмаваньне са сваімі малодшымі супрацоўнікамі. 14 траўня 2018 году выйшаў першы выпуск, і з цягам часу з хатніх ролікаў пра код канал вырас у адно з самых буйных і вядомых расейскамоўных шоў пра IT: сотні інтэрв'ю зь інжынерамі і навукоўцамі, выпускі пра тэхналогіі і мовы праграмаваньня, мільённыя прагляды, міжнародныя здымкі, запрашэньні на найбуйнейшыя мерапрыемствы і ў найвядомейшыя кампаніі. Дзякуючы АйЦіБарадзе сёньня мяне ведае бадай што кожны айцішнік; у нейкі момант канал нават ператварыўся ў паўнавартасны і вельмі пасьпяховы бізнэс, і было ўражаньне, што распаўсюд ведаў пра IT сапраўды можа стаць справай жыцьця.
+        Калі я ўжо быў сеньёрыстым сеньёрам у праграмаваньні, да мяне прыйшла ідэя запусьціць YouTube-канал, дзе я дзяліўся б ведамі пра праграмаваньне са сваімі малодшымі супрацоўнікамі. 14 траўня 2018 году выйшаў першы выпуск, і зь цягам часу з хатніх ролікаў пра код канал вырас у адно з самых буйных і вядомых расейскамоўных шоў пра IT: сотні інтэрв'ю зь інжынерамі і навукоўцамі, выпускі пра тэхналогіі і мовы праграмаваньня, мільённыя прагляды, міжнародныя здымкі, запрашэньні на найбуйнейшыя мерапрыемствы і ў найвядомейшыя кампаніі. Дзякуючы АйЦіБарадзе сёньня мяне ведае бадай што кожны айцішнік; у нейкі момант канал нават ператварыўся ў паўнавартасны і вельмі пасьпяховы бізнес, і было ўражаньне, што распаўсюд ведаў пра IT сапраўды можа стаць справай жыцьця.
 
 
         Аднак у 2022 годзе прыйшоў час абіраць паміж сумленьнем і добрым жыцьцём. Для мяне гэты выбар заўсёды адназначны: нічога больш каштоўнага, чым заставацца добрым і сумленным чалавекам, для мяне не існуе. Мае выпускі слухалі мільёны, і правільна было распавядаць гэтым мільёнам ня толькі пра IT, але і пра агульначалавечыя каштоўнасьці. Што я і пачаў рабіць, змагаючыся з расейскай агрэсіяй ва Ўкраіне там, дзе мог дапамагчы найбольш — даносячы інфармацыю праз свой кантэнт. Прыкладна тады і пачаўся канец АйЦіБарады як праекту: было б наіўна разьлічваць, што аўдыторыя, большасьць якой складалі расейскія айцішнікі, падтрымае маю пазіцыю. Але я лічу, што ўсё было зроблена правільна: нават калі некалькі чалавек зьмянілі сваё меркаваньне наконт вайны ва Ўкраіне — гэта ўжо перамога. І яна была вартая ўсіх высілкаў, пакладзеных на пабудову гэтага рэсурсу. Для мяне ж галоўным вынікам гэтага рашэньня стала тое, што канец АйЦіБарады зрабіўся пачаткам адраджэньня беларускасьці ўва мне. Я зразумеў, што мая аўдыторыя — не айцішнікі, тым больш прасякнутыя прапагандай, якіх на канале была большасьць. Мая аўдыторыя — гэта беларусы, якія, як і я, хочуць адшукаць ці аднавіць у сабе свае карані. Таму дзякуй АйЦіБарадзе і кожнаму чалавеку адтуль, хто паспрыяў гэтай маёй трансфармацыі.
@@ -116,7 +116,7 @@ timeline:
         By the time I had become the seniorest of senior developers, I got the idea to launch a YouTube channel where I would share programming knowledge with my junior colleagues. The first episode came out on May 14, 2018, and over time the channel grew from homemade videos about code into one of the biggest and best-known Russian-language shows about IT: hundreds of interviews with engineers and scientists, episodes on technologies and programming languages, millions of views, international shoots, invitations to the largest industry events and the most renowned companies. Thanks to it, practically every IT person knows me today; at one point the channel even turned into a full-fledged and very successful business, and it felt like spreading knowledge about IT could truly become my life's work.
 
 
-        But in 2022 the time came to choose between conscience and a comfortable life. For me that choice is always unambiguous: nothing is more valuable to me than remaining a good and honest person. Millions listened to my episodes, and the right thing to do was to talk to those millions not only about IT but also about universal human values. So that's what I began doing — standing up to Russia's aggression against Ukraine where I could help the most: by getting information out through my content. That was roughly where the end of AjCiBarada as a project began: it would have been naive to expect an audience made up mostly of Russian IT specialists to support my position. Still, I believe everything was done right: even if just a few people changed their minds about the war in Ukraine, that alone is a victory. And it was worth all the effort poured into building that resource. For me, though, the main outcome of that decision was that the end of AjCiBarada became the beginning of the revival of Belarusianness within me. I realized that my audience is not IT people — least of all those steeped in propaganda, who made up the majority on the channel. My audience is Belarusians who, like me, want to find or restore their own roots. So thank you, AjCiBarada, and every person from there who helped bring about this transformation of mine.
+        But in 2022 the time came to choose between conscience and a comfortable life. For me that choice is always unambiguous: nothing is more valuable to me than remaining a good and honest person. Millions listened to my episodes, and the right thing to do was to talk to those millions not only about IT but also about universal human values. So that's what I began doing — standing up to Russia's aggression against Ukraine where I could help the most: by getting information out through my content. That was roughly where the end of ITBeard as a project began: it would have been naive to expect an audience made up mostly of Russian IT specialists to support my position. Still, I believe everything was done right: even if just a few people changed their minds about the war in Ukraine, that alone is a victory. And it was worth all the effort poured into building that resource. For me, though, the main outcome of that decision was that the end of ITBeard became the beginning of the revival of Belarusianness within me. I realized that my audience is not IT people — least of all those steeped in propaganda, who made up the majority on the channel. My audience is Belarusians who, like me, want to find or restore their own roots. So thank you, ITBeard, and every person from there who helped bring about this transformation of mine.
 
 
         The channel keeps going, though far less actively: these days it serves mostly commercial purposes and now and then becomes a venue for interviews with Russian-speaking people who have remained honest and interesting to me. It was also through this very project that I got the nickname ITBeard — and it seems it's here to stay.
@@ -127,7 +127,7 @@ timeline:
       en: Election 2020
     description:
       be: |
-        На пачатку 2020 году я быў тыповым беларускім айцішнікам і папулярным IT-блогерам, у якога ўсё было добра і які толькі-толькі пачаў зьвяртаць увагу на новыя прыступкі піраміды Маслоу. Менавіта тады — праз зацятасьць знаёмых і ўласныя назіраньні — да мяне паціху пачало прыходзіць разуменьне, што акрамя Я-праграміста ёсьць яшчэ і Я-грамадзянін. І акурат у тый год у Беларусі былі чарговыя прэзідэнцкія выбары, дый якія: упершыню ў сталым узросьце зьявіліся цікавыя для мяне кандыдаты! На хвалі гэтага разуменьня я паспрабаваў прабіцца ў выбарчую камісію на ўчастку №61, што каля майго дому (жыў я тады ў Менску). Не атрымалася. Затое атрымалася стаць назіральнікам — і даволі ўпартым. Такім упартым, што аднойчы мяне нават з АМАПам з участку забіралі :) І нездарма забіралі — на нашым участку перамагла Сьвятлана Георгіеўна Ціханоўская, зь вялізарным адрывам ад лукашэнкі.
+        На пачатку 2020 году я быў тыповым беларускім айцішнікам і папулярным IT-блогерам, у якога ўсё было добра і які толькі-толькі пачаў зьвяртаць увагу на новыя прыступкі піраміды Маслоу. Менавіта тады — праз зацятасьць знаёмых і ўласныя назіраньні — да мяне паціху пачало прыходзіць разуменьне, што акрамя Я-праграміста ёсьць яшчэ і Я-грамадзянін. І акурат у тый год у Беларусі былі чарговыя прэзідэнцкія выбары, дый якія: упершыню ў сталым узросьце зьявіліся цікавыя для мяне кандыдаты! На хвалі гэтага разуменьня я паспрабаваў прабіцца ў выбарчую камісію на ўчастку №61, што каля майго дому (жыў я тады ў Мінску). Не атрымалася. Затое атрымалася стаць назіральнікам — і даволі ўпартым. Такім упартым, што аднойчы мяне нават з АМАПам з участку забіралі :) І нездарма забіралі — на нашым участку перамагла Сьвятлана Георгіеўна Ціханоўская, зь вялізарным адрывам ад лукашэнкі.
 
 
         Пасьля гэтага быў актыўны ўдзел у пратэстах, праекты, пра якія я яшчэ ня хутка змагу распавесьці, і ўсялякія актыўнасьці, пра якія ўвесь сьвет чытаў у навінах і верыў, што ў нас атрымаецца. Не атрымалася. Але ўсе гэтыя падзеі прабудзілі ўва мне грамадзяніна і нагадалі, што я ў першую чаргу беларус — і ня маю права пра гэта забывацца.
@@ -149,7 +149,7 @@ timeline:
       en: Escape to Ukraine
     description:
       be: |
-        Гэты разьдзел сваёй біяграфіі я калі-небудзь распішу ў дэталях і фарбах — калі гэта будзе бясьпечна. А пакуль проста хачу падзякаваць усім, хто ў тыя дні дапамог мне застацца вольным.
+        Гэты разьдзел сваёй біяграфіі я калі-небудзь расьпішу ў дэталях і фарбах — калі гэта будзе бясьпечна. А пакуль проста хачу падзякаваць усім, хто ў тыя дні дапамог мне застацца вольным.
       en: |
         Someday, when it's safe to do so, I'll tell this chapter of my life in full detail and color. For now, I simply want to thank everyone who helped me stay free in those days.
   - period: { be: "2022.02", en: "2022.02" }
@@ -160,7 +160,7 @@ timeline:
       be: |
         Паўнамаштабнае ўварваньне Расеі ва Ўкраіну я сустрэў у Кіеве — ва ўсіх «фарбах». Менавіта тое, што я там пасьпеў пабачыць, упэўніла мяне: ня можа быць ніякай іншай пазіцыі, акрамя адной — гэта цалкам вар'яцкая вайна, якой быць не павінна. Як і людзей, якія яе распачалі. Пасьля некалькіх дзён за барыкадамі я зьехаў у Польшчу, дзе жыву дагэтуль і ўсяляк падтрымліваю сваіх сяброў, што змагаюцца за Волю.
       en: |
-        I met Russia's full-scale invasion of Ukraine in Kyiv — in all its "colors". What I managed to witness there convinced me that no position is possible other than this one: it is an utterly insane war that should never have happened. Same goes for the people who started it. After a few days behind the barricades, I left for Poland, where I live to this day, supporting in every way I can my friends who are fighting for Freedom.
+        I was in Kyiv when Russia's full-scale invasion of Ukraine began, and saw it in all its "colors". What I managed to witness there convinced me that no position is possible other than this one: it is an utterly insane war that should never have happened. Same goes for the people who started it. After a few days behind the barricades, I left for Poland, where I live to this day, supporting in every way I can my friends who are fighting for Freedom.
 
   - period: { be: 2022 — цяпер, en: 2022 — now }
     title:
@@ -168,7 +168,7 @@ timeline:
       en: Reclaiming Belarusianness
     description:
       be: |
-        Пасьля пераезду ў 2022 годзе я некалькі месяцаў шукаў сябе — і запусьціў працэс перазборкі ўласнай асобы. Жыцьцё за паўгода двойчы перакулілася з ног на галаву, і трэба было знайсьці новыя якары, мэты і прызначэньні. Перасабраць сябе наноў. І я знайшоў сябе ў беларускасьці — той, якую амаль страціў пасьля пераезду з Ракава на вучобу ў Менск.
+        Пасьля пераезду ў 2022 годзе я некалькі месяцаў шукаў сябе — і запусьціў працэс перазборкі ўласнай асобы. Жыцьцё за паўгода двойчы перакулілася з ног на галаву, і трэба было знайсьці новыя якары, мэты і прызначэньні. Перасабраць сябе наноў. І я знайшоў сябе ў беларускасьці — той, якую амаль страціў пасьля пераезду з Ракава на вучобу ў Мінск.
 
 
         Дзякуючы падзеям 2020–2022 гадоў я пачаў перанакіроўваць сваю дзейнасьць і творчасьць у беларускае поле: так зьявіліся YouTube-канал «Цёмны Лёс», Mastodon-супольнасьць VKL.world, падкаст «КПСШІ», суполка «Беларускі ШІ», музычны праект Setivir, ШІ-варштаты і шмат іншых актыўнасьцяў. І зьявіцца яшчэ больш, я ўпэўнены, бо працэс беларусізацыі не стрымаць і не спыніць.
@@ -190,9 +190,9 @@ timeline:
       en: AI Education
     description:
       be: |
-        Прыблізна ў канцы 2022 году, акурат са зьяўленьнем першай публічнай вэрсіі ChatGPT, я пачаў унікаць у тэму штучнага інтэлекту — і ўжо на пачатку 2023-га рабіў кантэнт вакол ШІ і праграмаваньня. Паступова гэта перарасло ў паўнавартасную працу: я запусьціў некалькі навінавых падкастаў, навучаю праграмістаў працаваць у пары з ШІ, чытаю лекцыі па праграмаваньні з ШІ і па стварэньні кантэнту і музыкі зь яго дапамогай, выступаю перад беларускімі супольнасьцямі, кансультую кампаніі наконт укараненьня ШІ, займаюся AI DevRel. Можна сказаць, што я перакваліфікаваўся з праграміста ў ШІ-асьветніка.
+        Прыблізна ў канцы 2022 году, акурат са зьяўленьнем першай публічнай версіі ChatGPT, я пачаў унікаць у тэму штучнага інтэлекту — і ўжо на пачатку 2023-га рабіў кантэнт вакол ШІ і праграмаваньня. Паступова гэта перарасло ў паўнавартасную працу: я запусьціў некалькі навінавых падкастаў, навучаю праграмістаў працаваць у пары з ШІ, чытаю лекцыі па праграмаваньні з ШІ і па стварэньні кантэнту і музыкі зь яго дапамогай, выступаю перад беларускімі супольнасьцямі, кансультую кампаніі наконт укараненьня ШІ, займаюся AI DevRel. Можна сказаць, што я перакваліфікаваўся з праграміста ў ШІ-асьветніка.
       en: |
-        Around the end of 2022, right when the first public version of ChatGPT appeared, I began diving into the topic of artificial intelligence — and by early 2023 I was already making content about AI and programming. Gradually this grew into full-fledged work: I launched several news podcasts, teach programmers to work in tandem with AI, give lectures on AI-assisted programming and on creating content and music with AI, speak at Belarusian community events, consult companies on adopting AI, and do AI DevRel. You could say I've retrained from a programmer into an AI educator.
+        Around the end of 2022, right when the first public version of ChatGPT appeared, I began diving into the topic of artificial intelligence — and by early 2023 I was already making content about AI and programming. Gradually this grew into full-fledged work: I launched several news podcasts, teach programmers to work in tandem with AI, give lectures on AI-assisted programming and on creating content and music with AI, speak at Belarusian community events, advise companies on adopting AI, and do AI DevRel. You could say I've retrained from a programmer into an AI educator.
 
   - period: { be: "2025 — цяпер", en: "2025 — now" }
     title:
@@ -255,25 +255,25 @@ achievements:
   - period: { be: "канец 2023 — 12 верасьня 2024", en: "end of 2023 — Sep 12, 2024" }
     title:
       be: Зрабіў фільм пра Kotlin
-      en: Made documentary about Kotlin
+      en: Made a documentary about Kotlin
     org: { be: «Beyond the Success of Kotlin», en: "\"Beyond the Success of Kotlin\"" }
     link: https://www.youtube.com/watch?v=E8CtE7qTb-Q
     description:
       be: |
-        У межах працы ў EPAM разам з камандай мы стварылі дакументальны фільм «Beyond the Success of Kotlin» пра гісторыю мовы праграмаваньня Kotlin — з інтэрв'ю са стваральнікамі мовы і інжынерамі JetBrains. Я выступіў у ролі выканаўчага прадусара. Здымкі пачаліся ў канцы 2023 году, а прэм'ера адбылася 12 верасьня 2024-га.
+        У межах працы ў EPAM разам з камандай мы стварылі дакументальны фільм «Beyond the Success of Kotlin» пра гісторыю мовы праграмаваньня Kotlin — зь інтэрв'ю са стваральнікамі мовы і інжынерамі JetBrains. Я выступіў у ролі выканаўчага прадзюсара. Здымкі пачаліся ў канцы 2023 году, а прэм'ера адбылася 12 верасьня 2024-га.
       en: |
         As part of my work at EPAM, together with the team I created the documentary "Beyond the Success of Kotlin" — the story of the Kotlin programming language, featuring interviews with the language's creators and JetBrains engineers. I served as executive producer. Filming began in late 2023, and the premiere took place on September 12, 2024.
   - period: { be: "2020", en: "2020" }
     title:
       be: Прызёр конкурсу «Золотое приложение»
       en: '"Golden App" contest runner-up'
-    org: { be: "намінацыя «Найлепшы падкаст у мабільным дадатку»", en: '"Best Podcast in a Mobile App" nomination' }
+    org: { be: "намінацыя «Найлепшы падкаст у мабільным дадатку»", en: '"Best Podcast in a Mobile App" category' }
     link: https://raec.ru/live/branch/12212/
     description:
       be: |
         Шоў «АйЦіБарада» заняло другое месца ва ўсерасейскім адкрытым інтэрнэт-конкурсе «Золотой сайт и Золотое приложение» ў намінацыі «Найлепшы падкаст у мабільным дадатку». Узнагароды пераможцам уручалі ў Маскве 12 лютага 2021 году.
       en: |
-        The ITBeard show took second place in the all-Russian open internet contest "Golden Site & Golden App" in the "Best Podcast in a Mobile App" nomination. The awards were presented to the winners in Moscow on February 12, 2021.
+        The ITBeard show took second place in the all-Russian open internet contest "Golden Site & Golden App" in the "Best Podcast in a Mobile App" category. The awards were presented to the winners in Moscow on February 12, 2021.
   - period: { be: "2019", en: "2019" }
     title:
       be: Срэбная кнопка YouTube
@@ -300,27 +300,27 @@ achievements:
     org: { be: інавацыйнае прадпрымальніцтва, en: innovative entrepreneurship }
     description:
       be: |
-        У ліку першых студэнтаў курса скончыў адукацыйную праграму па інавацыйным прадпрымальніцтве пры Адміністрацыі Парку высокіх тэхналогій. Навучаньне цягнулася з 14 верасьня 2015 году па 12 лютага 2016-га і завяршылася [пасьпяховым засваеньнем праграмы](lightbox:/images/sert-pvt.webp "Даведка аб навучаньні на курсах ПВТ").
+        У ліку першых студэнтаў курсу скончыў адукацыйную праграму па інавацыйным прадпрымальніцтве пры Адміністрацыі Парку высокіх тэхналогій. Навучаньне цягнулася з 14 верасьня 2015 году да 12 лютага 2016-га і завяршылася [пасьпяховым засваеньнем праграмы](lightbox:/images/sert-pvt.webp "Даведка аб навучаньні на курсах ПВТ").
       en: |
         I was among the first students to complete the educational program in innovative entrepreneurship run by the Administration of the Hi-Tech Park (Belarus). The studies lasted from September 14, 2015 to February 12, 2016 and ended with the [successful completion of the program](lightbox:/images/sert-pvt.webp "The certificate of studies at the HTP courses").
   - period: { be: "2015", en: "2015" }
     title:
-      be: Супэрфінал GenerationS са стартапам PUSHka
-      en: GenerationS super-final with the PUSHka startup
+      be: Суперфінал GenerationS са стартапам PUSHka
+      en: GenerationS superfinal with the PUSHka startup
     org: { be: "акселератар МТС «Telecom Idea»", en: "MTS \"Telecom Idea\" accelerator" }
     link: https://www.cnews.ru/articles/2015-10-16_telekom_ideya_mts_vybrala_5_finalistov_korporativnogo_akseleratora
     description:
       be: |
-        Апрыканцы 2015 году я далучыўся да адукацыйнага стартапу PUSHka — мы рабілі сэрвіс-памочнік, які дапамагаў абіраць анлайн-курсы на розных пляцоўках, аўтаматычна будаваць расклад навучаньня і ня кідаць іх на паўдарозе. Праект стаў адным зь пяці пераможцаў карпаратыўнага акселератара МТС «Telecom Idea 2015» (трэк Telecom федэральнага акселератара GenerationS) і выйшаў у ягоны супэрфінал. Дадаткова каманда ўзяла прыз за актыўнасьць у сацсетках — паездку на канферэнцыю 4YFN у Барсэлону, — а сам праект атрымаў грант Фонду Бортніка. Праз тры гады стартап зачыніўся — але дагэтуль гэта адно з найпрыгажэйшых тэхнічных рашэньняў у маёй практыцы.
+        Апрыканцы 2015 году я далучыўся да адукацыйнага стартапу PUSHka — мы рабілі сэрвіс-памочнік, які дапамагаў абіраць анлайн-курсы на розных пляцоўках, аўтаматычна будаваць расклад навучаньня і ня кідаць іх на паўдарозе. Праект стаў адным зь пяці пераможцаў карпаратыўнага акселератара МТС «Telecom Idea 2015» (трэк Telecom федэральнага акселератара GenerationS) і выйшаў у ягоны суперфінал. Дадаткова каманда ўзяла прыз за актыўнасьць у сацсетках — паездку на канферэнцыю 4YFN у Барселону, — а сам праект атрымаў грант Фонду Бортніка. Праз тры гады стартап зачыніўся — але дагэтуль гэта адно з найпрыгажэйшых тэхнічных рашэньняў у маёй практыцы.
       en: |
         At the end of 2015, I joined the educational startup PUSHka — we were building an assistant service that helped people pick online courses across different platforms, automatically build a study schedule, and not drop them halfway through. The project became one of the five winners of the MTS "Telecom Idea 2015" corporate accelerator (the Telecom track of GenerationS, Russia's federal startup accelerator) and reached its superfinal. On top of that, the team won a social media activity prize — a trip to the 4YFN conference in Barcelona — and the project itself received a grant from Russia's Bortnik innovation fund. Three years later the startup shut down, but to this day it remains one of the most beautiful pieces of engineering of my career.
   - period: { be: "2006", en: "2006" }
     title:
-      be: Перамога на фэстывалі «Берагіня»
-      en: Victory at the "Berahinia" festival
+      be: Перамога на фестывалі «Берагіня»
+      en: Victory at the "Bierahinia" festival
     description:
       be: |
-        Заняў першае месца сярод юных салістаў на І Рэспубліканскім турніры салістаў фэстывалю фальклорнага мастацтва «Берагіня». А наш ансамбль «Вянок» тым часам узяў гран-пры фэстывалю!
+        Заняў першае месца сярод юных салістаў на I Рэспубліканскім турніры салістаў фестывалю фальклорнага мастацтва «Берагіня». А наш ансамбль «Вянок» тым часам узяў гран-пры фестывалю!
       en: |
         I took first place among the young soloists at the First Republican Soloists' Tournament of the *Bierahinia* Folk Art Festival — *Bierahinia* being a female guardian spirit from Slavic folklore. Meanwhile, our ensemble Vianok took home the festival's Grand Prix!
 interviews:

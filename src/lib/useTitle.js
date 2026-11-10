@@ -30,8 +30,9 @@ export function useTitle(title, description, canonicalPath) {
     const fullTitle = [title, titleSuffix].filter(Boolean).join(' ')
     document.title = fullTitle
 
-    const path = canonicalPath ?? pathname
-    const url = ORIGIN + (path === '/' ? '/' : path)
+    // /about/ and /about are one page: the canonical address has no trailing slash
+    const path = (canonicalPath ?? pathname).replace(/\/+$/, '')
+    const url = ORIGIN + (path || '/')
     setMeta('name', 'description', description)
     setMeta('property', 'og:title', fullTitle)
     setMeta('property', 'og:description', description)

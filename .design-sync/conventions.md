@@ -39,7 +39,7 @@ No utility framework, no CSS-in-JS. Style with the stylesheet's own classes and 
 Tokens (all on `:root`): `--bg` #242424, `--bg-raised`, `--bg-deep`, `--line`, `--text`, `--muted`, `--accent` #A50E1E (brand red), `--accent-bright` #E2434E, `--accent-hover` #F06A73, `--radius` (16px), `--header-h` (64px), `--font`.
 
 - Backgrounds are always dark (`--bg` on body); text `--text`; secondary `--muted`. The single accent family is the red brand: `--accent` for fills/buttons/lines, `--accent-bright` for emphasized text and borders, `--accent-hover` for hover states.
-- Typeface is **Montserrat Alternates** everywhere (`--font`, loaded via remote `@import` in `styles.css`). Icons are Font Awesome 6 classes, e.g. `<i className="fab fa-telegram-plane" />`.
+- Typeface is **Montserrat Alternates** everywhere (`--font`, loaded via remote `@import` in `styles.css`). Icons are inline SVG from `src/components/Icon.jsx`, e.g. `<Icon name="telegram" />` (names: telegram, whatsapp, mastodon, instagram, linkedin, github, patreon, bitcoin, at, search, mug-hot, chevron-down, sun, check, link); a row of contact icons is `<SocialLinks ids={[…]} />`.
 - `contact-card` accepts an inline `--brand` custom property for its accent color.
 
 ## Where the truth lives

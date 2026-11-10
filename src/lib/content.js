@@ -138,23 +138,41 @@ function splitBodyByLang(body) {
   return Object.fromEntries(Object.entries(chunks).map(([l, lines]) => [l, lines.join('\n')]))
 }
 
-const files = import.meta.glob('../../content/*.md', { query: '?raw', import: 'default', eager: true })
+// The texts of /books (books.md and the library notes — two thirds of all the words on
+// the site) are not here: src/lib/booksContent.js adds them when that page is loaded.
+const files = import.meta.glob(['../../content/*.md', '!../../content/books.md', '!../../content/library.md'], {
+  query: '?raw',
+  import: 'default',
+  eager: true,
+})
 
+const sources = {}
+for (const [path, raw] of Object.entries(files)) sources[/([\w-]+)\.md$/.exec(path)[1]] = raw
+
+// more pages, by name: { books: '---\n…' }
+export function addPages(raw) {
+  Object.assign(sources, raw)
+}
+
+// A page is parsed when it is first asked for, in both languages at once, and kept.
 const pages = {}
-for (const [path, raw] of Object.entries(files)) {
-  const name = /([\w-]+)\.md$/.exec(path)[1]
+function parsePage(name) {
+  const raw = sources[name]
+  if (raw === undefined) return undefined
   const fm = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?([\s\S]*)$/.exec(raw)
   // js-yaml 5 has no default export and load() throws on an empty or comment-only
   // document; loadAll() returns [] for it, which keeps "empty frontmatter = no meta"
   const meta = fm ? loadYamlAll(fm[1])[0] || {} : {}
   const bodies = splitBodyByLang(fm ? fm[2] : raw)
-  pages[name] = {}
+  const page = {}
   for (const lang of LANGS) {
-    pages[name][lang] = { ...resolve(meta, lang), ...parseSections(bodies[lang] ?? '') }
+    page[lang] = { ...resolve(meta, lang), ...parseSections(bodies[lang] ?? '') }
   }
+  return page
 }
 
 export function getPage(name, lang) {
+  if (!(name in pages) && name in sources) pages[name] = parsePage(name)
   return pages[name]?.[lang] ?? pages[name]?.be ?? {}
 }
 

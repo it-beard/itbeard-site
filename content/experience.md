@@ -135,7 +135,7 @@ timeline:
       be: >
         Бэкенд-распрацоўка на .NET/C#: мікрасэрвісная платформа.
       en: >
-        .NET C# backend development: a microservices platform.
+        .NET/C# backend development: a microservices platform.
   - period: { be: 2019.09 — 2020.05, en: 2019.09 — 2020.05 }
     start: 2019
     startMonth: 9
@@ -153,7 +153,7 @@ timeline:
         Бэкенд-распрацоўка на .NET/C# для нямецкай платформы рэкурэнтных
         плацяжоў.
       en: >
-        .NET C# backend development for a German recurring-billing platform.
+        .NET/C# backend development for a German recurring-billing platform.
   - period: { be: 2018.03 — 2019.09, en: 2018.03 — 2019.09 }
     start: 2018
     startMonth: 3
@@ -172,7 +172,7 @@ timeline:
         потым кіраваў камандай бэкенд-распрацоўкі з 5 чалавек на буйным
         мабільным дадатку.
       en: >
-        Started with .NET C# full-stack development (backend, frontend,
+        Started with .NET/C# full-stack development (backend, frontend,
         desktop), then led a backend team of 5 building a large mobile
         application.
   - period: { be: 2018.04 — цяпер, en: 2018.04 — now }
@@ -208,7 +208,7 @@ timeline:
       be: >
         Фул-стэк распрацоўка на .NET/C#.
       en: >
-        .NET C# full-stack development.
+        .NET/C# full-stack development.
   - period: { be: 2014.09 — 2016.02, en: 2014.09 — 2016.02 }
     start: 2014
     startMonth: 9
@@ -284,7 +284,7 @@ timeline:
       en: Webmaster
     description:
       be: >
-        Распрацоўваў сайты на HTML, CSS, Joomla, WordPress, PhpBB і іншых рухавіках — больш за 60 праектаў. Актыўна фрылансіў, працаваў з JS і PHP, але на аматарскім узроўні.
+        Распрацоўваў сайты на HTML, CSS, Joomla, WordPress, phpBB і іншых рухавіках — больш за 60 праектаў. Актыўна фрылансіў, працаваў з JS і PHP, але на аматарскім узроўні.
       en: >
         Built websites with HTML, CSS, Joomla, WordPress, phpBB, and other engines — more than 60 projects. Freelanced actively, worked with JS and PHP, though at a hobbyist level.
 ---

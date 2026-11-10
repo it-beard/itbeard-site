@@ -10,7 +10,9 @@
 // change the word for a reader — ь, ў/у, ё/е, о/а, и/і — are folded away first.
 // A few words are read as filters rather than words: «па-беларуску» narrows to the
 // language, «кароткае» to the page count, «новае» to the last years; numbers are
-// handled by bookQuery.js.
+// handled by bookQuery.js — a year or a page count. When no book is that old or that
+// thick, the number was part of a name after all («451 градус», «Гары Потэр 3»), and
+// the query is read again with its numbers as words and volume numbers.
 //
 // A query that is the title of a book puts that book first, whatever else matches.
 //
@@ -126,10 +128,16 @@ const INTENTS = [
 // The query taken apart: the plain words to look up (folded, stop words dropped) and
 // the filters read from it — numbers via bookQuery, the words above via INTENTS.
 // Numbers typed explicitly win over words: «>500 кароткае» keeps 500.
-export function parseSearch(raw) {
-  const numeric = parseQuery(raw)
+// With `numbersAsWords` the numbers are not filters: they stay among the words, and
+// the small ones are kept as `parts` — the volume of a series the reader may mean.
+const PART_MAX = 30
+export function parseSearch(raw, { numbersAsWords = false } = {}) {
+  const numeric = numbersAsWords ? { text: String(raw ?? ''), year: null, pages: null } : parseQuery(raw)
   let text = fold(numeric.text).replace(/[’'`ʼ]/g, '')
   const q = { year: numeric.year, pages: numeric.pages, lang: null }
+  if (numbersAsWords) {
+    q.parts = Array.from(text.matchAll(/(?<![\p{L}\p{N}])\d{1,2}(?![\p{L}\p{N}])/gu), (m) => Number(m[0])).filter((n) => n >= 1 && n <= PART_MAX)
+  }
   for (const { set, re } of INTENTS) {
     const before = text
     text = text.replace(re, ' ')
@@ -360,17 +368,33 @@ const SUGGEST_MIN = 0.3
 // that match some of the words, or look like the ones found, each with the reasons:
 // [{ book, reasons: [{ kind, key | text }] }]
 export function search(index, raw, { filter = () => true } = {}) {
-  const parsed = parseSearch(raw)
+  const strict = searchAs(index, raw, parseSearch(raw), filter)
+  const numbered = strict.parsed.year !== null || strict.parsed.pages !== null
+  if (strict.shelf.length > 0 || !numbered || !/\d/.test(String(raw ?? ''))) return strict
+  // nothing is that old or that thick: the numbers belong to a name
+  const loose = searchAs(index, raw, parseSearch(raw, { numbersAsWords: true }), filter)
+  return loose.shelf.length > 0 || loose.suggestions.length > strict.suggestions.length ? loose : strict
+}
+
+function searchAs(index, raw, parsed, filter) {
   // a query that is a title finds its book even when it reads as a filter: «1984»
   const title = titleKey(raw)
   const named = (b) => title !== '' && index.names.get(b.id).has(title)
   const namedFirst = (books) => [...books.filter(named), ...books.filter((b) => !named(b))]
+  // «Гары Потэр 3»: when the books found include that volume, the shelf is that volume
+  const parts = parsed.parts ?? []
+  const volumes = (books) => {
+    const exact = books.filter((b) => parts.includes(b.part))
+    return exact.length > 0 ? exact : books
+  }
   const pool = index.books.filter(
     (b) => filter(b) && (named(b) || (matchesNumbers(b, parsed) && (!parsed.lang || langsOf(b).includes(parsed.lang))))
   )
   if (parsed.tokens.length === 0) {
     // «Сам» is nothing but a small word, and a title: then the shelf is that book alone
     const filtered = parsed.year || parsed.pages || parsed.lang
+    // «том 2» read as words has no words left: the shelf is the second volumes, or nothing
+    if (parts.length > 0 && !pool.some(named)) return { parsed, shelf: pool.filter((b) => parts.includes(b.part)), suggestions: [] }
     const shelf = !filtered && pool.some(named) ? pool.filter(named) : namedFirst(pool)
     return { parsed, shelf, suggestions: [] }
   }
@@ -381,7 +405,8 @@ export function search(index, raw, { filter = () => true } = {}) {
     const matched = hits.filter(Boolean)
     return { book: b, hits: matched, total: matched.reduce((s, h) => s + h.score, 0), all: named(b) || matched.length === hits.length }
   })
-  const shelf = namedFirst(scored.filter((s) => s.all).map((s) => s.book))
+  const shelf = namedFirst(volumes(scored.filter((s) => s.all).map((s) => s.book)))
+  const onShelf = new Set(shelf)
 
   // what the books found have in common, to look for more of the same
   let centroid = null
@@ -394,7 +419,8 @@ export function search(index, raw, { filter = () => true } = {}) {
 
   const n = parsed.tokens.length
   const suggestions = scored
-    .filter((s) => !s.all)
+    // everything off the shelf — the other volumes too, when the shelf was narrowed to one
+    .filter((s) => !onShelf.has(s.book))
     .map((s) => {
       const partial = s.hits.length / n
       const alike = centroid ? cosine(index.vectors.get(s.book.id), centroid) : 0

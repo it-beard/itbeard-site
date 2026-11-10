@@ -15,7 +15,7 @@
 ## Re-sync risks
 
 - `dist-ds/` and `ds-bundle/` are gitignored build outputs: on a fresh clone run `npm ci`, `npm i --no-save @types/react`, then `cfg.buildCmd` **before** the converter/driver, and re-copy `public/images → ds-bundle/images` after every build. Forgetting the copy makes render screenshots show broken images (uploads unaffected unless `public/images` changed).
-- Font Awesome is pinned to cdnjs 6.7.2 while the site uses a kit script — icon coverage could drift from the site.
+- Since 2026-11-10 the site draws its icons inline (`src/components/Icon.jsx`, Font Awesome 5 paths) and loads no icon font or kit. The cdnjs Font Awesome 6.7.2 import in `styles-entry.css` is no longer needed by the site's components — drop it at the next re-sync if no preview uses `<i className="fa…">`.
 - Remote fonts/FA need network during the render check; offline runs screenshot fallback fonts (would look like a font regression).
 - The prank ThemeToggle (NavMenu) is interaction-only; its shatter animation is untested by static capture — expected.
 - Content edits in `content/*.md` change rendered previews via the inlined markdown — the driver's source keys track `src/` and previews, so a content-only edit may need a manual rebuild (`buildCmd` re-inlines the markdown into dist-ds) even when no component source moved.

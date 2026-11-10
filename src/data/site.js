@@ -325,66 +325,61 @@ export const SITES = [
   ...ARCHIVE_PROJECTS.map((p) => ({ ...p, page: 'archive', section: 'intro', card: `/archive#${p.id}` })),
 ].filter(onItbeardDomain)
 
+// `icon` names an icon in src/components/Icon.jsx
 export const CONTACT_LINKS = {
   email: {
     href: 'mailto:iamitbeard@gmail.com',
     text: 'iamitbeard@gmail.com',
-    icon: 'fa fa-at',
+    icon: 'at',
     color: '#E2434E',
   },
   telegram: {
     href: 'https://telegram.me/iamitbeard',
     text: 'telegram.me/iamitbeard',
-    icon: 'fab fa-telegram-plane',
+    icon: 'telegram',
     color: '#2A9DD6',
   },
   whatsapp: {
     href: 'https://wa.me/itbeard',
     text: 'wa.me/itbeard',
-    icon: 'fab fa-whatsapp',
+    icon: 'whatsapp',
     color: '#25D366',
   },
   mastodon: {
     href: 'https://vkl.world/@itbeard',
     text: 'vkl.world/@itbeard',
-    icon: 'fab fa-mastodon',
+    icon: 'mastodon',
     color: '#8c7dff',
   },
   instagram: {
     href: 'https://instagram.com/iamitbeard',
     text: 'instagram.com/iamitbeard',
-    icon: 'fab fa-instagram',
+    icon: 'instagram',
     color: '#E1306C',
   },
   github: {
     href: 'https://github.com/itbeard',
     text: 'github.com/itbeard',
-    icon: 'fab fa-github',
+    icon: 'github',
     color: '#e8e8e8',
   },
   linkedin: {
     href: 'https://www.linkedin.com/in/akartynnik',
     text: 'linkedin.com/in/akartynnik',
-    icon: 'fab fa-linkedin-in',
+    icon: 'linkedin',
     color: '#4c9ce8',
   },
   'blog-telegram': {
     href: 'https://telegram.me/itbeard',
     text: 'telegram.me/itbeard',
-    icon: 'fab fa-telegram-plane',
+    icon: 'telegram',
     color: '#2A9DD6',
   },
   'ciomnylos-telegram': {
     href: 'https://telegram.me/ciomnylos',
     text: 'telegram.me/ciomnylos',
-    icon: 'fab fa-telegram-plane',
+    icon: 'telegram',
     color: '#2A9DD6',
-  },
-  merch: {
-    href: 'https://streamlabs.com/itbeard/merch',
-    text: 'streamlabs.com/itbeard/merch',
-    icon: 'fa fa-tshirt',
-    color: '#E2434E',
   },
 }
 
@@ -428,7 +423,7 @@ export const REDIRECTS = {
   'sponsors-discord': 'https://discord.gg/78qkQJjH2b',
 }
 
-// Vinyl collection — the unlisted /vinyl page.
+// Vinyl collection — the /vinyl page.
 // `year` is the album's own year, not the year of this particular pressing;
 // `label`/`catno` are filled in only where the copy on the shelf confirms them.
 // `tags` drive the filter chips; the per-record notes live in content/vinyl.md.

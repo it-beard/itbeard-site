@@ -9,11 +9,14 @@ Built with **React + Vite**. All page texts live in Markdown files with both lan
 ```
 content/          # page texts, one .md file per page, both languages in each file
 src/
-  components/     # header/nav, footer, layout
+  components/     # header/nav, footer, layout, cards, icons
   pages/          # route components
-  data/site.js    # language-independent data: URLs, images, crypto wallets, redirects
-  lib/            # markdown content loader, language context
-public/           # static assets (images, fonts, PDFs)
+  data/           # language-independent data: site.js (URLs, images, wallets, redirects),
+                  # books.js and bookProfiles.js (the home library)
+  lib/            # markdown content loader, language context, library search
+  **/*.test.*     # tests live next to what they test
+public/           # static assets (images, PDFs, sitemap, llms.txt)
+translations/     # standalone translations, not part of the site
 ```
 
 ## Editing texts / translations
@@ -34,7 +37,8 @@ npm run dev
 ## Build
 
 ```
+npm test         # vitest
 npm run build    # output in dist/
 ```
 
-Deployed to GitHub Pages automatically on push to `main` (see `.github/workflows/deploy.yml`).
+Deployed to GitHub Pages automatically on push to `main` — see [.github/DEPLOYMENT.md](.github/DEPLOYMENT.md).

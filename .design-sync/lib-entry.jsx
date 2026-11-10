@@ -10,6 +10,8 @@ export { default as Layout } from '../src/components/Layout'
 export { default as NavMenu } from '../src/components/NavMenu'
 export { default as Footer } from '../src/components/Footer'
 export { default as Ornament } from '../src/components/Ornament'
+export { default as Icon } from '../src/components/Icon'
+export { default as SocialLinks } from '../src/components/SocialLinks'
 
 export { default as Home } from '../src/pages/Home'
 export { default as TimelinePage } from '../src/pages/TimelinePage'

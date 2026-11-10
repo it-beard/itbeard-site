@@ -174,3 +174,49 @@ describe('similarBooks', () => {
     expect(similarBooks(index, 'nobody')).toEqual([])
   })
 })
+
+// A number is a year or a page count first; when no book answers to that, it was part of a name.
+describe('numbers that belong to a name', () => {
+  const SHELF = [
+    { id: 'hp1', title: 'Гары Потэр і філасофскі камень', author: 'Дж. К. Роўлінг', series: 'Гары Потэр', part: 1, lang: 'be', tags: ['sf'], genre: ['epic-fantasy'], themes: ['magic'], mood: [], form: 'novel', pages: 320, year: 2019 },
+    { id: 'hp3', title: 'Гары Потэр і вязень Азкабана', author: 'Дж. К. Роўлінг', series: 'Гары Потэр', part: 3, lang: 'be', tags: ['sf'], genre: ['epic-fantasy'], themes: ['magic'], mood: [], form: 'novel', pages: 420, year: 2021 },
+    { id: 'penta2', title: 'Пентаквантар. Кніга 2', author: 'Арцём Шуканаў', series: 'Пентаквантар', part: 2, lang: 'be', tags: ['sf'], genre: [], themes: ['space'], mood: [], form: 'novel', pages: 300, year: 2024 },
+    { id: 'f451', title: '451 градус паводле Фарэнгейта', author: 'Рэй Брэдберы', lang: 'be', tags: ['sf'], genre: [], themes: [], mood: ['dark'], form: 'novel', pages: 200, year: 2022 },
+    { id: 'thick', title: 'Тоўстая кніга', author: 'Нехта Іншы', lang: 'be', tags: ['fiction'], genre: [], themes: [], mood: [], form: 'novel', pages: 451, year: 1984 },
+  ]
+  const idx = buildIndex(SHELF, { concepts: CONCEPTS })
+  const found = (q) => search(idx, q).shelf.map((b) => b.id)
+
+  it('still reads a number as pages or a year when a book answers to it', () => {
+    expect(found('451')).toEqual(['thick'])
+    expect(found('1984')).toEqual(['thick'])
+    expect(found('да 250')).toEqual(['f451'])
+  })
+
+  it('finds a title by the number in it', () => {
+    expect(found('451 градус')).toEqual(['f451'])
+    expect(found('Фарэнгейт 451')).toEqual(['f451'])
+  })
+
+  it('takes a small number after a series for the volume', () => {
+    expect(found('гары потэр 3')).toEqual(['hp3'])
+    expect(found('пентаквантар 2')).toEqual(['penta2'])
+    // the other volume is not lost: it is proposed under the shelf
+    expect(search(idx, 'гары потэр 3').suggestions.map((s) => s.book.id)).toContain('hp1')
+  })
+
+  it('keeps every volume when the series has no such number', () => {
+    expect(found('гары потэр 7').sort()).toEqual(['hp1', 'hp3'])
+  })
+
+  it('reads «том 2» as the second volumes', () => {
+    expect(found('том 2')).toEqual(['penta2'])
+    expect(found('том 9')).toEqual([])
+  })
+
+  it('tells the page what it understood', () => {
+    expect(search(idx, '451 градус').parsed).toMatchObject({ pages: null, year: null })
+    expect(parseSearch('гары потэр 3', { numbersAsWords: true }).parts).toEqual([3])
+    expect(parseSearch('гары потэр 3').parts).toBeUndefined()
+  })
+})

@@ -52,15 +52,18 @@ function OverviewPanel({ overview, entries }) {
       <div className="overview-grid">
         <div className="overview-labels">
           {jobs.map((j, i) => (
-            <div
+            <button
               key={i}
+              type="button"
               className={`overview-label${hot === i ? ' hot' : ''}`}
               onMouseEnter={() => setHot(i)}
               onMouseLeave={() => setHot(null)}
+              onFocus={() => setHot(i)}
+              onBlur={() => setHot(null)}
               onClick={() => jumpTo(j)}
             >
               {j.label ?? j.title}
-            </div>
+            </button>
           ))}
           <div className="overview-pad"></div>
         </div>

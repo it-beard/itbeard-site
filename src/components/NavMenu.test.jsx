@@ -137,7 +137,7 @@ describe.each(['books', 'vinyl', 'sites'])('/%s is a public page', (route) => {
   })
 
   it('gets its own folder in the build and a route in the app', () => {
-    expect(read('vite.config.js')).toMatch(new RegExp(`const ROUTES = \\[[^\\]]*'${route}'`))
+    expect(read('vite.config.js')).toMatch(new RegExp(`const ROUTES = \\{[\\s\\S]*?\\n  ${route}: \\{ page: '${route}' \\}`))
     expect(read('src/App.jsx')).toContain(`path="/${route}"`)
   })
 

@@ -377,6 +377,8 @@ const LIBRARY_FACTS = {
   'baranouski-volumen-3': { year: 2024, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7303-94-6', pages: 56, printRun: 300, cover: true },
   'ilin-vodbliski-k': { year: 2026, publisher: 'Fundacja RozUM Media', city: 'Познань', isbn: '978-83-979126-7-0', pages: 300, cover: true },
   'sciapan-vauka': { year: 2025, publisher: 'Мяне Няма', city: 'Варшава', isbn: '978-83-971348-7-4', pages: 188, cover: true },
+  'niaklajeu-litviny': { year: 2026, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-464-6', cover: true },
+  'krama-cudau': { year: 2026, publisher: 'Попурри', city: 'Минск', isbn: '978-985-15-6161-8', pages: 384, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -477,6 +479,7 @@ const ADDED = {
     'ilin-vodbliski-k',
   ],
   '2026-11-11': ['sciapan-vauka'],
+  '2026-11-12': ['niaklajeu-litviny', 'krama-cudau'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -723,6 +726,8 @@ const BOOKS = [
   book('baranouski-volumen-3', 'Міхал Бараноўскі', 'Volumen.3', 'be', 'poetry', '#9daab6', '#1f2a44', 1),
   book('ilin-vodbliski-k', 'Стас Ільін', 'Водбліскі К', 'be', 'sf', '#293221', '#eadfc4'),
   book('sciapan-vauka', 'Уладзімір Сцяпан', 'Ваўка', 'be', 'fiction', '#cdc8c1', '#b3261e'),
+  book('niaklajeu-litviny', 'Уладзімір Някляеў', 'Літвіны', 'be', 'poetry', '#d0212f', '#140e0d'),
+  book('krama-cudau', '«Шуфлядка писателя»', 'Крама Цудаў', 'ru', 'sf', '#2a353d', '#f5c62c'),
 ]
 
 // Default order of the library: by language, and within a language the series first
@@ -738,6 +743,7 @@ const sortKey = (text) => text.replace(/[^\p{L}\p{N}]+/gu, ' ').trim()
 const SURNAMES = {
   'Владстон Феррейра Фило': 'Феррейра Фило',
   '«Шуфлядка пісьменніка»': 'Шуфлядка пісьменніка',
+  '«Шуфлядка писателя»': 'Шуфлядка писателя',
 }
 // every language a book is printed in, the main one first
 export const langsOf = (b) => [b.lang, ...(b.also ?? [])]

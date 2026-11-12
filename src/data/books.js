@@ -183,6 +183,23 @@ export const WANTED = [
     isbn: '978-985-7303-44-1',
     url: 'https://knihi.by/be/kupala-i-kolas-zartujuc',
   },
+  {
+    id: 'nia-bacnaja-bielarus',
+    title: '(Ня)бачная Беларусь',
+    year: 2026,
+    pages: 336,
+    isbn: '978-985-7372-03-4',
+    url: 'https://oz.by/books/more101474756.html',
+  },
+  {
+    // the Belarusian translation; the Russian-language edition stands in the library as `krama-cudau`
+    id: 'krama-cudau-be',
+    title: 'Крама Цудаў',
+    year: 2026,
+    pages: 368,
+    isbn: '978-985-7372-06-5',
+    url: 'https://oz.by/books/more101500836.html',
+  },
 ]
   .map((b) => ({ ...b, image: `/images/books/${b.id}.webp` }))
   .reverse()

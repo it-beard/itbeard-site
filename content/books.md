@@ -588,6 +588,13 @@ details:
   karalou-kupala-i-kolas-zartujuc:
     author: { be: Павел Каралёў, en: Pavel Karaliou }
     publisher: { be: 'Раман Цымбераў, Мінск', en: 'Raman Tsymberau, Minsk' }
+  nia-bacnaja-bielarus:
+    author: { be: '«Шуфлядка пісьменьніка»', en: 'Shufliadka Pismennika' }
+    translator: { be: Анатоль Матвіенка, en: Anatol Matvienka }
+    publisher: { be: '«OZ», Мінск', en: 'OZ, Minsk' }
+  krama-cudau-be:
+    author: { be: '«Шуфлядка пісьменьніка»', en: 'Shufliadka Pismennika' }
+    publisher: { be: '«OZ», Мінск', en: 'OZ, Minsk' }
 ---
 
 <!-- be -->
@@ -682,6 +689,14 @@ details:
 
 Купала і Колас тут — не забранзавелыя «гаротнікі», а жывыя людзі з добрым пачуцьцём гумару. Павел Каралёў сабраў успаміны пра іхныя досьціпы, жарты і забаўныя гісторыі — і тыя, што здараліся з класікамі, і тыя, што яны самі ж і заводзілі. Атрымаўся ня зборнік анекдотаў, а нарысы са спасылкамі на крыніцы, зь ілюстрацыямі, партрэтамі і факсіміле. На вокладцы — шарж: двое песьняроў ідуць, абняўшыся. Кніга выйшла ў Мінску ў Рамана Цымберава ў 2023 годзе накладам 600 асобнікаў. Купалавы «Тутэйшыя» і «Выбранае» ды Коласава «На ростанях» на маёй паліцы ўжо стаяць.
 
+## (Ня)бачная Беларусь {#nia-bacnaja-bielarus}
+
+Яшчэ адзін містычны зборнік таварыства беларускіх фантастаў «Шуфлядка пісьменьніка» — гэтым разам не пра сталіцу, а пра ўсю краіну. Дзевяць апавяданьняў — дзевяць маршрутаў па нябачным баку Беларусі: ад ціхіх Браслаўскіх азёраў да старых вуліц Гродна, ад змрочных лясоў і паўзруйнаваных палацаў да ўтульных гарадскіх корчмаў. Водзяць па іх траўнікі і ведзьмакі, дабрахожыя і летавіцы, русалкі і ваўкалакі, а таксама звычайныя людзі. Сярод гісторыяў — «Камяні-абярэгі Шклова» Анушы Захарэвіч, «За сямю пячаткамі» Алега Савошчыка і «Воўчая душа» Ганны Аскельд. Спачатку, у 2025 годзе, кніга выйшла па-расейску як «(Не)зримая Беларусь»; беларускі тэкст зрабіў Анатоль Матвіенка. Ілюстрацыі Ганны Дзюкавай, вокладка Рамана Ліштвана: зялёнае балота ў тумане, сьветлячкі, русалчын хвост, компас, ліхтар, воўк, што вые, і двухвежавы храм удалечыні. Выйшла ў сакавіку 2026 году ў выдавецтве кнігарні OZ, у цьвёрдай вокладцы. «(Ня)чысты Мінск» на маёй паліцы ўжо стаіць.
+
+## Крама Цудаў {#krama-cudau-be}
+
+Тая самая «Крама Цудаў», толькі нарэшце па-беларуску. Расейскамоўнае выданьне зь беларускай назвай на маёй паліцы ўжо стаіць, а шукаю пераклад. Кнігарня з аранжавай шыльдай адчыняе дзьверы далёка ня кожнаму, таямнічы Загадчык за прылаўкам гандлюе цудамі, і за кожны трэба заплаціць. Дзесяць гісторыяў са скразным сюжэтам цяпер завуцца так: «Пралог. Нараджэнне цуду» Кацярыны Стрынгель, «Цуд № 86. Сакавіцкія гілі» Алега Савошчыка, «Цуд № 24. Ліст для таты» Ганны Асокінай, «Цуд № 1. Цень звера» Алёны Кучынскай. Укладальніцы — Кацярына Стрынгель, Ніка Айкан і Алёна Кучынская, вокладка Ганны Дзюкавай (Batori), ілюстрацыі Натальлі Дзінер. Вокладка тут іншая, чым у расейскамоўнага выданьня: на чорным тле кляновае лісьце, гілі і сьвечка на стосе кніг, а на карэньчыках — імёны ўсіх дзесяці аўтараў. Сумесны праект кнігарні OZ і «Шуфлядкі», выйшаў у 2026 годзе ў цьвёрдай вокладцы.
+
 # Мая бібліятэка {#library}
 
 <!-- en -->
@@ -775,6 +790,14 @@ Adam Hlobus's little book about Anatol Sys — a poet he considers the genius of
 ## Kupala and Kolas Are Joking {#karalou-kupala-i-kolas-zartujuc}
 
 Here Kupala and Kolas are not bronze-cast "sufferers" but living people with a fine sense of humour. Pavel Karaliou has gathered memories of their wit, jokes and funny stories — both those that happened to the two classics and those they started themselves. The result is not a joke book but a set of essays with references to the sources, with illustrations, portraits and facsimiles. The cover shows a cartoon of the two poets walking with their arms round each other. Published in Minsk by Raman Tsymberau in 2023, in a run of 600 copies. Kupala's «Tutejshyja» (The Locals) and «Vybranaje» (Selected Works) and Kolas's «Na rostaniakh» (At the Crossroads) already stand on my shelf.
+
+## (In)visible Belarus {#nia-bacnaja-bielarus}
+
+Another mystical collection by the Belarusian speculative-fiction society "Shufliadka Pismennika" (The Writer's Drawer) — this time not about the capital but about the whole country. Nine stories are nine routes across the unseen side of Belarus: from the quiet Braslaŭ lakes to the old streets of Hrodna, from gloomy forests and half-ruined palaces to cosy town taverns. The guides are herbalists and sorcerers, the dabrachožy and letavica spirits of Belarusian folklore, mermaids and werewolves, and ordinary people too. Among the stories are "The Amulet Stones of Škłoŭ" by Anusha Zakharevich, "Behind Seven Seals" by Oleg Savoshchik and "A Wolf's Soul" by Anna Askeld. The book first came out in Russian in 2025 as «(Не)зримая Беларусь»; the Belarusian text is by Anatol Matvienka. Illustrated by Anna Dyukova, with a cover by Roman Lishtvan: a green swamp in the mist, fireflies, a mermaid's tail, a compass, a lantern, a howling wolf and a twin-towered church in the distance. Published in March 2026 by the publishing arm of the OZ bookshop, in hardcover. «(Nia)chysty Minsk» already stands on my shelf.
+
+## The Shop of Miracles {#krama-cudau-be}
+
+The same «Крама Цудаў», only in Belarusian at last. The Russian-language edition with the Belarusian title already stands on my shelf; it is the translation I am looking for. A bookshop with an orange sign opens its doors to very few, the mysterious Manager behind the counter deals in miracles, and each one has its price. The ten stories with one plot running through them now carry Belarusian titles: "Prologue. The Birth of a Miracle" by Ekaterina Stringel, "Miracle No. 86. March Bullfinches" by Oleg Savoshchik, "Miracle No. 24. A Letter for Dad" by Anna Osokina, "Miracle No. 1. The Shadow of the Beast" by Alena Kuchinskaya. Compiled by Ekaterina Stringel, Nika Aikon and Alena Kuchinskaya; cover by Anna Dyukova (Batori), illustrations by Natalia Diner. The cover differs from the Russian-language edition: maple leaves, bullfinches and a candle on a stack of books against black, with the names of all ten authors on the spines. A joint project of the OZ bookshop and Shufliadka, published in 2026 in hardcover.
 
 # My library {#library}
 

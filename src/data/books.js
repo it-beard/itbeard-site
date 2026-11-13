@@ -156,15 +156,6 @@ export const WANTED = [
     url: 'https://fantlab.ru/edition223759',
   },
   {
-    id: 'ruiny-bielarusi',
-    title: 'Руіны Беларусі',
-    subtitle: 'Ruins of Belarus. Ruiny Białorusi',
-    year: 2025,
-    pages: 256,
-    isbn: '978-83-66262-30-0',
-    url: 'https://kirma.sh/products/ruiny-belarusi',
-  },
-  {
     id: 'hlobus-nas-paet-sys',
     title: 'Наш паэт Сыс',
     subtitle: 'Словы пра сапраўднага паэта Анатоля Сыса',
@@ -396,6 +387,7 @@ const LIBRARY_FACTS = {
   'sciapan-vauka': { year: 2025, publisher: 'Мяне Няма', city: 'Варшава', isbn: '978-83-971348-7-4', pages: 188, cover: true },
   'niaklajeu-litviny': { year: 2026, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-464-6', cover: true },
   'krama-cudau': { year: 2026, publisher: 'Попурри', city: 'Минск', isbn: '978-985-15-6161-8', pages: 384, cover: true },
+  'ruiny-bielarusi': { year: 2025, publisher: 'Galeria Arsenał, Centrum Kultury Białoruskiej, VEHA archive', city: 'Беласток', isbn: '978-83-66262-30-0', pages: 256, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -411,6 +403,7 @@ const ALSO_IN = {
   'tradycyjny-svietalad-3': ['ru', 'en'],
   'tradycyjny-svietalad-4': ['ru', 'en'],
   'niaklajeu-sam': ['be'],
+  'ruiny-bielarusi': ['en', 'pl'],
 }
 
 // When books joined the library: each day lists its books in the order they were added.
@@ -497,6 +490,7 @@ const ADDED = {
   ],
   '2026-11-11': ['sciapan-vauka'],
   '2026-11-12': ['niaklajeu-litviny', 'krama-cudau'],
+  '2026-11-13': ['ruiny-bielarusi'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -745,6 +739,7 @@ const BOOKS = [
   book('sciapan-vauka', 'Уладзімір Сцяпан', 'Ваўка', 'be', 'fiction', '#cdc8c1', '#b3261e'),
   book('niaklajeu-litviny', 'Уладзімір Някляеў', 'Літвіны', 'be', 'poetry', '#d0212f', '#140e0d'),
   book('krama-cudau', '«Шуфлядка писателя»', 'Крама Цудаў', 'ru', 'sf', '#2a353d', '#f5c62c'),
+  book('ruiny-bielarusi', '', 'Руіны Беларусі', 'be', 'history', '#232325', '#e9e9e9'),
 ]
 
 // Default order of the library: by language, and within a language the series first

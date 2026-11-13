@@ -1342,5 +1342,13 @@ export const PROFILES = {
     form: 'stories',
     aka: ['Шуфлядка писателя', 'Шуфлядка пісьменніка', 'Шуфлядка', 'Магазин чудес', 'Лавка чудес', 'Krama Cudau', 'Krama Cudaŭ', 'Krama Tsudau', 'хилинг', 'хілінг', 'healing fiction', 'магический реализм', 'мистические рассказы', 'містычныя апавяданьні', 'сборник рассказов', 'Заведующий', 'Загадчык', 'чудо', 'чудеса', 'цуд', 'Стрингель', 'Екатерина Стрингель', 'Савощик', 'Олег Савощик', 'Маликова', 'Айкон', 'Осокина', 'Яна Миа', 'Горячко', 'Июльская', 'Поликарпова-Гилевич', 'Кучинская', 'Алёна Кучинская', 'Batori', 'Дюкова', 'Динер', 'OZ', 'Попурри', 'Папуры'],
   },
+  'ruiny-bielarusi': {
+    genre: ['photobook', 'illustrated-history'],
+    themes: ['belarus', 'history', 'cities', 'war'],
+    mood: ['tragic', 'thoughtful'],
+    form: 'album',
+    original: 'VEHA archive. Ruins of Belarus',
+    aka: ['Ruiny Białorusi', 'Ruiny Bialorusi', 'Ruiny Bielarusi', 'Руины Беларуси', 'VEHA', 'архіў VEHA', 'Веха', 'Леся Пчолка', 'Пчолка', 'Lesia Pcholka', 'Ася Хмыз', 'Хмыз', 'Asia Chmyz', 'Грамовіч', 'Hramovich', 'руіны', 'руины', 'ruins', 'архітэктура', 'архитектура', 'architecture', 'спадчына', 'heritage', 'замкі', 'палацы', 'сядзібы', 'ратушы', 'сінагогі', 'касьцёлы', 'цэрквы', 'старыя здымкі', 'сямейныя архівы', 'Галерэя Арсенал', 'Арсенал', 'Galeria Arsenał', 'Arsenal Gallery', 'Цэнтр беларускай культуры', 'Centrum Kultury Białoruskiej', 'Беласток', 'Białystok', 'Karolina Pietrzyk', 'Tobias Wenig', 'Найпрыгажэйшыя польскія кнігі'],
+  },
 
 }

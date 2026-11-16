@@ -47,15 +47,6 @@ export const WANTED = [
     url: 'https://ethnoby.org/vydanni/430081836',
   },
   {
-    id: 'tolkien-chobit',
-    title: 'Хобіт',
-    subtitle: 'альбо Падарожжа туды і назад',
-    year: 2025,
-    pages: 368,
-    isbn: '978-985-7354-03-0',
-    url: 'https://exlibris.by/tolkin-dzon-ronald-ruel-chobit-albo-padarozza-tudy-i-nazad',
-  },
-  {
     id: 'maur-zbor-tvorau-1',
     title: 'Збор твораў. Том 1',
     subtitle: 'Аповесці',
@@ -388,6 +379,21 @@ const LIBRARY_FACTS = {
   'niaklajeu-litviny': { year: 2026, publisher: 'KEW', city: 'Вроцлаў', isbn: '978-83-7893-464-6', cover: true },
   'krama-cudau': { year: 2026, publisher: 'Попурри', city: 'Минск', isbn: '978-985-15-6161-8', pages: 384, cover: true },
   'ruiny-bielarusi': { year: 2025, publisher: 'Galeria Arsenał, Centrum Kultury Białoruskiej, VEHA archive', city: 'Беласток', isbn: '978-83-66262-30-0', pages: 256, cover: true },
+  'tolkien-chobit': { year: 2025, publisher: 'Капітал Прынт', city: 'Мінск', translator: 'Франц Корзун', isbn: '978-985-7354-03-0', pages: 368, cover: true },
+  'maur-vybranyja-tvory': { year: 2026, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3468-3', pages: 544, printRun: 700, cover: true },
+  'filamaty-i-filarety': { year: 1998, publisher: 'Беларускі кнігазбор', city: 'Мінск', translator: 'Кастусь Цвірка', isbn: '985-6318-21-1', pages: 400, printRun: 10100, cover: true },
+  'tradycyjny-svietalad-5': { year: 2026, publisher: 'Беларуская навука', city: 'Мінск', isbn: '978-985-08-3462-1', pages: 99, cover: true },
+  'sys-bierahi-majho-junactva': { year: 2016, publisher: 'Галіяфы', city: 'Мінск', isbn: '978-985-7021-97-0', pages: 250, printRun: 299, cover: true },
+  'hramyka-viernyja-vorahi': { year: 2026, publisher: 'Прыносім радасць, OZ', city: 'Мінск', translator: 'Анатоль Матвіенка', isbn: '978-985-7372-07-2', pages: 512, printRun: 3000, cover: true },
+  'shadurski-naradzennie-bielaruskaha-leviafana': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-91-7', pages: 312, cover: true },
+  'shadurski-ziamlia-pad-sherymi-krylami': { year: 2026, publisher: 'Фонд Kamunikat.org', city: 'Беласток', isbn: '978-83-67937-82-5', pages: 319, cover: true },
+  'mielez-zaviei-sniezan': { year: 2024, publisher: 'Папуры', city: 'Мінск', isbn: '978-985-15-5749-9', pages: 256, cover: true },
+  'kulikou-horad-n': { year: 2026, publisher: 'Янушкевіч', city: 'Зомбкі', isbn: '978-83-68202-51-9', pages: 164, cover: true },
+  'niadbaj-tam-za-scianoj': { year: 2024, publisher: 'hochroth Minsk', city: 'Берлін', isbn: '978-3-949850-54-7', cover: true },
+  'antares': { year: 2026, publisher: 'Пурпурная майстэрня', city: 'Варшава', translator: 'Алесь Плотка, Ганна Янкута, Ева Арлова, Віктар Жыбуль, Мікола Грэшны, Алесь Дудар, Артур Камароўскі, ананімны перакладчык', isbn: '978-83-980074-8-1', cover: true },
+  'bloodlands-2020-2022': { year: 2023, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-00-1', pages: 80, cover: true },
+  'cviatajeva-vybranaja-liryka': { year: 2021, publisher: 'Зміцер Колас', city: 'Мінск', translator: 'Лявон Баршчэўскі', isbn: '978-985-23-0150-3', pages: 108, cover: true },
+  'kachanouski-vybranaje': { year: 2017, publisher: 'Зміцер Колас', city: 'Мінск', translator: 'Лявон Баршчэўскі, Андрэй Хадановіч', isbn: '978-985-7164-45-5', pages: 104, printRun: 300, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -402,6 +408,7 @@ const ALSO_IN = {
   'tradycyjny-svietalad-2': ['ru', 'en'],
   'tradycyjny-svietalad-3': ['ru', 'en'],
   'tradycyjny-svietalad-4': ['ru', 'en'],
+  'tradycyjny-svietalad-5': ['ru', 'en'],
   'niaklajeu-sam': ['be'],
   'ruiny-bielarusi': ['en', 'pl'],
 }
@@ -491,6 +498,23 @@ const ADDED = {
   '2026-11-11': ['sciapan-vauka'],
   '2026-11-12': ['niaklajeu-litviny', 'krama-cudau'],
   '2026-11-13': ['ruiny-bielarusi'],
+  '2026-11-16': [
+    'tolkien-chobit',
+    'maur-vybranyja-tvory',
+    'filamaty-i-filarety',
+    'tradycyjny-svietalad-5',
+    'sys-bierahi-majho-junactva',
+    'hramyka-viernyja-vorahi',
+    'shadurski-naradzennie-bielaruskaha-leviafana',
+    'shadurski-ziamlia-pad-sherymi-krylami',
+    'mielez-zaviei-sniezan',
+    'kulikou-horad-n',
+    'niadbaj-tam-za-scianoj',
+    'antares',
+    'bloodlands-2020-2022',
+    'cviatajeva-vybranaja-liryka',
+    'kachanouski-vybranaje',
+  ],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -703,6 +727,7 @@ const BOOKS = [
   volume('tradycyjny-svietalad-2', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 2. Сфера сакральнага. Народная тэалогія', 'be', 'folk', 'Традыцыйны светалад беларусаў', 2),
   volume('tradycyjny-svietalad-3', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 3. Чалавек', 'be', 'folk', 'Традыцыйны светалад беларусаў', 3),
   volume('tradycyjny-svietalad-4', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 4. Грамадства', 'be', 'folk', 'Традыцыйны светалад беларусаў', 4),
+  volume('tradycyjny-svietalad-5', 'І. М. Дубянецкая, С. І. Санько', 'Традыцыйны светалад беларусаў. Кніга 5. Каштоўнасці', 'be', 'folk', 'Традыцыйны светалад беларусаў', 5),
   book('karatkievic-encyklapiedyja', '', 'Уладзімір Караткевіч. Энцыклапедыя', 'be', 'nonfic', '#1f4f7c', '#e2c377', 3),
   book('bryl-viadzmar-jaki-rabiusia-vaukom', 'Антон Францішак Брыль', 'Вядзьмар, які рабіўся ваўком', 'be', 'folk', '#141414', '#c9a56b'),
   // added from the owner's photos, 2026-10-24
@@ -740,6 +765,21 @@ const BOOKS = [
   book('niaklajeu-litviny', 'Уладзімір Някляеў', 'Літвіны', 'be', 'poetry', '#d0212f', '#140e0d'),
   book('krama-cudau', '«Шуфлядка писателя»', 'Крама Цудаў', 'ru', 'sf', '#2a353d', '#f5c62c'),
   book('ruiny-bielarusi', '', 'Руіны Беларусі', 'be', 'history', '#232325', '#e9e9e9'),
+  // added from the owner's photos, 2026-11-16 (covers found online where a good one exists)
+  book('tolkien-chobit', 'Дж. Р. Р. Толкін', 'Хобіт', 'be', 'sf', '#1f3f93', '#f2c230'),
+  book('maur-vybranyja-tvory', 'Янка Маўр', 'Выбраныя творы', 'be', 'fiction', '#4a4e55', '#d9dbde', 3),
+  book('filamaty-i-filarety', '', 'Філаматы і філарэты', 'be', ['poetry', 'history'], '#6e1f2b', '#d8b45c', 3),
+  book('sys-bierahi-majho-junactva', 'Анатоль Сыс', 'Берагі майго юнацтва', 'be', 'poetry', '#1f2c8a', '#f39a2c'),
+  book('hramyka-viernyja-vorahi', 'Вольга Грамыка', 'Верныя ворагі', 'be', 'sf', '#3d4a78', '#e9e9ee', 3),
+  book('shadurski-naradzennie-bielaruskaha-leviafana', 'Віктар Шадурскі', 'Нараджэнне беларускага Левіяфана', 'be', ['history', 'nonfic'], '#d6d2dc', '#2b3550'),
+  book('shadurski-ziamlia-pad-sherymi-krylami', 'Віктар Шадурскі', 'Зямля пад шэрымі крыламі', 'be', ['history', 'nonfic'], '#cfc6c8', '#2f2f33'),
+  book('mielez-zaviei-sniezan', 'Іван Мележ', 'Завеі, снежань', 'be', 'fiction', '#e9e2d3', '#111111'),
+  book('kulikou-horad-n', 'Ігар Кулікоў', 'Горад N.', 'be', 'poetry', '#1c1c1e', '#f0f0f0'),
+  book('niadbaj-tam-za-scianoj', 'Таццяна Нядбай', 'Там, за сцяной', 'be', 'poetry', '#2b3034', '#eeeee6', 1),
+  book('antares', '', 'ANTARES', 'be', 'poetry', '#8f0f1a', '#ffffff'),
+  book('bloodlands-2020-2022', 'Алесь Плотка, Алесь Пілецкі, Stanislav Krupař', 'Bloodlands 2020/2022 Belarus/Ukraine', 'be', 'poetry', '#1b1b1d', '#d81f2a', 1),
+  book('cviatajeva-vybranaja-liryka', 'Марына Цвятаева', 'Выбраная лірыка', 'be', 'poetry', '#c7177f', '#ffffff', 1),
+  book('kachanouski-vybranaje', 'Ян Каханоўскі', 'Выбранае', 'be', 'poetry', '#7a2a8c', '#ffffff', 1),
 ]
 
 // Default order of the library: by language, and within a language the series first

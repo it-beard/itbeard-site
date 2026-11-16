@@ -423,6 +423,9 @@ concepts:
   russia:
     label: { be: Расея, en: Russia }
     aka: [расея, расія, расейскі, расейская, расійская, расійскі, імперыя, імперскі, масква, пецярбург, russia, russian, empire, moscow]
+  ukraine:
+    label: { be: Украіна, en: Ukraine }
+    aka: [украіна, украіны, украіне, украінскі, украінская, украінскае, украінскія, украінцы, украінскай, кіеў, харкаў, данбас, украина, украинский, україна, ukraine, ukrainian, ukrainians, kyiv]
   nature:
     label: { be: прырода, en: nature }
     aka: [прырода, лес, лясы, лясны, лясная, рэкі, рака, крыніцы, крыніца, возера, расьліны, расліны, дрэвы, грыбы, зямля, сонца, nature, forest, rivers, plants, trees, lake, earth]
@@ -534,10 +537,6 @@ details:
     author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
     translator: { be: 'Дзьмітры Магілеўцаў, Крысьціна Курчанкова', en: 'Dzmitry Mahileutsau, Krystsina Kurchankova' }
     publisher: { be: Мінск, en: Minsk }
-  tolkien-chobit:
-    author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
-    translator: { be: Франц Корзун, en: Frants Korzun }
-    publisher: { be: '«Капітал Прынт», Мінск', en: 'Kapital Print, Minsk' }
   tolkien-chobit-2002:
     author: { be: Дж. Р. Р. Толкін, en: J. R. R. Tolkien }
     translator: { be: 'Дзьмітры Магілеўцаў, Крысьціна Курчанкова', en: 'Dzmitry Mahileutsau, Krystsina Kurchankova' }
@@ -617,10 +616,6 @@ details:
 ## Уладар Пярсьцёнкаў. Вяртаньне караля {#lotr-return-of-the-king}
 
 Заключны том таго ж выданьня: той самы пераклад Дзьмітрыя Магілеўцава і Крысьціны Курчанковай, тыя самыя 500 асобнікаў. Безь яго трылогія на паліцы так і застаецца недачытанай.
-
-## Хобіт, альбо Падарожжа туды і назад {#tolkien-chobit}
-
-Паважанага хобіта Більба Торбінса запрашаюць далучыцца да талакі гномаў, што зьбіраецца змагацца за скарб зь лютым цмокам Смаўгам, — і ён згаджаецца, яшчэ ня ведаючы, што вернецца дадому зусім іншым. Пераклад Франца Корзуна, ілюстрацыі Ірыны Дражынай і Ганны Плотнікавай; выданьне «Капітал Прынту» ў серыі «Кніжны рысь» — у цьвёрдай вокладцы з супервокладкай. Трылогія пра Пярсьцёнак у мяне ўжо стаіць, а вось гісторыі, зь якой усё пачалося, пакуль няма.
 
 ## Хобіт, або Вандроўка туды і назад {#tolkien-chobit-2002}
 
@@ -715,10 +710,6 @@ The second volume of the first Belarusian translation of the trilogy — in the 
 ## The Lord of the Rings. The Return of the King {#lotr-return-of-the-king}
 
 The closing volume of the same edition: the same translation by Dzmitry Mahileutsau and Krystsina Kurchankova, the same 500 copies. Without it the trilogy on the shelf stays unfinished.
-
-## The Hobbit, or There and Back Again {#tolkien-chobit}
-
-The respectable hobbit Bilbo Baggins is invited to join a company of dwarves setting out to fight the fierce dragon Smaug for his treasure — and he agrees, not yet knowing he will come home a quite different hobbit. Translated by Frants Korzun, illustrated by Iryna Drazhyna and Hanna Plotnikava; published by Kapital Print in its «Knizhny rys» series, hardcover with a dust jacket. The Ring trilogy already stands on my shelf, but the story where it all began is still missing.
 
 ## The Hobbit, or There and Back Again (2002) {#tolkien-chobit-2002}
 

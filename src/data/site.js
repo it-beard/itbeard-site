@@ -503,6 +503,13 @@ const RECORDS = [
     tags: ['funk'],
   },
   {
+    id: 'biaz-nazvy-zyvie-rock-n-roll',
+    artist: 'Biaz Nazvy',
+    title: 'Žyvie Rock-n-roll!',
+    year: 2006,
+    tags: ['bel', 'rock'],
+  },
+  {
     id: 'noize-mc-greatest-hits-2',
     artist: 'Noize MC',
     title: 'The Greatest Hits Vol. 2',
@@ -567,6 +574,7 @@ const FIRST_DAY = '2026-09-21'
 const ADDED = {
   '2026-09-28': ['prodigy-fat-of-the-land'],
   '2026-10-19': ['michael-jackson-number-ones', 'phil-collins-the-singles'],
+  '2026-11-16': ['biaz-nazvy-zyvie-rock-n-roll'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 

@@ -111,6 +111,10 @@ artists:
 
 Васямнаццаць найбуйнейшых хітоў Майкла Джэксана — ад «Don't Stop 'Til You Get Enough» і «Billie Jean» да «You Rock My World». Зборнік 2003 году, які на вініле выйшаў упершыню толькі ў 2026-м — падвойнай плытой у канверце-разгортцы. На вокладцы — Джэксан у зіхоткім пінжаку, замерлы ў скачку на белым фоне.
 
+## Biaz Nazvy — Žyvie Rock-n-roll! {#biaz-nazvy-zyvie-rock-n-roll}
+
+Другі альбом гурта «Бяз назвы» зь Бярозы, запісаны ў лютым 2006-га ў Беластоку. У 2026-м, калі гурт паехаў па Польшчы з турам да дваццацігодзьдзя альбома, ён выйшаў і на вініле. На вокладцы — натоўп каля агароджы перад сцэнай і белы сьцяг з чырвоным «B.N.»; вочы ва ўсіх закрытыя чорнымі палоскамі.
+
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 
 Другі зборнік лепшага ад Івана Аляксеева — з часоў, калі ягоныя песьні яшчэ можна было пачуць па радыё.
@@ -186,6 +190,10 @@ The Prodigy's third album, which went to number one in both Britain and the Unit
 ## Michael Jackson — Number Ones {#michael-jackson-number-ones}
 
 Eighteen of Michael Jackson's biggest hits, from «Don't Stop 'Til You Get Enough» and «Billie Jean» to «You Rock My World». The 2003 compilation reached vinyl only in 2026, as a double LP in a gatefold sleeve. On the cover, Jackson in a sequinned jacket, frozen mid-jump against white.
+
+## Biaz Nazvy — Žyvie Rock-n-roll! {#biaz-nazvy-zyvie-rock-n-roll}
+
+The title means «Long live rock'n'roll!». The second album by Biaz Nazvy, a band from Biaroza, was recorded in Białystok in February 2006; in 2026, while the band toured Poland for the album's twentieth anniversary, it came out on vinyl as well. On the sleeve, a crowd leans on the barrier in front of a stage under a white banner with a red «B.N.», everyone's eyes covered by black bars.
 
 ## Noize MC — The Greatest Hits Vol. 2 {#noize-mc-greatest-hits-2}
 

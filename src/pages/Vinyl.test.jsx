@@ -165,14 +165,14 @@ describe('vinyl page', () => {
     expect(added).toHaveAccessibleName('Па навізьне: спачатку нядаўна дададзеныя')
     expect(option('Па годзе')).toHaveAttribute('aria-pressed', 'false')
     expect(nonDecreasing([...addedShown()].reverse())).toBe(true)
-    // the two records of one day keep the year order, and the lone arrival of the week before follows
-    expect(titlesShown().slice(0, 3)).toEqual(['Number Ones', 'The Singles', 'The Fat of the Land'])
+    // the latest arrival leads; the two records of one day keep the year order, and the lone arrival of the week before follows
+    expect(titlesShown().slice(0, 4)).toEqual(['Žyvie Rock-n-roll!', 'Number Ones', 'The Singles', 'The Fat of the Land'])
 
     await user.click(added)
     expect(added).toHaveAccessibleName('Па навізьне: спачатку даўнія')
     expect(nonDecreasing(addedShown())).toBe(true)
     expect(titlesShown()[0]).toBe(oldest.title)
-    expect(titlesShown().at(-1)).toBe('The Singles')
+    expect(titlesShown().at(-1)).toBe('Žyvie Rock-n-roll!')
   })
 
   it('sorts the English page by the transliterated names it shows', async () => {

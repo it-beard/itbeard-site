@@ -1459,5 +1459,12 @@ export const PROFILES = {
     original: 'Jan Kochanowski. Fraszki; Pieśni; Treny',
     aka: ['Каханоўскі', 'Кохановский', 'Ян Кохановский', 'Kochanowski', 'Jan Kochanowski', 'Kachanoŭski', 'Kachanouski', 'фрашкі', 'песні', 'трэны', 'Fraszki', 'Pieśni', 'Treny', 'Уршуля', 'Рэнесанс', 'Адраджэнне', 'Хадановіч', 'Баршчэўскі', 'Паэты планеты', 'кішэнная серыя', 'Зміцер Колас', 'Зьміцер Колас', 'Русецкі', 'Рэгульскі', 'Dzieła polskie'],
   },
+  'pashkievich-ciasliar-voli': {
+    genre: ['biography'],
+    themes: ['literature', 'belarus', 'bnr', 'history', 'minsk', 'politics'],
+    mood: ['thoughtful', 'tragic'],
+    form: 'nonfiction',
+    aka: ['Пашкевіч', 'Аляксандр Пашкевіч', 'Пашкевич', 'Алесь Пашкевич', 'Александр Пашкевич', 'Paškievič', 'Aleś Paškievič', 'Pashkevich', 'Ales Pashkevich', 'Гарун', 'Алесь Гарун', 'Алеся Гаруна', 'Harun', 'Aleś Harun', 'Ales Harun', 'Прушынскі', 'Аляксандр Прушынскі', 'Прушинский', 'Prušynski', 'Prushynski', 'Кніга пра Алеся Гаруна', 'Цясьляр волі', 'Цесляр волі', 'Плотник воли', 'Carpenter of Freedom', 'цясляр', 'сталяр', 'Матчын дар', 'Мае Коляды', 'Сібір', 'Іркуцк', 'высылка', 'ссылка', 'этап', 'рэвалюцыянер', 'адраджэнец', 'адраджэнцы', 'Кальварыя', 'Лошыца', 'Каралішчавічы', 'Цымбераў', 'Раман Цымбераў'],
+  },
 
 }

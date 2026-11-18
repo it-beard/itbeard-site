@@ -394,6 +394,7 @@ const LIBRARY_FACTS = {
   'bloodlands-2020-2022': { year: 2023, publisher: 'Skaryna Press', city: 'Лёндан', isbn: '978-1-915601-00-1', pages: 80, cover: true },
   'cviatajeva-vybranaja-liryka': { year: 2021, publisher: 'Зміцер Колас', city: 'Мінск', translator: 'Лявон Баршчэўскі', isbn: '978-985-23-0150-3', pages: 108, cover: true },
   'kachanouski-vybranaje': { year: 2017, publisher: 'Зміцер Колас', city: 'Мінск', translator: 'Лявон Баршчэўскі, Андрэй Хадановіч', isbn: '978-985-7164-45-5', pages: 104, printRun: 300, cover: true },
+  'pashkievich-ciasliar-voli': { year: 2025, publisher: 'Выдавец Цымбераў Р. М.', city: 'Мінск', isbn: '978-985-7334-32-2', pages: 212, cover: true },
 }
 
 // Bilingual and trilingual editions: the languages a book carries besides its main one.
@@ -515,6 +516,7 @@ const ADDED = {
     'cviatajeva-vybranaja-liryka',
     'kachanouski-vybranaje',
   ],
+  '2026-11-18': ['pashkievich-ciasliar-voli'],
 }
 const ADDED_ON = Object.fromEntries(Object.entries(ADDED).flatMap(([day, ids]) => ids.map((id) => [id, day])))
 
@@ -780,6 +782,7 @@ const BOOKS = [
   book('bloodlands-2020-2022', 'Алесь Плотка, Алесь Пілецкі, Stanislav Krupař', 'Bloodlands 2020/2022 Belarus/Ukraine', 'be', 'poetry', '#1b1b1d', '#d81f2a', 1),
   book('cviatajeva-vybranaja-liryka', 'Марына Цвятаева', 'Выбраная лірыка', 'be', 'poetry', '#c7177f', '#ffffff', 1),
   book('kachanouski-vybranaje', 'Ян Каханоўскі', 'Выбранае', 'be', 'poetry', '#7a2a8c', '#ffffff', 1),
+  book('pashkievich-ciasliar-voli', 'Алесь Пашкевіч', 'Цясляр волі', 'be', ['nonfic', 'history'], '#141414', '#d5a51b'),
 ]
 
 // Default order of the library: by language, and within a language the series first
